@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logde on hoshinotsuyoshi.com</title>
-    <link>http://hoshinotsuyoshi.com/tags/logde/</link>
+    <link>https://hoshinotsuyoshi.com/tags/logde/</link>
     <description>Recent content in Logde on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Tue, 16 Sep 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://hoshinotsuyoshi.com/tags/logde/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hoshinotsuyoshi.com/tags/logde/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[テスト投稿]Lodgeをherokuで動かす(ついでにheroku button)</title>
-      <link>http://hoshinotsuyoshi.com/post/logde-heroku/</link>
+      <link>https://hoshinotsuyoshi.com/post/logde-heroku/</link>
       <pubDate>Tue, 16 Sep 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://hoshinotsuyoshi.com/post/logde-heroku/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/logde-heroku/</guid>
       <description>
 
 &lt;p&gt;Lodgeをherokuで動かす(ついでにheroku button)&lt;/p&gt;
