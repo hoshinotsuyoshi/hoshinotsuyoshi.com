@@ -1,4 +1,4 @@
-baseurl = "https://hoshinotsuyoshi.com/"
+baseurl = "http://hoshinotsuyoshi.com/"
 languageCode = "ja-jp"
 title = "hoshinotsuyoshi.com"
 paginate = 5
@@ -11,7 +11,7 @@ canonifyurls = true
   cover = "images/tokyo.jpg"
   author = "hoshinotsuyoshi"
   authorlocation = "Tokyo, Japan"
-  authorwebsite = "https://hoshinotsuyoshi.com"
+  authorwebsite = "http://hoshinotsuyoshi.com"
   bio= "web application engineer"
   logo = "images/hoshinotsuyoshi.png"
   googleAnalyticsUserID = "UA-79101-xxxx"
