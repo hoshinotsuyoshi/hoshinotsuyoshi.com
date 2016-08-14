@@ -1,10 +1,10 @@
 +++
 date = "2016-08-14T14:36:41+09:00"
 draft = true
-title = "jqの--exit-statusオプションについて調べてまとめたので100ブクマぐらいお願いします"
-slug = "lorem-ipsum-test"
+title = "[テスト投稿]jqの--exit-statusオプションについて調べてまとめたので100ブクマぐらいお願いします"
+slug = "jq-exit-status"
 tags = ["jq"]
-
+image = "images/saturn-sendai-city-museum.jpg"
 
 +++
 
