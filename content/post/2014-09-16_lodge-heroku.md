@@ -1,6 +1,6 @@
 +++
 date = "2014-09-16T00:00:00+09:00"
-draft = true
+draft = false
 title = "[テスト投稿]Lodgeをherokuで動かす(ついでにheroku button)"
 slug = "logde-heroku"
 tags = ["logde", "heroku"]
