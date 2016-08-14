@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" [テスト投稿]jqの--exit-statusオプションについて調べてまとめたので100ブクマぐらいお願いします &middot;  hoshinotsuyoshi.com" />
+  	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
+  	<meta property="og:url" content="http://hoshinotsuyoshi.com/post/jq-exit-status/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2016-08-14T14:36:41&#43;09:00" />
+
+    
+    <meta property="og:article:tag" content="jq" />
+    
+    
+
+  <title>
+     [テスト投稿]jqの--exit-statusオプションについて調べてまとめたので100ブクマぐらいお願いします &middot;  hoshinotsuyoshi.com
+  </title>
+
+    <meta name="description" content="ブログだよ" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://hoshinotsuyoshi.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://hoshinotsuyoshi.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://hoshinotsuyoshi.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://hoshinotsuyoshi.com/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.16" />
+
+    <link rel="canonical" href="http://hoshinotsuyoshi.com/post/jq-exit-status/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79101-xxxx', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://hoshinotsuyoshi.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(http://hoshinotsuyoshi.com/images/saturn-sendai-city-museum.jpg)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="http://hoshinotsuyoshi.com/"><img src="http://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="http://hoshinotsuyoshi.com/index.xml">&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">[テスト投稿]jqの--exit-statusオプションについて調べてまとめたので100ブクマぐらいお願いします</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-08-14T14:36:41&#43;09:00">
+            Aug 14, 2016
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://hoshinotsuyoshi.com/tags/jq/">#jq</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>manすると1文が長くてつらい。neither A nor Bとか懐かしい。両方否定ね。</p>
+
+<blockquote>
+<p>man jq</p>
+
+<pre><code>   o   -e / --exit-status:
+       Sets  the exit status of jq to 0 if the last output values was nei-
+       ther false nor null, 1 if the last output value was either false or
+       null,  or 4 if no valid result was ever produced. Normally jq exits
+       with 2 if there was any usage problem or system error, 3  if  there
+       was a jq program compile error, or 0 if the jq program ran.
+</code></pre>
+</blockquote>
+
+<h2 id="まとめ">まとめ</h2>
+
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>stdout</th>
+<th>exit status</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>$ echo &lsquo;{}&rsquo;    | jq               .</td>
+<td><code>{}</code></td>
+<td><code>0</code></td>
+</tr>
+
+<tr>
+<td>$ echo &lsquo;{}&rsquo;    | jq &ndash;exit-status .</td>
+<td><code>{}</code></td>
+<td><code>0</code></td>
+</tr>
+
+<tr>
+<td>$ echo &lsquo;true&rsquo;  | jq               .</td>
+<td><code>true</code></td>
+<td><code>0</code></td>
+</tr>
+
+<tr>
+<td>$ echo &lsquo;true&rsquo;  | jq &ndash;exit-status .</td>
+<td><code>true</code></td>
+<td><code>0</code></td>
+</tr>
+
+<tr>
+<td>$ echo &lsquo;false&rsquo; | jq               .</td>
+<td><code>false</code></td>
+<td><code>0</code></td>
+</tr>
+
+<tr>
+<td>$ echo &lsquo;false&rsquo; | jq &ndash;exit-status .</td>
+<td><code>false</code></td>
+<td><code>1</code></td>
+</tr>
+
+<tr>
+<td>$ echo &lsquo;null&rsquo;  | jq               .</td>
+<td><code>null</code></td>
+<td><code>0</code></td>
+</tr>
+
+<tr>
+<td>$ echo &lsquo;null&rsquo;  | jq &ndash;exit-status .</td>
+<td><code>null</code></td>
+<td><code>1</code></td>
+</tr>
+
+<tr>
+<td>$ echo &lsquo;foo&rsquo;   | jq               .</td>
+<td>((エラー出力にparse error: Invalid literal at line 2, column 0))</td>
+<td><code>4</code></td>
+</tr>
+
+<tr>
+<td>$ echo &lsquo;foo&rsquo;   | jq &ndash;exit-status .</td>
+<td>((エラー出力にparse error: Invalid literal at line 2, column 0))</td>
+<td><code>4</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>以上です</p>
+
+<p>元ページ：</p>
+
+<iframe src="http://hoppie.hatenablog.com/embed/2016/07/29/142935" title="jqの--exit-statusオプションについて調べてまとめたので100ブクマぐらいお願いします - パラボラアンテナと星の日記" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://hoshinotsuyoshi.com/" style="background-image: url(http://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>web application engineer</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="http://hoshinotsuyoshi.com">http://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%5b%e3%83%86%e3%82%b9%e3%83%88%e6%8a%95%e7%a8%bf%5djq%e3%81%ae--exit-status%e3%82%aa%e3%83%97%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e8%aa%bf%e3%81%b9%e3%81%a6%e3%81%be%e3%81%a8%e3%82%81%e3%81%9f%e3%81%ae%e3%81%a7100%e3%83%96%e3%82%af%e3%83%9e%e3%81%90%e3%82%89%e3%81%84%e3%81%8a%e9%a1%98%e3%81%84%e3%81%97%e3%81%be%e3%81%99&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=http%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fjq-exit-status%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fjq-exit-status%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fjq-exit-status%2f&amp;description=%5b%e3%83%86%e3%82%b9%e3%83%88%e6%8a%95%e7%a8%bf%5djq%e3%81%ae--exit-status%e3%82%aa%e3%83%97%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e8%aa%bf%e3%81%b9%e3%81%a6%e3%81%be%e3%81%a8%e3%82%81%e3%81%9f%e3%81%ae%e3%81%a7100%e3%83%96%e3%82%af%e3%83%9e%e3%81%90%e3%82%89%e3%81%84%e3%81%8a%e9%a1%98%e3%81%84%e3%81%97%e3%81%be%e3%81%99"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fjq-exit-status%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">hoshinotsuyoshi.com</a> All rights reserved - 2016</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://hoshinotsuyoshi.com/js/jquery.js"></script>
+    <script type="text/javascript" src="http://hoshinotsuyoshi.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://hoshinotsuyoshi.com/js/index.js"></script>
+    
+</body>
+</html>
+
