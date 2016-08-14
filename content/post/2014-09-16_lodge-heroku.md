@@ -4,7 +4,7 @@ draft = false
 title = "[テスト投稿]Lodgeをherokuで動かす(ついでにheroku button)"
 slug = "logde-heroku"
 tags = ["logde", "heroku"]
-image = "images/saturn-sendai-city-museum.jpg"
+image = "images/tokyo.jpg"
 
 +++
 
