@@ -39,4 +39,4 @@ $ echo 'foo'   \| jq --exit-status .  |  ((エラー出力にparse error: Invali
 
 元ページ：
 
-<iframe src="http://hoppie.hatenablog.com/embed/2016/07/29/142935" title="jqの--exit-statusオプションについて調べてまとめたので100ブクマぐらいお願いします - パラボラアンテナと星の日記" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe>
+http://hoppie.hatenablog.com/entry/2016/07/29/142935
