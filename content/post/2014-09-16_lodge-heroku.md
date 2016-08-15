@@ -13,6 +13,8 @@ Lodgeをherokuで動かす(ついでにheroku button)
 
 Lodgeは、オープンソースの情報共有アプリです。
 
+<!--more-->
+
 * [lodge/lodge](https://github.com/lodge/lodge)
 * [無料でイントラネット内にナレッジ/ノウハウの共有ができる「Lodge」](http://qiita.com/m-yamashita/items/d6f64db461acd54095f7)
 

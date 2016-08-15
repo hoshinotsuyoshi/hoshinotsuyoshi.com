@@ -8,7 +8,9 @@ image = "images/saturn-sendai-city-museum.jpg"
 
 +++
 
-manすると1文が長くてつらい。neither A nor Bとか懐かしい。両方否定ね。 
+manすると1文が長くてつらい。neither A nor Bとか懐かしい。両方否定ね。
+
+<!--more-->
 
 > man jq 
 
