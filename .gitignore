@@ -2,5 +2,3 @@
 .envrc
 public/
 dist
-!dist/CNAME
-!dist/google4d1d7a9b339e3e9f.html
