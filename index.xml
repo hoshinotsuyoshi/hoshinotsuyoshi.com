@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/index.xml</link>
+    <link>https://hoshinotsuyoshi.com/</link>
     <description>Recent content on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -16,9 +16,9 @@
       <pubDate>Sun, 20 Nov 2016 08:00:00 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/REWORK/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/小さなチーム、大きな仕事〔完全版〕-37シグナルズ成功の法則-ジェイソン・フリード/dp/415209267X/&#34;&gt;この本&lt;/a&gt;を読んだ。&lt;/p&gt;
+      <description>
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/小さなチーム、大きな仕事〔完全版〕-37シグナルズ成功の法則-ジェイソン・フリード/dp/415209267X/&#34;&gt;この本&lt;/a&gt;を読んだ。&lt;/p&gt;
 
 &lt;p&gt;2010年の、ちょっと古い本だ。&lt;/p&gt;
 
@@ -71,7 +71,8 @@
 
 &lt;p&gt;良い製品の具体例(IT分野に限らない)がどんどん出てくる。&lt;/p&gt;
 
-&lt;p&gt;37signalsのCEOという、プロダクトに対するセンスを持ってそうな人が語っている部分なので、じっくり読んで考えてみたい。&lt;/p&gt;</description>
+&lt;p&gt;37signalsのCEOという、プロダクトに対するセンスを持ってそうな人が語っている部分なので、じっくり読んで考えてみたい。&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -80,9 +81,9 @@
       <pubDate>Sun, 14 Aug 2016 14:36:41 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/jq-exit-status/</guid>
-      <description>&lt;p&gt;manすると1文が長くてつらい。neither A nor Bとか懐かしい。両方否定ね。&lt;/p&gt;
+      <description>
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;manすると1文が長くてつらい。neither A nor Bとか懐かしい。両方否定ね。&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;man jq&lt;/p&gt;
@@ -174,7 +175,8 @@
 
 &lt;p&gt;元ページ：&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://hoppie.hatenablog.com/entry/2016/07/29/142935&#34;&gt;http://hoppie.hatenablog.com/entry/2016/07/29/142935&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;http://hoppie.hatenablog.com/entry/2016/07/29/142935&#34;&gt;http://hoppie.hatenablog.com/entry/2016/07/29/142935&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -183,13 +185,13 @@
       <pubDate>Tue, 16 Sep 2014 00:00:00 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/logde-heroku/</guid>
-      <description>&lt;p&gt;Lodgeをherokuで動かす(ついでにheroku button)&lt;/p&gt;
+      <description>
+
+&lt;p&gt;Lodgeをherokuで動かす(ついでにheroku button)&lt;/p&gt;
 
 &lt;h2 id=&#34;lodgeとは&#34;&gt;Lodgeとは&lt;/h2&gt;
 
 &lt;p&gt;Lodgeは、オープンソースの情報共有アプリです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/lodge/lodge&#34;&gt;lodge/lodge&lt;/a&gt;&lt;/li&gt;
@@ -445,7 +447,8 @@ index 7aa2d7b..eaa333a 100644
 
 &lt;p&gt;元ページ：&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://qiita.com/hoshino/items/e058339f1399baab87b0&#34;&gt;http://qiita.com/hoshino/items/e058339f1399baab87b0&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/hoshino/items/e058339f1399baab87b0&#34;&gt;http://qiita.com/hoshino/items/e058339f1399baab87b0&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>
