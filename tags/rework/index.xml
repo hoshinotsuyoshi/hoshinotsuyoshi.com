@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rework on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/rework/</link>
-    <description>Recent content in Rework on hoshinotsuyoshi.com</description>
+    <title>hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/rework/index.xml</link>
+    <description>Recent content on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Sun, 20 Nov 2016 08:00:00 +0900</lastBuildDate>
     <atom:link href="https://hoshinotsuyoshi.com/tags/rework/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,9 +15,9 @@
       <pubDate>Sun, 20 Nov 2016 08:00:00 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/REWORK/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/小さなチーム、大きな仕事〔完全版〕-37シグナルズ成功の法則-ジェイソン・フリード/dp/415209267X/&#34;&gt;この本&lt;/a&gt;を読んだ。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/小さなチーム、大きな仕事〔完全版〕-37シグナルズ成功の法則-ジェイソン・フリード/dp/415209267X/&#34;&gt;この本&lt;/a&gt;を読んだ。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;2010年の、ちょっと古い本だ。&lt;/p&gt;
 
@@ -71,8 +70,7 @@
 
 &lt;p&gt;良い製品の具体例(IT分野に限らない)がどんどん出てくる。&lt;/p&gt;
 
-&lt;p&gt;37signalsのCEOという、プロダクトに対するセンスを持ってそうな人が語っている部分なので、じっくり読んで考えてみたい。&lt;/p&gt;
-</description>
+&lt;p&gt;37signalsのCEOという、プロダクトに対するセンスを持ってそうな人が語っている部分なので、じっくり読んで考えてみたい。&lt;/p&gt;</description>
     </item>
     
   </channel>
