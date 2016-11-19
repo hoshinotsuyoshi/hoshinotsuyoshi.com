@@ -6,7 +6,14 @@ THEME = 'casper'
 task default: :deploy
 
 desc 'Deploy'
-task deploy: [:dist, :check_cname, :deploy_sh]
+task deploy: [:install_theme, :dist, :check_cname, :deploy_sh]
+
+desc 'Install theme'
+task :install_theme do
+  puts
+  sh "git submodule init"
+  sh "git submodule update"
+end
 
 desc 'Run hugo, put files to "dist" dir'
 task :dist do
