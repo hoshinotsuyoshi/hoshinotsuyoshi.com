@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Logde on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/logde/</link>
-    <description>Recent content in Logde on hoshinotsuyoshi.com</description>
+    <title>hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/logde/index.xml</link>
+    <description>Recent content on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Tue, 16 Sep 2014 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://hoshinotsuyoshi.com/tags/logde/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,13 +15,13 @@
       <pubDate>Tue, 16 Sep 2014 00:00:00 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/logde-heroku/</guid>
-      <description>
-
-&lt;p&gt;Lodgeをherokuで動かす(ついでにheroku button)&lt;/p&gt;
+      <description>&lt;p&gt;Lodgeをherokuで動かす(ついでにheroku button)&lt;/p&gt;
 
 &lt;h2 id=&#34;lodgeとは&#34;&gt;Lodgeとは&lt;/h2&gt;
 
 &lt;p&gt;Lodgeは、オープンソースの情報共有アプリです。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/lodge/lodge&#34;&gt;lodge/lodge&lt;/a&gt;&lt;/li&gt;
@@ -278,8 +277,7 @@ index 7aa2d7b..eaa333a 100644
 
 &lt;p&gt;元ページ：&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://qiita.com/hoshino/items/e058339f1399baab87b0&#34;&gt;http://qiita.com/hoshino/items/e058339f1399baab87b0&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/hoshino/items/e058339f1399baab87b0&#34;&gt;http://qiita.com/hoshino/items/e058339f1399baab87b0&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
