@@ -7,8 +7,72 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Sun, 14 Aug 2016 14:36:41 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 20 Nov 2016 06:00:00 +0900</lastBuildDate>
     <atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>「小さなチーム、大きな仕事」(REWORK)読んだ</title>
+      <link>https://hoshinotsuyoshi.com/post/REWORK/</link>
+      <pubDate>Sun, 20 Nov 2016 06:00:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/REWORK/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/小さなチーム、大きな仕事〔完全版〕-37シグナルズ成功の法則-ジェイソン・フリード/dp/415209267X/&#34;&gt;この本&lt;/a&gt;を読んだ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;2010年の、ちょっと古い本だ。&lt;/p&gt;
+
+&lt;p&gt;原著(英語)は&lt;a href=&#34;https://www.amazon.co.jp/Rework-Jason-Fried/dp/0307463745&#34;&gt;REWORK&lt;/a&gt;という本。&lt;/p&gt;
+
+&lt;h3 id=&#34;要約&#34;&gt;要約&lt;/h3&gt;
+
+&lt;p&gt;ビジネスをやっていく上でいろいろなTIPS/HACKSが書かれた(悪く言ってしまえば)説教本である。
+すばらしいハウツー本だ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://rebuild.fm/32/#transcript&#34;&gt;rebuild.fmのこの回&lt;/a&gt;でも語られているが、37signalsの本はどうも説教臭いらしい。その点は我慢して読まないといけない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;以下、個人的に響いたポイントな部分を列挙。&lt;/p&gt;
+
+&lt;h3 id=&#34;企業を始めよう&#34;&gt;企業を始めよう&lt;/h3&gt;
+
+&lt;p&gt;つまらない「スタートアップ」になってはならない。
+小さくていいから「企業」を始める。&lt;/p&gt;
+
+&lt;h3 id=&#34;時間は-つくれる&#34;&gt;時間は、つくれる&lt;/h3&gt;
+
+&lt;p&gt;一日16時間働けとは言わない。ほんの1時間、捻出するだけでいい。
+17時に帰ろう。
+徹夜なんてもってのほか。&lt;/p&gt;
+
+&lt;h3 id=&#34;会社を大きくしてはいけない&#34;&gt;会社を大きくしてはいけない&lt;/h3&gt;
+
+&lt;p&gt;それになんのメリットがある? 規模を拡大するような競争は、不毛だ。&lt;/p&gt;
+
+&lt;h3 id=&#34;マネしてはならない&#34;&gt;マネしてはならない&lt;/h3&gt;
+
+&lt;p&gt;あなたがiPodキラーをつくっても、「iPodらしさ」では決してAppleのiPodには勝てない。
+大事なのは勝負するルール(土俵)を変えることだ。&lt;/p&gt;
+
+&lt;h3 id=&#34;生産性を上げる&#34;&gt;生産性を上げる&lt;/h3&gt;
+
+&lt;p&gt;(まあ生産性を上げるための良い工夫が書いてある。省略)&lt;/p&gt;
+
+&lt;h3 id=&#34;プロダクト-製品-について&#34;&gt;プロダクト(製品)について&lt;/h3&gt;
+
+&lt;p&gt;(私は絶賛といってよいほど良かった。以下に述べる)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;プロダクト(製品)についての示唆(本の上では、「進展(progress)」の章)が、なかなかおもしろい。&lt;/p&gt;
+
+&lt;p&gt;良い製品の具体例(IT分野に限らない)がどんどん出てくる。&lt;/p&gt;
+
+&lt;p&gt;37signalsのCEOという、プロダクトに対するセンスを持ってそうな人が語っている部分なので、じっくり読んで考えてみたい。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>[テスト投稿]jqの--exit-statusオプションについて調べてまとめたので100ブクマぐらいお願いします</title>
