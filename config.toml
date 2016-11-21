@@ -14,7 +14,7 @@ canonifyurls = true
   authorwebsite = "https://hoshinotsuyoshi.com"
   bio= "web application engineer"
   logo = "images/hoshinotsuyoshi.png"
-  googleAnalyticsUserID = "UA-79101-xxxx"
+  googleAnalyticsUserID = "UA-87800718-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   # RSSLink = "http://feeds.feedburner.com/..." 
   githubName = "hoshinotsuyoshi"
