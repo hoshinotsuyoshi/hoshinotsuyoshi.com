@@ -3,22 +3,17 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2016-11-20T08:00:00+09:00</lastmod>
+    <lastmod>2016-11-23T13:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/post/deploy_this_blog/</loc>
+    <lastmod>2016-11-23T13:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/REWORK/</loc>
     <lastmod>2016-11-20T08:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/post/jq-exit-status/</loc>
-    <lastmod>2016-08-14T14:36:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/post/logde-heroku/</loc>
-    <lastmod>2014-09-16T00:00:00+09:00</lastmod>
   </url>
   
 </urlset>

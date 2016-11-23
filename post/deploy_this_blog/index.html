@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/hugo.png"/>
+    
+
+
+
+<meta name="twitter:title" content="このブログの編集方法とデプロイ方法について(github pages &#43; hugo)"/>
+<meta name="twitter:description" content="このブログ、https://hoshinotsuyoshi.comの編集方法とデプロイ方法についての説明です。
+
+hugoでhtmlを生成し、github pagesでホスティングしています。
+あまり奇をてらったやり方はしていません。至って普通です。
+
+"/>
+
+    <meta name="twitter:site" content="@hoppiestar"/>
+
+
+
+  	<meta property="og:title" content=" このブログの編集方法とデプロイ方法について(github pages &#43; hugo) &middot;  hoshinotsuyoshi.com" />
+  	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/deploy_this_blog/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2016-11-23T13:00:00&#43;09:00" />
+
+    
+    <meta property="og:article:tag" content="blog" />
+    
+    <meta property="og:article:tag" content="hugo" />
+    
+    <meta property="og:article:tag" content="github-pages" />
+    
+    
+
+    <title>
+       このブログの編集方法とデプロイ方法について(github pages &#43; hugo) &middot;  hoshinotsuyoshi.com
+    </title>
+
+    <meta name="description" content="ブログだよ" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://hoshinotsuyoshi.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="https://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.17" />
+
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/deploy_this_blog/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-87800718-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(https://hoshinotsuyoshi.com/images/hugo.png)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-11-23T13:00:00&#43;09:00">
+            Nov 23, 2016
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/blog/">#blog</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/hugo/">#hugo</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/github-pages/">#github-pages</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>このブログ、<a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a>の編集方法とデプロイ方法についての説明です。</p>
+
+<p>hugoでhtmlを生成し、github pagesでホスティングしています。
+あまり奇をてらったやり方はしていません。至って普通です。</p>
+
+<p></p>
+
+<h4 id="準備">準備</h4>
+
+<h5 id="hugoをインストール">hugoをインストール</h5>
+
+<p><a class="embedly-card" href="https://gohugo.io/">Hugo :: A fast and modern static website engine</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<p><a href="https://gohugo.io/">hugo</a>は、高速なhtml生成ツールです。
+brewでインストールします。</p>
+
+<pre><code>$ brew install hugo
+</code></pre>
+
+<h5 id="このブログのリポジトリをクローン">このブログのリポジトリをクローン</h5>
+
+<p>githubに置いてあります。</p>
+
+<p><a class="embedly-card" href="https://github.com/hoshinotsuyoshi/hoshinotsuyoshi.com">hoshinotsuyoshi/hoshinotsuyoshi.com</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<p>クローンします。</p>
+
+<pre><code>$ go get github.com/hoshinotsuyoshi/hoshinotsuyoshi.com
+</code></pre>
+
+<h5 id="ローカルでサーバーを立てつつ記事を編集する">ローカルでサーバーを立てつつ記事を編集する</h5>
+
+<p><code>$ rake s</code> とやるとローカルにサーバが立ちます。</p>
+
+<pre><code>$ rake s
+
+hugo server -t casper
+Started building sites ...
+...snip...
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p>この状態で<code>content/post</code>以下のファイルを追加・編集するとすぐ変更が反映されます。</p>
+
+<p>例えば画像を貼ります。すぐ反映されます。
+<img src="https://hoshinotsuyoshi.com/images/blog_ani.gif"></p>
+
+<h5 id="デプロイする">デプロイする</h5>
+
+<p><code>$ rake</code>でデプロイできます。</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="https://hoshinotsuyoshi.com/" style="background-image: url(https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>web application engineer</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e3%81%93%e3%81%ae%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ae%e7%b7%a8%e9%9b%86%e6%96%b9%e6%b3%95%e3%81%a8%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4%e6%96%b9%e6%b3%95%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%28github%20pages%20%2b%20hugo%29&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fdeploy_this_blog%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fdeploy_this_blog%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fdeploy_this_blog%2f&amp;description=%e3%81%93%e3%81%ae%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ae%e7%b7%a8%e9%9b%86%e6%96%b9%e6%b3%95%e3%81%a8%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4%e6%96%b9%e6%b3%95%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%28github%20pages%20%2b%20hugo%29"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fdeploy_this_blog%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">hoshinotsuyoshi.com</a> All rights reserved - 2016</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/index.js"></script>
+    
+</body>
+</html>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/github-pages/index.xml</link>
+    <description>Recent content on hoshinotsuyoshi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <atom:link href="https://hoshinotsuyoshi.com/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</title>
+      <link>https://hoshinotsuyoshi.com/post/deploy_this_blog/</link>
+      <pubDate>Wed, 23 Nov 2016 13:00:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/deploy_this_blog/</guid>
+      <description>&lt;p&gt;このブログ、&lt;a href=&#34;https://hoshinotsuyoshi.com&#34;&gt;https://hoshinotsuyoshi.com&lt;/a&gt;の編集方法とデプロイ方法についての説明です。&lt;/p&gt;
+
+&lt;p&gt;hugoでhtmlを生成し、github pagesでホスティングしています。
+あまり奇をてらったやり方はしていません。至って普通です。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;準備&#34;&gt;準備&lt;/h4&gt;
+
+&lt;h5 id=&#34;hugoをインストール&#34;&gt;hugoをインストール&lt;/h5&gt;
+
+&lt;p&gt;&lt;a class=&#34;embedly-card&#34; href=&#34;https://gohugo.io/&#34;&gt;Hugo :: A fast and modern static website engine&lt;/a&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;は、高速なhtml生成ツールです。
+brewでインストールします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ brew install hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;このブログのリポジトリをクローン&#34;&gt;このブログのリポジトリをクローン&lt;/h5&gt;
+
+&lt;p&gt;githubに置いてあります。&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;embedly-card&#34; href=&#34;https://github.com/hoshinotsuyoshi/hoshinotsuyoshi.com&#34;&gt;hoshinotsuyoshi/hoshinotsuyoshi.com&lt;/a&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;クローンします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ go get github.com/hoshinotsuyoshi/hoshinotsuyoshi.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;ローカルでサーバーを立てつつ記事を編集する&#34;&gt;ローカルでサーバーを立てつつ記事を編集する&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;$ rake s&lt;/code&gt; とやるとローカルにサーバが立ちます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ rake s
+
+hugo server -t casper
+Started building sites ...
+...snip...
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;この状態で&lt;code&gt;content/post&lt;/code&gt;以下のファイルを追加・編集するとすぐ変更が反映されます。&lt;/p&gt;
+
+&lt;p&gt;例えば画像を貼ります。すぐ反映されます。
+&lt;img src=&#34;https://hoshinotsuyoshi.com/images/blog_ani.gif&#34;&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;デプロイする&#34;&gt;デプロイする&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;$ rake&lt;/code&gt;でデプロイできます。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
