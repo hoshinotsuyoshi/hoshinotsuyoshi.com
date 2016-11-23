@@ -33,3 +33,13 @@ task :deploy_sh do
   puts
   sh './deploy.sh'
 end
+
+desc 'Serve html locally'
+task :server do
+  puts
+  sh "hugo server -t #{THEME}"
+end
+
+# alias
+desc '(Alias)Serve html locally'
+task s: :server
