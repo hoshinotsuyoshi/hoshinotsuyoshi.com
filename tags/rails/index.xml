@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rails on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/rails/index.xml</link>
+    <description>Recent content in Rails on hoshinotsuyoshi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <atom:link href="https://hoshinotsuyoshi.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ruby2.4にしてrails5.0.1にした</title>
+      <link>https://hoshinotsuyoshi.com/post/ruby24/</link>
+      <pubDate>Sun, 25 Dec 2016 22:30:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/ruby24/</guid>
+      <description>&lt;p&gt;🎄 メリークリスマス 🎅
+ruby2.4がリリースされました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;個人的に作ったrailsのプロジェクトのrubyのバージョンを2.4.0にし、railsも最新にしました。&lt;/p&gt;
+
+&lt;p&gt;特につまづきませんでしたが気づいたことなど書いていきます。&lt;/p&gt;
+
+&lt;p&gt;↓個人プロジェクトはこちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;embedly-card&#34; href=&#34;https://github.com/hoshinotsuyoshi/s3_explorer&#34;&gt;hoshinotsuyoshi/s3_explorer&lt;/a&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;やったこと-ruby2-4-0-rc1-ruby2-4-0へ変更&#34;&gt;やったこと：ruby2.4.0-rc1 -&amp;gt; ruby2.4.0へ変更&lt;/h3&gt;
+
+&lt;p&gt;rc1版が出ていたので前もってアップデートしておきます。
+クリスマスになったらこれをrc1を取り払います。
+↓こんな感じです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;github ruby24&#34; src=&#34;https://hoshinotsuyoshi.com/images/ruby24_github.png&#34;&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;テストの確認-ciでの動作確認&#34;&gt;テストの確認・CIでの動作確認&lt;/h3&gt;
+
+&lt;p&gt;TravisCIもCircleCIも、その日のうちにrubyの最新バージョンが利用できるようになっていました💪。&lt;/p&gt;
+
+&lt;h5 id=&#34;travisci&#34;&gt;TravisCI&lt;/h5&gt;
+
+&lt;p&gt;&lt;img alt=&#34;travisci ruby24&#34; src=&#34;https://hoshinotsuyoshi.com/images/ruby24_travisci.png&#34;&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;circleci&#34;&gt;CircleCI&lt;/h5&gt;
+
+&lt;p&gt;&lt;img alt=&#34;circleci ruby24&#34; src=&#34;https://hoshinotsuyoshi.com/images/ruby24_circleci.png&#34;&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;rails5-0-1-ruby2-4-0の組み合わせで-テスト時に出る警告&#34;&gt;rails5.0.1、ruby2.4.0の組み合わせで、テスト時に出る警告&lt;/h3&gt;
+
+&lt;p&gt;個人プロジェクトのCIの結果は&lt;a href=&#34;https://circleci.com/gh/hoshinotsuyoshi/s3_explorer/56&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;rails系のgemとsimplecovで&lt;code&gt;::Fixnum is deprecated&lt;/code&gt;、 &lt;code&gt;::Bignum is deprecated&lt;/code&gt;という警告が出ました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://bugs.ruby-lang.org/issues/12005&#34;&gt;Feature #12005: Unify Fixnum and Bignum into Integer - Ruby trunk - Ruby Issue Tracking System&lt;/a&gt;の件です。&lt;/p&gt;
+
+&lt;p&gt;simplecovは&lt;a href=&#34;https://github.com/colszowka/simplecov/pull/523&#34;&gt;masterでは直ってそう&lt;/a&gt;だし、待ってれば降ってきそうだと思いました。&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;個人的に作ったrailsのプロジェクトのrubyのバージョンを2.4.0にし、railsも最新にしてみました。&lt;/li&gt;
+&lt;li&gt;あまり面白いつまづきはありませんでした。&lt;/li&gt;
+&lt;li&gt;herokuにはまだデプロイしてない。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

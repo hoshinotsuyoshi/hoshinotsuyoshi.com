@@ -11,13 +11,14 @@
     
         
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/rework_cover.jpg"/>
+        <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/happy_rails.png"/>
     
 
 
 
-<meta name="twitter:title" content="「小さなチーム、大きな仕事」(REWORK)読んだ"/>
-<meta name="twitter:description" content="この本を読んだ。
+<meta name="twitter:title" content="ruby2.4にしてrails5.0.1にした"/>
+<meta name="twitter:description" content="🎄 メリークリスマス 🎅
+ruby2.4がリリースされました。
 
 "/>
 
@@ -25,22 +26,24 @@
 
 
 
-  	<meta property="og:title" content=" 「小さなチーム、大きな仕事」(REWORK)読んだ &middot;  hoshinotsuyoshi.com" />
+  	<meta property="og:title" content=" ruby2.4にしてrails5.0.1にした &middot;  hoshinotsuyoshi.com" />
   	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
-  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/REWORK/" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/ruby24/" />
 
     
   	<meta property="og:type" content="article" />
 
-    <meta property="og:article:published_time" content="2016-11-20T08:00:00&#43;09:00" />
+    <meta property="og:article:published_time" content="2016-12-25T22:30:00&#43;09:00" />
 
     
-    <meta property="og:article:tag" content="rework" />
+    <meta property="og:article:tag" content="rails" />
+    
+    <meta property="og:article:tag" content="ruby" />
     
     
 
     <title>
-       「小さなチーム、大きな仕事」(REWORK)読んだ &middot;  hoshinotsuyoshi.com
+       ruby2.4にしてrails5.0.1にした &middot;  hoshinotsuyoshi.com
     </title>
 
     <meta name="description" content="ブログだよ" />
@@ -64,7 +67,7 @@
     
     <meta name="generator" content="Hugo 0.18" />
 
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/REWORK/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/ruby24/" />
 
     
     <script>
@@ -107,7 +110,7 @@
 
 
   
-  <header class="main-header post-head" style="background-image: url(https://hoshinotsuyoshi.com/images/rework_cover.jpg)">
+  <header class="main-header post-head" style="background-image: url(https://hoshinotsuyoshi.com/images/happy_rails.png)">
   
   <nav class="main-nav overlay clearfix">
 
@@ -131,78 +134,75 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">「小さなチーム、大きな仕事」(REWORK)読んだ</h1>
+        <h1 class="post-title">ruby2.4にしてrails5.0.1にした</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2016-11-20T08:00:00&#43;09:00">
-            Nov 20, 2016
+          <time class="post-date" datetime="2016-12-25T22:30:00&#43;09:00">
+            Dec 25, 2016
           </time>
         
          
-          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/rework/">#rework</a></span>
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/rails/">#rails</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p><a href="https://www.amazon.co.jp/小さなチーム、大きな仕事〔完全版〕-37シグナルズ成功の法則-ジェイソン・フリード/dp/415209267X/">この本</a>を読んだ。</p>
+      <p>🎄 メリークリスマス 🎅
+ruby2.4がリリースされました。</p>
 
 <p></p>
 
-<p>2010年の、ちょっと古い本だ。</p>
+<p>個人的に作ったrailsのプロジェクトのrubyのバージョンを2.4.0にし、railsも最新にしました。</p>
 
-<p>原著(英語)は<a href="https://www.amazon.co.jp/Rework-Jason-Fried/dp/0307463745">REWORK</a>という本。</p>
+<p>特につまづきませんでしたが気づいたことなど書いていきます。</p>
 
-<h3 id="要約">要約</h3>
+<p>↓個人プロジェクトはこちらです。</p>
 
-<p>ビジネスをやっていく上でいろいろなTIPS/HACKSが書かれた(悪く言ってしまえば)説教本である。
-すばらしいハウツー本だ。</p>
+<p><a class="embedly-card" href="https://github.com/hoshinotsuyoshi/s3_explorer">hoshinotsuyoshi/s3_explorer</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<h3 id="やったこと-ruby2-4-0-rc1-ruby2-4-0へ変更">やったこと：ruby2.4.0-rc1 -&gt; ruby2.4.0へ変更</h3>
+
+<p>rc1版が出ていたので前もってアップデートしておきます。
+クリスマスになったらこれをrc1を取り払います。
+↓こんな感じです。</p>
+
+<p><img alt="github ruby24" src="https://hoshinotsuyoshi.com/images/ruby24_github.png"></p>
+
+<h3 id="テストの確認-ciでの動作確認">テストの確認・CIでの動作確認</h3>
+
+<p>TravisCIもCircleCIも、その日のうちにrubyの最新バージョンが利用できるようになっていました💪。</p>
+
+<h5 id="travisci">TravisCI</h5>
+
+<p><img alt="travisci ruby24" src="https://hoshinotsuyoshi.com/images/ruby24_travisci.png"></p>
+
+<h5 id="circleci">CircleCI</h5>
+
+<p><img alt="circleci ruby24" src="https://hoshinotsuyoshi.com/images/ruby24_circleci.png"></p>
+
+<h3 id="rails5-0-1-ruby2-4-0の組み合わせで-テスト時に出る警告">rails5.0.1、ruby2.4.0の組み合わせで、テスト時に出る警告</h3>
+
+<p>個人プロジェクトのCIの結果は<a href="https://circleci.com/gh/hoshinotsuyoshi/s3_explorer/56">こちら</a>。</p>
+
+<p>rails系のgemとsimplecovで<code>::Fixnum is deprecated</code>、 <code>::Bignum is deprecated</code>という警告が出ました。</p>
+
+<p><a href="https://bugs.ruby-lang.org/issues/12005">Feature #12005: Unify Fixnum and Bignum into Integer - Ruby trunk - Ruby Issue Tracking System</a>の件です。</p>
+
+<p>simplecovは<a href="https://github.com/colszowka/simplecov/pull/523">masterでは直ってそう</a>だし、待ってれば降ってきそうだと思いました。</p>
+
+<h3 id="まとめ">まとめ</h3>
 
 <ul>
-<li><a href="http://rebuild.fm/32/#transcript">rebuild.fmのこの回</a>でも語られているが、37signalsの本はどうも説教臭いらしい。その点は我慢して読まないといけない。</li>
+<li>個人的に作ったrailsのプロジェクトのrubyのバージョンを2.4.0にし、railsも最新にしてみました。</li>
+<li>あまり面白いつまづきはありませんでした。</li>
+<li>herokuにはまだデプロイしてない。</li>
 </ul>
-
-<hr />
-
-<p>以下、個人的に響いたポイントな部分を列挙。</p>
-
-<h3 id="企業を始めよう">企業を始めよう</h3>
-
-<p>つまらない「スタートアップ」になってはならない。
-小さくていいから「企業」を始める。</p>
-
-<h3 id="時間は-つくれる">時間は、つくれる</h3>
-
-<p>一日16時間働けとは言わない。ほんの1時間、捻出するだけでいい。
-17時に帰ろう。
-徹夜なんてもってのほか。</p>
-
-<h3 id="会社を大きくしてはいけない">会社を大きくしてはいけない</h3>
-
-<p>それになんのメリットがある? 規模を拡大するような競争は、不毛だ。</p>
-
-<h3 id="マネしてはならない">マネしてはならない</h3>
-
-<p>あなたがiPodキラーをつくっても、「iPodらしさ」では決してAppleのiPodには勝てない。
-大事なのは勝負するルール(土俵)を変えることだ。</p>
-
-<h3 id="生産性を上げる">生産性を上げる</h3>
-
-<p>(まあ生産性を上げるための良い工夫が書いてある。省略)</p>
-
-<h3 id="プロダクト-製品-について">プロダクト(製品)について</h3>
-
-<p>(私は絶賛といってよいほど良かった。以下に述べる)</p>
-
-<hr />
-
-<p>プロダクト(製品)についての示唆(本の上では、「進展(progress)」の章)が、なかなかおもしろい。</p>
-
-<p>良い製品の具体例(IT分野に限らない)がどんどん出てくる。</p>
-
-<p>37signalsのCEOという、プロダクトに対するセンスを持ってそうな人が語っている部分なので、じっくり読んで考えてみたい。</p>
     </section>
 
 
@@ -237,19 +237,19 @@
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e3%80%8c%e5%b0%8f%e3%81%95%e3%81%aa%e3%83%81%e3%83%bc%e3%83%a0%e3%80%81%e5%a4%a7%e3%81%8d%e3%81%aa%e4%bb%95%e4%ba%8b%e3%80%8d%28REWORK%29%e8%aa%ad%e3%82%93%e3%81%a0&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fREWORK%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=ruby2.4%e3%81%ab%e3%81%97%e3%81%a6rails5.0.1%e3%81%ab%e3%81%97%e3%81%9f&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby24%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fREWORK%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby24%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fREWORK%2f&amp;description=%e3%80%8c%e5%b0%8f%e3%81%95%e3%81%aa%e3%83%81%e3%83%bc%e3%83%a0%e3%80%81%e5%a4%a7%e3%81%8d%e3%81%aa%e4%bb%95%e4%ba%8b%e3%80%8d%28REWORK%29%e8%aa%ad%e3%82%93%e3%81%a0"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby24%2f&amp;description=ruby2.4%e3%81%ab%e3%81%97%e3%81%a6rails5.0.1%e3%81%ab%e3%81%97%e3%81%9f"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fREWORK%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby24%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
