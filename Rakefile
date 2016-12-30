@@ -1,5 +1,9 @@
 # see https://gohugo.io/tutorials/github-pages-blog/
 
+require 'date'
+require 'fileutils'
+include FileUtils
+
 DIST  = 'dist'
 THEME = 'casper'
 
@@ -43,3 +47,15 @@ end
 # alias
 desc '(Alias)Serve html locally'
 task s: :server
+
+desc 'Duplicate the last entry'
+
+namespace :entry do
+  task :dup do
+    puts
+    last_entry = Dir['./content/post/*'].sort.last
+    dup_entry  = "./content/post/#{Date.today}_entry.md"
+    cp last_entry, dup_entry
+    puts 'copied!'
+  end
+end
