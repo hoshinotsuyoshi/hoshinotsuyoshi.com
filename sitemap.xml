@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/2017_taiga/</loc>
+    <lastmod>2016-12-31T08:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/ruby24/</loc>
     <lastmod>2016-12-25T22:30:00+09:00</lastmod>
   </url>
@@ -35,8 +40,14 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/misc/</loc>
+    <lastmod>2016-12-31T08:10:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2016-12-25T22:30:00+09:00</lastmod>
+    <lastmod>2016-12-31T08:10:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -65,7 +76,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2016-12-25T22:30:00+09:00</lastmod>
+    <lastmod>2016-12-31T08:10:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
