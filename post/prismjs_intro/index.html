@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/coy.png"/>
+    
+
+
+
+<meta name="twitter:title" content="このブログのコードのシンタックスハイライトにPrismを利用することにした"/>
+<meta name="twitter:description" content="このブログはcasper(vjeantet/hugo-theme-casper)というテーマを使っています。
+
+デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。
+
+"/>
+
+    <meta name="twitter:site" content="@hoppiestar"/>
+
+
+
+  	<meta property="og:title" content=" このブログのコードのシンタックスハイライトにPrismを利用することにした &middot;  hoshinotsuyoshi.com" />
+  	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/prismjs_intro/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2017-01-01T21:00:00&#43;09:00" />
+
+    
+    <meta property="og:article:tag" content="hugo" />
+    
+    <meta property="og:article:tag" content="ghost" />
+    
+    <meta property="og:article:tag" content="casper" />
+    
+    <meta property="og:article:tag" content="blog" />
+    
+    <meta property="og:article:tag" content="javascript" />
+    
+    
+
+    <title>
+       このブログのコードのシンタックスハイライトにPrismを利用することにした &middot;  hoshinotsuyoshi.com
+    </title>
+
+    <meta name="description" content="ブログだよ" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://hoshinotsuyoshi.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/prism.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="https://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.18" />
+
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/prismjs_intro/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-87800718-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(https://hoshinotsuyoshi.com/images/coy.png)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">このブログのコードのシンタックスハイライトにPrismを利用することにした</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2017-01-01T21:00:00&#43;09:00">
+            Jan 1, 2017
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/hugo/">#hugo</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/ghost/">#ghost</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/casper/">#casper</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/blog/">#blog</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/javascript/">#javascript</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>このブログはcasper(<a href="https://github.com/vjeantet/hugo-theme-casper">vjeantet/hugo-theme-casper</a>)というテーマを使っています。</p>
+
+<p>デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。</p>
+
+<p></p>
+
+<h2 id="prismを使ってみる">✎Prismを使ってみる</h2>
+
+<p>Prism(<a href="https://github.com/PrismJS/prism">PrismJS/prism</a>)というやつが目に止まりましたのでこれを使ってみます。</p>
+
+<p><a href="https://github.com/PrismJS/prism/blob/v1.6.0/LICENSE">MITライセンス</a>です。</p>
+
+<p>まず<a href="http://prismjs.com">http://prismjs.com</a>に訪問する。こんな↓サイトです。</p>
+
+<p><img alt="prism" src="https://hoshinotsuyoshi.com/images/prismjs.png" width=400 ></p>
+
+<p>「DOWNLOAD」ボタンを押すとこんな画面です。↓</p>
+
+<p><img alt="prism_choose" src="https://hoshinotsuyoshi.com/images/prismjs_choose.png" width=400 ></p>
+
+<p>ここで<strong>利用する言語に応じてCSSをカスタマイズすることができます。</strong></p>
+
+<p>チェックした言語がCSSに反映されるようです。</p>
+
+<p>さらに「DOWNLOAD JS」及び「DOWNLOAD CSS」ボタンを押すと、prism.jsとprism.cssが降ってきます。</p>
+
+<h2 id="casperに反映させる">✎casperに反映させる</h2>
+
+<p>どうやらcasperのコードを読むと、cssはheaderに、jsはfooterに貼れば良いっぽいので、
+近いところに貼っていきます。</p>
+
+<p>それぞれ差分はこんな感じ。</p>
+
+<h4 id="layouts-partials-footer-html">layouts/partials/footer.html</h4>
+
+<pre><code class="language-diff">diff --git a/layouts/partials/footer.html b/layouts/partials/footer.html
+index 7a19ad6..4c5f0d1 100644
+--- a/layouts/partials/footer.html
++++ b/layouts/partials/footer.html
+@@ -7,6 +7,7 @@
+     &lt;/div&gt;
+     &lt;script type=&quot;text/javascript&quot; src=&quot;{{.Site.BaseURL}}js/jquery.js&quot;&gt;&lt;/script&gt;
+     &lt;script type=&quot;text/javascript&quot; src=&quot;{{.Site.BaseURL}}js/jquery.fitvids.js&quot;&gt;&lt;/script&gt;
++    &lt;script type=&quot;text/javascript&quot; src=&quot;{{.Site.BaseURL}}js/prism.js&quot;&gt;&lt;/script&gt;
+     &lt;script type=&quot;text/javascript&quot; src=&quot;{{.Site.BaseURL}}js/index.js&quot;&gt;&lt;/script&gt;
+     {{ if .Site.Params.customFooterPartial }}
+         {{ partial .Site.Params.customFooterPartial . }}
+</code></pre>
+
+<h4 id="layouts-partials-header-html">layouts/partials/header.html</h4>
+
+<pre><code class="language-diff">diff --git a/layouts/partials/header.html b/layouts/partials/header.html
+index d17b5df..6709e1c 100644
+--- a/layouts/partials/header.html
++++ b/layouts/partials/header.html
+@@ -37,6 +37,7 @@
+ 
+     &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;{{.Site.BaseURL}}css/screen.css&quot; /&gt;
+     &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;{{.Site.BaseURL}}css/nav.css&quot; /&gt;
++    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;{{.Site.BaseURL}}css/prism.css&quot; /&gt;
+     &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata&quot; /&gt;
+ 
+ 
+</code></pre>
+
+<p>コミットはこちらです。</p>
+
+<p><blockquote class="embedly-card" data-card-key="6f257114b6df4413a3f5872a7e143278" data-card-type="article"><h4><a href="https://github.com/hoshinotsuyoshi/hugo-theme-casper/commit/e73abaa1dd93313836bc9e07bd68ce21bfd8c420"><a href="http://prismjs.com/download.html">http://prismjs.com/download.html</a> で取得した jsとcssをセットした · hoshinotsuyoshi/hugo-theme-casper@e73abaa</a></h4><p>Coy tshedor 3.93KB Markup 0.82KB CSS 0.99KB C-like 0.68KB JavaScript 1.3KB Go arnehormann 0.67KB Bash zeitgeist 872.76KB C zeitgeist 870.94KB Ruby samflores 2KB YAML hason 1.14KB Ruby samflore&hellip;</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<h2 id="シンタックスハイライトが効いた">✎シンタックスハイライトが効いた!</h2>
+
+<h3 id="before">before↓</h3>
+
+<p><img alt="before" src="https://hoshinotsuyoshi.com/images/highlight_before.png" width=400 ></p>
+
+<h3 id="after">after↓</h3>
+
+<p><img alt="after" src="https://hoshinotsuyoshi.com/images/highlight_after.png" width=400 ></p>
+
+<h2 id="まとめ">✎まとめ</h2>
+
+<p>シンタックスハイライトを手に入れることができました! 🎉</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="https://hoshinotsuyoshi.com/" style="background-image: url(https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>web application engineer</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e3%81%93%e3%81%ae%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ae%e3%82%b3%e3%83%bc%e3%83%89%e3%81%ae%e3%82%b7%e3%83%b3%e3%82%bf%e3%83%83%e3%82%af%e3%82%b9%e3%83%8f%e3%82%a4%e3%83%a9%e3%82%a4%e3%83%88%e3%81%abPrism%e3%82%92%e5%88%a9%e7%94%a8%e3%81%99%e3%82%8b%e3%81%93%e3%81%a8%e3%81%ab%e3%81%97%e3%81%9f&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fprismjs_intro%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fprismjs_intro%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fprismjs_intro%2f&amp;description=%e3%81%93%e3%81%ae%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ae%e3%82%b3%e3%83%bc%e3%83%89%e3%81%ae%e3%82%b7%e3%83%b3%e3%82%bf%e3%83%83%e3%82%af%e3%82%b9%e3%83%8f%e3%82%a4%e3%83%a9%e3%82%a4%e3%83%88%e3%81%abPrism%e3%82%92%e5%88%a9%e7%94%a8%e3%81%99%e3%82%8b%e3%81%93%e3%81%a8%e3%81%ab%e3%81%97%e3%81%9f"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fprismjs_intro%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">hoshinotsuyoshi.com</a> All rights reserved - 2016</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/prism.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/index.js"></script>
+    
+</body>
+</html>
+

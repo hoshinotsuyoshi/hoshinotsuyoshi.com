@@ -10,6 +10,97 @@
     <atom:link href="https://hoshinotsuyoshi.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>このブログのコードのシンタックスハイライトにPrismを利用することにした</title>
+      <link>https://hoshinotsuyoshi.com/post/prismjs_intro/</link>
+      <pubDate>Sun, 01 Jan 2017 21:00:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/prismjs_intro/</guid>
+      <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。&lt;/p&gt;
+
+&lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;prismを使ってみる&#34;&gt;✎Prismを使ってみる&lt;/h2&gt;
+
+&lt;p&gt;Prism(&lt;a href=&#34;https://github.com/PrismJS/prism&#34;&gt;PrismJS/prism&lt;/a&gt;)というやつが目に止まりましたのでこれを使ってみます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/PrismJS/prism/blob/v1.6.0/LICENSE&#34;&gt;MITライセンス&lt;/a&gt;です。&lt;/p&gt;
+
+&lt;p&gt;まず&lt;a href=&#34;http://prismjs.com&#34;&gt;http://prismjs.com&lt;/a&gt;に訪問する。こんな↓サイトです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;prism&#34; src=&#34;https://hoshinotsuyoshi.com/images/prismjs.png&#34; width=400 &gt;&lt;/p&gt;
+
+&lt;p&gt;「DOWNLOAD」ボタンを押すとこんな画面です。↓&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;prism_choose&#34; src=&#34;https://hoshinotsuyoshi.com/images/prismjs_choose.png&#34; width=400 &gt;&lt;/p&gt;
+
+&lt;p&gt;ここで&lt;strong&gt;利用する言語に応じてCSSをカスタマイズすることができます。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;チェックした言語がCSSに反映されるようです。&lt;/p&gt;
+
+&lt;p&gt;さらに「DOWNLOAD JS」及び「DOWNLOAD CSS」ボタンを押すと、prism.jsとprism.cssが降ってきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;casperに反映させる&#34;&gt;✎casperに反映させる&lt;/h2&gt;
+
+&lt;p&gt;どうやらcasperのコードを読むと、cssはheaderに、jsはfooterに貼れば良いっぽいので、
+近いところに貼っていきます。&lt;/p&gt;
+
+&lt;p&gt;それぞれ差分はこんな感じ。&lt;/p&gt;
+
+&lt;h4 id=&#34;layouts-partials-footer-html&#34;&gt;layouts/partials/footer.html&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;diff --git a/layouts/partials/footer.html b/layouts/partials/footer.html
+index 7a19ad6..4c5f0d1 100644
+--- a/layouts/partials/footer.html
++++ b/layouts/partials/footer.html
+@@ -7,6 +7,7 @@
+     &amp;lt;/div&amp;gt;
+     &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/jquery.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+     &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/jquery.fitvids.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
++    &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/prism.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+     &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/index.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+     {{ if .Site.Params.customFooterPartial }}
+         {{ partial .Site.Params.customFooterPartial . }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;layouts-partials-header-html&#34;&gt;layouts/partials/header.html&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;diff --git a/layouts/partials/header.html b/layouts/partials/header.html
+index d17b5df..6709e1c 100644
+--- a/layouts/partials/header.html
++++ b/layouts/partials/header.html
+@@ -37,6 +37,7 @@
+ 
+     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;{{.Site.BaseURL}}css/screen.css&amp;quot; /&amp;gt;
+     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;{{.Site.BaseURL}}css/nav.css&amp;quot; /&amp;gt;
++    &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;{{.Site.BaseURL}}css/prism.css&amp;quot; /&amp;gt;
+     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata&amp;quot; /&amp;gt;
+ 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;コミットはこちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/hoshinotsuyoshi/hugo-theme-casper/commit/e73abaa1dd93313836bc9e07bd68ce21bfd8c420&#34;&gt;&lt;a href=&#34;http://prismjs.com/download.html&#34;&gt;http://prismjs.com/download.html&lt;/a&gt; で取得した jsとcssをセットした · hoshinotsuyoshi/hugo-theme-casper@e73abaa&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Coy tshedor 3.93KB Markup 0.82KB CSS 0.99KB C-like 0.68KB JavaScript 1.3KB Go arnehormann 0.67KB Bash zeitgeist 872.76KB C zeitgeist 870.94KB Ruby samflores 2KB YAML hason 1.14KB Ruby samflore&amp;hellip;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;シンタックスハイライトが効いた&#34;&gt;✎シンタックスハイライトが効いた!&lt;/h2&gt;
+
+&lt;h3 id=&#34;before&#34;&gt;before↓&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt=&#34;before&#34; src=&#34;https://hoshinotsuyoshi.com/images/highlight_before.png&#34; width=400 &gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;after&#34;&gt;after↓&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt=&#34;after&#34; src=&#34;https://hoshinotsuyoshi.com/images/highlight_after.png&#34; width=400 &gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h2&gt;
+
+&lt;p&gt;シンタックスハイライトを手に入れることができました! 🎉&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</title>
       <link>https://hoshinotsuyoshi.com/post/deploy_this_blog/</link>
       <pubDate>Wed, 23 Nov 2016 13:00:00 +0900</pubDate>
