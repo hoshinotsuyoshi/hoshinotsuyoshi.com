@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/komainu.jpg"/>
+    
+
+
+
+<meta name="twitter:title" content="メソッドが定義された場所を調べる"/>
+<meta name="twitter:description" content="rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。
+
+"/>
+
+    <meta name="twitter:site" content="@hoppiestar"/>
+
+
+
+  	<meta property="og:title" content=" メソッドが定義された場所を調べる &middot;  hoshinotsuyoshi.com" />
+  	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/method_source_location/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2017-01-01T15:10:00&#43;09:00" />
+
+    
+    <meta property="og:article:tag" content="ruby" />
+    
+    <meta property="og:article:tag" content="rails" />
+    
+    
+
+    <title>
+       メソッドが定義された場所を調べる &middot;  hoshinotsuyoshi.com
+    </title>
+
+    <meta name="description" content="ブログだよ" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://hoshinotsuyoshi.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="https://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.18" />
+
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/method_source_location/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-87800718-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(https://hoshinotsuyoshi.com/images/komainu.jpg)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">メソッドが定義された場所を調べる</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2017-01-01T15:10:00&#43;09:00">
+            Jan 1, 2017
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/rails/">#rails</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。</p>
+
+<p></p>
+
+<p>includeだのprependだのが使われていると追いにくかったり、、</p>
+
+<h2 id="pryを使う場合-show-methodを使う">pryを使う場合: show-methodを使う</h2>
+
+<p>使い方: rails cした後に <code>show-method [メソッド名]</code> と入力します。</p>
+
+<pre><code class="language-ruby">[/Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer]$ bin/rails c
+Running via Spring preloader in process 41502
+Loading development environment (Rails 5.0.1)
+[1] pry(main)&gt; show-method ''.to_json
+
+From: /Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/object/json.rb @line 31:
+Owner: ActiveSupport::ToJsonWithActiveSupportEncoder
+Visibility: public
+Number of lines: 9
+
+def to_json(options = nil)
+  if options.is_a?(::JSON::State)
+    # Called from JSON.{generate,dump}, forward it to JSON gem's to_json
+    super(options)
+  else
+    # to_json is being invoked directly, use ActiveSupport's encoder
+    ActiveSupport::JSON.encode(self, options)
+  end
+end
+</code></pre>
+
+<p>おすすめです。</p>
+
+<h2 id="pryを使う場合-rubyのcoreで実装されたメソッドも">pryを使う場合: RubyのCoreで実装されたメソッドも。</h2>
+
+<p>RubyのCoreで実装されたメソッドの場合は、</p>
+
+<pre><code class="language-ruby">[1] pry(main)&gt; show-method [].select
+Error: Cannot locate this method: select. Try `gem-install pry-doc` to get access to Ruby Core documentation.
+</code></pre>
+
+<p>とエラーになってしまうので、<code>pry-doc</code> gemを入れます。</p>
+
+<p>Gemfileに<code>pry-doc</code>を追加して利用します。</p>
+
+<p>追加した後に実行するとCのコードが吐かれる。</p>
+
+<pre><code class="language-c">[1] pry(main)&gt; show-method [].select
+
+From: array.c (C Method):
+Owner: Array
+Visibility: public
+Number of lines: 15
+
+static VALUE
+rb_ary_select(VALUE ary)
+{
+    VALUE result;
+    long i;
+
+    RETURN_SIZED_ENUMERATOR(ary, 0, 0, ary_enum_length);
+    result = rb_ary_new2(RARRAY_LEN(ary));
+    for (i = 0; i &lt; RARRAY_LEN(ary); i++) {
+        if (RTEST(rb_yield(RARRAY_AREF(ary, i)))) {
+            rb_ary_push(result, rb_ary_elt(ary, i));
+        }
+    }
+    return result;
+}
+</code></pre>
+
+<h2 id="pryを使わない場合-method-source-locationを使う">pryを使わない場合: Method#source_locationを使う</h2>
+
+<p>rubyにはメソッドをオブジェクト化したクラス <code>Method</code> クラスがあります。</p>
+
+<p>.method(:メソッド名)でメソッドが取り出せます。</p>
+
+<p>Methodクラスには source_locationというメソッドがあるので、これで該当ファイル・行数を表示することができます。</p>
+
+<pre><code class="language-ruby">[/Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer]$ bin/rails c
+Running via Spring preloader in process 43885
+Loading development environment (Rails 5.0.1)
+[1] pry(main)&gt; ''.method(:to_json)
+=&gt; #&lt;Method: String(ActiveSupport::ToJsonWithActiveSupportEncoder)#to_json&gt;
+[2] pry(main)&gt; ''.method(:to_json).source_location
+=&gt; [&quot;/Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/object/json.rb&quot;, 31]
+</code></pre>
+
+<p>余談ですが、Methodクラスにはおもしろメソッドがいっぱいあって楽しいです。</p>
+
+<ul>
+<li>Method#parameters
+
+<ul>
+<li>Method オブジェクトの引数の情報を返します。</li>
+</ul></li>
+<li>Method#unbind
+
+<ul>
+<li>self のレシーバとの関連を取り除いた UnboundMethod オブ ジェクトを生成して返します。</li>
+</ul></li>
+<li>Method#super_method
+
+<ul>
+<li>super を実行した際に実行されるメソッドを Method オブジェ クトにして返します。</li>
+</ul></li>
+<li>Method#arity
+
+<ul>
+<li>メソッドが受け付ける引数の数を返します。可変長の場合は負の値が返る。</li>
+</ul></li>
+<li>Method#curry
+
+<ul>
+<li>self を元にカリー化した Proc を返します。</li>
+</ul></li>
+<li>Method#owner
+
+<ul>
+<li>このメソッドが定義されている class か module を返します。</li>
+</ul></li>
+<li>Method#receiver
+
+<ul>
+<li>このメソッドオブジェクトのレシーバを返します。</li>
+</ul></li>
+</ul>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+<li><a href="https://github.com/pry/pry/wiki/Source-browsing#Show_method">Source browsing · pry_pry Wiki</a></li>
+<li><a href="https://docs.ruby-lang.org/ja/latest/method/Method/i/source_location.html">instance method Method#source_location (Ruby 2.4.0)</a></li>
+</ul>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>pry全然使いこなせていないので、使っていきたいですね</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="https://hoshinotsuyoshi.com/" style="background-image: url(https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>web application engineer</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e3%83%a1%e3%82%bd%e3%83%83%e3%83%89%e3%81%8c%e5%ae%9a%e7%be%a9%e3%81%95%e3%82%8c%e3%81%9f%e5%a0%b4%e6%89%80%e3%82%92%e8%aa%bf%e3%81%b9%e3%82%8b&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fmethod_source_location%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fmethod_source_location%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fmethod_source_location%2f&amp;description=%e3%83%a1%e3%82%bd%e3%83%83%e3%83%89%e3%81%8c%e5%ae%9a%e7%be%a9%e3%81%95%e3%82%8c%e3%81%9f%e5%a0%b4%e6%89%80%e3%82%92%e8%aa%bf%e3%81%b9%e3%82%8b"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fmethod_source_location%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">hoshinotsuyoshi.com</a> All rights reserved - 2016</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/index.js"></script>
+    
+</body>
+</html>
+

@@ -10,6 +10,152 @@
     <atom:link href="https://hoshinotsuyoshi.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>メソッドが定義された場所を調べる</title>
+      <link>https://hoshinotsuyoshi.com/post/method_source_location/</link>
+      <pubDate>Sun, 01 Jan 2017 15:10:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/method_source_location/</guid>
+      <description>&lt;p&gt;rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;includeだのprependだのが使われていると追いにくかったり、、&lt;/p&gt;
+
+&lt;h2 id=&#34;pryを使う場合-show-methodを使う&#34;&gt;pryを使う場合: show-methodを使う&lt;/h2&gt;
+
+&lt;p&gt;使い方: rails cした後に &lt;code&gt;show-method [メソッド名]&lt;/code&gt; と入力します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;[/Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer]$ bin/rails c
+Running via Spring preloader in process 41502
+Loading development environment (Rails 5.0.1)
+[1] pry(main)&amp;gt; show-method &#39;&#39;.to_json
+
+From: /Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/object/json.rb @line 31:
+Owner: ActiveSupport::ToJsonWithActiveSupportEncoder
+Visibility: public
+Number of lines: 9
+
+def to_json(options = nil)
+  if options.is_a?(::JSON::State)
+    # Called from JSON.{generate,dump}, forward it to JSON gem&#39;s to_json
+    super(options)
+  else
+    # to_json is being invoked directly, use ActiveSupport&#39;s encoder
+    ActiveSupport::JSON.encode(self, options)
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;おすすめです。&lt;/p&gt;
+
+&lt;h2 id=&#34;pryを使う場合-rubyのcoreで実装されたメソッドも&#34;&gt;pryを使う場合: RubyのCoreで実装されたメソッドも。&lt;/h2&gt;
+
+&lt;p&gt;RubyのCoreで実装されたメソッドの場合は、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;[1] pry(main)&amp;gt; show-method [].select
+Error: Cannot locate this method: select. Try `gem-install pry-doc` to get access to Ruby Core documentation.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;とエラーになってしまうので、&lt;code&gt;pry-doc&lt;/code&gt; gemを入れます。&lt;/p&gt;
+
+&lt;p&gt;Gemfileに&lt;code&gt;pry-doc&lt;/code&gt;を追加して利用します。&lt;/p&gt;
+
+&lt;p&gt;追加した後に実行するとCのコードが吐かれる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;[1] pry(main)&amp;gt; show-method [].select
+
+From: array.c (C Method):
+Owner: Array
+Visibility: public
+Number of lines: 15
+
+static VALUE
+rb_ary_select(VALUE ary)
+{
+    VALUE result;
+    long i;
+
+    RETURN_SIZED_ENUMERATOR(ary, 0, 0, ary_enum_length);
+    result = rb_ary_new2(RARRAY_LEN(ary));
+    for (i = 0; i &amp;lt; RARRAY_LEN(ary); i++) {
+        if (RTEST(rb_yield(RARRAY_AREF(ary, i)))) {
+            rb_ary_push(result, rb_ary_elt(ary, i));
+        }
+    }
+    return result;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;pryを使わない場合-method-source-locationを使う&#34;&gt;pryを使わない場合: Method#source_locationを使う&lt;/h2&gt;
+
+&lt;p&gt;rubyにはメソッドをオブジェクト化したクラス &lt;code&gt;Method&lt;/code&gt; クラスがあります。&lt;/p&gt;
+
+&lt;p&gt;.method(:メソッド名)でメソッドが取り出せます。&lt;/p&gt;
+
+&lt;p&gt;Methodクラスには source_locationというメソッドがあるので、これで該当ファイル・行数を表示することができます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;[/Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer]$ bin/rails c
+Running via Spring preloader in process 43885
+Loading development environment (Rails 5.0.1)
+[1] pry(main)&amp;gt; &#39;&#39;.method(:to_json)
+=&amp;gt; #&amp;lt;Method: String(ActiveSupport::ToJsonWithActiveSupportEncoder)#to_json&amp;gt;
+[2] pry(main)&amp;gt; &#39;&#39;.method(:to_json).source_location
+=&amp;gt; [&amp;quot;/Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/object/json.rb&amp;quot;, 31]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;余談ですが、Methodクラスにはおもしろメソッドがいっぱいあって楽しいです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Method#parameters
+
+&lt;ul&gt;
+&lt;li&gt;Method オブジェクトの引数の情報を返します。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Method#unbind
+
+&lt;ul&gt;
+&lt;li&gt;self のレシーバとの関連を取り除いた UnboundMethod オブ ジェクトを生成して返します。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Method#super_method
+
+&lt;ul&gt;
+&lt;li&gt;super を実行した際に実行されるメソッドを Method オブジェ クトにして返します。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Method#arity
+
+&lt;ul&gt;
+&lt;li&gt;メソッドが受け付ける引数の数を返します。可変長の場合は負の値が返る。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Method#curry
+
+&lt;ul&gt;
+&lt;li&gt;self を元にカリー化した Proc を返します。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Method#owner
+
+&lt;ul&gt;
+&lt;li&gt;このメソッドが定義されている class か module を返します。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Method#receiver
+
+&lt;ul&gt;
+&lt;li&gt;このメソッドオブジェクトのレシーバを返します。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pry/pry/wiki/Source-browsing#Show_method&#34;&gt;Source browsing · pry_pry Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ruby-lang.org/ja/latest/method/Method/i/source_location.html&#34;&gt;instance method Method#source_location (Ruby 2.4.0)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;pry全然使いこなせていないので、使っていきたいですね&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>ruby2.4にしてrails5.0.1にした</title>
       <link>https://hoshinotsuyoshi.com/post/ruby24/</link>
       <pubDate>Sun, 25 Dec 2016 22:30:00 +0900</pubDate>
