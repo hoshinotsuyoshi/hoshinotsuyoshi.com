@@ -1,7 +1,7 @@
 baseurl = "https://hoshinotsuyoshi.com/"
 languageCode = "ja-jp"
 title = "hoshinotsuyoshi.com"
-paginate = 5
+paginate = 20
 # DisqusShortname = "YOUR_SHORT_NAME_HERE"
 Copyright = "All rights reserved - 2016"
 canonifyurls = true
@@ -12,7 +12,7 @@ canonifyurls = true
   author = "hoshinotsuyoshi"
   authorlocation = "Tokyo, Japan"
   authorwebsite = "https://hoshinotsuyoshi.com"
-  bio= "web application engineer"
+  bio= "星野剛志(ほしのつよし) web application engineer. ruby/rails/docker/git"
   logo = "images/hoshinotsuyoshi.png"
   googleAnalyticsUserID = "UA-87800718-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
