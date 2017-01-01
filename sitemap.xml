@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/favicons_zip/</loc>
+    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/prismjs_intro/</loc>
     <lastmod>2017-01-01T21:00:00+09:00</lastmod>
   </url>
@@ -32,20 +37,37 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/father_engineer_2016/</loc>
+    <lastmod>2016-03-02T21:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/blog/</loc>
-    <lastmod>2017-01-01T21:00:00+09:00</lastmod>
+    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/casper/</loc>
-    <lastmod>2017-01-01T21:00:00+09:00</lastmod>
+    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/engineer/</loc>
+    <lastmod>2016-03-02T21:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/favicon/</loc>
+    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ghost/</loc>
-    <lastmod>2017-01-01T21:00:00+09:00</lastmod>
+    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,13 +79,19 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/hugo/</loc>
-    <lastmod>2017-01-01T21:00:00+09:00</lastmod>
+    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/javascript/</loc>
     <lastmod>2017-01-01T21:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/life/</loc>
+    <lastmod>2016-03-02T21:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -75,13 +103,19 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2017-01-01T21:00:00+09:00</lastmod>
+    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rails/</loc>
     <lastmod>2017-01-01T15:10:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/remote/</loc>
+    <lastmod>2016-03-02T21:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -104,7 +138,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2017-01-01T21:00:00+09:00</lastmod>
+    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
