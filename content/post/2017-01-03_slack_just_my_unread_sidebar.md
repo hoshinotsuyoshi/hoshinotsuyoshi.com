@@ -1,7 +1,7 @@
 +++
 date = "2017-01-03T22:00:00+09:00"
 draft = false
-title = "♯slackで未読チャネルだけをサイドバーに表示して生産性を上げる💪"
+title = "♯slackで、サイドバーに表示するのは未読チャネルだけにする。生産性💪"
 slug = "slack_just_my_unread_sidebar"
 tags = ["productivity","slack"]
 image = "images/slack_display.png"
