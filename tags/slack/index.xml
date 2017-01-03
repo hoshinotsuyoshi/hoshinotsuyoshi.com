@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slack on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/slack/index.xml</link>
+    <description>Recent content in Slack on hoshinotsuyoshi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <atom:link href="https://hoshinotsuyoshi.com/tags/slack/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>♯slackで未読チャネルだけをサイドバーに表示して生産性を上げる💪</title>
+      <link>https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/</link>
+      <pubDate>Tue, 03 Jan 2017 22:00:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/</guid>
+      <description>&lt;p&gt;あけましておめでとうございます。🎍&lt;/p&gt;
+
+&lt;p&gt;お正月といえば生産性ですね。&lt;/p&gt;
+
+&lt;p&gt;slackを眺める時間を抑制して生産性上げていきましょう💪&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;サイドバーに表示するチャネルを少なくする&#34;&gt;♯サイドバーに表示するチャネルを少なくする&lt;/h3&gt;
+
+&lt;p&gt;このメニューから&lt;code&gt;Preferences&lt;/code&gt;を選択。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/slack_popup.png&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Advanced&lt;/code&gt;から、&lt;code&gt;Just my unread channels and DMs&lt;/code&gt;を選択。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/slack_preference.png&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;未読のチャネルだけが表示されるようになります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/slack_sidebar.png&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;すっきりですね。&lt;/p&gt;
+
+&lt;p&gt;まだ試していませんが、これで1月は試してみようと思います。&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;生産性上げてこ💪&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
