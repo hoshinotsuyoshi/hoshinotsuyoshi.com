@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rake on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/rake/index.xml</link>
+    <description>Recent content in Rake on hoshinotsuyoshi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <atom:link href="https://hoshinotsuyoshi.com/tags/rake/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>このブログの記事の土台を生成するrakeタスクを作った</title>
+      <link>https://hoshinotsuyoshi.com/post/rake_entry_new/</link>
+      <pubDate>Wed, 04 Jan 2017 23:25:39 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/rake_entry_new/</guid>
+      <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;このブログで記事を書き始めるまでの作業&#34;&gt;このブログで記事を書き始めるまでの作業&lt;/h3&gt;
+
+&lt;p&gt;１. 前の記事をコピーして&lt;code&gt;content/post/yyyy-mm-dd_slug名.md&lt;/code&gt;の形で保存。&lt;/p&gt;
+
+&lt;p&gt;２. このへん↓のメタ情報を編集して&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
+date = &amp;quot;2017-01-04T23:21:39+09:00&amp;quot;
+draft = false
+title = &amp;quot;記事のひな形から記事の土台を生成するrakeタスクを作った&amp;quot;
+slug = &amp;quot;rake_entry_new&amp;quot;
+tags = [&amp;quot;hugo&amp;quot;,&amp;quot;blog&amp;quot;]
+image = &amp;quot;images/blog_mvim.png&amp;quot;
+
++++
+(...ここから記事本文...)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;３. 記事本文を書き始める&lt;/p&gt;
+
+&lt;p&gt;という流れでした。いろいろとめんどい💦&lt;/p&gt;
+
+&lt;p&gt;1と2の作業は、slugさえ決まれば自動的に決まります。
+あと、時刻とかも自動的に挿入できそうです。
+このへんを自動化してみました。&lt;/p&gt;
+
+&lt;h3 id=&#34;記事のひな形とrakeタスクを作った&#34;&gt;記事のひな形とRakeタスクを作った&lt;/h3&gt;
+
+&lt;h4 id=&#34;記事のひな形&#34;&gt;記事のひな形&lt;/h4&gt;
+
+&lt;p&gt;今まで前の記事をコピーしていたので、ひな形は作っていなかったのですが、
+今回作りました。こんな形です。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
+date = &amp;quot;&amp;lt;%= (Time.now + 2*60*60).iso8601 %&amp;gt;&amp;quot;
+draft = false
+title = &amp;quot;テンプレです💪&amp;quot;
+slug = &amp;quot;&amp;lt;%= @slug %&amp;gt;&amp;quot;
+tags = [&amp;quot;tag1&amp;quot;,&amp;quot;tag2&amp;quot;]
+image = &amp;quot;images/slack_display.png&amp;quot;
+
++++
+
+見出し文
+
+&amp;lt;!--more--&amp;gt;
+
+### h3
+
+imgタグ例
+&amp;lt;img alt=&amp;quot;slack&amp;quot; src=&amp;quot;/images/slack_sidebar.png&amp;quot; width=400&amp;gt;
+
+### ✎まとめ
+
+* まとめ内容です
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;Time#iso8601&lt;/code&gt;を使っているのがミソ(死語)です。&lt;/p&gt;
+
+&lt;p&gt;ちょうど&amp;rdquo;2017-01-04T23:21:39+09:00&amp;rdquo; というフォーマットで出力してくれます💪&lt;/p&gt;
+
+&lt;p&gt;ちなみに&lt;code&gt;Time#iso8601&lt;/code&gt;は、&lt;code&gt;require &#39;time&#39;&lt;/code&gt;しないと使えません。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Time&lt;/code&gt;クラスは、&lt;code&gt;require &#39;time&#39;&lt;/code&gt;する場合としない場合で挙動が変わる、珍しいクラスです。知ってたかい！ 詳しくは&lt;a href=&#34;https://docs.ruby-lang.org/ja/latest/library/time.html&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h4 id=&#34;rakeタスク&#34;&gt;Rakeタスク&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;@slug&lt;/code&gt;というインスタンス変数経由でmarkdownにslugを渡します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# Rakefile
+namespace :entry do
+  desc &#39;Put a new entry&#39;
+  task :new, &#39;title&#39;
+  task :new do |task, args|
+    puts
+    template = ERB.new(File.read(&#39;entry_template.md.erb&#39;))
+    @slug = args[&#39;title&#39;] || &#39;slug&#39;
+    File.write(
+      &amp;quot;./content/post/#{Date.today}_#{@slug}.md&amp;quot;,
+      template.result
+    )
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;このrakeタスクの使い方&#34;&gt;このRakeタスクの使い方&lt;/h4&gt;
+
+&lt;p&gt;つまり&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ rake &#39;entry:new[hoge]&#39;&lt;/code&gt;とやると&lt;code&gt;content/post/2017-01-04_hoge.md&lt;/code&gt;というファイルが自動生成され、メタ情報のslugにも&lt;code&gt;hoge&lt;/code&gt;がセットされます💪。&lt;/p&gt;
+
+&lt;p&gt;これで記事を書く手間が少し減りました☺&lt;/p&gt;
+
+&lt;p&gt;ところで、こういうふうに、 &lt;strong&gt;rakeタスクには引数が渡せるんだよ&lt;/strong&gt;。知ってたかい。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;[&lt;/code&gt;がシェル的に解釈されちゃう問題があるのでシングルクオートで括る必要がありますが。&lt;/p&gt;
+
+&lt;p&gt;(これがダサいと考える派の人は環境変数使うんだろうなと思います)&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
+
+&lt;p&gt;rakeタスクに引数、使っていこうな()&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

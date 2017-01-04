@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/blog_mvim.png"/>
+    
+
+
+
+<meta name="twitter:title" content="このブログの記事の土台を生成するrakeタスクを作った"/>
+<meta name="twitter:description" content="少しでも記事を書くのをラクにする試みです。
+
+"/>
+
+    <meta name="twitter:site" content="@hoppiestar"/>
+
+
+
+  	<meta property="og:title" content=" このブログの記事の土台を生成するrakeタスクを作った &middot;  hoshinotsuyoshi.com" />
+  	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/rake_entry_new/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2017-01-04T23:25:39&#43;09:00" />
+
+    
+    <meta property="og:article:tag" content="hugo" />
+    
+    <meta property="og:article:tag" content="blog" />
+    
+    <meta property="og:article:tag" content="ruby" />
+    
+    <meta property="og:article:tag" content="rake" />
+    
+    
+
+    <title>
+       このブログの記事の土台を生成するrakeタスクを作った &middot;  hoshinotsuyoshi.com
+    </title>
+
+    <meta name="description" content="ブログだよ" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://hoshinotsuyoshi.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://hoshinotsuyoshi.com/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://hoshinotsuyoshi.com/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://hoshinotsuyoshi.com/manifest.json">
+    <link rel="mask-icon" href="https://hoshinotsuyoshi.com/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    
+
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/prism.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="https://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.18" />
+
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/rake_entry_new/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-87800718-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(https://hoshinotsuyoshi.com/images/blog_mvim.png)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">このブログの記事の土台を生成するrakeタスクを作った</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2017-01-04T23:25:39&#43;09:00">
+            Jan 4, 2017
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/hugo/">#hugo</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/blog/">#blog</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/rake/">#rake</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>少しでも記事を書くのをラクにする試みです。</p>
+
+<p></p>
+
+<h3 id="このブログで記事を書き始めるまでの作業">このブログで記事を書き始めるまでの作業</h3>
+
+<p>１. 前の記事をコピーして<code>content/post/yyyy-mm-dd_slug名.md</code>の形で保存。</p>
+
+<p>２. このへん↓のメタ情報を編集して</p>
+
+<pre><code class="language-markdown">+++
+date = &quot;2017-01-04T23:21:39+09:00&quot;
+draft = false
+title = &quot;記事のひな形から記事の土台を生成するrakeタスクを作った&quot;
+slug = &quot;rake_entry_new&quot;
+tags = [&quot;hugo&quot;,&quot;blog&quot;]
+image = &quot;images/blog_mvim.png&quot;
+
++++
+(...ここから記事本文...)
+</code></pre>
+
+<p>３. 記事本文を書き始める</p>
+
+<p>という流れでした。いろいろとめんどい💦</p>
+
+<p>1と2の作業は、slugさえ決まれば自動的に決まります。
+あと、時刻とかも自動的に挿入できそうです。
+このへんを自動化してみました。</p>
+
+<h3 id="記事のひな形とrakeタスクを作った">記事のひな形とRakeタスクを作った</h3>
+
+<h4 id="記事のひな形">記事のひな形</h4>
+
+<p>今まで前の記事をコピーしていたので、ひな形は作っていなかったのですが、
+今回作りました。こんな形です。</p>
+
+<pre><code class="language-markdown">+++
+date = &quot;&lt;%= (Time.now + 2*60*60).iso8601 %&gt;&quot;
+draft = false
+title = &quot;テンプレです💪&quot;
+slug = &quot;&lt;%= @slug %&gt;&quot;
+tags = [&quot;tag1&quot;,&quot;tag2&quot;]
+image = &quot;images/slack_display.png&quot;
+
++++
+
+見出し文
+
+&lt;!--more--&gt;
+
+### h3
+
+imgタグ例
+&lt;img alt=&quot;slack&quot; src=&quot;/images/slack_sidebar.png&quot; width=400&gt;
+
+### ✎まとめ
+
+* まとめ内容です
+
+</code></pre>
+
+<p><code>Time#iso8601</code>を使っているのがミソ(死語)です。</p>
+
+<p>ちょうど&rdquo;2017-01-04T23:21:39+09:00&rdquo; というフォーマットで出力してくれます💪</p>
+
+<p>ちなみに<code>Time#iso8601</code>は、<code>require 'time'</code>しないと使えません。</p>
+
+<p><code>Time</code>クラスは、<code>require 'time'</code>する場合としない場合で挙動が変わる、珍しいクラスです。知ってたかい！ 詳しくは<a href="https://docs.ruby-lang.org/ja/latest/library/time.html">こちら</a>。</p>
+
+<h4 id="rakeタスク">Rakeタスク</h4>
+
+<p><code>@slug</code>というインスタンス変数経由でmarkdownにslugを渡します。</p>
+
+<pre><code class="language-ruby"># Rakefile
+namespace :entry do
+  desc 'Put a new entry'
+  task :new, 'title'
+  task :new do |task, args|
+    puts
+    template = ERB.new(File.read('entry_template.md.erb'))
+    @slug = args['title'] || 'slug'
+    File.write(
+      &quot;./content/post/#{Date.today}_#{@slug}.md&quot;,
+      template.result
+    )
+  end
+end
+</code></pre>
+
+<h4 id="このrakeタスクの使い方">このRakeタスクの使い方</h4>
+
+<p>つまり</p>
+
+<p><code>$ rake 'entry:new[hoge]'</code>とやると<code>content/post/2017-01-04_hoge.md</code>というファイルが自動生成され、メタ情報のslugにも<code>hoge</code>がセットされます💪。</p>
+
+<p>これで記事を書く手間が少し減りました☺</p>
+
+<p>ところで、こういうふうに、 <strong>rakeタスクには引数が渡せるんだよ</strong>。知ってたかい。</p>
+
+<p><code>[</code>がシェル的に解釈されちゃう問題があるのでシングルクオートで括る必要がありますが。</p>
+
+<p>(これがダサいと考える派の人は環境変数使うんだろうなと思います)</p>
+
+<h3 id="まとめ">✎まとめ</h3>
+
+<p>rakeタスクに引数、使っていこうな()</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="https://hoshinotsuyoshi.com/" style="background-image: url(https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>星野剛志(ほしのつよし) web application engineer. ruby/rails/docker/git</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e3%81%93%e3%81%ae%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ae%e8%a8%98%e4%ba%8b%e3%81%ae%e5%9c%9f%e5%8f%b0%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8brake%e3%82%bf%e3%82%b9%e3%82%af%e3%82%92%e4%bd%9c%e3%81%a3%e3%81%9f&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frake_entry_new%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frake_entry_new%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frake_entry_new%2f&amp;description=%e3%81%93%e3%81%ae%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ae%e8%a8%98%e4%ba%8b%e3%81%ae%e5%9c%9f%e5%8f%b0%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8brake%e3%82%bf%e3%82%b9%e3%82%af%e3%82%92%e4%bd%9c%e3%81%a3%e3%81%9f"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frake_entry_new%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">hoshinotsuyoshi.com</a> All rights reserved - 2016</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/prism.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/index.js"></script>
+    
+</body>
+</html>
+

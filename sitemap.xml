@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/rake_entry_new/</loc>
+    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/</loc>
     <lastmod>2017-01-03T22:00:00+09:00</lastmod>
   </url>
@@ -59,7 +64,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/blog/</loc>
-    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
+    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -95,7 +100,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/hugo/</loc>
-    <lastmod>2017-01-02T08:30:00+09:00</lastmod>
+    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -119,7 +124,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2017-01-03T22:00:00+09:00</lastmod>
+    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -132,6 +137,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rails/</loc>
     <lastmod>2017-01-01T15:10:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/rake/</loc>
+    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -149,7 +160,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
-    <lastmod>2017-01-01T15:10:00+09:00</lastmod>
+    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -172,7 +183,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2017-01-03T22:00:00+09:00</lastmod>
+    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
