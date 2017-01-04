@@ -1,8 +1,8 @@
 # see https://gohugo.io/tutorials/github-pages-blog/
 
 require 'date'
-require 'fileutils'
-include FileUtils
+require 'erb'
+require 'time' # Time#iso8601
 
 DIST  = 'dist'
 THEME = 'casper'
@@ -48,14 +48,16 @@ end
 desc '(Alias)Serve html locally'
 task s: :server
 
-desc 'Duplicate the last entry'
-
 namespace :entry do
-  task :dup do
+  desc 'Put a new entry'
+  task :new, 'title'
+  task :new do |task, args|
     puts
-    last_entry = Dir['./content/post/*'].sort.last
-    dup_entry  = "./content/post/#{Date.today}_entry.md"
-    cp last_entry, dup_entry
-    puts 'copied!'
+    template = ERB.new(File.read('entry_template.md.erb'))
+    @slug = args['title'] || 'slug'
+    File.write(
+      "./content/post/#{Date.today}_#{@slug}.md",
+      template.result
+    )
   end
 end
