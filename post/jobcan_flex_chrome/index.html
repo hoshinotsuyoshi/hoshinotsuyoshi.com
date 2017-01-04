@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/sushi.jpg"/>
+    
+
+
+
+<meta name="twitter:title" content="今月あとどれくらい働けばよいか計算するChrome拡張書いている"/>
+<meta name="twitter:description" content="n年ぶりにChrome拡張を書いたりしています。経緯について話さなければならない。
+
+"/>
+
+    <meta name="twitter:site" content="@hoppiestar"/>
+
+
+
+  	<meta property="og:title" content=" 今月あとどれくらい働けばよいか計算するChrome拡張書いている &middot;  hoshinotsuyoshi.com" />
+  	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2017-01-05T00:50:10&#43;09:00" />
+
+    
+    <meta property="og:article:tag" content="chrome extension" />
+    
+    
+
+    <title>
+       今月あとどれくらい働けばよいか計算するChrome拡張書いている &middot;  hoshinotsuyoshi.com
+    </title>
+
+    <meta name="description" content="ブログだよ" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://hoshinotsuyoshi.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://hoshinotsuyoshi.com/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://hoshinotsuyoshi.com/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://hoshinotsuyoshi.com/manifest.json">
+    <link rel="mask-icon" href="https://hoshinotsuyoshi.com/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    
+
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/prism.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="https://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.18" />
+
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-87800718-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(https://hoshinotsuyoshi.com/images/sushi.jpg)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">今月あとどれくらい働けばよいか計算するChrome拡張書いている</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2017-01-05T00:50:10&#43;09:00">
+            Jan 5, 2017
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com/tags/chrome-extension/">#chrome extension</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>n年ぶりにChrome拡張を書いたりしています。経緯について話さなければならない。</p>
+
+<p></p>
+
+<h3 id="経緯を3行で">経緯を3行で</h3>
+
+<ul>
+<li><strong>フレックス勤務</strong>のため、1ヶ月トータルで「8時間*営業日数」ぶん働けば良いことになっている。</li>
+<li>各自、勤務表(<a href="http://jobcan.ne.jp/">ジョブカン</a>)とにらめっこし、今月あと何時間働けばよいか計算する必要がある。</li>
+<li>ジョブカンには <strong>WebAPIが無い。</strong></li>
+</ul>
+
+<p>上記の問題を解決するため、同僚がいい感じに勤務表をスクレイピングするsinatraアプリを書いたのですが、
+今回自分は敢えてchrome拡張版を作ろうと思いたちました。</p>
+
+<h3 id="今回スクレイピング対象となるページ-勤務表-のふんいき">今回スクレイピング対象となるページ(勤務表)のふんいき</h3>
+
+<p>こんなん。</p>
+
+<p><img alt="jobcan" src="https://hoshinotsuyoshi.com/images/jobcan.png" width=600></p>
+
+<h3 id="進捗">進捗</h3>
+
+<p><strong>40%ぐらいできた</strong>気がする。今のところ私のPCでしか動きません🙏</p>
+
+<h3 id="ようす">ようす</h3>
+
+<p>拡張のボタンを押すと、
+自分の勤務表のデータが読み込まれ、「今月の残りは1日平均どのくらい働けば良いか」を教えてくれます。</p>
+
+<p><img alt="extension" src="https://hoshinotsuyoshi.com/images/jobcan_extension_anime.gif"></p>
+
+<p>上記の例は、『今月は残り1日平均8.15時間働けば良い』という計算結果を出力した様子です。</p>
+
+<p>とりあえずバッヂ(<a href="https://developer.chrome.com/extensions/browserAction#badge">chrome.browserAction - Google Chrome</a>)で実装してみたが、
+バッヂは常時表示する必要あるからウケが悪い気がする。再考の余地あり。</p>
+
+<h3 id="コード">コード</h3>
+
+<p>今のところ部品化もしておらず、テストも無いコードですが。</p>
+
+<p><blockquote class="embedly-card" data-card-key="6f257114b6df4413a3f5872a7e143278" data-card-type="article"><h4><a href="https://github.com/hoshinotsuyoshi/how-many-work-time-chrome-extension/tree/it-works">hoshinotsuyoshi/how-many-work-time-chrome-extension</a></h4><p>how-many-work-time-chrome-extension - [WIP]今月はあとどれぐらい働けばいいのかな？2</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<h3 id="展望">展望</h3>
+
+<p>↓このboilerplateが参考になったので、引き続き参考にしつつ部品化とテスト追加をやってみたい。</p>
+
+<p><blockquote class="embedly-card" data-card-key="6f257114b6df4413a3f5872a7e143278" data-card-type="article"><h4><a href="https://github.com/jhen0409/react-chrome-extension-boilerplate">jhen0409/react-chrome-extension-boilerplate</a></h4><p>react-chrome-extension-boilerplate - Boilerplate for Chrome Extension React.js project</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<h3 id="まとめ">✎まとめ</h3>
+
+<p>未完🍊です。いつかまとめられたらいいな。</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="https://hoshinotsuyoshi.com/" style="background-image: url(https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>星野剛志(ほしのつよし) web application engineer. ruby/rails/docker/git</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e4%bb%8a%e6%9c%88%e3%81%82%e3%81%a8%e3%81%a9%e3%82%8c%e3%81%8f%e3%82%89%e3%81%84%e5%83%8d%e3%81%91%e3%81%b0%e3%82%88%e3%81%84%e3%81%8b%e8%a8%88%e7%ae%97%e3%81%99%e3%82%8bChrome%e6%8b%a1%e5%bc%b5%e6%9b%b8%e3%81%84%e3%81%a6%e3%81%84%e3%82%8b&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fjobcan_flex_chrome%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fjobcan_flex_chrome%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fjobcan_flex_chrome%2f&amp;description=%e4%bb%8a%e6%9c%88%e3%81%82%e3%81%a8%e3%81%a9%e3%82%8c%e3%81%8f%e3%82%89%e3%81%84%e5%83%8d%e3%81%91%e3%81%b0%e3%82%88%e3%81%84%e3%81%8b%e8%a8%88%e7%ae%97%e3%81%99%e3%82%8bChrome%e6%8b%a1%e5%bc%b5%e6%9b%b8%e3%81%84%e3%81%a6%e3%81%84%e3%82%8b"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fjobcan_flex_chrome%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">hoshinotsuyoshi.com</a> All rights reserved - 2016</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/prism.js"></script>
+    <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/index.js"></script>
+    
+</body>
+</html>
+

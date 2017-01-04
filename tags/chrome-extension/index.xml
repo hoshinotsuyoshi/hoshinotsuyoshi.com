@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chrome Extension on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/chrome-extension/index.xml</link>
+    <description>Recent content in Chrome Extension on hoshinotsuyoshi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <atom:link href="https://hoshinotsuyoshi.com/tags/chrome-extension/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>今月あとどれくらい働けばよいか計算するChrome拡張書いている</title>
+      <link>https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/</link>
+      <pubDate>Thu, 05 Jan 2017 00:50:10 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/</guid>
+      <description>&lt;p&gt;n年ぶりにChrome拡張を書いたりしています。経緯について話さなければならない。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;経緯を3行で&#34;&gt;経緯を3行で&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;フレックス勤務&lt;/strong&gt;のため、1ヶ月トータルで「8時間*営業日数」ぶん働けば良いことになっている。&lt;/li&gt;
+&lt;li&gt;各自、勤務表(&lt;a href=&#34;http://jobcan.ne.jp/&#34;&gt;ジョブカン&lt;/a&gt;)とにらめっこし、今月あと何時間働けばよいか計算する必要がある。&lt;/li&gt;
+&lt;li&gt;ジョブカンには &lt;strong&gt;WebAPIが無い。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;上記の問題を解決するため、同僚がいい感じに勤務表をスクレイピングするsinatraアプリを書いたのですが、
+今回自分は敢えてchrome拡張版を作ろうと思いたちました。&lt;/p&gt;
+
+&lt;h3 id=&#34;今回スクレイピング対象となるページ-勤務表-のふんいき&#34;&gt;今回スクレイピング対象となるページ(勤務表)のふんいき&lt;/h3&gt;
+
+&lt;p&gt;こんなん。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;jobcan&#34; src=&#34;https://hoshinotsuyoshi.com/images/jobcan.png&#34; width=600&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;進捗&#34;&gt;進捗&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;40%ぐらいできた&lt;/strong&gt;気がする。今のところ私のPCでしか動きません🙏&lt;/p&gt;
+
+&lt;h3 id=&#34;ようす&#34;&gt;ようす&lt;/h3&gt;
+
+&lt;p&gt;拡張のボタンを押すと、
+自分の勤務表のデータが読み込まれ、「今月の残りは1日平均どのくらい働けば良いか」を教えてくれます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;extension&#34; src=&#34;https://hoshinotsuyoshi.com/images/jobcan_extension_anime.gif&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;上記の例は、『今月は残り1日平均8.15時間働けば良い』という計算結果を出力した様子です。&lt;/p&gt;
+
+&lt;p&gt;とりあえずバッヂ(&lt;a href=&#34;https://developer.chrome.com/extensions/browserAction#badge&#34;&gt;chrome.browserAction - Google Chrome&lt;/a&gt;)で実装してみたが、
+バッヂは常時表示する必要あるからウケが悪い気がする。再考の余地あり。&lt;/p&gt;
+
+&lt;h3 id=&#34;コード&#34;&gt;コード&lt;/h3&gt;
+
+&lt;p&gt;今のところ部品化もしておらず、テストも無いコードですが。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/hoshinotsuyoshi/how-many-work-time-chrome-extension/tree/it-works&#34;&gt;hoshinotsuyoshi/how-many-work-time-chrome-extension&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;how-many-work-time-chrome-extension - [WIP]今月はあとどれぐらい働けばいいのかな？2&lt;/p&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;展望&#34;&gt;展望&lt;/h3&gt;
+
+&lt;p&gt;↓このboilerplateが参考になったので、引き続き参考にしつつ部品化とテスト追加をやってみたい。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/jhen0409/react-chrome-extension-boilerplate&#34;&gt;jhen0409/react-chrome-extension-boilerplate&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;react-chrome-extension-boilerplate - Boilerplate for Chrome Extension React.js project&lt;/p&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
+
+&lt;p&gt;未完🍊です。いつかまとめられたらいいな。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

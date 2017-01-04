@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/</loc>
+    <lastmod>2017-01-05T00:50:10+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/rake_entry_new/</loc>
     <lastmod>2017-01-04T23:25:39+09:00</lastmod>
   </url>
@@ -75,6 +80,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/chrome-extension/</loc>
+    <lastmod>2017-01-05T00:50:10+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/engineer/</loc>
     <lastmod>2016-03-02T21:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -124,7 +135,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
+    <lastmod>2017-01-05T00:50:10+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -183,7 +194,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
+    <lastmod>2017-01-05T00:50:10+09:00</lastmod>
     <priority>0</priority>
   </url>
   
