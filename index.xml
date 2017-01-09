@@ -7,8 +7,79 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Fri, 06 Jan 2017 07:38:47 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jan 2017 04:12:50 +0900</lastBuildDate>
     <atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>君はarrow functionの波括弧省略について知っているか</title>
+      <link>https://hoshinotsuyoshi.com/post/arrow_func_no_brace/</link>
+      <pubDate>Tue, 10 Jan 2017 04:12:50 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/arrow_func_no_brace/</guid>
+      <description>&lt;p&gt;引き続き勉強兼ねて&lt;a href=&#34;https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/&#34;&gt;chrome拡張書いてる&lt;/a&gt;んですが、
+そのときに読んで知った初心者メモ。&lt;/p&gt;
+
+&lt;p&gt;引数の丸括弧&lt;code&gt;()&lt;/code&gt;の省略については知っていたんですが、波括弧&lt;code&gt;{}&lt;/code&gt;も省略できる時があるんですね。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;1行だけ・かつ返り値として扱うときにこう書ける。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// #1
+twice = n =&amp;gt; n * 2;
+twice(3); // 6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#1は波括弧を省略しているためそのステートメントの結果が返り値になります。&lt;/p&gt;
+
+&lt;p&gt;つまり↑の#1は以下#2と等価ではありません。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// #2
+twice = n =&amp;gt; { n * 2; }
+twice(3); // undefined
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#1は以下#3と等価です。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// #3
+twice = n =&amp;gt; { return n * 2; }
+twice(3); // 6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;さて&#34;&gt;さて&lt;/h3&gt;
+
+&lt;p&gt;オブジェクトリテラルも波括弧(&lt;code&gt;{&lt;/code&gt;)を使うので、&lt;/p&gt;
+
+&lt;p&gt;arrow(&lt;code&gt;=&amp;gt;&lt;/code&gt;)の&lt;strong&gt;次にオブジェクトリテラルが来ると混乱しそう&lt;/strong&gt;ですが、&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// object リテラル式を返す場合は、本体を丸括弧 () で囲みます:
+params =&amp;gt; ({foo: bar})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/arrow_functions&#34;&gt;アロー関数 - JavaScript _ MDN&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;とのことです。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;手元のchrome(chrome55)で確認すると、こんな感じでした。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;bar = 1
+func1 = params =&amp;gt; ({foo: bar})
+func2 = params =&amp;gt; {foo: bar}
+
+console.log(func1()); // Object {foo: 1}
+
+console.log(func2()) // undefined
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;なるほど…&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>chrome extension書いてて感動したこと(1)</title>
