@@ -3,7 +3,7 @@ date = "2017-01-10T04:12:50+09:00"
 draft = false
 title = "君はarrow functionの波括弧省略について知っているか"
 slug = "arrow_func_no_brace"
-tags = ["javascript","es2016"]
+tags = ["javascript","es2015"]
 image = "images/sunshine_1.jpg"
 
 +++
