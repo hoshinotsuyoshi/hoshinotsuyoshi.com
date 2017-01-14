@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+# https://github.com/X1011/git-directory-deploy/blob/7afe859/deploy.sh
+
 set -o errexit #abort if any command fails
 me=$(basename "$0")
 
