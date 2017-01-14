@@ -3,7 +3,7 @@ date = "2017-01-06T07:38:47+09:00"
 draft = false
 title = "chrome extension書いてて感動したこと(1)"
 slug = "souieba_chrome_const"
-tags = ["chrome_extension"]
+tags = ["chrome extension"]
 image = "images/sushi.jpg"
 
 +++
