@@ -145,9 +145,6 @@ chrome.browserAction.onClicked.addListener((_tab) => {
 });
 ```
 
-<br>
-<br>
-
 ### 感動したこと
 
 constとかアロー関数とかありますが、これが**babelなしで動く。** 
