@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/</loc>
+    <lastmod>2017-01-14T11:43:09+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/arrow_func_no_brace/</loc>
     <lastmod>2017-01-10T04:12:50+09:00</lastmod>
   </url>
@@ -108,8 +113,8 @@
   </url>
   
   <url>
-    <loc>https://hoshinotsuyoshi.com/tags/es2016/</loc>
-    <lastmod>2017-01-10T04:12:50+09:00</lastmod>
+    <loc>https://hoshinotsuyoshi.com/tags/es2015/</loc>
+    <lastmod>2017-01-14T11:43:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -139,7 +144,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/javascript/</loc>
-    <lastmod>2017-01-10T04:12:50+09:00</lastmod>
+    <lastmod>2017-01-14T11:43:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -157,7 +162,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2017-01-10T04:12:50+09:00</lastmod>
+    <lastmod>2017-01-14T11:43:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -216,7 +221,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2017-01-10T04:12:50+09:00</lastmod>
+    <lastmod>2017-01-14T11:43:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
