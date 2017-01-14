@@ -23,10 +23,6 @@
 
 &lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-
 &lt;h3 id=&#34;shorthand-property-names&#34;&gt;✎Shorthand property names&lt;/h3&gt;
 
 &lt;p&gt;最近のオブジェクトは、このように書けるようです。&lt;/p&gt;
@@ -43,19 +39,11 @@ var prop2 = &#39;b&#39;;
 
 &lt;p&gt;&lt;code&gt;Shorthand property names&lt;/code&gt;て言うんですね、知らなかった。。&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-
 &lt;h4 id=&#34;さて感想&#34;&gt;✎さて感想&lt;/h4&gt;
 
 &lt;p&gt;わたしはRubyばかり書くマンなので、これはRubyでいうところの&lt;code&gt;Set&lt;/code&gt;に似てるなと思いました。&lt;/p&gt;
 
 &lt;p&gt;似てないですかね。重複がないのを保証してくれるのが、&lt;code&gt;Set&lt;/code&gt;に近いと思いました。&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;文字列リテラルを使わずにhello-worldを出力しなさい-というお題&#34;&gt;✎「文字列リテラルを使わずにhello worldを出力しなさい」というお題&lt;/h4&gt;
 
@@ -127,9 +115,6 @@ twice(3); // undefined
 twice = n =&amp;gt; { return n * 2; }
 twice(3); // 6
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;さて&#34;&gt;さて&lt;/h3&gt;
 

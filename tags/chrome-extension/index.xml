@@ -150,9 +150,6 @@ chrome.browserAction.onClicked.addListener((_tab) =&amp;gt; {
 });
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-
 &lt;h3 id=&#34;感動したこと&#34;&gt;感動したこと&lt;/h3&gt;
 
 &lt;p&gt;constとかアロー関数とかありますが、これが&lt;strong&gt;babelなしで動く。&lt;/strong&gt;&lt;/p&gt;
