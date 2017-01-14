@@ -1,10 +1,10 @@
 +++
-date = "2017-01-13T08:53:09+09:00"
+date = "2017-01-14T11:43:09+09:00"
 draft = false
 title = "{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world"
 slug = "shorthand_property_names_hello_world"
 tags = ["javascript","es2015"]
-image = "images/sunshine_1.jpg"
+image = "images/sunshine_2.jpg"
 
 +++
 
@@ -15,6 +15,10 @@ JSの波括弧に感動するシリーズ、第2回です。
 第1回目はこちら([君はarrow functionの波括弧省略について知っているか](https://hoshinotsuyoshi.com/post/arrow_func_no_brace/))でした。
 
 <!--more-->
+
+<br>
+<br>
+<br>
 
 ### ✎Shorthand property names
 
@@ -33,11 +37,19 @@ var prop2 = 'b';
 
 `Shorthand property names`て言うんですね、知らなかった。。
 
+<br>
+<br>
+<br>
+
 #### ✎さて感想
 
 わたしはRubyばかり書くマンなので、これはRubyでいうところの`Set`に似てるなと思いました。
 
 似てないですかね。重複がないのを保証してくれるのが、`Set`に近いと思いました。
+
+<br>
+<br>
+<br>
 
 #### ✎「文字列リテラルを使わずにhello worldを出力しなさい」というお題
 
