@@ -12,7 +12,7 @@ task default: 'deploy:run'
 
 namespace :deploy do
   desc 'Deploy'
-  task run: [:install_theme, :dist, :check_cname, :deploy_sh]
+  task run: [:install_theme, :dist, :deploy_sh]
 
   desc 'Install theme'
   task :install_theme do
@@ -23,12 +23,6 @@ namespace :deploy do
   desc 'Run hugo, put files to "dist" dir'
   task :dist do
     sh "hugo -d #{DIST} -t #{THEME}"
-  end
-
-  desc 'Check "CNAME" file(a special file for github-page)'
-  task :check_cname do
-    File.exist?("#{DIST}/CNAME") || abort('ERROR! CNAME file not found.')
-    puts 'CNAME file exists.'
   end
 
   desc 'Run deploy.sh'
@@ -58,5 +52,3 @@ end
 # alias
 desc '(Alias)Serve html locally'
 task s: :server
-
-
