@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # see https://gohugo.io/tutorials/github-pages-blog/
 
 require 'date'
@@ -14,33 +15,28 @@ task deploy: [:install_theme, :dist, :check_cname, :deploy_sh]
 
 desc 'Install theme'
 task :install_theme do
-  puts
-  sh "git submodule init"
-  sh "git submodule update"
+  sh 'git submodule init'
+  sh 'git submodule update'
 end
 
 desc 'Run hugo, put files to "dist" dir'
 task :dist do
-  puts
   sh "hugo -d #{DIST} -t #{THEME}"
 end
 
 desc 'Check "CNAME" file(a special file for github-page)'
 task :check_cname do
-  puts
   File.exist?("#{DIST}/CNAME") || abort('ERROR! CNAME file not found.')
   puts 'CNAME file exists.'
 end
 
 desc 'Run deploy.sh'
 task :deploy_sh do
-  puts
   sh './deploy.sh'
 end
 
 desc 'Serve html locally'
 task :server do
-  puts
   sh "hugo server -t #{THEME}"
 end
 
@@ -51,8 +47,7 @@ task s: :server
 namespace :entry do
   desc 'Put a new entry'
   task :new, 'title'
-  task :new do |task, args|
-    puts
+  task :new do |_task, args|
     template = ERB.new(File.read('entry_template.md.erb'))
     @slug = args['title'] || 'slug'
     File.write(
