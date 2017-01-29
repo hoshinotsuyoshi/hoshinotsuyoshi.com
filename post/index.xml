@@ -7,8 +7,127 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Sat, 14 Jan 2017 11:43:09 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jan 2017 23:16:08 +0900</lastBuildDate>
     <atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AmazonDriveをamazon.co.jpで使う</title>
+      <link>https://hoshinotsuyoshi.com/post/amazon_drive_japanese/</link>
+      <pubDate>Sun, 29 Jan 2017 23:16:08 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/amazon_drive_japanese/</guid>
+      <description>&lt;p&gt;撮ったホームビデオのバックアップを置く場所に困ってきたので、&lt;a href=&#34;https://www.amazon.co.jp/clouddrive/home&#34;&gt;Amazon Drive&lt;/a&gt;を契約しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;アップロードしていく&#34;&gt;アップロードしていく&lt;/h3&gt;
+
+&lt;p&gt;専用のアプリをインストールします。&lt;/p&gt;
+
+&lt;p&gt;インストールすると、バーに常駐しやがります。&lt;/p&gt;
+
+&lt;p&gt;開くとこんな感じです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon_drive_no_sync.png&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;「同期せずにアップロードします」を使います。&lt;/p&gt;
+
+&lt;p&gt;アップロードするファイルを選択する画面。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon_drive_upload.png&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;適当にアップロードしていきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon_drive_app.png&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;アップロードし終わった後の状態。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon_drive_usage.png&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;べんりですね。&lt;/p&gt;
+
+&lt;h3 id=&#34;googledriveとかdropboxとの比較&#34;&gt;GoogleDriveとかDropboxとの比較&lt;/h3&gt;
+
+&lt;p&gt;GoogleDriveとかDropboxとかって、なんかやたらとすぐ「同期(sync)」しようとするUIな気がしていて、
+どうもそこが気に入らない。&lt;/p&gt;
+
+&lt;p&gt;油断するとすぐ手元のSSDの容量を食ってしまう。&lt;/p&gt;
+
+&lt;p&gt;どうやら自分には「同期」というものが難しすぎるらしい。&lt;/p&gt;
+
+&lt;p&gt;AmazonDriveは「同期せずにアップロードします」というボタンがわかりやすいところにある。&lt;strong&gt;それが良かった。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;(全体的に使いやすい!というわけではありません👿)&lt;/p&gt;
+
+&lt;h3 id=&#34;cliツールの運用はあきらめた&#34;&gt;CLIツールの運用はあきらめた&lt;/h3&gt;
+
+&lt;p&gt;マウントしたい欲求はあったのですが、&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/yadayada/acd_cli&#34;&gt;yadayada/acd_cli&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;acd_cli - A command line interface and FUSE filesystem for Amazon (Cloud) Drive&lt;/p&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;このツールが良さげなのですが、あまり手元の環境汚したくないので、Dockerに入れて試したんですが、うまく動きませんでした… 🐳&lt;/p&gt;
+
+&lt;p&gt;誰かいい感じにDockerとか使ってやってくれ…&lt;/p&gt;
+
+&lt;h3 id=&#34;amazon-co-jpとamazon-comの比較&#34;&gt;amazon.co.jpとamazon.comの比較&lt;/h3&gt;
+
+&lt;p&gt;アップロードしまくったあとから気づいたのですが、
+amazon.co.jpとamazon.comとで、結構値段が違うんですね…&lt;/p&gt;
+
+&lt;p&gt;amazon.comのほうが良かったかな…&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/clouddrive/home&#34;&gt;https://www.amazon.co.jp/clouddrive/home&lt;/a&gt; &lt;strong&gt;13,800円/年&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon-co-jp-drive.png&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/clouddrive/home&#34;&gt;https://www.amazon.com/clouddrive/home&lt;/a&gt; &lt;strong&gt;59.99ドル/年&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon-com-drive.png&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;amazon.comのほうが良かった感。 アメリカだとロケーション的に遠い、とかあるのかな?&lt;/p&gt;
+
+&lt;p&gt;ちなみにGoogle Driveだと1TBで9.99ドル/月ですので、微妙なところです。1TB以上アップロードする予定があるなら、Google DriveよりAmazon Driveのほうがちょっとお得でしょうか。&lt;/p&gt;
+
+&lt;h3 id=&#34;macが英語設定だとハマる&#34;&gt;Macが英語設定だとハマる&lt;/h3&gt;
+
+&lt;p&gt;Sierraをクリーンインストールした後にハマりました。&lt;/p&gt;
+
+&lt;p&gt;なぜかamazon.comに接続しようとしよる…&lt;/p&gt;
+
+&lt;p&gt;英語設定だからか？とあたりをつけてサポートに聞いたところ、(以下抜粋)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ご指摘の通りPC設定の言語が英語の場合、正常にAmazon.co.jpにてアクセスいただけない場合がございます。
+そのため、お手数ですがですがご利用のPCにて下記の環境設定についてご確認ください
+・アップルメニュー＞「言語と地域」＞地域と言語＞日本となっているか
+・ 地域と時間帯が日本になっているか
+・カレンダーが西暦になっているか
+&lt;a href=&#34;https://support.apple.com/kb/PH21561?locale=ja_JP&amp;amp;viewlocale=ja_JP&#34;&gt;https://support.apple.com/kb/PH21561?locale=ja_JP&amp;amp;viewlocale=ja_JP&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;みたいな返事が返ってきました。&lt;/p&gt;
+
+&lt;p&gt;ググると同じことで悩んでた人がちらほら…&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;http://enoki.hatenablog.com/entry/2016/01/21/151910&#34;&gt;Amazon Cloud Driveのデスクトップアプリでamazon.co.jpにサインインできないとき - THE えのき&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;日本でもプライム・フォトがプライム会員向けにスタートしました。 Amazon.co.jp: Amazon Prime 早速デスクトップアプリをダウンロードしてみました。 が、 サインイン出来ない&amp;hellip; 右上に「Use your existing amazon.com account.」と書いてあるので、どうやら amazon.com のアカウントを必要としているみたいです。 システムの言語が英語なので、それが原因なのかな〜と思い、とりあえず英語から日本語に変更してみました。 方法がわからない人は↓のサイトでも参考にしてください。 日本語に変更した後、 Amazon Cloud Drive を起動すると&amp;hellip; 「 Amazon.co.jp アカウントを使用」になってますね。 システムの言語を見てどの国の Amazon を利用しているのか判断しているんでしょうか？ はい 無事サインインできました👏 一度サインインしてしまえば、システムの言語を英語に戻した後もサインイン状態は継続していました。 ファイルのアップロードもバッチリ。 合計25GB弱のデータをアップロードしてみましたが、1時間ほどで終わりました。 Macの アクティビティモニターだと転送速度が7~10MB/sでした。 かなり早いですね🎉 写真ファイルは別にカウントされるみたいですね。 今後もバシバシRAWファイルをアップロードしようと思います。 試しにサインアウトしたあと再度サインインしようとしたら、「Use your existing amazon.com account.」と表示されていたので、もう一度日本語に設定する必要がありそうです。 サインインするタイミングでのシステムの言語にあわせてどの国の Amazon を利用するのか決めてる雰囲気です。 Macでは地域を設定することができるので、そっちを見てログイン先を変えるほうがいいような気がします。 というわけで問い合わせ済み。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;こちらも。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://gist.github.com/pn11/2784bc5985b69be3f00ce490b69cf241&#34;&gt;Mac を英語で使っている場合、 Amazon Cloud Drive のデスクトップクライアントは、System Preferences ＞ Language &amp;amp; Region ＞ Advanced ＞Format language で 日本語を選択すると amazon.co.jp にログインできる。&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Mac を英語で使っている場合、 Amazon Cloud Drive のデスクトップクライアントは、System Preferences ＞ Language &amp;amp; Region ＞ Advanced ＞Format language で 日本語を選択すると amazon.co.jp にログインできる。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;なんかめんどくさそうなので日本語に戻ってきてしまいました😅&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
+
+&lt;p&gt;AmazonDriveをamazon.comで使ってる人がいましたら感想聞きたいです!!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world</title>
@@ -1234,74 +1353,6 @@ Press Ctrl+C to stop
 &lt;p&gt;良い製品の具体例(IT分野に限らない)がどんどん出てくる。&lt;/p&gt;
 
 &lt;p&gt;37signalsのCEOという、プロダクトに対するセンスを持ってそうな人が語っている部分なので、じっくり読んで考えてみたい。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>「パパエンジニアが語る、子育てとの向き合い方とは？」に参加してきた</title>
-      <link>https://hoshinotsuyoshi.com/post/father_engineer_2016/</link>
-      <pubDate>Wed, 02 Mar 2016 21:00:00 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/post/father_engineer_2016/</guid>
-      <description>&lt;p&gt;(このエントリはプライベート日記をサルベージしたものです m(_ _)m)&lt;/p&gt;
-
-&lt;p&gt;「&lt;a href=&#34;https://hitomedia-night.connpass.com/event/24704/&#34;&gt;パパエンジニアが語る、子育てとの向き合い方とは？ - connpass&lt;/a&gt;」というイベントにパネリストとして参加してきました💪👀👨
-その記録及び感想です。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ビズグラウンド黒澤氏 &lt;a href=&#34;https://twitter.com/hashtag/hitomedianight7?src=hash&#34;&gt;#hitomedianight7&lt;/a&gt; &lt;a href=&#34;https://t.co/GdVEgFJHDU&#34;&gt;pic.twitter.com/GdVEgFJHDU&lt;/a&gt;&lt;/p&gt;&amp;mdash; やまちょ (@yamacho1111) &lt;a href=&#34;https://twitter.com/yamacho1111/status/689759934725038080&#34;&gt;January 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;フィードフォース星野氏 &lt;a href=&#34;https://twitter.com/hashtag/hitomedianight7?src=hash&#34;&gt;#hitomedianight7&lt;/a&gt; &lt;a href=&#34;https://t.co/HcVyaizaA6&#34;&gt;pic.twitter.com/HcVyaizaA6&lt;/a&gt;&lt;/p&gt;&amp;mdash; やまちょ (@yamacho1111) &lt;a href=&#34;https://twitter.com/yamacho1111/status/689760402591199233&#34;&gt;January 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ヒトメディア佐々木氏 &lt;a href=&#34;https://twitter.com/hashtag/hitomedianight7?src=hash&#34;&gt;#hitomedianight7&lt;/a&gt; &lt;a href=&#34;https://t.co/V2UZMkePjj&#34;&gt;pic.twitter.com/V2UZMkePjj&lt;/a&gt;&lt;/p&gt;&amp;mdash; やまちょ (@yamacho1111) &lt;a href=&#34;https://twitter.com/yamacho1111/status/689761115069222912&#34;&gt;January 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;CAREER HACKの記事にもなりました💪&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;http://www.huffingtonpost.jp/careerhack-enjapan/career-hack-hitomedia_b_9214772.html&#34;&gt;既婚男性エンジニアに聞いてみた「夫婦生活と子育ては大丈夫なんですか？」&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;ヒトメディア主催のhitomedia night Vol.7のイベントレポート。エンジニアとして働くパパたちが、「子育て」をメインテーマに本音トークを繰り広げた。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/search?f=tweets&amp;amp;vertical=default&amp;amp;q=%23hitomedianight7&#34;&gt;#hitomedianight7&lt;/a&gt; というハッシュタグで追えるようです。&lt;/p&gt;
-
-&lt;h2 id=&#34;pepperくんがお出迎え&#34;&gt;Pepperくんがお出迎え&lt;/h2&gt;
-
-&lt;p&gt;Pepperくん近くで見たの初めてでした。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;hitomedia pepper&#34; src=&#34;https://hoshinotsuyoshi.com/images/hitomedia_pepper.jpg&#34; width=400&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;私が当日使った写真とか&#34;&gt;私が当日使った写真とか&lt;/h2&gt;
-
-&lt;p&gt;自転車と保育園のふとんカバー大変ですということを話した。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;my sons bicycle&#34; src=&#34;https://hoshinotsuyoshi.com/images/my_sons_bicycle.jpg&#34; width=400&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ディスカッション-質疑応答-懇親会の感想&#34;&gt;✎ディスカッション・質疑応答・懇親会の感想&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;💦他のパネリストの方がすごくて、恐れ多かった。&lt;/li&gt;
-&lt;li&gt;☠「障害の起きそうなコードは書かなくなった」というような話をしたらウケた。&lt;/li&gt;
-&lt;li&gt;😣ふとんカバー変えるの大変じゃない？という話はあまり反応良くなかった。&lt;/li&gt;
-&lt;li&gt;👪家族と褒め合うことが大事。&lt;/li&gt;
-&lt;li&gt;🍕懇親会の出席率100%! というか聴衆もパパやママが多かったみたい。立場一緒やん。
-
-&lt;ul&gt;
-&lt;li&gt;つまり「これからパパになる人、結婚しようとしている人」はあまりいなかった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;勉強する時間-の捻出について&#34;&gt;✎「勉強する時間」の捻出について&lt;/h2&gt;
-
-&lt;p&gt;自分が参加するにあたり、話題にしたいテーマのひとつとしてはこれだった。&lt;/p&gt;
-
-&lt;p&gt;懇親会でも聞いてみたが、なかなか良い答えは見つからず。&lt;/p&gt;
-
-&lt;p&gt;皆さん、勉強の時間とかどうしてるんだろう?&lt;/p&gt;
-
-&lt;p&gt;一つの答えとしては、&lt;strong&gt;勉強する範囲を狭めて集中する💪&lt;/strong&gt;、というのがあった。&lt;/p&gt;
-
-&lt;p&gt;それは正しい一つの答えではある!!のだが、なんかこう、なんとかならないものだろうか。&lt;/p&gt;</description>
     </item>
     
   </channel>
