@@ -25,6 +25,13 @@ namespace :deploy do
     sh "hugo -d #{DIST} -t #{THEME}"
   end
 
+  desc 'Copy truthy_or_falsy dir'
+  task :truthy_or_falsy do
+    sh 'rm -rf static/ruby_truthy_or_falsy/'
+    sh 'cp -r truthy_or_falsy static/ruby_truthy_or_falsy'
+    sh 'rm -rf static/ruby_truthy_or_falsy/.git'
+  end
+
   desc 'Run deploy.sh'
   task :deploy_sh do
     sh './deploy.sh'
