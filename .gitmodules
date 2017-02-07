@@ -1,3 +1,6 @@
 [submodule "themes/casper"]
 	path = themes/casper
 	url = https://github.com/hoshinotsuyoshi/hugo-theme-casper.git
+[submodule "truthy_or_falsy"]
+	path = truthy_or_falsy
+	url = git@github.com:hoshinotsuyoshi/truthy_or_falsy.git
