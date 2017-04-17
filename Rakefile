@@ -12,7 +12,7 @@ task default: 'deploy:run'
 
 namespace :deploy do
   desc 'Deploy'
-  task run: [:install_theme, :dist, :deploy_sh]
+  task run: [:install_theme, :truthy_or_falsy, :dist, :deploy_sh]
 
   desc 'Install theme'
   task :install_theme do
