@@ -12,7 +12,12 @@ task default: 'deploy:run'
 
 namespace :deploy do
   desc 'Deploy'
-  task run: [:install_theme, :truthy_or_falsy, :dist, :deploy_sh]
+  task run: [
+    :install_theme,
+    :update_truthy_or_falsy,
+    :dist,
+    :deploy_sh
+  ]
 
   desc 'Install theme'
   task :install_theme do
@@ -25,11 +30,10 @@ namespace :deploy do
     sh "hugo -d #{DIST} -t #{THEME}"
   end
 
-  desc 'Copy truthy_or_falsy dir'
-  task :truthy_or_falsy do
-    sh 'rm -rf static/ruby_truthy_or_falsy/'
-    sh 'cp -r truthy_or_falsy static/ruby_truthy_or_falsy'
-    sh 'rm -rf static/ruby_truthy_or_falsy'
+  desc 'Update truthy_or_falsy dir'
+  task :update_truthy_or_falsy do
+    sh 'rm -rf dist/ruby_truthy_or_falsy/'
+    sh 'cp -r truthy_or_falsy dist/ruby_truthy_or_falsy'
   end
 
   desc 'Run deploy.sh'
