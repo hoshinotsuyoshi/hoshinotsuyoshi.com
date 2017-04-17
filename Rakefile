@@ -29,7 +29,7 @@ namespace :deploy do
   task :truthy_or_falsy do
     sh 'rm -rf static/ruby_truthy_or_falsy/'
     sh 'cp -r truthy_or_falsy static/ruby_truthy_or_falsy'
-    sh 'rm -rf static/ruby_truthy_or_falsy/.git'
+    sh 'rm -rf static/ruby_truthy_or_falsy'
   end
 
   desc 'Run deploy.sh'
