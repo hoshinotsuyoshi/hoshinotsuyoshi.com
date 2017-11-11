@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Favicon on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/favicon/index.xml</link>
+    <link>https://hoshinotsuyoshi.com/tags/favicon/</link>
     <description>Recent content in Favicon on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <atom:link href="https://hoshinotsuyoshi.com/tags/favicon/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2017 08:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/favicon/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>realfavicongenerator.netで作ったfaviconをこのブログのcasperのテーマに反映</title>
@@ -19,94 +22,7 @@
 ファビコンが効いてないことに気づいたので、調整しました。
 realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;最終的にはこんな感じでファビコンを効かせたい&#34;&gt;✎最終的にはこんな感じでファビコンを効かせたい&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt=&#34;favicon&#34; src=&#34;https://hoshinotsuyoshi.com/images/my_favicon.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;今回の素材はこちら&#34;&gt;✎今回の素材はこちら&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt=&#34;星野剛志&#34; src=&#34;https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.jpg&#34; width=200 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;realfavicongenerator-netを使ってみる&#34;&gt;✎realfavicongenerator.netを使ってみる&lt;/h2&gt;
-
-&lt;p&gt;知らなかったんですが、&lt;a href=&#34;http://itexp.hateblo.jp/entry/website-needs-21-favicons&#34;&gt;こちらの記事&lt;/a&gt;でも紹介されている&lt;code&gt;realfavicongenerator.net&lt;/code&gt;は大変便利でした。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;http://realfavicongenerator.net/&#34;&gt;Favicon Generator for all platforms: iOS, Android, PC/Mac&amp;hellip;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;The ultimate favicon generator. Design your icons platform per platform and make them look great, everywhere&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;realfavicongenerator.netでは、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;必要なファビコンの生成
-
-&lt;ul&gt;
-&lt;li&gt;色んなサイズが生成され、zipで固まって降ってきます (≧∇≦)b&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx&#34;&gt;browserconfig.xml&lt;/a&gt;とかいう、Microsoft方面向けのメタデータも入ってくる&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;実際のサイトに対してのファビコンのテスト&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ができます。&lt;/p&gt;
-
-&lt;h2 id=&#34;realfavicongenerator-netで必要なファビコンの生成&#34;&gt;✎realfavicongenerator.netで必要なファビコンの生成&lt;/h2&gt;
-
-&lt;p&gt;まず右のほうの&amp;rdquo;Select your favicon picture&amp;rdquo;を押し、素材をアップロードします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_select.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;p&gt;次の画面で適当にカスタマイズして進んでいくと(私はデフォルトのままにしました)、最後こんな画面になります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_select_last.png&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;ここで&lt;code&gt;Favicon package&lt;/code&gt;を押すと&lt;code&gt;favicons.zip&lt;/code&gt;のダウンロードが始まります。&lt;/p&gt;
-
-&lt;p&gt;私の場合&lt;code&gt;favicons.zip&lt;/code&gt;を展開するとこんな感じでした。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/downloads_favicons.png&#34; width=600 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ファビコンをcasperに反映&#34;&gt;✎ファビコンをcasperに反映&lt;/h2&gt;
-
-&lt;p&gt;まず、展開したファイルたち全てをルートディレクトリに配置します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ls -d ~/Downloads/favicons/* | xargs -I {} mv {} ./static
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そのときのコミットは&lt;a href=&#34;https://github.com/hoshinotsuyoshi/hoshinotsuyoshi.com/commit/c883c21a17951c47addd2c7d440c7f0e19866dfe&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;次に、realfavicongeneratorが吐いたlinkタグなどのhtmlをheadタグの中に貼ります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;+    &amp;lt;link rel=&amp;quot;apple-touch-icon&amp;quot; sizes=&amp;quot;180x180&amp;quot; href=&amp;quot;/apple-touch-icon.png&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/png&amp;quot; href=&amp;quot;/favicon-32x32.png&amp;quot; sizes=&amp;quot;32x32&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/png&amp;quot; href=&amp;quot;/favicon-16x16.png&amp;quot; sizes=&amp;quot;16x16&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;manifest&amp;quot; href=&amp;quot;/manifest.json&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;mask-icon&amp;quot; href=&amp;quot;/safari-pinned-tab.svg&amp;quot; color=&amp;quot;#5bbad5&amp;quot;&amp;gt;
-+    &amp;lt;meta name=&amp;quot;theme-color&amp;quot; content=&amp;quot;#ffffff&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そのときのコミットは&lt;a href=&#34;https://github.com/hoshinotsuyoshi/hugo-theme-casper/compare/e73abaa1dd93313836bc9e07bd68ce21bfd8c420...dcab223a01c10a7bbdf5f4a1a90540da82d70758&#34;&gt;こちら&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;realfavicongenerator-netでファビコンのテスト&#34;&gt;✎realfavicongenerator.netでファビコンのテスト&lt;/h2&gt;
-
-&lt;p&gt;デプロイしたら、テストしてみましょう。&lt;/p&gt;
-
-&lt;p&gt;自分のサイトのアドレスを入力して、&lt;code&gt;Check Favicon&lt;/code&gt;ボタンを押します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_test1.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;チェックが終わると、こんな感じで結果が表示されます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_test2.png&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;ぜんぶパスしました🎉 うれしいですね。&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;casperをいじっている&lt;/li&gt;
-&lt;li&gt;realfavicongenerator.netで、必要なファビコンの生成とファビコンのテストができ、便利でした&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

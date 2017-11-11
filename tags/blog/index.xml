@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/blog/index.xml</link>
+    <link>https://hoshinotsuyoshi.com/tags/blog/</link>
     <description>Recent content in Blog on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <atom:link href="https://hoshinotsuyoshi.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 May 2017 17:38:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)の件</title>
@@ -19,67 +22,7 @@
 
 &lt;p&gt;別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;cloudflare側&#34;&gt;cloudflare側&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.cloudflare.com/a/add-site&#34;&gt;https://www.cloudflare.com/a/add-site&lt;/a&gt; に行き、&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hoshinotsuyoshi.com&lt;/code&gt; と入力。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudflare-2.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;費用は抑えたいので &lt;code&gt;Free Website&lt;/code&gt; を選択。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudflare-3.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;今のネームサーバの設定についての指示が出ます。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hoshinotsuyoshi.com&lt;/code&gt; はお名前.comで購入したので、ここではお名前.comのネームサーバが左側に表示されています。&lt;/p&gt;
-
-&lt;p&gt;右側に表示されたネームサーバ名2つをメモします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudflare-4.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;お名前-com側&#34;&gt;お名前.com側&lt;/h2&gt;
-
-&lt;p&gt;このネームサーバ2つをお名前.comのほうに反映させます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/onamae-1.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/onamae-2.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;これで &lt;code&gt;hoshinotsuyoshi.com&lt;/code&gt; のDNSの設定はcloudflareに丸投げ、という形になりました。&lt;/p&gt;
-
-&lt;h2 id=&#34;apex-domains&#34;&gt;apex domains&lt;/h2&gt;
-
-&lt;p&gt;ここから先は &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/&#34;&gt;github pagesのapex domainsの説明&lt;/a&gt;
-を見れば大丈夫です。&lt;/p&gt;
-
-&lt;h4 id=&#34;リポジトリ側の調整&#34;&gt;リポジトリ側の調整&lt;/h4&gt;
-
-&lt;p&gt;CNAMEというファイルを用意しておきます。&lt;/p&gt;
-
-&lt;h4 id=&#34;cloudflare側-1&#34;&gt;cloudflare側&lt;/h4&gt;
-
-&lt;p&gt;今回は&lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider&#34;&gt;Aレコードを登録する方法&lt;/a&gt;
-をやりました。&lt;/p&gt;
-
-&lt;p&gt;こちらに書いてあるとおり、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;192.30.252.153
-192.30.252.154
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;の2つのAレコードを登録しておけばOk。&lt;/p&gt;
-
-&lt;p&gt;あと、 httpsの設定は &lt;code&gt;flexible&lt;/code&gt; にしておく。無料利用の場合、この設定じゃないとダメなはず。&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
-
-&lt;p&gt;こんな感じになってれば設定完了です! 🎉&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/gh-pages-cert.png&#34; width=600&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -90,111 +33,7 @@
       <guid>https://hoshinotsuyoshi.com/post/rake_entry_new/</guid>
       <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;このブログで記事を書き始めるまでの作業&#34;&gt;このブログで記事を書き始めるまでの作業&lt;/h3&gt;
-
-&lt;p&gt;１. 前の記事をコピーして&lt;code&gt;content/post/yyyy-mm-dd_slug名.md&lt;/code&gt;の形で保存。&lt;/p&gt;
-
-&lt;p&gt;２. このへん↓のメタ情報を編集して&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
-date = &amp;quot;2017-01-04T23:21:39+09:00&amp;quot;
-draft = false
-title = &amp;quot;記事のひな形から記事の土台を生成するrakeタスクを作った&amp;quot;
-slug = &amp;quot;rake_entry_new&amp;quot;
-tags = [&amp;quot;hugo&amp;quot;,&amp;quot;blog&amp;quot;]
-image = &amp;quot;images/blog_mvim.png&amp;quot;
-
-+++
-(...ここから記事本文...)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;３. 記事本文を書き始める&lt;/p&gt;
-
-&lt;p&gt;という流れでした。いろいろとめんどい💦&lt;/p&gt;
-
-&lt;p&gt;1と2の作業は、slugさえ決まれば自動的に決まります。
-あと、時刻とかも自動的に挿入できそうです。
-このへんを自動化してみました。&lt;/p&gt;
-
-&lt;h3 id=&#34;記事のひな形とrakeタスクを作った&#34;&gt;記事のひな形とRakeタスクを作った&lt;/h3&gt;
-
-&lt;h4 id=&#34;記事のひな形&#34;&gt;記事のひな形&lt;/h4&gt;
-
-&lt;p&gt;今まで前の記事をコピーしていたので、ひな形は作っていなかったのですが、
-今回作りました。こんな形です。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
-date = &amp;quot;&amp;lt;%= (Time.now + 2*60*60).iso8601 %&amp;gt;&amp;quot;
-draft = false
-title = &amp;quot;テンプレです💪&amp;quot;
-slug = &amp;quot;&amp;lt;%= @slug %&amp;gt;&amp;quot;
-tags = [&amp;quot;tag1&amp;quot;,&amp;quot;tag2&amp;quot;]
-image = &amp;quot;images/slack_display.png&amp;quot;
-
-+++
-
-見出し文
-
-&amp;lt;!--more--&amp;gt;
-
-### h3
-
-imgタグ例
-&amp;lt;img alt=&amp;quot;slack&amp;quot; src=&amp;quot;/images/slack_sidebar.png&amp;quot; width=400&amp;gt;
-
-### ✎まとめ
-
-* まとめ内容です
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;Time#iso8601&lt;/code&gt;を使っているのがミソ(死語)です。&lt;/p&gt;
-
-&lt;p&gt;ちょうど&amp;rdquo;2017-01-04T23:21:39+09:00&amp;rdquo; というフォーマットで出力してくれます💪&lt;/p&gt;
-
-&lt;p&gt;ちなみに&lt;code&gt;Time#iso8601&lt;/code&gt;は、&lt;code&gt;require &#39;time&#39;&lt;/code&gt;しないと使えません。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Time&lt;/code&gt;クラスは、&lt;code&gt;require &#39;time&#39;&lt;/code&gt;する場合としない場合で挙動が変わる、珍しいクラスです。知ってたかい！ 詳しくは&lt;a href=&#34;https://docs.ruby-lang.org/ja/latest/library/time.html&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h4 id=&#34;rakeタスク&#34;&gt;Rakeタスク&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;@slug&lt;/code&gt;というインスタンス変数経由でmarkdownにslugを渡します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# Rakefile
-namespace :entry do
-  desc &#39;Put a new entry&#39;
-  task :new, &#39;title&#39;
-  task :new do |task, args|
-    puts
-    template = ERB.new(File.read(&#39;entry_template.md.erb&#39;))
-    @slug = args[&#39;title&#39;] || &#39;slug&#39;
-    File.write(
-      &amp;quot;./content/post/#{Date.today}_#{@slug}.md&amp;quot;,
-      template.result
-    )
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;このrakeタスクの使い方&#34;&gt;このRakeタスクの使い方&lt;/h4&gt;
-
-&lt;p&gt;つまり&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ rake &#39;entry:new[hoge]&#39;&lt;/code&gt;とやると&lt;code&gt;content/post/2017-01-04_hoge.md&lt;/code&gt;というファイルが自動生成され、メタ情報のslugにも&lt;code&gt;hoge&lt;/code&gt;がセットされます💪。&lt;/p&gt;
-
-&lt;p&gt;これで記事を書く手間が少し減りました☺&lt;/p&gt;
-
-&lt;p&gt;ところで、こういうふうに、 &lt;strong&gt;rakeタスクには引数が渡せるんだよ&lt;/strong&gt;。知ってたかい。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;[&lt;/code&gt;がシェル的に解釈されちゃう問題があるのでシングルクオートで括る必要がありますが。&lt;/p&gt;
-
-&lt;p&gt;(これがダサいと考える派の人は環境変数使うんだろうなと思います)&lt;/p&gt;
-
-&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
-
-&lt;p&gt;rakeタスクに引数、使っていこうな()&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -207,94 +46,7 @@ end
 ファビコンが効いてないことに気づいたので、調整しました。
 realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;最終的にはこんな感じでファビコンを効かせたい&#34;&gt;✎最終的にはこんな感じでファビコンを効かせたい&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt=&#34;favicon&#34; src=&#34;https://hoshinotsuyoshi.com/images/my_favicon.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;今回の素材はこちら&#34;&gt;✎今回の素材はこちら&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt=&#34;星野剛志&#34; src=&#34;https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.jpg&#34; width=200 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;realfavicongenerator-netを使ってみる&#34;&gt;✎realfavicongenerator.netを使ってみる&lt;/h2&gt;
-
-&lt;p&gt;知らなかったんですが、&lt;a href=&#34;http://itexp.hateblo.jp/entry/website-needs-21-favicons&#34;&gt;こちらの記事&lt;/a&gt;でも紹介されている&lt;code&gt;realfavicongenerator.net&lt;/code&gt;は大変便利でした。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;http://realfavicongenerator.net/&#34;&gt;Favicon Generator for all platforms: iOS, Android, PC/Mac&amp;hellip;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;The ultimate favicon generator. Design your icons platform per platform and make them look great, everywhere&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;realfavicongenerator.netでは、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;必要なファビコンの生成
-
-&lt;ul&gt;
-&lt;li&gt;色んなサイズが生成され、zipで固まって降ってきます (≧∇≦)b&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx&#34;&gt;browserconfig.xml&lt;/a&gt;とかいう、Microsoft方面向けのメタデータも入ってくる&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;実際のサイトに対してのファビコンのテスト&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ができます。&lt;/p&gt;
-
-&lt;h2 id=&#34;realfavicongenerator-netで必要なファビコンの生成&#34;&gt;✎realfavicongenerator.netで必要なファビコンの生成&lt;/h2&gt;
-
-&lt;p&gt;まず右のほうの&amp;rdquo;Select your favicon picture&amp;rdquo;を押し、素材をアップロードします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_select.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;p&gt;次の画面で適当にカスタマイズして進んでいくと(私はデフォルトのままにしました)、最後こんな画面になります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_select_last.png&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;ここで&lt;code&gt;Favicon package&lt;/code&gt;を押すと&lt;code&gt;favicons.zip&lt;/code&gt;のダウンロードが始まります。&lt;/p&gt;
-
-&lt;p&gt;私の場合&lt;code&gt;favicons.zip&lt;/code&gt;を展開するとこんな感じでした。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/downloads_favicons.png&#34; width=600 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ファビコンをcasperに反映&#34;&gt;✎ファビコンをcasperに反映&lt;/h2&gt;
-
-&lt;p&gt;まず、展開したファイルたち全てをルートディレクトリに配置します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ls -d ~/Downloads/favicons/* | xargs -I {} mv {} ./static
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そのときのコミットは&lt;a href=&#34;https://github.com/hoshinotsuyoshi/hoshinotsuyoshi.com/commit/c883c21a17951c47addd2c7d440c7f0e19866dfe&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;次に、realfavicongeneratorが吐いたlinkタグなどのhtmlをheadタグの中に貼ります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;+    &amp;lt;link rel=&amp;quot;apple-touch-icon&amp;quot; sizes=&amp;quot;180x180&amp;quot; href=&amp;quot;/apple-touch-icon.png&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/png&amp;quot; href=&amp;quot;/favicon-32x32.png&amp;quot; sizes=&amp;quot;32x32&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/png&amp;quot; href=&amp;quot;/favicon-16x16.png&amp;quot; sizes=&amp;quot;16x16&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;manifest&amp;quot; href=&amp;quot;/manifest.json&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;mask-icon&amp;quot; href=&amp;quot;/safari-pinned-tab.svg&amp;quot; color=&amp;quot;#5bbad5&amp;quot;&amp;gt;
-+    &amp;lt;meta name=&amp;quot;theme-color&amp;quot; content=&amp;quot;#ffffff&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そのときのコミットは&lt;a href=&#34;https://github.com/hoshinotsuyoshi/hugo-theme-casper/compare/e73abaa1dd93313836bc9e07bd68ce21bfd8c420...dcab223a01c10a7bbdf5f4a1a90540da82d70758&#34;&gt;こちら&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;realfavicongenerator-netでファビコンのテスト&#34;&gt;✎realfavicongenerator.netでファビコンのテスト&lt;/h2&gt;
-
-&lt;p&gt;デプロイしたら、テストしてみましょう。&lt;/p&gt;
-
-&lt;p&gt;自分のサイトのアドレスを入力して、&lt;code&gt;Check Favicon&lt;/code&gt;ボタンを押します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_test1.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;チェックが終わると、こんな感じで結果が表示されます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_test2.png&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;ぜんぶパスしました🎉 うれしいですね。&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;casperをいじっている&lt;/li&gt;
-&lt;li&gt;realfavicongenerator.netで、必要なファビコンの生成とファビコンのテストができ、便利でした&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -307,85 +59,7 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
 
 &lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;prismを使ってみる&#34;&gt;✎Prismを使ってみる&lt;/h2&gt;
-
-&lt;p&gt;Prism(&lt;a href=&#34;https://github.com/PrismJS/prism&#34;&gt;PrismJS/prism&lt;/a&gt;)というやつが目に止まりましたのでこれを使ってみます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/PrismJS/prism/blob/v1.6.0/LICENSE&#34;&gt;MITライセンス&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;p&gt;まず&lt;a href=&#34;http://prismjs.com&#34;&gt;http://prismjs.com&lt;/a&gt;に訪問する。こんな↓サイトです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;prism&#34; src=&#34;https://hoshinotsuyoshi.com/images/prismjs.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;p&gt;「DOWNLOAD」ボタンを押すとこんな画面です。↓&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;prism_choose&#34; src=&#34;https://hoshinotsuyoshi.com/images/prismjs_choose.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;p&gt;ここで&lt;strong&gt;利用する言語に応じてCSSをカスタマイズすることができます。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;チェックした言語がCSSに反映されるようです。&lt;/p&gt;
-
-&lt;p&gt;さらに「DOWNLOAD JS」及び「DOWNLOAD CSS」ボタンを押すと、prism.jsとprism.cssが降ってきます。&lt;/p&gt;
-
-&lt;h2 id=&#34;casperに反映させる&#34;&gt;✎casperに反映させる&lt;/h2&gt;
-
-&lt;p&gt;どうやらcasperのコードを読むと、cssはheaderに、jsはfooterに貼れば良いっぽいので、
-近いところに貼っていきます。&lt;/p&gt;
-
-&lt;p&gt;それぞれ差分はこんな感じ。&lt;/p&gt;
-
-&lt;h4 id=&#34;layouts-partials-footer-html&#34;&gt;layouts/partials/footer.html&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;diff --git a/layouts/partials/footer.html b/layouts/partials/footer.html
-index 7a19ad6..4c5f0d1 100644
---- a/layouts/partials/footer.html
-+++ b/layouts/partials/footer.html
-@@ -7,6 +7,7 @@
-     &amp;lt;/div&amp;gt;
-     &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/jquery.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-     &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/jquery.fitvids.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-+    &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/prism.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-     &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/index.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-     {{ if .Site.Params.customFooterPartial }}
-         {{ partial .Site.Params.customFooterPartial . }}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;layouts-partials-header-html&#34;&gt;layouts/partials/header.html&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;diff --git a/layouts/partials/header.html b/layouts/partials/header.html
-index d17b5df..6709e1c 100644
---- a/layouts/partials/header.html
-+++ b/layouts/partials/header.html
-@@ -37,6 +37,7 @@
- 
-     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;{{.Site.BaseURL}}css/screen.css&amp;quot; /&amp;gt;
-     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;{{.Site.BaseURL}}css/nav.css&amp;quot; /&amp;gt;
-+    &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;{{.Site.BaseURL}}css/prism.css&amp;quot; /&amp;gt;
-     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata&amp;quot; /&amp;gt;
- 
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;コミットはこちらです。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/hoshinotsuyoshi/hugo-theme-casper/commit/e73abaa1dd93313836bc9e07bd68ce21bfd8c420&#34;&gt;&lt;a href=&#34;http://prismjs.com/download.html&#34;&gt;http://prismjs.com/download.html&lt;/a&gt; で取得した jsとcssをセットした · hoshinotsuyoshi/hugo-theme-casper@e73abaa&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Coy tshedor 3.93KB Markup 0.82KB CSS 0.99KB C-like 0.68KB JavaScript 1.3KB Go arnehormann 0.67KB Bash zeitgeist 872.76KB C zeitgeist 870.94KB Ruby samflores 2KB YAML hason 1.14KB Ruby samflore&amp;hellip;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;シンタックスハイライトが効いた&#34;&gt;✎シンタックスハイライトが効いた!&lt;/h2&gt;
-
-&lt;h3 id=&#34;before&#34;&gt;before↓&lt;/h3&gt;
-
-&lt;p&gt;&lt;img alt=&#34;before&#34; src=&#34;https://hoshinotsuyoshi.com/images/highlight_before.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;after&#34;&gt;after↓&lt;/h3&gt;
-
-&lt;p&gt;&lt;img alt=&#34;after&#34; src=&#34;https://hoshinotsuyoshi.com/images/highlight_after.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h2&gt;
-
-&lt;p&gt;シンタックスハイライトを手に入れることができました! 🎉&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -399,55 +73,7 @@ index d17b5df..6709e1c 100644
 &lt;p&gt;hugoでhtmlを生成し、github pagesでホスティングしています。
 あまり奇をてらったやり方はしていません。至って普通です。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;準備&#34;&gt;準備&lt;/h4&gt;
-
-&lt;h5 id=&#34;hugoをインストール&#34;&gt;hugoをインストール&lt;/h5&gt;
-
-&lt;p&gt;&lt;a class=&#34;embedly-card&#34; href=&#34;https://gohugo.io/&#34;&gt;Hugo :: A fast and modern static website engine&lt;/a&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;は、高速なhtml生成ツールです。
-brewでインストールします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ brew install hugo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;このブログのリポジトリをクローン&#34;&gt;このブログのリポジトリをクローン&lt;/h5&gt;
-
-&lt;p&gt;githubに置いてあります。&lt;/p&gt;
-
-&lt;p&gt;&lt;a class=&#34;embedly-card&#34; href=&#34;https://github.com/hoshinotsuyoshi/hoshinotsuyoshi.com&#34;&gt;hoshinotsuyoshi/hoshinotsuyoshi.com&lt;/a&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;クローンします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ go get github.com/hoshinotsuyoshi/hoshinotsuyoshi.com
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;ローカルでサーバーを立てつつ記事を編集する&#34;&gt;ローカルでサーバーを立てつつ記事を編集する&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;$ rake s&lt;/code&gt; とやるとローカルにサーバが立ちます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ rake s
-
-hugo server -t casper
-Started building sites ...
-...snip...
-Serving pages from memory
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;この状態で&lt;code&gt;content/post&lt;/code&gt;以下のファイルを追加・編集するとすぐ変更が反映されます。&lt;/p&gt;
-
-&lt;p&gt;例えば画像を貼ります。すぐ反映されます。
-&lt;img src=&#34;https://hoshinotsuyoshi.com/images/blog_ani.gif&#34;&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;デプロイする&#34;&gt;デプロイする&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;$ rake&lt;/code&gt;でデプロイできます。&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -2,13 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/index.xml</link>
+    <link>https://hoshinotsuyoshi.com/</link>
     <description>Recent content on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Sat, 06 May 2017 17:38:00 +0900</lastBuildDate>
-    <atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)の件</title>
@@ -20,67 +22,7 @@
 
 &lt;p&gt;別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;cloudflare側&#34;&gt;cloudflare側&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.cloudflare.com/a/add-site&#34;&gt;https://www.cloudflare.com/a/add-site&lt;/a&gt; に行き、&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hoshinotsuyoshi.com&lt;/code&gt; と入力。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudflare-2.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;費用は抑えたいので &lt;code&gt;Free Website&lt;/code&gt; を選択。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudflare-3.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;今のネームサーバの設定についての指示が出ます。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hoshinotsuyoshi.com&lt;/code&gt; はお名前.comで購入したので、ここではお名前.comのネームサーバが左側に表示されています。&lt;/p&gt;
-
-&lt;p&gt;右側に表示されたネームサーバ名2つをメモします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudflare-4.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;お名前-com側&#34;&gt;お名前.com側&lt;/h2&gt;
-
-&lt;p&gt;このネームサーバ2つをお名前.comのほうに反映させます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/onamae-1.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/onamae-2.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;これで &lt;code&gt;hoshinotsuyoshi.com&lt;/code&gt; のDNSの設定はcloudflareに丸投げ、という形になりました。&lt;/p&gt;
-
-&lt;h2 id=&#34;apex-domains&#34;&gt;apex domains&lt;/h2&gt;
-
-&lt;p&gt;ここから先は &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/&#34;&gt;github pagesのapex domainsの説明&lt;/a&gt;
-を見れば大丈夫です。&lt;/p&gt;
-
-&lt;h4 id=&#34;リポジトリ側の調整&#34;&gt;リポジトリ側の調整&lt;/h4&gt;
-
-&lt;p&gt;CNAMEというファイルを用意しておきます。&lt;/p&gt;
-
-&lt;h4 id=&#34;cloudflare側-1&#34;&gt;cloudflare側&lt;/h4&gt;
-
-&lt;p&gt;今回は&lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider&#34;&gt;Aレコードを登録する方法&lt;/a&gt;
-をやりました。&lt;/p&gt;
-
-&lt;p&gt;こちらに書いてあるとおり、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;192.30.252.153
-192.30.252.154
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;の2つのAレコードを登録しておけばOk。&lt;/p&gt;
-
-&lt;p&gt;あと、 httpsの設定は &lt;code&gt;flexible&lt;/code&gt; にしておく。無料利用の場合、この設定じゃないとダメなはず。&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
-
-&lt;p&gt;こんな感じになってれば設定完了です! 🎉&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/gh-pages-cert.png&#34; width=600&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -91,67 +33,7 @@
       <guid>https://hoshinotsuyoshi.com/post/gaming-chair/</guid>
       <description>&lt;p&gt;自宅での作業用に、AKRACINGのゲーミングチェア🎮💺買いました&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;最近座ってると首が痛くなってきた
-
-&lt;ul&gt;
-&lt;li&gt;腰はあまり痛くない&lt;/li&gt;
-&lt;li&gt;背もたれで改善できないだろうか&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;というのが購入動機。&lt;/p&gt;
-
-&lt;p&gt;背もたれのあるオフィス用チェアはめっちゃ高いイメージ(6万円以上)があるので、イス初心者としてはまずゲーミングチェア(4万円程度)で検討することを考えたわけです。&lt;/p&gt;
-
-&lt;p&gt;池袋のビックカメラ(PC館)のゲーミングフロアは、ゲーミングチェアがたくさんあるという情報を手に入れ、行ってきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#39;https://hoshinotsuyoshi.com/images/gaming-chair-1.jpg&#39; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;イス多くていい感じでした。&lt;/p&gt;
-
-&lt;p&gt;本当は&lt;a href=&#34;http://cougargaming.com/pt/products/accessories/armor/&#34;&gt;COUGAR ARMOR - Gaming Chair&lt;/a&gt;が、革の感じがかっこよかった。これ↓&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#39;https://hoshinotsuyoshi.com/images/gaming-chair-2.jpg&#39; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;3万2千円なら買いやろ!と思ったが、
-「国内在庫なし・家に届くのは6月頃」と言われてしまった😂
-ので仕方なく別のを選んだ。&lt;/p&gt;
-
-&lt;p&gt;結局選んだのはこれ(Amazonで買いました)↓&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://www.amazon.co.jp/dp/B01G8E3J3G&#34;&gt;AKRACING ゲーミングチェア WOLF-RED 赤&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;オンライン通販のAmazon公式サイトなら、AKRACING ゲーミングチェア WOLF-RED 赤を文房具・オフィス用品ストアで、いつでもお安く。当日お急ぎ便対象商品は、 当日お届け可能です。アマゾン配送商品は、通常配送無料（一部除く）。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#39;https://hoshinotsuyoshi.com/images/gaming-chair-3.jpg&#39; width=600&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;2日で届いた&#34;&gt;2日で届いた&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#39;https://hoshinotsuyoshi.com/images/gaming-chair-4.jpg&#39; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#39;https://hoshinotsuyoshi.com/images/gaming-chair-5.jpg&#39; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#39;https://hoshinotsuyoshi.com/images/gaming-chair-6.jpg&#39; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;なんやら部品が多くて大変そうに見えましたが、1時間ほどで組み立てできました。&lt;/p&gt;
-
-&lt;h2 id=&#34;完成&#34;&gt;完成&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#39;https://hoshinotsuyoshi.com/images/gaming-chair-7.jpg&#39; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#39;https://hoshinotsuyoshi.com/images/gaming-chair-8.jpg&#39; width=600&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;2週間ほど使ってみて&#34;&gt;2週間ほど使ってみて&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ヘッドレストが微調整できるのが良い&lt;/li&gt;
-&lt;li&gt;背もたれがあるとやはりラク。&lt;/li&gt;
-&lt;li&gt;革ではなくウレタンなので触り心地はそこそこ。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;悪くない買い物だったと思います&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -162,125 +44,7 @@
       <guid>https://hoshinotsuyoshi.com/post/multi-mastodon-poor/</guid>
       <description>&lt;p&gt;terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;RedisとPostgresの運用をラクしようとするとElastiCacheとRDSを使うことになります。&lt;/p&gt;
-
-&lt;p&gt;しかし、&lt;strong&gt;がんばってRDSを1台で運用&lt;/strong&gt;したとしても、
-以下のように、Redisだけで3インスタンス目で38ドルもかかってしまいます。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;# 🐘&lt;/th&gt;
-&lt;th&gt;ElastiCache&lt;/th&gt;
-&lt;th&gt;RDS&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1台目&lt;/td&gt;
-&lt;td&gt;$0/mo.(初年度無料枠)&lt;/td&gt;
-&lt;td&gt;$0/mo.(初年度無料枠)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2台目&lt;/td&gt;
-&lt;td&gt;$19/mo. (無料枠 + 1台)&lt;/td&gt;
-&lt;td&gt;$0/mo.(無料枠1台でがんばる)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3台目&lt;/td&gt;
-&lt;td&gt;$38/mo.(無料枠 + 2台)&lt;/td&gt;
-&lt;td&gt;$0/mo.(無料枠1台でがんばる)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;ケチケチ作戦&#34;&gt;ケチケチ作戦&lt;/h2&gt;
-
-&lt;p&gt;そこで、&lt;strong&gt;Redisも1台だけ&lt;/strong&gt;にしてしまいます。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;# 🐘&lt;/th&gt;
-&lt;th&gt;ElastiCache&lt;/th&gt;
-&lt;th&gt;RDS&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1台目&lt;/td&gt;
-&lt;td&gt;$0/mo.(初年度無料枠)&lt;/td&gt;
-&lt;td&gt;$0/mo.(初年度無料枠)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2台目&lt;/td&gt;
-&lt;td&gt;$0/mo.(無料枠1台でがんばる)&lt;/td&gt;
-&lt;td&gt;$0/mo.(無料枠1台でがんばる)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3台目&lt;/td&gt;
-&lt;td&gt;$0/mo.(無料枠1台でがんばる)&lt;/td&gt;
-&lt;td&gt;$0/mo.(無料枠1台でがんばる)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;その他はこんな構成です。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudcraft-mastodon.png&#34; width=1600&gt;&lt;/p&gt;
-
-&lt;p&gt;これでEC2代だけになったわ♡ と思ったところ、そんなにうまくはいきませんでした。&lt;/p&gt;
-
-&lt;p&gt;動作確認したところ、&lt;strong&gt;どうも🐘のキャッシュが他の🐘に影響を与えてしまっている&lt;/strong&gt;、、&lt;/p&gt;
-
-&lt;h2 id=&#34;ケチケチ作戦ワークアラウンド&#34;&gt;ケチケチ作戦ワークアラウンド&lt;/h2&gt;
-
-&lt;p&gt;こういうふうにやっていきます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;--- a/config/initializers/redis.rb
-+++ b/config/initializers/redis.rb
-@@ -4,5 +4,6 @@ Redis.current = Redis.new(
-   host: ENV.fetch(&#39;REDIS_HOST&#39;) { &#39;localhost&#39; },
-   port: ENV.fetch(&#39;REDIS_PORT&#39;) { 6379 },
-   password: ENV.fetch(&#39;REDIS_PASSWORD&#39;) { false },
-+  db: ENV.fetch(&#39;REDIS_DB&#39;) { 0 }.to_i,
-   driver: :hiredis
- )
-diff --git a/streaming/index.js b/streaming/index.js
-index a1e7eaca..29ded9e2 100644
---- a/streaming/index.js
-+++ b/streaming/index.js
-@@ -39,7 +39,8 @@ const wss    = new WebSocket.Server({ server })
- const redisClient = redis.createClient({
-   host:     process.env.REDIS_HOST     || &#39;127.0.0.1&#39;,
-   port:     process.env.REDIS_PORT     || 6379,
--  password: process.env.REDIS_PASSWORD
-+  password: process.env.REDIS_PASSWORD,
-+  db:       process.env.REDIS_DB || 0
- })
-
- const subs = {}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;REDIS_DBという環境変数を誕生させdbを隔離します。&lt;/p&gt;
-
-&lt;p&gt;これでいまんとこ大丈夫だけど、redis詳しくないし、何か間違っている気もする🎲保証はしない&lt;/p&gt;
-
-&lt;p&gt;インスタンスごとに0,1,2,3&amp;hellip;と値を入れます。&lt;/p&gt;
-
-&lt;p&gt;このへんの制御もterraformでやる。&lt;/p&gt;
-
-&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
-
-&lt;p&gt;terraform楽しいです&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -289,29 +53,7 @@ index a1e7eaca..29ded9e2 100644
       <pubDate>Fri, 28 Apr 2017 02:39:54 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/amazake/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;amazonで500円で買える甘酒が最高というブログエントリーを書かねばならないがamazonで500円で買える甘酒が最高ということしか言えることがない🍶&lt;/p&gt;&amp;mdash; hoshino🌴🌾 (@hoppiestar) &lt;a href=&#34;https://twitter.com/hoppiestar/status/856488582839652353&#34;&gt;April 24, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;甘酒 &lt;a href=&#34;https://t.co/t2bXciqE6G&#34;&gt;pic.twitter.com/t2bXciqE6G&lt;/a&gt;&lt;/p&gt;&amp;mdash; hoshino🌴🌾 (@hoppiestar) &lt;a href=&#34;https://twitter.com/hoppiestar/status/857443909269544961&#34;&gt;April 27, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;甘酒 &lt;a href=&#34;https://t.co/bmZXtTu40m&#34;&gt;pic.twitter.com/bmZXtTu40m&lt;/a&gt;&lt;/p&gt;&amp;mdash; hoshino🌴🌾 (@hoppiestar) &lt;a href=&#34;https://twitter.com/hoppiestar/status/857443989368197120&#34;&gt;April 27, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;甘酒まとめ&#34;&gt;✎甘酒まとめ&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;これ最高にうまい&lt;/li&gt;
-&lt;li&gt;いくら甘酒好きでも1kgは大変である
-
-&lt;ul&gt;
-&lt;li&gt;2〜3倍に希釈するので2〜3リットルになる&lt;/li&gt;
-&lt;li&gt;しかも早めに飲まなければならない&lt;/li&gt;
-&lt;li&gt;瓶詰めのやつが高い理由かも&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -322,95 +64,7 @@ index a1e7eaca..29ded9e2 100644
       <guid>https://hoshinotsuyoshi.com/post/kakutei_shinkoku/</guid>
       <description>&lt;p&gt;確定申告した時のメモ・必要だった書類の備忘録です。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;なぜ確定申告をする必要があったのか&#34;&gt;なぜ確定申告をする必要があったのか&lt;/h3&gt;
-
-&lt;p&gt;昨年2016年、中古で自分用の住居を買ったためです。🏠&lt;/p&gt;
-
-&lt;p&gt;住宅ローン控除(税金の還付)等を受けるために不動産を取得すると翌年の3月に確定申告が必要になる。💸&lt;/p&gt;
-
-&lt;p&gt;また、今回の場合は妻が住宅資金用途で身内から贈与があり、贈与税控除の申告も必要でした。&lt;/p&gt;
-
-&lt;h3 id=&#34;マイナンバーカードを利用したe-tax申請に失敗しました&#34;&gt;マイナンバーカードを利用したe-tax申請に失敗しました&lt;/h3&gt;
-
-&lt;p&gt;これがハマった&lt;/p&gt;
-
-&lt;p&gt;全部電子化して書類提出してやろうかと考え、ICカードリーダーも調達したのですが、&lt;/p&gt;
-
-&lt;p&gt;マイナンバーカードの発行に &lt;strong&gt;「3週間以上かかる」ことが2月も下旬で判明&lt;/strong&gt;し、 結局プリントして紙で申請することに。&lt;/p&gt;
-
-&lt;p&gt;3週間以上かかるなんてどこにも書いてなくて困りました… ICカードリーダーは来年以降使います…&lt;/p&gt;
-
-&lt;h3 id=&#34;私の場合必要だった書類&#34;&gt;私の場合必要だった書類&lt;/h3&gt;
-
-&lt;h4 id=&#34;所得税添付書類&#34;&gt;所得税添付書類&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;マイナンバー通知カードのコピー&lt;/li&gt;
-&lt;li&gt;免許証のコピー&lt;/li&gt;
-&lt;li&gt;源泉徴収票原本&lt;/li&gt;
-&lt;li&gt;住宅ローン残高証明原本
-
-&lt;ul&gt;
-&lt;li&gt;銀行から郵送されます&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;全部事項証明書(土地・建物)
-
-&lt;ul&gt;
-&lt;li&gt;これは司法書士さんから去年の登記のあとに土地の権利書と一緒にもらってたやつ&lt;/li&gt;
-&lt;li&gt;司法書士さんからもらったことを忘れていた(忘れてたので法務局からも取り寄せてしまった)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;不動産売買契約書のコピー
-
-&lt;ul&gt;
-&lt;li&gt;一応全ページコピーした&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;贈与税-住宅資金用途-添付書類&#34;&gt;贈与税(住宅資金用途)添付書類&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;マイナンバー通知カードのコピー&lt;/li&gt;
-&lt;li&gt;免許証のコピー&lt;/li&gt;
-&lt;li&gt;源泉徴収票原本&lt;/li&gt;
-&lt;li&gt;戸籍謄本(身内からの贈与のため)&lt;/li&gt;
-&lt;li&gt;全部事項証明書(土地・建物)は本来必要だが省略した
-
-&lt;ul&gt;
-&lt;li&gt;「所得税」で提出済みのため。税務署の人が言うにはそれでいいそうだ。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;不動産売買契約書のコピーは省略した
-
-&lt;ul&gt;
-&lt;li&gt;「所得税」で提出済みのため。税務署の人が言うにはそれでいいそうだ。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;直接税務署に持っていってもいいですが、簡易書留で済ませました。&lt;/p&gt;
-
-&lt;h3 id=&#34;その他&#34;&gt;その他&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;「すまい給付金」も調べたが、対象ではなかった
-
-&lt;ul&gt;
-&lt;li&gt;消費税がかかっていませんでしたので、国土交通省管轄の「すまい給付金」の対象ではありませんでした。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;感想&#34;&gt;感想&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;特にオチはない&lt;/li&gt;
-&lt;li&gt;マイナンバーカードを利用したe-tax申請に失敗しました
-
-&lt;ul&gt;
-&lt;li&gt;が、国税局の申告書作成システムは意外とラクでした。&lt;/li&gt;
-&lt;li&gt;マイナンバーカードは余裕を持って作っておくべき&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;法務局のシステムも使いやすかった&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -421,115 +75,7 @@ index a1e7eaca..29ded9e2 100644
       <guid>https://hoshinotsuyoshi.com/post/amazon_drive_japanese/</guid>
       <description>&lt;p&gt;撮ったホームビデオのバックアップを置く場所に困ってきたので、&lt;a href=&#34;https://www.amazon.co.jp/clouddrive/home&#34;&gt;Amazon Drive&lt;/a&gt;を契約しました。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;アップロードしていく&#34;&gt;アップロードしていく&lt;/h3&gt;
-
-&lt;p&gt;専用のアプリをインストールします。&lt;/p&gt;
-
-&lt;p&gt;インストールすると、バーに常駐しやがります。&lt;/p&gt;
-
-&lt;p&gt;開くとこんな感じです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon_drive_no_sync.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;「同期せずにアップロードします」を使います。&lt;/p&gt;
-
-&lt;p&gt;アップロードするファイルを選択する画面。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon_drive_upload.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;適当にアップロードしていきます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon_drive_app.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;アップロードし終わった後の状態。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon_drive_usage.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;べんりですね。&lt;/p&gt;
-
-&lt;h3 id=&#34;googledriveとかdropboxとの比較&#34;&gt;GoogleDriveとかDropboxとの比較&lt;/h3&gt;
-
-&lt;p&gt;GoogleDriveとかDropboxとかって、なんかやたらとすぐ「同期(sync)」しようとするUIな気がしていて、
-どうもそこが気に入らない。&lt;/p&gt;
-
-&lt;p&gt;油断するとすぐ手元のSSDの容量を食ってしまう。&lt;/p&gt;
-
-&lt;p&gt;どうやら自分には「同期」というものが難しすぎるらしい。&lt;/p&gt;
-
-&lt;p&gt;AmazonDriveは「同期せずにアップロードします」というボタンがわかりやすいところにある。&lt;strong&gt;それが良かった。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;(全体的に使いやすい!というわけではありません👿)&lt;/p&gt;
-
-&lt;h3 id=&#34;cliツールの運用はあきらめた&#34;&gt;CLIツールの運用はあきらめた&lt;/h3&gt;
-
-&lt;p&gt;マウントしたい欲求はあったのですが、&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/yadayada/acd_cli&#34;&gt;yadayada/acd_cli&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;acd_cli - A command line interface and FUSE filesystem for Amazon (Cloud) Drive&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;このツールが良さげなのですが、あまり手元の環境汚したくないので、Dockerに入れて試したんですが、うまく動きませんでした… 🐳&lt;/p&gt;
-
-&lt;p&gt;誰かいい感じにDockerとか使ってやってくれ…&lt;/p&gt;
-
-&lt;h3 id=&#34;amazon-co-jpとamazon-comの比較&#34;&gt;amazon.co.jpとamazon.comの比較&lt;/h3&gt;
-
-&lt;p&gt;アップロードしまくったあとから気づいたのですが、
-amazon.co.jpとamazon.comとで、結構値段が違うんですね…&lt;/p&gt;
-
-&lt;p&gt;amazon.comのほうが良かったかな…&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/clouddrive/home&#34;&gt;https://www.amazon.co.jp/clouddrive/home&lt;/a&gt; &lt;strong&gt;13,800円/年&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon-co-jp-drive.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/clouddrive/home&#34;&gt;https://www.amazon.com/clouddrive/home&lt;/a&gt; &lt;strong&gt;59.99ドル/年&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;amazon_drive&#34; src=&#34;https://hoshinotsuyoshi.com/images/amazon-com-drive.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;amazon.comのほうが良かった感。 アメリカだとロケーション的に遠い、とかあるのかな?&lt;/p&gt;
-
-&lt;p&gt;ちなみにGoogle Driveだと1TBで9.99ドル/月ですので、微妙なところです。1TB以上アップロードする予定があるなら、Google DriveよりAmazon Driveのほうがちょっとお得でしょうか。&lt;/p&gt;
-
-&lt;h3 id=&#34;macが英語設定だとハマる&#34;&gt;Macが英語設定だとハマる&lt;/h3&gt;
-
-&lt;p&gt;Sierraをクリーンインストールした後にハマりました。&lt;/p&gt;
-
-&lt;p&gt;なぜかamazon.comに接続しようとしよる…&lt;/p&gt;
-
-&lt;p&gt;英語設定だからか？とあたりをつけてサポートに聞いたところ、(以下抜粋)&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;ご指摘の通りPC設定の言語が英語の場合、正常にAmazon.co.jpにてアクセスいただけない場合がございます。
-そのため、お手数ですがですがご利用のPCにて下記の環境設定についてご確認ください
-・アップルメニュー＞「言語と地域」＞地域と言語＞日本となっているか
-・ 地域と時間帯が日本になっているか
-・カレンダーが西暦になっているか
-&lt;a href=&#34;https://support.apple.com/kb/PH21561?locale=ja_JP&amp;amp;viewlocale=ja_JP&#34;&gt;https://support.apple.com/kb/PH21561?locale=ja_JP&amp;amp;viewlocale=ja_JP&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;みたいな返事が返ってきました。&lt;/p&gt;
-
-&lt;p&gt;ググると同じことで悩んでた人がちらほら…&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;http://enoki.hatenablog.com/entry/2016/01/21/151910&#34;&gt;Amazon Cloud Driveのデスクトップアプリでamazon.co.jpにサインインできないとき - THE えのき&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;日本でもプライム・フォトがプライム会員向けにスタートしました。 Amazon.co.jp: Amazon Prime 早速デスクトップアプリをダウンロードしてみました。 が、 サインイン出来ない&amp;hellip; 右上に「Use your existing amazon.com account.」と書いてあるので、どうやら amazon.com のアカウントを必要としているみたいです。 システムの言語が英語なので、それが原因なのかな〜と思い、とりあえず英語から日本語に変更してみました。 方法がわからない人は↓のサイトでも参考にしてください。 日本語に変更した後、 Amazon Cloud Drive を起動すると&amp;hellip; 「 Amazon.co.jp アカウントを使用」になってますね。 システムの言語を見てどの国の Amazon を利用しているのか判断しているんでしょうか？ はい 無事サインインできました👏 一度サインインしてしまえば、システムの言語を英語に戻した後もサインイン状態は継続していました。 ファイルのアップロードもバッチリ。 合計25GB弱のデータをアップロードしてみましたが、1時間ほどで終わりました。 Macの アクティビティモニターだと転送速度が7~10MB/sでした。 かなり早いですね🎉 写真ファイルは別にカウントされるみたいですね。 今後もバシバシRAWファイルをアップロードしようと思います。 試しにサインアウトしたあと再度サインインしようとしたら、「Use your existing amazon.com account.」と表示されていたので、もう一度日本語に設定する必要がありそうです。 サインインするタイミングでのシステムの言語にあわせてどの国の Amazon を利用するのか決めてる雰囲気です。 Macでは地域を設定することができるので、そっちを見てログイン先を変えるほうがいいような気がします。 というわけで問い合わせ済み。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;こちらも。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://gist.github.com/pn11/2784bc5985b69be3f00ce490b69cf241&#34;&gt;Mac を英語で使っている場合、 Amazon Cloud Drive のデスクトップクライアントは、System Preferences ＞ Language &amp;amp; Region ＞ Advanced ＞Format language で 日本語を選択すると amazon.co.jp にログインできる。&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Mac を英語で使っている場合、 Amazon Cloud Drive のデスクトップクライアントは、System Preferences ＞ Language &amp;amp; Region ＞ Advanced ＞Format language で 日本語を選択すると amazon.co.jp にログインできる。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;なんかめんどくさそうなので日本語に戻ってきてしまいました😅&lt;/p&gt;
-
-&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
-
-&lt;p&gt;AmazonDriveをamazon.comで使ってる人がいましたら感想聞きたいです!!&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -544,63 +90,7 @@ amazon.co.jpとamazon.comとで、結構値段が違うんですね…&lt;/p&gt;
 
 &lt;p&gt;第1回目はこちら(&lt;a href=&#34;https://hoshinotsuyoshi.com/post/arrow_func_no_brace/&#34;&gt;君はarrow functionの波括弧省略について知っているか&lt;/a&gt;)でした。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;shorthand-property-names&#34;&gt;✎Shorthand property names&lt;/h3&gt;
-
-&lt;p&gt;最近のオブジェクトは、このように書けるようです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var prop1 = &#39;a&#39;;
-var prop2 = &#39;b&#39;;
-{ prop1, prop2 } //  {prop1: &amp;quot;a&amp;quot;, prop2: &amp;quot;b&amp;quot;}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;下記↓のページに説明が書いてあります。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Object_initializer&#34;&gt;オブジェクト初期化子&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;オブジェクトは new Object() 、 Object.create() 、 リテラル 表記法 ( initializer 表記法)を使用して初期化されます。オブジェクト初期化子はオブジェクトのプロパティ名と関連した値のゼロ以上のペアのリストです。中括弧( {} )で囲まれます。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Shorthand property names&lt;/code&gt;て言うんですね、知らなかった。。&lt;/p&gt;
-
-&lt;h4 id=&#34;さて感想&#34;&gt;✎さて感想&lt;/h4&gt;
-
-&lt;p&gt;わたしはRubyばかり書くマンなので、これはRubyでいうところの&lt;code&gt;Set&lt;/code&gt;に似てるなと思いました。&lt;/p&gt;
-
-&lt;p&gt;似てないですかね。重複がないのを保証してくれるのが、&lt;code&gt;Set&lt;/code&gt;に近いと思いました。&lt;/p&gt;
-
-&lt;h4 id=&#34;文字列リテラルを使わずにhello-worldを出力しなさい-というお題&#34;&gt;✎「文字列リテラルを使わずにhello worldを出力しなさい」というお題&lt;/h4&gt;
-
-&lt;p&gt;この記法のメリットとしては、まあ実務上もいろいろあると思うんですが、&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;実務上じゃない範囲で&lt;/strong&gt;考えますと、以下の問題を簡単に解くことができることに気づきました！&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;文字列リテラルを使わずにhello worldを出力しなさい&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;これは意外と難しくて、例えば、こんな解き方があるみたいです↓。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;http://qiita.com/alucky0707/items/6ecb34253c9cb206c53e&#34;&gt;JavaScriptで文字列と数値リテラルを使わずにHello World - Qiita&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;何を今更、って感じですが書きたくなったので許してください。 元ネタ= &lt;a href=&#34;https://codeiq.jp/ace/cielavenir/q431&#34;&gt;https://codeiq.jp/ace/cielavenir/q431&lt;/a&gt; 僕が書いたらこんな風になりました。 var zero = +String.prototype, one = -~zero, two = one  one, four = one  two, hundred = ({} + zero).charCodeAt(two) + two; &amp;hellip;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip;難しいですね。&lt;/p&gt;
-
-&lt;h3 id=&#34;shorthand-property-namesを使えば簡単さ&#34;&gt;✎Shorthand property namesを使えば簡単さ。&lt;/h3&gt;
-
-&lt;p&gt;こうすればいいことに気づいた！！&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var ハローワールド;
-console.log(Object.keys({ハローワールド})[0]); // ハローワールド
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;はい！！！！！！！ 🌃🌃&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;とりあえず手元のChrome55では動作します。 🌠🌠🌠&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -614,61 +104,7 @@ console.log(Object.keys({ハローワールド})[0]); // ハローワールド
 
 &lt;p&gt;引数の丸括弧&lt;code&gt;()&lt;/code&gt;の省略については知っていたんですが、波括弧&lt;code&gt;{}&lt;/code&gt;も省略できる時があるんですね。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;1行だけ・かつ返り値として扱うときにこう書ける。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// #1
-twice = n =&amp;gt; n * 2;
-twice(3); // 6
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;#1は波括弧を省略しているためそのステートメントの結果が返り値になります。&lt;/p&gt;
-
-&lt;p&gt;つまり↑の#1は以下#2と等価ではありません。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// #2
-twice = n =&amp;gt; { n * 2; }
-twice(3); // undefined
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;#1は以下#3と等価です。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// #3
-twice = n =&amp;gt; { return n * 2; }
-twice(3); // 6
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;さて&#34;&gt;さて&lt;/h3&gt;
-
-&lt;p&gt;オブジェクトリテラルも波括弧(&lt;code&gt;{&lt;/code&gt;)を使うので、&lt;/p&gt;
-
-&lt;p&gt;arrow(&lt;code&gt;=&amp;gt;&lt;/code&gt;)の&lt;strong&gt;次にオブジェクトリテラルが来ると混乱しそう&lt;/strong&gt;ですが、&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// object リテラル式を返す場合は、本体を丸括弧 () で囲みます:
-params =&amp;gt; ({foo: bar})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/arrow_functions&#34;&gt;アロー関数 - JavaScript _ MDN&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;とのことです。&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;手元のchrome(chrome55)で確認すると、こんな感じでした。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;bar = 1
-func1 = params =&amp;gt; ({foo: bar})
-func2 = params =&amp;gt; {foo: bar}
-
-console.log(func1()); // Object {foo: 1}
-
-console.log(func2()) // undefined
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;なるほど…&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -680,143 +116,7 @@ console.log(func2()) // undefined
       <description>&lt;p&gt;&lt;a href=&#34;https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/&#34;&gt;今月あとどれくらい働けばよいか計算するChrome拡張書いている · hoshinotsuyoshi.com&lt;/a&gt;
 の続きです。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;感動したことシリーズ。&lt;/p&gt;
-
-&lt;p&gt;経緯は&lt;a href=&#34;https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/&#34;&gt;前回の記事&lt;/a&gt;
-をお読みください。&lt;/p&gt;
-
-&lt;p&gt;こちらがいまのとこ動いてるコードの全て。122行なのですが&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;console.log(&#39;start!&#39;);
-const page = &#39;https://ssl.jobcan.jp/employee/attendance?code=[ここにcodeを埋める]&#39;;
-
-//--------------------------
-//所定労働日数
-const standardWorkdaysCount = (doc) =&amp;gt; {
-    const result = doc.getElementById(&#39;search-result&#39;);
-    const table  = result.querySelector(&amp;quot;div.infotpl&amp;quot;).querySelectorAll(&amp;quot;table.left&amp;quot;)[0];
-    const td     = table.querySelectorAll(&amp;quot;tr&amp;quot;)[4].querySelector(&amp;quot;td&amp;quot;);
-    return parseFloat(td.innerText.replace(&#39; &#39;,&#39;&#39;).replace(&#39;日&#39;, &#39;&#39;));
-};
-
-//所定労働時間
-//所定労働日数に8を掛けたもの
-const standardWorkHoursCount = (doc) =&amp;gt; {
-    return(standardWorkdaysCount(doc) * 8);
-};
-
-//勤務中かどうか
-const isWorking = (doc) =&amp;gt; {
-    const text = doc.body.textContent;
-    return !!text.match(/勤務中/);
-}
-
-//今までの実質労働時間
-const workedHoursCount = (doc) =&amp;gt; {
-    const result    = doc.getElementById(&#39;search-result&#39;);
-    const table     = result.querySelector(&amp;quot;div.infotpl&amp;quot;).querySelectorAll(&amp;quot;table.left&amp;quot;)[1];
-    const td        = table.querySelectorAll(&amp;quot;tr&amp;quot;)[1].querySelector(&amp;quot;td&amp;quot;);
-    const timeArray = td.innerText.split(&#39;:&#39;)
-    const hour      = parseInt(timeArray[0]);
-    const minute    = parseInt(timeArray[1]);
-    return(hour + minute / 60.0);
-};
-
-//実労働時間に有給分の労働時間を足したもの。全休=8時間、半休=4時間
-const excessWorkedHoursCount = (doc) =&amp;gt; {
-    const workedHours = workedHoursCount(doc);
-    const paidHoridaysSpent1 = paidHoridaysSpentTable(doc)[&#39;有休(全休)&#39;] || 0;
-    const paidHoridaysSpent2 = paidHoridaysSpentTable(doc)[&#39;有休(AM休)&#39;] || 0;
-    const paidHoridaysSpent3 = paidHoridaysSpentTable(doc)[&#39;有休(PM休)&#39;] || 0;
-    return(workedHours + paidHoridaysSpent1*8 + paidHoridaysSpent2*8 + paidHoridaysSpent3*8);
-};
-
-//実働日数
-const workdaysCount = (doc) =&amp;gt; {
-    const result    = doc.getElementById(&#39;search-result&#39;);
-    const table     = result.querySelector(&amp;quot;div.infotpl&amp;quot;).querySelectorAll(&amp;quot;table.right&amp;quot;)[0];
-    const td        = table.querySelectorAll(&amp;quot;tr&amp;quot;)[1].querySelector(&amp;quot;td&amp;quot;);
-    return parseFloat(td.innerText);
-};
-
-//有給消化テーブル
-// {
-//   &amp;quot;有休(全休)&amp;quot;: 2,
-//   &amp;quot;有休(PM休)&amp;quot;: 0.5
-// }
-// などの値が返る。
-const paidHoridaysSpentTable = (doc) =&amp;gt; {
-    const result = doc.getElementById(&#39;search-result&#39;);
-    const table  = result.querySelector(&amp;quot;div.infotpl&amp;quot;).querySelectorAll(&amp;quot;table.right&amp;quot;)[1];
-    const fifth  = table.querySelectorAll(&amp;quot;tbody&amp;quot;)[1];
-    const trs    = fifth.querySelectorAll(&amp;quot;tr&amp;quot;);
-    const object = {}
-    const merge  = (element) =&amp;gt; {
-        const key   = element.querySelector(&#39;th&#39;).innerText;
-        const value = parseFloat(element.querySelector(&#39;td&#39;).innerText);
-        object[key] = value;
-        return null;
-    }
-    trs.forEach(merge);
-    return(object);
-}
-
-// 今月の残り出勤可能日数
-const restWorkdaysCount = (doc) =&amp;gt; {
-    const paidHoridaysSpent = paidHoridaysSpentTable(doc)[&#39;有休(全休)&#39;] || 0;
-    return(standardWorkdaysCount(doc) - workdaysCount(doc) - paidHoridaysSpent);
-}
-
-// 1日あたり何時間働けばいいか
-// 所定労働時間から実質労働時間を引いた値を残りの出勤可能日数で割ったもの。
-const requiredWorkHoursCount = (doc) =&amp;gt; {
-    return((standardWorkHoursCount(doc) - excessWorkedHoursCount(doc)) / restWorkdaysCount(doc));
-}
-
-//--------------------------
-
-const parser = new DOMParser();
-
-// https://syncer.jp/javascript-reverse-reference/processing-decimal-point
-// 小数点n位までを残す関数
-// number=対象の数値
-// n=残したい小数点以下の桁数
-const floatFormat = (number, n) =&amp;gt; {
-    const pow = Math.pow(10, n);
-    return Math.round(number*pow)/pow;
-}
-
-const badgeText = (doc) =&amp;gt; {
-    return floatFormat(requiredWorkHoursCount(doc),2).toString();
-}
-
-const main = () =&amp;gt; {
-    fetch(page,{credentials:&amp;quot;include&amp;quot;})
-        .then((_response) =&amp;gt; {
-            fetch(page,{credentials:&amp;quot;include&amp;quot;})
-                .then((response) =&amp;gt; {
-                    return response.text();
-                }).then((text) =&amp;gt; {
-                    const doc = parser.parseFromString(text, &#39;text/html&#39;);
-                    chrome.browserAction.setBadgeText({ text: badgeText(doc) });
-                })
-        });
-}
-
-chrome.browserAction.onClicked.addListener((_tab) =&amp;gt; {
-    console.log(&#39;clicked&#39;);
-    chrome.browserAction.setBadgeText({ text: &#39;....&#39;});
-    main();
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;感動したこと&#34;&gt;感動したこと&lt;/h3&gt;
-
-&lt;p&gt;constとかアロー関数とかありますが、これが&lt;strong&gt;babelなしで動く。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;chrome拡張なので、chromeのことだけ考えれば良いのが良いですね。&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -827,62 +127,7 @@ chrome.browserAction.onClicked.addListener((_tab) =&amp;gt; {
       <guid>https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/</guid>
       <description>&lt;p&gt;n年ぶりにChrome拡張を書いたりしています。経緯について話さなければならない。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;経緯を3行で&#34;&gt;経緯を3行で&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;フレックス勤務&lt;/strong&gt;のため、1ヶ月トータルで「8時間*営業日数」ぶん働けば良いことになっている。&lt;/li&gt;
-&lt;li&gt;各自、勤務表(&lt;a href=&#34;http://jobcan.ne.jp/&#34;&gt;ジョブカン&lt;/a&gt;)とにらめっこし、今月あと何時間働けばよいか計算する必要がある。&lt;/li&gt;
-&lt;li&gt;ジョブカンには &lt;strong&gt;WebAPIが無い。&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;上記の問題を解決するため、同僚がいい感じに勤務表をスクレイピングするsinatraアプリを書いたのですが、
-今回自分は敢えてchrome拡張版を作ろうと思いたちました。&lt;/p&gt;
-
-&lt;h3 id=&#34;今回スクレイピング対象となるページ-勤務表-のふんいき&#34;&gt;今回スクレイピング対象となるページ(勤務表)のふんいき&lt;/h3&gt;
-
-&lt;p&gt;こんなん。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;jobcan&#34; src=&#34;https://hoshinotsuyoshi.com/images/jobcan.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;進捗&#34;&gt;進捗&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;40%ぐらいできた&lt;/strong&gt;気がする。今のところ私のPCでしか動きません🙏&lt;/p&gt;
-
-&lt;h3 id=&#34;ようす&#34;&gt;ようす&lt;/h3&gt;
-
-&lt;p&gt;拡張のボタンを押すと、
-自分の勤務表のデータが読み込まれ、「今月の残りは1日平均どのくらい働けば良いか」を教えてくれます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;extension&#34; src=&#34;https://hoshinotsuyoshi.com/images/jobcan_extension_anime.gif&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;上記の例は、『今月は残り1日平均8.15時間働けば良い』という計算結果を出力した様子です。&lt;/p&gt;
-
-&lt;p&gt;とりあえずバッヂ(&lt;a href=&#34;https://developer.chrome.com/extensions/browserAction#badge&#34;&gt;chrome.browserAction - Google Chrome&lt;/a&gt;)で実装してみたが、
-バッヂは常時表示する必要あるからウケが悪い気がする。再考の余地あり。&lt;/p&gt;
-
-&lt;h3 id=&#34;コード&#34;&gt;コード&lt;/h3&gt;
-
-&lt;p&gt;今のところ部品化もしておらず、テストも無いコードですが。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/hoshinotsuyoshi/how-many-work-time-chrome-extension/tree/it-works&#34;&gt;hoshinotsuyoshi/how-many-work-time-chrome-extension&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;how-many-work-time-chrome-extension - [WIP]今月はあとどれぐらい働けばいいのかな？2&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;展望&#34;&gt;展望&lt;/h3&gt;
-
-&lt;p&gt;↓このboilerplateが参考になったので、引き続き参考にしつつ部品化とテスト追加をやってみたい。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/jhen0409/react-chrome-extension-boilerplate&#34;&gt;jhen0409/react-chrome-extension-boilerplate&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;react-chrome-extension-boilerplate - Boilerplate for Chrome Extension React.js project&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;boilerplate読んでるといろいろと工夫があって楽しい。&lt;/li&gt;
-&lt;li&gt;というか拡張書くの結構楽しい。ドキュメント読んでるといろいろできることに気づく。&lt;/li&gt;
-&lt;li&gt;未完🍊です。いつかまとめられたらいいな。&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -893,111 +138,7 @@ chrome.browserAction.onClicked.addListener((_tab) =&amp;gt; {
       <guid>https://hoshinotsuyoshi.com/post/rake_entry_new/</guid>
       <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;このブログで記事を書き始めるまでの作業&#34;&gt;このブログで記事を書き始めるまでの作業&lt;/h3&gt;
-
-&lt;p&gt;１. 前の記事をコピーして&lt;code&gt;content/post/yyyy-mm-dd_slug名.md&lt;/code&gt;の形で保存。&lt;/p&gt;
-
-&lt;p&gt;２. このへん↓のメタ情報を編集して&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
-date = &amp;quot;2017-01-04T23:21:39+09:00&amp;quot;
-draft = false
-title = &amp;quot;記事のひな形から記事の土台を生成するrakeタスクを作った&amp;quot;
-slug = &amp;quot;rake_entry_new&amp;quot;
-tags = [&amp;quot;hugo&amp;quot;,&amp;quot;blog&amp;quot;]
-image = &amp;quot;images/blog_mvim.png&amp;quot;
-
-+++
-(...ここから記事本文...)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;３. 記事本文を書き始める&lt;/p&gt;
-
-&lt;p&gt;という流れでした。いろいろとめんどい💦&lt;/p&gt;
-
-&lt;p&gt;1と2の作業は、slugさえ決まれば自動的に決まります。
-あと、時刻とかも自動的に挿入できそうです。
-このへんを自動化してみました。&lt;/p&gt;
-
-&lt;h3 id=&#34;記事のひな形とrakeタスクを作った&#34;&gt;記事のひな形とRakeタスクを作った&lt;/h3&gt;
-
-&lt;h4 id=&#34;記事のひな形&#34;&gt;記事のひな形&lt;/h4&gt;
-
-&lt;p&gt;今まで前の記事をコピーしていたので、ひな形は作っていなかったのですが、
-今回作りました。こんな形です。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
-date = &amp;quot;&amp;lt;%= (Time.now + 2*60*60).iso8601 %&amp;gt;&amp;quot;
-draft = false
-title = &amp;quot;テンプレです💪&amp;quot;
-slug = &amp;quot;&amp;lt;%= @slug %&amp;gt;&amp;quot;
-tags = [&amp;quot;tag1&amp;quot;,&amp;quot;tag2&amp;quot;]
-image = &amp;quot;images/slack_display.png&amp;quot;
-
-+++
-
-見出し文
-
-&amp;lt;!--more--&amp;gt;
-
-### h3
-
-imgタグ例
-&amp;lt;img alt=&amp;quot;slack&amp;quot; src=&amp;quot;/images/slack_sidebar.png&amp;quot; width=400&amp;gt;
-
-### ✎まとめ
-
-* まとめ内容です
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;Time#iso8601&lt;/code&gt;を使っているのがミソ(死語)です。&lt;/p&gt;
-
-&lt;p&gt;ちょうど&amp;rdquo;2017-01-04T23:21:39+09:00&amp;rdquo; というフォーマットで出力してくれます💪&lt;/p&gt;
-
-&lt;p&gt;ちなみに&lt;code&gt;Time#iso8601&lt;/code&gt;は、&lt;code&gt;require &#39;time&#39;&lt;/code&gt;しないと使えません。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Time&lt;/code&gt;クラスは、&lt;code&gt;require &#39;time&#39;&lt;/code&gt;する場合としない場合で挙動が変わる、珍しいクラスです。知ってたかい！ 詳しくは&lt;a href=&#34;https://docs.ruby-lang.org/ja/latest/library/time.html&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h4 id=&#34;rakeタスク&#34;&gt;Rakeタスク&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;@slug&lt;/code&gt;というインスタンス変数経由でmarkdownにslugを渡します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# Rakefile
-namespace :entry do
-  desc &#39;Put a new entry&#39;
-  task :new, &#39;title&#39;
-  task :new do |task, args|
-    puts
-    template = ERB.new(File.read(&#39;entry_template.md.erb&#39;))
-    @slug = args[&#39;title&#39;] || &#39;slug&#39;
-    File.write(
-      &amp;quot;./content/post/#{Date.today}_#{@slug}.md&amp;quot;,
-      template.result
-    )
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;このrakeタスクの使い方&#34;&gt;このRakeタスクの使い方&lt;/h4&gt;
-
-&lt;p&gt;つまり&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ rake &#39;entry:new[hoge]&#39;&lt;/code&gt;とやると&lt;code&gt;content/post/2017-01-04_hoge.md&lt;/code&gt;というファイルが自動生成され、メタ情報のslugにも&lt;code&gt;hoge&lt;/code&gt;がセットされます💪。&lt;/p&gt;
-
-&lt;p&gt;これで記事を書く手間が少し減りました☺&lt;/p&gt;
-
-&lt;p&gt;ところで、こういうふうに、 &lt;strong&gt;rakeタスクには引数が渡せるんだよ&lt;/strong&gt;。知ってたかい。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;[&lt;/code&gt;がシェル的に解釈されちゃう問題があるのでシングルクオートで括る必要がありますが。&lt;/p&gt;
-
-&lt;p&gt;(これがダサいと考える派の人は環境変数使うんだろうなと思います)&lt;/p&gt;
-
-&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
-
-&lt;p&gt;rakeタスクに引数、使っていこうな()&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1012,31 +153,7 @@ end
 
 &lt;p&gt;slackを眺める時間を抑制して生産性上げていきましょう💪&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;サイドバーに表示するチャネルを少なくする&#34;&gt;♯サイドバーに表示するチャネルを少なくする&lt;/h3&gt;
-
-&lt;p&gt;このメニューから&lt;code&gt;Preferences&lt;/code&gt;を選択。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/slack_popup.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Advanced&lt;/code&gt;から、&lt;code&gt;Just my unread channels and DMs&lt;/code&gt;を選択。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/slack_preference.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;未読のチャネルだけが表示されるようになります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/slack_sidebar.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;すっきりですね。&lt;/p&gt;
-
-&lt;p&gt;まだ試していませんが、これで1月は試してみようと思います。&lt;/p&gt;
-
-&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;生産性上げてこ💪&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1053,27 +170,7 @@ end
 
 &lt;p&gt;これってあまり話題になりませんね。超お得です。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;福袋のコンテンツ&#34;&gt;🍩福袋のコンテンツ&lt;/h2&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;instagram-media&#34; data-instgrm-captioned data-instgrm-version=&#34;7&#34; style=&#34; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&#34;&gt;&lt;div style=&#34;padding:8px;&#34;&gt; &lt;div style=&#34; background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;&#34;&gt; &lt;div style=&#34; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&#34;&gt;&lt;/div&gt;&lt;/div&gt; &lt;p style=&#34; margin:8px 0 0 0; padding:0 4px;&#34;&gt; &lt;a href=&#34;https://www.instagram.com/p/BOyK96Cg8zx/&#34; style=&#34; color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;&#34; target=&#34;_blank&#34;&gt;今年もカレンダーゲット 🍩&lt;/a&gt;&lt;/p&gt; &lt;p style=&#34; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&#34;&gt;A photo posted by tsuyoshi hoshino (@hoppie) on &lt;time style=&#34; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&#34; datetime=&#34;2017-01-03T01:33:37+00:00&#34;&gt;Jan 2, 2017 at 5:33pm PST&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;
-&lt;script async defer src=&#34;//platform.instagram.com/en_US/embeds.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;🍩20個分の引き換えカード&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;🐶スヌーピーのキーホルダー&lt;/li&gt;
-&lt;li&gt;📅カレンダー(スヌーピー)&lt;/li&gt;
-&lt;li&gt;タッパー&lt;/li&gt;
-&lt;li&gt;あとなんか(忘れた)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;あけましておめでとうございます&lt;/li&gt;
-&lt;li&gt;🍩20個で2160円なので、ミスドで🍩買う人は十分元がとれます&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1086,94 +183,7 @@ end
 ファビコンが効いてないことに気づいたので、調整しました。
 realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;最終的にはこんな感じでファビコンを効かせたい&#34;&gt;✎最終的にはこんな感じでファビコンを効かせたい&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt=&#34;favicon&#34; src=&#34;https://hoshinotsuyoshi.com/images/my_favicon.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;今回の素材はこちら&#34;&gt;✎今回の素材はこちら&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt=&#34;星野剛志&#34; src=&#34;https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.jpg&#34; width=200 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;realfavicongenerator-netを使ってみる&#34;&gt;✎realfavicongenerator.netを使ってみる&lt;/h2&gt;
-
-&lt;p&gt;知らなかったんですが、&lt;a href=&#34;http://itexp.hateblo.jp/entry/website-needs-21-favicons&#34;&gt;こちらの記事&lt;/a&gt;でも紹介されている&lt;code&gt;realfavicongenerator.net&lt;/code&gt;は大変便利でした。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;http://realfavicongenerator.net/&#34;&gt;Favicon Generator for all platforms: iOS, Android, PC/Mac&amp;hellip;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;The ultimate favicon generator. Design your icons platform per platform and make them look great, everywhere&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;realfavicongenerator.netでは、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;必要なファビコンの生成
-
-&lt;ul&gt;
-&lt;li&gt;色んなサイズが生成され、zipで固まって降ってきます (≧∇≦)b&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx&#34;&gt;browserconfig.xml&lt;/a&gt;とかいう、Microsoft方面向けのメタデータも入ってくる&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;実際のサイトに対してのファビコンのテスト&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ができます。&lt;/p&gt;
-
-&lt;h2 id=&#34;realfavicongenerator-netで必要なファビコンの生成&#34;&gt;✎realfavicongenerator.netで必要なファビコンの生成&lt;/h2&gt;
-
-&lt;p&gt;まず右のほうの&amp;rdquo;Select your favicon picture&amp;rdquo;を押し、素材をアップロードします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_select.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;p&gt;次の画面で適当にカスタマイズして進んでいくと(私はデフォルトのままにしました)、最後こんな画面になります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_select_last.png&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;ここで&lt;code&gt;Favicon package&lt;/code&gt;を押すと&lt;code&gt;favicons.zip&lt;/code&gt;のダウンロードが始まります。&lt;/p&gt;
-
-&lt;p&gt;私の場合&lt;code&gt;favicons.zip&lt;/code&gt;を展開するとこんな感じでした。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/downloads_favicons.png&#34; width=600 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ファビコンをcasperに反映&#34;&gt;✎ファビコンをcasperに反映&lt;/h2&gt;
-
-&lt;p&gt;まず、展開したファイルたち全てをルートディレクトリに配置します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ls -d ~/Downloads/favicons/* | xargs -I {} mv {} ./static
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そのときのコミットは&lt;a href=&#34;https://github.com/hoshinotsuyoshi/hoshinotsuyoshi.com/commit/c883c21a17951c47addd2c7d440c7f0e19866dfe&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;次に、realfavicongeneratorが吐いたlinkタグなどのhtmlをheadタグの中に貼ります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;+    &amp;lt;link rel=&amp;quot;apple-touch-icon&amp;quot; sizes=&amp;quot;180x180&amp;quot; href=&amp;quot;/apple-touch-icon.png&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/png&amp;quot; href=&amp;quot;/favicon-32x32.png&amp;quot; sizes=&amp;quot;32x32&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/png&amp;quot; href=&amp;quot;/favicon-16x16.png&amp;quot; sizes=&amp;quot;16x16&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;manifest&amp;quot; href=&amp;quot;/manifest.json&amp;quot;&amp;gt;
-+    &amp;lt;link rel=&amp;quot;mask-icon&amp;quot; href=&amp;quot;/safari-pinned-tab.svg&amp;quot; color=&amp;quot;#5bbad5&amp;quot;&amp;gt;
-+    &amp;lt;meta name=&amp;quot;theme-color&amp;quot; content=&amp;quot;#ffffff&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そのときのコミットは&lt;a href=&#34;https://github.com/hoshinotsuyoshi/hugo-theme-casper/compare/e73abaa1dd93313836bc9e07bd68ce21bfd8c420...dcab223a01c10a7bbdf5f4a1a90540da82d70758&#34;&gt;こちら&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;realfavicongenerator-netでファビコンのテスト&#34;&gt;✎realfavicongenerator.netでファビコンのテスト&lt;/h2&gt;
-
-&lt;p&gt;デプロイしたら、テストしてみましょう。&lt;/p&gt;
-
-&lt;p&gt;自分のサイトのアドレスを入力して、&lt;code&gt;Check Favicon&lt;/code&gt;ボタンを押します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_test1.png&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;チェックが終わると、こんな感じで結果が表示されます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;realfavicongenerator&#34; src=&#34;https://hoshinotsuyoshi.com/images/favicon_test2.png&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;ぜんぶパスしました🎉 うれしいですね。&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;casperをいじっている&lt;/li&gt;
-&lt;li&gt;realfavicongenerator.netで、必要なファビコンの生成とファビコンのテストができ、便利でした&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1186,85 +196,85 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
 
 &lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>メソッドが定義された場所を調べる</title>
+      <link>https://hoshinotsuyoshi.com/post/method_source_location/</link>
+      <pubDate>Sun, 01 Jan 2017 15:10:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/method_source_location/</guid>
+      <description>&lt;p&gt;rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。&lt;/p&gt;
 
-&lt;h2 id=&#34;prismを使ってみる&#34;&gt;✎Prismを使ってみる&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2017年大河ドラマ傾向と対策</title>
+      <link>https://hoshinotsuyoshi.com/post/2017_taiga/</link>
+      <pubDate>Sat, 31 Dec 2016 08:10:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/2017_taiga/</guid>
+      <description>&lt;p&gt;年の瀬です。&lt;/p&gt;
 
-&lt;p&gt;Prism(&lt;a href=&#34;https://github.com/PrismJS/prism&#34;&gt;PrismJS/prism&lt;/a&gt;)というやつが目に止まりましたのでこれを使ってみます。&lt;/p&gt;
+&lt;p&gt;大河ドラマ「真田丸」終わっちゃいました。
+吉田羊良かったですね。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/PrismJS/prism/blob/v1.6.0/LICENSE&#34;&gt;MITライセンス&lt;/a&gt;です。&lt;/p&gt;
+&lt;p&gt;このエントリではにわか大河ドラマウォッチャーである私が2017年の大河ドラマについて考察します。&lt;/p&gt;
 
-&lt;p&gt;まず&lt;a href=&#34;http://prismjs.com&#34;&gt;http://prismjs.com&lt;/a&gt;に訪問する。こんな↓サイトです。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ruby2.4にしてrails5.0.1にした</title>
+      <link>https://hoshinotsuyoshi.com/post/ruby24/</link>
+      <pubDate>Sun, 25 Dec 2016 22:30:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/ruby24/</guid>
+      <description>&lt;p&gt;🎄 メリークリスマス 🎅
+ruby2.4がリリースされました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;prism&#34; src=&#34;https://hoshinotsuyoshi.com/images/prismjs.png&#34; width=400 &gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</title>
+      <link>https://hoshinotsuyoshi.com/post/deploy_this_blog/</link>
+      <pubDate>Wed, 23 Nov 2016 13:00:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/deploy_this_blog/</guid>
+      <description>&lt;p&gt;このブログ、&lt;a href=&#34;https://hoshinotsuyoshi.com&#34;&gt;https://hoshinotsuyoshi.com&lt;/a&gt;の編集方法とデプロイ方法についての説明です。&lt;/p&gt;
 
-&lt;p&gt;「DOWNLOAD」ボタンを押すとこんな画面です。↓&lt;/p&gt;
+&lt;p&gt;hugoでhtmlを生成し、github pagesでホスティングしています。
+あまり奇をてらったやり方はしていません。至って普通です。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;prism_choose&#34; src=&#34;https://hoshinotsuyoshi.com/images/prismjs_choose.png&#34; width=400 &gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>「小さなチーム、大きな仕事」(REWORK)読んだ</title>
+      <link>https://hoshinotsuyoshi.com/post/rework/</link>
+      <pubDate>Sun, 20 Nov 2016 08:00:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/rework/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/小さなチーム、大きな仕事〔完全版〕-37シグナルズ成功の法則-ジェイソン・フリード/dp/415209267X/&#34;&gt;この本&lt;/a&gt;を読んだ。&lt;/p&gt;
 
-&lt;p&gt;ここで&lt;strong&gt;利用する言語に応じてCSSをカスタマイズすることができます。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>「パパエンジニアが語る、子育てとの向き合い方とは？」に参加してきた</title>
+      <link>https://hoshinotsuyoshi.com/post/father_engineer_2016/</link>
+      <pubDate>Wed, 02 Mar 2016 21:00:00 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/father_engineer_2016/</guid>
+      <description>&lt;p&gt;(このエントリはプライベート日記をサルベージしたものです m(_ _)m)&lt;/p&gt;
 
-&lt;p&gt;チェックした言語がCSSに反映されるようです。&lt;/p&gt;
+&lt;p&gt;「&lt;a href=&#34;https://hitomedia-night.connpass.com/event/24704/&#34;&gt;パパエンジニアが語る、子育てとの向き合い方とは？ - connpass&lt;/a&gt;」というイベントにパネリストとして参加してきました💪👀👨
+その記録及び感想です。&lt;/p&gt;
 
-&lt;p&gt;さらに「DOWNLOAD JS」及び「DOWNLOAD CSS」ボタンを押すと、prism.jsとprism.cssが降ってきます。&lt;/p&gt;
-
-&lt;h2 id=&#34;casperに反映させる&#34;&gt;✎casperに反映させる&lt;/h2&gt;
-
-&lt;p&gt;どうやらcasperのコードを読むと、cssはheaderに、jsはfooterに貼れば良いっぽいので、
-近いところに貼っていきます。&lt;/p&gt;
-
-&lt;p&gt;それぞれ差分はこんな感じ。&lt;/p&gt;
-
-&lt;h4 id=&#34;layouts-partials-footer-html&#34;&gt;layouts/partials/footer.html&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;diff --git a/layouts/partials/footer.html b/layouts/partials/footer.html
-index 7a19ad6..4c5f0d1 100644
---- a/layouts/partials/footer.html
-+++ b/layouts/partials/footer.html
-@@ -7,6 +7,7 @@
-     &amp;lt;/div&amp;gt;
-     &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/jquery.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-     &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/jquery.fitvids.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-+    &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/prism.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-     &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{{.Site.BaseURL}}js/index.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-     {{ if .Site.Params.customFooterPartial }}
-         {{ partial .Site.Params.customFooterPartial . }}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;layouts-partials-header-html&#34;&gt;layouts/partials/header.html&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;diff --git a/layouts/partials/header.html b/layouts/partials/header.html
-index d17b5df..6709e1c 100644
---- a/layouts/partials/header.html
-+++ b/layouts/partials/header.html
-@@ -37,6 +37,7 @@
- 
-     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;{{.Site.BaseURL}}css/screen.css&amp;quot; /&amp;gt;
-     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;{{.Site.BaseURL}}css/nav.css&amp;quot; /&amp;gt;
-+    &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;{{.Site.BaseURL}}css/prism.css&amp;quot; /&amp;gt;
-     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata&amp;quot; /&amp;gt;
- 
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;コミットはこちらです。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/hoshinotsuyoshi/hugo-theme-casper/commit/e73abaa1dd93313836bc9e07bd68ce21bfd8c420&#34;&gt;&lt;a href=&#34;http://prismjs.com/download.html&#34;&gt;http://prismjs.com/download.html&lt;/a&gt; で取得した jsとcssをセットした · hoshinotsuyoshi/hugo-theme-casper@e73abaa&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Coy tshedor 3.93KB Markup 0.82KB CSS 0.99KB C-like 0.68KB JavaScript 1.3KB Go arnehormann 0.67KB Bash zeitgeist 872.76KB C zeitgeist 870.94KB Ruby samflores 2KB YAML hason 1.14KB Ruby samflore&amp;hellip;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;シンタックスハイライトが効いた&#34;&gt;✎シンタックスハイライトが効いた!&lt;/h2&gt;
-
-&lt;h3 id=&#34;before&#34;&gt;before↓&lt;/h3&gt;
-
-&lt;p&gt;&lt;img alt=&#34;before&#34; src=&#34;https://hoshinotsuyoshi.com/images/highlight_before.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;after&#34;&gt;after↓&lt;/h3&gt;
-
-&lt;p&gt;&lt;img alt=&#34;after&#34; src=&#34;https://hoshinotsuyoshi.com/images/highlight_after.png&#34; width=400 &gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h2&gt;
-
-&lt;p&gt;シンタックスハイライトを手に入れることができました! 🎉&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chrome Extension on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/chrome-extension/index.xml</link>
+    <link>https://hoshinotsuyoshi.com/tags/chrome-extension/</link>
     <description>Recent content in Chrome Extension on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <atom:link href="https://hoshinotsuyoshi.com/tags/chrome-extension/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2017 07:38:47 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/chrome-extension/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>chrome extension書いてて感動したこと(1)</title>
@@ -18,143 +21,7 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/&#34;&gt;今月あとどれくらい働けばよいか計算するChrome拡張書いている · hoshinotsuyoshi.com&lt;/a&gt;
 の続きです。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;感動したことシリーズ。&lt;/p&gt;
-
-&lt;p&gt;経緯は&lt;a href=&#34;https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/&#34;&gt;前回の記事&lt;/a&gt;
-をお読みください。&lt;/p&gt;
-
-&lt;p&gt;こちらがいまのとこ動いてるコードの全て。122行なのですが&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;console.log(&#39;start!&#39;);
-const page = &#39;https://ssl.jobcan.jp/employee/attendance?code=[ここにcodeを埋める]&#39;;
-
-//--------------------------
-//所定労働日数
-const standardWorkdaysCount = (doc) =&amp;gt; {
-    const result = doc.getElementById(&#39;search-result&#39;);
-    const table  = result.querySelector(&amp;quot;div.infotpl&amp;quot;).querySelectorAll(&amp;quot;table.left&amp;quot;)[0];
-    const td     = table.querySelectorAll(&amp;quot;tr&amp;quot;)[4].querySelector(&amp;quot;td&amp;quot;);
-    return parseFloat(td.innerText.replace(&#39; &#39;,&#39;&#39;).replace(&#39;日&#39;, &#39;&#39;));
-};
-
-//所定労働時間
-//所定労働日数に8を掛けたもの
-const standardWorkHoursCount = (doc) =&amp;gt; {
-    return(standardWorkdaysCount(doc) * 8);
-};
-
-//勤務中かどうか
-const isWorking = (doc) =&amp;gt; {
-    const text = doc.body.textContent;
-    return !!text.match(/勤務中/);
-}
-
-//今までの実質労働時間
-const workedHoursCount = (doc) =&amp;gt; {
-    const result    = doc.getElementById(&#39;search-result&#39;);
-    const table     = result.querySelector(&amp;quot;div.infotpl&amp;quot;).querySelectorAll(&amp;quot;table.left&amp;quot;)[1];
-    const td        = table.querySelectorAll(&amp;quot;tr&amp;quot;)[1].querySelector(&amp;quot;td&amp;quot;);
-    const timeArray = td.innerText.split(&#39;:&#39;)
-    const hour      = parseInt(timeArray[0]);
-    const minute    = parseInt(timeArray[1]);
-    return(hour + minute / 60.0);
-};
-
-//実労働時間に有給分の労働時間を足したもの。全休=8時間、半休=4時間
-const excessWorkedHoursCount = (doc) =&amp;gt; {
-    const workedHours = workedHoursCount(doc);
-    const paidHoridaysSpent1 = paidHoridaysSpentTable(doc)[&#39;有休(全休)&#39;] || 0;
-    const paidHoridaysSpent2 = paidHoridaysSpentTable(doc)[&#39;有休(AM休)&#39;] || 0;
-    const paidHoridaysSpent3 = paidHoridaysSpentTable(doc)[&#39;有休(PM休)&#39;] || 0;
-    return(workedHours + paidHoridaysSpent1*8 + paidHoridaysSpent2*8 + paidHoridaysSpent3*8);
-};
-
-//実働日数
-const workdaysCount = (doc) =&amp;gt; {
-    const result    = doc.getElementById(&#39;search-result&#39;);
-    const table     = result.querySelector(&amp;quot;div.infotpl&amp;quot;).querySelectorAll(&amp;quot;table.right&amp;quot;)[0];
-    const td        = table.querySelectorAll(&amp;quot;tr&amp;quot;)[1].querySelector(&amp;quot;td&amp;quot;);
-    return parseFloat(td.innerText);
-};
-
-//有給消化テーブル
-// {
-//   &amp;quot;有休(全休)&amp;quot;: 2,
-//   &amp;quot;有休(PM休)&amp;quot;: 0.5
-// }
-// などの値が返る。
-const paidHoridaysSpentTable = (doc) =&amp;gt; {
-    const result = doc.getElementById(&#39;search-result&#39;);
-    const table  = result.querySelector(&amp;quot;div.infotpl&amp;quot;).querySelectorAll(&amp;quot;table.right&amp;quot;)[1];
-    const fifth  = table.querySelectorAll(&amp;quot;tbody&amp;quot;)[1];
-    const trs    = fifth.querySelectorAll(&amp;quot;tr&amp;quot;);
-    const object = {}
-    const merge  = (element) =&amp;gt; {
-        const key   = element.querySelector(&#39;th&#39;).innerText;
-        const value = parseFloat(element.querySelector(&#39;td&#39;).innerText);
-        object[key] = value;
-        return null;
-    }
-    trs.forEach(merge);
-    return(object);
-}
-
-// 今月の残り出勤可能日数
-const restWorkdaysCount = (doc) =&amp;gt; {
-    const paidHoridaysSpent = paidHoridaysSpentTable(doc)[&#39;有休(全休)&#39;] || 0;
-    return(standardWorkdaysCount(doc) - workdaysCount(doc) - paidHoridaysSpent);
-}
-
-// 1日あたり何時間働けばいいか
-// 所定労働時間から実質労働時間を引いた値を残りの出勤可能日数で割ったもの。
-const requiredWorkHoursCount = (doc) =&amp;gt; {
-    return((standardWorkHoursCount(doc) - excessWorkedHoursCount(doc)) / restWorkdaysCount(doc));
-}
-
-//--------------------------
-
-const parser = new DOMParser();
-
-// https://syncer.jp/javascript-reverse-reference/processing-decimal-point
-// 小数点n位までを残す関数
-// number=対象の数値
-// n=残したい小数点以下の桁数
-const floatFormat = (number, n) =&amp;gt; {
-    const pow = Math.pow(10, n);
-    return Math.round(number*pow)/pow;
-}
-
-const badgeText = (doc) =&amp;gt; {
-    return floatFormat(requiredWorkHoursCount(doc),2).toString();
-}
-
-const main = () =&amp;gt; {
-    fetch(page,{credentials:&amp;quot;include&amp;quot;})
-        .then((_response) =&amp;gt; {
-            fetch(page,{credentials:&amp;quot;include&amp;quot;})
-                .then((response) =&amp;gt; {
-                    return response.text();
-                }).then((text) =&amp;gt; {
-                    const doc = parser.parseFromString(text, &#39;text/html&#39;);
-                    chrome.browserAction.setBadgeText({ text: badgeText(doc) });
-                })
-        });
-}
-
-chrome.browserAction.onClicked.addListener((_tab) =&amp;gt; {
-    console.log(&#39;clicked&#39;);
-    chrome.browserAction.setBadgeText({ text: &#39;....&#39;});
-    main();
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;感動したこと&#34;&gt;感動したこと&lt;/h3&gt;
-
-&lt;p&gt;constとかアロー関数とかありますが、これが&lt;strong&gt;babelなしで動く。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;chrome拡張なので、chromeのことだけ考えれば良いのが良いですね。&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -165,62 +32,7 @@ chrome.browserAction.onClicked.addListener((_tab) =&amp;gt; {
       <guid>https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/</guid>
       <description>&lt;p&gt;n年ぶりにChrome拡張を書いたりしています。経緯について話さなければならない。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;経緯を3行で&#34;&gt;経緯を3行で&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;フレックス勤務&lt;/strong&gt;のため、1ヶ月トータルで「8時間*営業日数」ぶん働けば良いことになっている。&lt;/li&gt;
-&lt;li&gt;各自、勤務表(&lt;a href=&#34;http://jobcan.ne.jp/&#34;&gt;ジョブカン&lt;/a&gt;)とにらめっこし、今月あと何時間働けばよいか計算する必要がある。&lt;/li&gt;
-&lt;li&gt;ジョブカンには &lt;strong&gt;WebAPIが無い。&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;上記の問題を解決するため、同僚がいい感じに勤務表をスクレイピングするsinatraアプリを書いたのですが、
-今回自分は敢えてchrome拡張版を作ろうと思いたちました。&lt;/p&gt;
-
-&lt;h3 id=&#34;今回スクレイピング対象となるページ-勤務表-のふんいき&#34;&gt;今回スクレイピング対象となるページ(勤務表)のふんいき&lt;/h3&gt;
-
-&lt;p&gt;こんなん。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;jobcan&#34; src=&#34;https://hoshinotsuyoshi.com/images/jobcan.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;進捗&#34;&gt;進捗&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;40%ぐらいできた&lt;/strong&gt;気がする。今のところ私のPCでしか動きません🙏&lt;/p&gt;
-
-&lt;h3 id=&#34;ようす&#34;&gt;ようす&lt;/h3&gt;
-
-&lt;p&gt;拡張のボタンを押すと、
-自分の勤務表のデータが読み込まれ、「今月の残りは1日平均どのくらい働けば良いか」を教えてくれます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;extension&#34; src=&#34;https://hoshinotsuyoshi.com/images/jobcan_extension_anime.gif&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;上記の例は、『今月は残り1日平均8.15時間働けば良い』という計算結果を出力した様子です。&lt;/p&gt;
-
-&lt;p&gt;とりあえずバッヂ(&lt;a href=&#34;https://developer.chrome.com/extensions/browserAction#badge&#34;&gt;chrome.browserAction - Google Chrome&lt;/a&gt;)で実装してみたが、
-バッヂは常時表示する必要あるからウケが悪い気がする。再考の余地あり。&lt;/p&gt;
-
-&lt;h3 id=&#34;コード&#34;&gt;コード&lt;/h3&gt;
-
-&lt;p&gt;今のところ部品化もしておらず、テストも無いコードですが。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/hoshinotsuyoshi/how-many-work-time-chrome-extension/tree/it-works&#34;&gt;hoshinotsuyoshi/how-many-work-time-chrome-extension&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;how-many-work-time-chrome-extension - [WIP]今月はあとどれぐらい働けばいいのかな？2&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;展望&#34;&gt;展望&lt;/h3&gt;
-
-&lt;p&gt;↓このboilerplateが参考になったので、引き続き参考にしつつ部品化とテスト追加をやってみたい。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/jhen0409/react-chrome-extension-boilerplate&#34;&gt;jhen0409/react-chrome-extension-boilerplate&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;react-chrome-extension-boilerplate - Boilerplate for Chrome Extension React.js project&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;boilerplate読んでるといろいろと工夫があって楽しい。&lt;/li&gt;
-&lt;li&gt;というか拡張書くの結構楽しい。ドキュメント読んでるといろいろできることに気づく。&lt;/li&gt;
-&lt;li&gt;未完🍊です。いつかまとめられたらいいな。&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

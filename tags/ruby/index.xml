@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/ruby/index.xml</link>
+    <link>https://hoshinotsuyoshi.com/tags/ruby/</link>
     <description>Recent content in Ruby on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <atom:link href="https://hoshinotsuyoshi.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2017 23:25:39 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>このブログの記事の土台を生成するrakeタスクを作った</title>
@@ -17,111 +20,7 @@
       <guid>https://hoshinotsuyoshi.com/post/rake_entry_new/</guid>
       <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;このブログで記事を書き始めるまでの作業&#34;&gt;このブログで記事を書き始めるまでの作業&lt;/h3&gt;
-
-&lt;p&gt;１. 前の記事をコピーして&lt;code&gt;content/post/yyyy-mm-dd_slug名.md&lt;/code&gt;の形で保存。&lt;/p&gt;
-
-&lt;p&gt;２. このへん↓のメタ情報を編集して&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
-date = &amp;quot;2017-01-04T23:21:39+09:00&amp;quot;
-draft = false
-title = &amp;quot;記事のひな形から記事の土台を生成するrakeタスクを作った&amp;quot;
-slug = &amp;quot;rake_entry_new&amp;quot;
-tags = [&amp;quot;hugo&amp;quot;,&amp;quot;blog&amp;quot;]
-image = &amp;quot;images/blog_mvim.png&amp;quot;
-
-+++
-(...ここから記事本文...)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;３. 記事本文を書き始める&lt;/p&gt;
-
-&lt;p&gt;という流れでした。いろいろとめんどい💦&lt;/p&gt;
-
-&lt;p&gt;1と2の作業は、slugさえ決まれば自動的に決まります。
-あと、時刻とかも自動的に挿入できそうです。
-このへんを自動化してみました。&lt;/p&gt;
-
-&lt;h3 id=&#34;記事のひな形とrakeタスクを作った&#34;&gt;記事のひな形とRakeタスクを作った&lt;/h3&gt;
-
-&lt;h4 id=&#34;記事のひな形&#34;&gt;記事のひな形&lt;/h4&gt;
-
-&lt;p&gt;今まで前の記事をコピーしていたので、ひな形は作っていなかったのですが、
-今回作りました。こんな形です。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
-date = &amp;quot;&amp;lt;%= (Time.now + 2*60*60).iso8601 %&amp;gt;&amp;quot;
-draft = false
-title = &amp;quot;テンプレです💪&amp;quot;
-slug = &amp;quot;&amp;lt;%= @slug %&amp;gt;&amp;quot;
-tags = [&amp;quot;tag1&amp;quot;,&amp;quot;tag2&amp;quot;]
-image = &amp;quot;images/slack_display.png&amp;quot;
-
-+++
-
-見出し文
-
-&amp;lt;!--more--&amp;gt;
-
-### h3
-
-imgタグ例
-&amp;lt;img alt=&amp;quot;slack&amp;quot; src=&amp;quot;/images/slack_sidebar.png&amp;quot; width=400&amp;gt;
-
-### ✎まとめ
-
-* まとめ内容です
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;Time#iso8601&lt;/code&gt;を使っているのがミソ(死語)です。&lt;/p&gt;
-
-&lt;p&gt;ちょうど&amp;rdquo;2017-01-04T23:21:39+09:00&amp;rdquo; というフォーマットで出力してくれます💪&lt;/p&gt;
-
-&lt;p&gt;ちなみに&lt;code&gt;Time#iso8601&lt;/code&gt;は、&lt;code&gt;require &#39;time&#39;&lt;/code&gt;しないと使えません。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Time&lt;/code&gt;クラスは、&lt;code&gt;require &#39;time&#39;&lt;/code&gt;する場合としない場合で挙動が変わる、珍しいクラスです。知ってたかい！ 詳しくは&lt;a href=&#34;https://docs.ruby-lang.org/ja/latest/library/time.html&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h4 id=&#34;rakeタスク&#34;&gt;Rakeタスク&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;@slug&lt;/code&gt;というインスタンス変数経由でmarkdownにslugを渡します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# Rakefile
-namespace :entry do
-  desc &#39;Put a new entry&#39;
-  task :new, &#39;title&#39;
-  task :new do |task, args|
-    puts
-    template = ERB.new(File.read(&#39;entry_template.md.erb&#39;))
-    @slug = args[&#39;title&#39;] || &#39;slug&#39;
-    File.write(
-      &amp;quot;./content/post/#{Date.today}_#{@slug}.md&amp;quot;,
-      template.result
-    )
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;このrakeタスクの使い方&#34;&gt;このRakeタスクの使い方&lt;/h4&gt;
-
-&lt;p&gt;つまり&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ rake &#39;entry:new[hoge]&#39;&lt;/code&gt;とやると&lt;code&gt;content/post/2017-01-04_hoge.md&lt;/code&gt;というファイルが自動生成され、メタ情報のslugにも&lt;code&gt;hoge&lt;/code&gt;がセットされます💪。&lt;/p&gt;
-
-&lt;p&gt;これで記事を書く手間が少し減りました☺&lt;/p&gt;
-
-&lt;p&gt;ところで、こういうふうに、 &lt;strong&gt;rakeタスクには引数が渡せるんだよ&lt;/strong&gt;。知ってたかい。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;[&lt;/code&gt;がシェル的に解釈されちゃう問題があるのでシングルクオートで括る必要がありますが。&lt;/p&gt;
-
-&lt;p&gt;(これがダサいと考える派の人は環境変数使うんだろうなと思います)&lt;/p&gt;
-
-&lt;h3 id=&#34;まとめ&#34;&gt;✎まとめ&lt;/h3&gt;
-
-&lt;p&gt;rakeタスクに引数、使っていこうな()&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -132,142 +31,7 @@ end
       <guid>https://hoshinotsuyoshi.com/post/method_source_location/</guid>
       <description>&lt;p&gt;rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;includeだのprependだのが使われていると追いにくかったり、、&lt;/p&gt;
-
-&lt;h2 id=&#34;pryを使う場合-show-methodを使う&#34;&gt;pryを使う場合: show-methodを使う&lt;/h2&gt;
-
-&lt;p&gt;使い方: rails cした後に &lt;code&gt;show-method [メソッド名]&lt;/code&gt; と入力します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;[/Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer]$ bin/rails c
-Running via Spring preloader in process 41502
-Loading development environment (Rails 5.0.1)
-[1] pry(main)&amp;gt; show-method &#39;&#39;.to_json
-
-From: /Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/object/json.rb @line 31:
-Owner: ActiveSupport::ToJsonWithActiveSupportEncoder
-Visibility: public
-Number of lines: 9
-
-def to_json(options = nil)
-  if options.is_a?(::JSON::State)
-    # Called from JSON.{generate,dump}, forward it to JSON gem&#39;s to_json
-    super(options)
-  else
-    # to_json is being invoked directly, use ActiveSupport&#39;s encoder
-    ActiveSupport::JSON.encode(self, options)
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;おすすめです。&lt;/p&gt;
-
-&lt;h2 id=&#34;pryを使う場合-rubyのcoreで実装されたメソッドも&#34;&gt;pryを使う場合: RubyのCoreで実装されたメソッドも。&lt;/h2&gt;
-
-&lt;p&gt;RubyのCoreで実装されたメソッドの場合は、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;[1] pry(main)&amp;gt; show-method [].select
-Error: Cannot locate this method: select. Try `gem-install pry-doc` to get access to Ruby Core documentation.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;とエラーになってしまうので、&lt;code&gt;pry-doc&lt;/code&gt; gemを入れます。&lt;/p&gt;
-
-&lt;p&gt;Gemfileに&lt;code&gt;pry-doc&lt;/code&gt;を追加して利用します。&lt;/p&gt;
-
-&lt;p&gt;追加した後に実行するとCのコードが吐かれる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;[1] pry(main)&amp;gt; show-method [].select
-
-From: array.c (C Method):
-Owner: Array
-Visibility: public
-Number of lines: 15
-
-static VALUE
-rb_ary_select(VALUE ary)
-{
-    VALUE result;
-    long i;
-
-    RETURN_SIZED_ENUMERATOR(ary, 0, 0, ary_enum_length);
-    result = rb_ary_new2(RARRAY_LEN(ary));
-    for (i = 0; i &amp;lt; RARRAY_LEN(ary); i++) {
-        if (RTEST(rb_yield(RARRAY_AREF(ary, i)))) {
-            rb_ary_push(result, rb_ary_elt(ary, i));
-        }
-    }
-    return result;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;pryを使わない場合-method-source-locationを使う&#34;&gt;pryを使わない場合: Method#source_locationを使う&lt;/h2&gt;
-
-&lt;p&gt;rubyにはメソッドをオブジェクト化したクラス &lt;code&gt;Method&lt;/code&gt; クラスがあります。&lt;/p&gt;
-
-&lt;p&gt;.method(:メソッド名)でメソッドが取り出せます。&lt;/p&gt;
-
-&lt;p&gt;Methodクラスには source_locationというメソッドがあるので、これで該当ファイル・行数を表示することができます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;[/Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer]$ bin/rails c
-Running via Spring preloader in process 43885
-Loading development environment (Rails 5.0.1)
-[1] pry(main)&amp;gt; &#39;&#39;.method(:to_json)
-=&amp;gt; #&amp;lt;Method: String(ActiveSupport::ToJsonWithActiveSupportEncoder)#to_json&amp;gt;
-[2] pry(main)&amp;gt; &#39;&#39;.method(:to_json).source_location
-=&amp;gt; [&amp;quot;/Users/cesario/go/src/github.com/hoshinotsuyoshi/s3_explorer/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/object/json.rb&amp;quot;, 31]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;余談ですが、Methodクラスにはおもしろメソッドがいっぱいあって楽しいです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Method#parameters
-
-&lt;ul&gt;
-&lt;li&gt;Method オブジェクトの引数の情報を返します。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Method#unbind
-
-&lt;ul&gt;
-&lt;li&gt;self のレシーバとの関連を取り除いた UnboundMethod オブ ジェクトを生成して返します。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Method#super_method
-
-&lt;ul&gt;
-&lt;li&gt;super を実行した際に実行されるメソッドを Method オブジェ クトにして返します。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Method#arity
-
-&lt;ul&gt;
-&lt;li&gt;メソッドが受け付ける引数の数を返します。可変長の場合は負の値が返る。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Method#curry
-
-&lt;ul&gt;
-&lt;li&gt;self を元にカリー化した Proc を返します。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Method#owner
-
-&lt;ul&gt;
-&lt;li&gt;このメソッドが定義されている class か module を返します。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Method#receiver
-
-&lt;ul&gt;
-&lt;li&gt;このメソッドオブジェクトのレシーバを返します。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pry/pry/wiki/Source-browsing#Show_method&#34;&gt;Source browsing · pry_pry Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ruby-lang.org/ja/latest/method/Method/i/source_location.html&#34;&gt;instance method Method#source_location (Ruby 2.4.0)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
-
-&lt;p&gt;pry全然使いこなせていないので、使っていきたいですね&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -279,54 +43,7 @@ Loading development environment (Rails 5.0.1)
       <description>&lt;p&gt;🎄 メリークリスマス 🎅
 ruby2.4がリリースされました。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;個人的に作ったrailsのプロジェクトのrubyのバージョンを2.4.0にし、railsも最新にしました。&lt;/p&gt;
-
-&lt;p&gt;特につまづきませんでしたが気づいたことなど書いていきます。&lt;/p&gt;
-
-&lt;p&gt;↓個人プロジェクトはこちらです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a class=&#34;embedly-card&#34; href=&#34;https://github.com/hoshinotsuyoshi/s3_explorer&#34;&gt;hoshinotsuyoshi/s3_explorer&lt;/a&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;やったこと-ruby2-4-0-rc1-ruby2-4-0へ変更&#34;&gt;やったこと：ruby2.4.0-rc1 -&amp;gt; ruby2.4.0へ変更&lt;/h3&gt;
-
-&lt;p&gt;rc1版が出ていたので前もってアップデートしておきます。
-クリスマスになったらこれをrc1を取り払います。
-↓こんな感じです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;github ruby24&#34; src=&#34;https://hoshinotsuyoshi.com/images/ruby24_github.png&#34;&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;テストの確認-ciでの動作確認&#34;&gt;テストの確認・CIでの動作確認&lt;/h3&gt;
-
-&lt;p&gt;TravisCIもCircleCIも、その日のうちにrubyの最新バージョンが利用できるようになっていました💪。&lt;/p&gt;
-
-&lt;h5 id=&#34;travisci&#34;&gt;TravisCI&lt;/h5&gt;
-
-&lt;p&gt;&lt;img alt=&#34;travisci ruby24&#34; src=&#34;https://hoshinotsuyoshi.com/images/ruby24_travisci.png&#34;&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;circleci&#34;&gt;CircleCI&lt;/h5&gt;
-
-&lt;p&gt;&lt;img alt=&#34;circleci ruby24&#34; src=&#34;https://hoshinotsuyoshi.com/images/ruby24_circleci.png&#34;&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;rails5-0-1-ruby2-4-0の組み合わせで-テスト時に出る警告&#34;&gt;rails5.0.1、ruby2.4.0の組み合わせで、テスト時に出る警告&lt;/h3&gt;
-
-&lt;p&gt;個人プロジェクトのCIの結果は&lt;a href=&#34;https://circleci.com/gh/hoshinotsuyoshi/s3_explorer/56&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;rails系のgemとsimplecovで&lt;code&gt;::Fixnum is deprecated&lt;/code&gt;、 &lt;code&gt;::Bignum is deprecated&lt;/code&gt;という警告が出ました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://bugs.ruby-lang.org/issues/12005&#34;&gt;Feature #12005: Unify Fixnum and Bignum into Integer - Ruby trunk - Ruby Issue Tracking System&lt;/a&gt;の件です。&lt;/p&gt;
-
-&lt;p&gt;simplecovは&lt;a href=&#34;https://github.com/colszowka/simplecov/pull/523&#34;&gt;masterでは直ってそう&lt;/a&gt;だし、待ってれば降ってきそうだと思いました。&lt;/p&gt;
-
-&lt;h3 id=&#34;まとめ&#34;&gt;まとめ&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;個人的に作ったrailsのプロジェクトのrubyのバージョンを2.4.0にし、railsも最新にしてみました。&lt;/li&gt;
-&lt;li&gt;あまり面白いつまづきはありませんでした。&lt;/li&gt;
-&lt;li&gt;herokuにはまだデプロイしてない。&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

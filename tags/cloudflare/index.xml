@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloudflare on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/cloudflare/index.xml</link>
+    <link>https://hoshinotsuyoshi.com/tags/cloudflare/</link>
     <description>Recent content in Cloudflare on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <atom:link href="https://hoshinotsuyoshi.com/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 May 2017 17:38:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)の件</title>
@@ -19,67 +22,7 @@
 
 &lt;p&gt;別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;cloudflare側&#34;&gt;cloudflare側&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.cloudflare.com/a/add-site&#34;&gt;https://www.cloudflare.com/a/add-site&lt;/a&gt; に行き、&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hoshinotsuyoshi.com&lt;/code&gt; と入力。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudflare-2.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;費用は抑えたいので &lt;code&gt;Free Website&lt;/code&gt; を選択。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudflare-3.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;今のネームサーバの設定についての指示が出ます。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hoshinotsuyoshi.com&lt;/code&gt; はお名前.comで購入したので、ここではお名前.comのネームサーバが左側に表示されています。&lt;/p&gt;
-
-&lt;p&gt;右側に表示されたネームサーバ名2つをメモします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/cloudflare-4.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;お名前-com側&#34;&gt;お名前.com側&lt;/h2&gt;
-
-&lt;p&gt;このネームサーバ2つをお名前.comのほうに反映させます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/onamae-1.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/onamae-2.png&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;これで &lt;code&gt;hoshinotsuyoshi.com&lt;/code&gt; のDNSの設定はcloudflareに丸投げ、という形になりました。&lt;/p&gt;
-
-&lt;h2 id=&#34;apex-domains&#34;&gt;apex domains&lt;/h2&gt;
-
-&lt;p&gt;ここから先は &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/&#34;&gt;github pagesのapex domainsの説明&lt;/a&gt;
-を見れば大丈夫です。&lt;/p&gt;
-
-&lt;h4 id=&#34;リポジトリ側の調整&#34;&gt;リポジトリ側の調整&lt;/h4&gt;
-
-&lt;p&gt;CNAMEというファイルを用意しておきます。&lt;/p&gt;
-
-&lt;h4 id=&#34;cloudflare側-1&#34;&gt;cloudflare側&lt;/h4&gt;
-
-&lt;p&gt;今回は&lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider&#34;&gt;Aレコードを登録する方法&lt;/a&gt;
-をやりました。&lt;/p&gt;
-
-&lt;p&gt;こちらに書いてあるとおり、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;192.30.252.153
-192.30.252.154
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;の2つのAレコードを登録しておけばOk。&lt;/p&gt;
-
-&lt;p&gt;あと、 httpsの設定は &lt;code&gt;flexible&lt;/code&gt; にしておく。無料利用の場合、この設定じゃないとダメなはず。&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
-
-&lt;p&gt;こんな感じになってれば設定完了です! 🎉&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/gh-pages-cert.png&#34; width=600&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
