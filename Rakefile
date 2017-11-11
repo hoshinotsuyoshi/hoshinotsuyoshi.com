@@ -7,6 +7,7 @@ require 'time' # Time#iso8601
 
 DIST  = 'dist'
 THEME = 'casper'
+HUGO_VERSION = 'Hugo Static Site Generator v0.30.2 '
 
 task default: 'deploy:run'
 
@@ -15,6 +16,7 @@ namespace :deploy do
   task run: [
     :install_theme,
     :update_truthy_or_falsy,
+    :check_hugo_version,
     :dist,
     :deploy_sh
   ]
@@ -23,6 +25,11 @@ namespace :deploy do
   task :install_theme do
     sh 'git submodule init'
     sh 'git submodule update'
+  end
+
+  desc 'Check hugo version'
+  task :check_hugo_version do
+    `hugo version`.start_with?(HUGO_VERSION) || abort("You should use '#{HUGO_VERSION}'")
   end
 
   desc 'Run hugo, put files to "dist" dir'
