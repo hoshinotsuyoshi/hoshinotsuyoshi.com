@@ -32,8 +32,9 @@ namespace :deploy do
 
   desc 'Update truthy_or_falsy dir'
   task :update_truthy_or_falsy do
+    sh 'mkdir -p dist'
     sh 'rm -rf dist/ruby_truthy_or_falsy/'
-    sh 'cp -r truthy_or_falsy dist/ruby_truthy_or_falsy'
+    sh 'cp -R truthy_or_falsy dist/ruby_truthy_or_falsy'
   end
 
   desc 'Run deploy.sh'
