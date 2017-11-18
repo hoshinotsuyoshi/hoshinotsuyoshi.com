@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/go_test_bench/</loc>
+    <lastmod>2017-11-19T00:01:29+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/airpods/</loc>
     <lastmod>2017-11-11T17:38:00+09:00</lastmod>
   </url>
@@ -196,6 +201,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/golang/</loc>
+    <lastmod>2017-11-19T00:01:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/hugo/</loc>
     <lastmod>2017-01-04T23:25:39+09:00</lastmod>
     <priority>0</priority>
@@ -227,13 +238,19 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2017-11-11T17:38:00+09:00</lastmod>
+    <lastmod>2017-11-19T00:01:29+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/productivity/</loc>
     <lastmod>2017-01-03T22:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/project_euler/</loc>
+    <lastmod>2017-11-19T00:01:29+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -292,8 +309,14 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/test/</loc>
+    <lastmod>2017-11-19T00:01:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2017-11-11T17:38:00+09:00</lastmod>
+    <lastmod>2017-11-19T00:01:29+09:00</lastmod>
     <priority>0</priority>
   </url>
   

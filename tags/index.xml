@@ -130,6 +130,15 @@
     </item>
     
     <item>
+      <title>Golang</title>
+      <link>https://hoshinotsuyoshi.com/tags/golang/</link>
+      <pubDate>Sun, 19 Nov 2017 00:01:29 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>https://hoshinotsuyoshi.com/tags/hugo/</link>
       <pubDate>Wed, 04 Jan 2017 23:25:39 +0900</pubDate>
@@ -180,6 +189,15 @@
       <pubDate>Tue, 03 Jan 2017 22:00:00 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project_euler</title>
+      <link>https://hoshinotsuyoshi.com/tags/project_euler/</link>
+      <pubDate>Sun, 19 Nov 2017 00:01:29 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/project_euler/</guid>
       <description></description>
     </item>
     
@@ -252,6 +270,15 @@
       <pubDate>Fri, 28 Apr 2017 14:16:36 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://hoshinotsuyoshi.com/tags/test/</link>
+      <pubDate>Sun, 19 Nov 2017 00:01:29 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/test/</guid>
       <description></description>
     </item>
     
