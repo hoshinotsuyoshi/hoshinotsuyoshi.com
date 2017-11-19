@@ -1,10 +1,10 @@
 +++
-date = "2017-11-19T01:24:37+09:00"
+date = "2017-11-20T01:24:37+09:00"
 draft = false
 title = "🏠リモートで働くようになって6ヶ月が経ちました🏠"
 slug = "remote_six_month"
 tags = ["remote","life","programming"]
-image = "images/slack_display.png"
+image = "images/nomad_surfing_nangoku.png"
 
 +++
 
