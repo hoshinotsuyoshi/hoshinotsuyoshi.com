@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Sun, 19 Nov 2017 00:01:29 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Nov 2017 01:24:37 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>🏠リモートで働くようになって6ヶ月が経ちました🏠</title>
+      <link>https://hoshinotsuyoshi.com/post/remote_six_month/</link>
+      <pubDate>Mon, 20 Nov 2017 01:24:37 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/remote_six_month/</guid>
+      <description>&lt;p&gt;転職でフルリモートで働くようになって6ヶ月が経ちました🏠ので&lt;/p&gt;
+
+&lt;p&gt;その辺の変化とか仕事のこととか、最近の生活について書いておきたいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>go testの-benchを使いつつProject Eulerの4問目を解いた・速くした🚀</title>
