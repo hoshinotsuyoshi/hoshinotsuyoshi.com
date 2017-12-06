@@ -4,6 +4,7 @@ draft = false
 title = "terraform-provider-awsを改造してbuildして手元で使う"
 slug = "terraform-provider-aws-build"
 tags = ["terraform","aws","golang"]
+image = "images/santa_201612.jpg"
 
 +++
 
