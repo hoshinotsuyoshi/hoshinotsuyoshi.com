@@ -1,10 +1,10 @@
 +++
-date = "2017-11-19T01:24:37+09:00"
+date = "2017-11-20T01:24:37+09:00"
 draft = false
 title = "🏠リモートで働くようになって6ヶ月が経ちました🏠"
 slug = "remote_six_month"
 tags = ["remote","life","programming"]
-image = "images/slack_display.png"
+image = "images/nomad_surfing_nangoku.png"
 
 +++
 
@@ -68,10 +68,6 @@ image = "images/slack_display.png"
 ## チャット
 
 分報みたいに、自分のチャンネルを持って、今やっていることを細かめに発言するようにしてる。
-
-同じようにやっている人が多いので周りの人がいま何をやっているか、というのは割りとわかっている。
-
-github projectは使っているが、カンバンよりもチャットという感じ。
 
 ## 対面で話したときの情報量にはやはり勝てない、ということ
 
