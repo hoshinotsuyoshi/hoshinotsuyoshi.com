@@ -7,15 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Mon, 20 Nov 2017 01:24:37 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 Dec 2017 00:02:51 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>terraform-provider-awsを改造してbuildして手元で使う</title>
+      <link>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</link>
+      <pubDate>Thu, 07 Dec 2017 00:02:51 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</guid>
+      <description>&lt;p&gt;今年もre:Inventすごかったですね。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://reinvent.awsevents.com/&#34;&gt;AWS re:Invent 2017&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;At AWS re:Invent 2017, connect with peers and cloud experts, collaborate at our bootcamps, and learn how AWS can improve productivity, security and performance.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;さて、「噂の新機能を試したいけど、&lt;strong&gt;terraform-provider-awsにまだアノ機能が無いよ（●｀ε´●）!!!!&lt;/strong&gt; 」 て時があると思います。&lt;/p&gt;
+
+&lt;p&gt;そこで、&lt;a href=&#34;https://github.com/terraform-providers/terraform-provider-aws&#34;&gt;terraform-providers/terraform-provider-aws&lt;/a&gt; を改造し、buildして手元で使ってみました。&lt;/p&gt;
+
+&lt;p&gt;そのときの手順です。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>🏠リモートで働くようになって6ヶ月が経ちました🏠</title>
       <link>https://hoshinotsuyoshi.com/post/remote_six_month/</link>
-      <pubDate>Mon, 20 Nov 2017 01:24:37 +0900</pubDate>
+      <pubDate>Sun, 19 Nov 2017 01:24:37 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/remote_six_month/</guid>
       <description>&lt;p&gt;転職でフルリモートで働くようになって6ヶ月が経ちました🏠ので&lt;/p&gt;

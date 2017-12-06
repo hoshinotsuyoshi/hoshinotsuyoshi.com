@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Terraform on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/terraform/</link>
-    <description>Recent content in Terraform on hoshinotsuyoshi.com</description>
+    <title>Aws on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/aws/</link>
+    <description>Recent content in Aws on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Thu, 07 Dec 2017 00:02:51 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -28,17 +28,6 @@
 &lt;p&gt;そこで、&lt;a href=&#34;https://github.com/terraform-providers/terraform-provider-aws&#34;&gt;terraform-providers/terraform-provider-aws&lt;/a&gt; を改造し、buildして手元で使ってみました。&lt;/p&gt;
 
 &lt;p&gt;そのときの手順です。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>複数mastodonを考える 🐘   🐘   🐘</title>
-      <link>https://hoshinotsuyoshi.com/post/multi-mastodon-poor/</link>
-      <pubDate>Fri, 28 Apr 2017 14:16:36 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/post/multi-mastodon-poor/</guid>
-      <description>&lt;p&gt;terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

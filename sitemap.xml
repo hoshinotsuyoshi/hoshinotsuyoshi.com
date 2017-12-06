@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</loc>
+    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/remote_six_month/</loc>
-    <lastmod>2017-11-20T01:24:37+09:00</lastmod>
+    <lastmod>2017-11-19T01:24:37+09:00</lastmod>
   </url>
   
   <url>
@@ -141,6 +146,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/aws/</loc>
+    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/blog/</loc>
     <lastmod>2017-05-06T17:38:00+09:00</lastmod>
     <priority>0</priority>
@@ -207,7 +218,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/golang/</loc>
-    <lastmod>2017-11-19T00:01:29+09:00</lastmod>
+    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -225,7 +236,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/life/</loc>
-    <lastmod>2017-11-20T01:24:37+09:00</lastmod>
+    <lastmod>2017-11-19T01:24:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -243,7 +254,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2017-11-20T01:24:37+09:00</lastmod>
+    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -255,7 +266,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/programming/</loc>
-    <lastmod>2017-11-20T01:24:37+09:00</lastmod>
+    <lastmod>2017-11-19T01:24:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -279,7 +290,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/remote/</loc>
-    <lastmod>2017-11-20T01:24:37+09:00</lastmod>
+    <lastmod>2017-11-19T01:24:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -315,7 +326,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/terraform/</loc>
-    <lastmod>2017-04-28T14:16:36+09:00</lastmod>
+    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -327,7 +338,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2017-11-20T01:24:37+09:00</lastmod>
+    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   

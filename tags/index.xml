@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Aws</title>
+      <link>https://hoshinotsuyoshi.com/tags/aws/</link>
+      <pubDate>Thu, 07 Dec 2017 00:02:51 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Blog</title>
       <link>https://hoshinotsuyoshi.com/tags/blog/</link>
       <pubDate>Sat, 06 May 2017 17:38:00 +0900</pubDate>
@@ -132,7 +141,7 @@
     <item>
       <title>Golang</title>
       <link>https://hoshinotsuyoshi.com/tags/golang/</link>
-      <pubDate>Sun, 19 Nov 2017 00:01:29 +0900</pubDate>
+      <pubDate>Thu, 07 Dec 2017 00:02:51 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/golang/</guid>
       <description></description>
@@ -159,7 +168,7 @@
     <item>
       <title>Life</title>
       <link>https://hoshinotsuyoshi.com/tags/life/</link>
-      <pubDate>Mon, 20 Nov 2017 01:24:37 +0900</pubDate>
+      <pubDate>Sun, 19 Nov 2017 01:24:37 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/life/</guid>
       <description></description>
@@ -195,7 +204,7 @@
     <item>
       <title>Programming</title>
       <link>https://hoshinotsuyoshi.com/tags/programming/</link>
-      <pubDate>Mon, 20 Nov 2017 01:24:37 +0900</pubDate>
+      <pubDate>Sun, 19 Nov 2017 01:24:37 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/programming/</guid>
       <description></description>
@@ -231,7 +240,7 @@
     <item>
       <title>Remote</title>
       <link>https://hoshinotsuyoshi.com/tags/remote/</link>
-      <pubDate>Mon, 20 Nov 2017 01:24:37 +0900</pubDate>
+      <pubDate>Sun, 19 Nov 2017 01:24:37 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/remote/</guid>
       <description></description>
@@ -276,7 +285,7 @@
     <item>
       <title>Terraform</title>
       <link>https://hoshinotsuyoshi.com/tags/terraform/</link>
-      <pubDate>Fri, 28 Apr 2017 14:16:36 +0900</pubDate>
+      <pubDate>Thu, 07 Dec 2017 00:02:51 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/terraform/</guid>
       <description></description>
