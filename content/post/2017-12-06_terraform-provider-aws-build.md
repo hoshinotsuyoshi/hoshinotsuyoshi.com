@@ -52,6 +52,10 @@ $ cp $GOPATH/bin/terraform-provider-aws ~/.terraform.d/plugins
 
 コピーした後に、利用したいterraformプロジェクトの中で `$ terraform init` する必要があります。
 
+【追記】
+このとき `.terraform/plugins/darwin_amd64/` の下に既存のpluginファイルがある場合は、それを消す必要がありました。
+
+
 <br>
 
 ### 3.以上です...!!
