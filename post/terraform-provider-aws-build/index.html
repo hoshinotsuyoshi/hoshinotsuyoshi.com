@@ -118,7 +118,7 @@
     },
     "headline": terraform-provider-awsを改造してbuildして手元で使う,
     "name": terraform-provider-awsを改造してbuildして手元で使う,
-    "wordCount": 111,
+    "wordCount": 115,
     "timeRequired": "PT1M",
     "inLanguage": {
       "@type": "Language",
@@ -270,6 +270,9 @@ go install
 </code></pre>
 
 <p>コピーした後に、利用したいterraformプロジェクトの中で <code>$ terraform init</code> する必要があります。</p>
+
+<p>【追記】
+このとき <code>.terraform/plugins/darwin_amd64/</code> の下に既存のpluginファイルがある場合は、それを消す必要がありました。</p>
 
 <p><br></p>
 
