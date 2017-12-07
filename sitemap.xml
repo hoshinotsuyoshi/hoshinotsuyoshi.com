@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/terraform-fargate/</loc>
+    <lastmod>2017-12-08T03:32:07+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</loc>
     <lastmod>2017-12-07T00:02:51+09:00</lastmod>
   </url>
@@ -134,6 +139,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/advent_calender/</loc>
+    <lastmod>2017-12-08T03:32:07+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/airpods/</loc>
     <lastmod>2017-11-11T17:38:00+09:00</lastmod>
     <priority>0</priority>
@@ -147,7 +158,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/aws/</loc>
-    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
+    <lastmod>2017-12-08T03:32:07+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -187,6 +198,18 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/docker/</loc>
+    <lastmod>2017-12-08T03:32:07+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/ecs/</loc>
+    <lastmod>2017-12-08T03:32:07+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/engineer/</loc>
     <lastmod>2016-03-02T21:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -195,6 +218,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/es2015/</loc>
     <lastmod>2017-01-14T11:43:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/fargate/</loc>
+    <lastmod>2017-12-08T03:32:07+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -254,7 +283,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
+    <lastmod>2017-12-08T03:32:07+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -326,7 +355,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/terraform/</loc>
-    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
+    <lastmod>2017-12-08T03:32:07+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -338,7 +367,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2017-12-07T00:02:51+09:00</lastmod>
+    <lastmod>2017-12-08T03:32:07+09:00</lastmod>
     <priority>0</priority>
   </url>
   

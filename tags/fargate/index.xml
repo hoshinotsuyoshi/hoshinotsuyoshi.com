@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aws on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/aws/</link>
-    <description>Recent content in Aws on hoshinotsuyoshi.com</description>
+    <title>Fargate on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/fargate/</link>
+    <description>Recent content in Fargate on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Fri, 08 Dec 2017 03:32:07 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/fargate/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -43,26 +43,6 @@
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>terraform-provider-awsを改造してbuildして手元で使う</title>
-      <link>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</link>
-      <pubDate>Thu, 07 Dec 2017 00:02:51 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</guid>
-      <description>&lt;p&gt;今年もre:Inventすごかったですね。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://reinvent.awsevents.com/&#34;&gt;AWS re:Invent 2017&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;At AWS re:Invent 2017, connect with peers and cloud experts, collaborate at our bootcamps, and learn how AWS can improve productivity, security and performance.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;さて、「噂の新機能を試したいけど、&lt;strong&gt;terraform-provider-awsにまだアノ機能が無いよ（●｀ε´●）!!!!&lt;/strong&gt; 」 て時があると思います。&lt;/p&gt;
-
-&lt;p&gt;そこで、&lt;a href=&#34;https://github.com/terraform-providers/terraform-provider-aws&#34;&gt;terraform-providers/terraform-provider-aws&lt;/a&gt; を改造し、buildして手元で使ってみました。&lt;/p&gt;
-
-&lt;p&gt;そのときの手順です。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
