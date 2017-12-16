@@ -41,6 +41,8 @@ description = "共働きの皆さんどうされているんでしょうかね�
 
 自宅に適当な布団が無かったので、毛布で説明します。
 
+<img alt="futon" src="/images/futon/IMG_9091.jpg" width=400>
+
 まずカバーを**縦**に広げます。
 
 <img alt="futon" src="/images/futon/IMG_9073.PNG" width=400>
