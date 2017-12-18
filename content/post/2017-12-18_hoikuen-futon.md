@@ -5,6 +5,7 @@ title = "保育園の布団カバー問題に対処する"
 slug = "hoikuen-futon"
 tags = ["life"]
 description = "共働きの皆さんどうされているんでしょうかね。掲題の件について私の問題意識・対処法を説明したいと思います。"
+image = "images/futon/IMG_9091.jpg"
 
 +++
 
