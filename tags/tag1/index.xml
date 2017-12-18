@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag1 on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/tag1/</link>
+    <description>Recent content in Tag1 on hoshinotsuyoshi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Fri, 15 Dec 2017 02:54:01 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>テンプレです💪</title>
+      <link>https://hoshinotsuyoshi.com/post/hoikuen-futon/</link>
+      <pubDate>Fri, 15 Dec 2017 02:54:01 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/hoikuen-futon/</guid>
+      <description>&lt;p&gt;見出し文&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
