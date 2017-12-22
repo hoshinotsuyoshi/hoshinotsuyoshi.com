@@ -194,13 +194,23 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/hoikuen-futon/">テンプレです💪</a></h2>
+        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">テンプレです💪</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p><p>見出し文</p>
+            <p><p>terraformで理解する、Fargateと従来型ECSとの違い</p>
 
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/hoikuen-futon/">&raquo;</a></p>
+<p>従来型ECSとFargateの違いについて、<strong>.tfファイルの差分を見ることで理解を深めよう!!</strong> という試みです。</p>
+
+<p>流れとしてはこんな感じです</p>
+
+<ol>
+<li>terraformでバーーンとインフラ一式(ECS含む)を立ち上げる</li>
+<li>terraformで1.の状態からバーーンとFargateに移行</li>
+<li>1.と2.の.tfファイルのdiffを眺める!(本日の肝)</li>
+</ol>
+
+<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/terraform-fargate/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -226,8 +236,8 @@
                 <a href="https://hoshinotsuyoshi.com//tags/tag2/">#tag2</a>,
             
         
-        <time class="post-date" datetime="2017-12-15T02:54:01&#43;09:00">
-            15 Dec 2017
+        <time class="post-date" datetime="2017-12-07T20:00:07&#43;09:00">
+            7 Dec 2017
         </time>
     </footer>
 </article>
