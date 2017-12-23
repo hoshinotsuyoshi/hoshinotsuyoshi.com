@@ -46,12 +46,12 @@ image = "images/futon/IMG_9091.jpg"
 
 まずカバーを**縦**に広げます。
 
-<img alt="futon" src="/images/futon/IMG_9073.PNG" width=400>
+<img alt="futon" src="/images/futon/IMG_9073.jpg" width=400>
 
 はじっこのとこ1点(青丸のとこ)を合わせるのを目標にします。
 
 <img alt="futon" src="/images/futon/IMG_9073_skitch.jpg" width=400>
-<img alt="futon" src="/images/futon/IMG_9076.PNG" width=400>
+<img alt="futon" src="/images/futon/IMG_9076.jpg" width=400>
 <img alt="futon" src="/images/futon/IMG_9077_skitch.jpg" width=400>
 
 この時点で上辺のはじっこ2点はピチッと入ります。
@@ -64,30 +64,30 @@ image = "images/futon/IMG_9091.jpg"
 
 で、ここで一旦置いて
 
-<img alt="futon" src="/images/futon/IMG_9078.PNG" width=400>
+<img alt="futon" src="/images/futon/IMG_9078.jpg" width=400>
 
 **同様に、** 下の方をあわせていきます。
 
-<img alt="futon" src="/images/futon/IMG_9079.PNG" width=400>
-<img alt="futon" src="/images/futon/IMG_9080.PNG" width=400>
-<img alt="futon" src="/images/futon/IMG_9081.PNG" width=400>
-<img alt="futon" src="/images/futon/IMG_9082.PNG" width=400>
+<img alt="futon" src="/images/futon/IMG_9079.jpg" width=400>
+<img alt="futon" src="/images/futon/IMG_9080.jpg" width=400>
+<img alt="futon" src="/images/futon/IMG_9081.jpg" width=400>
+<img alt="futon" src="/images/futon/IMG_9082.jpg" width=400>
 
 これでほとんどできました。
 
-<img alt="futon" src="/images/futon/IMG_9083.PNG" width=400>
+<img alt="futon" src="/images/futon/IMG_9083.jpg" width=400>
 
 つぎに、このまま**右膝をちょっと上げてそこに布団(or毛布)を載せながら、ボタンをとめていきます**
 
 右膝をちょっと上げることにより、立ちながら作業をすすめることが出来ます。
 
-<img alt="futon" src="/images/futon/IMG_9084.PNG" width=400>
-<img alt="futon" src="/images/futon/IMG_9085.PNG" width=400>
-<img alt="futon" src="/images/futon/IMG_9086.PNG" width=400>
+<img alt="futon" src="/images/futon/IMG_9084.jpg" width=400>
+<img alt="futon" src="/images/futon/IMG_9085.jpg" width=400>
+<img alt="futon" src="/images/futon/IMG_9086.jpg" width=400>
 
 できました!
 
-<img alt="futon" src="/images/futon/IMG_9088.PNG" width=400>
+<img alt="futon" src="/images/futon/IMG_9088.jpg" width=400>
 
 ## その他の知識
 
