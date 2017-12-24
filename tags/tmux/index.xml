@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tmux on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/tmux/</link>
+    <description>Recent content in Tmux on hoshinotsuyoshi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Sun, 24 Dec 2017 10:45:26 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>俺がよく打つキー可視化</title>
+      <link>https://hoshinotsuyoshi.com/post/heatmap_keyboard/</link>
+      <pubDate>Sun, 24 Dec 2017 10:45:26 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/heatmap_keyboard/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.patrick-wied.at/projects/heatmap-keyboard/&#34;&gt;Keyboard Heatmap&lt;/a&gt;とキーロガー(&lt;a href=&#34;https://github.com/caseyscarborough/keylogger&#34;&gt;caseyscarborough/keylogger&lt;/a&gt;)でヒートマップ作ってみたら楽しかった。&lt;/p&gt;
+
+&lt;p&gt;結論、こんな感じのデータを得ることができる。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/keyboard.png&#34; width=600&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;key&lt;/th&gt;
+&lt;th&gt;count&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;[left-cmd]&lt;/td&gt;
+&lt;td&gt;5.3%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;a&lt;/td&gt;
+&lt;td&gt;4.9%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;[return]&lt;/td&gt;
+&lt;td&gt;4.8%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;i&lt;/td&gt;
+&lt;td&gt;4.3%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;(space)&lt;/td&gt;
+&lt;td&gt;3.9%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;e&lt;/td&gt;
+&lt;td&gt;3.7%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;[left-ctrl]&lt;/td&gt;
+&lt;td&gt;3.6%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;m&lt;/td&gt;
+&lt;td&gt;3.5%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;[tab]&lt;/td&gt;
+&lt;td&gt;3.4%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;3.4%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
