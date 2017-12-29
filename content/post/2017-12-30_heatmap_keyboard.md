@@ -4,7 +4,7 @@ draft = false
 title = "俺がよく打つキー可視化"
 slug = "heatmap_keyboard"
 tags = ["keyboard","tmux","vim"]
-image = "images/keyboard.png"
+image = "images/keyboard.jpg"
 
 +++
 
@@ -12,7 +12,7 @@ image = "images/keyboard.png"
 
 結論、こんな感じのデータを得ることができる。
 
-<img alt="slack" src="/images/keyboard.png" width=600>
+<img alt="slack" src="/images/keyboard.jpg" width=600>
 
 |key|count|
 |----|----|
@@ -35,7 +35,7 @@ image = "images/keyboard.png"
 
 ヴィム使ってそうな感じが垣間見える。
 
-<img alt="slack" src="/images/keyboard_count_keyrepeat.png" width=600>
+<img alt="slack" src="/images/keyboard_count_keyrepeat.jpg" width=600>
 
 |key|count|
 |----|----|
