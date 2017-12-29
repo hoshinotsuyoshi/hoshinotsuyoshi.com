@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/heatmap_keyboard/</loc>
+    <lastmod>2017-12-30T02:45:26+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/jis-md600/</loc>
     <lastmod>2017-12-29T17:32:12+09:00</lastmod>
   </url>
@@ -281,7 +286,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/keyboard/</loc>
-    <lastmod>2017-12-29T17:32:12+09:00</lastmod>
+    <lastmod>2017-12-30T02:45:26+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -305,7 +310,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2017-12-29T17:32:12+09:00</lastmod>
+    <lastmod>2017-12-30T02:45:26+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -388,8 +393,20 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/tmux/</loc>
+    <lastmod>2017-12-30T02:45:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/vim/</loc>
+    <lastmod>2017-12-30T02:45:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2017-12-29T17:32:12+09:00</lastmod>
+    <lastmod>2017-12-30T02:45:26+09:00</lastmod>
     <priority>0</priority>
   </url>
   
