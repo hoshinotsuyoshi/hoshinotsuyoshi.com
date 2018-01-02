@@ -48,11 +48,6 @@
     <meta name="theme-color" content="#ffffff">
     
 
-    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/prism.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
-
     
 
     
@@ -298,5 +293,24 @@
     <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/prism.js"></script>
     <script type="text/javascript" src="https://hoshinotsuyoshi.com/js/index.js"></script>
     
+
+    <script>
+      
+        var insertLinkToCss = function(href) {
+          var cb = function() {
+            var l = document.createElement('link'); l.rel = 'stylesheet';
+            l.href = href;
+            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+          };
+          var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+              webkitRequestAnimationFrame || msRequestAnimationFrame;
+          if (raf) raf(cb);
+          else window.addEventListener('load', cb);
+        };
+        insertLinkToCss('/css/screen.css');
+        insertLinkToCss('/css/nav.css');
+        insertLinkToCss('/css/prism.css');
+        insertLinkToCss('//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata');
+    </script>
 </body>
 </html>
