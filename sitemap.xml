@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/google_speed_insight/</loc>
+    <lastmod>2018-01-03T01:33:17+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/heatmap_keyboard/</loc>
     <lastmod>2017-12-30T02:45:26+09:00</lastmod>
   </url>
@@ -179,7 +184,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/blog/</loc>
-    <lastmod>2017-05-06T17:38:00+09:00</lastmod>
+    <lastmod>2018-01-03T01:33:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -267,6 +272,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/google_speed_insight/</loc>
+    <lastmod>2018-01-03T01:33:17+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/hugo/</loc>
     <lastmod>2017-01-04T23:25:39+09:00</lastmod>
     <priority>0</priority>
@@ -310,7 +321,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2017-12-30T02:45:26+09:00</lastmod>
+    <lastmod>2018-01-03T01:33:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -406,7 +417,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2017-12-30T02:45:26+09:00</lastmod>
+    <lastmod>2018-01-03T01:33:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   

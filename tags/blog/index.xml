@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Sat, 06 May 2017 17:38:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jan 2018 01:33:17 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>このサイトを速くした💯</title>
+      <link>https://hoshinotsuyoshi.com/post/google_speed_insight/</link>
+      <pubDate>Wed, 03 Jan 2018 01:33:17 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/google_speed_insight/</guid>
+      <description>&lt;h3 id=&#34;やったこと&#34;&gt;やったこと&lt;/h3&gt;
+
+&lt;p&gt;キャッシュが効いてないと画像めっちゃ遅い時があるので、いじった。&lt;/p&gt;
+
+&lt;p&gt;以下のことをやったら google speed insightで35点 -&amp;gt; 90点台になった。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)の件</title>
