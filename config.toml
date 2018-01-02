@@ -8,7 +8,6 @@ canonifyurls = true
 
 [params]
   description = "ブログだよ"
-  cover = "images/shakujii-park-evening.jpg"
   author = "hoshinotsuyoshi"
   authorlocation = "Tokyo, Japan"
   authorwebsite = "https://hoshinotsuyoshi.com"
