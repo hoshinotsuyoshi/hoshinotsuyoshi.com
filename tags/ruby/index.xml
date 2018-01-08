@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Wed, 04 Jan 2017 23:25:39 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jan 2018 16:26:12 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください</title>
+      <link>https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/</link>
+      <pubDate>Mon, 08 Jan 2018 16:26:12 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;risemara&#34; src=&#34;https://hoshinotsuyoshi.com/images/risemara.gif&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>このブログの記事の土台を生成するrakeタスクを作った</title>

@@ -6,34 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <meta name="twitter:card" content="summary"/>
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/risemara.gif"/>
     
 
 
 
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="ブログだよ"/>
+<meta name="twitter:title" content="rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください"/>
+<meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@hoppiestar"/>
 
 
 
-  	<meta property="og:title" content="Posts &middot; hoshinotsuyoshi.com" />
+  	<meta property="og:title" content="rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください &middot; hoshinotsuyoshi.com" />
   	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
-  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/" />
 
     
-        
+       <meta property="og:image" content="/images/risemara.gif"/>
     
 
     
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="ブログだよ" />
-    
-
-    <title>Posts &middot; hoshinotsuyoshi.com</title>
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-01-08T16:26:12&#43;09:00" />
 
     
-    <meta name="description" content="ブログだよ" />
+    <meta property="article:tag" content="ruby" />
+    
+    
+
+    <title>rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください &middot; hoshinotsuyoshi.com</title>
+
+    
+    <meta name="description" content="&lt;p&gt;&lt;img alt=&#34;risemara&#34; src=&#34;/images/risemara.gif&#34; width=400&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -57,21 +67,24 @@
           <link href="https://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
       
       
-        <link href="https://hoshinotsuyoshi.com/post/index.xml" rel="alternate" type="application/rss+xml" title="Posts &middot; hoshinotsuyoshi.com" />
-      
     
     <meta name="generator" content="Hugo 0.30.2" />
 
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/" />
 
     
       
     
     <script type="application/ld+json">
-    {
+{
     "@context": "https://schema.org",
-    "@type": "Website",
+    "@type": "Article",
     "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png
+    },
+    "author": {
         "@type": "Person",
         "name": ,
         
@@ -80,7 +93,7 @@
             "url": https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png,
             "width": 250,
             "height": 250
-        },
+        }, 
         
         "url": https://hoshinotsuyoshi.com,
         "sameAs": [
@@ -94,14 +107,33 @@
             
         ]
     },
-    "url": https://hoshinotsuyoshi.com/,
+    "headline": rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください,
+    "name": rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください,
+    "wordCount": 16,
+    "timeRequired": "PT1M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/,
+    "datePublished": 2018-01-08T16:26Z,
+    "dateModified": 2018-01-08T16:26Z,
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": https://hoshinotsuyoshi.com/images/risemara.gif,
+        "width": 3000,
+        "height": 1445
+    },
+    
+    "keywords": ruby,
+    "description": ,
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": https://hoshinotsuyoshi.com/
-    },
-    "description": ブログだよ
+        "@id": https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/
+    }
 }
-  </script>
+    </script>
     
 
 
@@ -139,7 +171,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     </ul>
 
     
-    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/post/index.xml">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">Subscribe</a>
     
 </div>
 <span class="nav-cover"></span>
@@ -149,1015 +181,159 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 
 
+  
+  <header class="main-header post-head" style="background-image: url(/images/risemara.gif)">
+  
+  <nav class="main-nav overlay clearfix">
 
-	<header class="main-header tag-head no-cover">
 
-    <nav class="main-nav overlay clearfix">
-      
-        <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
-      
-      
-        
-          <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/post/index.xml">&nbsp;&nbsp;Subscribe</a>
-        
-      
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Posts</h1>
-            <h2 class="page-description">
-                
-            </h2>
-        </div>
-    </div>
+  
+      <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml" >&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
 </header>
 
+
+
 <main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください</h1>
+        
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-01-08T16:26:12&#43;09:00">
+            Jan 8, 2018
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p><img alt="risemara" src="https://hoshinotsuyoshi.com/images/risemara.gif" width=400></p>
+
+<p></p>
+
+<p>去年の作った<a href="https://hoshinotsuyoshi.com/ruby_truthy_or_falsy/">rubyのクイズのやつ</a>、ruby 2.5対応して問題数も増やしてパワーアップしました。</p>
+
+<hr />
+
+<p>↓↓どうぞ</p>
+
+<p><a href="https://hoshinotsuyoshi.com/ruby_truthy_or_falsy/" target="_blank">Is it truthy or falsy ?</a></h4></p>
+
+<p>↑↑どうぞ</p>
+
+<hr />
+
+<p>今回も悪問いっぱい入ってますが、そういうスタイルなのでご容赦ください。</p>
+
+<p>80%正解で中級者といったところでしょうか(詰将棋風)。</p>
+
+<h3 id="ソース">ソース</h3>
+
+<ul>
+<li><a href="https://github.com/hoshinotsuyoshi/ruby_truthy_or_falsy">https://github.com/hoshinotsuyoshi/ruby_truthy_or_falsy</a></li>
+</ul>
+
+<h3 id="スライド">スライド</h3>
+
+<ul>
+<li><a href="https://speakerdeck.com/hoshinotsuyoshi/ruby-is-fun-but-difficult">https://speakerdeck.com/hoshinotsuyoshi/ruby-is-fun-but-difficult</a></li>
+</ul>
+    </section>
+
+
+  <footer class="post-footer">
+
+
     
 
-	<div class="extra-pagination inner">
-    <nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 2</span>
-	
-	    <a class="older-posts" href="https://hoshinotsuyoshi.com/post/page/2/">Older Posts &rarr;</a>
-	
-</nav>
 
-	</div>
 
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/">rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><img alt="risemara" src="https://hoshinotsuyoshi.com/images/risemara.gif" width=400></p>
 
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
 
-        
-            
-            
 
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
 
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a>,
-            
-        
-        <time class="post-date" datetime="2018-01-08T16:26:12&#43;09:00">
-            8 Jan 2018
-        </time>
-    </footer>
+
+<figure class="author-image">
+    <a class="img" href="https://hoshinotsuyoshi.com/" style="background-image: url(/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>Read <a href="https://hoshinotsuyoshi.com/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=ruby%e3%81%ae%e3%82%af%e3%82%a4%e3%82%ba%e3%81%ae%e3%82%84%e3%81%a4%e3%80%81ruby%202.5%e5%af%be%e5%bf%9c%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%81%ae%e3%81%a7%e3%80%81100%e7%82%b9%e7%9b%ae%e6%8c%87%e3%81%97%e3%81%a6%e9%a0%91%e5%bc%b5%e3%82%8c%e3%81%8f%e3%81%a0%e3%81%95%e3%81%84&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby_truthy_or_falsy%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby_truthy_or_falsy%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby_truthy_or_falsy%2f&amp;description=ruby%e3%81%ae%e3%82%af%e3%82%a4%e3%82%ba%e3%81%ae%e3%82%84%e3%81%a4%e3%80%81ruby%202.5%e5%af%be%e5%bf%9c%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%81%ae%e3%81%a7%e3%80%81100%e7%82%b9%e7%9b%ae%e6%8c%87%e3%81%97%e3%81%a6%e9%a0%91%e5%bc%b5%e3%82%8c%e3%81%8f%e3%81%a0%e3%81%95%e3%81%84"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby_truthy_or_falsy%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
 </article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/md600-2/">MiSTEL BAROCCO MD600 慣れてきた</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/md600-2/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/keyboard/">#keyboard</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/jis/">#jis</a>,
-            
-        
-        <time class="post-date" datetime="2018-01-06T14:41:13&#43;09:00">
-            6 Jan 2018
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/misdo_2018/">2018年買ってよかったもの</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>あけましておめでとうございます。🎍</p>
-
-<p>今年も去年に引き続きミスタードーナツの福袋を買いました。</p>
-
-<p>(ちなみに<a href="https://hoshinotsuyoshi.com/post/mr_donuts_fukubukuro/">去年はこんな感じでした</a>)</p>
-
-<p>満足だったのでおすすめです。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/misdo_2018/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/misc/">#misc</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/shopping/">#shopping</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags//">#🍩</a>,
-            
-        
-        <time class="post-date" datetime="2018-01-03T23:33:40&#43;09:00">
-            3 Jan 2018
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/google_speed_insight/">このサイトを速くした💯</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><h3 id="やったこと">やったこと</h3>
-
-<p>キャッシュが効いてないと画像めっちゃ遅い時があるので、いじった。</p>
-
-<p>以下のことをやったら google speed insightで35点 -&gt; 90点台になった。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/google_speed_insight/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/google_speed_insight/">#google_speed_insight</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/blog/">#blog</a>,
-            
-        
-        <time class="post-date" datetime="2018-01-03T01:33:17&#43;09:00">
-            3 Jan 2018
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/heatmap_keyboard/">俺がよく打つキー可視化</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><a href="https://www.patrick-wied.at/projects/heatmap-keyboard/">Keyboard Heatmap</a>とキーロガー(<a href="https://github.com/caseyscarborough/keylogger">caseyscarborough/keylogger</a>)でヒートマップ作ってみたら楽しかった。</p>
-
-<p>結論、こんな感じのデータを得ることができる。</p>
-
-<p><img alt="slack" src="https://hoshinotsuyoshi.com/images/keyboard.jpg" width=600></p>
-
-<table>
-<thead>
-<tr>
-<th>key</th>
-<th>count</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>[left-cmd]</td>
-<td>5.3%</td>
-</tr>
-
-<tr>
-<td>a</td>
-<td>4.9%</td>
-</tr>
-
-<tr>
-<td>[return]</td>
-<td>4.8%</td>
-</tr>
-
-<tr>
-<td>i</td>
-<td>4.3%</td>
-</tr>
-
-<tr>
-<td>(space)</td>
-<td>3.9%</td>
-</tr>
-
-<tr>
-<td>e</td>
-<td>3.7%</td>
-</tr>
-
-<tr>
-<td>[left-ctrl]</td>
-<td>3.6%</td>
-</tr>
-
-<tr>
-<td>m</td>
-<td>3.5%</td>
-</tr>
-
-<tr>
-<td>[tab]</td>
-<td>3.4%</td>
-</tr>
-
-<tr>
-<td>n</td>
-<td>3.4%</td>
-</tr>
-</tbody>
-</table>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/heatmap_keyboard/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/keyboard/">#keyboard</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/tmux/">#tmux</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/vim/">#vim</a>,
-            
-        
-        <time class="post-date" datetime="2017-12-30T02:45:26&#43;09:00">
-            30 Dec 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/jis-md600/">日本語配列の分離式キーボード(MiSTEL BAROCCO MD600)買った</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>分離式キーボードが売ってたので買ってみました。</p>
-
-<p>amazonで17000円ぐらい。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/jis-md600/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/keyboard/">#keyboard</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/jis/">#jis</a>,
-            
-        
-        <time class="post-date" datetime="2017-12-29T17:32:12&#43;09:00">
-            29 Dec 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/hoikuen-futon/">保育園の布団カバー問題に対処する</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><br></p>
-
-<p>共働きの皆さんどうされているんでしょうかね。</p>
-
-<p>掲題の件について私の問題意識・対処法を説明したいと思います。</p>
-
-<p>🎄このエントリーは<a href="https://adventar.org/calendars/2227">子育てエンジニア・クリエイター Advent Calendar 2017 - Adventar</a> の18日目の記事です🎄</p>
-
-<h2 id="問題意識-前提知識">問題意識・前提知識</h2>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/hoikuen-futon/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/life/">#life</a>,
-            
-        
-        <time class="post-date" datetime="2017-12-18T13:08:01&#43;09:00">
-            18 Dec 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><br></p>
-
-<p>🎄 このエントリは<a href="https://qiita.com/advent-calendar/2017/aws-fargate">AWS Fargate Advent Calendar 2017</a>の8日目の記事です 🎄</p>
-
-<p>従来型ECS(EC2/ECS)とFargateの違いについて、</p>
-
-<p><strong>.tfファイルの差分を見ることで理解を深めよう!!</strong> という試みです。</p>
-
-<p>このエントリでは、以下のような流れで説明していきます。</p>
-
-<hr />
-
-<h4 id="step1-terraformでバーーンと-インフラ一式-ecs含む-を立ち上げ">step1. terraformでバーーンと<strong>インフラ一式(ECS含む)を立ち上げ</strong></h4>
-
-<p><img alt="slack" src="https://hoshinotsuyoshi.com/images/step1-ec2ecs.png" width=600></p>
-
-<h4 id="step2-terraformでstep1の状態からバーーンと-fargateに移行">step2. terraformでstep1の状態からバーーンと<strong>Fargateに移行</strong></h4>
-
-<p><img alt="slack" src="https://hoshinotsuyoshi.com/images/step2-fargate.png" width=600></p>
-
-<h4 id="step3-step1とstep2の-tfファイルの-diffを眺める">step3. step1とstep2の.tfファイルの<strong>diffを眺める!👀</strong></h4>
-
-<p><br></p>
-
-<hr />
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/terraform-fargate/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/terraform/">#terraform</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/fargate/">#fargate</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/aws/">#aws</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ecs/">#ecs</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/docker/">#docker</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/advent_calender/">#advent_calender</a>,
-            
-        
-        <time class="post-date" datetime="2017-12-08T03:32:07&#43;09:00">
-            8 Dec 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/">terraform-provider-awsを改造してbuildして手元で使う</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>今年もre:Inventすごかったですね。</p>
-
-<p><blockquote class="embedly-card" data-card-key="6f257114b6df4413a3f5872a7e143278" data-card-type="article-full"><h4><a href="https://reinvent.awsevents.com/">AWS re:Invent 2017</a></h4><p>At AWS re:Invent 2017, connect with peers and cloud experts, collaborate at our bootcamps, and learn how AWS can improve productivity, security and performance.</p></blockquote>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
-
-<p>さて、「噂の新機能を試したいけど、<strong>terraform-provider-awsにまだアノ機能が無いよ（●｀ε´●）!!!!</strong> 」 て時があると思います。</p>
-
-<p>そこで、<a href="https://github.com/terraform-providers/terraform-provider-aws">terraform-providers/terraform-provider-aws</a> を改造し、buildして手元で使ってみました。</p>
-
-<p>そのときの手順です。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/terraform/">#terraform</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/aws/">#aws</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/golang/">#golang</a>,
-            
-        
-        <time class="post-date" datetime="2017-12-07T00:02:51&#43;09:00">
-            7 Dec 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/remote_six_month/">🏠リモートで働くようになって6ヶ月が経ちました🏠</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>転職でフルリモートで働くようになって6ヶ月が経ちました🏠ので</p>
-
-<p>その辺の変化とか仕事のこととか、最近の生活について書いておきたいと思います。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/remote_six_month/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/remote/">#remote</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/life/">#life</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/programming/">#programming</a>,
-            
-        
-        <time class="post-date" datetime="2017-11-20T01:24:37&#43;09:00">
-            20 Nov 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/go_test_bench/">go testの-benchを使いつつProject Eulerの4問目を解いた・速くした🚀</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>趣味プログラミングです。</p>
-
-<p>go test の-benchを使い、Project Eulerの問題を解くプログラムを速くしていった過程を書きます。</p>
-
-<p>解く&amp;テスト書く -&gt; 速くする という流れです。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/go_test_bench/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/golang/">#golang</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/test/">#test</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/project_euler/">#project_euler</a>,
-            
-        
-        <time class="post-date" datetime="2017-11-19T00:01:29&#43;09:00">
-            19 Nov 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/airpods/">今年買って良かったもの：AirPods</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>超いまさらって感じなんだけどAirPods良かった。</p>
-
-<p>良かったことを箇条書きで書こうと思う。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/airpods/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/airpods/">#airpods</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/shopping/">#shopping</a>,
-            
-        
-        <time class="post-date" datetime="2017-11-11T17:38:00&#43;09:00">
-            11 Nov 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/">このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)の件</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)</p>
-
-<p>別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/blog/">#blog</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/github-pages/">#github-pages</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/cloudflare/">#cloudflare</a>,
-            
-        
-        <time class="post-date" datetime="2017-05-06T17:38:00&#43;09:00">
-            6 May 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/gaming-chair/">AKRACINGのゲーミングチェア買って使ってる🎮💺</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>自宅での作業用に、AKRACINGのゲーミングチェア🎮💺買いました</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/gaming-chair/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/chair/">#chair</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/life/">#life</a>,
-            
-        
-        <time class="post-date" datetime="2017-04-29T15:53:34&#43;09:00">
-            29 Apr 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">複数mastodonを考える 🐘   🐘   🐘</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/mastodon/">#mastodon</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/terraform/">#terraform</a>,
-            
-        
-        <time class="post-date" datetime="2017-04-28T14:16:36&#43;09:00">
-            28 Apr 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/amazake/">甘酒🍶</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/amazake/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/life/">#life</a>,
-            
-        
-        <time class="post-date" datetime="2017-04-28T02:39:54&#43;09:00">
-            28 Apr 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>確定申告した時のメモ・必要だった書類の備忘録です。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/life/">#life</a>,
-            
-        
-        <time class="post-date" datetime="2017-04-17T12:07:35&#43;09:00">
-            17 Apr 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/amazon_drive_japanese/">AmazonDriveをamazon.co.jpで使う</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>撮ったホームビデオのバックアップを置く場所に困ってきたので、<a href="https://www.amazon.co.jp/clouddrive/home">Amazon Drive</a>を契約しました。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/amazon_drive_japanese/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/amazon_drive/">#amazon_drive</a>,
-            
-        
-        <time class="post-date" datetime="2017-01-29T23:16:08&#43;09:00">
-            29 Jan 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/">{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>JSの波括弧に感動するシリーズ、第2回です。</p>
-
-<p>なお今回の第2回目で最終回の予定です!!</p>
-
-<p>第1回目はこちら(<a href="https://hoshinotsuyoshi.com/post/arrow_func_no_brace/">君はarrow functionの波括弧省略について知っているか</a>)でした。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/javascript/">#javascript</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/es2015/">#es2015</a>,
-            
-        
-        <time class="post-date" datetime="2017-01-14T11:43:09&#43;09:00">
-            14 Jan 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/arrow_func_no_brace/">君はarrow functionの波括弧省略について知っているか</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>引き続き勉強兼ねて<a href="https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/">chrome拡張書いてる</a>んですが、
-そのときに読んで知った初心者メモ。</p>
-
-<p>引数の丸括弧<code>()</code>の省略については知っていたんですが、波括弧<code>{}</code>も省略できる時があるんですね。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/arrow_func_no_brace/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/javascript/">#javascript</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/es2015/">#es2015</a>,
-            
-        
-        <time class="post-date" datetime="2017-01-10T04:12:50&#43;09:00">
-            10 Jan 2017
-        </time>
-    </footer>
-</article>
-
-	
-
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 2</span>
-	
-	    <a class="older-posts" href="https://hoshinotsuyoshi.com/post/page/2/">Older Posts &rarr;</a>
-	
-</nav>
 
 </main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://hoshinotsuyoshi.com/post/md600-2/">
+          <section class="post">
+              <h2>MiSTEL BAROCCO MD600 慣れてきた</h2>
+          </section>
+      </a>
+  
+</aside>
 
 
 
@@ -1193,3 +369,4 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     </script>
 </body>
 </html>
+

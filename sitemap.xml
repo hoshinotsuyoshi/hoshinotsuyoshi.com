@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/</loc>
+    <lastmod>2018-01-08T16:26:12+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/md600-2/</loc>
     <lastmod>2018-01-06T14:41:13+09:00</lastmod>
   </url>
@@ -331,7 +336,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-01-06T14:41:13+09:00</lastmod>
+    <lastmod>2018-01-08T16:26:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -379,7 +384,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
-    <lastmod>2017-01-04T23:25:39+09:00</lastmod>
+    <lastmod>2018-01-08T16:26:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -427,7 +432,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-01-06T14:41:13+09:00</lastmod>
+    <lastmod>2018-01-08T16:26:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
