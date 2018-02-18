@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macos on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/macos/</link>
+    <description>Recent content in Macos on hoshinotsuyoshi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Mon, 19 Feb 2018 01:46:22 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</title>
+      <link>https://hoshinotsuyoshi.com/post/rspec_finished_say_command/</link>
+      <pubDate>Mon, 19 Feb 2018 01:46:22 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/rspec_finished_say_command/</guid>
+      <description>&lt;p&gt;rspecの実行が終わったら「rspecが終わりました📢」と音声で通知するようにしてみた。&lt;/p&gt;
+
+&lt;p&gt;意外と良い。&lt;/p&gt;
+
+&lt;p&gt;ちょっと長めの &lt;code&gt;$ rspec spec/requests&lt;/code&gt; とか流したときに、slack眺めたり別のことができる。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,34 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <meta name="twitter:card" content="summary"/>
+    
+        <meta name="twitter:card" content="summary"/>
     
 
 
 
-<meta name="twitter:title" content="Rails"/>
-<meta name="twitter:description" content="ブログだよ"/>
+<meta name="twitter:title" content="テストの実行が終わったら「rspecが終わりました📢」と音声で通知する"/>
+<meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@hoppiestar"/>
 
 
 
-  	<meta property="og:title" content="Rails &middot; hoshinotsuyoshi.com" />
+  	<meta property="og:title" content="テストの実行が終わったら「rspecが終わりました📢」と音声で通知する &middot; hoshinotsuyoshi.com" />
   	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
-  	<meta property="og:url" content="https://hoshinotsuyoshi.com/tags/rails/" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/" />
 
     
         
     
 
     
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="ブログだよ" />
-    
-
-    <title>Rails &middot; hoshinotsuyoshi.com</title>
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-02-19T01:46:22&#43;09:00" />
 
     
-    <meta name="description" content="ブログだよ" />
+    <meta property="article:tag" content="rspec" />
+    
+    <meta property="article:tag" content="rails" />
+    
+    <meta property="article:tag" content="macOS" />
+    
+    
+
+    <title>テストの実行が終わったら「rspecが終わりました📢」と音声で通知する &middot; hoshinotsuyoshi.com</title>
+
+    
+    <meta name="description" content="&lt;p&gt;rspecの実行が終わったら「rspecが終わりました📢」と音声で通知するようにしてみた。&lt;/p&gt;
+
+&lt;p&gt;意外と良い。&lt;/p&gt;
+
+&lt;p&gt;ちょっと長めの &lt;code&gt;$ rspec spec/requests&lt;/code&gt; とか流したときに、slack眺めたり別のことができる。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -57,21 +73,24 @@
           <link href="https://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
       
       
-        <link href="https://hoshinotsuyoshi.com/tags/rails/index.xml" rel="alternate" type="application/rss+xml" title="Rails &middot; hoshinotsuyoshi.com" />
-      
     
     <meta name="generator" content="Hugo 0.30.2" />
 
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/tags/rails/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/" />
 
     
       
     
     <script type="application/ld+json">
-    {
+{
     "@context": "https://schema.org",
-    "@type": "Website",
+    "@type": "Article",
     "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png
+    },
+    "author": {
         "@type": "Person",
         "name": ,
         
@@ -80,7 +99,7 @@
             "url": https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png,
             "width": 250,
             "height": 250
-        },
+        }, 
         
         "url": https://hoshinotsuyoshi.com,
         "sameAs": [
@@ -94,14 +113,26 @@
             
         ]
     },
-    "url": https://hoshinotsuyoshi.com/,
+    "headline": テストの実行が終わったら「rspecが終わりました📢」と音声で通知する,
+    "name": テストの実行が終わったら「rspecが終わりました📢」と音声で通知する,
+    "wordCount": 22,
+    "timeRequired": "PT1M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://hoshinotsuyoshi.com/post/rspec_finished_say_command/,
+    "datePublished": 2018-02-19T01:46Z,
+    "dateModified": 2018-02-19T01:46Z,
+    
+    "keywords": rspec, rails, macOS,
+    "description": ,
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": https://hoshinotsuyoshi.com/
-    },
-    "description": ブログだよ
+        "@id": https://hoshinotsuyoshi.com/post/rspec_finished_say_command/
+    }
 }
-  </script>
+    </script>
     
 
 
@@ -139,7 +170,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     </ul>
 
     
-    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/tags/rails/index.xml">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">Subscribe</a>
     
 </div>
 <span class="nav-cover"></span>
@@ -149,180 +180,150 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 
 
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
 
-	<header class="main-header tag-head no-cover">
 
-    <nav class="main-nav overlay clearfix">
-      
-        <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
-      
-      
-        
-          <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/tags/rails/index.xml">&nbsp;&nbsp;Subscribe</a>
-        
-      
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Rails</h1>
-            <h2 class="page-description">
-                
-            </h2>
-        </div>
-    </div>
+  
+      <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml" >&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
 </header>
 
+
+
 <main class="content" role="main">
-    
 
-	<div class="extra-pagination inner">
-    <nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
 
-	</div>
 
-	
-	   <article class="post post">
+
+  <article class="post post">
+
     <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</a></h2>
-    </header>
-    <section class="post-excerpt">
+        <h1 class="post-title">テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</h1>
         
-            <p><p>rspecの実行が終わったら「rspecが終わりました📢」と音声で通知するようにしてみた。</p>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-02-19T01:46:22&#43;09:00">
+            Feb 19, 2018
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/rspec/">#rspec</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/rails/">#rails</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/macos/">#macOS</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>rspecの実行が終わったら「rspecが終わりました📢」と音声で通知するようにしてみた。</p>
 
 <p>意外と良い。</p>
 
 <p>ちょっと長めの <code>$ rspec spec/requests</code> とか流したときに、slack眺めたり別のことができる。</p>
 
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">&raquo;</a></p>
-        
+<p></p>
+
+<h3 id="コマンド">コマンド</h3>
+
+<p>zshrcとかにこう書いておく。</p>
+
+<pre><code class="language-zsh">alias rspec='(){ rspec &quot;$*&quot; ; say &quot;アールスペックが終わりました&quot; }'
+</code></pre>
+
+<h3 id="ちなみに">ちなみに</h3>
+
+<p>上記コマンドだと単体で <code>rspec</code> とやるとうまく動かない。直すの面倒なので放置。</p>
+
+<p>あと終了コードとかも全然考慮してない。そのまま使うのは注意が必要。</p>
     </section>
-    <footer class="post-meta">
-        
 
-        
-            
-            
 
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
+  <footer class="post-footer">
 
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/rspec/">#rspec</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/rails/">#rails</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/macos/">#macOS</a>,
-            
-        
-        <time class="post-date" datetime="2018-02-19T01:46:22&#43;09:00">
-            19 Feb 2018
-        </time>
-    </footer>
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://hoshinotsuyoshi.com/" style="background-image: url(/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>Read <a href="https://hoshinotsuyoshi.com/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e3%83%86%e3%82%b9%e3%83%88%e3%81%ae%e5%ae%9f%e8%a1%8c%e3%81%8c%e7%b5%82%e3%82%8f%e3%81%a3%e3%81%9f%e3%82%89%e3%80%8crspec%e3%81%8c%e7%b5%82%e3%82%8f%e3%82%8a%e3%81%be%e3%81%97%e3%81%9f%f0%9f%93%a2%e3%80%8d%e3%81%a8%e9%9f%b3%e5%a3%b0%e3%81%a7%e9%80%9a%e7%9f%a5%e3%81%99%e3%82%8b&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frspec_finished_say_command%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frspec_finished_say_command%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frspec_finished_say_command%2f&amp;description=%e3%83%86%e3%82%b9%e3%83%88%e3%81%ae%e5%ae%9f%e8%a1%8c%e3%81%8c%e7%b5%82%e3%82%8f%e3%81%a3%e3%81%9f%e3%82%89%e3%80%8crspec%e3%81%8c%e7%b5%82%e3%82%8f%e3%82%8a%e3%81%be%e3%81%97%e3%81%9f%f0%9f%93%a2%e3%80%8d%e3%81%a8%e9%9f%b3%e5%a3%b0%e3%81%a7%e9%80%9a%e7%9f%a5%e3%81%99%e3%82%8b"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frspec_finished_say_command%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
 </article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/method_source_location/">メソッドが定義された場所を調べる</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/method_source_location/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/rails/">#rails</a>,
-            
-        
-        <time class="post-date" datetime="2017-01-01T15:10:00&#43;09:00">
-            1 Jan 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>🎄 メリークリスマス 🎅
-ruby2.4がリリースされました。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/ruby24/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/rails/">#rails</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a>,
-            
-        
-        <time class="post-date" datetime="2016-12-25T22:30:00&#43;09:00">
-            25 Dec 2016
-        </time>
-    </footer>
-</article>
-
-	
-
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
 
 </main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="background-image: url(/images/risemara.gif)" href="https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/">
+          <section class="post">
+              <h2>rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください</h2>
+          </section>
+      </a>
+  
+</aside>
 
 
 
@@ -358,3 +359,4 @@ ruby2.4がリリースされました。</p>
     </script>
 </body>
 </html>
+

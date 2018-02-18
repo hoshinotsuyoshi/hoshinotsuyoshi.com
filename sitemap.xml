@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/rspec_finished_say_command/</loc>
+    <lastmod>2018-02-19T01:46:22+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/</loc>
     <lastmod>2018-01-08T16:26:12+09:00</lastmod>
   </url>
@@ -323,6 +328,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/macos/</loc>
+    <lastmod>2018-02-19T01:46:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/mastodon/</loc>
     <lastmod>2017-04-28T14:16:36+09:00</lastmod>
     <priority>0</priority>
@@ -336,7 +347,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-01-08T16:26:12+09:00</lastmod>
+    <lastmod>2018-02-19T01:46:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -360,7 +371,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rails/</loc>
-    <lastmod>2017-01-01T15:10:00+09:00</lastmod>
+    <lastmod>2018-02-19T01:46:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -379,6 +390,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rework/</loc>
     <lastmod>2016-11-20T08:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/rspec/</loc>
+    <lastmod>2018-02-19T01:46:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -432,7 +449,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-01-08T16:26:12+09:00</lastmod>
+    <lastmod>2018-02-19T01:46:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   

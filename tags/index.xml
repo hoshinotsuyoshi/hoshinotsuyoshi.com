@@ -238,6 +238,15 @@
     </item>
     
     <item>
+      <title>Macos</title>
+      <link>https://hoshinotsuyoshi.com/tags/macos/</link>
+      <pubDate>Mon, 19 Feb 2018 01:46:22 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mastodon</title>
       <link>https://hoshinotsuyoshi.com/tags/mastodon/</link>
       <pubDate>Fri, 28 Apr 2017 14:16:36 +0900</pubDate>
@@ -285,7 +294,7 @@
     <item>
       <title>Rails</title>
       <link>https://hoshinotsuyoshi.com/tags/rails/</link>
-      <pubDate>Sun, 01 Jan 2017 15:10:00 +0900</pubDate>
+      <pubDate>Mon, 19 Feb 2018 01:46:22 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/rails/</guid>
       <description></description>
@@ -315,6 +324,15 @@
       <pubDate>Sun, 20 Nov 2016 08:00:00 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/rework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rspec</title>
+      <link>https://hoshinotsuyoshi.com/tags/rspec/</link>
+      <pubDate>Mon, 19 Feb 2018 01:46:22 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/rspec/</guid>
       <description></description>
     </item>
     
