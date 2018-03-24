@@ -6,34 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <meta name="twitter:card" content="summary"/>
+    
+        <meta name="twitter:card" content="summary"/>
     
 
 
 
-<meta name="twitter:title" content="Ruby"/>
-<meta name="twitter:description" content="ブログだよ"/>
+<meta name="twitter:title" content="slack-ruby-botを使ってみる"/>
+<meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@hoppiestar"/>
 
 
 
-  	<meta property="og:title" content="Ruby &middot; hoshinotsuyoshi.com" />
+  	<meta property="og:title" content="slack-ruby-botを使ってみる &middot; hoshinotsuyoshi.com" />
   	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
-  	<meta property="og:url" content="https://hoshinotsuyoshi.com/tags/ruby/" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/slack_ruby_bot/" />
 
     
         
     
 
     
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="ブログだよ" />
-    
-
-    <title>Ruby &middot; hoshinotsuyoshi.com</title>
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-03-24T17:25:37&#43;09:00" />
 
     
-    <meta name="description" content="ブログだよ" />
+    <meta property="article:tag" content="slack" />
+    
+    <meta property="article:tag" content="ruby" />
+    
+    <meta property="article:tag" content="bot" />
+    
+    <meta property="article:tag" content="ruboty" />
+    
+    
+
+    <title>slack-ruby-botを使ってみる &middot; hoshinotsuyoshi.com</title>
+
+    
+    <meta name="description" content="&lt;p&gt;SlackのXMPPゲートウェイが閉じるという話があり、近いうちにruboty-slack gem(現在xmppに依存している)が使えなくなるらしいので、
+&lt;a href=&#34;https://github.com/slack-ruby/slack-ruby-bot&#34;&gt;slack-ruby-bot&lt;/a&gt;を試してみま" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -57,21 +70,24 @@
           <link href="https://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
       
       
-        <link href="https://hoshinotsuyoshi.com/tags/ruby/index.xml" rel="alternate" type="application/rss+xml" title="Ruby &middot; hoshinotsuyoshi.com" />
-      
     
     <meta name="generator" content="Hugo 0.30.2" />
 
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/tags/ruby/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/slack_ruby_bot/" />
 
     
       
     
     <script type="application/ld+json">
-    {
+{
     "@context": "https://schema.org",
-    "@type": "Website",
+    "@type": "Article",
     "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png
+    },
+    "author": {
         "@type": "Person",
         "name": ,
         
@@ -80,7 +96,7 @@
             "url": https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png,
             "width": 250,
             "height": 250
-        },
+        }, 
         
         "url": https://hoshinotsuyoshi.com,
         "sameAs": [
@@ -94,14 +110,26 @@
             
         ]
     },
-    "url": https://hoshinotsuyoshi.com/,
+    "headline": slack-ruby-botを使ってみる,
+    "name": slack-ruby-botを使ってみる,
+    "wordCount": 176,
+    "timeRequired": "PT1M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://hoshinotsuyoshi.com/post/slack_ruby_bot/,
+    "datePublished": 2018-03-24T17:25Z,
+    "dateModified": 2018-03-24T17:25Z,
+    
+    "keywords": slack, ruby, bot, ruboty,
+    "description": ,
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": https://hoshinotsuyoshi.com/
-    },
-    "description": ブログだよ
+        "@id": https://hoshinotsuyoshi.com/post/slack_ruby_bot/
+    }
 }
-  </script>
+    </script>
     
 
 
@@ -139,7 +167,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     </ul>
 
     
-    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/tags/ruby/index.xml">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">Subscribe</a>
     
 </div>
 <span class="nav-cover"></span>
@@ -149,263 +177,265 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 
 
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
 
-	<header class="main-header tag-head no-cover">
 
-    <nav class="main-nav overlay clearfix">
-      
-        <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
-      
-      
-        
-          <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/tags/ruby/index.xml">&nbsp;&nbsp;Subscribe</a>
-        
-      
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Ruby</h1>
-            <h2 class="page-description">
-                
-            </h2>
-        </div>
-    </div>
+  
+      <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml" >&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
 </header>
 
+
+
 <main class="content" role="main">
-    
 
-	<div class="extra-pagination inner">
-    <nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
 
-	</div>
 
-	
-	   <article class="post post">
+
+  <article class="post post">
+
     <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/slack_ruby_bot/">slack-ruby-botを使ってみる</a></h2>
-    </header>
-    <section class="post-excerpt">
+        <h1 class="post-title">slack-ruby-botを使ってみる</h1>
         
-            <p><p>SlackのXMPPゲートウェイが閉じるという話があり、近いうちにruboty-slack gem(現在xmppに依存している)が使えなくなるらしいので、
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-03-24T17:25:37&#43;09:00">
+            Mar 24, 2018
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/slack/">#slack</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/bot/">#bot</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/ruboty/">#ruboty</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>SlackのXMPPゲートウェイが閉じるという話があり、近いうちにruboty-slack gem(現在xmppに依存している)が使えなくなるらしいので、
 <a href="https://github.com/slack-ruby/slack-ruby-bot">slack-ruby-bot</a>を試してみました。</p>
 
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/slack_ruby_bot/">&raquo;</a></p>
-        
+<p></p>
+
+<h3 id="slack-の-xmpp-ゲートウェイ対応終了について">Slack の XMPP ゲートウェイ対応終了について</h3>
+
+<p>今日時点で、内容はこちら <a href="https://my.slack.com/account/gateways">https://my.slack.com/account/gateways</a> で確認できます。以下内容抜粋。</p>
+
+<blockquote>
+<p>これまで進化を続ける中で、Slack は、共有チャンネル、スレッドや絵文字リアクションといった IRC / XMPP ゲートウェイでは対応できない機能などのビルドを続けてきました。あらゆるプラットフォームを通じて安全で質の高いエクスペリエンスを提供することが Slack の使命です。そのため、このたび、これらのゲートウェイへの対応を終了することとしました。</p>
+
+<p>ゲートウェイの対応終了予定は以下のとおりです :</p>
+
+<p>2018年3月6日 : 新規作成されたワークスペースでの利用終了</p>
+
+<p>2018年4月3日 : ゲートウェイが使用されていないã</p>
+
+<p>2018年5月15日 : その他の全てのワークスペースでの利用終了</p>
+</blockquote>
+
+<h3 id="ちなみに-ruboty-slack-rtm-gemについて">ちなみに: ruboty-slack_rtm gemについて</h3>
+
+<p>ruboty-slackは使えなくなるので、rubotyを使っている人は、<a href="https://github.com/rosylilly/ruboty-slack_rtm">ruboty-slack_rtm</a> を試すと良いかもしれません。</p>
+
+<p>私はまだ試していません。</p>
+
+<p>今回はもうひとつの選択肢として、という話なので、rubotyのことは一旦忘れます。</p>
+
+<h3 id="slack-ruby-bot-gemを使ってみる">slack-ruby-bot gemを使ってみる</h3>
+
+<p>2d6(サイコロを2個振る)に反応するbotを書いてみました。</p>
+
+<p><blockquote class="embedly-card" data-card-key="6f257114b6df4413a3f5872a7e143278" data-card-controls="0" data-card-branding="0" data-card-type="article"><h4><a href="https://github.com/hoshinotsuyoshi/dicebot">hoshinotsuyoshi/dicebot</a></h4><p>dicebot - slack-ruby-botの習作</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<pre><code class="language-ruby"># dicebot.rb
+#
+# ボットのクラス
+require 'slack-ruby-bot'
+require 'dicebot/dice'
+
+class DiceBot &lt; SlackRubyBot::Bot
+  command '2d6' do |client, data, _match|
+    client.say(text: &quot;#{dice} #{dice}&quot;, channel: data.channel)
+  end
+
+  command '円周率を教えて!' do |client, data, _match|
+    pi = Math::PI
+    client.say(text: &quot;#{pi}です&quot;, channel: data.channel)
+  end
+end
+</code></pre>
+
+<pre><code class="language-ruby"># dicebot/dice.rb
+# 
+# サイコロを振るメソッドをもつモジュール
+class DiceBot &lt; SlackRubyBot::Bot
+  module Dice
+    private
+
+    def dice
+      (rand * 6).to_i + 1
+    end
+  end
+
+  extend Dice
+end
+</code></pre>
+
+<p>次にbotのintegrationを1つ作っておき、トークンを環境変数SLACK_API_TOKENにセットします。</p>
+
+<p>あとは、手元のPCおもむろにで <code>DiceBot.run</code> すれば動きます。</p>
+
+<h4 id="様子">様子</h4>
+
+<p><img alt="slack" src="https://hoshinotsuyoshi.com/images/slack_dicebot.png" width=400></p>
+
+<h4 id="その他の動かし方">その他の動かし方</h4>
+
+<p><a href="https://github.com/slack-ruby/slack-ruby-bot/blob/v0.10.5/TUTORIAL.md">rackアプリを書いて動かしたほうが安定する?</a>みたいなことが書いてありましたが、試していません。</p>
+
+<p>herokuで動かす時はこのほうが安定するのかな。</p>
+
+<h3 id="テストについて">テストについて</h3>
+
+<p><a href="https://github.com/slack-ruby/slack-ruby-bot#rspec-shared-behaviors">READMEの下のほう</a> にrspecのカスタムマッチャについて書かれています。</p>
+
+<p>説明に従いspec/spec_helper.rbを書くと、</p>
+
+<p>こんな感じで動かすことができました。</p>
+
+<pre><code class="language-ruby"># vcr, rspec, webmock, rack-test が必要
+# require 'slack-ruby-bot/rspec' が必要
+
+describe DiceBot do
+  context 'given 2d6' do
+    it 'returns 2 dices' do
+      expect(message: 'rubybot 2d6')
+        .to respond_with_slack_message(/[1-6] [1-6]/)
+    end
+  end
+
+  context 'given &quot;円周率を教えて&quot;' do
+    it 'returns pi' do
+      stub_const('Math::PI', 3)
+      expect(message: 'rubybot 円周率を教えて!')
+        .to respond_with_slack_message(/\A3です\z/)
+    end
+  end
+end
+</code></pre>
+
+<p>カスタムマッチャ(&lsquo;slack-ruby-bot/rspec&rsquo;) については、日本語の記事があまり見つけられませんでした。</p>
+
+<p>githubに公開されているいくつかのbotを参考にしたら一応動きました。</p>
+
+<p>まだそれぞれのクラスの役割がよく分かってないので、本体のコード読んで理解するしか無さそうです。</p>
+
+<h3 id="まとめ">✎まとめ</h3>
+
+<ul>
+<li>bot自体はすぐ動くと思います。
+
+<ul>
+<li>本格利用はしてないのでrackアプリ化が必要なのかどうかはいまひとつわからない。</li>
+</ul></li>
+<li>なんとなくテストも動きました。
+
+<ul>
+<li>カスタムマッチャは使いやすいかどうかはまだわからない。。</li>
+</ul></li>
+</ul>
     </section>
-    <footer class="post-meta">
-        
 
-        
-            
-            
 
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
+  <footer class="post-footer">
 
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/slack/">#slack</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/bot/">#bot</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruboty/">#ruboty</a>,
-            
-        
-        <time class="post-date" datetime="2018-03-24T17:25:37&#43;09:00">
-            24 Mar 2018
-        </time>
-    </footer>
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://hoshinotsuyoshi.com/" style="background-image: url(/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>Read <a href="https://hoshinotsuyoshi.com/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=slack-ruby-bot%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fslack_ruby_bot%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fslack_ruby_bot%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fslack_ruby_bot%2f&amp;description=slack-ruby-bot%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fslack_ruby_bot%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
 </article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/">rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><img alt="risemara" src="https://hoshinotsuyoshi.com/images/risemara.gif" width=400></p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a>,
-            
-        
-        <time class="post-date" datetime="2018-01-08T16:26:12&#43;09:00">
-            8 Jan 2018
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/rake_entry_new/">このブログの記事の土台を生成するrakeタスクを作った</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>少しでも記事を書くのをラクにする試みです。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/rake_entry_new/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/hugo/">#hugo</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/blog/">#blog</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/rake/">#rake</a>,
-            
-        
-        <time class="post-date" datetime="2017-01-04T23:25:39&#43;09:00">
-            4 Jan 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/method_source_location/">メソッドが定義された場所を調べる</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/method_source_location/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/rails/">#rails</a>,
-            
-        
-        <time class="post-date" datetime="2017-01-01T15:10:00&#43;09:00">
-            1 Jan 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>🎄 メリークリスマス 🎅
-ruby2.4がリリースされました。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/ruby24/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/rails/">#rails</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a>,
-            
-        
-        <time class="post-date" datetime="2016-12-25T22:30:00&#43;09:00">
-            25 Dec 2016
-        </time>
-    </footer>
-</article>
-
-	
-
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
 
 </main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">
+          <section class="post">
+              <h2>テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</h2>
+          </section>
+      </a>
+  
+</aside>
 
 
 
@@ -441,3 +471,4 @@ ruby2.4がリリースされました。</p>
     </script>
 </body>
 </html>
+
