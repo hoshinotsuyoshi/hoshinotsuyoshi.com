@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Thu, 26 Apr 2018 23:32:09 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Apr 2018 00:14:03 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>自分の全ツイートをこのサイトに貼った</title>
+      <link>https://hoshinotsuyoshi.com/post/my_tweets_archive/</link>
+      <pubDate>Sun, 29 Apr 2018 00:14:03 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/my_tweets_archive/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>あるプロセスが終わるのを待って、そのあと何かをする</title>
