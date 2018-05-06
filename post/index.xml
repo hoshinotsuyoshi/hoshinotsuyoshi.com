@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Fri, 04 May 2018 23:54:31 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 May 2018 10:54:06 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub Pagesが提供するhttpsに乗り換えてみた(ﾉ´∀｀_)・Cloudflareとスピード比較してみた</title>
+      <link>https://hoshinotsuyoshi.com/post/move_to_github_pages_https/</link>
+      <pubDate>Sun, 06 May 2018 10:54:06 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/move_to_github_pages_https/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.github.com/2018-05-01-github-pages-custom-domains-https/&#34;&gt;GitHub PagesがカスタムドメインのHTTPSサポートを始めた&lt;/a&gt; ということなので、&lt;/p&gt;
+
+&lt;p&gt;乗り換えてみました。&lt;/p&gt;
+
+&lt;p&gt;このブログのように、サブドメインなし(zone Apex)で配信していても、問題ないようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>世界でいちばん素敵な元素の教室⚡🔥💧 ✨</title>

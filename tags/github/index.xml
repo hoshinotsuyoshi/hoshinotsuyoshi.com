@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cloudflare on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/cloudflare/</link>
-    <description>Recent content in Cloudflare on hoshinotsuyoshi.com</description>
+    <title>Github on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/github/</link>
+    <description>Recent content in Github on hoshinotsuyoshi.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Sun, 06 May 2018 10:54:06 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,19 +23,6 @@
 &lt;p&gt;乗り換えてみました。&lt;/p&gt;
 
 &lt;p&gt;このブログのように、サブドメインなし(zone Apex)で配信していても、問題ないようです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)の件</title>
-      <link>https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/</link>
-      <pubDate>Sat, 06 May 2017 17:38:00 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/</guid>
-      <description>&lt;p&gt;このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)&lt;/p&gt;
-
-&lt;p&gt;別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
