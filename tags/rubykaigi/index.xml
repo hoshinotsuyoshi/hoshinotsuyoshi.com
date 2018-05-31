@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rubykaigi on hoshinotsuyoshi.com</title>
+    <link>https://hoshinotsuyoshi.com/tags/rubykaigi/</link>
+    <description>Recent content in Rubykaigi on hoshinotsuyoshi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Fri, 01 Jun 2018 01:22:54 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/rubykaigi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RubyKaigi2018杜王町1日目行ってきました・忘れないうちに感想書く</title>
+      <link>https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_moriocho_1/</link>
+      <pubDate>Fri, 01 Jun 2018 01:22:54 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_moriocho_1/</guid>
+      <description>&lt;p&gt;RubyKaigi2018杜王町1日目行ってきました・忘れないうちに感想書く&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
