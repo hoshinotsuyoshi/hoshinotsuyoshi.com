@@ -4,6 +4,7 @@ draft = false
 title = "RubyKaigi2018杜王町1日目行ってきました・忘れないうちに感想書く"
 slug = "ruby_kaigi_2018_moriocho_1"
 tags = ["ruby","rubykaigi","moriocho"]
+image = "images/e7.jpg"
 
 +++
 
