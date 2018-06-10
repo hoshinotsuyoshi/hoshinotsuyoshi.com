@@ -1,5 +1,5 @@
 +++
-date = "2018-06-04T13:17:09+09:00"
+date = "2018-06-10T12:37:09+09:00"
 draft = false
 title = "RubyKaigi、shopifyのテストの話が良かった"
 slug = "ruby_kaigi_2018_shopify"
