@@ -4,7 +4,7 @@ draft = false
 title = "RubyKaigi2018杜王町2日目行ってきました・忘れないうちに感想書く"
 slug = "ruby_kaigi_2018_moriocho_2"
 tags = ["ruby","rubykaigi","moriocho"]
-image = "images/masamune.JPG"
+image = "images/sendai_kokusaicenter.JPG"
 
 +++
 
@@ -115,7 +115,9 @@ end
 
 ### 感想
 
-これ面白かった。別途まとめる
+これ面白かった。<s>別途まとめる</s>
+
+まとめた -> [rubykaigi、shopifyのテストの話が良かった](/post/ruby_kaigi_2018_shopify/)
 
 
 
