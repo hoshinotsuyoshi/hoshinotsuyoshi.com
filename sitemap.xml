@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/</loc>
+    <lastmod>2018-06-24T05:56:48+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/</loc>
     <lastmod>2018-06-24T05:13:28+09:00</lastmod>
   </url>
@@ -236,6 +241,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/ale/</loc>
+    <lastmod>2018-06-24T05:56:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/amazon_drive/</loc>
     <lastmod>2017-01-29T23:16:08+09:00</lastmod>
     <priority>0</priority>
@@ -391,6 +402,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/lint/</loc>
+    <lastmod>2018-06-24T05:56:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/linux/</loc>
     <lastmod>2018-04-26T23:32:09+09:00</lastmod>
     <priority>0</priority>
@@ -427,8 +444,14 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/neovim/</loc>
+    <lastmod>2018-06-24T05:56:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-06-24T05:13:28+09:00</lastmod>
+    <lastmod>2018-06-24T05:56:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -477,6 +500,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rspec/</loc>
     <lastmod>2018-02-19T01:46:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/rubocop/</loc>
+    <lastmod>2018-06-24T05:56:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -554,13 +583,13 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/vim/</loc>
-    <lastmod>2017-12-30T02:45:26+09:00</lastmod>
+    <lastmod>2018-06-24T05:56:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-06-24T05:13:28+09:00</lastmod>
+    <lastmod>2018-06-24T05:56:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   

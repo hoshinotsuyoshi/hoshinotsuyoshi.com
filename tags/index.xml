@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Ale</title>
+      <link>https://hoshinotsuyoshi.com/tags/ale/</link>
+      <pubDate>Sun, 24 Jun 2018 05:56:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/ale/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Amazon_drive</title>
       <link>https://hoshinotsuyoshi.com/tags/amazon_drive/</link>
       <pubDate>Sun, 29 Jan 2017 23:16:08 +0900</pubDate>
@@ -265,6 +274,15 @@
     </item>
     
     <item>
+      <title>Lint</title>
+      <link>https://hoshinotsuyoshi.com/tags/lint/</link>
+      <pubDate>Sun, 24 Jun 2018 05:56:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/lint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://hoshinotsuyoshi.com/tags/linux/</link>
       <pubDate>Thu, 26 Apr 2018 23:32:09 +0900</pubDate>
@@ -315,6 +333,15 @@
       <pubDate>Sat, 02 Jun 2018 10:46:26 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/moriocho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neovim</title>
+      <link>https://hoshinotsuyoshi.com/tags/neovim/</link>
+      <pubDate>Sun, 24 Jun 2018 05:56:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/neovim/</guid>
       <description></description>
     </item>
     
@@ -387,6 +414,15 @@
       <pubDate>Mon, 19 Feb 2018 01:46:22 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/rspec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rubocop</title>
+      <link>https://hoshinotsuyoshi.com/tags/rubocop/</link>
+      <pubDate>Sun, 24 Jun 2018 05:56:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/rubocop/</guid>
       <description></description>
     </item>
     
@@ -492,7 +528,7 @@
     <item>
       <title>Vim</title>
       <link>https://hoshinotsuyoshi.com/tags/vim/</link>
-      <pubDate>Sat, 30 Dec 2017 02:45:26 +0900</pubDate>
+      <pubDate>Sun, 24 Jun 2018 05:56:48 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/vim/</guid>
       <description></description>

@@ -6,34 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <meta name="twitter:card" content="summary"/>
+    
+        <meta name="twitter:card" content="summary"/>
     
 
 
 
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="ブログだよ"/>
+<meta name="twitter:title" content="⚡neovim &#43; 🍻ale &#43; 🚓rubocop"/>
+<meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@hoppiestar"/>
 
 
 
-  	<meta property="og:title" content="Posts &middot; hoshinotsuyoshi.com" />
+  	<meta property="og:title" content="⚡neovim &#43; 🍻ale &#43; 🚓rubocop &middot; hoshinotsuyoshi.com" />
   	<meta property="og:site_name" content="hoshinotsuyoshi.com" />
-  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/" />
+  	<meta property="og:url" content="https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/" />
 
     
         
     
 
     
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="ブログだよ" />
-    
-
-    <title>Posts &middot; hoshinotsuyoshi.com</title>
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-06-24T05:56:48&#43;09:00" />
 
     
-    <meta name="description" content="ブログだよ" />
+    <meta property="article:tag" content="neovim" />
+    
+    <meta property="article:tag" content="vim" />
+    
+    <meta property="article:tag" content="rubocop" />
+    
+    <meta property="article:tag" content="lint" />
+    
+    <meta property="article:tag" content="ale" />
+    
+    
+
+    <title>⚡neovim &#43; 🍻ale &#43; 🚓rubocop &middot; hoshinotsuyoshi.com</title>
+
+    
+    <meta name="description" content="&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;neovimにale(&lt;a href=&#34;https://github.com/w0rp/ale&#34;&gt;w0rp/ale&lt;/a&gt;、vimの非同期Linter)を入れて編集中にrubocopが走るようにしてみました。
+
+&lt;ul&gt;
+&lt;li&gt;自分の場合は5行追" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -57,21 +77,24 @@
           <link href="https://hoshinotsuyoshi.com/index.xml" rel="alternate" type="application/rss+xml" title="hoshinotsuyoshi.com" />
       
       
-        <link href="https://hoshinotsuyoshi.com/post/index.xml" rel="alternate" type="application/rss+xml" title="Posts &middot; hoshinotsuyoshi.com" />
-      
     
     <meta name="generator" content="Hugo 0.30.2" />
 
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/" />
 
     
       
     
     <script type="application/ld+json">
-    {
+{
     "@context": "https://schema.org",
-    "@type": "Website",
+    "@type": "Article",
     "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png
+    },
+    "author": {
         "@type": "Person",
         "name": ,
         
@@ -80,7 +103,7 @@
             "url": https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png,
             "width": 250,
             "height": 250
-        },
+        }, 
         
         "url": https://hoshinotsuyoshi.com,
         "sameAs": [
@@ -94,14 +117,26 @@
             
         ]
     },
-    "url": https://hoshinotsuyoshi.com/,
+    "headline": ⚡neovim &#43; 🍻ale &#43; 🚓rubocop,
+    "name": ⚡neovim &#43; 🍻ale &#43; 🚓rubocop,
+    "wordCount": 54,
+    "timeRequired": "PT1M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/,
+    "datePublished": 2018-06-24T05:56Z,
+    "dateModified": 2018-06-24T05:56Z,
+    
+    "keywords": neovim, vim, rubocop, lint, ale,
+    "description": ,
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": https://hoshinotsuyoshi.com/
-    },
-    "description": ブログだよ
+        "@id": https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/
+    }
 }
-  </script>
+    </script>
     
 
 
@@ -139,7 +174,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     </ul>
 
     
-    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/post/index.xml">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml">Subscribe</a>
     
 </div>
 <span class="nav-cover"></span>
@@ -149,229 +184,212 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 
 
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
 
-	<header class="main-header tag-head no-cover">
 
-    <nav class="main-nav overlay clearfix">
-      
-        <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
-      
-      
-        
-          <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/post/index.xml">&nbsp;&nbsp;Subscribe</a>
-        
-      
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Posts</h1>
-            <h2 class="page-description">
-                
-            </h2>
-        </div>
-    </div>
+  
+      <a class="blog-logo" href="https://hoshinotsuyoshi.com/"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://hoshinotsuyoshi.com/index.xml" >&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
 </header>
 
+
+
 <main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">⚡neovim &#43; 🍻ale &#43; 🚓rubocop</h1>
+        
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-06-24T05:56:48&#43;09:00">
+            Jun 24, 2018
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/neovim/">#neovim</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/vim/">#vim</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/rubocop/">#rubocop</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/lint/">#lint</a></span>
+         
+          <span class="post-tag small"><a href="https://hoshinotsuyoshi.com//tags/ale/">#ale</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <h2 id="tl-dr">TL;DR</h2>
+
+<ul>
+<li>neovimにale(<a href="https://github.com/w0rp/ale">w0rp/ale</a>、vimの非同期Linter)を入れて編集中にrubocopが走るようにしてみました。
+
+<ul>
+<li>自分の場合は5行追加で動いた</li>
+</ul></li>
+<li>また、お試しで保存時(:w)にauto-correctが走るようにしてみました。
+
+<ul>
+<li>自分の場合は1行追加で動いた</li>
+</ul></li>
+</ul>
+
+<p></p>
+
+<h2 id="編集中に非同期的にrubocopが走る">編集中に非同期的にrubocopが走る 🚓</h2>
+
+<p>未保存の状態でも違反箇所がわかるようになります。</p>
+
+<p>以下の例だと、<code>--</code> がついた箇所が違反箇所です。</p>
+
+<p>違反箇所にカーソルを合わせるとvimのステータスラインに違反内容が表示されます。</p>
+
+<p><img alt="neovim_rubocop" src="https://hoshinotsuyoshi.com/images/neovim_rubocop.gif" width=800></p>
+
+<h3 id="をやるための設定">👆 をやるための設定</h3>
+
+<h4 id="rubocop">rubocop</h4>
+
+<p>rubocop gemはgemコマンドやbundleコマンドでインストールされていることが前提です。</p>
+
+<p>自分の場合はbundler経由でも特に問題なく動作しました。</p>
+
+<p><a href="https://github.com/w0rp/ale/blob/34aa3437e0fc062215020b423bdf57da449e9400/autoload/ale/fixers/rubocop.vim">ale側のソース</a>読むとそのあたりはaleがよしなにやってくれそうな雰囲気を感じました。</p>
+
+<h4 id="ale">ale</h4>
+
+<p>aleを利用できるようにします。</p>
+
+<p>ググって<a href="https://wonderwall.hatenablog.com/entry/2017/03/01/223934">この記事</a>とかを参考にしましたが、
+自分の場合はdein.tomlみたいな設定ファイルで管理してるので、以下を追記して <code>call dein#install()</code> で。</p>
+
+<pre><code class="language-toml">[[plugins]]
+repo = 'w0rp/ale'
+</code></pre>
+
+<p>次にaleが呼ぶlinterとしてrubocopを指定します。
+自分の場合は~/.config/nvim/init.vimにベタに書きました。</p>
+
+<pre><code class="language-vimscript">let g:ale_fixers = {
+\   'ruby': ['rubocop'],
+\}
+</code></pre>
+
+<p>これだけ。</p>
+
+<h2 id="さらに保存時にrubocop-auto-correctが走るようにする">さらに保存時にrubocop &ndash;auto-correctが走るようにする 🚓</h2>
+
+<p>保存直後に、自動的に直せるところは直すようにしてみました。</p>
+
+<p><img alt="neovim_rubocop_autocorrect" src="https://hoshinotsuyoshi.com/images/neovim_rubocop_autocorrect.gif" width=800></p>
+
+<p>これは便利そうですが、うざいときはうざそうなので、様子を見て考えます。</p>
+
+<h3 id="をやるためのneovim設定">👆 をやるためのneovim設定</h3>
+
+<p>以下を追記します。</p>
+
+<pre><code class="language-vimscript">let g:ale_fix_on_save = 1
+</code></pre>
+
+<h3 id="まとめ">✎まとめ</h3>
+
+<ul>
+<li>保存直後にオートコレクトするやつは様子見る</li>
+</ul>
+    </section>
+
+
+  <footer class="post-footer">
+
+
     
 
-	<div class="extra-pagination inner">
-    <nav class="pagination" role="navigation">
-	
-	    <a class="newer-posts" href="https://hoshinotsuyoshi.com/post/page/2/">&larr; Newer Posts</a>
-	
-	<span class="page-number">Page 3 of 3</span>
-	
-</nav>
 
-	</div>
 
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>🎄 メリークリスマス 🎅
-ruby2.4がリリースされました。</p>
 
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/ruby24/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
 
-        
-            
-            
 
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
 
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/rails/">#rails</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/ruby/">#ruby</a>,
-            
-        
-        <time class="post-date" datetime="2016-12-25T22:30:00&#43;09:00">
-            25 Dec 2016
-        </time>
-    </footer>
+
+<figure class="author-image">
+    <a class="img" href="https://hoshinotsuyoshi.com/" style="background-image: url(/images/hoshinotsuyoshi.png)"><span class="hidden">hoshinotsuyoshi's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+  
+  <p>Read <a href="https://hoshinotsuyoshi.com/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Tokyo, Japan</span>
+    <span class="author-link icon-link"><a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e2%9a%a1neovim%20%2b%20%f0%9f%8d%bbale%20%2b%20%f0%9f%9a%93rubocop&nbsp;-&nbsp;hoshinotsuyoshi.com&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fneovim_rubocop_autocorrect%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fneovim_rubocop_autocorrect%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fneovim_rubocop_autocorrect%2f&amp;description=%e2%9a%a1neovim%20%2b%20%f0%9f%8d%bbale%20%2b%20%f0%9f%9a%93rubocop"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fneovim_rubocop_autocorrect%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
 </article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>このブログ、<a href="https://hoshinotsuyoshi.com">https://hoshinotsuyoshi.com</a>の編集方法とデプロイ方法についての説明です。</p>
-
-<p>hugoでhtmlを生成し、github pagesでホスティングしています。
-あまり奇をてらったやり方はしていません。至って普通です。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/blog/">#blog</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/hugo/">#hugo</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/github-pages/">#github-pages</a>,
-            
-        
-        <time class="post-date" datetime="2016-11-23T13:00:00&#43;09:00">
-            23 Nov 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/rework/">「小さなチーム、大きな仕事」(REWORK)読んだ</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><a href="https://www.amazon.co.jp/小さなチーム、大きな仕事〔完全版〕-37シグナルズ成功の法則-ジェイソン・フリード/dp/415209267X/">この本</a>を読んだ。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/rework/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/rework/">#rework</a>,
-            
-        
-        <time class="post-date" datetime="2016-11-20T08:00:00&#43;09:00">
-            20 Nov 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://hoshinotsuyoshi.com/post/father_engineer_2016/">「パパエンジニアが語る、子育てとの向き合い方とは？」に参加してきた</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>(このエントリはプライベート日記をサルベージしたものです m(_ _)m)</p>
-
-<p>「<a href="https://hitomedia-night.connpass.com/event/24704/">パパエンジニアが語る、子育てとの向き合い方とは？ - connpass</a>」というイベントにパネリストとして参加してきました💪👀👨
-その記録及び感想です。</p>
-
-<p></p> <a class="read-more" href="https://hoshinotsuyoshi.com/post/father_engineer_2016/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            hoshinotsuyoshi
-                 
-        
-
-        on
-            
-                <a href="https://hoshinotsuyoshi.com//tags/misc/">#misc</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/remote/">#remote</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/life/">#life</a>,
-            
-                <a href="https://hoshinotsuyoshi.com//tags/engineer/">#engineer</a>,
-            
-        
-        <time class="post-date" datetime="2016-03-02T21:00:00&#43;09:00">
-            2 Mar 2016
-        </time>
-    </footer>
-</article>
-
-	
-
-	<nav class="pagination" role="navigation">
-	
-	    <a class="newer-posts" href="https://hoshinotsuyoshi.com/post/page/2/">&larr; Newer Posts</a>
-	
-	<span class="page-number">Page 3 of 3</span>
-	
-</nav>
 
 </main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">
+          <section class="post">
+              <h2>tmuxで今prefixキーが押されているかどうかをわかるようにした</h2>
+          </section>
+      </a>
+  
+</aside>
 
 
 
@@ -407,3 +425,4 @@ ruby2.4がリリースされました。</p>
     </script>
 </body>
 </html>
+

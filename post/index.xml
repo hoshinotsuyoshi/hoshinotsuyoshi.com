@@ -7,10 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Sun, 24 Jun 2018 05:13:28 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jun 2018 05:56:48 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>⚡neovim &#43; 🍻ale &#43; 🚓rubocop</title>
+      <link>https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/</link>
+      <pubDate>Sun, 24 Jun 2018 05:56:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;neovimにale(&lt;a href=&#34;https://github.com/w0rp/ale&#34;&gt;w0rp/ale&lt;/a&gt;、vimの非同期Linter)を入れて編集中にrubocopが走るようにしてみました。
+
+&lt;ul&gt;
+&lt;li&gt;自分の場合は5行追加で動いた&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;また、お試しで保存時(:w)にauto-correctが走るようにしてみました。
+
+&lt;ul&gt;
+&lt;li&gt;自分の場合は1行追加で動いた&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>tmuxで今prefixキーが押されているかどうかをわかるようにした</title>
