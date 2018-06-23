@@ -13,7 +13,7 @@ tags = ["tmux"]
 
 prefix key(私の場合 `C-j`に設定している)を押すと、左上に置いた文字 `tmux` が反転するようにしました。
 
-<img alt="slack" src="/images/tmux_prefix_key_status.gif" width=800>
+<img alt="tmux" src="/images/tmux_prefix_key_status.gif" width=800>
 
 <br>
 <br>
