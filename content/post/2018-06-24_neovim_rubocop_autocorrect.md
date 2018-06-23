@@ -4,6 +4,7 @@ draft = false
 title = "⚡neovim + 🍻ale + 🚓rubocop"
 slug = "neovim_rubocop_autocorrect"
 tags = ["neovim","vim","rubocop","lint","ale"]
+image = "images/neovim_ale_rubocop_title.png"
 
 +++
 
