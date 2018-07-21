@@ -7,7 +7,7 @@ require 'time' # Time#iso8601
 
 DIST  = 'dist'
 THEME = 'casper'
-HUGO_VERSION = 'Hugo Static Site Generator v0.30.2 '
+HUGO_VERSION = 'Hugo Static Site Generator v0.44'
 
 task default: 'deploy:run'
 
@@ -34,7 +34,7 @@ namespace :deploy do
 
   desc 'Run hugo, put files to "dist" dir'
   task :dist do
-    sh "hugo -d #{DIST} -t #{THEME}"
+    sh "HUGO_THEME=#{THEME} hugo -d #{DIST}"
   end
 
   desc 'Update truthy_or_falsy dir'
@@ -65,7 +65,7 @@ end
 
 desc 'Serve html locally'
 task :server do
-  sh "hugo server -t #{THEME}"
+  sh "HUGO_THEME=#{THEME} hugo server"
 end
 
 # alias
