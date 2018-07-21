@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Sun, 10 Jun 2018 12:37:09 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jul 2018 13:53:24 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rubyで、「ローカル変数かメソッドか」は区別できるということと、vimのシンタックスハイライト</title>
+      <link>https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/</link>
+      <pubDate>Sat, 21 Jul 2018 13:53:24 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>RubyKaigi、shopifyのテストの話が良かった</title>

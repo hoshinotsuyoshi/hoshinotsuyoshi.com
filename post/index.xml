@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Sun, 24 Jun 2018 05:56:48 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jul 2018 13:53:24 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rubyで、「ローカル変数かメソッドか」は区別できるということと、vimのシンタックスハイライト</title>
+      <link>https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/</link>
+      <pubDate>Sat, 21 Jul 2018 13:53:24 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>⚡neovim &#43; 🍻ale &#43; 🚓rubocop</title>
