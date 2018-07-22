@@ -10,7 +10,7 @@ paginate = 20
   description = "hoshinotsuyoshiの自由なブログ。rubyとかdockerとかの話題を書きたい。keyboard, vimとか日常の話題も。"
   metaDescription = "hoshinotsuyoshiの自由なブログ。rubyとかdockerとかの話題を書きたい。keyboard, vimとか日常の話題も。"
   googleAnalytics = "UA-87800718-1"
-  customCSS = []
+  customCSS = ["/css/prism.css"]
   RSSLink = ""
 
   twitterName = "hoppiestar"
