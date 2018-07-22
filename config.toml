@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://hoshinotsuyoshi.com/"
 theme = "casper-two"
 languageCode = "ja-jp"
 paginate = 20
