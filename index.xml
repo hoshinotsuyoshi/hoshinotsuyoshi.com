@@ -6,10 +6,25 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 21 Jul 2018 13:53:24 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 22 Jul 2018 11:57:50 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>👻このブログのテーマをhugo-theme-casperからhugo-casper-twoに変えた👻</title>
+      <link>https://hoshinotsuyoshi.com/post/change_blog_theme_casper/</link>
+      <pubDate>Sun, 22 Jul 2018 11:57:50 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/change_blog_theme_casper/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;から&lt;a href=&#34;https://github.com/eueung/hugo-casper-two&#34;&gt;eueung/hugo-casper-two&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;に変えました。&lt;/p&gt;
+
+&lt;p&gt;超ナウい感じになりました(当社比)。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>rubyで、「ローカル変数かメソッドか」は区別できるということと、vimのシンタックスハイライト</title>
