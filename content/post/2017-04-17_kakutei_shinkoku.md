@@ -71,3 +71,4 @@ image = "images/sakura20170402.jpg"
   * が、国税局の申告書作成システムは意外とラクでした。
   * マイナンバーカードは余裕を持って作っておくべき
 * 法務局のシステムも使いやすかった
+<script type="text/javascript" src="/js/prism.js" async></script>

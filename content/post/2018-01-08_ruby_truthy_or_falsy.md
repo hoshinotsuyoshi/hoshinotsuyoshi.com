@@ -36,3 +36,4 @@ image = "images/risemara.gif"
 ### スライド
 
 * https://speakerdeck.com/hoshinotsuyoshi/ruby-is-fun-but-difficult
+<script type="text/javascript" src="/js/prism.js" async></script>

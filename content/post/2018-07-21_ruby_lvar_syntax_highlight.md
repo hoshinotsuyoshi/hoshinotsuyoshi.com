@@ -85,3 +85,4 @@ rubykaigiでもトークがあったやつ。
 ### ✎まとめ
 
 理論はわかるんだが、vimの色設定周りがよくわからん
+<script type="text/javascript" src="/js/prism.js" async></script>

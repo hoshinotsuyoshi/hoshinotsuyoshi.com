@@ -95,3 +95,4 @@ index d17b5df..6709e1c 100644
 ## ✎まとめ
 
 シンタックスハイライトを手に入れることができました! 🎉
+<script type="text/javascript" src="/js/prism.js" async></script>

@@ -103,3 +103,4 @@ image = "images/futon/IMG_9091.jpg"
 
 皆さんはどうされているんだろうか。
 
+<script type="text/javascript" src="/js/prism.js" async></script>

@@ -143,3 +143,4 @@ https://magazine.rubyist.net/articles/0056/0056-hanami.html
 * LT良かった
 * ロビーでMtGしてた人がいた
   * 結構大きい正20面体サイコロ使ってる人がいた
+<script type="text/javascript" src="/js/prism.js" async></script>

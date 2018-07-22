@@ -28,3 +28,4 @@ alias rspec='(){ rspec "$*" ; say "アールスペックが終わりました" }
 上記コマンドだと単体で `rspec` とやるとうまく動かない。直すの面倒なので放置。
 
 あと終了コードとかも全然考慮してない。そのまま使うのは注意が必要。
+<script type="text/javascript" src="/js/prism.js" async></script>

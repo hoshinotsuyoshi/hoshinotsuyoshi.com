@@ -20,3 +20,4 @@ image = "images/my_twitter.png"
 こちら [/tweets/](https://hoshinotsuyoshi.com/tweets/) になります
 
 <img alt="slack" src="/images/my_twitter.png" width=600>
+<script type="text/javascript" src="/js/prism.js" async></script>

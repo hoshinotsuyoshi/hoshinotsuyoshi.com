@@ -119,3 +119,4 @@ end
 ### ✎まとめ
 
 rakeタスクに引数、使っていこうな()
+<script type="text/javascript" src="/js/prism.js" async></script>

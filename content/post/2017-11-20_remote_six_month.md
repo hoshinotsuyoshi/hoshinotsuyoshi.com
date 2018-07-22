@@ -84,3 +84,4 @@ image = "images/nomad_surfing_nangoku.png"
 それが無くなったおかげで明らかに運動不足になってしまった。
 
 これについてはまだ効果的な対策が打てていない。自宅からジムが微妙に遠いのがネック。
+<script type="text/javascript" src="/js/prism.js" async></script>

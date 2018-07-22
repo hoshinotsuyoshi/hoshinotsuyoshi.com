@@ -150,3 +150,4 @@ chrome.browserAction.onClicked.addListener((_tab) => {
 constとかアロー関数とかありますが、これが**babelなしで動く。** 
 
 chrome拡張なので、chromeのことだけ考えれば良いのが良いですね。
+<script type="text/javascript" src="/js/prism.js" async></script>

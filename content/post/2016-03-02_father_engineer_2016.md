@@ -64,3 +64,4 @@ Pepperくん近くで見たの初めてでした。
 
 それは正しい一つの答えではある!!のだが、なんかこう、なんとかならないものだろうか。
 
+<script type="text/javascript" src="/js/prism.js" async></script>

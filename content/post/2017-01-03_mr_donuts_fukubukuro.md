@@ -33,3 +33,4 @@ image = "images/snoopy_donuts.jpg"
 
 * あけましておめでとうございます
 * 🍩20個で2160円なので、ミスドで🍩買う人は十分元がとれます
+<script type="text/javascript" src="/js/prism.js" async></script>

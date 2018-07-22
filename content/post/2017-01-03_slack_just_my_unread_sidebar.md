@@ -37,3 +37,4 @@ slackを眺める時間を抑制して生産性上げていきましょう💪
 ### ✎まとめ
 
 * 生産性上げてこ💪
+<script type="text/javascript" src="/js/prism.js" async></script>

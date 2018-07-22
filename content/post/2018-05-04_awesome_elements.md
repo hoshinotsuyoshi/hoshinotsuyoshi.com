@@ -44,3 +44,4 @@ image = "images/element.jpg"
 「周期律表に現れる記号は、ちゃんと実際の世界にも関係しているよ!!」というイメージを持つためには良い本かも。
 
 とにかく値段の割に写真はキレイという感じ。
+<script type="text/javascript" src="/js/prism.js" async></script>

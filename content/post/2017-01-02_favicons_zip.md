@@ -97,3 +97,4 @@ $ ls -d ~/Downloads/favicons/* | xargs -I {} mv {} ./static
 * casperをいじっている
 * realfavicongenerator.netで、必要なファビコンの生成とファビコンのテストができ、便利でした
 
+<script type="text/javascript" src="/js/prism.js" async></script>

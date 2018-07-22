@@ -40,3 +40,4 @@ prefix key(私の場合 `C-j`に設定している)を押すと、左上に置�
 
 <br>
 <br>
+<script type="text/javascript" src="/js/prism.js" async></script>

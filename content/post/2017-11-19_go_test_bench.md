@@ -240,3 +240,4 @@ go version go1.9.2 darwin/amd64
 ## 参考
 
 [Go でベンチマーク - Block Rockin’ Codes](http://jxck.hatenablog.com/entry/20131123/1385189088)
+<script type="text/javascript" src="/js/prism.js" async></script>

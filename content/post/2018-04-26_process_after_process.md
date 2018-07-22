@@ -35,3 +35,4 @@ $ ruby -e "loop { Process.getpgid(プロセス番号) ; sleep 1 } " ; date
 これならrubyさえあれば動く。
 
 シェルスクリプトでループを書くやり方が覚えられない👼
+<script type="text/javascript" src="/js/prism.js" async></script>

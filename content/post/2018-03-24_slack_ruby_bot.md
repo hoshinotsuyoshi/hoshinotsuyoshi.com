@@ -133,3 +133,4 @@ githubに公開されているいくつかのbotを参考にしたら一応動�
   * 本格利用はしてないのでrackアプリ化が必要なのかどうかはいまひとつわからない。
 * なんとなくテストも動きました。
   * カスタムマッチャは使いやすいかどうかはまだわからない。。
+<script type="text/javascript" src="/js/prism.js" async></script>

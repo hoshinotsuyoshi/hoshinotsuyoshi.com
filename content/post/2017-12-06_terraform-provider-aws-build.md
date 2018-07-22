@@ -101,3 +101,4 @@ Terraform v0.11.0
 ## ✎まとめ
 
 Go〜
+<script type="text/javascript" src="/js/prism.js" async></script>

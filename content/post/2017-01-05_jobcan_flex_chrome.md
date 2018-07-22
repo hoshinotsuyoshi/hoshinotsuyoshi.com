@@ -63,3 +63,4 @@ n年ぶりにChrome拡張を書いたりしています。経緯について話�
 * boilerplate読んでるといろいろと工夫があって楽しい。
 * というか拡張書くの結構楽しい。ドキュメント読んでるといろいろできることに気づく。
 * 未完🍊です。いつかまとめられたらいいな。
+<script type="text/javascript" src="/js/prism.js" async></script>

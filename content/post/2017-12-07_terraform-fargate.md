@@ -269,3 +269,4 @@ CPU (vCPU)	Memory Values (GB)
 #### 脚注
 
 <div id="footer1">1.</div>【余談】実を言うとここでのterraform applyは、そのままでは失敗してしまいます。Fargateとは関係なく[この不具合](https://github.com/terraform-providers/terraform-provider-aws/issues/636#issue-235679014)があるため、のようです。手でリスナーを先に削除すると、terraform applyは成功します。
+<script type="text/javascript" src="/js/prism.js" async></script>

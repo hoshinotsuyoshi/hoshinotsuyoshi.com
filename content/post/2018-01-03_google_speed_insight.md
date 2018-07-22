@@ -42,3 +42,4 @@ https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery#example
 サーバーの応答時間はcloudflare頼みなので今のところどうにもならん。
 
 一回cloudfront試すか、cloudflareの有料プランやってみてもいいかも!?
+<script type="text/javascript" src="/js/prism.js" async></script>

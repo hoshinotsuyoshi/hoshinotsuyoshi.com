@@ -65,3 +65,4 @@ Press Ctrl+C to stop
 ##### デプロイする
 
 `$ rake`でデプロイできます。
+<script type="text/javascript" src="/js/prism.js" async></script>

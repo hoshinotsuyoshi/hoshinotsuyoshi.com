@@ -64,3 +64,4 @@ image = "images/akracing-chair-5.jpg"
 * 革ではなくウレタンなので触り心地はそこそこ。
 
 悪くない買い物だったと思います
+<script type="text/javascript" src="/js/prism.js" async></script>

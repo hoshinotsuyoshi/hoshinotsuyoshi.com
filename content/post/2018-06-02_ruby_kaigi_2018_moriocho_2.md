@@ -136,3 +136,4 @@ end
 なんか2日目は登山したせいかどっと疲れた。
 
 あと1日楽しみます💎
+<script type="text/javascript" src="/js/prism.js" async></script>

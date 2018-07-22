@@ -79,3 +79,4 @@ let g:ale_fix_on_save = 1
 ### ✎まとめ
 
 * 保存直後にオートコレクトするやつは様子見る
+<script type="text/javascript" src="/js/prism.js" async></script>

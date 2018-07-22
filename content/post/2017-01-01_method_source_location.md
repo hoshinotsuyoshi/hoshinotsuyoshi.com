@@ -126,3 +126,4 @@ Loading development environment (Rails 5.0.1)
 ## まとめ
 
 pry全然使いこなせていないので、使っていきたいですね
+<script type="text/javascript" src="/js/prism.js" async></script>

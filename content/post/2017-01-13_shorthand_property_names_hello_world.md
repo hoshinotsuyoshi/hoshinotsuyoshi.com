@@ -73,3 +73,4 @@ console.log(Object.keys({ハローワールド})[0]); // ハローワールド
 <br>
 
 とりあえず手元のChrome55では動作します。 🌠🌠🌠
+<script type="text/javascript" src="/js/prism.js" async></script>

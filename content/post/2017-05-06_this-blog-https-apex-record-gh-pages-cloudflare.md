@@ -74,3 +74,4 @@ CNAMEというファイルを用意しておきます。
 こんな感じになってれば設定完了です! 🎉
 
 <img alt="slack" src="/images/gh-pages-cert.png" width=600>
+<script type="text/javascript" src="/js/prism.js" async></script>

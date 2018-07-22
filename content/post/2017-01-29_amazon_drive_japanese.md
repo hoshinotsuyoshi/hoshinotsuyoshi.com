@@ -116,3 +116,4 @@ Sierraをクリーンインストールした後にハマりました。
 ### ✎まとめ
 
 AmazonDriveをamazon.comで使ってる人がいましたら感想聞きたいです!!
+<script type="text/javascript" src="/js/prism.js" async></script>
