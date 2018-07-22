@@ -1,58 +1,55 @@
-baseurl = "https://hoshinotsuyoshi.com/"
+baseurl = "/"
 theme = "casper-two"
 languageCode = "ja-jp"
-# title = "hoshinotsuyoshi.com"
 paginate = 20
-# DisqusShortname = "YOUR_SHORT_NAME_HERE"
-# Copyright = "All rights reserved - 2016"
-# canonifyurls = true
-#
+
 [params]
   title       = "hoshinotsuyoshi.com"
-  # subtitle    = "ブログだよ"
-
-  cover       = "img/blog-cover.jpg"
-  description = "ブログだよ"
-  metaDescription = ""
-  googleAnalytics = ""
+  subtitle    = "hoshinotsuyoshi.com - 自由なブログだよ"
+  # cover       = "images/snoopy_donuts.jpg"
+  description = "hoshinotsuyoshiの自由なブログ。rubyとかdockerとかの話題を書きたい。keyboard, vimとか日常の話題も。"
+  metaDescription = "hoshinotsuyoshiの自由なブログ。rubyとかdockerとかの話題を書きたい。keyboard, vimとか日常の話題も。"
+  googleAnalytics = "UA-87800718-1"
   customCSS = []
   RSSLink = ""
 
-  twitterName = ""
-  fbName = "fakeghost"
-  githubName = "eueung"
+  twitterName = "hoppiestar"
+  fbName = "tsuyoshi.hoshino"
+  githubName = "hoshinotsuyoshi"
 
-  logo = "hugo-logo.png"
-  orgName = "EM"
-  orgWebsite = "https://www.telematika.org"
-  orgDescription = "Here is a description placeholder for your org"
+  logo = "images/hoshinotsuyoshi.png"
+  # logo = "hugo-logo.png"
+  # orgName = ""
+  # orgWebsite = ""
+  # orgDescription = ""
 
-  author = "EM"
-  authorAvatar = "img/ghost-icon.png"
-  authorLocation = "Bandung, ID"
-  authorWebsite = "https://eueung.github.io"
-  authorDescription = "Describe yourself.."
+  author = "hoshinotsuyoshi"
+  authorAvatar = "images/hoshinotsuyoshi.png"
+  authorLocation = "Tokyo, Japan"
+  authorWebsite = "https://hoshinotsuyoshi.com"
+  authorDescription = "星野剛志(ほしのつよし) web application engineer. ruby/rails/docker"
 
   pageNotFoundTitle = "404 - Page not found"
 
-  #casper or caspertwo
+  # casper or caspertwo
   singleViewStyle = "casper"
 
-# [params]
-#   description = "ブログだよ"
-#   author = "hoshinotsuyoshi"
-#   authorlocation = "Tokyo, Japan"
-#   authorwebsite = "https://hoshinotsuyoshi.com"
-#   bio= "星野剛志(ほしのつよし) web application engineer. ruby/rails/docker/git"
-#   logo = "images/hoshinotsuyoshi.png"
-#   googleAnalyticsUserID = "UA-87800718-1"
-#   # Optional RSS-Link, if not provided it defaults to the standard index.xml
-#   # RSSLink = "http://feeds.feedburner.com/..." 
-#   githubName = "hoshinotsuyoshi"
-#   twitterName = "hoppiestar"
-#   # facebookName = ""
-#   # linkedinName = ""
-#   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
-#   hideHUGOSupport = false
-#   [params.social]
-#     twitter = "hoppiestar"
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "vim⚡"
+  url = "/tags/vim/"
+  weight = 93
+
+[[menu.main]]
+  name = "Ruby💎"
+  url = "/tags/ruby/"
+  weight = 100
+
+[[menu.main]]
+  name = "Rails🚃"
+  url = "/tags/rails/"
+  weight = 98
