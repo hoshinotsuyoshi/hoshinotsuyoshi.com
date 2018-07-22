@@ -96,3 +96,9 @@ index d17b5df..6709e1c 100644
 
 シンタックスハイライトを手に入れることができました! 🎉
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+## 追記
+
+2018/07/22
+
+[themeを変えた](/post/change_blog_theme_casper/)のでprismの色も微修正した。
