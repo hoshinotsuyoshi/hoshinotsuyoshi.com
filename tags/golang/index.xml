@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on </title>
-    <link>/tags/golang/</link>
+    <link>https://hoshinotsuyoshi.com/tags/golang/</link>
     <description>Recent content in Golang on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 07 Dec 2017 00:02:51 +0900</lastBuildDate>
     
-	<atom:link href="/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>terraform-provider-awsを改造してbuildして手元で使う</title>
-      <link>/post/terraform-provider-aws-build/</link>
+      <link>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</link>
       <pubDate>Thu, 07 Dec 2017 00:02:51 +0900</pubDate>
       
-      <guid>/post/terraform-provider-aws-build/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</guid>
       <description>&lt;p&gt;今年もre:Inventすごかったですね。&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://reinvent.awsevents.com/&#34;&gt;AWS re:Invent 2017&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;At AWS re:Invent 2017, connect with peers and cloud experts, collaborate at our bootcamps, and learn how AWS can improve productivity, security and performance.&lt;/p&gt;&lt;/blockquote&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>go testの-benchを使いつつProject Eulerの4問目を解いた・速くした🚀</title>
-      <link>/post/go_test_bench/</link>
+      <link>https://hoshinotsuyoshi.com/post/go_test_bench/</link>
       <pubDate>Sun, 19 Nov 2017 00:01:29 +0900</pubDate>
       
-      <guid>/post/go_test_bench/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/go_test_bench/</guid>
       <description>&lt;p&gt;趣味プログラミングです。&lt;/p&gt;
 
 &lt;p&gt;go test の-benchを使い、Project Eulerの問題を解くプログラムを速くしていった過程を書きます。&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Favicon on </title>
-    <link>/tags/favicon/</link>
+    <link>https://hoshinotsuyoshi.com/tags/favicon/</link>
     <description>Recent content in Favicon on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 02 Jan 2017 08:30:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/favicon/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/favicon/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>realfavicongenerator.netで作ったfaviconをこのブログのcasperのテーマに反映</title>
-      <link>/post/favicons_zip/</link>
+      <link>https://hoshinotsuyoshi.com/post/favicons_zip/</link>
       <pubDate>Mon, 02 Jan 2017 08:30:00 +0900</pubDate>
       
-      <guid>/post/favicons_zip/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/favicons_zip/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。
 ファビコンが効いてないことに気づいたので、調整しました。
 realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;

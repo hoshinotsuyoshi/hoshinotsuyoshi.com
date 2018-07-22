@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project_euler on </title>
-    <link>/tags/project_euler/</link>
+    <link>https://hoshinotsuyoshi.com/tags/project_euler/</link>
     <description>Recent content in Project_euler on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 19 Nov 2017 00:01:29 +0900</lastBuildDate>
     
-	<atom:link href="/tags/project_euler/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/project_euler/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>go testの-benchを使いつつProject Eulerの4問目を解いた・速くした🚀</title>
-      <link>/post/go_test_bench/</link>
+      <link>https://hoshinotsuyoshi.com/post/go_test_bench/</link>
       <pubDate>Sun, 19 Nov 2017 00:01:29 +0900</pubDate>
       
-      <guid>/post/go_test_bench/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/go_test_bench/</guid>
       <description>&lt;p&gt;趣味プログラミングです。&lt;/p&gt;
 
 &lt;p&gt;go test の-benchを使い、Project Eulerの問題を解くプログラムを速くしていった過程を書きます。&lt;/p&gt;

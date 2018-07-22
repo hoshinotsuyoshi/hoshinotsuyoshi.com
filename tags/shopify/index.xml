@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shopify on </title>
-    <link>/tags/shopify/</link>
+    <link>https://hoshinotsuyoshi.com/tags/shopify/</link>
     <description>Recent content in Shopify on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 10 Jun 2018 12:37:09 +0900</lastBuildDate>
     
-	<atom:link href="/tags/shopify/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/shopify/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RubyKaigi、shopifyのテストの話が良かった</title>
-      <link>/post/ruby_kaigi_2018_shopify/</link>
+      <link>https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_shopify/</link>
       <pubDate>Sun, 10 Jun 2018 12:37:09 +0900</pubDate>
       
-      <guid>/post/ruby_kaigi_2018_shopify/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_shopify/</guid>
       <description>&lt;p&gt;今年のRubyKaigi、色々良かったんだけど、shopifyの&lt;a href=&#34;https://rubykaigi.org/2018/presentations/jules2689.html&#34;&gt;Scaling Teams using Tests for Productivity and Education&lt;/a&gt; (&lt;a href=&#34;https://jnadeau.ca/presentations/rubykaigi2018/&#34;&gt;スライドはこちら&lt;/a&gt;)というセッションが、とても良かった。&lt;/p&gt;
 
 &lt;p&gt;あまり取り上げている人が多くなさそうなので、書く。&lt;/p&gt;

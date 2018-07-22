@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on </title>
-    <link>/tags/blog/</link>
+    <link>https://hoshinotsuyoshi.com/tags/blog/</link>
     <description>Recent content in Blog on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 06 May 2018 10:54:06 +0900</lastBuildDate>
     
-	<atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GitHub Pagesが提供するhttpsに乗り換えてみた(ﾉ´∀｀_)・Cloudflareとスピード比較してみた</title>
-      <link>/post/move_to_github_pages_https/</link>
+      <link>https://hoshinotsuyoshi.com/post/move_to_github_pages_https/</link>
       <pubDate>Sun, 06 May 2018 10:54:06 +0900</pubDate>
       
-      <guid>/post/move_to_github_pages_https/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/move_to_github_pages_https/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://blog.github.com/2018-05-01-github-pages-custom-domains-https/&#34;&gt;GitHub PagesがカスタムドメインのHTTPSサポートを始めた&lt;/a&gt; ということなので、&lt;/p&gt;
 
 &lt;p&gt;乗り換えてみました。&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>このサイトを速くした💯</title>
-      <link>/post/google_speed_insight/</link>
+      <link>https://hoshinotsuyoshi.com/post/google_speed_insight/</link>
       <pubDate>Wed, 03 Jan 2018 01:33:17 +0900</pubDate>
       
-      <guid>/post/google_speed_insight/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/google_speed_insight/</guid>
       <description>&lt;h3 id=&#34;やったこと&#34;&gt;やったこと&lt;/h3&gt;
 
 &lt;p&gt;キャッシュが効いてないと画像めっちゃ遅い時があるので、いじった。&lt;/p&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)の件</title>
-      <link>/post/this-blog-https-apex-record-gh-pages-cloudflare/</link>
+      <link>https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/</link>
       <pubDate>Sat, 06 May 2017 17:38:00 +0900</pubDate>
       
-      <guid>/post/this-blog-https-apex-record-gh-pages-cloudflare/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/</guid>
       <description>&lt;p&gt;このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)&lt;/p&gt;
 
 &lt;p&gt;別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。&lt;/p&gt;
@@ -56,10 +56,10 @@
     
     <item>
       <title>このブログの記事の土台を生成するrakeタスクを作った</title>
-      <link>/post/rake_entry_new/</link>
+      <link>https://hoshinotsuyoshi.com/post/rake_entry_new/</link>
       <pubDate>Wed, 04 Jan 2017 23:25:39 +0900</pubDate>
       
-      <guid>/post/rake_entry_new/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/rake_entry_new/</guid>
       <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -67,10 +67,10 @@
     
     <item>
       <title>realfavicongenerator.netで作ったfaviconをこのブログのcasperのテーマに反映</title>
-      <link>/post/favicons_zip/</link>
+      <link>https://hoshinotsuyoshi.com/post/favicons_zip/</link>
       <pubDate>Mon, 02 Jan 2017 08:30:00 +0900</pubDate>
       
-      <guid>/post/favicons_zip/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/favicons_zip/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。
 ファビコンが効いてないことに気づいたので、調整しました。
 realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;
@@ -80,10 +80,10 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
     
     <item>
       <title>このブログのコードのシンタックスハイライトにPrismを利用することにした</title>
-      <link>/post/prismjs_intro/</link>
+      <link>https://hoshinotsuyoshi.com/post/prismjs_intro/</link>
       <pubDate>Sun, 01 Jan 2017 21:00:00 +0900</pubDate>
       
-      <guid>/post/prismjs_intro/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/prismjs_intro/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。&lt;/p&gt;
 
 &lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;
@@ -93,10 +93,10 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
     
     <item>
       <title>このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</title>
-      <link>/post/deploy_this_blog/</link>
+      <link>https://hoshinotsuyoshi.com/post/deploy_this_blog/</link>
       <pubDate>Wed, 23 Nov 2016 13:00:00 +0900</pubDate>
       
-      <guid>/post/deploy_this_blog/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/deploy_this_blog/</guid>
       <description>&lt;p&gt;このブログ、&lt;a href=&#34;https://hoshinotsuyoshi.com&#34;&gt;https://hoshinotsuyoshi.com&lt;/a&gt;の編集方法とデプロイ方法についての説明です。&lt;/p&gt;
 
 &lt;p&gt;hugoでhtmlを生成し、github pagesでホスティングしています。

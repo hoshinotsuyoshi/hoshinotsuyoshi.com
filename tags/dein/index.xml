@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dein on </title>
-    <link>/tags/dein/</link>
+    <link>https://hoshinotsuyoshi.com/tags/dein/</link>
     <description>Recent content in Dein on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sat, 21 Jul 2018 13:53:24 +0900</lastBuildDate>
     
-	<atom:link href="/tags/dein/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/dein/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>rubyで、「ローカル変数かメソッドか」は区別できるということと、vimのシンタックスハイライト</title>
-      <link>/post/ruby_lvar_syntax_highlight/</link>
+      <link>https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/</link>
       <pubDate>Sat, 21 Jul 2018 13:53:24 +0900</pubDate>
       
-      <guid>/post/ruby_lvar_syntax_highlight/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     

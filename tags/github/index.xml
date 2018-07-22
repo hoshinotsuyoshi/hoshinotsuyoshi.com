@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on </title>
-    <link>/tags/github/</link>
+    <link>https://hoshinotsuyoshi.com/tags/github/</link>
     <description>Recent content in Github on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 06 May 2018 10:54:06 +0900</lastBuildDate>
     
-	<atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GitHub Pagesが提供するhttpsに乗り換えてみた(ﾉ´∀｀_)・Cloudflareとスピード比較してみた</title>
-      <link>/post/move_to_github_pages_https/</link>
+      <link>https://hoshinotsuyoshi.com/post/move_to_github_pages_https/</link>
       <pubDate>Sun, 06 May 2018 10:54:06 +0900</pubDate>
       
-      <guid>/post/move_to_github_pages_https/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/move_to_github_pages_https/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://blog.github.com/2018-05-01-github-pages-custom-domains-https/&#34;&gt;GitHub PagesがカスタムドメインのHTTPSサポートを始めた&lt;/a&gt; ということなので、&lt;/p&gt;
 
 &lt;p&gt;乗り換えてみました。&lt;/p&gt;

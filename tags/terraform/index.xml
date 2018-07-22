@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Terraform on </title>
-    <link>/tags/terraform/</link>
+    <link>https://hoshinotsuyoshi.com/tags/terraform/</link>
     <description>Recent content in Terraform on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 08 Dec 2017 03:32:07 +0900</lastBuildDate>
     
-	<atom:link href="/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</title>
-      <link>/post/terraform-fargate/</link>
+      <link>https://hoshinotsuyoshi.com/post/terraform-fargate/</link>
       <pubDate>Fri, 08 Dec 2017 03:32:07 +0900</pubDate>
       
-      <guid>/post/terraform-fargate/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/terraform-fargate/</guid>
       <description>&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;🎄 このエントリは&lt;a href=&#34;https://qiita.com/advent-calendar/2017/aws-fargate&#34;&gt;AWS Fargate Advent Calendar 2017&lt;/a&gt;の8日目の記事です 🎄&lt;/p&gt;
@@ -31,11 +31,11 @@
 
 &lt;h4 id=&#34;step1-terraformでバーーンと-インフラ一式-ecs含む-を立ち上げ&#34;&gt;step1. terraformでバーーンと&lt;strong&gt;インフラ一式(ECS含む)を立ち上げ&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;/images/step1-ec2ecs.png&#34; width=600&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/step1-ec2ecs.png&#34; width=600&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;step2-terraformでstep1の状態からバーーンと-fargateに移行&#34;&gt;step2. terraformでstep1の状態からバーーンと&lt;strong&gt;Fargateに移行&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;/images/step2-fargate.png&#34; width=600&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/step2-fargate.png&#34; width=600&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;step3-step1とstep2の-tfファイルの-diffを眺める&#34;&gt;step3. step1とstep2の.tfファイルの&lt;strong&gt;diffを眺める!👀&lt;/strong&gt;&lt;/h4&gt;
 
@@ -48,10 +48,10 @@
     
     <item>
       <title>terraform-provider-awsを改造してbuildして手元で使う</title>
-      <link>/post/terraform-provider-aws-build/</link>
+      <link>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</link>
       <pubDate>Thu, 07 Dec 2017 00:02:51 +0900</pubDate>
       
-      <guid>/post/terraform-provider-aws-build/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/</guid>
       <description>&lt;p&gt;今年もre:Inventすごかったですね。&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-type=&#34;article-full&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://reinvent.awsevents.com/&#34;&gt;AWS re:Invent 2017&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;At AWS re:Invent 2017, connect with peers and cloud experts, collaborate at our bootcamps, and learn how AWS can improve productivity, security and performance.&lt;/p&gt;&lt;/blockquote&gt;
@@ -68,10 +68,10 @@
     
     <item>
       <title>複数mastodonを考える 🐘   🐘   🐘</title>
-      <link>/post/multi-mastodon-poor/</link>
+      <link>https://hoshinotsuyoshi.com/post/multi-mastodon-poor/</link>
       <pubDate>Fri, 28 Apr 2017 14:16:36 +0900</pubDate>
       
-      <guid>/post/multi-mastodon-poor/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/multi-mastodon-poor/</guid>
       <description>&lt;p&gt;terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

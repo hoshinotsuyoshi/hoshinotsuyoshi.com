@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Es2015 on </title>
-    <link>/tags/es2015/</link>
+    <link>https://hoshinotsuyoshi.com/tags/es2015/</link>
     <description>Recent content in Es2015 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sat, 14 Jan 2017 11:43:09 +0900</lastBuildDate>
     
-	<atom:link href="/tags/es2015/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/es2015/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world</title>
-      <link>/post/shorthand_property_names_hello_world/</link>
+      <link>https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/</link>
       <pubDate>Sat, 14 Jan 2017 11:43:09 +0900</pubDate>
       
-      <guid>/post/shorthand_property_names_hello_world/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/</guid>
       <description>&lt;p&gt;JSの波括弧に感動するシリーズ、第2回です。&lt;/p&gt;
 
 &lt;p&gt;なお今回の第2回目で最終回の予定です!!&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>君はarrow functionの波括弧省略について知っているか</title>
-      <link>/post/arrow_func_no_brace/</link>
+      <link>https://hoshinotsuyoshi.com/post/arrow_func_no_brace/</link>
       <pubDate>Tue, 10 Jan 2017 04:12:50 +0900</pubDate>
       
-      <guid>/post/arrow_func_no_brace/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/arrow_func_no_brace/</guid>
       <description>&lt;p&gt;引き続き勉強兼ねて&lt;a href=&#34;https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/&#34;&gt;chrome拡張書いてる&lt;/a&gt;んですが、
 そのときに読んで知った初心者メモ。&lt;/p&gt;
 

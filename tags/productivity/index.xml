@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Productivity on </title>
-    <link>/tags/productivity/</link>
+    <link>https://hoshinotsuyoshi.com/tags/productivity/</link>
     <description>Recent content in Productivity on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Tue, 03 Jan 2017 22:00:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>♯slackで、サイドバーに表示するのは未読チャネルだけにする。生産性💪</title>
-      <link>/post/slack_just_my_unread_sidebar/</link>
+      <link>https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/</link>
       <pubDate>Tue, 03 Jan 2017 22:00:00 +0900</pubDate>
       
-      <guid>/post/slack_just_my_unread_sidebar/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/</guid>
       <description>&lt;p&gt;あけましておめでとうございます。🎍&lt;/p&gt;
 
 &lt;p&gt;お正月といえば生産性ですね。&lt;/p&gt;

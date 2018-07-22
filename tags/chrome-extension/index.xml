@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chrome Extension on </title>
-    <link>/tags/chrome-extension/</link>
+    <link>https://hoshinotsuyoshi.com/tags/chrome-extension/</link>
     <description>Recent content in Chrome Extension on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 06 Jan 2017 07:38:47 +0900</lastBuildDate>
     
-	<atom:link href="/tags/chrome-extension/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/chrome-extension/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>chrome extension書いてて感動したこと(1)</title>
-      <link>/post/souieba_chrome_const/</link>
+      <link>https://hoshinotsuyoshi.com/post/souieba_chrome_const/</link>
       <pubDate>Fri, 06 Jan 2017 07:38:47 +0900</pubDate>
       
-      <guid>/post/souieba_chrome_const/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/souieba_chrome_const/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/&#34;&gt;今月あとどれくらい働けばよいか計算するChrome拡張書いている · hoshinotsuyoshi.com&lt;/a&gt;
 の続きです。&lt;/p&gt;
 
@@ -25,10 +25,10 @@
     
     <item>
       <title>今月あとどれくらい働けばよいか計算するChrome拡張書いている</title>
-      <link>/post/jobcan_flex_chrome/</link>
+      <link>https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/</link>
       <pubDate>Thu, 05 Jan 2017 00:50:10 +0900</pubDate>
       
-      <guid>/post/jobcan_flex_chrome/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/</guid>
       <description>&lt;p&gt;n年ぶりにChrome拡張を書いたりしています。経緯について話さなければならない。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

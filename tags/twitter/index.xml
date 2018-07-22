@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Twitter on </title>
-    <link>/tags/twitter/</link>
+    <link>https://hoshinotsuyoshi.com/tags/twitter/</link>
     <description>Recent content in Twitter on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 29 Apr 2018 00:14:03 +0900</lastBuildDate>
     
-	<atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hoshinotsuyoshi.com/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>自分の全ツイートをこのサイトに貼った</title>
-      <link>/post/my_tweets_archive/</link>
+      <link>https://hoshinotsuyoshi.com/post/my_tweets_archive/</link>
       <pubDate>Sun, 29 Apr 2018 00:14:03 +0900</pubDate>
       
-      <guid>/post/my_tweets_archive/</guid>
+      <guid>https://hoshinotsuyoshi.com/post/my_tweets_archive/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
