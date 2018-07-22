@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/lighthouse_checking/</loc>
+    <lastmod>2018-07-23T00:26:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/post/lighthouse_checking/</loc>
+    <lastmod>2018-07-23T00:26:41+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/change_blog_theme_casper/</loc>
     <lastmod>2018-07-22T11:57:50+09:00</lastmod>
   </url>
@@ -234,7 +244,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-07-22T11:57:50+09:00</lastmod>
+    <lastmod>2018-07-23T00:26:41+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -276,7 +286,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/blog/</loc>
-    <lastmod>2018-07-22T11:57:50+09:00</lastmod>
+    <lastmod>2018-07-23T00:26:41+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -424,6 +434,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/lighthouse/</loc>
+    <lastmod>2018-07-23T00:26:41+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/lint/</loc>
     <lastmod>2018-06-24T05:56:48+09:00</lastmod>
     <priority>0</priority>
@@ -473,7 +489,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-07-22T11:57:50+09:00</lastmod>
+    <lastmod>2018-07-23T00:26:41+09:00</lastmod>
     <priority>0</priority>
   </url>
   
