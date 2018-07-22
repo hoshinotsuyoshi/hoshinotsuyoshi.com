@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rails on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/rails/</link>
-    <description>Recent content in Rails on hoshinotsuyoshi.com</description>
+    <title>Rails on </title>
+    <link>/tags/rails/</link>
+    <description>Recent content in Rails on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Mon, 19 Feb 2018 01:46:22 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/rails/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</title>
-      <link>https://hoshinotsuyoshi.com/post/rspec_finished_say_command/</link>
+      <link>/post/rspec_finished_say_command/</link>
       <pubDate>Mon, 19 Feb 2018 01:46:22 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/rspec_finished_say_command/</guid>
+      <guid>/post/rspec_finished_say_command/</guid>
       <description>&lt;p&gt;rspecの実行が終わったら「rspecが終わりました📢」と音声で通知するようにしてみた。&lt;/p&gt;
 
 &lt;p&gt;意外と良い。&lt;/p&gt;
@@ -29,10 +28,10 @@
     
     <item>
       <title>メソッドが定義された場所を調べる</title>
-      <link>https://hoshinotsuyoshi.com/post/method_source_location/</link>
+      <link>/post/method_source_location/</link>
       <pubDate>Sun, 01 Jan 2017 15:10:00 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/method_source_location/</guid>
+      <guid>/post/method_source_location/</guid>
       <description>&lt;p&gt;rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -40,10 +39,10 @@
     
     <item>
       <title>ruby2.4にしてrails5.0.1にした</title>
-      <link>https://hoshinotsuyoshi.com/post/ruby24/</link>
+      <link>/post/ruby24/</link>
       <pubDate>Sun, 25 Dec 2016 22:30:00 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/ruby24/</guid>
+      <guid>/post/ruby24/</guid>
       <description>&lt;p&gt;🎄 メリークリスマス 🎅
 ruby2.4がリリースされました。&lt;/p&gt;
 

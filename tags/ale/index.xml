@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ale on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/ale/</link>
-    <description>Recent content in Ale on hoshinotsuyoshi.com</description>
+    <title>Ale on </title>
+    <link>/tags/ale/</link>
+    <description>Recent content in Ale on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Sun, 24 Jun 2018 05:56:48 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/ale/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/ale/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>⚡neovim &#43; 🍻ale &#43; 🚓rubocop</title>
-      <link>https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/</link>
+      <link>/post/neovim_rubocop_autocorrect/</link>
       <pubDate>Sun, 24 Jun 2018 05:56:48 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/</guid>
+      <guid>/post/neovim_rubocop_autocorrect/</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
 
 &lt;ul&gt;

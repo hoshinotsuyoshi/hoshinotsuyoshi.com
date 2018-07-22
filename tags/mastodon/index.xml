@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mastodon on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/mastodon/</link>
-    <description>Recent content in Mastodon on hoshinotsuyoshi.com</description>
+    <title>Mastodon on </title>
+    <link>/tags/mastodon/</link>
+    <description>Recent content in Mastodon on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Fri, 28 Apr 2017 14:16:36 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>複数mastodonを考える 🐘   🐘   🐘</title>
-      <link>https://hoshinotsuyoshi.com/post/multi-mastodon-poor/</link>
+      <link>/post/multi-mastodon-poor/</link>
       <pubDate>Fri, 28 Apr 2017 14:16:36 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/multi-mastodon-poor/</guid>
+      <guid>/post/multi-mastodon-poor/</guid>
       <description>&lt;p&gt;terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

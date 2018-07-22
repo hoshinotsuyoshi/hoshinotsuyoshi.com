@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mac on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/mac/</link>
-    <description>Recent content in Mac on hoshinotsuyoshi.com</description>
+    <title>Mac on </title>
+    <link>/tags/mac/</link>
+    <description>Recent content in Mac on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Thu, 26 Apr 2018 23:32:09 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>あるプロセスが終わるのを待って、そのあと何かをする</title>
-      <link>https://hoshinotsuyoshi.com/post/process_after_process/</link>
+      <link>/post/process_after_process/</link>
       <pubDate>Thu, 26 Apr 2018 23:32:09 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/process_after_process/</guid>
+      <guid>/post/process_after_process/</guid>
       <description>&lt;p&gt;あるプロセスが終わるのを待ってから、別の何かをしたいときがある。&lt;/p&gt;
 
 &lt;p&gt;うっかり長い処理を走らせてしまったときとか。&lt;/p&gt;

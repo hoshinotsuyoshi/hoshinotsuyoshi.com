@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vim on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/vim/</link>
-    <description>Recent content in Vim on hoshinotsuyoshi.com</description>
+    <title>Vim on </title>
+    <link>/tags/vim/</link>
+    <description>Recent content in Vim on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Sun, 24 Jun 2018 05:56:48 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>⚡neovim &#43; 🍻ale &#43; 🚓rubocop</title>
-      <link>https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/</link>
+      <link>/post/neovim_rubocop_autocorrect/</link>
       <pubDate>Sun, 24 Jun 2018 05:56:48 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/</guid>
+      <guid>/post/neovim_rubocop_autocorrect/</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -38,15 +37,15 @@
     
     <item>
       <title>俺がよく打つキー可視化</title>
-      <link>https://hoshinotsuyoshi.com/post/heatmap_keyboard/</link>
+      <link>/post/heatmap_keyboard/</link>
       <pubDate>Sat, 30 Dec 2017 02:45:26 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/heatmap_keyboard/</guid>
+      <guid>/post/heatmap_keyboard/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.patrick-wied.at/projects/heatmap-keyboard/&#34;&gt;Keyboard Heatmap&lt;/a&gt;とキーロガー(&lt;a href=&#34;https://github.com/caseyscarborough/keylogger&#34;&gt;caseyscarborough/keylogger&lt;/a&gt;)でヒートマップ作ってみたら楽しかった。&lt;/p&gt;
 
 &lt;p&gt;結論、こんな感じのデータを得ることができる。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;https://hoshinotsuyoshi.com/images/keyboard.jpg&#34; width=600&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;slack&#34; src=&#34;/images/keyboard.jpg&#34; width=600&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;

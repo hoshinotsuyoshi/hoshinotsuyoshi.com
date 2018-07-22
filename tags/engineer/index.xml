@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Engineer on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/engineer/</link>
-    <description>Recent content in Engineer on hoshinotsuyoshi.com</description>
+    <title>Engineer on </title>
+    <link>/tags/engineer/</link>
+    <description>Recent content in Engineer on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Wed, 02 Mar 2016 21:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/engineer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/engineer/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>「パパエンジニアが語る、子育てとの向き合い方とは？」に参加してきた</title>
-      <link>https://hoshinotsuyoshi.com/post/father_engineer_2016/</link>
+      <link>/post/father_engineer_2016/</link>
       <pubDate>Wed, 02 Mar 2016 21:00:00 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/father_engineer_2016/</guid>
+      <guid>/post/father_engineer_2016/</guid>
       <description>&lt;p&gt;(このエントリはプライベート日記をサルベージしたものです m(_ _)m)&lt;/p&gt;
 
 &lt;p&gt;「&lt;a href=&#34;https://hitomedia-night.connpass.com/event/24704/&#34;&gt;パパエンジニアが語る、子育てとの向き合い方とは？ - connpass&lt;/a&gt;」というイベントにパネリストとして参加してきました💪👀👨

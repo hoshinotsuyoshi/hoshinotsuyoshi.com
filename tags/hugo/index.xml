@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/hugo/</link>
-    <description>Recent content in Hugo on hoshinotsuyoshi.com</description>
+    <title>Hugo on </title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in Hugo on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Wed, 04 Jan 2017 23:25:39 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>このブログの記事の土台を生成するrakeタスクを作った</title>
-      <link>https://hoshinotsuyoshi.com/post/rake_entry_new/</link>
+      <link>/post/rake_entry_new/</link>
       <pubDate>Wed, 04 Jan 2017 23:25:39 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/rake_entry_new/</guid>
+      <guid>/post/rake_entry_new/</guid>
       <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +24,10 @@
     
     <item>
       <title>realfavicongenerator.netで作ったfaviconをこのブログのcasperのテーマに反映</title>
-      <link>https://hoshinotsuyoshi.com/post/favicons_zip/</link>
+      <link>/post/favicons_zip/</link>
       <pubDate>Mon, 02 Jan 2017 08:30:00 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/favicons_zip/</guid>
+      <guid>/post/favicons_zip/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。
 ファビコンが効いてないことに気づいたので、調整しました。
 realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;
@@ -38,10 +37,10 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
     
     <item>
       <title>このブログのコードのシンタックスハイライトにPrismを利用することにした</title>
-      <link>https://hoshinotsuyoshi.com/post/prismjs_intro/</link>
+      <link>/post/prismjs_intro/</link>
       <pubDate>Sun, 01 Jan 2017 21:00:00 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/prismjs_intro/</guid>
+      <guid>/post/prismjs_intro/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。&lt;/p&gt;
 
 &lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;
@@ -51,10 +50,10 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
     
     <item>
       <title>このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</title>
-      <link>https://hoshinotsuyoshi.com/post/deploy_this_blog/</link>
+      <link>/post/deploy_this_blog/</link>
       <pubDate>Wed, 23 Nov 2016 13:00:00 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/deploy_this_blog/</guid>
+      <guid>/post/deploy_this_blog/</guid>
       <description>&lt;p&gt;このブログ、&lt;a href=&#34;https://hoshinotsuyoshi.com&#34;&gt;https://hoshinotsuyoshi.com&lt;/a&gt;の編集方法とデプロイ方法についての説明です。&lt;/p&gt;
 
 &lt;p&gt;hugoでhtmlを生成し、github pagesでホスティングしています。

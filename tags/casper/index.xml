@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Casper on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/casper/</link>
-    <description>Recent content in Casper on hoshinotsuyoshi.com</description>
+    <title>Casper on </title>
+    <link>/tags/casper/</link>
+    <description>Recent content in Casper on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Mon, 02 Jan 2017 08:30:00 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/casper/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/casper/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>realfavicongenerator.netで作ったfaviconをこのブログのcasperのテーマに反映</title>
-      <link>https://hoshinotsuyoshi.com/post/favicons_zip/</link>
+      <link>/post/favicons_zip/</link>
       <pubDate>Mon, 02 Jan 2017 08:30:00 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/favicons_zip/</guid>
+      <guid>/post/favicons_zip/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。
 ファビコンが効いてないことに気づいたので、調整しました。
 realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;
@@ -27,10 +26,10 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
     
     <item>
       <title>このブログのコードのシンタックスハイライトにPrismを利用することにした</title>
-      <link>https://hoshinotsuyoshi.com/post/prismjs_intro/</link>
+      <link>/post/prismjs_intro/</link>
       <pubDate>Sun, 01 Jan 2017 21:00:00 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/prismjs_intro/</guid>
+      <guid>/post/prismjs_intro/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。&lt;/p&gt;
 
 &lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;

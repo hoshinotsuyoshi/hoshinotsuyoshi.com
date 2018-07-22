@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rake on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/rake/</link>
-    <description>Recent content in Rake on hoshinotsuyoshi.com</description>
+    <title>Rake on </title>
+    <link>/tags/rake/</link>
+    <description>Recent content in Rake on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Wed, 04 Jan 2017 23:25:39 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/rake/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/rake/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>このブログの記事の土台を生成するrakeタスクを作った</title>
-      <link>https://hoshinotsuyoshi.com/post/rake_entry_new/</link>
+      <link>/post/rake_entry_new/</link>
       <pubDate>Wed, 04 Jan 2017 23:25:39 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/rake_entry_new/</guid>
+      <guid>/post/rake_entry_new/</guid>
       <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

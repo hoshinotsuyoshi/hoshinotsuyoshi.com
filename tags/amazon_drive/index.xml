@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Amazon_drive on hoshinotsuyoshi.com</title>
-    <link>https://hoshinotsuyoshi.com/tags/amazon_drive/</link>
-    <description>Recent content in Amazon_drive on hoshinotsuyoshi.com</description>
+    <title>Amazon_drive on </title>
+    <link>/tags/amazon_drive/</link>
+    <description>Recent content in Amazon_drive on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Sun, 29 Jan 2017 23:16:08 +0900</lastBuildDate>
     
-	<atom:link href="https://hoshinotsuyoshi.com/tags/amazon_drive/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/amazon_drive/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AmazonDriveをamazon.co.jpで使う</title>
-      <link>https://hoshinotsuyoshi.com/post/amazon_drive_japanese/</link>
+      <link>/post/amazon_drive_japanese/</link>
       <pubDate>Sun, 29 Jan 2017 23:16:08 +0900</pubDate>
       
-      <guid>https://hoshinotsuyoshi.com/post/amazon_drive_japanese/</guid>
+      <guid>/post/amazon_drive_japanese/</guid>
       <description>&lt;p&gt;撮ったホームビデオのバックアップを置く場所に困ってきたので、&lt;a href=&#34;https://www.amazon.co.jp/clouddrive/home&#34;&gt;Amazon Drive&lt;/a&gt;を契約しました。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
