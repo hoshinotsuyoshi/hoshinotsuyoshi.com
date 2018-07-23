@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/anime_and_trains/</loc>
+    <lastmod>2018-07-24T07:11:04+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/lighthouse_checking/</loc>
     <lastmod>2018-07-23T00:26:41+09:00</lastmod>
   </url>
@@ -239,7 +244,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-07-23T00:26:41+09:00</lastmod>
+    <lastmod>2018-07-24T07:11:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -424,7 +429,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/life/</loc>
-    <lastmod>2017-12-18T13:08:01+09:00</lastmod>
+    <lastmod>2018-07-24T07:11:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -484,7 +489,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-07-23T00:26:41+09:00</lastmod>
+    <lastmod>2018-07-24T07:11:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -605,6 +610,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/tmux/</loc>
     <lastmod>2018-06-24T05:13:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/train/</loc>
+    <lastmod>2018-07-24T07:11:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
