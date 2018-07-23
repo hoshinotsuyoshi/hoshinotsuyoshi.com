@@ -73,7 +73,7 @@ image = "images/pharlap.jpg"
 
 ちなみに[この時点のコミット](https://github.com/terraform-providers/terraform-provider-aws/commits/36934737ab354734b6b7dee841d3a310df09907c)で試しています。
 
-terraform pluginのビルド方法は[昨日書きました](http://localhost:1313/post/terraform-provider-aws-build/)ので、どうぞご参考までに。
+terraform pluginのビルド方法は[昨日書きました](/post/terraform-provider-aws-build/)ので、どうぞご参考までに。
 
 ## step1. terraformでバーーンとインフラ一式(ECS含む)を立ち上げる
 
