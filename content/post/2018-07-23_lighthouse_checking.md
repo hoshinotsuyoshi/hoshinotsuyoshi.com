@@ -4,6 +4,7 @@ draft = false
 title = "lighthouseを使って自分のブログを計測してみた"
 slug = "lighthouse_checking"
 tags = ["blog","lighthouse"]
+image = "images/lighthouse.png"
 
 +++
 
