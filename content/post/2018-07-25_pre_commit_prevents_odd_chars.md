@@ -3,9 +3,8 @@ date = "2018-07-25T00:25:48+09:00"
 draft = false
 title = "濁点の合成文字がソースコードに入っちまった💢 -> gitのpre-commit hookで打ち勝った"
 slug = "pre_commit_prevents_odd_chars"
-tags = ["ruby","git"]
-
-image = "images/slack_display.png"
+tags = ["ruby","git","bash"]
+image = "images/green-digits.jpg"
 +++
 
 濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。
@@ -82,7 +81,7 @@ gitのpre-commit hookで防ぐことを思いつきました!
 
 以下のようにシェルスクリプトで書いていました。
 
-```sh
+```bash
 #!/bin/sh
 GREP_RESULT=`git diff --cached | grep AKIA`
 if [[ -n "${GREP_RESULT}" ]]; then
