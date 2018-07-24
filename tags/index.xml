@@ -66,6 +66,15 @@
     </item>
     
     <item>
+      <title>Bash</title>
+      <link>https://hoshinotsuyoshi.com/tags/bash/</link>
+      <pubDate>Wed, 25 Jul 2018 00:25:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Blog</title>
       <link>https://hoshinotsuyoshi.com/tags/blog/</link>
       <pubDate>Mon, 23 Jul 2018 00:26:41 +0900</pubDate>
@@ -197,6 +206,15 @@
       <pubDate>Sun, 22 Jul 2018 11:57:50 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/ghost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://hoshinotsuyoshi.com/tags/git/</link>
+      <pubDate>Wed, 25 Jul 2018 00:25:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/git/</guid>
       <description></description>
     </item>
     
@@ -455,7 +473,7 @@
     <item>
       <title>Ruby</title>
       <link>https://hoshinotsuyoshi.com/tags/ruby/</link>
-      <pubDate>Sat, 21 Jul 2018 13:53:24 +0900</pubDate>
+      <pubDate>Wed, 25 Jul 2018 00:25:48 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/ruby/</guid>
       <description></description>

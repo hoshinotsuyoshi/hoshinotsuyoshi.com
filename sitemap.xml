@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/pre_commit_prevents_odd_chars/</loc>
+    <lastmod>2018-07-25T00:25:48+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/anime_and_trains/</loc>
     <lastmod>2018-07-24T07:11:04+09:00</lastmod>
   </url>
@@ -244,7 +249,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-07-24T07:11:04+09:00</lastmod>
+    <lastmod>2018-07-25T00:25:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -281,6 +286,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/aws/</loc>
     <lastmod>2017-12-08T03:32:07+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/bash/</loc>
+    <lastmod>2018-07-25T00:25:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -376,6 +387,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ghost/</loc>
     <lastmod>2018-07-22T11:57:50+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/git/</loc>
+    <lastmod>2018-07-25T00:25:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -489,7 +506,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-07-24T07:11:04+09:00</lastmod>
+    <lastmod>2018-07-25T00:25:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -555,7 +572,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
-    <lastmod>2018-07-21T13:53:24+09:00</lastmod>
+    <lastmod>2018-07-25T00:25:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
