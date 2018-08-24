@@ -6,10 +6,35 @@
     <description>Recent content in Github on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 06 May 2018 10:54:06 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 Aug 2018 00:15:53 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>neovimからgithubのblameのページに飛べるようにした</title>
+      <link>https://hoshinotsuyoshi.com/post/git_blame_on_github/</link>
+      <pubDate>Sat, 25 Aug 2018 00:15:53 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/git_blame_on_github/</guid>
+      <description>&lt;h3 id=&#34;モチベーション&#34;&gt;モチベーション&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;大抵のことは黒い画面でgitコマンド使う。しかし&lt;/li&gt;
+&lt;li&gt;vimでソース読んでて経緯を知りたいことがある
+
+&lt;ul&gt;
+&lt;li&gt;その場所を &lt;strong&gt;最後に編集したPRを読みたくなる&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;vimから離れる -&amp;gt; git blame -&amp;gt; commit番号を調べる -&amp;gt; PRを見る&lt;/li&gt;
+&lt;li&gt;↑ &lt;strong&gt;これが手間&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;tigとかhubとかは使い方覚えられない(覚えろ)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;という感じで、vimからすぐPRに飛びたいのです。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GitHub Pagesが提供するhttpsに乗り換えてみた(ﾉ´∀｀_)・Cloudflareとスピード比較してみた</title>
