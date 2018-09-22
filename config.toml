@@ -2,10 +2,9 @@ baseurl = "https://hoshinotsuyoshi.com/"
 theme = "casper-two"
 languageCode = "ja-jp"
 paginate = 20
+title         = "hoshinotsuyoshi.com - 自由なブログだよ"
 
 [params]
-  title       = "hoshinotsuyoshi.com"
-  subtitle    = "hoshinotsuyoshi.com - 自由なブログだよ"
   # cover       = "images/snoopy_donuts.jpg"
   description = "hoshinotsuyoshiの自由なブログ。rubyとかdockerとかの話題を書きたい。keyboard, vimとか日常の話題も。"
   metaDescription = "hoshinotsuyoshiの自由なブログ。rubyとかdockerとかの話題を書きたい。keyboard, vimとか日常の話題も。"
