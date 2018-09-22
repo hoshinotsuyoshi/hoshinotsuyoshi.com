@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/risu-pia/</loc>
+    <lastmod>2018-09-22T16:27:02+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/git_blame_on_github/</loc>
     <lastmod>2018-08-25T00:15:53+09:00</lastmod>
   </url>
@@ -253,12 +258,6 @@
   </url>
   
   <url>
-    <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-08-25T00:15:53+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hoshinotsuyoshi.com/tags/</loc>
     <lastmod>2018-01-03T23:33:40+09:00</lastmod>
     <priority>0</priority>
@@ -451,7 +450,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/life/</loc>
-    <lastmod>2018-07-24T07:11:04+09:00</lastmod>
+    <lastmod>2018-09-22T16:27:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -511,7 +510,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-08-25T00:15:53+09:00</lastmod>
+    <lastmod>2018-09-22T16:27:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -650,6 +649,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/vim/</loc>
     <lastmod>2018-08-25T00:15:53+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/</loc>
+    <lastmod>2018-09-22T16:27:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
