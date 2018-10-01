@@ -1,7 +1,7 @@
 +++
 date = "2018-10-01T23:21:28+09:00"
 draft = false
-title = "Google Chrome 69 がJIS配列キーボードで使いづらくなった件"
+title = "Google Chrome 69 がJIS配列キーボードで使いづらい"
 slug = "shisubeshi-chrome-69"
 tags = ["chrome","keyboard"]
 
