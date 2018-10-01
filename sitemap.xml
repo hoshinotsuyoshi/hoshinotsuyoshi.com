@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/shisubeshi-chrome-69/</loc>
+    <lastmod>2018-10-01T23:21:28+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/risu-pia/</loc>
     <lastmod>2018-09-22T16:27:02+09:00</lastmod>
   </url>
@@ -335,6 +340,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/chrome/</loc>
+    <lastmod>2018-10-01T23:21:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/chrome-extension/</loc>
     <lastmod>2017-01-06T07:38:47+09:00</lastmod>
     <priority>0</priority>
@@ -444,7 +455,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/keyboard/</loc>
-    <lastmod>2018-01-06T14:41:13+09:00</lastmod>
+    <lastmod>2018-10-01T23:21:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -510,7 +521,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-09-22T16:27:02+09:00</lastmod>
+    <lastmod>2018-10-01T23:21:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -654,7 +665,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-09-22T16:27:02+09:00</lastmod>
+    <lastmod>2018-10-01T23:21:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
