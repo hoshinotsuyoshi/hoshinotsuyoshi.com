@@ -114,25 +114,22 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/pc_manual_irasutoya.png)"></div>
-    </a>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/7.jpg)"></div>
+    </a>    
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #neovim 
-              #vim 
-              #git 
-              #github  </span>
+              #tmux  </span>
               
-              <h2 class="post-card-title">neovimからgithubのblameのページに飛べるようにした</h2>
+              <h2 class="post-card-title">tmuxで今prefixキーが押されているかどうかをわかるようにした</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>モチベーション  大抵のことは黒い画面でgitコマンド使う。しかし vimでソース読んでて経緯を知りたいことがある  その場所を 最後に編集したPRを読みたくなる vimから離れる -&gt; git blame -&gt; commit番号を調べる -&gt; PRを見る ↑ これが手間  tigとかhubとかは使い方覚えられない(覚えろ)  という感じで、vimからすぐPRに飛びたいのです。
+                <p>ほぼこの記事 のとおりにやりました。
 
  ...  </p>
               
@@ -149,22 +146,32 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/amazon_drive_japanese/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/heteroconger_hassi.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/terraform-fargate/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/pharlap.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/amazon_drive_japanese/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/terraform-fargate/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #amazon_drive  </span>
+              #terraform 
+              #fargate 
+              #aws 
+              #ecs 
+              #docker 
+              #advent_calender  </span>
               
-              <h2 class="post-card-title">AmazonDriveをamazon.co.jpで使う</h2>
+              <h2 class="post-card-title">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>撮ったホームビデオのバックアップを置く場所に困ってきたので、Amazon Driveを契約しました。
+                <p>
+🎄 このエントリはAWS Fargate Advent Calendar 2017の8日目の記事です 🎄
+従来型ECS(EC2/ECS)とFargateの違いについて、
+.tfファイルの差分を見ることで理解を深めよう!! という試みです。
+このエントリでは、以下のような流れで説明していきます。
+step1. terraformでバーーンとインフラ一式(ECS含む)を立ち上げ step2. terraformでstep1の状態からバーーンとFargateに移行 step3. step1とstep2の.tfファイルのdiffを眺める!👀 
 
  ...  </p>
               
@@ -181,27 +188,26 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/change_blog_theme_casper/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/ghost_cover.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/go_test_bench/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/euler.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/change_blog_theme_casper/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/go_test_bench/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #casper 
-              #ghost 
-              #hugo 
-              #blog  </span>
+              #golang 
+              #test 
+              #project_euler  </span>
               
-              <h2 class="post-card-title">👻このブログのテーマをhugo-theme-casperからhugo-casper-twoに変えた👻</h2>
+              <h2 class="post-card-title">go testの-benchを使いつつProject Eulerの4問目を解いた・速くした🚀</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>vjeantet/hugo-theme-casperからeueung/hugo-casper-two
-に変えました。
-超ナウい感じになりました(当社比)。
+                <p>趣味プログラミングです。
+go test の-benchを使い、Project Eulerの問題を解くプログラムを速くしていった過程を書きます。
+解く&amp;テスト書く -&gt; 速くする という流れです。
 
  ...  </p>
               
