@@ -1,15 +1,19 @@
 +++
 date = "2018-10-01T23:21:28+09:00"
 draft = false
-title = "Google Chrome 69 がJIS配列キーボードで使いづらい"
+title = "Google Chrome 69 がJIS配列キーボードで使いづらい(追記あり)"
 slug = "shisubeshi-chrome-69"
 tags = ["chrome","keyboard"]
 
 +++
 
-Chrome 69でJIS配列の俺は死にました
+Chrome 69でJIS配列の俺は死にました(追記あり)
 
 <!--more-->
+
+# 大事な追記(2018/10/17)
+
+Chrome 70で治った!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
 
 
 # これで知った
@@ -18,6 +22,8 @@ Chrome 69でJIS配列の俺は死にました
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Canary(chrome 71)では動くらしいです。
+
+＜追記 2018/10/17＞Chrome 70でも治ってる!!!!!!!!!!!!!!!!!1＜／追記＞
 
 # 困っている人は日本中にいるようです
 
