@@ -33,7 +33,7 @@ image = "images/whisky-01.png"
 ## LTスライド
 
 <!-- このdivがないとspeakerdeck小さくなっちゃう -->
-<div style="width:600px;">
+<div style="width:400px;">
 <script async class="speakerdeck-embed" data-id="0eb659e6d15b45f88345df351a3923e3" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 </div>
 
