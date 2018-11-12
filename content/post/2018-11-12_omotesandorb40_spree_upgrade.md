@@ -1,7 +1,7 @@
 +++
 date = "2018-11-12T09:47:44+09:00"
 draft = false
-title = "omotesando.rb #40でrails update(spree update)のLTをした"
+title = "omotesando.rb #40でrails update(spree update)についてのLTをした"
 slug = "omotesandorb40_spree_upgrade"
 tags = ["ruby","spree","rails","rails update"]
 image = "images/whisky-01.png"
