@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rails Update on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <link>https://hoshinotsuyoshi.com/tags/rails-update/</link>
+    <description>Recent content in Rails Update on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 12 Nov 2018 09:47:44 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/rails-update/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>omotesando.rb #40でrails update(spree update)のLTをした</title>
+      <link>https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/</link>
+      <pubDate>Mon, 12 Nov 2018 09:47:44 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/</guid>
+      <description>&lt;p&gt;「railsアップグレード」がテーマのomotesando.rb 第40回で、「spreeのrails updateの戦いの歴史と github上のPR作成時の工夫」というタイトル(長い)でLTに応募し話してきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

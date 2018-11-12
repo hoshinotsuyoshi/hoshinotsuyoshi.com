@@ -6,10 +6,21 @@
     <description>Recent content in Ruby on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 25 Jul 2018 00:25:48 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 12 Nov 2018 09:47:44 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>omotesando.rb #40でrails update(spree update)のLTをした</title>
+      <link>https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/</link>
+      <pubDate>Mon, 12 Nov 2018 09:47:44 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/</guid>
+      <description>&lt;p&gt;「railsアップグレード」がテーマのomotesando.rb 第40回で、「spreeのrails updateの戦いの歴史と github上のPR作成時の工夫」というタイトル(長い)でLTに応募し話してきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>濁点の合成文字がソースコードに入っちまった💢 -&gt; gitのpre-commit hookで打ち勝った</title>

@@ -419,9 +419,18 @@
     <item>
       <title>Rails</title>
       <link>https://hoshinotsuyoshi.com/tags/rails/</link>
-      <pubDate>Mon, 19 Feb 2018 01:46:22 +0900</pubDate>
+      <pubDate>Mon, 12 Nov 2018 09:47:44 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/rails/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rails Update</title>
+      <link>https://hoshinotsuyoshi.com/tags/rails-update/</link>
+      <pubDate>Mon, 12 Nov 2018 09:47:44 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/rails-update/</guid>
       <description></description>
     </item>
     
@@ -482,7 +491,7 @@
     <item>
       <title>Ruby</title>
       <link>https://hoshinotsuyoshi.com/tags/ruby/</link>
-      <pubDate>Wed, 25 Jul 2018 00:25:48 +0900</pubDate>
+      <pubDate>Mon, 12 Nov 2018 09:47:44 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/ruby/</guid>
       <description></description>
@@ -530,6 +539,15 @@
       <pubDate>Sat, 24 Mar 2018 17:25:37 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/slack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spree</title>
+      <link>https://hoshinotsuyoshi.com/tags/spree/</link>
+      <pubDate>Mon, 12 Nov 2018 09:47:44 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/spree/</guid>
       <description></description>
     </item>
     

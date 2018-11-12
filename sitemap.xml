@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/</loc>
+    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/karakida/</loc>
     <lastmod>2018-10-22T00:16:05+09:00</lastmod>
   </url>
@@ -526,7 +531,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-10-22T00:16:05+09:00</lastmod>
+    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -550,7 +555,13 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rails/</loc>
-    <lastmod>2018-02-19T01:46:22+09:00</lastmod>
+    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/rails-update/</loc>
+    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -592,7 +603,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
-    <lastmod>2018-07-25T00:25:48+09:00</lastmod>
+    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -623,6 +634,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/slack/</loc>
     <lastmod>2018-03-24T17:25:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/spree/</loc>
+    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -670,7 +687,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-10-22T00:16:05+09:00</lastmod>
+    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
