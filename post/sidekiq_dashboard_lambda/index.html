@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ja-jp" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/" />
+
+     <meta name="description" content="&lt;p&gt;ついに &lt;a href=&#34;https://aws.amazon.com/jp/blogs/compute/announcing-ruby-support-for-aws-lambda/&#34;&gt;AWS Lambdaがrubyをサポート&lt;/a&gt;しました。💎&lt;/p&gt;
+
+&lt;p&gt;サンプルとして、AWS公式からSAM(AWS S" /> 
+
+     
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/serverless-sidekiq-web.png"/>
+    
+ 
+    <meta name="twitter:title" content="💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる"/>
+    <meta name="twitter:description" content="&lt;p&gt;ついに &lt;a href=&#34;https://aws.amazon.com/jp/blogs/compute/announcing-ruby-support-for-aws-lambda/&#34;&gt;AWS Lambdaがrubyをサポート&lt;/a&gt;しました。💎&lt;/p&gt;
+
+&lt;p&gt;サンプルとして、AWS公式からSAM(AWS S"/>
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/" />
+    <meta name="twitter:site" content="@hoppiestar"/>
+
+    <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
+    <meta property="og:title" content="💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/" />
+    <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="&lt;p&gt;ついに &lt;a href=&#34;https://aws.amazon.com/jp/blogs/compute/announcing-ruby-support-for-aws-lambda/&#34;&gt;AWS Lambdaがrubyをサポート&lt;/a&gt;しました。💎&lt;/p&gt;
+
+&lt;p&gt;サンプルとして、AWS公式からSAM(AWS S" />
+
+    <meta property="article:published_time" content="2018-12-02T00:26:53&#43;09:00" />
+    <meta property="article:tag" content="sidekiq" /><meta property="article:tag" content="ruby" /><meta property="article:tag" content="lambda" />
+
+    <meta property="og:image" content="https://hoshinotsuyoshi.com/images/serverless-sidekiq-web.png"/>
+
+
+    <meta name="generator" content="Hugo 0.44" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/built/screen.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/casper-two.css" /> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+     <link rel="stylesheet" href="https://hoshinotsuyoshi.com/css/prism.css" /> 
+
+     
+
+</head>
+
+
+<body class="post-template">
+  <div class="site-wrapper"> 
+
+<header class="site-header outer">
+  <div class="inner">
+    <nav class="site-nav">
+      <div class="site-nav-left">
+        <a class="site-nav-logo" href="#"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="" /></a>
+
+        <ul class="nav" role="menu">
+        
+        
+        
+            <li class="" role="menuitem">
+              <a href="/">Home</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/ruby/">Ruby💎</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/rails/">Rails🚃</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/vim/">vim⚡</a>
+            </li>
+        
+      </ul></div>
+
+      <div class="site-nav-right">
+        <div class="social-links">
+                    <a class="social-link social-link-fb" href="https://www.facebook.com/tsuyoshi.hoshino" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg></a>
+
+                    <a class="social-link social-link-tw" href="https://twitter.com/hoppiestar" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg></a>
+
+                    <a class="social-link" href="https://github.com/hoshinotsuyoshi" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+
+                    
+
+                    
+        </div>  
+            
+      </div>
+
+    </nav>  
+
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    
+      <article class="post-full post"> 
+    <header class="post-full-header">
+        <section class="post-full-meta">
+            <time class="post-full-meta-date" datetime="2018-12-02">2 December 2018</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/sidekiq/">#sidekiq</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;
+        </section>
+        <h1 class="post-full-title">💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</h1>
+    </header>
+    
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/images/serverless-sidekiq-web.png)">
+    </figure>
+
+    <section class="post-full-content">
+        <div class="kg-card-markdown">
+        <p>ついに <a href="https://aws.amazon.com/jp/blogs/compute/announcing-ruby-support-for-aws-lambda/">AWS Lambdaがrubyをサポート</a>しました。💎</p>
+
+<p>サンプルとして、AWS公式からSAM(AWS Serverless Application Model)でWebアプリを動かすやつ <a href="https://github.com/aws-samples/serverless-sinatra-sample">aws-samples/serverless-sinatra-sample</a>が出てました↓。</p>
+
+<p><blockquote class="embedly-card" data-card-key="6f257114b6df4413a3f5872a7e143278" data-card-controls="0" data-card-type="article"><h4><a href="https://github.com/aws-samples/serverless-sinatra-sample">aws-samples/serverless-sinatra-sample</a></h4><p>Demo code for running Ruby Sinatra on AWS Lambda. Contribute to aws-samples/serverless-sinatra-sample development by creating an account on GitHub.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<p>(なんとsinatra!!)</p>
+
+<p>このサンプルは、CloudFormation動かしたことない私でも、特につまづくことなく超簡単に動きました。</p>
+
+<p>今回は、これを元に少し改造して <strong>Sidekiq::Web(Sidekiq付属のダッシュボード)をAWS Lambdaで動かしてみる</strong> ことにしました。そのことについて書きます。</p>
+
+<p></p>
+
+<h2 id="様子">様子</h2>
+
+<p><br/></p>
+
+<p>それで動いたのがこちらです。</p>
+
+<p>動いた!! わーい。</p>
+
+<p><img alt="slack" src="/images/sidekiq_web_site_image.jpg" width=800></p>
+
+<p><strong>中身が空のRedisで試してるんで、実際運用してみると不具合あるかもしれません。あしからず。</strong></p>
+
+<h2 id="構成">構成</h2>
+
+<p><br/></p>
+
+<p>構成は以下の通り。Redisにアクセスしたいので、LambdaはVPC内で動かします。</p>
+
+<p><img alt="slack" src="/images/serverless-sidekiq-web.png" width=800></p>
+
+<h2 id="ソースコード">ソースコード</h2>
+
+<p>今回作ったSAMのコード類は、こちら↓に置きました。</p>
+
+<p><blockquote class="embedly-card" data-card-key="6f257114b6df4413a3f5872a7e143278" data-card-type="article"><h4><a href="https://github.com/hoshinotsuyoshi/serverless-sidekiq-web">hoshinotsuyoshi/serverless-sidekiq-web</a></h4><p>Sidekiq::Web monitor powered by AWS lambda. Only 200+ lines. - hoshinotsuyoshi/serverless-sidekiq-web</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<h2 id="ポイント">ポイント</h2>
+
+<p>やってみて自分的にポイントだと思ったことは、以下の通りです。</p>
+
+<ol>
+<li><a href="https://github.com/aws-samples/serverless-sinatra-sample">aws-samples/serverless-sinatra-sample</a> の<a href="https://github.com/aws-samples/serverless-sinatra-sample/blob/6f4fe279/lambda.rb">公式サンプルlambda.rb</a> を読んだ
+
+<ul>
+<li>以下に説明します。</li>
+</ul></li>
+<li>config.ruを書いた
+
+<ul>
+<li>以下に説明します。</li>
+</ul></li>
+<li>SCRIPT_NAMEの調整
+
+<ul>
+<li>パスにステージの名前が入るとCSSが破滅してうまく動かないので調整。</li>
+<li>これ複雑なので省略。あとで別エントリーに書くかも。</li>
+</ul></li>
+<li>SAM(AWS Serverless Application Model)を動かす
+
+<ul>
+<li>ググるとわかるので説明省略</li>
+</ul></li>
+<li>VPCでlambdaを動かす
+
+<ul>
+<li>ググるとわかるので説明省略</li>
+</ul></li>
+<li>認証
+
+<ul>
+<li>これ大変だったので今回は省略します。実装はできましたがSAMのコードには落とし込みませんでした。あとで別エントリーに(ry</li>
+</ul></li>
+</ol>
+
+<h2 id="ポイントの説明">ポイントの説明</h2>
+
+<p><br/></p>
+
+<h3 id="1-公式サンプルlambda-rb-https-github-com-aws-samples-serverless-sinatra-sample-blob-6f4fe279-lambda-rb-を読む">1. <a href="https://github.com/aws-samples/serverless-sinatra-sample/blob/6f4fe279/lambda.rb">公式サンプルlambda.rb</a> を読む</h3>
+
+<p><br/></p>
+
+<p>このスクリプトの動きを読んでいきます。</p>
+
+<h4 id="rackアプリをグローバル変数に入れる">rackアプリをグローバル変数に入れる</h4>
+
+<p>まず<a href="https://github.com/aws-samples/serverless-sinatra-sample/blob/6f4fe279/lambda.rb#L4-L6">4-6行目</a>。</p>
+
+<pre><code class="language-ruby"># Global object that responds to the call method. Stay outside of the handler
+# to take advantage of container reuse
+$app ||= Rack::Builder.parse_file(&quot;#{File.dirname(__FILE__)}/app/config.ru&quot;).first
+</code></pre>
+
+<p>ここでは app/config.ru に書いてある情報からappを抜き出してグローバル変数(!)に入れています。</p>
+
+<p>handerメソッドの外側でキャッシュするとコンテナが使い回されたときに性能が良いから、というようなコメントが書かれています。</p>
+
+<h4 id="callを呼ぶ">#callを呼ぶ</h4>
+
+<p>次に、一気に飛んで<a href="https://github.com/aws-samples/serverless-sinatra-sample/blob/6f4fe279/lambda.rb#L29-L30">29-30行目</a>。</p>
+
+<pre><code class="language-ruby"># Response from Rack must have status, headers and body
+status, headers, body = $app.call(env)
+</code></pre>
+
+<p>rackアプリは<code>#call</code>というメソッドを呼ぶとHTTPステータスコード、HTTPレスポンスヘッダー、HTTPレスポンスボディを配列で返す、</p>
+
+<p>ということをどこかで学んだ気がしますが、そのようなことが書かれています。</p>
+
+<h4 id="hash-レスポンス-を返す">Hash(レスポンス)を返す</h4>
+
+<p><a href="https://github.com/aws-samples/serverless-sinatra-sample/blob/6f4fe279/lambda.rb#L38-L53">38-53行目</a>。</p>
+
+<pre><code class="language-ruby">    # We return the structure required by AWS API Gateway since we integrate with it
+    # https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
+    response = {
+      &quot;statusCode&quot; =&gt; status,
+      &quot;headers&quot; =&gt; headers,
+      &quot;body&quot; =&gt; body_content
+    }
+
+  # (...snip...)
+
+  # By default, the response serializer will call #to_json for us
+  response
+</code></pre>
+
+<p><code>By default, the response serializer will call #to_json for us</code> とあるように、Hashを返してあげればよいようです。</p>
+
+<p>&hellip;というわけで、lambda.rbは <strong>APIゲートウェイから渡ってきたデータ」を「どうRackアプリに渡してどう返してあげるか」が書いてある</strong> 、ということがわかりました(小並感)。</p>
+
+<h3 id="config-ruを書く">config.ruを書く</h3>
+
+<p><br></p>
+
+<p>つぎにlambda.rbから呼ばれるconfig.ruを書くのですが、</p>
+
+<p>今回はSidekiq::Webという超簡単なやつがテーマなので、config.ruは以下のとおりで済んでしまいます(まあ、簡単そうだからSidekiq::Webを選んだのですが)。</p>
+
+<pre><code class="language-ruby"># frozen_string_literal: true
+
+require 'sidekiq/web'
+
+redis_config = { size: 1, db: 0, host: ENV['REDIS_HOST'] }
+
+Sidekiq.configure_client do |config|
+  config.redis = redis_config
+end
+
+run Rack::URLMap.new('/sidekiq' =&gt; Sidekiq::Web)
+</code></pre>
+
+<p>今回環境変数 <code>REDIS_HOST</code>は、CloudFormationのテンプレートファイルにパラメータとして埋め込み、
+デプロイ(<code>$ aws cloudformation deploy</code>)するときに、&ndash;parameter-overridesオプションで渡すようにしました。</p>
+
+<p>デプロイコマンドは<a href="https://github.com/hoshinotsuyoshi/serverless-sidekiq-web#deployment">ここ</a>に書いときましたのでご参考までに。</p>
+
+<h3 id="まとめ">まとめ!!</h3>
+
+<p>以上です!</p>
+
+<p>今回はSAM(AWS Serverless Application Model)の力を借りて、Sidekiq::Webをデプロイしてみました。</p>
+
+<p>VPC内のLambdaですが、やはり最初のレスポンスは遅いものの、連続して画面を叩いていれば、やはりコンテナが使い回されるのか、それほど遅くも感じなかったです。ちゃんと測っていませんが、使い物にはなるかなと思いました。</p>
+
+<p>Sinatraでアプリを書けばサーバーレスで動く!時代が来ましたね!(?)</p>
+
+<script type="text/javascript" src="/js/prism.js" async></script>    
+        </div>
+    </section>
+
+    <footer class="post-full-footer">
+      <section class="author-card">
+        <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
+        <section class="author-card-content">
+            <h4 class="author-card-name"><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+                <p>星野剛志(ほしのつよし) web application engineer. ruby/rails/docker</p>
+        </section>
+      </section>
+    </footer>
+</article>
+    
+    
+    
+
+  </div>
+</main>
+
+
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">      
+      
+<article class="read-next-card" style="background-color: #090a0b;">
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
+        
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/sidekiq/">#sidekiq</a></h3>
+    </header>
+    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+    </div>
+
+    <div class="read-next-card-content">
+      
+        <ul>
+          <li><a href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">複数mastodonを考える 🐘   🐘   🐘</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/risu-pia/">有明のリスーピア行ってきた👨&#43;👦👦👦</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">omotesando.rb #40でrails update(spree update)についてのLTをした</a></li>            
+        </ul>
+    </div>
+    <footer class="read-next-card-footer">
+      
+        <a href="https://hoshinotsuyoshi.com/tags/sidekiq/">See all related posts →</a>
+    </footer>
+</article>
+
+
+      
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/whisky-01.png)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #ruby 
+              #spree 
+              #rails 
+              #rails update  </span>
+              
+              <h2 class="post-card-title">omotesando.rb #40でrails update(spree update)についてのLTをした</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>「railsアップグレード」がテーマのomotesando.rb 第40回で、「spreeのrails updateの戦いの歴史と github上のPR作成時の工夫」というタイトル(長い)でLTに応募し話してきました。
+
+ ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
+          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
+      </footer>
+    </div>
+</article>
+      
+    </div>
+  </div>
+</aside>
+
+<div class="floating-header">
+  <div class="floating-header-logo">
+    <a href="https://hoshinotsuyoshi.com/">
+      <img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="hoshinotsuyoshi.com - 自由なブログだよ" />
+      <span>hoshinotsuyoshi.com - 自由なブログだよ</span>
+    </a>
+  </div>
+  <span class="floating-header-divider">&mdash;</span>
+  <div class="floating-header-title">💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</div>
+  <div class="floating-header-share">
+    <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
+    </div>
+    
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=%f0%9f%92%8eAWS%20Lambda%e3%81%a7ruby%e3%82%92%e5%8b%95%e3%81%8b%e3%81%97%e3%81%a6Sidekiq%e3%81%ae%e3%83%80%e3%83%83%e3%82%b7%e3%83%a5%e3%83%9c%e3%83%bc%e3%83%89%e3%82%92%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%83%ac%e3%82%b9%e3%81%a7%e5%8b%95%e3%81%8b%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fsidekiq_dashboard_lambda%2f"
+          onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+      </a>
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fsidekiq_dashboard_lambda%2f"
+          onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+      </a>
+  </div>
+
+  <progress class="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+</div>
+
+
+
+<footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section class="copyright" style="line-height: 1.3em;">
+      <a href="/"></a>  <br>
+      
+    </section>
+    <nav class="site-footer-nav">
+        <a href="/">Latest Posts</a>
+        <a href="https://www.facebook.com/tsuyoshi.hoshino" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://twitter.com/hoppiestar" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://github.com/hoshinotsuyoshi" target="_blank" rel="noopener">Github</a>
+        
+        
+    </nav>  
+  </div>
+</footer>
+
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.fitvids.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  <!-- Google Analytics -->
+  <script>
+    var _gaq=[['_setAccount','UA-87800718-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+
+    <script>
+
+
+
+
+
+$(document).ready(function () {
+    
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+</body></html>

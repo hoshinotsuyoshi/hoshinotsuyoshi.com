@@ -108,6 +108,46 @@
 
 <article class="post-card post"> 
     
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/serverless-sidekiq-web.png)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #sidekiq 
+              #ruby 
+              #lambda  </span>
+              
+              <h2 class="post-card-title">💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>ついに AWS Lambdaがrubyをサポートしました。💎
+サンプルとして、AWS公式からSAM(AWS Serverless Application Model)でWebアプリを動かすやつ aws-samples/serverless-sinatra-sampleが出てました↓。
+aws-samples/serverless-sinatra-sampleDemo code for running Ruby Sinatra on AWS Lambda. Contribute to aws-samples/serverless-sinatra-sample development by creating an account on GitHub.
+ 
+(なんとsinatra!!)
+このサンプルは、CloudFormation動かしたことない私でも、特につまづくことなく超簡単に動きました。
+今回は、これを元に少し改造して Sidekiq::Web(Sidekiq付属のダッシュボード)をAWS Lambdaで動かしてみる ことにしました。そのことについて書きます。
+
+ ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
+          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
+      </footer>
+    </div>
+</article>
+
+
+<article class="post-card post"> 
+    
     <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">
       <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/whisky-01.png)"></div>
     </a>
@@ -178,7 +218,7 @@
 <article class="post-card post"> 
     
     <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/shisubeshi-chrome-69/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/7.jpg)"></div>
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/4.jpg)"></div>
     </a>    
     
 
@@ -483,7 +523,7 @@
 <article class="post-card post"> 
     
     <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/2.jpg)"></div>
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/4.jpg)"></div>
     </a>    
     
 
@@ -741,41 +781,6 @@ RubyKaigi 2018, 5&frasl;31&hellip;6&frasl;2, Sendai, Miyagi, Japan #rubykaigiRub
               
                 <p>あるプロセスが終わるのを待ってから、別の何かをしたいときがある。
 うっかり長い処理を走らせてしまったときとか。
-
- ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
-          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
-      </footer>
-    </div>
-</article>
-
-
-<article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/slack_ruby_bot/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/4.jpg)"></div>
-    </a>    
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/slack_ruby_bot/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #slack 
-              #ruby 
-              #bot 
-              #ruboty  </span>
-              
-              <h2 class="post-card-title">slack-ruby-botを使ってみる</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>SlackのXMPPゲートウェイが閉じるという話があり、近いうちにruboty-slack gem(現在xmppに依存している)が使えなくなるらしいので、 slack-ruby-botを試してみました。
 
  ...  </p>
               

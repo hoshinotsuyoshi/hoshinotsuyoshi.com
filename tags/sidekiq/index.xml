@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sidekiq on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <link>https://hoshinotsuyoshi.com/tags/sidekiq/</link>
+    <description>Recent content in Sidekiq on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 02 Dec 2018 00:26:53 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/sidekiq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</title>
+      <link>https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/</link>
+      <pubDate>Sun, 02 Dec 2018 00:26:53 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/</guid>
+      <description>&lt;p&gt;ついに &lt;a href=&#34;https://aws.amazon.com/jp/blogs/compute/announcing-ruby-support-for-aws-lambda/&#34;&gt;AWS Lambdaがrubyをサポート&lt;/a&gt;しました。💎&lt;/p&gt;
+
+&lt;p&gt;サンプルとして、AWS公式からSAM(AWS Serverless Application Model)でWebアプリを動かすやつ &lt;a href=&#34;https://github.com/aws-samples/serverless-sinatra-sample&#34;&gt;aws-samples/serverless-sinatra-sample&lt;/a&gt;が出てました↓。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-controls=&#34;0&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://github.com/aws-samples/serverless-sinatra-sample&#34;&gt;aws-samples/serverless-sinatra-sample&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Demo code for running Ruby Sinatra on AWS Lambda. Contribute to aws-samples/serverless-sinatra-sample development by creating an account on GitHub.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;(なんとsinatra!!)&lt;/p&gt;
+
+&lt;p&gt;このサンプルは、CloudFormation動かしたことない私でも、特につまづくことなく超簡単に動きました。&lt;/p&gt;
+
+&lt;p&gt;今回は、これを元に少し改造して &lt;strong&gt;Sidekiq::Web(Sidekiq付属のダッシュボード)をAWS Lambdaで動かしてみる&lt;/strong&gt; ことにしました。そのことについて書きます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

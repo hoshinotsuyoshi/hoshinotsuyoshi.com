@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/</loc>
+    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/</loc>
     <lastmod>2018-11-12T09:47:44+09:00</lastmod>
   </url>
@@ -470,6 +475,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/lambda/</loc>
+    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/life/</loc>
     <lastmod>2018-10-22T00:16:05+09:00</lastmod>
     <priority>0</priority>
@@ -531,7 +542,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
+    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -603,7 +614,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
-    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
+    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -628,6 +639,12 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/shopping/</loc>
     <lastmod>2018-01-03T23:33:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/sidekiq/</loc>
+    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -687,7 +704,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
+    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
     <priority>0</priority>
   </url>
   
