@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/railsdm2018_12/</loc>
+    <lastmod>2018-12-11T22:29:35+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/</loc>
     <lastmod>2018-12-02T00:26:53+09:00</lastmod>
   </url>
@@ -542,7 +547,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
+    <lastmod>2018-12-11T22:29:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -566,7 +571,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rails/</loc>
-    <lastmod>2018-11-12T09:47:44+09:00</lastmod>
+    <lastmod>2018-12-11T22:29:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -704,7 +709,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
+    <lastmod>2018-12-11T22:29:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   

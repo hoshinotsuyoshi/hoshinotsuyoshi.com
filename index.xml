@@ -6,10 +6,21 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 02 Dec 2018 00:26:53 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 11 Dec 2018 22:29:35 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>railsdm 2018 Day 4に参加したので短く雑感書く</title>
+      <link>https://hoshinotsuyoshi.com/post/railsdm2018_12/</link>
+      <pubDate>Tue, 11 Dec 2018 22:29:35 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/railsdm2018_12/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://techplay.jp/event/702297&#34;&gt;Rails Developers Meetup 2018 Day 4 Nouvelle Vague&lt;/a&gt;(railsdm) に参加しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</title>
