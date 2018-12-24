@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/circleci_tests_split/</loc>
+    <lastmod>2018-12-24T14:46:01+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/railsdm2018_12/</loc>
     <lastmod>2018-12-11T22:29:35+09:00</lastmod>
   </url>
@@ -372,6 +377,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/circleci/</loc>
+    <lastmod>2018-12-24T14:46:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/cloudflare/</loc>
     <lastmod>2018-05-06T10:54:06+09:00</lastmod>
     <priority>0</priority>
@@ -547,7 +558,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2018-12-11T22:29:35+09:00</lastmod>
+    <lastmod>2018-12-24T14:46:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -601,7 +612,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rspec/</loc>
-    <lastmod>2018-02-19T01:46:22+09:00</lastmod>
+    <lastmod>2018-12-24T14:46:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -619,7 +630,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
-    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
+    <lastmod>2018-12-24T14:46:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -679,7 +690,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/test/</loc>
-    <lastmod>2018-06-10T12:37:09+09:00</lastmod>
+    <lastmod>2018-12-24T14:46:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -709,7 +720,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2018-12-11T22:29:35+09:00</lastmod>
+    <lastmod>2018-12-24T14:46:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   

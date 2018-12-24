@@ -6,10 +6,33 @@
     <description>Recent content in Ruby on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 02 Dec 2018 00:26:53 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 24 Dec 2018 14:46:01 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>circleci tests split --split-by=timingsについて調べた・自作してみた</title>
+      <link>https://hoshinotsuyoshi.com/post/circleci_tests_split/</link>
+      <pubDate>Mon, 24 Dec 2018 14:46:01 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/circleci_tests_split/</guid>
+      <description>&lt;p&gt;この記事は&lt;a href=&#34;https://qiita.com/advent-calendar/2018/circleci&#34;&gt;CircleCI Advent Calendar 2018&lt;/a&gt;の24日目の記事です。&lt;/p&gt;
+
+&lt;p&gt;テスト分割実行ファンの皆さんこんにちは。&lt;/p&gt;
+
+&lt;p&gt;今回はCircleCIの並列テストにおいて、いい感じにテストファイルを分割することを考えていきたいと思います。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;【イメージ アニgif】&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;anime&#34; src=&#34;https://hoshinotsuyoshi.com/images/timings_greedy_anime.gif&#34; width=800&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</title>

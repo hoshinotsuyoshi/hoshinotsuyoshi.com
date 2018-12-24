@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ja-jp" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>circleci tests split --split-by=timingsについて調べた・自作してみた &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/circleci_tests_split/" />
+
+     <meta name="description" content="&lt;p&gt;この記事は&lt;a href=&#34;https://qiita.com/advent-calendar/2018/circleci&#34;&gt;CircleCI Advent Calendar 2018&lt;/a&gt;の24日目の記事です。&lt;/p&gt;
+
+&lt;p&gt;テスト分割実行ファンの皆さんこんにちは。&lt;/p&gt;
+
+&lt;p&gt;今回はCircleCIの" /> 
+
+     
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/circleciimage.jpg"/>
+    
+ 
+    <meta name="twitter:title" content="circleci tests split --split-by=timingsについて調べた・自作してみた"/>
+    <meta name="twitter:description" content="&lt;p&gt;この記事は&lt;a href=&#34;https://qiita.com/advent-calendar/2018/circleci&#34;&gt;CircleCI Advent Calendar 2018&lt;/a&gt;の24日目の記事です。&lt;/p&gt;
+
+&lt;p&gt;テスト分割実行ファンの皆さんこんにちは。&lt;/p&gt;
+
+&lt;p&gt;今回はCircleCIの"/>
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/circleci_tests_split/" />
+    <meta name="twitter:site" content="@hoppiestar"/>
+
+    <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
+    <meta property="og:title" content="circleci tests split --split-by=timingsについて調べた・自作してみた &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/circleci_tests_split/" />
+    <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="&lt;p&gt;この記事は&lt;a href=&#34;https://qiita.com/advent-calendar/2018/circleci&#34;&gt;CircleCI Advent Calendar 2018&lt;/a&gt;の24日目の記事です。&lt;/p&gt;
+
+&lt;p&gt;テスト分割実行ファンの皆さんこんにちは。&lt;/p&gt;
+
+&lt;p&gt;今回はCircleCIの" />
+
+    <meta property="article:published_time" content="2018-12-24T14:46:01&#43;09:00" />
+    <meta property="article:tag" content="circleci" /><meta property="article:tag" content="test" /><meta property="article:tag" content="ruby" /><meta property="article:tag" content="rspec" />
+
+    <meta property="og:image" content="https://hoshinotsuyoshi.com/images/circleciimage.jpg"/>
+
+
+    <meta name="generator" content="Hugo 0.44" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/built/screen.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/casper-two.css" /> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+     <link rel="stylesheet" href="https://hoshinotsuyoshi.com/css/prism.css" /> 
+
+     
+
+</head>
+
+
+<body class="post-template">
+  <div class="site-wrapper"> 
+
+<header class="site-header outer">
+  <div class="inner">
+    <nav class="site-nav">
+      <div class="site-nav-left">
+        <a class="site-nav-logo" href="#"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="" /></a>
+
+        <ul class="nav" role="menu">
+        
+        
+        
+            <li class="" role="menuitem">
+              <a href="/">Home</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/ruby/">Ruby💎</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/rails/">Rails🚃</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/vim/">vim⚡</a>
+            </li>
+        
+      </ul></div>
+
+      <div class="site-nav-right">
+        <div class="social-links">
+                    <a class="social-link social-link-fb" href="https://www.facebook.com/tsuyoshi.hoshino" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg></a>
+
+                    <a class="social-link social-link-tw" href="https://twitter.com/hoppiestar" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg></a>
+
+                    <a class="social-link" href="https://github.com/hoshinotsuyoshi" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+
+                    
+
+                    
+        </div>  
+            
+      </div>
+
+    </nav>  
+
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    
+      <article class="post-full post"> 
+    <header class="post-full-header">
+        <section class="post-full-meta">
+            <time class="post-full-meta-date" datetime="2018-12-24">24 December 2018</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/circleci/">#circleci</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/test/">#test</a>&nbsp;
+        </section>
+        <h1 class="post-full-title">circleci tests split --split-by=timingsについて調べた・自作してみた</h1>
+    </header>
+    
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/images/circleciimage.jpg)">
+    </figure>
+
+    <section class="post-full-content">
+        <div class="kg-card-markdown">
+        <p>この記事は<a href="https://qiita.com/advent-calendar/2018/circleci">CircleCI Advent Calendar 2018</a>の24日目の記事です。</p>
+
+<p>テスト分割実行ファンの皆さんこんにちは。</p>
+
+<p>今回はCircleCIの並列テストにおいて、いい感じにテストファイルを分割することを考えていきたいと思います。</p>
+
+<hr />
+
+<p>【イメージ アニgif】</p>
+
+<p><img alt="anime" src="/images/timings_greedy_anime.gif" width=800></p>
+
+<hr />
+
+<p></p>
+
+<p><br/></p>
+
+<h2 id="テストファイルをいい感じに分割したい">テストファイルをいい感じに分割したい</h2>
+
+<p><br/></p>
+
+<p>まず前提として、「いい感じに分割したい」とはどういうことかということを説明します。</p>
+
+<p>例えば今、テストファイルが7個あって、それぞれのテストにかかる時間が経験上「10秒、6秒、5秒、4秒、3秒、2秒かかる」ということがわかっているとします。</p>
+
+<p>この場合、普通に1プロセスで実行すると10+6+5+4+3+2で30秒かかります。</p>
+
+<p><img alt="slack" src="/images/spec_total.png" width=800></p>
+
+<p>ここで、CircleCIで<code>parallelism: 3</code>(3並列)で分割テストすることを考えます。</p>
+
+<p>まず悪い例として「<code>[10, 3], [6, 5], [4, 2]</code>」と分割してみます。そうすると以下のようになり、一番遅いやつが13秒(10+3)なので全体として13秒かかることになります。</p>
+
+<p><img alt="slack" src="/images/spec_splitted_13.png" width=800></p>
+
+<p>次に、それよりは少しましな例として「<code>[10], [6, 3, 2], [5, 4]</code>」と分割します。すると以下のようになり、一番遅いやつが11秒(6+3+2)ということになります。</p>
+
+<p><img alt="slack" src="/images/spec_splitted_11.png" width=800></p>
+
+<p>つまり、<strong>分割の仕方によって全体のテスト時間が変わってしまう!(13秒 vs 11秒)</strong> ということになります。</p>
+
+<p>ということで、<strong>全体のテスト時間を短くするためには、いい感じに分割するアルゴリズムが求められる</strong>ということになります。</p>
+
+<p>このファイル分割は、<a href="https://ja.wikipedia.org/wiki/%E6%95%B4%E6%95%B0%E8%A8%88%E7%94%BB%E5%95%8F%E9%A1%8C">整数計画問題(wikipedia)</a> とか <a href="https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%83%E3%83%97%E3%82%B5%E3%83%83%E3%82%AF%E5%95%8F%E9%A1%8C">ナップサック問題(wikipedia)</a>のような問題のたぐいです。</p>
+
+<h2 id="circleci-tests-split-split-by-timings">circleci tests split &ndash;split-by=timings</h2>
+
+<p><br/></p>
+
+<p>これをうまくやってくれるのが <code>circleci tests split --split-by=timings</code> です。</p>
+
+<p>rspecの場合、以下のように使います。(<a href="https://circleci.com/docs/2.0/parallelism-faster-jobs/">CircleCI公式の説明</a>から引用)</p>
+
+<pre><code class="language-ruby">$ TESTFILES=$(circleci tests glob &quot;spec/**/*.rb&quot; | circleci tests split --split-by=timings)
+$ bundle exec rspec -- ${TESTFILES}
+</code></pre>
+
+<p>前半の<code>circleci tests glob &quot;spec/**/*.rb&quot;</code> は、テスト対象のファイルのリストを改行区切りで出力します。</p>
+
+<pre><code class="language-bash">$ circleci tests glob &quot;spec/**/*.rb&quot;
+spec/foo_10_spec.rb
+spec/foo_2_spec.rb
+spec/foo_3_spec.rb
+spec/foo_4_spec.rb
+spec/foo_5_spec.rb
+spec/foo_6_spec.rb
+</code></pre>
+
+<p>次の<code>circleci tests split --split-by=timings</code> は、それを標準入力で受け取り、分割結果を返します。
+これはコンテナ毎に結果が異なります。</p>
+
+<pre><code class="language-bash"># コンテナ0では
+$ circleci tests glob &quot;spec/**/*.rb&quot; | circleci tests split --split-by=timings
+spec/foo_10_spec.rb
+
+# コンテナ1では
+$ circleci tests glob &quot;spec/**/*.rb&quot; | circleci tests split --split-by=timings
+spec/foo_6_spec.rb
+spec/foo_3_spec.rb
+spec/foo_2_spec.rb
+
+# コンテナ2では
+$ circleci tests glob &quot;spec/**/*.rb&quot; | circleci tests split --split-by=timings
+spec/foo_5_spec.rb
+spec/foo_4_spec.rb
+</code></pre>
+
+<p>それを rspecの引数に渡すことにより、container毎にうまく分割されるようにしているのです。</p>
+
+<h2 id="circleci-tests-split-split-by-timings-が動くために必要なこと">circleci tests split &ndash;split-by=timings が動くために必要なこと</h2>
+
+<p>ここから先は<a href="https://support.circleci.com/hc/ja/articles/360000376788-%E3%83%86%E3%82%B9%E3%83%88%E5%88%86%E5%89%B2%E3%81%AE%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">ドキュメント</a>を読んだり自分で試したりして調べた内容です。</p>
+
+<p>(なお &ndash;split-by=filesizeとか &ndash;timings-type=classnameについては調べてません! あしからず)</p>
+
+<p>「環境変数」と「タイミングデータ」が必要になります。</p>
+
+<h3 id="環境変数">環境変数</h3>
+
+<p>これらは自動的に設定されるので普通は意識する必要はありません。</p>
+
+<p>以下の環境変数が利用されます。</p>
+
+<ul>
+<li><code>CIRCLE_NODE_INDEX</code>
+
+<ul>
+<li>コンテナの番号。0オリジン。これを利用することによりコンテナ毎に別のテストファイルを実行することができる。</li>
+</ul></li>
+<li><code>CIRCLE_NODE_TOTAL</code>
+
+<ul>
+<li>全体の並列実行数。<code>parallelism:</code> で設定した値。</li>
+</ul></li>
+<li><code>CIRCLE_INTERNAL_TASK_DATA</code>
+
+<ul>
+<li>タイミングデータ(過去のspec実行時間)が保存されるディレクトリ。</li>
+</ul></li>
+</ul>
+
+<h3 id="タイミングデータ">タイミングデータ</h3>
+
+<p>タイミングデータを利用するには、<code>Test Metadata</code>と呼ばれるXMLファイルをCircleCIに教えてあげる必要があります。
+rspecの場合、<code>rspec_junit_formatter gem</code> とか使うアレです。
+<a href="https://circleci.com/docs/2.0/collect-test-data/#rspec">Collecting Test Metadata - CircleCI</a>を参考してください。</p>
+
+<p>これが設定されていれば、パス <code>${CIRCLE_INTERNAL_TASK_DATA}/circle-test-results/results.json</code> にタイミングデータ(過去のspec実行時間)が保存されているはずです。</p>
+
+<p>その<code>results.json</code>の中身は、およそ以下のようになっています(本当はもっと複雑ですが必要なノードだけ記載しています)。</p>
+
+<p>expectationごとにテストにかかる時間の秒数が載っています。</p>
+
+<pre><code class="language-javascript">{
+  &quot;tests&quot;: [
+    {
+      &quot;file&quot;: &quot;spec/foo_10_spec.rb&quot;,
+      &quot;run_time&quot;: 10.0
+    },
+    {
+      &quot;file&quot;: &quot;spec/foo_6_spec.rb&quot;,
+      &quot;run_time&quot;: 6.0
+    },
+    ...
+  ],
+}
+</code></pre>
+
+<p>このjsonのフォーマットについては、ドキュメントに書かれていなかったので、今後変わるかもしれません。</p>
+
+<p>ちなみに、初回テスト実行時には、タイミングデータは無いので、<code>--split-by=timings</code>を使っても、<code>Requested historical based timing, but they are not present.  Falling back to name based sorting</code> というメッセージが表示され、ファイル名でのソートになります。</p>
+
+<h2 id="circleci-tests-split-split-by-timings-のアルゴリズム検証">circleci tests split &ndash;split-by=timings のアルゴリズム検証</h2>
+
+<p>簡単な実験を行います。</p>
+
+<p><img alt="slack" src="/images/spec_total.png" width=800></p>
+
+<p>のような状態を再現するため、</p>
+
+<p>タイミングデータresults.jsonを以下のような中身にします。</p>
+
+<pre><code class="language-json">{
+  &quot;tests&quot;: [
+    {
+      &quot;file&quot;: &quot;spec/foo_10_spec.rb&quot;,
+      &quot;run_time&quot;: 10.0
+    },
+    {
+      &quot;file&quot;: &quot;spec/foo_6_spec.rb&quot;,
+      &quot;run_time&quot;: 6.0
+    },
+    {
+      &quot;file&quot;: &quot;spec/foo_5_spec.rb&quot;,
+      &quot;run_time&quot;: 5.0
+    },
+    {
+      &quot;file&quot;: &quot;spec/foo_4_spec.rb&quot;,
+      &quot;run_time&quot;: 4.0
+    },
+    {
+      &quot;file&quot;: &quot;spec/foo_3_spec.rb&quot;,
+      &quot;run_time&quot;: 3.0
+    },
+    {
+      &quot;file&quot;: &quot;spec/foo_2_spec.rb&quot;,
+      &quot;run_time&quot;: 2.0
+    }
+  ]
+}
+</code></pre>
+
+<p>.circleci/config.ymlを以下のようにします。
+実験のために<code>CIRCLE_NODE_TOTAL</code>,<code>CIRCLE_NODE_INDEX</code>,<code>CIRCLE_INTERNAL_TASK_DATA</code>を上書きしているのがポイントです。</p>
+
+<pre><code class="language-yaml">version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.5.3
+    environment:
+      CIRCLE_NODE_TOTAL: &quot;3&quot;
+      CIRCLE_INTERNAL_TASK_DATA: &quot;.&quot;
+    steps:
+      - checkout
+
+      - run:
+          name: CIRCLE_NODE_INDEX=0 circleci tests split --split-by=timings
+          command: circleci tests glob &quot;spec/**/*_spec.rb&quot; | CIRCLE_NODE_INDEX=0  circleci tests split --split-by=timings
+      - run:
+          name: CIRCLE_NODE_INDEX=1 circleci tests split --split-by=timings
+          command: circleci tests glob &quot;spec/**/*_spec.rb&quot; | CIRCLE_NODE_INDEX=1  circleci tests split --split-by=timings
+      - run:
+          name: CIRCLE_NODE_INDEX=2 circleci tests split --split-by=timings
+          command: circleci tests glob &quot;spec/**/*_spec.rb&quot; | CIRCLE_NODE_INDEX=2  circleci tests split --split-by=timings
+</code></pre>
+
+<p>この実験のソースコードはこちらに置きました。</p>
+
+<p><a href="https://github.com/hoshinotsuyoshi/circleci-tests-split-split-by-timings/tree/study1">https://github.com/hoshinotsuyoshi/circleci-tests-split-split-by-timings/tree/study1</a></p>
+
+<p>すると、結果は以下のようになりました。</p>
+
+<p><a target="_blank" href="https://circleci.com/gh/hoshinotsuyoshi/circleci-tests-split-split-by-timings/59"><img alt="timings_actual" src="/images/timings_actual.jpg" width=800></a></p>
+
+<p>つまりcircleciは、この6個のテストファイルを<code>[10], [6, 3, 2], [5, 4]</code>というに分割しました。(以下のような感じ)</p>
+
+<p><img alt="slack" src="/images/spec_splitted_11.png" width=800></p>
+
+<h3 id="本当の最適解">本当の最適解</h3>
+
+<p>実はこの与件の場合、<code>[10], [6, 4], [5, 3, 2]</code> というふうに分割するのが最適解(10秒)です。</p>
+
+<p><img alt="slack" src="/images/spec_splitted_10.png" width=800></p>
+
+<p>circleciは、なぜ最適解を求めてくれなかったのでしょうか?</p>
+
+<h3 id="貪欲法っぽい">貪欲法っぽい?</h3>
+
+<p><strong>何度かパターンを変えて実行してみた</strong>のですが、</p>
+
+<p>おそらくcircleci tests split &ndash;split-by=timings は以下のような戦略で分割しているものと思われます。</p>
+
+<ul>
+<li>実行時間の長い順に処理する</li>
+<li><strong>最もトータルの実行時間が短い入れ物に入れていく</strong></li>
+</ul>
+
+<p>アニメにするとこんな感じです。</p>
+
+<p><img alt="anime" src="/images/timings_greedy_anime.gif" width=800></p>
+
+<p>これは、アルゴリズムとしては<a href="https://ja.wikipedia.org/wiki/%E8%B2%AA%E6%AC%B2%E6%B3%95">貪欲法(wikipedia)</a>と言われるやつだと思います。</p>
+
+<p>最適解を出そうとすると、<strong>ファイル数が多い場合に組み合わせパターンが増えてしまうため</strong>(動的計画法を使ってもそこそこ増える)、このようなシンプルなアルゴリズムを利用しているのだと思います。</p>
+
+<h2 id="最適解じゃなくても-これで十分ぽい">最適解じゃなくても、これで十分ぽい</h2>
+
+<p>もっと現実的なrailsアプリに近いタイミングデータで検証してみました。</p>
+
+<p>具体的には職場のrailsアプリのデータを拝借してsplitしました。</p>
+
+<p>3分割すると結果は</p>
+
+<ul>
+<li>container 0 &hellip; 150.0602秒</li>
+<li>container 1 &hellip; 150.0613秒</li>
+<li>container 2 &hellip; 150.0606秒</li>
+</ul>
+
+<p>というふうになり、<strong>コンテナ間のテスト時間の理論的なギャップが0.1秒以内に収まりました。</strong></p>
+
+<p>実行時間の小さいspecファイルが多いようなrailsアプリの場合、貪欲法でも十分に効率的なsplitができるのだと思われます。</p>
+
+<h2 id="splitスクリプトを自作してみる">splitスクリプトを自作してみる!!</h2>
+
+<p>環境変数とタイミングデータの場所がわかったので、<strong>同じような処理をするスクリプトを自作することができます。</strong></p>
+
+<p>同じようなアルゴリズムのスクリプトをrubyで実装してみました。</p>
+
+<p>実験に使ったソースはこちら。 <a href="https://github.com/hoshinotsuyoshi/circleci-tests-split-split-by-timings/tree/custom_script">https://github.com/hoshinotsuyoshi/circleci-tests-split-split-by-timings/tree/custom_script</a></p>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# circleci-tests-split-split-by-timings
+
+require 'json'
+require 'pathname'
+
+INDEX = ENV.fetch('CIRCLE_NODE_INDEX') { abort '$CIRCLE_NODE_INDEX is not set' }.to_i
+
+TOTAL = ENV.fetch('CIRCLE_NODE_TOTAL') { abort '$CIRCLE_NODE_TOTAL is not set' }.to_i
+
+# タイミングデータのパース
+def timing_data
+  dir = ENV.fetch('CIRCLE_INTERNAL_TASK_DATA') { abort '$CIRCLE_INTERNAL_TASK_DATA is not set' }
+  json = Pathname(dir) + 'circle-test-results/results.json'
+  json.exist? || abort(&quot;#{json} does not exist&quot;)
+  tests = JSON.parse(json.read)['tests']
+  # [
+  #     {
+  #       &quot;file&quot; =&gt;  &quot;spec/1_spec.rb&quot;,
+  #       &quot;run_time&quot; =&gt; 1.0
+  #     },
+  #     {
+  #       &quot;file&quot; =&gt; &quot;spec/2_spec.rb&quot;,
+  #       &quot;run_time&quot; =&gt; 2.0
+  #     },
+  #     {
+  #       &quot;file&quot; =&gt; &quot;spec/1_spec.rb&quot;,
+  #       &quot;run_time&quot; =&gt; 2.5
+  #     },
+  #     ...
+  # ]
+
+  hash = Hash.new(0)
+  tests.each do |t|
+    hash[t['file']] += t['run_time']
+  end
+
+  hash
+  # {
+  #   &quot;spec/1_spec.rb&quot; =&gt; 3.5,
+  #   &quot;spec/2_spec.rb&quot; =&gt; 2.0,
+  # ...
+  # }
+end
+
+# 標準入力(テスト対象ファイルリスト)を配列に入れる
+file_names = []
+while file_name = gets&amp;.chomp
+  file_names &lt;&lt; file_name
+end
+
+# テスト対象ファイルを実行時間が長い順にソート
+sorted =
+  timing_data
+  .slice(*file_names)
+  .sort_by { |_file, run_time| run_time }
+  .reverse
+  .to_h
+
+# タイミングデータにデータは無いファイルの処置
+missings = (file_names - sorted.keys)
+missings.each do |file_name|
+  sorted[file_name] = 0
+end
+
+# 貪欲法
+# コンテナの数だけ入れ物を作り実行時間が長い順にファイルを詰めていく
+# トータルの実行時間が一番小さい入れ物にファイルを詰める
+pods = Array.new(TOTAL) { { content: [], total: 0 } }
+sorted.each do |file, run_time|
+  smallest = pods.min_by { |pod| pod[:total] }
+  smallest[:content] &lt;&lt; file
+  smallest[:total] += run_time
+end
+
+# 自コンテナが担当すべきファイルリストを出力
+puts pods[INDEX][:content]
+</code></pre>
+
+<p><br/></p>
+
+<p>実際に実行したところ、<a href="https://circleci.com/gh/hoshinotsuyoshi/circleci-tests-split-split-by-timings/60">circleciコマンドの結果と同じようなsplit結果となりました♬</a></p>
+
+<p>本当なら動的計画法+golangでいい感じのスクリプト書きたかったんだが、、<del>時間(及びスキル)がなかったんや&hellip;</del></p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>まとめます。</p>
+
+<ul>
+<li>circleci tests split &ndash;split-by=timings は貪欲法を活用してると見られ、最適解が求まらないが、<strong>十分効率的</strong>
+
+<ul>
+<li>少なくとも普通のrails+rspecなら十分ぽい</li>
+</ul></li>
+<li>circleci tests split &ndash;split-by=timings のようなものは<strong>自作可能</strong>
+
+<ul>
+<li>タイミングデータをパースして環境変数を読み込めば、オレオレsplitスクリプトを作成できる</li>
+<li><strong>最適解も夢ではない</strong></li>
+</ul></li>
+</ul>
+
+<p>あまり得意でない分野について書いたので、間違いがあったら教えてください :pray:</p>
+
+<script type="text/javascript" src="/js/prism.js" async></script>    
+        </div>
+    </section>
+
+    <footer class="post-full-footer">
+      <section class="author-card">
+        <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
+        <section class="author-card-content">
+            <h4 class="author-card-name"><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+                <p>星野剛志(ほしのつよし) web application engineer. ruby/rails/docker</p>
+        </section>
+      </section>
+    </footer>
+</article>
+    
+    
+    
+
+  </div>
+</main>
+
+
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">      
+      
+<article class="read-next-card" style="background-color: #090a0b;">
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
+        
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/circleci/">#circleci</a></h3>
+    </header>
+    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+    </div>
+
+    <div class="read-next-card-content">
+      
+        <ul>
+          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/risu-pia/">有明のリスーピア行ってきた👨&#43;👦👦👦</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/amazon_drive_japanese/">AmazonDriveをamazon.co.jpで使う</a></li>            
+        </ul>
+    </div>
+    <footer class="read-next-card-footer">
+      
+        <a href="https://hoshinotsuyoshi.com/tags/circleci/">See all related posts →</a>
+    </footer>
+</article>
+
+
+      
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/railsdm2018_12/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/railsdm2018_12.jpg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/railsdm2018_12/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #rails  </span>
+              
+              <h2 class="post-card-title">railsdm 2018 Day 4に参加したので短く雑感書く</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>Rails Developers Meetup 2018 Day 4 Nouvelle Vague(railsdm) に参加しました。
+
+ ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
+          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
+      </footer>
+    </div>
+</article>
+      
+    </div>
+  </div>
+</aside>
+
+<div class="floating-header">
+  <div class="floating-header-logo">
+    <a href="https://hoshinotsuyoshi.com/">
+      <img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="hoshinotsuyoshi.com - 自由なブログだよ" />
+      <span>hoshinotsuyoshi.com - 自由なブログだよ</span>
+    </a>
+  </div>
+  <span class="floating-header-divider">&mdash;</span>
+  <div class="floating-header-title">circleci tests split --split-by=timingsについて調べた・自作してみた</div>
+  <div class="floating-header-share">
+    <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
+    </div>
+    
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=circleci%20tests%20split%20--split-by%3dtimings%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e8%aa%bf%e3%81%b9%e3%81%9f%e3%83%bb%e8%87%aa%e4%bd%9c%e3%81%97%e3%81%a6%e3%81%bf%e3%81%9f&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fcircleci_tests_split%2f"
+          onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+      </a>
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fcircleci_tests_split%2f"
+          onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+      </a>
+  </div>
+
+  <progress class="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+</div>
+
+
+
+<footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section class="copyright" style="line-height: 1.3em;">
+      <a href="/"></a>  <br>
+      
+    </section>
+    <nav class="site-footer-nav">
+        <a href="/">Latest Posts</a>
+        <a href="https://www.facebook.com/tsuyoshi.hoshino" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://twitter.com/hoppiestar" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://github.com/hoshinotsuyoshi" target="_blank" rel="noopener">Github</a>
+        
+        
+    </nav>  
+  </div>
+</footer>
+
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.fitvids.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  <!-- Google Analytics -->
+  <script>
+    var _gaq=[['_setAccount','UA-87800718-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+
+    <script>
+
+
+
+
+
+$(document).ready(function () {
+    
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+</body></html>
