@@ -325,8 +325,11 @@ rspecの場合、<code>rspec_junit_formatter gem</code> とか使うアレです
 }
 </code></pre>
 
-<p>.circleci/config.ymlを以下のようにします。
-実験のために<code>CIRCLE_NODE_TOTAL</code>,<code>CIRCLE_NODE_INDEX</code>,<code>CIRCLE_INTERNAL_TASK_DATA</code>を上書きしているのがポイントです。</p>
+<p>.circleci/config.ymlを以下のようにします。</p>
+
+<p>実験のために</p>
+
+<p><code>CIRCLE_NODE_TOTAL</code>,<code>CIRCLE_NODE_INDEX</code>,<code>CIRCLE_INTERNAL_TASK_DATA</code>を上書きしているのがポイントです。</p>
 
 <pre><code class="language-yaml">version: 2.1
 
@@ -414,7 +417,9 @@ jobs:
 
 <p>同じようなアルゴリズムのスクリプトをrubyで実装してみました。</p>
 
-<p>実験に使ったソースはこちら。 <a href="https://github.com/hoshinotsuyoshi/circleci-tests-split-split-by-timings/tree/custom_script">https://github.com/hoshinotsuyoshi/circleci-tests-split-split-by-timings/tree/custom_script</a></p>
+<p>実験に使ったソースはこちら。</p>
+
+<p><a href="https://github.com/hoshinotsuyoshi/circleci-tests-split-split-by-timings/tree/custom_script">https://github.com/hoshinotsuyoshi/circleci-tests-split-split-by-timings/tree/custom_script</a></p>
 
 <pre><code class="language-ruby">#!/usr/bin/env ruby
 # frozen_string_literal: true
@@ -561,13 +566,13 @@ puts pods[INDEX][:content]
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/md600-2/">MiSTEL BAROCCO MD600 慣れてきた</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_moriocho_2/">RubyKaigi2018杜王町2日目行ってきました・忘れないうちに感想書く</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/risu-pia/">有明のリスーピア行ってきた👨&#43;👦👦👦</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/rake_entry_new/">このブログの記事の土台を生成するrakeタスクを作った</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/amazon_drive_japanese/">AmazonDriveをamazon.co.jpで使う</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/karakida/">Availability Zone karakida</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
