@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fusai on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <link>https://hoshinotsuyoshi.com/tags/fusai/</link>
+    <description>Recent content in Fusai on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 08 Dec 2018 00:57:21 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/fusai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>omotesando.rb #41で技術的負債についてのLTをした</title>
+      <link>https://hoshinotsuyoshi.com/post/omotesandorb41_fusai/</link>
+      <pubDate>Sat, 08 Dec 2018 00:57:21 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/omotesandorb41_fusai/</guid>
+      <description>&lt;p&gt;「技術的負債」がテーマのomotesando.rb 第41回で、「「技術的負債」について私から言えること私から言えないこと」というタイトルでLTに応募し話してきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

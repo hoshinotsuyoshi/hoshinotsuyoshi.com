@@ -35,6 +35,17 @@
     </item>
     
     <item>
+      <title>omotesando.rb #41で技術的負債についてのLTをした</title>
+      <link>https://hoshinotsuyoshi.com/post/omotesandorb41_fusai/</link>
+      <pubDate>Sat, 08 Dec 2018 00:57:21 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/omotesandorb41_fusai/</guid>
+      <description>&lt;p&gt;「技術的負債」がテーマのomotesando.rb 第41回で、「「技術的負債」について私から言えること私から言えないこと」というタイトルでLTに応募し話してきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</title>
       <link>https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/</link>
       <pubDate>Sun, 02 Dec 2018 00:26:53 +0900</pubDate>
