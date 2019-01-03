@@ -73,4 +73,8 @@ Rails::Engine使ってるとdb:migrateとrails:update同時が辛い
 
 rails、アップデートしていこうな!!!!!!!!!!!
 
+【追記】
+
+あとで気づいたんだけど[神速さんも感想書いてくれてた](https://sinsoku.hatenablog.com/entry/2018/11/10/233932)。嬉しい。
+
 <script type="text/javascript" src="/js/prism.js" async></script>
