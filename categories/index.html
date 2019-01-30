@@ -149,23 +149,24 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/lighthouse_checking/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/lighthouse.png)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/pre_commit_prevents_odd_chars/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/green-digits.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/lighthouse_checking/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/pre_commit_prevents_odd_chars/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #blog 
-              #lighthouse  </span>
+              #ruby 
+              #git 
+              #bash  </span>
               
-              <h2 class="post-card-title">lighthouseを使って自分のブログを計測してみた</h2>
+              <h2 class="post-card-title">濁点の合成文字がソースコードに入っちまった💢 -&gt; gitのpre-commit hookで打ち勝った</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>自分のブログのテーマを変えてみたので、google chromeのlighthouseというやつを使って比較してみました。
+                <p>濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。
 
  ...  </p>
               
@@ -182,27 +183,32 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/misdo_2018/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/misdo_2018.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/terraform-fargate/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/pharlap.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/misdo_2018/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/terraform-fargate/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #misc 
-              #shopping 
-              #🍩  </span>
+              #terraform 
+              #fargate 
+              #aws 
+              #ecs 
+              #docker 
+              #advent_calender  </span>
               
-              <h2 class="post-card-title">2018年買ってよかったもの</h2>
+              <h2 class="post-card-title">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>あけましておめでとうございます。🎍
-今年も去年に引き続きミスタードーナツの福袋を買いました。
-(ちなみに去年はこんな感じでした)
-満足だったのでおすすめです。
+                <p>
+🎄 このエントリはAWS Fargate Advent Calendar 2017の8日目の記事です 🎄
+従来型ECS(EC2/ECS)とFargateの違いについて、
+.tfファイルの差分を見ることで理解を深めよう!! という試みです。
+このエントリでは、以下のような流れで説明していきます。
+step1. terraformでバーーンとインフラ一式(ECS含む)を立ち上げ step2. terraformでstep1の状態からバーーンとFargateに移行 step3. step1とstep2の.tfファイルのdiffを眺める!👀 
 
  ...  </p>
               
