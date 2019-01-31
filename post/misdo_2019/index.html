@@ -211,9 +211,35 @@
     color: #000;
     box-shadow: none;
 }
+
+/* マウスオーバーでhover https://twitter.com/a_know/status/1090764583734673408 */
+
+.fukidashi {
+  display: none;
+  width: 500px;
+  left: 250px;
+  padding: 1px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.fukidashi:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: 19px;
+  margin-left: 10px;
+  border: solid transparent;
+  border-width: 10px;
+}
+.mouseover:hover + .fukidashi {
+  display: block;
+}
+
 </style>
 
-<div class="widget horizontal pocket left">
+<div class="widget horizontal pocket left mouseover">
   <a id="btn" target="_blank" rel="noopener noreferrer" href="https://pixe.la/v1/users/hoshinotsuyoshi/graphs/hblog-20190103-1.html">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" x="5" y="95" width="74px" height="20px" viewBox="0 0 14740 3980" preserveAspectRatio="xMidYMid meet">
 <g id="layer101" fill="#000000" stroke="none">
@@ -290,6 +316,9 @@
     <span><em id="cnt">...</em></span>
   </a>
 </div>
+<div class="fukidashi">
+  <img src="https://pixe.la/v1/users/hoshinotsuyoshi/graphs/hblog-20190103-1">
+</div>
 
 <script>
 (() => {
@@ -316,8 +345,6 @@ fetch(url).then(response => response.body.getReader())
 })();
 
 </script>
-
-<p><img width=1 height=1 src="https://pixe.la/v1/users/hoshinotsuyoshi/graphs/hblog-20190103-1"></p>
 
 <!-- ここまで地獄 -->    
         </div>
@@ -357,13 +384,13 @@ fetch(url).then(response => response.body.getReader())
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/process_after_process/">あるプロセスが終わるのを待って、そのあと何かをする</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/souieba_chrome_const/">chrome extension書いてて感動したこと(1)</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/go_test_bench/">go testの-benchを使いつつProject Eulerの4問目を解いた・速くした🚀</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/rake_entry_new/">このブログの記事の土台を生成するrakeタスクを作った</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/jis-md600/">日本語配列の分離式キーボード(MiSTEL BAROCCO MD600)買った</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/remote_six_month/">🏠リモートで働くようになって6ヶ月が経ちました🏠</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/change_blog_theme_casper/">👻このブログのテーマをhugo-theme-casperからhugo-casper-twoに変えた👻</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
