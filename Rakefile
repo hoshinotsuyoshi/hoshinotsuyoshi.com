@@ -71,3 +71,13 @@ end
 # alias
 desc '(Alias)Serve html locally'
 task s: :server
+
+namespace :pixela do
+  desc 'Create pixela access counter url'
+  task :create_access_counter_url, 'value'
+  task :create_access_counter_url do |_task, args|
+    v = args['value']
+    command = %(curl -X POST https://pixe.la/v1/users/hoshinotsuyoshi/graphs -H "X-USER-TOKEN:${PIXELA_TOKEN}" -d '{"id":"hblog-#{v}","name":"hblog-#{v}","unit":"view(s)","type":"int","color":"shibafu","timezone":"Asia/Tokyo","selfSufficient":"increment"}')
+    puts command
+  end
+end
