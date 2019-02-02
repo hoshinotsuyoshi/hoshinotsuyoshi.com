@@ -36,3 +36,7 @@ $ ruby -e "loop { Process.getpgid(プロセス番号) ; sleep 1 } " ; date
 
 シェルスクリプトでループを書くやり方が覚えられない👼
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180426-1" %}}

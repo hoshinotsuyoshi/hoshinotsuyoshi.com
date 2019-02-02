@@ -388,3 +388,7 @@ puts pods[INDEX][:content]
 あまり得意でない分野について書いたので、間違いがあったら教えてください :pray:
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20181224-1" %}}

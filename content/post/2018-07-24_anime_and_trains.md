@@ -31,3 +31,7 @@ image = "images/ghost_cover.jpg"
 
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180724-1" %}}

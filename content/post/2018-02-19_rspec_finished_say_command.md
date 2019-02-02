@@ -29,3 +29,7 @@ alias rspec='(){ rspec "$*" ; say "アールスペックが終わりました" }
 
 あと終了コードとかも全然考慮してない。そのまま使うのは注意が必要。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180219-1" %}}

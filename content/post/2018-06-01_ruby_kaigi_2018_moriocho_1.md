@@ -144,3 +144,7 @@ https://magazine.rubyist.net/articles/0056/0056-hanami.html
 * ロビーでMtGしてた人がいた
   * 結構大きい正20面体サイコロ使ってる人がいた
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180601-1" %}}

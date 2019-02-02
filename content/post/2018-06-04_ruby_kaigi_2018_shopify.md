@@ -194,3 +194,7 @@ PRのレビューで何度も同じことを口を酸っぱくして言ってる
 * つまり迷ったらテストを書いてCIに頼ったほうがいい😇
 * テストが遅くなったとしても、大抵はお金で解決すると良い。もう既にE2Eテストで十分遅くなっているはずだし。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180604-1" %}}

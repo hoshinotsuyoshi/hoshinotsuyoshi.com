@@ -120,3 +120,7 @@ end
 
 rakeタスクに引数、使っていこうな()
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170104-1" %}}

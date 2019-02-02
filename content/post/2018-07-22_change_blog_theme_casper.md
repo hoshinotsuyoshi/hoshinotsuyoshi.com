@@ -76,3 +76,7 @@ ruby便利である。
 あとこういうやつのasync属性はやっぱり良さそう。lighthouseの評価も良かった。
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180722-1" %}}

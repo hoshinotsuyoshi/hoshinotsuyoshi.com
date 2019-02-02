@@ -78,3 +78,7 @@ rails、アップデートしていこうな!!!!!!!!!!!
 あとで気づいたんだけど[神速さんも感想書いてくれてた](https://sinsoku.hatenablog.com/entry/2018/11/10/233932)。嬉しい。
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20181112-1" %}}

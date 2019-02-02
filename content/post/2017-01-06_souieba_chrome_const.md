@@ -151,3 +151,7 @@ constとかアロー関数とかありますが、これが**babelなしで動�
 
 chrome拡張なので、chromeのことだけ考えれば良いのが良いですね。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170106-1" %}}

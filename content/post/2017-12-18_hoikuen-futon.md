@@ -104,3 +104,7 @@ image = "images/futon/IMG_9091.jpg"
 皆さんはどうされているんだろうか。
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20171218-1" %}}

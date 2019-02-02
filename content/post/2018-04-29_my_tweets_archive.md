@@ -21,3 +21,7 @@ image = "images/my_twitter.png"
 
 <img alt="slack" src="/images/my_twitter.png" width=600>
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180429-1" %}}

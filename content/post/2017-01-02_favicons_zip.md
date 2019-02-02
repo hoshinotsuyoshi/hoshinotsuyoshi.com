@@ -98,3 +98,7 @@ $ ls -d ~/Downloads/favicons/* | xargs -I {} mv {} ./static
 * realfavicongenerator.netで、必要なファビコンの生成とファビコンのテストができ、便利でした
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170102-1" %}}

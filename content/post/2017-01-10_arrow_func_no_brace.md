@@ -73,3 +73,7 @@ console.log(func2()) // undefined
 
 なるほど…
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170110-1" %}}

@@ -102,3 +102,7 @@ index d17b5df..6709e1c 100644
 2018/07/22
 
 [themeを変えた](/post/change_blog_theme_casper/)のでprismの色も微修正した。
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170101-2" %}}

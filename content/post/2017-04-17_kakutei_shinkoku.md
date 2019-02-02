@@ -72,3 +72,7 @@ image = "images/sakura20170402.jpg"
   * マイナンバーカードは余裕を持って作っておくべき
 * 法務局のシステムも使いやすかった
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170417-1" %}}

@@ -60,3 +60,7 @@ Karabiner-Elementsでいちおうやっていけるようです。
 すぐには移行できないので、とりあえずタブをめっちゃ減らして⌘+数字で移動することにしました。
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20181001-1" %}}

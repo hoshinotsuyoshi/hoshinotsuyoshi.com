@@ -37,3 +37,7 @@ image = "images/risemara.gif"
 
 * https://speakerdeck.com/hoshinotsuyoshi/ruby-is-fun-but-difficult
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180108-1" %}}

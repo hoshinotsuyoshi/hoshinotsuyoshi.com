@@ -85,3 +85,7 @@ REDIS_DBという環境変数を誕生させdbを隔離します。
 
 terraform楽しいです
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170428-2" %}}

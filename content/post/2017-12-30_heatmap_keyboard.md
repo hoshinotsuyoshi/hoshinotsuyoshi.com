@@ -169,3 +169,7 @@ end
 * キーロガーを使って自分のキーボードのヒートマップを出力してみました。
 * こういうの簡単にできるツール、既に別で存在してる気もする。。あれば教えて欲しい。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20171230-1" %}}

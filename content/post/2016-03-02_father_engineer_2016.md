@@ -65,3 +65,7 @@ Pepperくん近くで見たの初めてでした。
 それは正しい一つの答えではある!!のだが、なんかこう、なんとかならないものだろうか。
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20160302-1" %}}

@@ -127,3 +127,7 @@ Loading development environment (Rails 5.0.1)
 
 pry全然使いこなせていないので、使っていきたいですね
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170101-1" %}}

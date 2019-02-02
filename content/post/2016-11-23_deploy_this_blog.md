@@ -66,3 +66,7 @@ Press Ctrl+C to stop
 
 `$ rake`でデプロイできます。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20161123-1" %}}

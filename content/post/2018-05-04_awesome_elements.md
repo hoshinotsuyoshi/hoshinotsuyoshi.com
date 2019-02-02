@@ -45,3 +45,7 @@ image = "images/element.jpg"
 
 とにかく値段の割に写真はキレイという感じ。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180504-1" %}}

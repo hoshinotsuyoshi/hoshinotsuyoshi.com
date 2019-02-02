@@ -85,3 +85,7 @@ image = "images/nomad_surfing_nangoku.png"
 
 これについてはまだ効果的な対策が打てていない。自宅からジムが微妙に遠いのがネック。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20171120-1" %}}

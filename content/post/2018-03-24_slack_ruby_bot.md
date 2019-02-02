@@ -134,3 +134,7 @@ githubに公開されているいくつかのbotを参考にしたら一応動�
 * なんとなくテストも動きました。
   * カスタムマッチャは使いやすいかどうかはまだわからない。。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180324-1" %}}

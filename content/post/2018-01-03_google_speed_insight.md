@@ -43,3 +43,7 @@ https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery#example
 
 一回cloudfront試すか、cloudflareの有料プランやってみてもいいかも!?
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180103-1" %}}

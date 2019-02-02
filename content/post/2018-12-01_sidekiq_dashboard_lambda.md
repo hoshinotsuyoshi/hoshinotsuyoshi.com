@@ -167,3 +167,7 @@ VPC内のLambdaですが、やはり最初のレスポンスは遅いものの�
 Sinatraでアプリを書けばサーバーレスで動く!時代が来ましたね!(?)
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20181201-1" %}}

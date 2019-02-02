@@ -64,3 +64,7 @@ n年ぶりにChrome拡張を書いたりしています。経緯について話�
 * というか拡張書くの結構楽しい。ドキュメント読んでるといろいろできることに気づく。
 * 未完🍊です。いつかまとめられたらいいな。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170105-1" %}}

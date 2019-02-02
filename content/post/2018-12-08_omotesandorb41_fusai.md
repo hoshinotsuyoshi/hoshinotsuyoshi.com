@@ -72,3 +72,7 @@ image = "images/accounting_debt.jpg"
 photograph by [www.flickr.com, Monica PC](https://www.flickr.com/photos/aanikap/3727266367/in/photolist-6Fndre-2b6L5aG-quFS1S-qqzpr2-7YL7QX-mvDgjp-ndBFsE-qhnor8-nuWaUe-now4Ko-9DooMJ-nAb7b8-9C9hih-2JGLp-pA5dcy-6UppKx-oPABvE-pAy6ZG-7BePJD-nwv216-jUhN4R-nB6kzL-nQQE49-np4e1u-9mqSr4-96mcMW-8itfmK-mzJHPp-9V9DQw-7A2a6j-oQgoyY-naeBtK-8NuGDD-kNAMs1-nRBiem-2LguJD-5V7xqt-7CqcUT-fieH62-e72GVX-ccbVxb-7yBCJE-7iQYRG-6wbMJJ-pWe3Nq-ehmXiq-iWPquy-25p8mRn-8fankk-8h1Atr)
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20181208-1" %}}

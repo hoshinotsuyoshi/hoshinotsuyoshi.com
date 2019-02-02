@@ -38,3 +38,7 @@ slackを眺める時間を抑制して生産性上げていきましょう💪
 
 * 生産性上げてこ💪
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170103-2" %}}

@@ -85,3 +85,7 @@ Percentage of the requests served within a certain time (ms)
 
 中央値ベースでちょっと速くなりました。
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180506-1" %}}

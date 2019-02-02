@@ -65,3 +65,7 @@ image = "images/akracing-chair-5.jpg"
 
 悪くない買い物だったと思います
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170429-1" %}}

@@ -41,3 +41,7 @@ prefix key(私の場合 `C-j`に設定している)を押すと、左上に置�
 <br>
 <br>
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180624-2" %}}

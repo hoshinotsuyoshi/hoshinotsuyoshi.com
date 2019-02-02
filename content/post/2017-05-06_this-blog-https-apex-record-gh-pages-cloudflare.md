@@ -75,3 +75,7 @@ CNAMEというファイルを用意しておきます。
 
 <img alt="slack" src="/images/gh-pages-cert.png" width=600>
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170506-1" %}}

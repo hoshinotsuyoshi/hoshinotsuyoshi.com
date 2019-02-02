@@ -74,3 +74,7 @@ console.log(Object.keys({ハローワールド})[0]); // ハローワールド
 
 とりあえず手元のChrome55では動作します。 🌠🌠🌠
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20170113-1" %}}

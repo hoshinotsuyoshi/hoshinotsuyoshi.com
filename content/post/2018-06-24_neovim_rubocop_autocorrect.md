@@ -80,3 +80,7 @@ let g:ale_fix_on_save = 1
 
 * 保存直後にオートコレクトするやつは様子見る
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180624-1" %}}

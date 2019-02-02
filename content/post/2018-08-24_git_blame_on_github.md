@@ -70,3 +70,7 @@ nnoremap <silent> <Space><Space>g :<C-u>ToGithub<CR>
 * vimscript書けると世界が広がりそう
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180824-1" %}}

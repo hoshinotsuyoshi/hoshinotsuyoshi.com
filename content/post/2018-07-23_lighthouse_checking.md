@@ -33,3 +33,7 @@ chromeの拡張機能でインストールできます。googleの[こちら](ht
 得点出るのは楽しいね。
 
 <script type="text/javascript" src="/js/prism.js" async></script>
+
+---
+
+{{% pixela_access_counter "hoshinotsuyoshi/graphs/hblog-20180723-1" %}}
