@@ -6,10 +6,21 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 03 Jan 2019 15:57:15 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 14:15:47 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>pixelaアクセスカウンターウィジェット自作してこのhugoブログに設置</title>
+      <link>https://hoshinotsuyoshi.com/post/set_my_original_pixela_counter/</link>
+      <pubDate>Sat, 02 Feb 2019 14:15:47 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/set_my_original_pixela_counter/</guid>
+      <description>&lt;p&gt;pixelaアクセスカウンターウィジェットを自作し、このhugoブログの各エントリーに設置してみました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2019年買ってよかったもの</title>
