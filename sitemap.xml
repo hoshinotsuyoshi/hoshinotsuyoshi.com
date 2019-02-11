@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/rubocop_daemon/</loc>
+    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/set_my_original_pixela_counter/</loc>
     <lastmod>2019-02-02T14:15:47+09:00</lastmod>
   </url>
@@ -573,7 +578,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/neovim/</loc>
-    <lastmod>2018-08-25T00:15:53+09:00</lastmod>
+    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -585,7 +590,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2019-02-02T14:15:47+09:00</lastmod>
+    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -645,7 +650,13 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rubocop/</loc>
-    <lastmod>2018-07-21T13:53:24+09:00</lastmod>
+    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/rubocop-daemon/</loc>
+    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -657,7 +668,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
-    <lastmod>2018-12-24T14:46:01+09:00</lastmod>
+    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -741,13 +752,13 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/vim/</loc>
-    <lastmod>2018-08-25T00:15:53+09:00</lastmod>
+    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2019-02-02T14:15:47+09:00</lastmod>
+    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   

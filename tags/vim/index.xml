@@ -6,10 +6,25 @@
     <description>Recent content in Vim on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 25 Aug 2018 00:15:53 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 Feb 2019 15:34:34 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rubocop-daemonでneovimでのオートコレクトを速くする</title>
+      <link>https://hoshinotsuyoshi.com/post/rubocop_daemon/</link>
+      <pubDate>Mon, 11 Feb 2019 15:34:34 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/rubocop_daemon/</guid>
+      <description>&lt;p&gt;速くなるっぽいので、試してみる!!&lt;/p&gt;
+
+&lt;h3 id=&#34;動作&#34;&gt;動作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt=&#34;rubocop_daemon&#34; src=&#34;https://hoshinotsuyoshi.com/images/rubocop_daemon_hash.gif&#34; width=600&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>neovimからgithubのblameのページに飛べるようにした</title>

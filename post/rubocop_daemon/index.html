@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ja-jp" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>rubocop-daemonでneovimでのオートコレクトを速くする &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/rubocop_daemon/" />
+
+     <meta name="description" content="&lt;p&gt;速くなるっぽいので、試してみる!!&lt;/p&gt;
+
+&lt;h3 id=&#34;動作&#34;&gt;動作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt=&#34;rubocop_daemon&#34; src=&#34;/images/rubocop_daemon_hash.gif&#34; width=600&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;" /> 
+
+     
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/robot1.jpg"/>
+    
+ 
+    <meta name="twitter:title" content="rubocop-daemonでneovimでのオートコレクトを速くする"/>
+    <meta name="twitter:description" content="&lt;p&gt;速くなるっぽいので、試してみる!!&lt;/p&gt;
+
+&lt;h3 id=&#34;動作&#34;&gt;動作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt=&#34;rubocop_daemon&#34; src=&#34;/images/rubocop_daemon_hash.gif&#34; width=600&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;"/>
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/rubocop_daemon/" />
+    <meta name="twitter:site" content="@hoppiestar"/>
+
+    <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
+    <meta property="og:title" content="rubocop-daemonでneovimでのオートコレクトを速くする &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/rubocop_daemon/" />
+    <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="&lt;p&gt;速くなるっぽいので、試してみる!!&lt;/p&gt;
+
+&lt;h3 id=&#34;動作&#34;&gt;動作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt=&#34;rubocop_daemon&#34; src=&#34;/images/rubocop_daemon_hash.gif&#34; width=600&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;" />
+
+    <meta property="article:published_time" content="2019-02-11T15:34:34&#43;09:00" />
+    <meta property="article:tag" content="vim" /><meta property="article:tag" content="ruby" /><meta property="article:tag" content="neovim" /><meta property="article:tag" content="rubocop" /><meta property="article:tag" content="rubocop-daemon" />
+
+    <meta property="og:image" content="https://hoshinotsuyoshi.com/images/robot1.jpg"/>
+
+
+    <meta name="generator" content="Hugo 0.44" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/built/screen.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/css/casper-two.css" /> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+     <link rel="stylesheet" href="https://hoshinotsuyoshi.com/css/prism.css" /> 
+
+     
+
+</head>
+
+
+<body class="post-template">
+  <div class="site-wrapper"> 
+
+<header class="site-header outer">
+  <div class="inner">
+    <nav class="site-nav">
+      <div class="site-nav-left">
+        <a class="site-nav-logo" href="#"><img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="" /></a>
+
+        <ul class="nav" role="menu">
+        
+        
+        
+            <li class="" role="menuitem">
+              <a href="/">Home</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/ruby/">Ruby💎</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/rails/">Rails🚃</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/vim/">vim⚡</a>
+            </li>
+        
+      </ul></div>
+
+      <div class="site-nav-right">
+        <div class="social-links">
+                    <a class="social-link social-link-fb" href="https://www.facebook.com/tsuyoshi.hoshino" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg></a>
+
+                    <a class="social-link social-link-tw" href="https://twitter.com/hoppiestar" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg></a>
+
+                    <a class="social-link" href="https://github.com/hoshinotsuyoshi" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+
+                    
+
+                    
+        </div>  
+            
+      </div>
+
+    </nav>  
+
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    
+      <article class="post-full post"> 
+    <header class="post-full-header">
+        <section class="post-full-meta">
+            <time class="post-full-meta-date" datetime="2019-02-11">11 February 2019</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/vim/">#vim</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;
+        </section>
+        <h1 class="post-full-title">rubocop-daemonでneovimでのオートコレクトを速くする</h1>
+    </header>
+    
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/images/robot1.jpg)">
+    </figure>
+
+    <section class="post-full-content">
+        <div class="kg-card-markdown">
+        <p>速くなるっぽいので、試してみる!!</p>
+
+<h3 id="動作">動作</h3>
+
+<p><img alt="rubocop_daemon" src="/images/rubocop_daemon_hash.gif" width=600></p>
+
+<p></p>
+
+<h3 id="使ったやつ-rubocop-daemon">使ったやつ: rubocop-daemon</h3>
+
+<p><a class="embedly-card" data-card-key="6f257114b6df4413a3f5872a7e143278" data-card-controls="0" data-card-type="article" href="https://github.com/fohte/rubocop-daemon">fohte/rubocop-daemon</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
+
+<h3 id="普通の場合">普通の場合</h3>
+
+<p>(<a href="https://github.com/ruby-formatter/rufo">ruby-formatter/rufo</a>のissuesの<a href="https://github.com/ruby-formatter/rufo/issues/2#issuecomment-439104627">ここ</a>に書かれたサンプルrubyファイルで試した。)</p>
+
+<p><code>:w</code> で保存 -&gt; オートコレクトが終わるまでに <strong>2.5秒</strong>ぐらい。</p>
+
+<p><img alt="rubocop_daemon" src="/images/rubocop_daemon_before.gif" width=600></p>
+
+<h3 id="ウラでrubocop-daemonが動いている場合">ウラでrubocop-daemonが動いている場合</h3>
+
+<p><code>:w</code> で保存 -&gt; オートコレクトが終わるまでに <strong>0.6秒</strong> ぐらい。</p>
+
+<p><strong>2秒ぐらい速くなった!!!</strong></p>
+
+<p><img alt="rubocop_daemon" src="/images/rubocop_daemon_after.gif" width=600></p>
+
+<hr />
+
+<h2 id="設定-今回どう動かしたか">設定・今回どう動かしたか</h2>
+
+<p><a href="https://github.com/fohte/rubocop-daemon">fohte/rubocop-daemon</a>にvimの説明が無かったので、適当に設定しました。完全オレオレ設定です。</p>
+
+<h3 id="daemonの起動">daemonの起動</h3>
+
+<p>rubocop-daemonはneovim経由ではなく普通に動かす。</p>
+
+<p><a href="https://rubygems.org/gems/rubocop-daemon">rubocop-daemon gem</a>が必要になる。</p>
+
+<pre><code class="language-sh">$ rubocop-daemon start
+</code></pre>
+
+<p><br/></p>
+
+<h3 id="neovim側の設定">neovim側の設定</h3>
+
+<p>すでに<a href="https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/">aleで保存時にオートコレクトが走る</a>ようにしているので、neovim上で<code>rubocop</code>コマンドを叩いた時、代わりに<code>rubocop-daemon exec</code> が叩かれるようにする。</p>
+
+<p>READMEの<a href="https://github.com/fohte/rubocop-daemon/tree/v0.3.1#more-speed">ここ</a>に書かれてるラッパースクリプトをダウンロードし、適当なディレクトリに配置。</p>
+
+<pre><code class="language-sh"># ラッパースクリプトのダウンロード。
+$ curl https://raw.githubusercontent.com/fohte/rubocop-daemon/master/bin/rubocop-daemon-wrapper -o /tmp/rubocop-daemon-wrapper
+
+# 自分の場合はディレクトリはここにした。
+# どこに置くと良いのかわからない。
+$ mkdir -p ~/.rubocop
+
+# 今回の用途としては&quot;rubocop&quot;として保存。
+# aleの設定をそのまま利用したいため。
+$ mv /tmp/rubocop-daemon-wrapper ~/.rubocop/rubocop
+$ chmod +x ~/.rubocop/rubocop
+</code></pre>
+
+<p><code>~/.config/nvim/init.vim</code>で、この<code>rubocop</code>ファイルを見つけられるようにする。</p>
+
+<pre><code class="language-vimscript">&quot; nvim限定・rubocopへのパス
+let $PATH=&quot;/Users/hoshino/.rubocop:&quot;.$PATH
+</code></pre>
+
+<p>設定は以上!</p>
+
+<p><br/></p>
+
+<h3 id="この設定の所感">この設定の所感</h3>
+
+<ul>
+<li>vim強い人にどうすればいいか聞きたい</li>
+<li>.rubocop.ymlに修正が入ったり、利用するrubocopのバージョンが変わる時にいちいちdaemonのリスタートが必要。</li>
+</ul>
+
+<h3 id="その他所感">その他所感</h3>
+
+<p>元々、テキストエディタ上のlinterとして使うには<code>rubocop -a</code> が遅いと言っている人がいる</p>
+
+<ul>
+<li><a href="https://github.com/rubocop-hq/rubocop/issues/6492">https://github.com/rubocop-hq/rubocop/issues/6492</a></li>
+<li><a href="https://github.com/ruby-formatter/rufo/issues/2#issuecomment-439104627">https://github.com/ruby-formatter/rufo/issues/2#issuecomment-439104627</a></li>
+</ul>
+
+<p>そして、そもそも<a href="https://github.com/rubocop-hq/rubocop/issues/6492#issuecomment-439736434">コマンド起動時にライブラリを全部読み込むところが遅い</a>というコメントがある。</p>
+
+<p>これ実際私も時間を測ってみたのだが、たしかに! という印象だった。</p>
+
+<p>エディタ上のauto-correctは確かに遅いが、別にauto-correctじゃなくても遅そう。</p>
+
+<p>なので、エディタ上でrubocopを使うのにおいて、「ライブラリを全部読み込む時間を、daemon活用によりショートカットする」というアプローチは、ある程度納得できる気がする。</p>
+
+<p>1週間ぐらい仕事で使ってみて様子を見たい。</p>
+
+<script type="text/javascript" src="/js/prism.js" async></script>
+
+<hr />
+
+<p>photograph: <a href="https://www.flickr.com/photos/adulau/1331582337">www.flickr.com,Alexandre Dulaunoy</a></p>
+
+<hr />
+
+
+
+
+<style>
+.widget.horizontal {
+    width: 130px;
+}
+.widget.horizontal a {
+    color: #000;
+    box-shadow: none;
+}
+.widget.horizontal #btn span {
+    float: left;
+    height: 18px;
+    padding: 0px 6px;
+    line-height: 18px;
+    font-size: 11px;
+    font-weight: normal;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+#btn span em {
+    font-style: normal;
+    -moz-transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+}
+
+#btn span {
+    position: relative;
+    border: 1px solid #bbb;
+    font-weight: bold;
+    color: #777;
+    background: #FFF;
+}
+#btn {
+    display: flex;
+    cursor: pointer;
+}
+
+ 
+
+.fukidashi {
+  display: none;
+  width: 500px;
+  color: #fff;
+}
+.fukidashi:after {
+  position: absolute;
+}
+.mouseover:hover + .fukidashi {
+  display: block;
+}
+
+</style>
+
+<div class="widget horizontal mouseover">
+  <a id="btn" target="_blank" rel="noopener noreferrer" href="https://pixe.la/v1/users/hoshinotsuyoshi/graphs/hblog-20190211-1.html">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" x="5" y="95" width="74px" height="20px" viewBox="0 0 14740 3980" preserveAspectRatio="xMidYMid meet">
+<g id="layer101" fill="#000000" stroke="none">
+ <path d="M2430 3706 l0 -276 501 0 c396 0 500 3 497 13 -7 21 -168 155 -273 226 -187 128 -388 222 -590 276 -55 14 -108 29 -117 31 -17 5 -18 -13 -18 -270z"></path>
+ <path d="M1210 3700 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M1820 3700 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M4990 2550 l0 -1240 235 0 235 0 0 90 0 91 65 -50 c92 -71 145 -100 243 -134 76 -26 104 -31 222 -35 191 -6 310 23 458 109 80 48 238 208 288 294 175 300 188 718 31 1019 -122 234 -336 406 -575 462 -92 22 -277 21 -367 -1 -95 -23 -216 -83 -300 -149 l-70 -55 -3 420 -2 419 -230 0 -230 0 0 -1240z m1032 189 c178 -37 338 -201 377 -387 16 -75 14 -218 -4 -285 -80 -307 -399 -460 -683 -327 -77 36 -178 133 -216 208 -56 112 -76 286 -47 412 63 268 313 433 573 379z"></path>
+ <path d="M610 3100 l0 -270 265 0 265 0 0 270 0 270 -265 0 -265 0 0 -270z"></path>
+ <path d="M1210 3100 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M1820 3100 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M2430 3100 l0 -270 710 0 c480 0 710 3 710 10 0 15 -56 123 -108 210 -51 84 -135 201 -196 272 l-41 48 -537 0 -538 0 0 -270z"></path>
+ <path d="M10700 3169 c-244 -21 -434 -111 -596 -281 -205 -216 -289 -504 -239 -828 60 -398 349 -705 730 -775 69 -13 126 -16 245 -12 187 6 271 25 415 96 311 154 486 446 502 839 l6 142 -731 0 c-403 0 -732 1 -732 3 0 2 7 28 16 58 51 173 181 298 354 340 75 18 221 15 299 -5 82 -22 140 -51 219 -111 l64 -48 141 68 c78 37 163 76 190 87 26 12 47 26 47 33 0 6 -28 45 -63 86 -200 234 -499 340 -867 308z m590 -1192 c0 -19 -66 -127 -98 -160 -90 -95 -224 -148 -373 -149 -204 -1 -354 81 -453 246 -20 33 -36 63 -36 68 0 4 216 8 480 8 389 0 480 -2 480 -13z"></path>
+ <path d="M13628 3169 c-359 -37 -671 -334 -749 -714 -24 -114 -26 -338 -4 -452 38 -203 118 -357 254 -494 163 -164 346 -239 582 -239 209 0 384 65 531 198 l38 34 0 -96 0 -96 230 0 230 0 0 910 0 910 -230 0 -230 0 0 -91 0 -91 -63 51 c-173 137 -366 193 -589 170z m273 -429 c173 -32 320 -170 373 -350 39 -131 27 -306 -30 -425 -87 -186 -304 -299 -511 -267 -239 38 -396 224 -410 487 -9 180 36 305 151 421 122 121 260 165 427 134z"></path>
+ <path d="M7190 2777 c0 -195 3 -604 7 -910 l6 -557 229 0 228 0 0 910 0 910 -235 0 -235 0 0 -353z"></path>
+ <path d="M7900 3125 c0 -2 153 -216 340 -475 187 -259 340 -473 340 -476 0 -3 -135 -193 -301 -421 -165 -228 -303 -421 -306 -429 -4 -12 38 -14 263 -14 l269 1 175 243 176 244 174 -244 175 -243 269 0 268 -1 -14 23 c-9 12 -147 204 -307 426 -161 222 -290 409 -287 416 3 10 641 895 679 943 7 9 -47 12 -264 12 l-274 -1 -209 -290 c-151 -210 -212 -287 -220 -279 -6 6 -101 135 -212 288 l-200 277 -267 3 c-147 1 -267 0 -267 -3z"></path>
+ <path d="M12070 1870 l0 -1260 235 0 235 0 0 878 c0 482 -3 1049 -7 1260 l-6 382 -229 0 -228 0 0 -1260z"></path>
+ <path d="M0 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M610 2495 l0 -265 265 0 265 0 0 265 0 265 -265 0 -265 0 0 -265z"></path>
+ <path d="M1210 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M1820 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M2430 2495 l0 -265 795 0 796 0 -5 33 c-3 17 -11 61 -16 97 -14 85 -64 271 -91 343 l-22 57 -728 0 -729 0 0 -265z"></path>
+ <path d="M2420 2146 c0 -2 26 -23 58 -47 87 -66 217 -195 287 -284 393 -503 389 -1097 -9 -1489 -140 -138 -330 -252 -491 -292 -83 -21 -109 -38 -45 -29 456 64 865 263 1207 588 284 270 498 648 572 1012 29 139 45 343 37 446 l-8 86 -390 6 c-423 8 -1218 9 -1218 3z"></path>
+ <path d="M1363 2125 c-222 -40 -414 -149 -543 -307 -64 -78 -143 -238 -172 -343 -17 -63 -21 -109 -22 -220 0 -127 2 -147 27 -219 66 -190 176 -279 379 -309 174 -25 328 39 404 168 l24 43 -6 601 c-4 330 -10 601 -13 600 -3 0 -38 -7 -78 -14z"></path>
+ <path d="M2580 1841 c54 -78 106 -194 132 -289 29 -109 28 -296 -1 -407 -58 -220 -200 -409 -373 -496 -73 -37 -194 -69 -260 -69 -166 0 -370 89 -519 227 -31 29 -59 53 -61 53 -3 0 -19 -23 -38 -51 -106 -164 -362 -216 -572 -115 -29 14 -54 24 -55 22 -8 -7 41 -116 85 -190 118 -198 336 -369 563 -441 176 -55 415 -75 580 -46 434 74 753 357 855 760 75 294 17 596 -166 869 -59 88 -184 232 -201 232 -5 0 9 -27 31 -59z"></path>
+ <path d="M2125 1453 c-55 -10 -67 -16 -101 -45 -46 -40 -64 -83 -64 -148 0 -95 50 -163 139 -186 93 -24 192 21 227 103 17 38 18 121 3 160 -12 34 -55 80 -89 97 -29 15 -86 24 -115 19z"></path>
+ <path d="M7398 949 c-12 -157 33 -294 133 -403 44 -48 49 -57 29 -51 -124 38 -228 140 -317 310 l-42 80 -1 -65 c0 -85 23 -178 65 -265 105 -216 323 -349 590 -362 l110 -6 -28 30 c-41 44 -47 78 -57 293 -5 107 -14 213 -21 235 -49 169 -159 247 -370 262 l-86 6 -5 -64z"></path>
+ </g>
+<g id="layer102" fill="#226727" stroke="none">
+ <path d="M2430 3706 l0 -276 500 0 c310 0 500 4 500 10 0 16 -169 157 -275 229 -185 126 -393 223 -593 277 -53 14 -105 28 -114 30 -17 5 -18 -13 -18 -270z"></path>
+ <path d="M1212 3703 l3 -268 268 -3 267 -2 0 270 0 270 -270 0 -270 0 2 -267z"></path>
+ <path d="M1820 3700 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M610 3100 l0 -270 265 0 265 0 0 270 0 270 -265 0 -265 0 0 -270z"></path>
+ <path d="M1210 3100 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M1820 3100 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M2430 3100 l0 -270 710 0 c534 0 710 3 710 12 0 18 -96 193 -152 277 -28 42 -83 115 -121 164 l-70 87 -539 0 -538 0 0 -270z"></path>
+ <path d="M0 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M610 2495 l0 -265 265 0 265 0 0 265 0 265 -265 0 -265 0 0 -265z"></path>
+ <path d="M1210 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M1820 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M2430 2495 l0 -265 795 0 795 0 -5 28 c-2 15 -9 59 -15 97 -14 89 -53 239 -87 333 l-26 72 -728 0 -729 0 0 -265z"></path>
+ <path d="M2420 2147 c0 -2 36 -32 80 -67 167 -131 337 -336 425 -509 41 -83 87 -213 111 -316 29 -125 25 -340 -9 -468 -48 -179 -131 -322 -267 -457 -95 -95 -201 -172 -317 -230 -79 -39 -199 -80 -234 -80 -10 0 -19 -5 -19 -10 0 -6 10 -8 23 -6 12 3 67 12 122 22 255 42 556 166 791 324 453 306 774 768 874 1259 28 136 44 341 36 443 l-8 85 -396 6 c-409 7 -1212 9 -1212 4z"></path>
+ <path d="M1363 2125 c-296 -54 -518 -216 -644 -470 -105 -214 -126 -443 -58 -641 66 -188 222 -290 444 -288 79 0 112 5 156 22 68 27 140 88 174 147 l25 42 -6 602 c-4 330 -10 601 -13 600 -3 0 -38 -7 -78 -14z"></path>
+ <path d="M2580 1842 c105 -155 152 -306 152 -492 0 -147 -20 -240 -81 -365 -93 -193 -227 -315 -421 -381 -74 -25 -240 -25 -324 0 -121 36 -281 133 -365 220 -19 20 -38 36 -41 36 -4 0 -21 -23 -40 -51 -106 -164 -362 -216 -572 -115 -29 14 -54 23 -56 22 -2 -2 7 -28 19 -58 126 -302 400 -525 742 -603 391 -90 810 23 1068 287 349 357 382 904 80 1340 -54 79 -177 218 -192 218 -5 0 9 -26 31 -58z"></path>
+ <path d="M7405 1000 c-11 -18 -7 -182 5 -235 16 -69 66 -159 125 -223 41 -46 46 -54 25 -47 -124 38 -242 155 -326 323 l-33 67 -1 -65 c0 -86 23 -178 67 -270 52 -108 167 -222 283 -278 111 -55 182 -73 310 -79 l105 -6 -27 28 c-41 40 -48 79 -58 295 -5 107 -14 213 -21 235 -31 108 -88 178 -179 219 -84 38 -260 61 -275 36z"></path>
+ </g>
+<g id="layer103" fill="#48a245" stroke="none">
+ <path d="M1820 3700 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M610 3100 l0 -270 265 0 265 0 0 270 0 270 -265 0 -265 0 0 -270z"></path>
+ <path d="M1210 3100 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M2430 3100 l0 -270 711 0 710 0 -6 23 c-30 99 -270 459 -340 509 -5 4 -250 8 -542 8 l-533 0 0 -270z"></path>
+ <path d="M0 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M610 2495 l0 -265 265 0 265 0 0 265 0 265 -265 0 -265 0 0 -265z"></path>
+ <path d="M1820 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M2430 2495 l0 -265 795 0 795 0 -5 28 c-2 15 -9 59 -15 97 -14 89 -53 239 -87 333 l-26 72 -728 0 -729 0 0 -265z"></path>
+ <path d="M1363 2125 c-296 -54 -518 -216 -644 -470 -105 -214 -126 -443 -58 -641 66 -188 222 -290 444 -288 79 0 112 5 156 22 68 27 140 88 174 147 l25 42 -6 602 c-4 330 -10 601 -13 600 -3 0 -38 -7 -78 -14z"></path>
+ <path d="M2580 1842 c105 -155 152 -306 152 -492 0 -147 -20 -240 -81 -365 -93 -193 -227 -315 -421 -381 -74 -25 -240 -25 -324 0 -121 36 -281 133 -365 220 -19 20 -38 36 -41 36 -4 0 -21 -23 -40 -51 -106 -164 -362 -216 -572 -115 -29 14 -54 23 -56 22 -2 -2 7 -28 19 -58 126 -302 400 -525 742 -603 391 -90 810 23 1068 287 349 357 382 904 80 1340 -54 79 -177 218 -192 218 -5 0 9 -26 31 -58z"></path>
+ <path d="M7407 1003 c-16 -15 -7 -202 13 -266 24 -76 83 -169 141 -222 47 -42 32 -41 -56 3 -108 53 -197 150 -267 291 l-37 76 -1 -64 c0 -84 23 -178 68 -271 27 -57 56 -95 116 -155 91 -91 175 -140 296 -175 73 -21 270 -40 270 -26 0 4 -9 17 -20 28 -32 35 -41 82 -50 288 -5 107 -14 213 -21 235 -31 108 -88 177 -179 219 -74 34 -253 59 -273 39z"></path>
+ </g>
+<g id="layer104" fill="#8ec56a" stroke="none">
+ <path d="M1822 3703 l3 -268 265 0 265 0 3 268 2 267 -270 0 -270 0 2 -267z"></path>
+ <path d="M1210 3100 l0 -270 270 0 270 0 0 270 0 270 -270 0 -270 0 0 -270z"></path>
+ <path d="M0 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M610 2495 l0 -265 265 0 265 0 0 265 0 265 -265 0 -265 0 0 -265z"></path>
+ <path d="M2430 2495 l0 -265 794 0 795 0 -5 38 c-16 110 -50 261 -85 370 l-40 122 -730 0 -729 0 0 -265z"></path>
+ <path d="M1363 2125 c-296 -54 -518 -216 -644 -470 -105 -214 -126 -443 -58 -641 66 -188 222 -290 444 -288 79 0 112 5 156 22 68 27 140 88 174 147 l25 42 -6 602 c-4 330 -10 601 -13 600 -3 0 -38 -7 -78 -14z"></path>
+ <path d="M2550 1897 c0 -5 14 -28 30 -53 48 -69 108 -201 131 -289 28 -107 31 -279 6 -387 -64 -275 -249 -491 -484 -564 -123 -38 -284 -25 -416 32 -82 36 -210 121 -270 180 -26 26 -49 45 -50 43 -2 -2 -20 -27 -41 -56 -68 -96 -168 -149 -299 -159 -85 -7 -191 13 -269 50 -29 14 -54 23 -57 21 -9 -9 92 -202 140 -267 176 -236 459 -387 788 -418 267 -25 564 50 766 195 191 136 338 355 397 591 33 134 31 351 -6 489 -32 122 -124 313 -198 410 -58 77 -167 195 -168 182z"></path>
+ </g>
+<g id="layer105" fill="#d6e58a" stroke="none">
+ <path d="M1217 3363 c-4 -3 -7 -125 -7 -270 l0 -263 270 0 270 0 0 270 0 270 -263 0 c-145 0 -267 -3 -270 -7z"></path>
+ <path d="M0 2495 l0 -265 270 0 270 0 0 265 0 265 -270 0 -270 0 0 -265z"></path>
+ <path d="M1363 2125 c-299 -54 -534 -230 -655 -490 -104 -222 -114 -483 -25 -670 44 -92 99 -147 188 -190 216 -103 464 -51 564 119 l25 43 -7 601 c-3 331 -9 602 -12 601 -3 0 -38 -7 -78 -14z"></path>
+ </g>
+</svg>
+    <span><em id="cnt">...</em></span>
+  </a>
+</div>
+<div class="fukidashi">
+  <img src="https://pixe.la/v1/users/hoshinotsuyoshi/graphs/hblog-20190211-1">
+</div>
+
+<script>
+(() => {
+    const url = 'https://pixe.la/v1/users/hoshinotsuyoshi\/graphs\/hblog-20190211-1.html';
+    const decoder = new TextDecoder();
+    const parser = new DOMParser();
+    let string = '';
+    fetch(url).then(response => response.body.getReader())
+      .then(reader => {
+             const readChunk = ({done, value}) => {
+               if(done) {
+                 const doc = parser.parseFromString(string,'text/html');
+                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 return;
+               }
+               string += decoder.decode(value);
+               reader.read().then(readChunk);
+            };
+
+          reader.read().then(readChunk)
+
+    })
+})();
+</script>    
+        </div>
+    </section>
+
+    <footer class="post-full-footer">
+      <section class="author-card">
+        <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
+        <section class="author-card-content">
+            <h4 class="author-card-name"><a href="https://hoshinotsuyoshi.com/">hoshinotsuyoshi</a></h4>
+                <p>星野剛志(ほしのつよし) web application engineer. ruby/rails/docker</p>
+        </section>
+      </section>
+    </footer>
+</article>
+    
+    
+    
+
+  </div>
+</main>
+
+
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">      
+      
+<article class="read-next-card" style="background-color: #090a0b;">
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
+        
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/vim/">#vim</a></h3>
+    </header>
+    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+    </div>
+
+    <div class="read-next-card-content">
+      
+        <ul>
+          <li><a href="https://hoshinotsuyoshi.com/post/rake_entry_new/">このブログの記事の土台を生成するrakeタスクを作った</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/">⚡neovim &#43; 🍻ale &#43; 🚓rubocop</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/hoikuen-futon/">保育園の布団カバー問題に対処する</a></li>            
+        
+                      
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></li>            
+        </ul>
+    </div>
+    <footer class="read-next-card-footer">
+      
+        <a href="https://hoshinotsuyoshi.com/tags/vim/">See all related posts →</a>
+    </footer>
+</article>
+
+
+      
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/set_my_original_pixela_counter/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/sougen.jpg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/set_my_original_pixela_counter/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #pixela 
+              #hugo  </span>
+              
+              <h2 class="post-card-title">pixelaアクセスカウンターウィジェット自作してこのhugoブログに設置</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>pixelaアクセスカウンターウィジェットを自作し、このhugoブログの各エントリーに設置してみました。
+
+ ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
+          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
+      </footer>
+    </div>
+</article>
+      
+    </div>
+  </div>
+</aside>
+
+<div class="floating-header">
+  <div class="floating-header-logo">
+    <a href="https://hoshinotsuyoshi.com/">
+      <img src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="hoshinotsuyoshi.com - 自由なブログだよ" />
+      <span>hoshinotsuyoshi.com - 自由なブログだよ</span>
+    </a>
+  </div>
+  <span class="floating-header-divider">&mdash;</span>
+  <div class="floating-header-title">rubocop-daemonでneovimでのオートコレクトを速くする</div>
+  <div class="floating-header-share">
+    <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
+    </div>
+    
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=rubocop-daemon%e3%81%a7neovim%e3%81%a7%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%88%e3%82%b3%e3%83%ac%e3%82%af%e3%83%88%e3%82%92%e9%80%9f%e3%81%8f%e3%81%99%e3%82%8b&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frubocop_daemon%2f"
+          onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+      </a>
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frubocop_daemon%2f"
+          onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+      </a>
+  </div>
+
+  <progress class="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+</div>
+
+
+
+<footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section class="copyright" style="line-height: 1.3em;">
+      <a href="/"></a>  <br>
+      
+    </section>
+    <nav class="site-footer-nav">
+        <a href="/">Latest Posts</a>
+        <a href="https://www.facebook.com/tsuyoshi.hoshino" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://twitter.com/hoppiestar" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://github.com/hoshinotsuyoshi" target="_blank" rel="noopener">Github</a>
+        
+        
+    </nav>  
+  </div>
+</footer>
+
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hoshinotsuyoshi.com/js/jquery.fitvids.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  <!-- Google Analytics -->
+  <script>
+    var _gaq=[['_setAccount','UA-87800718-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+
+    <script>
+
+
+
+
+
+$(document).ready(function () {
+    
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+</body></html>
