@@ -6,10 +6,21 @@
     <description>Recent content in Posts on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Feb 2019 15:34:34 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 01:07:55 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>privateメソッドのテストについての考え方 #yochiyochirb を読んで 私も知りたい</title>
+      <link>https://hoshinotsuyoshi.com/post/ruby_private_method_test/</link>
+      <pubDate>Mon, 04 Mar 2019 01:07:55 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/ruby_private_method_test/</guid>
+      <description>&lt;p&gt;privateメソッドのテストについての考え方 #yochiyochirb を読んで&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>rubocop-daemonでneovimでのオートコレクトを速くする</title>

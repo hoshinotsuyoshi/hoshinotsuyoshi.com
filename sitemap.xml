@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/ruby_private_method_test/</loc>
+    <lastmod>2019-03-04T01:07:55+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/rubocop_daemon/</loc>
     <lastmod>2019-02-11T15:34:34+09:00</lastmod>
   </url>
@@ -590,7 +595,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
+    <lastmod>2019-03-04T01:07:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -614,7 +619,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rails/</loc>
-    <lastmod>2018-12-11T22:29:35+09:00</lastmod>
+    <lastmod>2019-03-04T01:07:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -668,7 +673,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
-    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
+    <lastmod>2019-03-04T01:07:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -758,7 +763,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2019-02-11T15:34:34+09:00</lastmod>
+    <lastmod>2019-03-04T01:07:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   

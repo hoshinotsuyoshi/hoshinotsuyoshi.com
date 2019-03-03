@@ -4,45 +4,45 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>複数mastodonを考える 🐘   🐘   🐘 &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>privateメソッドのテストについての考え方 #yochiyochirb を読んで 私も知りたい &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/ruby_private_method_test/" />
 
-     <meta name="description" content="&lt;p&gt;terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。&lt;/p&gt;
+     <meta name="description" content="&lt;p&gt;privateメソッドのテストについての考え方 #yochiyochirb を読んで&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;" /> 
 
      
     
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/cloudcraft-mastodon.png"/>
+    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/2.jpg"/>
     
  
-    <meta name="twitter:title" content="複数mastodonを考える 🐘   🐘   🐘"/>
-    <meta name="twitter:description" content="&lt;p&gt;terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。&lt;/p&gt;
+    <meta name="twitter:title" content="privateメソッドのテストについての考え方 #yochiyochirb を読んで 私も知りたい"/>
+    <meta name="twitter:description" content="&lt;p&gt;privateメソッドのテストについての考え方 #yochiyochirb を読んで&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;"/>
-    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/" />
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/ruby_private_method_test/" />
     <meta name="twitter:site" content="@hoppiestar"/>
 
     <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
-    <meta property="og:title" content="複数mastodonを考える 🐘   🐘   🐘 &middot; " />
-    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/" />
+    <meta property="og:title" content="privateメソッドのテストについての考え方 #yochiyochirb を読んで 私も知りたい &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/ruby_private_method_test/" />
     <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="&lt;p&gt;terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。&lt;/p&gt;
+    <meta property="og:description" content="&lt;p&gt;privateメソッドのテストについての考え方 #yochiyochirb を読んで&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;" />
 
-    <meta property="article:published_time" content="2017-04-28T14:16:36&#43;09:00" />
-    <meta property="article:tag" content="mastodon" /><meta property="article:tag" content="terraform" />
+    <meta property="article:published_time" content="2019-03-04T01:07:55&#43;09:00" />
+    <meta property="article:tag" content="ruby" /><meta property="article:tag" content="rails" />
 
-    <meta property="og:image" content="https://hoshinotsuyoshi.com/images/cloudcraft-mastodon.png"/>
+    <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/2.jpg"/>
 
 
     <meta name="generator" content="Hugo 0.44" />
@@ -115,139 +115,172 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2017-04-28">28 April 2017</time>
-                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/mastodon/">#mastodon</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/terraform/">#terraform</a>&nbsp;
+            <time class="post-full-meta-date" datetime="2019-03-04">4 March 2019</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/rails/">#rails</a>&nbsp;
         </section>
-        <h1 class="post-full-title">複数mastodonを考える 🐘   🐘   🐘</h1>
+        <h1 class="post-full-title">privateメソッドのテストについての考え方 #yochiyochirb を読んで 私も知りたい</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/images/cloudcraft-mastodon.png)">
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/2.jpg)">
     </figure>
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        <p>terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。</p>
+        <p>privateメソッドのテストについての考え方 #yochiyochirb を読んで</p>
 
 <p></p>
 
-<p>RedisとPostgresの運用をラクしようとするとElastiCacheとRDSを使うことになります。</p>
+<p>私も知りたい話題なので書きます。</p>
 
-<p>しかし、<strong>がんばってRDSを1台で運用</strong>したとしても、
-以下のように、Redisだけで3インスタンス目で38ドルもかかってしまいます。</p>
+<h2 id="与件とサンプルコード">与件とサンプルコード</h2>
 
-<table>
-<thead>
-<tr>
-<th># 🐘</th>
-<th>ElastiCache</th>
-<th>RDS</th>
-</tr>
-</thead>
+<p><blockquote class="embedly-card" data-card-key="6f257114b6df4413a3f5872a7e143278" data-card-type="article-full"><h4><a href="http://highwide.hatenablog.com/entry/2019/03/03/220653">privateメソッドのテストについての考え方 #yochiyochirb - No Purpose</a></h4><p>よちよち.rbに久しぶりに参加した。 yochiyochirb.doorkeeper.jp 今日の回はjnchitoさんがゲストとして招かれていて、あれこれ質問できるという会だった。 「昔からよちよち.rbに参加してくれてる人も是非」と言ってもらったので参加させてもらった。 jnchitoさんといえば、今でも RSpecのまとめ記事や Rubyの新しいバージョンのまとめ記事はよく拝見するし、</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></p>
 
-<tbody>
-<tr>
-<td>1台目</td>
-<td>$0/mo.(初年度無料枠)</td>
-<td>$0/mo.(初年度無料枠)</td>
-</tr>
-
-<tr>
-<td>2台目</td>
-<td>$19/mo. (無料枠 + 1台)</td>
-<td>$0/mo.(無料枠1台でがんばる)</td>
-</tr>
-
-<tr>
-<td>3台目</td>
-<td>$38/mo.(無料枠 + 2台)</td>
-<td>$0/mo.(無料枠1台でがんばる)</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="ケチケチ作戦">ケチケチ作戦</h2>
-
-<p>そこで、<strong>Redisも1台だけ</strong>にしてしまいます。</p>
-
-<table>
-<thead>
-<tr>
-<th># 🐘</th>
-<th>ElastiCache</th>
-<th>RDS</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>1台目</td>
-<td>$0/mo.(初年度無料枠)</td>
-<td>$0/mo.(初年度無料枠)</td>
-</tr>
-
-<tr>
-<td>2台目</td>
-<td>$0/mo.(無料枠1台でがんばる)</td>
-<td>$0/mo.(無料枠1台でがんばる)</td>
-</tr>
-
-<tr>
-<td>3台目</td>
-<td>$0/mo.(無料枠1台でがんばる)</td>
-<td>$0/mo.(無料枠1台でがんばる)</td>
-</tr>
-</tbody>
-</table>
-
-<p>その他はこんな構成です。</p>
-
-<p><img alt="slack" src="/images/cloudcraft-mastodon.png" width=1600></p>
-
-<p>これでEC2代だけになったわ♡ と思ったところ、そんなにうまくはいきませんでした。</p>
-
-<p>動作確認したところ、<strong>どうも🐘のキャッシュが他の🐘に影響を与えてしまっている</strong>、、</p>
-
-<h2 id="ケチケチ作戦ワークアラウンド">ケチケチ作戦ワークアラウンド</h2>
-
-<p>こういうふうにやっていきます。</p>
-
-<pre><code class="language-diff">--- a/config/initializers/redis.rb
-+++ b/config/initializers/redis.rb
-@@ -4,5 +4,6 @@ Redis.current = Redis.new(
-   host: ENV.fetch('REDIS_HOST') { 'localhost' },
-   port: ENV.fetch('REDIS_PORT') { 6379 },
-   password: ENV.fetch('REDIS_PASSWORD') { false },
-+  db: ENV.fetch('REDIS_DB') { 0 }.to_i,
-   driver: :hiredis
- )
-diff --git a/streaming/index.js b/streaming/index.js
-index a1e7eaca..29ded9e2 100644
---- a/streaming/index.js
-+++ b/streaming/index.js
-@@ -39,7 +39,8 @@ const wss    = new WebSocket.Server({ server })
- const redisClient = redis.createClient({
-   host:     process.env.REDIS_HOST     || '127.0.0.1',
-   port:     process.env.REDIS_PORT     || 6379,
--  password: process.env.REDIS_PASSWORD
-+  password: process.env.REDIS_PASSWORD,
-+  db:       process.env.REDIS_DB || 0
- })
-
- const subs = {}
+<pre><code class="language-ruby">module Tasks
+  module Hoge
+    class Sender
+      def self.execute
+        data = aggregate_data
+        processed_data = process_data(data)
+        send_s3(processed_data)
+      end
+    end
+  end
+end
 </code></pre>
 
-<p>REDIS_DBという環境変数を誕生させdbを隔離します。</p>
+<h4 id="レスポンス">レスポンス</h4>
 
-<p>これでいまんとこ大丈夫だけど、redis詳しくないし、何か間違っている気もする🎲保証はしない</p>
+<ul>
+<li><a href="https://sinsoku.hatenablog.com/entry/2019/03/03/235030">「privateメソッドのテストについての考え方」を読んで #yochiyochirb - アジャイルSEの憂鬱</a></li>
+</ul>
 
-<p>インスタンスごとに0,1,2,3&hellip;と値を入れます。</p>
+<h2 id="プライベートクラスっぽく書く">プライベートクラスっぽく書く</h2>
 
-<p>このへんの制御もterraformでやる。</p>
+<p>最近わりと「優等生ではない」コードが好きです</p>
 
-<h3 id="まとめ">✎まとめ</h3>
+<p>↓こう書くのが一年後もう一度読んでも読みやすい感じになると思う。</p>
 
-<p>terraform楽しいです
-<script type="text/javascript" src="/js/prism.js" async></script></p>
+<p>つまり、rubyでも、<strong>気軽にプライベートクラスみたいの</strong> を作っちゃえばいいんじゃないかなと思います。</p>
+
+<pre><code class="language-ruby"># app/models/tasks/hoge/sender.rb
+module Tasks
+  module Hoge
+    class Sender
+      def self.execute
+        data = Aggregator.execute
+        data = Processor.execute(data)
+        S3.execute(data)
+      end
+    end
+  end
+end
+</code></pre>
+
+<pre><code class="language-ruby"># app/models/tasks/hoge/sender/aggregator.rb
+module Tasks
+  class Hoge::Sender::Aggregator
+    def self.execute
+      # 処理...
+    end
+  end
+end
+</code></pre>
+
+<pre><code class="language-ruby"># app/models/tasks/hoge/sender/processer.rb
+module Tasks
+  class Hoge::Sender::Processor
+    def self.execute(data)
+      # 処理...
+    end
+  end
+end
+</code></pre>
+
+<pre><code class="language-ruby"># app/models/tasks/hoge/sender/s3.rb
+module Tasks
+  class Hoge::Sender::S3
+    def self.execute(data)
+      # 処理...
+    end
+  end
+end
+</code></pre>
+
+<p>で、<strong>外側のクラスのテストは、もう、こんな感じにしちゃう。</strong></p>
+
+<pre><code class="language-ruby">describe Tasks::Hoge::Sender do
+  describe '.execute' do
+    it 'calls Aggregator.execute, Processor.execute, and S3.execute' do
+      aggregated_data = double
+      processed_data  = double
+      s3_result       = double
+      expect(Aggregator).to recieve(:execute) { aggregated_data }
+      expect(Processor).to recieve(:execute).with(aggregated_data) { processed_data }
+      expect(S3).to recieve(:execute).with(processed_data) { s3_result }
+      expect(Tasks::Hoge::Sender.execute).to eq s3_result
+    end
+  end
+end
+</code></pre>
+
+<p>(これはあまり振る舞いのテストになってないから、微妙だと思う人はいるかも。)</p>
+
+<p>(もちろん、Aggregatorとかのテストは書く。そっちは書きやすいはず)</p>
+
+<h1 id="メリットとか-考えとか">メリットとか、考えとか</h1>
+
+<h2 id="前提として私は-関心がある-ことはテストしたい">前提として私は「関心がある」ことはテストしたい</h2>
+
+<p>この例の場合だと、aggregate_data、processed_data、send_s3などの振る舞いは、私は関心がある。</p>
+
+<p>私は振る舞いが変わったらテストで気づきたいと思ってる。</p>
+
+<p>なのでユニットテストを書く。</p>
+
+<p>どの単位でテストを書くのが良いのかは難しいけど、<strong>私は、メンテする人が関心のある単位でテストを書いたほうが、メンテもラクになると思っている。</strong></p>
+
+<h2 id="プライベートメソッド化しない理由">プライベートメソッド化しない理由</h2>
+
+<p>まず単純に、Senderのaggregate_data, processed_data, send_s3をプライベート化すると、
+テストでObject#sendを使わないといけないのが気持ち悪い。</p>
+
+<p>パブリックメソッドSender.execute経由でプライベートメソッド化した部品の振る舞いを
+<strong>「間接的に」テストすることは可能だし、全然書けるんだけど、のちのちに場合分けと組み合わせの量で死ねる</strong> ことがある。</p>
+
+<p>組み合わせの多さはshared_exampleでなんとかなるけど、それでもある程度の読みづらさは残る。</p>
+
+<h2 id="クラスの名前空間を利用したプライベートクラス宣言">クラスの名前空間を利用したプライベートクラス宣言</h2>
+
+<p>この例で、Tasks::Hoge::Sender::Aggregator.executeはパブリックなんだけど、</p>
+
+<p>Senderクラスの名前空間の中にいるので、見た目の上下関係がスッキリしていて良いと思う。</p>
+
+<h2 id="new使わないの">.new使わないの?</h2>
+
+<p>これはあまり関係ない。やる内容によって使ってもいいと思う。</p>
+
+<p>例えばキャッシュとかをインスタンス変数に入れたくなる+スレッドセーフにする場合には明らかにインスタンスを作るのが良い。</p>
+
+<h2 id="クラスを増やすとファイルが多くなり-ファイルが多くなると読むのが辛いと思う人がいると思う">クラスを増やすとファイルが多くなり、ファイルが多くなると読むのが辛いと思う人がいると思う</h2>
+
+<p>rubyって普通に賢く書くとすごく短く書けてしまうので、
+どうも人は自分の書いたコードを「大したことは書いてない」と過小評価する癖があると思ってる。</p>
+
+<p>同じことをコンパイル言語で書こうとすることを想像すると良いかも。</p>
+
+<p>この例みたいに十分複雑なことをやっている(と私は思う)場合は、ファイルの数がテストとか含めて10個ぐらい増えても、割と妥当だと思うようになってきました。</p>
+
+<p>一方で<strong>ファイル数が増えることによってエディタで眺めるときに視認性が悪いと感じる人はいるんじゃないかなと思ってる。(私は今はそうは思わない派)</strong></p>
+
+<p>(<a href="https://qa.atmarkit.co.jp/q/2784">記事「プライベートメソッドのユニットテストは書かないもの？ - QA@IT」</a> は、良記事っぽい記事なんだけど、rubyに特化した話ではないし、あまりファイル数の話は されていなかった)</p>
+
+<h2 id="まあ">まあ</h2>
+
+<p>まあ実際、ぶっちゃけそこまでこだわりはないし(おい)、仕事のコードではテストコードも含めて周囲のコードの雰囲気に合わせるようにしている。</p>
+
+<script type="text/javascript" src="/js/prism.js" async></script>
 
 <hr />
 
@@ -313,7 +346,7 @@ index a1e7eaca..29ded9e2 100644
 </style>
 
 <div class="widget horizontal mouseover">
-  <a id="btn" target="_blank" rel="noopener noreferrer" href="https://pixe.la/v1/users/hoshinotsuyoshi/graphs/hblog-20170428-2.html">
+  <a id="btn" target="_blank" rel="noopener noreferrer" href="https://pixe.la/v1/users/hoshinotsuyoshi/graphs/hblog-20190304-1.html">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" x="5" y="95" width="74px" height="20px" viewBox="0 0 14740 3980" preserveAspectRatio="xMidYMid meet">
 <g id="layer101" fill="#000000" stroke="none">
  <path d="M2430 3706 l0 -276 501 0 c396 0 500 3 497 13 -7 21 -168 155 -273 226 -187 128 -388 222 -590 276 -55 14 -108 29 -117 31 -17 5 -18 -13 -18 -270z"></path>
@@ -390,12 +423,12 @@ index a1e7eaca..29ded9e2 100644
   </a>
 </div>
 <div class="fukidashi">
-  <img src="https://pixe.la/v1/users/hoshinotsuyoshi/graphs/hblog-20170428-2">
+  <img src="https://pixe.la/v1/users/hoshinotsuyoshi/graphs/hblog-20190304-1">
 </div>
 
 <script>
 (() => {
-    const url = 'https://pixe.la/v1/users/hoshinotsuyoshi\/graphs\/hblog-20170428-2.html';
+    const url = 'https://pixe.la/v1/users/hoshinotsuyoshi\/graphs\/hblog-20190304-1.html';
     const decoder = new TextDecoder();
     const parser = new DOMParser();
     let string = '';
@@ -445,7 +478,7 @@ index a1e7eaca..29ded9e2 100644
     <header class="read-next-card-header">
         <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
         
-        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/mastodon/">#mastodon</a></h3>
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a></h3>
     </header>
     <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
     </div>
@@ -453,74 +486,47 @@ index a1e7eaca..29ded9e2 100644
     <div class="read-next-card-content">
       
         <ul>
+          <li><a href="https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/">{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">neovimからgithubのblameのページに飛べるようにした</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></li>            
+        
           <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/prismjs_intro/">このブログのコードのシンタックスハイライトにPrismを利用することにした</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/">⚡neovim &#43; 🍻ale &#43; 🚓rubocop</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/my_tweets_archive/">自分の全ツイートをこのサイトに貼った</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
       
-        <a href="https://hoshinotsuyoshi.com/tags/mastodon/">See all related posts →</a>
+        <a href="https://hoshinotsuyoshi.com/tags/ruby/">See all related posts →</a>
     </footer>
 </article>
 
 
       
+      
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/gaming-chair/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/akracing-chair-5.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/rubocop_daemon/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/robot1.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/gaming-chair/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/rubocop_daemon/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #chair 
-              #life  </span>
+              #vim 
+              #ruby 
+              #neovim 
+              #rubocop 
+              #rubocop-daemon  </span>
               
-              <h2 class="post-card-title">AKRACINGのゲーミングチェア買って使ってる🎮💺</h2>
+              <h2 class="post-card-title">rubocop-daemonでneovimでのオートコレクトを速くする</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>自宅での作業用に、AKRACINGのゲーミングチェア🎮💺買いました
-
- ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
-          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
-      </footer>
-    </div>
-</article>
-      
-      
-      <article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/amazake/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/amazake.jpg)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/amazake/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #life  </span>
-              
-              <h2 class="post-card-title">甘酒🍶</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>
+                <p>速くなるっぽいので、試してみる!!
+動作 
  ...  </p>
               
           </section>
@@ -545,17 +551,17 @@ index a1e7eaca..29ded9e2 100644
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">複数mastodonを考える 🐘   🐘   🐘</div>
+  <div class="floating-header-title">privateメソッドのテストについての考え方 #yochiyochirb を読んで 私も知りたい</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=%e8%a4%87%e6%95%b0mastodon%e3%82%92%e8%80%83%e3%81%88%e3%82%8b%20%f0%9f%90%98%20%20%20%f0%9f%90%98%20%20%20%f0%9f%90%98&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fmulti-mastodon-poor%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=private%e3%83%a1%e3%82%bd%e3%83%83%e3%83%89%e3%81%ae%e3%83%86%e3%82%b9%e3%83%88%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e3%81%ae%e8%80%83%e3%81%88%e6%96%b9%20%23yochiyochirb%20%e3%82%92%e8%aa%ad%e3%82%93%e3%81%a7%20%e7%a7%81%e3%82%82%e7%9f%a5%e3%82%8a%e3%81%9f%e3%81%84&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby_private_method_test%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fmulti-mastodon-poor%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby_private_method_test%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>
