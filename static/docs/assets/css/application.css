@@ -1,0 +1,364 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+::selection {
+  background: #770;
+}
+
+.gibier {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+}
+
+.gibier .background {
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+}
+
+.gibier .background-filter {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.slide {
+  position: absolute;
+  margin: 0 auto;
+}
+
+.wrap-page {
+  margin: 0 auto;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 60px;
+  page-break-after: always;
+}
+
+.print {
+  background: #fff;
+  background-color: #fff;
+  color: #000;
+}
+
+.slide .page {
+  position: absolute;
+}
+
+.slide .page-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide .page-container {
+  position: absolute;
+}
+
+.slide .page-header {
+  position: absolute;
+  width: 100%;
+  margin: 1em 0;
+  z-index: 103;
+}
+
+.slide .page-content {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 104;
+}
+
+.slide-controll {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.slide-controll .page-back {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.slide-controll .page-forward {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  left: 75%;
+  z-index: 102;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.page p.icon {
+  margin: 0;
+  position: absolute;
+  top: 5.7em;
+  left: 25em;
+}
+
+.page p.icon img {
+  width: 3em;
+}
+
+.page code {
+  font-size: 0.8em;
+}
+
+
+.page h3 img {
+  width: 1.2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page h4 img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page img.inline {
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page .inline {
+  margin: 0 8px;
+  float: left;
+}
+
+.page p.huge {
+  text-align: center;
+  font-size: 2.6em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.page p.large {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.page p.large img {
+  width: 80%;
+}
+
+.page p.middle {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 4em;
+}
+
+.page p.middle img {
+  width: 60%;
+}
+
+.page p.portlait {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.page p.portlait img {
+  width: 40%;
+  margin-top: 4em;
+}
+
+.page p.portlait-left {
+  text-align: left;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.page p.portlait-left img {
+  width: 38%;
+  margin-top: 12%;
+  float: left;
+}
+
+.page .right ~ * {
+  position: relative;
+  float: left;
+  margin-top: 10em;
+  margin-left: 2em;
+  width: 20em;
+}
+
+.page p.w90 {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.page p.w90 img {
+  width: 90%;
+}
+
+.page p.w70 {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 4em;
+}
+
+.page p.w70 img {
+  width: 70%;
+}
+
+.page p.w50 {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 4em;
+}
+
+.page p.w50 img {
+  width: 50%;
+}
+
+h1 {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.0em;
+  text-align: center;
+}
+
+.page ul ul {
+  font-size: 0.9em;
+}
+
+.page li {
+  padding-left: 16px;
+}
+
+.page .author {
+  text-align: right;
+  padding-right: 20%;
+}
+
+a:link {
+  color: #cee;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #cee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cca;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #cee;
+  text-decoration: none;
+}
+
+.track-field {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  height: 70px;
+}
+
+.track-field .avatar {
+  position: absolute;
+  left: 2%;
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  border-radius: 4px;
+}
+
+.track-field .flag {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  background-image: url("../images/flag.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 900;
+}
+
+.track-field .rabbit {
+  background-image: url("../images/hunter.png");
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+.track-field .turtle {
+  background-image: url("../images/usagitokame.png");
+  background-repeat: no-repeat;
+  z-index: 999;
+  top: 30px;
+}
+
+.footer .title {
+  position: absolute;
+  bottom: 4px;
+  left: 16px;
+  margin: 0;
+  font-size: 0.6em;
+  color: #888;
+}
+
+.footer .powered-by {
+  position: absolute;
+  bottom: 4px;
+  right: 16px;
+  margin: 0;
+  font-size: 0.6em;
+  color: #888;
+}
+
+.footer .powered-by .hyalite {
+  color: #ee8;
+  font-weight: bold;
+}
+
+.duration {
+  display: none;
+}
