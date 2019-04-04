@@ -1,8 +1,5 @@
 # (エッセイ)3月とrailsdmと○○と俺
 
-%author: hoshinotsuyoshi
-
-%icon: ![](hoshinotsuyoshi.jpg)
 
 %duration: 5min
 
@@ -12,7 +9,15 @@
 
 ---
 
-`s` を押すとタイマーが動きます
+`s` を押すとタイマーが動きます ([youchan/gibier](https://github.com/youchan/gibier)つかってます)
+
+## 自己紹介
+
+* github.com/hoshinotsuyoshi
+* twitter.com/@hoppiestar
+* ECサイトをrailsで作ってます
+
+%icon: ![](hoshinotsuyoshi.jpg)
 
 ---
 
@@ -177,14 +182,17 @@ https://access.redhat.com/security/cve/cve-2019-5418
 
 ---
 
- メンテポリシーのおさらい
+(レールズのメンテポリシーのおさらい)
 
-## Maintenance Policy for Ruby on Rails
+---
+
+#### Maintenance Policy for Ruby on Rails
 
 %large: ![](guide01.png)
 
+---
 
-## Maintenance Policy for Ruby on Rails
+#### Maintenance Policy for Ruby on Rails
 
 %large: ![](guide02.png)
 
@@ -302,12 +310,15 @@ https://access.redhat.com/security/cve/cve-2019-5418
 ## 所感1
 
 * **「これって何ができるんだっけ?」って考える時間の無駄さよ**
+
+## 所感2
+
 * (レールズが古いと)面倒ですね
 * 基本セキュリティパッチが出たらbundle updateしちゃおう
     * ノールックはまずいかもだけど
 * トリアージ？？？なにそれ
 
-## 所感2
+## 所感3
 
 * 重要なのは後対応かも
     * パスワード、パスフレーズ、シークレットキーの変更とか
