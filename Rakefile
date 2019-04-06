@@ -60,6 +60,9 @@ namespace :entry do
       "./content/post/#{Date.today}_#{@slug}.md",
       template.result
     )
+
+    puts "lets do this command"
+    puts "rake 'pixela:create_access_counter_url[#{Date.today.strftime('%Y%m%d')}-1]'"
   end
 end
 
