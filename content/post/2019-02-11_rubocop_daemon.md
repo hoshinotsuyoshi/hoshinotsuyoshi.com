@@ -58,29 +58,24 @@ $ rubocop-daemon start
 
 ### neovim側の設定
 
+【2019/05/12更新】
+
 すでに[aleで保存時にオートコレクトが走る](https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/)ようにしているので、neovim上で`rubocop`コマンドを叩いた時、代わりに`rubocop-daemon exec` が叩かれるようにする。
 
-READMEの[ここ](https://github.com/fohte/rubocop-daemon/tree/v0.3.1#more-speed)に書かれてるラッパースクリプトをダウンロードし、適当なディレクトリに配置。
+READMEの[ここ](https://github.com/fohte/rubocop-daemon/tree/v0.3.1#more-speed)に書かれてるラッパースクリプトを利用する。
 
 ```sh
 # ラッパースクリプトのダウンロード。
 $ curl https://raw.githubusercontent.com/fohte/rubocop-daemon/master/bin/rubocop-daemon-wrapper -o /tmp/rubocop-daemon-wrapper
-
-# 自分の場合はディレクトリはここにした。
-# どこに置くと良いのかわからない。
-$ mkdir -p ~/.rubocop
-
-# 今回の用途としては"rubocop"として保存。
-# aleの設定をそのまま利用したいため。
-$ mv /tmp/rubocop-daemon-wrapper ~/.rubocop/rubocop
-$ chmod +x ~/.rubocop/rubocop
+$ sudo mv /tmp/rubocop-daemon-wrapper /usr/local/bin/rubocop-daemon-wrapper
+$ sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper
 ```
 
-`~/.config/nvim/init.vim`で、この`rubocop`ファイルを見つけられるようにする。
+aleの設定で、実行ファイルを`rubocop-daemon-wrapper`に指定。
 
 ```vimscript
-" nvim限定・rubocopへのパス
-let $PATH="/Users/hoshino/.rubocop:".$PATH
+" ~/.config/nvim/init.vimで。
+let g:ale_ruby_rubocop_executable = 'rubocop-daemon-wrapper'
 ```
 
 設定は以上!
@@ -89,7 +84,6 @@ let $PATH="/Users/hoshino/.rubocop:".$PATH
 
 ### この設定の所感
 
-* vim強い人にどうすればいいか聞きたい
 * .rubocop.ymlに修正が入ったり、利用するrubocopのバージョンが変わる時にいちいちdaemonのリスタートが必要。
 
 ### その他所感

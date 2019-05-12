@@ -49,7 +49,7 @@ aleを利用できるようにします。
 repo = 'w0rp/ale'
 ```
 
-次にaleが呼ぶlinterとしてrubocopを指定します。
+次にaleが呼ぶfixerとしてrubocopを指定します。
 自分の場合は~/.config/nvim/init.vimにベタに書きました。
 
 ```vimscript
