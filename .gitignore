@@ -7,3 +7,4 @@ public/
 dist
 
 slides/vendor/bundle
+.bundle

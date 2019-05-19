@@ -1,0 +1,17 @@
+.gibier .page_0 p.icon {
+  margin: 0;
+  position: relative;
+  left: 22em;
+  top: -3em;
+}
+
+.page p.big {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.page p.big img {
+  width: 100%;
+}
