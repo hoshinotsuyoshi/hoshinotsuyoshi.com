@@ -6,6 +6,10 @@
 
 %duration: 10min
 
+## こんにちは
+
+%big: ![](shinchoku.png)
+
 ## アジェンダ
 
 * vimでrubocop動かす
@@ -61,7 +65,7 @@ https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340
 
 %big: ![](stdin-a.jpg)
 
-## 今日はこういう環境
+## 今日はこういうエディタ環境
 
 * Neovim
     * エディタ
@@ -70,15 +74,13 @@ https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340
 * rubocop
     * 0.70.0
 
-## 今日の設定と、裏側で動くオプション
+## 今日のエディタ設定と、裏側で動くオプション
 
 * ALEのlinter
     * バッファに変更があると `rubocop --stdin` が走る
     * 違反行にマークがつく
 * ALEのfixer
-    * セーブすると `rubocop -a` が走る
-
----
+    * 保存時に `rubocop -a` が走る
 
 ## アジェンダ
 
@@ -93,6 +95,7 @@ https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340
 ### "rubocop -a is slow"
 
 * [rubocop-hq/rubocop#6492](https://github.com/rubocop-hq/rubocop/issues/6492)
+* (この人もエディタからrubocop呼んでる)
 * 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 * 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 * 　
@@ -101,6 +104,7 @@ https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340
 ### "rubocop -a is slow"
 
 * [rubocop-hq/rubocop#6492](https://github.com/rubocop-hq/rubocop/issues/6492)
+* (この人もエディタからrubocop呼んでる)
 * 「とある1100行ぐらいの.rbファイル ([strong_parameter.rb](https://raw.githubusercontent.com/rails/rails/master/actionpack/lib/action_controller/metal/strong_parameters.rb)) で rubocop -a を試した」
 * 　
 * 　
@@ -108,6 +112,7 @@ https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340
 ### "rubocop -a is slow"
 
 * [rubocop-hq/rubocop#6492](https://github.com/rubocop-hq/rubocop/issues/6492)
+* (この人もエディタからrubocop呼んでる)
 * 「とある1100行ぐらいの.rbファイル ([strong_parameter.rb](https://raw.githubusercontent.com/rails/rails/master/actionpack/lib/action_controller/metal/strong_parameters.rb)) で rubocop -a を試した」
 * 「実行に 1.37secかかる」
 * 「そのうち<u>requireに0.66sec</u>かかっている」
@@ -200,7 +205,7 @@ sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper
 
 #### その1: キャッシュを消すのをやめる
 
-# rubocopのキャッシュとは
+# 【参考】rubocopのキャッシュとは
 
 * yamlデフォルトで `AllCops: UseCache`
 * オプション `-C/--cache FLAG` でオン・オフを指定できる
@@ -208,38 +213,36 @@ sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper
     * つまり「バッファ変更時(rubocop --stdin)」は効かない
     * 「save時(rubocop -a)」は効く
 
-# rubocopのキャッシュとは
+# 【参考】rubocopのキャッシュとは
 
 * offence(違反)のキャッシュ。
 * 1ファイルにつき1個のJSONファイル。
 * ~/.cache/rubocop_cacheの下に溜まっていく。
 
-# rubocopのキャッシュとは
+# 【参考】rubocopのキャッシュとは
 
 %large: ![](cache-tree.png)
 
-# rubocopのキャッシュとは
+# 【参考】rubocopのキャッシュとは
 
 * ディレクトリ2層+ファイル名
     * $LOADED_FEATURESのファイル全部の中身を連結した文字列のSHA1 digest
     * optionのSHA1 digest
     * 対象ファイルの中身及び設定に由来するデータのSHA1 digest
 
-# キャッシュを消すのをやめる
+# キャッシュONのとき
 
-* キャッシュONのとき
-    * キャッシュを探す
-    * キャッシュがあればその中身を返す
-    * キャッシュを掃除するべきか調べる
-    * 量が多ければ(デフォルト20000)キャッシュを消す
+* キャッシュを探す
+* キャッシュがあればその中身を返す
+* キャッシュを掃除するべきか調べる
+* 量が多ければ(デフォルト20000)キャッシュを消す
 
-# キャッシュを消すのをやめる
+# キャッシュONのとき
 
-* キャッシュONのとき
-    * キャッシュを探す
-    * キャッシュがあればその中身を返す
-    * <u>キャッシュを掃除するべきか調べる</u> <- 8000個で220ms❗
-    * 量が多ければ(デフォルト20000)キャッシュを消す
+* キャッシュを探す
+* キャッシュがあればその中身を返す
+* <u>キャッシュを掃除するべきか調べる</u> <- 8000個で220ms❗
+* 量が多ければ(デフォルト20000)キャッシュを消す
 
 # エディタの時はキャッシュを消すのをやめたい!
 
@@ -253,26 +256,33 @@ sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper
 * 出した! [rubocop-hq/rubocop#7069](https://github.com/rubocop-hq/rubocop/pull/7069)
     * 昨日(2019/5/23)マージされた! 🎉
 
+---
+
 #### その2: バッファ変更時にもキャッシュが効くようにしたい(願望)
 
 # バッファ変更時にもキャッシュが効くようにする
 
-* まだPR出してない・悩み中・調査中
-* strong_parameter.rbで 200ms-300msぐらい速くなりそう!
-* このほうがいいはず・シンプル
+* まだPR出してない
+* 調査中
+    * 何故かこれやるとALEが動かない気がする...
+    * (何か勘違いしてて)もしかしたらできないかも...
+    * 詳しい人教えてくれ
+* 実現できれば、strong_parameter.rbで 300msぐらい速くなりそう!
 
 # まとめ1: rubocop-daemonすごい
 
 * 使うだけでほとんどの場合 -0.80sec 🚀 ぐらいいくはず!
 
-# まとめ2: save時のパフォーマンスアップ
+# まとめ2: 保存時のパフォーマンスアップ
 
-* キャッシュがたくさんあったときにも、遅くなりません!
+* キャッシュがたくさんあったときにも、遅くならないようにしたつもり!
    * (例：8000個ぐらいのときに) 従来比: -0.22sec 🚀
+* 0.70.0の次のバージョンで!
 
 # まとめ3: バッファ変更時のパフォーマンスアップ(妄想)
 
-* 200ms-300msぐらい速くなりそう!
+* これ妄想
+* strong_parameters.rbで -0.3secぐらい速くなりそう!
 
 ## 自己紹介
 

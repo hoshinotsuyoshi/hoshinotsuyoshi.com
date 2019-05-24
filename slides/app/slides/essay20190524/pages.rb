@@ -14,6 +14,18 @@ end
 
 class Gibier::Page1 < Gibier::PageBase
 def header
+  h2(nil, "こんにちは")
+end
+
+def content
+  [].tap do |children|
+      children << p({className:"big"}, p({class:""}, img({src:"#{Gibier.assets_path}/images/shinchoku.png"}, "")))
+  end
+end
+end
+
+class Gibier::Page2 < Gibier::PageBase
+def header
   h2(nil, "アジェンダ")
 end
 
@@ -28,7 +40,7 @@ def content
 end
 end
 
-class Gibier::Page2 < Gibier::PageBase
+class Gibier::Page3 < Gibier::PageBase
 def header
   h2(nil, "アジェンダ")
 end
@@ -44,7 +56,7 @@ def content
 end
 end
 
-class Gibier::Page3 < Gibier::PageBase
+class Gibier::Page4 < Gibier::PageBase
 def header
   h2(nil, "最初に: rubocopとは")
 end
@@ -57,7 +69,7 @@ def content
 end
 end
 
-class Gibier::Page4 < Gibier::PageBase
+class Gibier::Page5 < Gibier::PageBase
 def header
   h2(nil, "使い方おさらい")
 end
@@ -69,7 +81,7 @@ def content
 end
 end
 
-class Gibier::Page5 < Gibier::PageBase
+class Gibier::Page6 < Gibier::PageBase
 def header
   h2(nil, "エディタに関係の深いオプション")
 end
@@ -91,7 +103,7 @@ def content
 end
 end
 
-class Gibier::Page6 < Gibier::PageBase
+class Gibier::Page7 < Gibier::PageBase
 def header
   h2(nil, "余談1: --stdinになんでFILE引数が要るの?")
 end
@@ -103,7 +115,7 @@ def content
 end
 end
 
-class Gibier::Page7 < Gibier::PageBase
+class Gibier::Page8 < Gibier::PageBase
 def header
   h2(nil, "余談1: --stdinになんでFILE引数が要るの?")
 end
@@ -115,7 +127,7 @@ def content
 end
 end
 
-class Gibier::Page8 < Gibier::PageBase
+class Gibier::Page9 < Gibier::PageBase
 def header
   h2(nil, "余談2: 他のツールの--stdinオプション")
 end
@@ -136,7 +148,7 @@ def content
 end
 end
 
-class Gibier::Page9 < Gibier::PageBase
+class Gibier::Page10 < Gibier::PageBase
 def header
   h2(nil, "余談3: -aと--stdinを組み合わせると?")
 end
@@ -149,7 +161,7 @@ def content
 end
 end
 
-class Gibier::Page10 < Gibier::PageBase
+class Gibier::Page11 < Gibier::PageBase
 def header
   h2(nil, "余談3: -aと--stdinを組み合わせると?")
 end
@@ -161,9 +173,9 @@ def content
 end
 end
 
-class Gibier::Page11 < Gibier::PageBase
+class Gibier::Page12 < Gibier::PageBase
 def header
-  h2(nil, "今日はこういう環境")
+  h2(nil, "今日はこういうエディタ環境")
 end
 
 def content
@@ -186,9 +198,9 @@ def content
 end
 end
 
-class Gibier::Page12 < Gibier::PageBase
+class Gibier::Page13 < Gibier::PageBase
 def header
-  h2(nil, "今日の設定と、裏側で動くオプション")
+  h2(nil, "今日のエディタ設定と、裏側で動くオプション")
 end
 
 def content
@@ -201,16 +213,9 @@ def content
       ),
                   li(nil, "ALEのfixer"),
                   ul(nil,
-                    li(nil, "セーブすると ",code(nil, "rubocop -a")," が走る")
+                    li(nil, "保存時に ",code(nil, "rubocop -a")," が走る")
       )
       )
-  end
-end
-end
-
-class Gibier::Page13 < Gibier::PageBase
-def content
-  [].tap do |children|
   end
 end
 end
@@ -248,6 +253,7 @@ def content
   [].tap do |children|
       children << ul(nil,
                     li(nil, a({href:"https://github.com/rubocop-hq/rubocop/issues/6492", target:"_blank"}, "rubocop-hq/rubocop#6492")),
+                    li(nil, "(この人もエディタからrubocop呼んでる)"),
                     li(nil, "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"),
                     li(nil, "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"),
                     li(nil, "　"),
@@ -266,6 +272,7 @@ def content
   [].tap do |children|
       children << ul(nil,
                     li(nil, a({href:"https://github.com/rubocop-hq/rubocop/issues/6492", target:"_blank"}, "rubocop-hq/rubocop#6492")),
+                    li(nil, "(この人もエディタからrubocop呼んでる)"),
                     li(nil, "「とある1100行ぐらいの.rbファイル (",a({href:"https://raw.githubusercontent.com/rails/rails/master/actionpack/lib/action_controller/metal/strong_parameters.rb", target:"_blank"}, "strong_parameter.rb"),") で rubocop -a を試した」"),
                     li(nil, "　"),
                     li(nil, "　")
@@ -283,6 +290,7 @@ def content
   [].tap do |children|
       children << ul(nil,
                     li(nil, a({href:"https://github.com/rubocop-hq/rubocop/issues/6492", target:"_blank"}, "rubocop-hq/rubocop#6492")),
+                    li(nil, "(この人もエディタからrubocop呼んでる)"),
                     li(nil, "「とある1100行ぐらいの.rbファイル (",a({href:"https://raw.githubusercontent.com/rails/rails/master/actionpack/lib/action_controller/metal/strong_parameters.rb", target:"_blank"}, "strong_parameter.rb"),") で rubocop -a を試した」"),
                     li(nil, "「実行に 1.37secかかる」"),
                     li(nil, "「そのうち",u(nil, "requireに0.66sec"),"かかっている」")
@@ -521,7 +529,7 @@ end
 
 class Gibier::Page38 < Gibier::PageBase
 def header
-  h1(nil, "rubocopのキャッシュとは")
+  h1(nil, "【参考】rubocopのキャッシュとは")
 end
 
 def content
@@ -541,7 +549,7 @@ end
 
 class Gibier::Page39 < Gibier::PageBase
 def header
-  h1(nil, "rubocopのキャッシュとは")
+  h1(nil, "【参考】rubocopのキャッシュとは")
 end
 
 def content
@@ -557,7 +565,7 @@ end
 
 class Gibier::Page40 < Gibier::PageBase
 def header
-  h1(nil, "rubocopのキャッシュとは")
+  h1(nil, "【参考】rubocopのキャッシュとは")
 end
 
 def content
@@ -569,7 +577,7 @@ end
 
 class Gibier::Page41 < Gibier::PageBase
 def header
-  h1(nil, "rubocopのキャッシュとは")
+  h1(nil, "【参考】rubocopのキャッシュとは")
 end
 
 def content
@@ -588,19 +596,16 @@ end
 
 class Gibier::Page42 < Gibier::PageBase
 def header
-  h1(nil, "キャッシュを消すのをやめる")
+  h1(nil, "キャッシュONのとき")
 end
 
 def content
   [].tap do |children|
       children << ul(nil,
-                  li(nil, "キャッシュONのとき"),
-                  ul(nil,
                     li(nil, "キャッシュを探す"),
                     li(nil, "キャッシュがあればその中身を返す"),
                     li(nil, "キャッシュを掃除するべきか調べる"),
                     li(nil, "量が多ければ(デフォルト20000)キャッシュを消す")
-      )
       )
   end
 end
@@ -608,19 +613,16 @@ end
 
 class Gibier::Page43 < Gibier::PageBase
 def header
-  h1(nil, "キャッシュを消すのをやめる")
+  h1(nil, "キャッシュONのとき")
 end
 
 def content
   [].tap do |children|
       children << ul(nil,
-                  li(nil, "キャッシュONのとき"),
-                  ul(nil,
                     li(nil, "キャッシュを探す"),
                     li(nil, "キャッシュがあればその中身を返す"),
                     li(nil, u(nil, "キャッシュを掃除するべきか調べる")," <- 8000個で220ms❗"),
                     li(nil, "量が多ければ(デフォルト20000)キャッシュを消す")
-      )
       )
   end
 end
@@ -655,12 +657,19 @@ def content
                     li(nil, "昨日(2019/5/23)マージされた! 🎉")
       )
       )
-      children << h4(nil, "その2: バッファ変更時にもキャッシュが効くようにしたい(願望)")
   end
 end
 end
 
 class Gibier::Page46 < Gibier::PageBase
+def content
+  [].tap do |children|
+      children << h4(nil, "その2: バッファ変更時にもキャッシュが効くようにしたい(願望)")
+  end
+end
+end
+
+class Gibier::Page47 < Gibier::PageBase
 def header
   h1(nil, "バッファ変更時にもキャッシュが効くようにする")
 end
@@ -668,15 +677,20 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, "まだPR出してない・悩み中・調査中"),
-                    li(nil, "strong_parameter.rbで 200ms-300msぐらい速くなりそう!"),
-                    li(nil, "このほうがいいはず・シンプル")
+                    li(nil, "まだPR出してない"),
+                  li(nil, "調査中"),
+                  ul(nil,
+                    li(nil, "何故かこれやるとALEが動かない気がする..."),
+                    li(nil, "(何か勘違いしてて)もしかしたらできないかも..."),
+                    li(nil, "詳しい人教えてくれ")
+      ),
+                    li(nil, "実現できれば、strong_parameter.rbで 300msぐらい速くなりそう!")
       )
   end
 end
 end
 
-class Gibier::Page47 < Gibier::PageBase
+class Gibier::Page48 < Gibier::PageBase
 def header
   h1(nil, "まとめ1: rubocop-daemonすごい")
 end
@@ -690,24 +704,25 @@ def content
 end
 end
 
-class Gibier::Page48 < Gibier::PageBase
+class Gibier::Page49 < Gibier::PageBase
 def header
-  h1(nil, "まとめ2: save時のパフォーマンスアップ")
+  h1(nil, "まとめ2: 保存時のパフォーマンスアップ")
 end
 
 def content
   [].tap do |children|
       children << ul(nil,
-                  li(nil, "キャッシュがたくさんあったときにも、遅くなりません!"),
+                  li(nil, "キャッシュがたくさんあったときにも、遅くならないようにしたつもり!"),
                   ul(nil,
                     li(nil, "(例：8000個ぐらいのときに) 従来比: -0.22sec 🚀")
-      )
+      ),
+                    li(nil, "0.70.0の次のバージョンで!")
       )
   end
 end
 end
 
-class Gibier::Page49 < Gibier::PageBase
+class Gibier::Page50 < Gibier::PageBase
 def header
   h1(nil, "まとめ3: バッファ変更時のパフォーマンスアップ(妄想)")
 end
@@ -715,13 +730,14 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, "200ms-300msぐらい速くなりそう!")
+                    li(nil, "これ妄想"),
+                    li(nil, "strong_parameters.rbで -0.3secぐらい速くなりそう!")
       )
   end
 end
 end
 
-class Gibier::Page50 < Gibier::PageBase
+class Gibier::Page51 < Gibier::PageBase
 def header
   h2(nil, "自己紹介")
 end
@@ -738,5 +754,5 @@ def content
 end
 end
 
-Gibier.page_count = 51
+Gibier.page_count = 52
 Gibier.title = "まとめ3: バッファ変更時のパフォーマンスアップ(妄想)"
