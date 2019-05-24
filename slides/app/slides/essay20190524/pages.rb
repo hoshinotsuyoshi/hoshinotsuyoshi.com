@@ -7,7 +7,7 @@ def content
   [].tap do |children|
       children << p({className:"author"}, "hoshinotsuyoshi")
       children << p({className:"icon"}, p({class:""}, img({src:"#{Gibier.assets_path}/images/hoshinotsuyoshi.jpg"}, "")))
-      children << p({className:"duration"}, "9min")
+      children << p({className:"duration"}, "10min")
   end
 end
 end
@@ -20,7 +20,7 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, "vimでrubocop動かすとは"),
+                    li(nil, "vimでrubocop動かす"),
                     li(nil, "rubocop-daemonめっちゃ速い"),
                     li(nil, "さらに速くする妄想")
       )
@@ -36,7 +36,7 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, b(nil, "vimでrubocop動かすとは")),
+                    li(nil, b(nil, "vimでrubocop動かす")),
                     li(nil, "rubocop-daemonめっちゃ速い"),
                     li(nil, "さらに速くする妄想")
       )
@@ -46,7 +46,7 @@ end
 
 class Gibier::Page3 < Gibier::PageBase
 def header
-  h2(nil, "rubocopとは")
+  h2(nil, "最初に: rubocopとは")
 end
 
 def content
@@ -176,6 +176,10 @@ def content
                   li(nil, "ALE"),
                   ul(nil,
                     li(nil, "Neovim/Vim8 で動く非同期Lintツール")
+      ),
+                  li(nil, "rubocop"),
+                  ul(nil,
+                    li(nil, "0.70.0")
       )
       )
   end
@@ -207,7 +211,6 @@ end
 class Gibier::Page13 < Gibier::PageBase
 def content
   [].tap do |children|
-      children << h4(nil, "vimタイム")
   end
 end
 end
@@ -220,7 +223,7 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, del(nil, "vimでrubocop動かすとは")),
+                    li(nil, del(nil, "vimでrubocop動かす")),
                     li(nil, b(nil, "rubocop-daemonめっちゃ速い")),
                     li(nil, "さらに速くする妄想")
       )
@@ -492,7 +495,7 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, del(nil, "vimでrubocop動かすとは")),
+                    li(nil, del(nil, "vimでrubocop動かす")),
                     li(nil, del(nil, "rubocop-daemonめっちゃ速い")),
                     li(nil, b(nil, "さらに速くする妄想"))
       )
@@ -651,118 +654,12 @@ def content
                     li(nil, "昨日マージされた!(2019/5/23) 🎉")
       )
       )
-  end
-end
-end
-
-class Gibier::Page46 < Gibier::PageBase
-def header
-  h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
-end
-
-def content
-  [].tap do |children|
-  end
-end
-end
-
-class Gibier::Page47 < Gibier::PageBase
-def header
-  h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
-end
-
-def content
-  [].tap do |children|
-      children << p(nil, "例えばそれぞれ220msずつ速くなるとすると....")
-      children << ul(nil,
-                  li(nil, "　"),
-                  ul(nil,
-                    li(nil, "　　")
-      ),
-                  li(nil, "　"),
-                  ul(nil,
-                    li(nil, "　　　")
-      )
-      )
-  end
-end
-end
-
-class Gibier::Page48 < Gibier::PageBase
-def header
-  h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
-end
-
-def content
-  [].tap do |children|
-      children << p(nil, "例えばそれぞれ220msずつ速くなるとすると....")
-      children << ul(nil,
-                  li(nil, "普通のユーザ"),
-                  ul(nil,
-                    li(nil, "　　")
-      ),
-                  li(nil, "　"),
-                  ul(nil,
-                    li(nil, "　　　")
-      )
-      )
-  end
-end
-end
-
-class Gibier::Page49 < Gibier::PageBase
-def header
-  h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
-end
-
-def content
-  [].tap do |children|
-      children << p(nil, "例えばそれぞれ220msずつ速くなるとすると....")
-      children << ul(nil,
-                  li(nil, "普通のユーザ"),
-                  ul(nil,
-                    li(nil, "1370ms -> 1150ms 🎉  1.19x faster!")
-      ),
-                  li(nil, "　"),
-                  ul(nil,
-                    li(nil, "　　　")
-      )
-      )
-  end
-end
-end
-
-class Gibier::Page50 < Gibier::PageBase
-def header
-  h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
-end
-
-def content
-  [].tap do |children|
-      children << p(nil, "例えばそれぞれ220msずつ速くなるとすると....")
-      children << ul(nil,
-                  li(nil, "普通のユーザ"),
-                  ul(nil,
-                    li(nil, "1370ms -> 1150ms 🎉  1.19x faster!")
-      ),
-                  li(nil, "rubocop-daemonを使うユーザ"),
-                  ul(nil,
-                    li(nil, "615ms  ->  395ms 🎉  ",u(nil, "1.56x")," faster!")
-      )
-      )
-  end
-end
-end
-
-class Gibier::Page51 < Gibier::PageBase
-def content
-  [].tap do |children|
       children << h4(nil, "その2: バッファ変更時にもキャッシュが効くようにする")
   end
 end
 end
 
-class Gibier::Page52 < Gibier::PageBase
+class Gibier::Page46 < Gibier::PageBase
 def header
   h1(nil, "バッファ変更時にもキャッシュが効くようにする")
 end
@@ -770,7 +667,7 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, "200msぐらい速くなる 🎉"),
+                    li(nil, "strong_parameter.rbで 300msぐらい速くなる 🎉"),
                     li(nil, "まだPR出してない"),
                     li(nil, "このほうがいいはず・シンプル"),
                     li(nil, "悩み中")
@@ -779,43 +676,37 @@ def content
 end
 end
 
-class Gibier::Page53 < Gibier::PageBase
+class Gibier::Page47 < Gibier::PageBase
 def header
-  h1(nil, "まとめ1: バッファ変更時のパフォーマンスアップ")
+  h1(nil, "まとめ1: save時のパフォーマンスアップ")
 end
 
 def content
   [].tap do |children|
-      children << p(nil, "キャッシュに8000+オブジェクトがあるとき・strong_parameter.rb 1100行・キャッシュあり")
       children << ul(nil,
-                    li(nil, "通常時:"),
-                    li(nil, "rubocop-daemon使用すると:"),
-                    li(nil, "高速化その2:"),
-                    li(nil, "高速化その1:")
+                    li(nil, "rubocop-daemon使用すると: -0.80sec 🚀"),
+                    li(nil, "高速化その1の効果で: さらに -0.22sec")
       )
   end
 end
 end
 
-class Gibier::Page54 < Gibier::PageBase
+class Gibier::Page48 < Gibier::PageBase
 def header
-  h1(nil, "まとめ2: save時のパフォーマンスアップ")
+  h1(nil, "まとめ2: バッファ変更時のパフォーマンスアップ")
 end
 
 def content
   [].tap do |children|
-      children << p(nil, "キャッシュに8000+オブジェクトがあるとき・strong_parameter.rb 1100行・キャッシュあり")
       children << ul(nil,
-                    li(nil, "通常時:"),
-                    li(nil, "rubocop-daemon使用すると:"),
-                    li(nil, "高速化その2:"),
-                    li(nil, "高速化その1:")
+                    li(nil, "rubocop-daemon使用すると: -0.80sec 🚀"),
+                    li(nil, "高速化その1とその2の効果で: -キャッシュ分速くなる 🚀")
       )
   end
 end
 end
 
-class Gibier::Page55 < Gibier::PageBase
+class Gibier::Page49 < Gibier::PageBase
 def header
   h2(nil, "自己紹介")
 end
@@ -832,5 +723,5 @@ def content
 end
 end
 
-Gibier.page_count = 56
-Gibier.title = "まとめ2: save時のパフォーマンスアップ"
+Gibier.page_count = 50
+Gibier.title = "まとめ2: バッファ変更時のパフォーマンスアップ"

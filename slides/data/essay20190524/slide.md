@@ -4,21 +4,21 @@
 
 %icon: ![](hoshinotsuyoshi.jpg)
 
-%duration: 9min
+%duration: 10min
 
 ## アジェンダ
 
-* vimでrubocop動かすとは
+* vimでrubocop動かす
 * rubocop-daemonめっちゃ速い
 * さらに速くする妄想
 
 ## アジェンダ
 
-* <b>vimでrubocop動かすとは</b>
+* <b>vimでrubocop動かす</b>
 * rubocop-daemonめっちゃ速い
 * さらに速くする妄想
 
-## rubocopとは
+## 最初に: rubocopとは
 
 静的コード解析器であり、Lintツールであり、コードフォーマッタ。
 
@@ -67,6 +67,8 @@ https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340
     * エディタ
 * ALE
     * Neovim/Vim8 で動く非同期Lintツール
+* rubocop
+    * 0.70.0
 
 ## 今日の設定と、裏側で動くオプション
 
@@ -78,11 +80,9 @@ https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340
 
 ---
 
-#### vimタイム
-
 ## アジェンダ
 
-* <del>vimでrubocop動かすとは</del>
+* <del>vimでrubocop動かす</del>
 * <b>rubocop-daemonめっちゃ速い</b>
 * さらに速くする妄想
 
@@ -188,7 +188,7 @@ sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper
 
 ## アジェンダ
 
-* <del>vimでrubocop動かすとは</del>
+* <del>vimでrubocop動かす</del>
 * <del>rubocop-daemonめっちゃ速い</del>
 * <b>さらに速くする妄想</b>
 
@@ -251,73 +251,24 @@ sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper
 * 出した! [rubocop-hq/rubocop#7069](https://github.com/rubocop-hq/rubocop/pull/7069)
     * 昨日マージされた!(2019/5/23) 🎉
 
-
-# ファイルが1個ならキャッシュを消すのをやめる
-
-# ファイルが1個ならキャッシュを消すのをやめる
-
-例えばそれぞれ220msずつ速くなるとすると....
-
-* 　
-   * 　　
-* 　
-   * 　　　
-
-# ファイルが1個ならキャッシュを消すのをやめる
-
-例えばそれぞれ220msずつ速くなるとすると....
-
-* 普通のユーザ
-   * 　　
-* 　
-   * 　　　
-
-# ファイルが1個ならキャッシュを消すのをやめる
-
-例えばそれぞれ220msずつ速くなるとすると....
-
-* 普通のユーザ
-   * 1370ms -> 1150ms 🎉  1.19x faster!
-* 　
-   * 　　　
-
-# ファイルが1個ならキャッシュを消すのをやめる
-
-例えばそれぞれ220msずつ速くなるとすると....
-
-* 普通のユーザ
-   * 1370ms -> 1150ms 🎉  1.19x faster!
-* rubocop-daemonを使うユーザ
-   * 615ms  ->  395ms 🎉  <u>1.56x</u> faster!
-
----
-
 #### その2: バッファ変更時にもキャッシュが効くようにする
 
 # バッファ変更時にもキャッシュが効くようにする
 
-* 200msぐらい速くなる 🎉
+* strong_parameter.rbで 300msぐらい速くなる 🎉
 * まだPR出してない
 * このほうがいいはず・シンプル
 * 悩み中
 
-# まとめ1: バッファ変更時のパフォーマンスアップ
+# まとめ1: save時のパフォーマンスアップ
 
-キャッシュに8000+オブジェクトがあるとき・strong_parameter.rb 1100行・キャッシュあり
+* rubocop-daemon使用すると: -0.80sec 🚀
+* 高速化その1の効果で: さらに -0.22sec
 
-* 通常時:
-* rubocop-daemon使用すると:
-* 高速化その2:
-* 高速化その1:
+# まとめ2: バッファ変更時のパフォーマンスアップ
 
-# まとめ2: save時のパフォーマンスアップ
-
-キャッシュに8000+オブジェクトがあるとき・strong_parameter.rb 1100行・キャッシュあり
-
-* 通常時:
-* rubocop-daemon使用すると:
-* 高速化その2:
-* 高速化その1:
+* rubocop-daemon使用すると: -0.80sec 🚀
+* 高速化その1とその2の効果で: -キャッシュ分速くなる 🚀
 
 ## 自己紹介
 
