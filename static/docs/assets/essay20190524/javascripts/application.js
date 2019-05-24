@@ -29750,7 +29750,7 @@ Opal.modules["slides/essay20190524/pages"] = function(Opal) {
   }
   var self = Opal.top, $nesting = [], nil = Opal.nil, $breaker = Opal.breaker, $slice = Opal.slice, $klass = Opal.klass, $send = Opal.send, $hash2 = Opal.hash2, $writer = nil;
 
-  Opal.add_stubs(['$h1', '$tap', '$<<', '$p', '$img', '$assets_path', '$h2', '$ul', '$li', '$b', '$code', '$i', '$a', '$h4', '$del', '$h3', '$u', '$page_count=', '$-', '$title=']);
+  Opal.add_stubs(['$h1', '$tap', '$<<', '$p', '$img', '$assets_path', '$h2', '$ul', '$li', '$b', '$code', '$i', '$a', '$del', '$h4', '$h3', '$u', '$page_count=', '$-', '$title=']);
   
   (function($base, $super, $parent_nesting) {
     function $Page0(){};
@@ -29773,7 +29773,7 @@ if (children == null) children = nil;
       
         children['$<<'](self.$p($hash2(["className"], {"className": "author"}), "hoshinotsuyoshi"));
         children['$<<'](self.$p($hash2(["className"], {"className": "icon"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/hoshinotsuyoshi.jpg"}), ""))));
-        return children['$<<'](self.$p($hash2(["className"], {"className": "duration"}), "9min"));}, TMP_2.$$s = self, TMP_2.$$arity = 1, TMP_2))
+        return children['$<<'](self.$p($hash2(["className"], {"className": "duration"}), "10min"));}, TMP_2.$$s = self, TMP_2.$$arity = 1, TMP_2))
     }, TMP_Page0_content_3.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29787,14 +29787,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page1_header_4 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "アジェンダ")
+      return self.$h2(nil, "こんにちは")
     }, TMP_Page1_header_4.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page1_content_6 = function $$content() {
       var TMP_5, self = this;
 
       return $send([], 'tap', [], (TMP_5 = function(children){var self = TMP_5.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "vimでrubocop動かすとは"), self.$li(nil, "rubocop-daemonめっちゃ速い"), self.$li(nil, "さらに速くする妄想")))}, TMP_5.$$s = self, TMP_5.$$arity = 1, TMP_5))
+      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/shinchoku.png"}), ""))))}, TMP_5.$$s = self, TMP_5.$$arity = 1, TMP_5))
     }, TMP_Page1_content_6.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29815,7 +29815,7 @@ if (children == null) children = nil;
 
       return $send([], 'tap', [], (TMP_8 = function(children){var self = TMP_8.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, self.$b(nil, "vimでrubocop動かすとは")), self.$li(nil, "rubocop-daemonめっちゃ速い"), self.$li(nil, "さらに速くする妄想")))}, TMP_8.$$s = self, TMP_8.$$arity = 1, TMP_8))
+      return children['$<<'](self.$ul(nil, self.$li(nil, "vimでrubocop動かす"), self.$li(nil, "rubocop-daemonめっちゃ速い"), self.$li(nil, "さらに速くする妄想")))}, TMP_8.$$s = self, TMP_8.$$arity = 1, TMP_8))
     }, TMP_Page2_content_9.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29829,16 +29829,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page3_header_10 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "rubocopとは")
+      return self.$h2(nil, "アジェンダ")
     }, TMP_Page3_header_10.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page3_content_12 = function $$content() {
       var TMP_11, self = this;
 
       return $send([], 'tap', [], (TMP_11 = function(children){var self = TMP_11.$$s || this;
 if (children == null) children = nil;
-      
-        children['$<<'](self.$p(nil, "静的コード解析器であり、Lintツールであり、コードフォーマッタ。"));
-        return children['$<<'](self.$p(nil, "エディタと連携できる。"));}, TMP_11.$$s = self, TMP_11.$$arity = 1, TMP_11))
+      return children['$<<'](self.$ul(nil, self.$li(nil, self.$b(nil, "vimでrubocop動かす")), self.$li(nil, "rubocop-daemonめっちゃ速い"), self.$li(nil, "さらに速くする妄想")))}, TMP_11.$$s = self, TMP_11.$$arity = 1, TMP_11))
     }, TMP_Page3_content_12.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29852,14 +29850,16 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page4_header_13 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "使い方おさらい")
+      return self.$h2(nil, "最初に: rubocopとは")
     }, TMP_Page4_header_13.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page4_content_15 = function $$content() {
       var TMP_14, self = this;
 
       return $send([], 'tap', [], (TMP_14 = function(children){var self = TMP_14.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p(nil, self.$code(nil, "rubocop [options] [file1, file2, ...]")))}, TMP_14.$$s = self, TMP_14.$$arity = 1, TMP_14))
+      
+        children['$<<'](self.$p(nil, "静的コード解析器であり、Lintツールであり、コードフォーマッタ。"));
+        return children['$<<'](self.$p(nil, "エディタと連携できる。"));}, TMP_14.$$s = self, TMP_14.$$arity = 1, TMP_14))
     }, TMP_Page4_content_15.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29873,14 +29873,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page5_header_16 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "エディタに関係の深いオプション")
+      return self.$h2(nil, "使い方おさらい")
     }, TMP_Page5_header_16.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page5_content_18 = function $$content() {
       var TMP_17, self = this;
 
       return $send([], 'tap', [], (TMP_17 = function(children){var self = TMP_17.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "-a/--auto-correct"), self.$ul(nil, self.$li(nil, "オートコレクト。自動修正できるやつは自動修正する。")), self.$li(nil, "-s/--stdin ", self.$i(nil, "FILE")), self.$ul(nil, self.$li(nil, "標準入力からrubyのコードを受け取る。"), self.$li(nil, "エディタとの連携用。"))))}, TMP_17.$$s = self, TMP_17.$$arity = 1, TMP_17))
+      return children['$<<'](self.$p(nil, self.$code(nil, "rubocop [options] [file1, file2, ...]")))}, TMP_17.$$s = self, TMP_17.$$arity = 1, TMP_17))
     }, TMP_Page5_content_18.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29894,14 +29894,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page6_header_19 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "余談1: --stdinになんでFILE引数が要るの?")
+      return self.$h2(nil, "エディタに関係の深いオプション")
     }, TMP_Page6_header_19.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page6_content_21 = function $$content() {
       var TMP_20, self = this;
 
       return $send([], 'tap', [], (TMP_20 = function(children){var self = TMP_20.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/stdin-output.png"}), ""))))}, TMP_20.$$s = self, TMP_20.$$arity = 1, TMP_20))
+      return children['$<<'](self.$ul(nil, self.$li(nil, "-a/--auto-correct"), self.$ul(nil, self.$li(nil, "オートコレクト。自動修正できるやつは自動修正する。")), self.$li(nil, "-s/--stdin ", self.$i(nil, "FILE")), self.$ul(nil, self.$li(nil, "標準入力からrubyのコードを受け取る。"), self.$li(nil, "エディタとの連携用。"))))}, TMP_20.$$s = self, TMP_20.$$arity = 1, TMP_20))
     }, TMP_Page6_content_21.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29922,7 +29922,7 @@ if (children == null) children = nil;
 
       return $send([], 'tap', [], (TMP_23 = function(children){var self = TMP_23.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/stdin-output2.jpg"}), ""))))}, TMP_23.$$s = self, TMP_23.$$arity = 1, TMP_23))
+      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/stdin-output.png"}), ""))))}, TMP_23.$$s = self, TMP_23.$$arity = 1, TMP_23))
     }, TMP_Page7_content_24.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29936,14 +29936,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page8_header_25 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "余談2: 他のツールの--stdinオプション")
+      return self.$h2(nil, "余談1: --stdinになんでFILE引数が要るの?")
     }, TMP_Page8_header_25.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page8_content_27 = function $$content() {
       var TMP_26, self = this;
 
       return $send([], 'tap', [], (TMP_26 = function(children){var self = TMP_26.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, self.$code(nil, "eslint(JavaScript)")), self.$ul(nil, self.$li(nil, self.$code(nil, "--stdin"), " と ", self.$code(nil, "--stdin-filename ファイル名"), " がある")), self.$li(nil, self.$code(nil, "flake8(Python)")), self.$ul(nil, self.$li(nil, self.$code(nil, "--stdin"), " と ", self.$code(nil, "--stdin-display-name ファイル名"), " がある"))))}, TMP_26.$$s = self, TMP_26.$$arity = 1, TMP_26))
+      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/stdin-output2.jpg"}), ""))))}, TMP_26.$$s = self, TMP_26.$$arity = 1, TMP_26))
     }, TMP_Page8_content_27.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29957,16 +29957,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page9_header_28 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "余談3: -aと--stdinを組み合わせると?")
+      return self.$h2(nil, "余談2: 他のツールの--stdinオプション")
     }, TMP_Page9_header_28.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page9_content_30 = function $$content() {
       var TMP_29, self = this;
 
       return $send([], 'tap', [], (TMP_29 = function(children){var self = TMP_29.$$s || this;
 if (children == null) children = nil;
-      
-        children['$<<'](self.$p(nil, "基本的に一緒には使わない。"));
-        return children['$<<'](self.$p(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340", "target": "_brank"}), "https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340")));}, TMP_29.$$s = self, TMP_29.$$arity = 1, TMP_29))
+      return children['$<<'](self.$ul(nil, self.$li(nil, self.$code(nil, "eslint(JavaScript)")), self.$ul(nil, self.$li(nil, self.$code(nil, "--stdin"), " と ", self.$code(nil, "--stdin-filename ファイル名"), " がある")), self.$li(nil, self.$code(nil, "flake8(Python)")), self.$ul(nil, self.$li(nil, self.$code(nil, "--stdin"), " と ", self.$code(nil, "--stdin-display-name ファイル名"), " がある"))))}, TMP_29.$$s = self, TMP_29.$$arity = 1, TMP_29))
     }, TMP_Page9_content_30.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29987,7 +29985,9 @@ if (children == null) children = nil;
 
       return $send([], 'tap', [], (TMP_32 = function(children){var self = TMP_32.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/stdin-a.jpg"}), ""))))}, TMP_32.$$s = self, TMP_32.$$arity = 1, TMP_32))
+      
+        children['$<<'](self.$p(nil, "基本的に一緒には使わない。"));
+        return children['$<<'](self.$p(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340", "target": "_brank"}), "https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340")));}, TMP_32.$$s = self, TMP_32.$$arity = 1, TMP_32))
     }, TMP_Page10_content_33.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -30001,14 +30001,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page11_header_34 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "今日はこういう環境")
+      return self.$h2(nil, "余談3: -aと--stdinを組み合わせると?")
     }, TMP_Page11_header_34.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page11_content_36 = function $$content() {
       var TMP_35, self = this;
 
       return $send([], 'tap', [], (TMP_35 = function(children){var self = TMP_35.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Neovim"), self.$ul(nil, self.$li(nil, "エディタ")), self.$li(nil, "ALE"), self.$ul(nil, self.$li(nil, "Neovim/Vim8 で動く非同期Lintツール"))))}, TMP_35.$$s = self, TMP_35.$$arity = 1, TMP_35))
+      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/stdin-a.jpg"}), ""))))}, TMP_35.$$s = self, TMP_35.$$arity = 1, TMP_35))
     }, TMP_Page11_content_36.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -30022,666 +30022,668 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page12_header_37 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "今日の設定と、裏側で動くオプション")
+      return self.$h2(nil, "今日はこういうエディタ環境")
     }, TMP_Page12_header_37.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page12_content_39 = function $$content() {
       var TMP_38, self = this;
 
       return $send([], 'tap', [], (TMP_38 = function(children){var self = TMP_38.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "ALEのlinter"), self.$ul(nil, self.$li(nil, "バッファに変更があると ", self.$code(nil, "rubocop --stdin"), " が走る"), self.$li(nil, "違反行にマークがつく")), self.$li(nil, "ALEのfixer"), self.$ul(nil, self.$li(nil, "セーブすると ", self.$code(nil, "rubocop -a"), " が走る"))))}, TMP_38.$$s = self, TMP_38.$$arity = 1, TMP_38))
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Neovim"), self.$ul(nil, self.$li(nil, "エディタ")), self.$li(nil, "ALE"), self.$ul(nil, self.$li(nil, "Neovim/Vim8 で動く非同期Lintツール")), self.$li(nil, "rubocop"), self.$ul(nil, self.$li(nil, "0.70.0"))))}, TMP_38.$$s = self, TMP_38.$$arity = 1, TMP_38))
     }, TMP_Page12_content_39.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page13(){};
     var self = $Page13 = $klass($base, $super, 'Page13', $Page13);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page13_content_41;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page13_header_40, TMP_Page13_content_42;
 
-    return (Opal.defn(self, '$content', TMP_Page13_content_41 = function $$content() {
-      var TMP_40, self = this;
+    
+    
+    Opal.defn(self, '$header', TMP_Page13_header_40 = function $$header() {
+      var self = this;
 
-      return $send([], 'tap', [], (TMP_40 = function(children){var self = TMP_40.$$s || this;
+      return self.$h2(nil, "今日のエディタ設定と、裏側で動くオプション")
+    }, TMP_Page13_header_40.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page13_content_42 = function $$content() {
+      var TMP_41, self = this;
+
+      return $send([], 'tap', [], (TMP_41 = function(children){var self = TMP_41.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$h4(nil, "vimタイム"))}, TMP_40.$$s = self, TMP_40.$$arity = 1, TMP_40))
-    }, TMP_Page13_content_41.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$ul(nil, self.$li(nil, "ALEのlinter"), self.$ul(nil, self.$li(nil, "バッファに変更があると ", self.$code(nil, "rubocop --stdin"), " が走る"), self.$li(nil, "違反行にマークがつく")), self.$li(nil, "ALEのfixer"), self.$ul(nil, self.$li(nil, "保存時に ", self.$code(nil, "rubocop -a"), " が走る"))))}, TMP_41.$$s = self, TMP_41.$$arity = 1, TMP_41))
+    }, TMP_Page13_content_42.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page14(){};
     var self = $Page14 = $klass($base, $super, 'Page14', $Page14);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page14_header_42, TMP_Page14_content_44;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page14_header_43, TMP_Page14_content_45;
 
     
     
-    Opal.defn(self, '$header', TMP_Page14_header_42 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page14_header_43 = function $$header() {
       var self = this;
 
       return self.$h2(nil, "アジェンダ")
-    }, TMP_Page14_header_42.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page14_content_44 = function $$content() {
-      var TMP_43, self = this;
+    }, TMP_Page14_header_43.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page14_content_45 = function $$content() {
+      var TMP_44, self = this;
 
-      return $send([], 'tap', [], (TMP_43 = function(children){var self = TMP_43.$$s || this;
+      return $send([], 'tap', [], (TMP_44 = function(children){var self = TMP_44.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, self.$del(nil, "vimでrubocop動かすとは")), self.$li(nil, self.$b(nil, "rubocop-daemonめっちゃ速い")), self.$li(nil, "さらに速くする妄想")))}, TMP_43.$$s = self, TMP_43.$$arity = 1, TMP_43))
-    }, TMP_Page14_content_44.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, self.$del(nil, "vimでrubocop動かす")), self.$li(nil, self.$b(nil, "rubocop-daemonめっちゃ速い")), self.$li(nil, "さらに速くする妄想")))}, TMP_44.$$s = self, TMP_44.$$arity = 1, TMP_44))
+    }, TMP_Page14_content_45.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page15(){};
     var self = $Page15 = $klass($base, $super, 'Page15', $Page15);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page15_content_46;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page15_content_47;
 
-    return (Opal.defn(self, '$content', TMP_Page15_content_46 = function $$content() {
-      var TMP_45, self = this;
+    return (Opal.defn(self, '$content', TMP_Page15_content_47 = function $$content() {
+      var TMP_46, self = this;
 
-      return $send([], 'tap', [], (TMP_45 = function(children){var self = TMP_45.$$s || this;
+      return $send([], 'tap', [], (TMP_46 = function(children){var self = TMP_46.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$h4(nil, "\"rubocop -a is slow\""))}, TMP_45.$$s = self, TMP_45.$$arity = 1, TMP_45))
-    }, TMP_Page15_content_46.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$h4(nil, "\"rubocop -a is slow\""))}, TMP_46.$$s = self, TMP_46.$$arity = 1, TMP_46))
+    }, TMP_Page15_content_47.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page16(){};
     var self = $Page16 = $klass($base, $super, 'Page16', $Page16);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page16_header_47, TMP_Page16_content_49;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page16_header_48, TMP_Page16_content_50;
 
     
     
-    Opal.defn(self, '$header', TMP_Page16_header_47 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page16_header_48 = function $$header() {
       var self = this;
 
       return self.$h3(nil, "\"rubocop -a is slow\"")
-    }, TMP_Page16_header_47.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page16_content_49 = function $$content() {
-      var TMP_48, self = this;
+    }, TMP_Page16_header_48.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page16_content_50 = function $$content() {
+      var TMP_49, self = this;
 
-      return $send([], 'tap', [], (TMP_48 = function(children){var self = TMP_48.$$s || this;
+      return $send([], 'tap', [], (TMP_49 = function(children){var self = TMP_49.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/issues/6492", "target": "_blank"}), "rubocop-hq/rubocop#6492")), self.$li(nil, "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"), self.$li(nil, "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"), self.$li(nil, "　"), self.$li(nil, "　")))}, TMP_48.$$s = self, TMP_48.$$arity = 1, TMP_48))
-    }, TMP_Page16_content_49.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/issues/6492", "target": "_blank"}), "rubocop-hq/rubocop#6492")), self.$li(nil, "(この人もエディタからrubocop呼んでる)"), self.$li(nil, "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"), self.$li(nil, "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"), self.$li(nil, "　"), self.$li(nil, "　")))}, TMP_49.$$s = self, TMP_49.$$arity = 1, TMP_49))
+    }, TMP_Page16_content_50.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page17(){};
     var self = $Page17 = $klass($base, $super, 'Page17', $Page17);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page17_header_50, TMP_Page17_content_52;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page17_header_51, TMP_Page17_content_53;
 
     
     
-    Opal.defn(self, '$header', TMP_Page17_header_50 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page17_header_51 = function $$header() {
       var self = this;
 
       return self.$h3(nil, "\"rubocop -a is slow\"")
-    }, TMP_Page17_header_50.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page17_content_52 = function $$content() {
-      var TMP_51, self = this;
+    }, TMP_Page17_header_51.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page17_content_53 = function $$content() {
+      var TMP_52, self = this;
 
-      return $send([], 'tap', [], (TMP_51 = function(children){var self = TMP_51.$$s || this;
+      return $send([], 'tap', [], (TMP_52 = function(children){var self = TMP_52.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/issues/6492", "target": "_blank"}), "rubocop-hq/rubocop#6492")), self.$li(nil, "「とある1100行ぐらいの.rbファイル (", self.$a($hash2(["href", "target"], {"href": "https://raw.githubusercontent.com/rails/rails/master/actionpack/lib/action_controller/metal/strong_parameters.rb", "target": "_blank"}), "strong_parameter.rb"), ") で rubocop -a を試した」"), self.$li(nil, "　"), self.$li(nil, "　")))}, TMP_51.$$s = self, TMP_51.$$arity = 1, TMP_51))
-    }, TMP_Page17_content_52.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/issues/6492", "target": "_blank"}), "rubocop-hq/rubocop#6492")), self.$li(nil, "(この人もエディタからrubocop呼んでる)"), self.$li(nil, "「とある1100行ぐらいの.rbファイル (", self.$a($hash2(["href", "target"], {"href": "https://raw.githubusercontent.com/rails/rails/master/actionpack/lib/action_controller/metal/strong_parameters.rb", "target": "_blank"}), "strong_parameter.rb"), ") で rubocop -a を試した」"), self.$li(nil, "　"), self.$li(nil, "　")))}, TMP_52.$$s = self, TMP_52.$$arity = 1, TMP_52))
+    }, TMP_Page17_content_53.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page18(){};
     var self = $Page18 = $klass($base, $super, 'Page18', $Page18);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page18_header_53, TMP_Page18_content_55;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page18_header_54, TMP_Page18_content_56;
 
     
     
-    Opal.defn(self, '$header', TMP_Page18_header_53 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page18_header_54 = function $$header() {
       var self = this;
 
       return self.$h3(nil, "\"rubocop -a is slow\"")
-    }, TMP_Page18_header_53.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page18_content_55 = function $$content() {
-      var TMP_54, self = this;
+    }, TMP_Page18_header_54.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page18_content_56 = function $$content() {
+      var TMP_55, self = this;
 
-      return $send([], 'tap', [], (TMP_54 = function(children){var self = TMP_54.$$s || this;
+      return $send([], 'tap', [], (TMP_55 = function(children){var self = TMP_55.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/issues/6492", "target": "_blank"}), "rubocop-hq/rubocop#6492")), self.$li(nil, "「とある1100行ぐらいの.rbファイル (", self.$a($hash2(["href", "target"], {"href": "https://raw.githubusercontent.com/rails/rails/master/actionpack/lib/action_controller/metal/strong_parameters.rb", "target": "_blank"}), "strong_parameter.rb"), ") で rubocop -a を試した」"), self.$li(nil, "「実行に 1.37secかかる」"), self.$li(nil, "「そのうち", self.$u(nil, "requireに0.66sec"), "かかっている」")))}, TMP_54.$$s = self, TMP_54.$$arity = 1, TMP_54))
-    }, TMP_Page18_content_55.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/issues/6492", "target": "_blank"}), "rubocop-hq/rubocop#6492")), self.$li(nil, "(この人もエディタからrubocop呼んでる)"), self.$li(nil, "「とある1100行ぐらいの.rbファイル (", self.$a($hash2(["href", "target"], {"href": "https://raw.githubusercontent.com/rails/rails/master/actionpack/lib/action_controller/metal/strong_parameters.rb", "target": "_blank"}), "strong_parameter.rb"), ") で rubocop -a を試した」"), self.$li(nil, "「実行に 1.37secかかる」"), self.$li(nil, "「そのうち", self.$u(nil, "requireに0.66sec"), "かかっている」")))}, TMP_55.$$s = self, TMP_55.$$arity = 1, TMP_55))
+    }, TMP_Page18_content_56.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page19(){};
     var self = $Page19 = $klass($base, $super, 'Page19', $Page19);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page19_content_57;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page19_content_58;
 
-    return (Opal.defn(self, '$content', TMP_Page19_content_57 = function $$content() {
-      var TMP_56, self = this;
+    return (Opal.defn(self, '$content', TMP_Page19_content_58 = function $$content() {
+      var TMP_57, self = this;
 
-      return $send([], 'tap', [], (TMP_56 = function(children){var self = TMP_56.$$s || this;
+      return $send([], 'tap', [], (TMP_57 = function(children){var self = TMP_57.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$h4(nil, "どういうことか"))}, TMP_56.$$s = self, TMP_56.$$arity = 1, TMP_56))
-    }, TMP_Page19_content_57.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$h4(nil, "どういうことか"))}, TMP_57.$$s = self, TMP_57.$$arity = 1, TMP_57))
+    }, TMP_Page19_content_58.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page20(){};
     var self = $Page20 = $klass($base, $super, 'Page20', $Page20);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page20_header_58, TMP_Page20_content_60;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page20_header_59, TMP_Page20_content_61;
 
     
     
-    Opal.defn(self, '$header', TMP_Page20_header_58 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page20_header_59 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "exe/rubocopを読む")
-    }, TMP_Page20_header_58.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page20_content_60 = function $$content() {
-      var TMP_59, self = this;
+    }, TMP_Page20_header_59.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page20_content_61 = function $$content() {
+      var TMP_60, self = this;
 
-      return $send([], 'tap', [], (TMP_59 = function(children){var self = TMP_59.$$s || this;
+      return $send([], 'tap', [], (TMP_60 = function(children){var self = TMP_60.$$s || this;
 if (children == null) children = nil;
-      return nil}, TMP_59.$$s = self, TMP_59.$$arity = 1, TMP_59))
-    }, TMP_Page20_content_60.$$arity = 0), nil) && 'content';
+      return nil}, TMP_60.$$s = self, TMP_60.$$arity = 1, TMP_60))
+    }, TMP_Page20_content_61.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page21(){};
     var self = $Page21 = $klass($base, $super, 'Page21', $Page21);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page21_header_61, TMP_Page21_content_63;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page21_header_62, TMP_Page21_content_64;
 
     
     
-    Opal.defn(self, '$header', TMP_Page21_header_61 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page21_header_62 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "exe/rubocopを読む")
-    }, TMP_Page21_header_61.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page21_content_63 = function $$content() {
-      var TMP_62, self = this;
+    }, TMP_Page21_header_62.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page21_content_64 = function $$content() {
+      var TMP_63, self = this;
 
-      return $send([], 'tap', [], (TMP_62 = function(children){var self = TMP_62.$$s || this;
+      return $send([], 'tap', [], (TMP_63 = function(children){var self = TMP_63.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/require-run-raw.png"}), ""))))}, TMP_62.$$s = self, TMP_62.$$arity = 1, TMP_62))
-    }, TMP_Page21_content_63.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/require-run-raw.png"}), ""))))}, TMP_63.$$s = self, TMP_63.$$arity = 1, TMP_63))
+    }, TMP_Page21_content_64.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page22(){};
     var self = $Page22 = $klass($base, $super, 'Page22', $Page22);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page22_header_64, TMP_Page22_content_66;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page22_header_65, TMP_Page22_content_67;
 
     
     
-    Opal.defn(self, '$header', TMP_Page22_header_64 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page22_header_65 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "exe/rubocopを読む")
-    }, TMP_Page22_header_64.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page22_content_66 = function $$content() {
-      var TMP_65, self = this;
+    }, TMP_Page22_header_65.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page22_content_67 = function $$content() {
+      var TMP_66, self = this;
 
-      return $send([], 'tap', [], (TMP_65 = function(children){var self = TMP_65.$$s || this;
+      return $send([], 'tap', [], (TMP_66 = function(children){var self = TMP_66.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/require-run.jpg"}), ""))))}, TMP_65.$$s = self, TMP_65.$$arity = 1, TMP_65))
-    }, TMP_Page22_content_66.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/require-run.jpg"}), ""))))}, TMP_66.$$s = self, TMP_66.$$arity = 1, TMP_66))
+    }, TMP_Page22_content_67.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page23(){};
     var self = $Page23 = $klass($base, $super, 'Page23', $Page23);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page23_header_67, TMP_Page23_content_69;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page23_header_68, TMP_Page23_content_70;
 
     
     
-    Opal.defn(self, '$header', TMP_Page23_header_67 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page23_header_68 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "exe/rubocopを読む")
-    }, TMP_Page23_header_67.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page23_content_69 = function $$content() {
-      var TMP_68, self = this;
+    }, TMP_Page23_header_68.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page23_content_70 = function $$content() {
+      var TMP_69, self = this;
 
-      return $send([], 'tap', [], (TMP_68 = function(children){var self = TMP_68.$$s || this;
+      return $send([], 'tap', [], (TMP_69 = function(children){var self = TMP_69.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/require-run-066.jpg"}), ""))))}, TMP_68.$$s = self, TMP_68.$$arity = 1, TMP_68))
-    }, TMP_Page23_content_69.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/require-run-066.jpg"}), ""))))}, TMP_69.$$s = self, TMP_69.$$arity = 1, TMP_69))
+    }, TMP_Page23_content_70.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page24(){};
     var self = $Page24 = $klass($base, $super, 'Page24', $Page24);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page24_header_70, TMP_Page24_content_72;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page24_header_71, TMP_Page24_content_73;
 
     
     
-    Opal.defn(self, '$header', TMP_Page24_header_70 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page24_header_71 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "exe/rubocopを読む")
-    }, TMP_Page24_header_70.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page24_content_72 = function $$content() {
-      var TMP_71, self = this;
+    }, TMP_Page24_header_71.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page24_content_73 = function $$content() {
+      var TMP_72, self = this;
 
-      return $send([], 'tap', [], (TMP_71 = function(children){var self = TMP_71.$$s || this;
+      return $send([], 'tap', [], (TMP_72 = function(children){var self = TMP_72.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/require-run-0.jpg"}), ""))))}, TMP_71.$$s = self, TMP_71.$$arity = 1, TMP_71))
-    }, TMP_Page24_content_72.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/require-run-0.jpg"}), ""))))}, TMP_72.$$s = self, TMP_72.$$arity = 1, TMP_72))
+    }, TMP_Page24_content_73.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page25(){};
     var self = $Page25 = $klass($base, $super, 'Page25', $Page25);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page25_content_74;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page25_content_75;
 
-    return (Opal.defn(self, '$content', TMP_Page25_content_74 = function $$content() {
-      var TMP_73, self = this;
+    return (Opal.defn(self, '$content', TMP_Page25_content_75 = function $$content() {
+      var TMP_74, self = this;
 
-      return $send([], 'tap', [], (TMP_73 = function(children){var self = TMP_73.$$s || this;
+      return $send([], 'tap', [], (TMP_74 = function(children){var self = TMP_74.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$h4(nil, "\"rubocop-daemon使うと速いよ\""))}, TMP_73.$$s = self, TMP_73.$$arity = 1, TMP_73))
-    }, TMP_Page25_content_74.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$h4(nil, "\"rubocop-daemon使うと速いよ\""))}, TMP_74.$$s = self, TMP_74.$$arity = 1, TMP_74))
+    }, TMP_Page25_content_75.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page26(){};
     var self = $Page26 = $klass($base, $super, 'Page26', $Page26);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page26_content_76;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page26_content_77;
 
-    return (Opal.defn(self, '$content', TMP_Page26_content_76 = function $$content() {
-      var TMP_75, self = this;
+    return (Opal.defn(self, '$content', TMP_Page26_content_77 = function $$content() {
+      var TMP_76, self = this;
 
-      return $send([], 'tap', [], (TMP_75 = function(children){var self = TMP_75.$$s || this;
+      return $send([], 'tap', [], (TMP_76 = function(children){var self = TMP_76.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$h4(nil, "👀 ", self.$a($hash2(["href", "target"], {"href": "github.com/forte/rubocop-daemon", "target": "_blank"}), "github.com/forte/rubocop-daemon")))}, TMP_75.$$s = self, TMP_75.$$arity = 1, TMP_75))
-    }, TMP_Page26_content_76.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$h4(nil, "👀 ", self.$a($hash2(["href", "target"], {"href": "github.com/forte/rubocop-daemon", "target": "_blank"}), "github.com/forte/rubocop-daemon")))}, TMP_76.$$s = self, TMP_76.$$arity = 1, TMP_76))
+    }, TMP_Page26_content_77.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page27(){};
     var self = $Page27 = $klass($base, $super, 'Page27', $Page27);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page27_content_78;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page27_content_79;
 
-    return (Opal.defn(self, '$content', TMP_Page27_content_78 = function $$content() {
-      var TMP_77, self = this;
+    return (Opal.defn(self, '$content', TMP_Page27_content_79 = function $$content() {
+      var TMP_78, self = this;
 
-      return $send([], 'tap', [], (TMP_77 = function(children){var self = TMP_77.$$s || this;
+      return $send([], 'tap', [], (TMP_78 = function(children){var self = TMP_78.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/rubocop-daemon.png"}), ""))))}, TMP_77.$$s = self, TMP_77.$$arity = 1, TMP_77))
-    }, TMP_Page27_content_78.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$p($hash2(["className"], {"className": "big"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/rubocop-daemon.png"}), ""))))}, TMP_78.$$s = self, TMP_78.$$arity = 1, TMP_78))
+    }, TMP_Page27_content_79.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page28(){};
     var self = $Page28 = $klass($base, $super, 'Page28', $Page28);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page28_header_79, TMP_Page28_content_81;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page28_header_80, TMP_Page28_content_82;
 
     
     
-    Opal.defn(self, '$header', TMP_Page28_header_79 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page28_header_80 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "rubocop-daemonのexec.rb")
-    }, TMP_Page28_header_79.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page28_content_81 = function $$content() {
-      var TMP_80, self = this;
+    }, TMP_Page28_header_80.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page28_content_82 = function $$content() {
+      var TMP_81, self = this;
 
-      return $send([], 'tap', [], (TMP_80 = function(children){var self = TMP_80.$$s || this;
+      return $send([], 'tap', [], (TMP_81 = function(children){var self = TMP_81.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/rubocop-daemon-exec.png"}), ""))))}, TMP_80.$$s = self, TMP_80.$$arity = 1, TMP_80))
-    }, TMP_Page28_content_81.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/rubocop-daemon-exec.png"}), ""))))}, TMP_81.$$s = self, TMP_81.$$arity = 1, TMP_81))
+    }, TMP_Page28_content_82.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page29(){};
     var self = $Page29 = $klass($base, $super, 'Page29', $Page29);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page29_header_82, TMP_Page29_content_84;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page29_header_83, TMP_Page29_content_85;
 
     
     
-    Opal.defn(self, '$header', TMP_Page29_header_82 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page29_header_83 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "rubocop-daemonのexec.rb")
-    }, TMP_Page29_header_82.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page29_content_84 = function $$content() {
-      var TMP_83, self = this;
+    }, TMP_Page29_header_83.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page29_content_85 = function $$content() {
+      var TMP_84, self = this;
 
-      return $send([], 'tap', [], (TMP_83 = function(children){var self = TMP_83.$$s || this;
+      return $send([], 'tap', [], (TMP_84 = function(children){var self = TMP_84.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/rubocop-daemon-exec-mark.jpg"}), ""))))}, TMP_83.$$s = self, TMP_83.$$arity = 1, TMP_83))
-    }, TMP_Page29_content_84.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/rubocop-daemon-exec-mark.jpg"}), ""))))}, TMP_84.$$s = self, TMP_84.$$arity = 1, TMP_84))
+    }, TMP_Page29_content_85.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page30(){};
     var self = $Page30 = $klass($base, $super, 'Page30', $Page30);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page30_header_85, TMP_Page30_content_87;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page30_header_86, TMP_Page30_content_88;
 
     
     
-    Opal.defn(self, '$header', TMP_Page30_header_85 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page30_header_86 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "rubocop-daemonのexec.rb")
-    }, TMP_Page30_header_85.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page30_content_87 = function $$content() {
-      var TMP_86, self = this;
+    }, TMP_Page30_header_86.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page30_content_88 = function $$content() {
+      var TMP_87, self = this;
 
-      return $send([], 'tap', [], (TMP_86 = function(children){var self = TMP_86.$$s || this;
+      return $send([], 'tap', [], (TMP_87 = function(children){var self = TMP_87.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/rubocop-daemon-exec-mark-2.jpg"}), ""))))}, TMP_86.$$s = self, TMP_86.$$arity = 1, TMP_86))
-    }, TMP_Page30_content_87.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/rubocop-daemon-exec-mark-2.jpg"}), ""))))}, TMP_87.$$s = self, TMP_87.$$arity = 1, TMP_87))
+    }, TMP_Page30_content_88.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page31(){};
     var self = $Page31 = $klass($base, $super, 'Page31', $Page31);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page31_header_88, TMP_Page31_content_90;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page31_header_89, TMP_Page31_content_91;
 
     
     
-    Opal.defn(self, '$header', TMP_Page31_header_88 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page31_header_89 = function $$header() {
       var self = this;
 
       return self.$h1(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/fohte/rubocop-daemon/blob/master/bin/rubocop-daemon-wrapper", "target": "_blank"}), "rubocop-daemon-wrapper"))
-    }, TMP_Page31_header_88.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page31_content_90 = function $$content() {
-      var TMP_89, self = this;
+    }, TMP_Page31_header_89.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page31_content_91 = function $$content() {
+      var TMP_90, self = this;
 
-      return $send([], 'tap', [], (TMP_89 = function(children){var self = TMP_89.$$s || this;
+      return $send([], 'tap', [], (TMP_90 = function(children){var self = TMP_90.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "rubocop-daemonとnetcatでやりとりするbashスクリプト!"), self.$ul(nil, self.$li(nil, "rubocop-daemonの自動起動"), self.$ul(nil, self.$li(nil, "動いてなかったら動かす")), self.$li(nil, "netcat使うから速い"), self.$ul(nil, self.$li(nil, "netcat使うから速いらしい(くわしくない🙇)"))), self.$li(nil, "PATH通ってるところに置いて使う")))}, TMP_89.$$s = self, TMP_89.$$arity = 1, TMP_89))
-    }, TMP_Page31_content_90.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "rubocop-daemonとnetcatでやりとりするbashスクリプト!"), self.$ul(nil, self.$li(nil, "rubocop-daemonの自動起動"), self.$ul(nil, self.$li(nil, "動いてなかったら動かす")), self.$li(nil, "netcat使うから速い"), self.$ul(nil, self.$li(nil, "netcat使うから速いらしい(くわしくない🙇)"))), self.$li(nil, "PATH通ってるところに置いて使う")))}, TMP_90.$$s = self, TMP_90.$$arity = 1, TMP_90))
+    }, TMP_Page31_content_91.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page32(){};
     var self = $Page32 = $klass($base, $super, 'Page32', $Page32);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page32_header_91, TMP_Page32_content_93;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page32_header_92, TMP_Page32_content_94;
 
     
     
-    Opal.defn(self, '$header', TMP_Page32_header_91 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page32_header_92 = function $$header() {
       var self = this;
 
       return self.$h1(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/fohte/rubocop-daemon/blob/master/bin/rubocop-daemon-wrapper", "target": "_blank"}), "rubocop-daemon-wrapper"))
-    }, TMP_Page32_header_91.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page32_content_93 = function $$content() {
-      var TMP_92, self = this;
+    }, TMP_Page32_header_92.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page32_content_94 = function $$content() {
+      var TMP_93, self = this;
 
-      return $send([], 'tap', [], (TMP_92 = function(children){var self = TMP_92.$$s || this;
+      return $send([], 'tap', [], (TMP_93 = function(children){var self = TMP_93.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "" + "<div class=\"highlight\"><table style=\"border-spacing: 0\"><tbody><tr><td class=\"gutter gl\" style=\"text-align: right\"><pre class=\"lineno\">1\n" + "2\n" + "3</pre></td><td class=\"code\"><pre>curl https://raw.githubusercontent.com/fohte/rubocop-daemon/master/bin/rubocop-daemon-wrapper -o /tmp/rubocop-daemon-wrapper\n" + "sudo mv /tmp/rubocop-daemon-wrapper /usr/local/bin/rubocop-daemon-wrapper\n" + "sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper\n" + "</pre></td></tr></tbody></table>\n" + "</div>\n"})})))}, TMP_92.$$s = self, TMP_92.$$arity = 1, TMP_92))
-    }, TMP_Page32_content_93.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "" + "<div class=\"highlight\"><table style=\"border-spacing: 0\"><tbody><tr><td class=\"gutter gl\" style=\"text-align: right\"><pre class=\"lineno\">1\n" + "2\n" + "3</pre></td><td class=\"code\"><pre>curl https://raw.githubusercontent.com/fohte/rubocop-daemon/master/bin/rubocop-daemon-wrapper -o /tmp/rubocop-daemon-wrapper\n" + "sudo mv /tmp/rubocop-daemon-wrapper /usr/local/bin/rubocop-daemon-wrapper\n" + "sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper\n" + "</pre></td></tr></tbody></table>\n" + "</div>\n"})})))}, TMP_93.$$s = self, TMP_93.$$arity = 1, TMP_93))
+    }, TMP_Page32_content_94.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page33(){};
     var self = $Page33 = $klass($base, $super, 'Page33', $Page33);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page33_header_94, TMP_Page33_content_96;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page33_header_95, TMP_Page33_content_97;
 
     
     
-    Opal.defn(self, '$header', TMP_Page33_header_94 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page33_header_95 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "vimタイム")
-    }, TMP_Page33_header_94.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page33_content_96 = function $$content() {
-      var TMP_95, self = this;
+    }, TMP_Page33_header_95.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page33_content_97 = function $$content() {
+      var TMP_96, self = this;
 
-      return $send([], 'tap', [], (TMP_95 = function(children){var self = TMP_95.$$s || this;
+      return $send([], 'tap', [], (TMP_96 = function(children){var self = TMP_96.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "" + "<div class=\"highlight\"><table style=\"border-spacing: 0\"><tbody><tr><td class=\"gutter gl\" style=\"text-align: right\"><pre class=\"lineno\">1\n" + "2</pre></td><td class=\"code\"><pre>- let g:ale_ruby_rubocop_executable = 'rubocop'\n" + "+ let g:ale_ruby_rubocop_executable = 'rubocop-daemon-wrapper'\n" + "</pre></td></tr></tbody></table>\n" + "</div>\n"})})))}, TMP_95.$$s = self, TMP_95.$$arity = 1, TMP_95))
-    }, TMP_Page33_content_96.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "" + "<div class=\"highlight\"><table style=\"border-spacing: 0\"><tbody><tr><td class=\"gutter gl\" style=\"text-align: right\"><pre class=\"lineno\">1\n" + "2</pre></td><td class=\"code\"><pre>- let g:ale_ruby_rubocop_executable = 'rubocop'\n" + "+ let g:ale_ruby_rubocop_executable = 'rubocop-daemon-wrapper'\n" + "</pre></td></tr></tbody></table>\n" + "</div>\n"})})))}, TMP_96.$$s = self, TMP_96.$$arity = 1, TMP_96))
+    }, TMP_Page33_content_97.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page34(){};
     var self = $Page34 = $klass($base, $super, 'Page34', $Page34);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page34_content_98;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page34_content_99;
 
-    return (Opal.defn(self, '$content', TMP_Page34_content_98 = function $$content() {
-      var TMP_97, self = this;
+    return (Opal.defn(self, '$content', TMP_Page34_content_99 = function $$content() {
+      var TMP_98, self = this;
 
-      return $send([], 'tap', [], (TMP_97 = function(children){var self = TMP_97.$$s || this;
+      return $send([], 'tap', [], (TMP_98 = function(children){var self = TMP_98.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$h4(nil, "速いですね🎉"))}, TMP_97.$$s = self, TMP_97.$$arity = 1, TMP_97))
-    }, TMP_Page34_content_98.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$h4(nil, "速いですね🎉"))}, TMP_98.$$s = self, TMP_98.$$arity = 1, TMP_98))
+    }, TMP_Page34_content_99.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page35(){};
     var self = $Page35 = $klass($base, $super, 'Page35', $Page35);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page35_header_99, TMP_Page35_content_101;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page35_header_100, TMP_Page35_content_102;
 
     
     
-    Opal.defn(self, '$header', TMP_Page35_header_99 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page35_header_100 = function $$header() {
       var self = this;
 
       return self.$h2(nil, "アジェンダ")
-    }, TMP_Page35_header_99.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page35_content_101 = function $$content() {
-      var TMP_100, self = this;
+    }, TMP_Page35_header_100.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page35_content_102 = function $$content() {
+      var TMP_101, self = this;
 
-      return $send([], 'tap', [], (TMP_100 = function(children){var self = TMP_100.$$s || this;
+      return $send([], 'tap', [], (TMP_101 = function(children){var self = TMP_101.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, self.$del(nil, "vimでrubocop動かすとは")), self.$li(nil, self.$del(nil, "rubocop-daemonめっちゃ速い")), self.$li(nil, self.$b(nil, "さらに速くする妄想"))))}, TMP_100.$$s = self, TMP_100.$$arity = 1, TMP_100))
-    }, TMP_Page35_content_101.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, self.$del(nil, "vimでrubocop動かす")), self.$li(nil, self.$del(nil, "rubocop-daemonめっちゃ速い")), self.$li(nil, self.$b(nil, "さらに速くする妄想"))))}, TMP_101.$$s = self, TMP_101.$$arity = 1, TMP_101))
+    }, TMP_Page35_content_102.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page36(){};
     var self = $Page36 = $klass($base, $super, 'Page36', $Page36);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page36_content_103;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page36_content_104;
 
-    return (Opal.defn(self, '$content', TMP_Page36_content_103 = function $$content() {
-      var TMP_102, self = this;
+    return (Opal.defn(self, '$content', TMP_Page36_content_104 = function $$content() {
+      var TMP_103, self = this;
 
-      return $send([], 'tap', [], (TMP_102 = function(children){var self = TMP_102.$$s || this;
+      return $send([], 'tap', [], (TMP_103 = function(children){var self = TMP_103.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$h4(nil, "さらに速くなる余地を考えてみました!"))}, TMP_102.$$s = self, TMP_102.$$arity = 1, TMP_102))
-    }, TMP_Page36_content_103.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$h4(nil, "さらに速くなる余地を考えてみました!"))}, TMP_103.$$s = self, TMP_103.$$arity = 1, TMP_103))
+    }, TMP_Page36_content_104.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page37(){};
     var self = $Page37 = $klass($base, $super, 'Page37', $Page37);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page37_content_105;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page37_content_106;
 
-    return (Opal.defn(self, '$content', TMP_Page37_content_105 = function $$content() {
-      var TMP_104, self = this;
+    return (Opal.defn(self, '$content', TMP_Page37_content_106 = function $$content() {
+      var TMP_105, self = this;
 
-      return $send([], 'tap', [], (TMP_104 = function(children){var self = TMP_104.$$s || this;
+      return $send([], 'tap', [], (TMP_105 = function(children){var self = TMP_105.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$h4(nil, "その1: キャッシュを消すのをやめる"))}, TMP_104.$$s = self, TMP_104.$$arity = 1, TMP_104))
-    }, TMP_Page37_content_105.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$h4(nil, "その1: キャッシュを消すのをやめる"))}, TMP_105.$$s = self, TMP_105.$$arity = 1, TMP_105))
+    }, TMP_Page37_content_106.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page38(){};
     var self = $Page38 = $klass($base, $super, 'Page38', $Page38);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page38_header_106, TMP_Page38_content_108;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page38_header_107, TMP_Page38_content_109;
 
     
     
-    Opal.defn(self, '$header', TMP_Page38_header_106 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page38_header_107 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "rubocopのキャッシュとは")
-    }, TMP_Page38_header_106.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page38_content_108 = function $$content() {
-      var TMP_107, self = this;
+      return self.$h1(nil, "【参考】rubocopのキャッシュとは")
+    }, TMP_Page38_header_107.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page38_content_109 = function $$content() {
+      var TMP_108, self = this;
 
-      return $send([], 'tap', [], (TMP_107 = function(children){var self = TMP_107.$$s || this;
+      return $send([], 'tap', [], (TMP_108 = function(children){var self = TMP_108.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "yamlデフォルトで ", self.$code(nil, "AllCops: UseCache")), self.$li(nil, "オプション ", self.$code(nil, "-C/--cache FLAG"), " でオン・オフを指定できる"), self.$li(nil, "ただし ", self.$code(nil, "--stdin"), " のときはキャッシュが効かない"), self.$ul(nil, self.$li(nil, "つまり「バッファ変更時(rubocop --stdin)」は効かない"), self.$li(nil, "「save時(rubocop -a)」は効く"))))}, TMP_107.$$s = self, TMP_107.$$arity = 1, TMP_107))
-    }, TMP_Page38_content_108.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "yamlデフォルトで ", self.$code(nil, "AllCops: UseCache")), self.$li(nil, "オプション ", self.$code(nil, "-C/--cache FLAG"), " でオン・オフを指定できる"), self.$li(nil, "ただし ", self.$code(nil, "--stdin"), " のときはキャッシュが効かない"), self.$ul(nil, self.$li(nil, "つまり「バッファ変更時(rubocop --stdin)」は効かない"), self.$li(nil, "「save時(rubocop -a)」は効く"))))}, TMP_108.$$s = self, TMP_108.$$arity = 1, TMP_108))
+    }, TMP_Page38_content_109.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page39(){};
     var self = $Page39 = $klass($base, $super, 'Page39', $Page39);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page39_header_109, TMP_Page39_content_111;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page39_header_110, TMP_Page39_content_112;
 
     
     
-    Opal.defn(self, '$header', TMP_Page39_header_109 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page39_header_110 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "rubocopのキャッシュとは")
-    }, TMP_Page39_header_109.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page39_content_111 = function $$content() {
-      var TMP_110, self = this;
+      return self.$h1(nil, "【参考】rubocopのキャッシュとは")
+    }, TMP_Page39_header_110.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page39_content_112 = function $$content() {
+      var TMP_111, self = this;
 
-      return $send([], 'tap', [], (TMP_110 = function(children){var self = TMP_110.$$s || this;
+      return $send([], 'tap', [], (TMP_111 = function(children){var self = TMP_111.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "offence(違反)のキャッシュ。"), self.$li(nil, "1ファイルにつき1個のJSONファイル。"), self.$li(nil, "~/.cache/rubocop_cacheの下に溜まっていく。")))}, TMP_110.$$s = self, TMP_110.$$arity = 1, TMP_110))
-    }, TMP_Page39_content_111.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "offence(違反)のキャッシュ。"), self.$li(nil, "1ファイルにつき1個のJSONファイル。"), self.$li(nil, "~/.cache/rubocop_cacheの下に溜まっていく。")))}, TMP_111.$$s = self, TMP_111.$$arity = 1, TMP_111))
+    }, TMP_Page39_content_112.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page40(){};
     var self = $Page40 = $klass($base, $super, 'Page40', $Page40);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page40_header_112, TMP_Page40_content_114;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page40_header_113, TMP_Page40_content_115;
 
     
     
-    Opal.defn(self, '$header', TMP_Page40_header_112 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page40_header_113 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "rubocopのキャッシュとは")
-    }, TMP_Page40_header_112.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page40_content_114 = function $$content() {
-      var TMP_113, self = this;
+      return self.$h1(nil, "【参考】rubocopのキャッシュとは")
+    }, TMP_Page40_header_113.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page40_content_115 = function $$content() {
+      var TMP_114, self = this;
 
-      return $send([], 'tap', [], (TMP_113 = function(children){var self = TMP_113.$$s || this;
+      return $send([], 'tap', [], (TMP_114 = function(children){var self = TMP_114.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/cache-tree.png"}), ""))))}, TMP_113.$$s = self, TMP_113.$$arity = 1, TMP_113))
-    }, TMP_Page40_content_114.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/cache-tree.png"}), ""))))}, TMP_114.$$s = self, TMP_114.$$arity = 1, TMP_114))
+    }, TMP_Page40_content_115.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page41(){};
     var self = $Page41 = $klass($base, $super, 'Page41', $Page41);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page41_header_115, TMP_Page41_content_117;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page41_header_116, TMP_Page41_content_118;
 
     
     
-    Opal.defn(self, '$header', TMP_Page41_header_115 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page41_header_116 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "rubocopのキャッシュとは")
-    }, TMP_Page41_header_115.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page41_content_117 = function $$content() {
-      var TMP_116, self = this;
+      return self.$h1(nil, "【参考】rubocopのキャッシュとは")
+    }, TMP_Page41_header_116.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page41_content_118 = function $$content() {
+      var TMP_117, self = this;
 
-      return $send([], 'tap', [], (TMP_116 = function(children){var self = TMP_116.$$s || this;
+      return $send([], 'tap', [], (TMP_117 = function(children){var self = TMP_117.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "ディレクトリ2層+ファイル名"), self.$ul(nil, self.$li(nil, "$LOADED_FEATURESのファイル全部の中身を連結した文字列のSHA1 digest"), self.$li(nil, "optionのSHA1 digest"), self.$li(nil, "対象ファイルの中身及び設定に由来するデータのSHA1 digest"))))}, TMP_116.$$s = self, TMP_116.$$arity = 1, TMP_116))
-    }, TMP_Page41_content_117.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "ディレクトリ2層+ファイル名"), self.$ul(nil, self.$li(nil, "$LOADED_FEATURESのファイル全部の中身を連結した文字列のSHA1 digest"), self.$li(nil, "optionのSHA1 digest"), self.$li(nil, "対象ファイルの中身及び設定に由来するデータのSHA1 digest"))))}, TMP_117.$$s = self, TMP_117.$$arity = 1, TMP_117))
+    }, TMP_Page41_content_118.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page42(){};
     var self = $Page42 = $klass($base, $super, 'Page42', $Page42);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page42_header_118, TMP_Page42_content_120;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page42_header_119, TMP_Page42_content_121;
 
     
     
-    Opal.defn(self, '$header', TMP_Page42_header_118 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page42_header_119 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "キャッシュを消すのをやめる")
-    }, TMP_Page42_header_118.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page42_content_120 = function $$content() {
-      var TMP_119, self = this;
+      return self.$h1(nil, "キャッシュONのとき")
+    }, TMP_Page42_header_119.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page42_content_121 = function $$content() {
+      var TMP_120, self = this;
 
-      return $send([], 'tap', [], (TMP_119 = function(children){var self = TMP_119.$$s || this;
+      return $send([], 'tap', [], (TMP_120 = function(children){var self = TMP_120.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "キャッシュONのとき"), self.$ul(nil, self.$li(nil, "キャッシュを探す"), self.$li(nil, "キャッシュがあればその中身を返す"), self.$li(nil, "キャッシュを掃除するべきか調べる"), self.$li(nil, "量が多ければ(デフォルト20000)キャッシュを消す"))))}, TMP_119.$$s = self, TMP_119.$$arity = 1, TMP_119))
-    }, TMP_Page42_content_120.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "キャッシュを探す"), self.$li(nil, "キャッシュがあればその中身を返す"), self.$li(nil, "キャッシュを掃除するべきか調べる"), self.$li(nil, "量が多ければ(デフォルト20000)キャッシュを消す")))}, TMP_120.$$s = self, TMP_120.$$arity = 1, TMP_120))
+    }, TMP_Page42_content_121.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page43(){};
     var self = $Page43 = $klass($base, $super, 'Page43', $Page43);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page43_header_121, TMP_Page43_content_123;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page43_header_122, TMP_Page43_content_124;
 
     
     
-    Opal.defn(self, '$header', TMP_Page43_header_121 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page43_header_122 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "キャッシュを消すのをやめる")
-    }, TMP_Page43_header_121.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page43_content_123 = function $$content() {
-      var TMP_122, self = this;
+      return self.$h1(nil, "キャッシュONのとき")
+    }, TMP_Page43_header_122.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page43_content_124 = function $$content() {
+      var TMP_123, self = this;
 
-      return $send([], 'tap', [], (TMP_122 = function(children){var self = TMP_122.$$s || this;
+      return $send([], 'tap', [], (TMP_123 = function(children){var self = TMP_123.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "キャッシュONのとき"), self.$ul(nil, self.$li(nil, "キャッシュを探す"), self.$li(nil, "キャッシュがあればその中身を返す"), self.$li(nil, self.$u(nil, "キャッシュを掃除するべきか調べる"), " <- 8000個で220ms❗"), self.$li(nil, "量が多ければ(デフォルト20000)キャッシュを消す"))))}, TMP_122.$$s = self, TMP_122.$$arity = 1, TMP_122))
-    }, TMP_Page43_content_123.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "キャッシュを探す"), self.$li(nil, "キャッシュがあればその中身を返す"), self.$li(nil, self.$u(nil, "キャッシュを掃除するべきか調べる"), " <- 8000個で220ms❗"), self.$li(nil, "量が多ければ(デフォルト20000)キャッシュを消す")))}, TMP_123.$$s = self, TMP_123.$$arity = 1, TMP_123))
+    }, TMP_Page43_content_124.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page44(){};
     var self = $Page44 = $klass($base, $super, 'Page44', $Page44);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page44_header_124, TMP_Page44_content_126;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page44_header_125, TMP_Page44_content_127;
 
     
     
-    Opal.defn(self, '$header', TMP_Page44_header_124 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page44_header_125 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "エディタの時はキャッシュを消すのをやめたい!")
-    }, TMP_Page44_header_124.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page44_content_126 = function $$content() {
-      var TMP_125, self = this;
+    }, TMP_Page44_header_125.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page44_content_127 = function $$content() {
+      var TMP_126, self = this;
 
-      return $send([], 'tap', [], (TMP_125 = function(children){var self = TMP_125.$$s || this;
+      return $send([], 'tap', [], (TMP_126 = function(children){var self = TMP_126.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "エディタの時は、対象ファイルは1個のはず"), self.$li(nil, "エディタの時でもそうでないときでも、対象ファイルが1個のときは、キャッシュを消さなくてもいいのでは?")))}, TMP_125.$$s = self, TMP_125.$$arity = 1, TMP_125))
-    }, TMP_Page44_content_126.$$arity = 0), nil) && 'content';
+      
+        children['$<<'](self.$ul(nil, self.$li(nil, "エディタの時は、対象ファイルは1個のはず"), self.$li(nil, "キャッシュが1個増えるだけだから、掃除しなくてもよいのでは?")));
+        return children['$<<'](self.$p(nil, "=> (エディタの時でもそうでないときでも) 対象ファイルが1個のときは、キャッシュを消さなくてもいいのでは?"));}, TMP_126.$$s = self, TMP_126.$$arity = 1, TMP_126))
+    }, TMP_Page44_content_127.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page45(){};
     var self = $Page45 = $klass($base, $super, 'Page45', $Page45);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page45_header_127, TMP_Page45_content_129;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page45_header_128, TMP_Page45_content_130;
 
     
     
-    Opal.defn(self, '$header', TMP_Page45_header_127 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page45_header_128 = function $$header() {
       var self = this;
 
       return self.$h1(nil, "PR出した!!")
-    }, TMP_Page45_header_127.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page45_content_129 = function $$content() {
-      var TMP_128, self = this;
+    }, TMP_Page45_header_128.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page45_content_130 = function $$content() {
+      var TMP_129, self = this;
 
-      return $send([], 'tap', [], (TMP_128 = function(children){var self = TMP_128.$$s || this;
+      return $send([], 'tap', [], (TMP_129 = function(children){var self = TMP_129.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "出した! ", self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/pull/7069", "target": "_blank"}), "rubocop-hq/rubocop#7069")), self.$ul(nil, self.$li(nil, "昨日マージされた!(2019/5/23) 🎉"))))}, TMP_128.$$s = self, TMP_128.$$arity = 1, TMP_128))
-    }, TMP_Page45_content_129.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "出した! ", self.$a($hash2(["href", "target"], {"href": "https://github.com/rubocop-hq/rubocop/pull/7069", "target": "_blank"}), "rubocop-hq/rubocop#7069")), self.$ul(nil, self.$li(nil, "昨日(2019/5/23)マージされた! 🎉"))))}, TMP_129.$$s = self, TMP_129.$$arity = 1, TMP_129))
+    }, TMP_Page45_content_130.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page46(){};
     var self = $Page46 = $klass($base, $super, 'Page46', $Page46);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page46_header_130, TMP_Page46_content_132;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page46_content_132;
 
-    
-    
-    Opal.defn(self, '$header', TMP_Page46_header_130 = function $$header() {
-      var self = this;
-
-      return self.$h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
-    }, TMP_Page46_header_130.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page46_content_132 = function $$content() {
       var TMP_131, self = this;
 
       return $send([], 'tap', [], (TMP_131 = function(children){var self = TMP_131.$$s || this;
 if (children == null) children = nil;
-      return nil}, TMP_131.$$s = self, TMP_131.$$arity = 1, TMP_131))
-    }, TMP_Page46_content_132.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$h4(nil, "その2: バッファ変更時にもキャッシュが効くようにしたい(願望)"))}, TMP_131.$$s = self, TMP_131.$$arity = 1, TMP_131))
+    }, TMP_Page46_content_132.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page47(){};
@@ -30694,16 +30696,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page47_header_133 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
+      return self.$h1(nil, "バッファ変更時にもキャッシュが効くようにする")
     }, TMP_Page47_header_133.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page47_content_135 = function $$content() {
       var TMP_134, self = this;
 
       return $send([], 'tap', [], (TMP_134 = function(children){var self = TMP_134.$$s || this;
 if (children == null) children = nil;
-      
-        children['$<<'](self.$p(nil, "例えばそれぞれ220msずつ速くなるとすると...."));
-        return children['$<<'](self.$ul(nil, self.$li(nil, "　"), self.$ul(nil, self.$li(nil, "　　")), self.$li(nil, "　"), self.$ul(nil, self.$li(nil, "　　　"))));}, TMP_134.$$s = self, TMP_134.$$arity = 1, TMP_134))
+      return children['$<<'](self.$ul(nil, self.$li(nil, "まだPR出してない"), self.$li(nil, "調査中"), self.$ul(nil, self.$li(nil, "何故かこれやるとALEが動かない気がする..."), self.$li(nil, "(何か勘違いしてて)もしかしたらできないかも..."), self.$li(nil, "詳しい人教えてくれ")), self.$li(nil, "実現できれば、strong_parameter.rbで 300msぐらい速くなりそう!")))}, TMP_134.$$s = self, TMP_134.$$arity = 1, TMP_134))
     }, TMP_Page47_content_135.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -30717,16 +30717,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page48_header_136 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
+      return self.$h1(nil, "まとめ1: rubocop-daemonすごい")
     }, TMP_Page48_header_136.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page48_content_138 = function $$content() {
       var TMP_137, self = this;
 
       return $send([], 'tap', [], (TMP_137 = function(children){var self = TMP_137.$$s || this;
 if (children == null) children = nil;
-      
-        children['$<<'](self.$p(nil, "例えばそれぞれ220msずつ速くなるとすると...."));
-        return children['$<<'](self.$ul(nil, self.$li(nil, "普通のユーザ"), self.$ul(nil, self.$li(nil, "　　")), self.$li(nil, "　"), self.$ul(nil, self.$li(nil, "　　　"))));}, TMP_137.$$s = self, TMP_137.$$arity = 1, TMP_137))
+      return children['$<<'](self.$ul(nil, self.$li(nil, "使うだけでほとんどの場合 -0.80sec 🚀 ぐらいいくはず!")))}, TMP_137.$$s = self, TMP_137.$$arity = 1, TMP_137))
     }, TMP_Page48_content_138.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -30740,16 +30738,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page49_header_139 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
+      return self.$h1(nil, "まとめ2: 保存時のパフォーマンスアップ")
     }, TMP_Page49_header_139.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page49_content_141 = function $$content() {
       var TMP_140, self = this;
 
       return $send([], 'tap', [], (TMP_140 = function(children){var self = TMP_140.$$s || this;
 if (children == null) children = nil;
-      
-        children['$<<'](self.$p(nil, "例えばそれぞれ220msずつ速くなるとすると...."));
-        return children['$<<'](self.$ul(nil, self.$li(nil, "普通のユーザ"), self.$ul(nil, self.$li(nil, "1370ms -> 1150ms 🎉  1.19x faster!")), self.$li(nil, "　"), self.$ul(nil, self.$li(nil, "　　　"))));}, TMP_140.$$s = self, TMP_140.$$arity = 1, TMP_140))
+      return children['$<<'](self.$ul(nil, self.$li(nil, "キャッシュがたくさんあったときにも、遅くならないようにしたつもり!"), self.$ul(nil, self.$li(nil, "(例：8000個ぐらいのときに) 従来比: -0.22sec 🚀")), self.$li(nil, "0.70.0の次のバージョンで!")))}, TMP_140.$$s = self, TMP_140.$$arity = 1, TMP_140))
     }, TMP_Page49_content_141.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -30763,128 +30759,45 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page50_header_142 = function $$header() {
       var self = this;
 
-      return self.$h1(nil, "ファイルが1個ならキャッシュを消すのをやめる")
+      return self.$h1(nil, "まとめ3: バッファ変更時のパフォーマンスアップ(妄想)")
     }, TMP_Page50_header_142.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page50_content_144 = function $$content() {
       var TMP_143, self = this;
 
       return $send([], 'tap', [], (TMP_143 = function(children){var self = TMP_143.$$s || this;
 if (children == null) children = nil;
-      
-        children['$<<'](self.$p(nil, "例えばそれぞれ220msずつ速くなるとすると...."));
-        return children['$<<'](self.$ul(nil, self.$li(nil, "普通のユーザ"), self.$ul(nil, self.$li(nil, "1370ms -> 1150ms 🎉  1.19x faster!")), self.$li(nil, "rubocop-daemonを使うユーザ"), self.$ul(nil, self.$li(nil, "615ms  ->  395ms 🎉  ", self.$u(nil, "1.56x"), " faster!"))));}, TMP_143.$$s = self, TMP_143.$$arity = 1, TMP_143))
+      return children['$<<'](self.$ul(nil, self.$li(nil, "これ妄想"), self.$li(nil, "strong_parameters.rbで -0.3secぐらい速くなりそう!")))}, TMP_143.$$s = self, TMP_143.$$arity = 1, TMP_143))
     }, TMP_Page50_content_144.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page51(){};
     var self = $Page51 = $klass($base, $super, 'Page51', $Page51);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page51_content_146;
-
-    return (Opal.defn(self, '$content', TMP_Page51_content_146 = function $$content() {
-      var TMP_145, self = this;
-
-      return $send([], 'tap', [], (TMP_145 = function(children){var self = TMP_145.$$s || this;
-if (children == null) children = nil;
-      return children['$<<'](self.$h4(nil, "その2: バッファ変更時にもキャッシュが効くようにする"))}, TMP_145.$$s = self, TMP_145.$$arity = 1, TMP_145))
-    }, TMP_Page51_content_146.$$arity = 0), nil) && 'content'
-  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
-  (function($base, $super, $parent_nesting) {
-    function $Page52(){};
-    var self = $Page52 = $klass($base, $super, 'Page52', $Page52);
-
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page52_header_147, TMP_Page52_content_149;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page51_header_145, TMP_Page51_content_147;
 
     
     
-    Opal.defn(self, '$header', TMP_Page52_header_147 = function $$header() {
-      var self = this;
-
-      return self.$h1(nil, "バッファ変更時にもキャッシュが効くようにする")
-    }, TMP_Page52_header_147.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page52_content_149 = function $$content() {
-      var TMP_148, self = this;
-
-      return $send([], 'tap', [], (TMP_148 = function(children){var self = TMP_148.$$s || this;
-if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "200msぐらい速くなる 🎉"), self.$li(nil, "まだPR出してない"), self.$li(nil, "このほうがいいはず・シンプル"), self.$li(nil, "悩み中")))}, TMP_148.$$s = self, TMP_148.$$arity = 1, TMP_148))
-    }, TMP_Page52_content_149.$$arity = 0), nil) && 'content';
-  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
-  (function($base, $super, $parent_nesting) {
-    function $Page53(){};
-    var self = $Page53 = $klass($base, $super, 'Page53', $Page53);
-
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page53_header_150, TMP_Page53_content_152;
-
-    
-    
-    Opal.defn(self, '$header', TMP_Page53_header_150 = function $$header() {
-      var self = this;
-
-      return self.$h1(nil, "まとめ1: バッファ変更時のパフォーマンスアップ")
-    }, TMP_Page53_header_150.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page53_content_152 = function $$content() {
-      var TMP_151, self = this;
-
-      return $send([], 'tap', [], (TMP_151 = function(children){var self = TMP_151.$$s || this;
-if (children == null) children = nil;
-      
-        children['$<<'](self.$p(nil, "キャッシュに8000+オブジェクトがあるとき・strong_parameter.rb 1100行・キャッシュあり"));
-        return children['$<<'](self.$ul(nil, self.$li(nil, "通常時:"), self.$li(nil, "rubocop-daemon使用すると:"), self.$li(nil, "高速化その2:"), self.$li(nil, "高速化その1:")));}, TMP_151.$$s = self, TMP_151.$$arity = 1, TMP_151))
-    }, TMP_Page53_content_152.$$arity = 0), nil) && 'content';
-  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
-  (function($base, $super, $parent_nesting) {
-    function $Page54(){};
-    var self = $Page54 = $klass($base, $super, 'Page54', $Page54);
-
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page54_header_153, TMP_Page54_content_155;
-
-    
-    
-    Opal.defn(self, '$header', TMP_Page54_header_153 = function $$header() {
-      var self = this;
-
-      return self.$h1(nil, "まとめ2: save時のパフォーマンスアップ")
-    }, TMP_Page54_header_153.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page54_content_155 = function $$content() {
-      var TMP_154, self = this;
-
-      return $send([], 'tap', [], (TMP_154 = function(children){var self = TMP_154.$$s || this;
-if (children == null) children = nil;
-      
-        children['$<<'](self.$p(nil, "キャッシュに8000+オブジェクトがあるとき・strong_parameter.rb 1100行・キャッシュあり"));
-        return children['$<<'](self.$ul(nil, self.$li(nil, "通常時:"), self.$li(nil, "rubocop-daemon使用すると:"), self.$li(nil, "高速化その2:"), self.$li(nil, "高速化その1:")));}, TMP_154.$$s = self, TMP_154.$$arity = 1, TMP_154))
-    }, TMP_Page54_content_155.$$arity = 0), nil) && 'content';
-  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
-  (function($base, $super, $parent_nesting) {
-    function $Page55(){};
-    var self = $Page55 = $klass($base, $super, 'Page55', $Page55);
-
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page55_header_156, TMP_Page55_content_158;
-
-    
-    
-    Opal.defn(self, '$header', TMP_Page55_header_156 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page51_header_145 = function $$header() {
       var self = this;
 
       return self.$h2(nil, "自己紹介")
-    }, TMP_Page55_header_156.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page55_content_158 = function $$content() {
-      var TMP_157, self = this;
+    }, TMP_Page51_header_145.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page51_content_147 = function $$content() {
+      var TMP_146, self = this;
 
-      return $send([], 'tap', [], (TMP_157 = function(children){var self = TMP_157.$$s || this;
+      return $send([], 'tap', [], (TMP_146 = function(children){var self = TMP_146.$$s || this;
 if (children == null) children = nil;
       
         children['$<<'](self.$ul(nil, self.$li(nil, self.$a($hash2(["href", "target"], {"href": "https://github.com/hoshinotsuyoshi", "target": "_blank"}), "github.com/hoshinotsuyoshi")), self.$li(nil, self.$a($hash2(["href", "target"], {"href": "https://twitter.com/hoppiestar", "target": "_blank"}), "twitter.com/@hoppiestar")), self.$li(nil, "ECサイトをrailsで作ってます")));
-        return children['$<<'](self.$p($hash2(["className"], {"className": "icon"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/hoshinotsuyoshi.jpg"}), ""))));}, TMP_157.$$s = self, TMP_157.$$arity = 1, TMP_157))
-    }, TMP_Page55_content_158.$$arity = 0), nil) && 'content';
+        return children['$<<'](self.$p($hash2(["className"], {"className": "icon"}), self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/hoshinotsuyoshi.jpg"}), ""))));}, TMP_146.$$s = self, TMP_146.$$arity = 1, TMP_146))
+    }, TMP_Page51_content_147.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   
-  $writer = [56];
+  $writer = [52];
   $send(Opal.const_get_relative($nesting, 'Gibier'), 'page_count=', Opal.to_a($writer));
   $writer[$rb_minus($writer["length"], 1)];;
   
-  $writer = ["まとめ2: save時のパフォーマンスアップ"];
+  $writer = ["まとめ3: バッファ変更時のパフォーマンスアップ(妄想)"];
   $send(Opal.const_get_relative($nesting, 'Gibier'), 'title=', Opal.to_a($writer));
   return $writer[$rb_minus($writer["length"], 1)];;
 };
