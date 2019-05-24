@@ -1,6 +1,6 @@
 class Gibier::Page0 < Gibier::PageBase
 def header
-  h1(nil, "vimでrubocopをすっごく速く動かす")
+  h1(nil, "vimでRuboCopをすっごく速く動かす")
 end
 
 def content
@@ -32,7 +32,7 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, "vimでrubocop動かす"),
+                    li(nil, "vimでRuboCop動かす"),
                     li(nil, "rubocop-daemonめっちゃ速い"),
                     li(nil, "さらに速くする妄想")
       )
@@ -48,7 +48,7 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, b(nil, "vimでrubocop動かす")),
+                    li(nil, b(nil, "vimでRuboCop動かす")),
                     li(nil, "rubocop-daemonめっちゃ速い"),
                     li(nil, "さらに速くする妄想")
       )
@@ -58,7 +58,7 @@ end
 
 class Gibier::Page4 < Gibier::PageBase
 def header
-  h2(nil, "最初に: rubocopとは")
+  h2(nil, "最初に: RuboCopとは")
 end
 
 def content
@@ -189,7 +189,7 @@ def content
                   ul(nil,
                     li(nil, "Neovim/Vim8 で動く非同期Lintツール")
       ),
-                  li(nil, "rubocop"),
+                  li(nil, "RuboCop"),
                   ul(nil,
                     li(nil, "0.70.0")
       )
@@ -228,7 +228,7 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, del(nil, "vimでrubocop動かす")),
+                    li(nil, del(nil, "vimでRuboCop動かす")),
                     li(nil, b(nil, "rubocop-daemonめっちゃ速い")),
                     li(nil, "さらに速くする妄想")
       )
@@ -503,7 +503,7 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, del(nil, "vimでrubocop動かす")),
+                    li(nil, del(nil, "vimでRuboCop動かす")),
                     li(nil, del(nil, "rubocop-daemonめっちゃ速い")),
                     li(nil, b(nil, "さらに速くする妄想"))
       )
@@ -529,7 +529,7 @@ end
 
 class Gibier::Page38 < Gibier::PageBase
 def header
-  h1(nil, "【参考】rubocopのキャッシュとは")
+  h1(nil, "【参考】RuboCopのキャッシュとは")
 end
 
 def content
@@ -549,7 +549,7 @@ end
 
 class Gibier::Page39 < Gibier::PageBase
 def header
-  h1(nil, "【参考】rubocopのキャッシュとは")
+  h1(nil, "【参考】RuboCopのキャッシュとは")
 end
 
 def content
@@ -565,7 +565,7 @@ end
 
 class Gibier::Page40 < Gibier::PageBase
 def header
-  h1(nil, "【参考】rubocopのキャッシュとは")
+  h1(nil, "【参考】RuboCopのキャッシュとは")
 end
 
 def content
@@ -577,7 +577,7 @@ end
 
 class Gibier::Page41 < Gibier::PageBase
 def header
-  h1(nil, "【参考】rubocopのキャッシュとは")
+  h1(nil, "【参考】RuboCopのキャッシュとは")
 end
 
 def content
