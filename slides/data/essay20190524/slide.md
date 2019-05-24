@@ -1,4 +1,4 @@
-# vimでrubocopをすっごく速く動かす
+# vimでRuboCopをすっごく速く動かす
 
 %author: hoshinotsuyoshi
 
@@ -12,17 +12,17 @@
 
 ## アジェンダ
 
-* vimでrubocop動かす
+* vimでRuboCop動かす
 * rubocop-daemonめっちゃ速い
 * さらに速くする妄想
 
 ## アジェンダ
 
-* <b>vimでrubocop動かす</b>
+* <b>vimでRuboCop動かす</b>
 * rubocop-daemonめっちゃ速い
 * さらに速くする妄想
 
-## 最初に: rubocopとは
+## 最初に: RuboCopとは
 
 静的コード解析器であり、Lintツールであり、コードフォーマッタ。
 
@@ -71,7 +71,7 @@ https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340
     * エディタ
 * ALE
     * Neovim/Vim8 で動く非同期Lintツール
-* rubocop
+* RuboCop
     * 0.70.0
 
 ## 今日のエディタ設定と、裏側で動くオプション
@@ -84,7 +84,7 @@ https://github.com/rubocop-hq/rubocop/blob/v0.70.0/lib/rubocop/cli.rb#L330-L340
 
 ## アジェンダ
 
-* <del>vimでrubocop動かす</del>
+* <del>vimでRuboCop動かす</del>
 * <b>rubocop-daemonめっちゃ速い</b>
 * さらに速くする妄想
 
@@ -193,7 +193,7 @@ sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper
 
 ## アジェンダ
 
-* <del>vimでrubocop動かす</del>
+* <del>vimでRuboCop動かす</del>
 * <del>rubocop-daemonめっちゃ速い</del>
 * <b>さらに速くする妄想</b>
 
@@ -205,7 +205,7 @@ sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper
 
 #### その1: キャッシュを消すのをやめる
 
-# 【参考】rubocopのキャッシュとは
+# 【参考】RuboCopのキャッシュとは
 
 * yamlデフォルトで `AllCops: UseCache`
 * オプション `-C/--cache FLAG` でオン・オフを指定できる
@@ -213,17 +213,17 @@ sudo chmod +x /usr/local/bin/rubocop-daemon-wrapper
     * つまり「バッファ変更時(rubocop --stdin)」は効かない
     * 「save時(rubocop -a)」は効く
 
-# 【参考】rubocopのキャッシュとは
+# 【参考】RuboCopのキャッシュとは
 
 * offence(違反)のキャッシュ。
 * 1ファイルにつき1個のJSONファイル。
 * ~/.cache/rubocop_cacheの下に溜まっていく。
 
-# 【参考】rubocopのキャッシュとは
+# 【参考】RuboCopのキャッシュとは
 
 %large: ![](cache-tree.png)
 
-# 【参考】rubocopのキャッシュとは
+# 【参考】RuboCopのキャッシュとは
 
 * ディレクトリ2層+ファイル名
     * $LOADED_FEATURESのファイル全部の中身を連結した文字列のSHA1 digest
