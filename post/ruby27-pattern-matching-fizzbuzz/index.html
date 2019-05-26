@@ -4,45 +4,45 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>railsdm2019 1日目に行ってきましたメモ &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/railsdm2019/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/" />
 
-     <meta name="description" content="&lt;p&gt;railsdm2019 1日目に行ってきました。&lt;/p&gt;
+     <meta name="description" content="&lt;p&gt;Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;" /> 
 
      
     
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/2.jpg"/>
+    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
     
  
-    <meta name="twitter:title" content="railsdm2019 1日目に行ってきましたメモ"/>
-    <meta name="twitter:description" content="&lt;p&gt;railsdm2019 1日目に行ってきました。&lt;/p&gt;
+    <meta name="twitter:title" content="Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz"/>
+    <meta name="twitter:description" content="&lt;p&gt;Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;"/>
-    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/railsdm2019/" />
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/" />
     <meta name="twitter:site" content="@hoppiestar"/>
 
     <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
-    <meta property="og:title" content="railsdm2019 1日目に行ってきましたメモ &middot; " />
-    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/railsdm2019/" />
+    <meta property="og:title" content="Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/" />
     <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="&lt;p&gt;railsdm2019 1日目に行ってきました。&lt;/p&gt;
+    <meta property="og:description" content="&lt;p&gt;Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;" />
 
-    <meta property="article:published_time" content="2019-03-24T00:50:31&#43;09:00" />
-    <meta property="article:tag" content="railsdm" /><meta property="article:tag" content="ruby" /><meta property="article:tag" content="rails" />
+    <meta property="article:published_time" content="2019-05-27T07:12:02&#43;09:00" />
+    <meta property="article:tag" content="ruby" />
 
-    <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/2.jpg"/>
+    <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
 
 
     <meta name="generator" content="Hugo 0.44" />
@@ -115,172 +115,132 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2019-03-24">24 March 2019</time>
-                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/railsdm/">#railsdm</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;
+            <time class="post-full-meta-date" datetime="2019-05-27">27 May 2019</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;
         </section>
-        <h1 class="post-full-title">railsdm2019 1日目に行ってきましたメモ</h1>
+        <h1 class="post-full-title">Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/2.jpg)">
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)">
     </figure>
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        <p>railsdm2019 1日目に行ってきました。</p>
+        <p>Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。</p>
 
 <p></p>
 
-<p>というか、スタッフで多少お手伝いをしてきました。</p>
+<p>パターンマッチ試してみた。</p>
 
-<p>以下、参加したトークのメモです。</p>
-
-<h2 id="opalでつくるbrowserアプリケーション">★ OpalでつくるBrowserアプリケーション</h2>
-
-<p><br></p>
-
-<p>スライド <a href="http://youchan.org/slides/railsdm_2019/" target="_blank" noopener>OpalでつくるBrowserアプリケーション</a></p>
-
-<p>( ※ちなみに↑のスライドはgibierで作られているので<code>s</code>を押すとうさぎがでてくるので楽しい)</p>
-
-<p>Opalでブラウザアプリを作るとモデル定義の共有ができるので便利という話。</p>
-
-<p>実際にブラウザ間で動く対戦型ゲーム(将棋)を動かすデモ。</p>
-
-<p>以下のコンパイラ・ツール・ライブラリの上で作っている。</p>
+<p>とにかく</p>
 
 <ul>
-<li><a href="https://github.com/opal/opal">Opal</a>
-
-<ul>
-<li>rubyでJavaScript</li>
-</ul></li>
-<li><a href="https://github.com/youchan/menilite">Menilite</a>
-
-<ul>
-<li>isomorphic web programming framework in Ruby.
-
-<ul>
-<li>サーバサイドもクラアンとサイドも同じように書ける</li>
-</ul></li>
-</ul></li>
-<li><a href="https://github.com/youchan/drb-websocket">drb-websocket</a>
-
-<ul>
-<li>dRubyでwebsocket</li>
-</ul></li>
-<li><a href="https://github.com/youchan/silica">Silica</a>
-
-<ul>
-<li>generator for Opal app with Hyalite and Menilite.</li>
-</ul></li>
-<li><a href="https://github.com/youchan/hyalite">Hyalite</a>
-
-<ul>
-<li>VirtualDOM。要Opal。</li>
-</ul></li>
+<li>スプラットが強力</li>
+<li>Array Patternが強力</li>
 </ul>
 
-<p><br></p>
+<p>という印象を持った。</p>
 
-<h3 id="感想">感想</h3>
+<p>こんな感じで書ける!長いけど。</p>
 
-<p>必要な部品を全部自分で作っていてすごい&hellip;.</p>
+<pre><code class="language-ruby">NOT_F = /\A[^F]+\z/ 
+NOT_B = /\A[^B]+\z/ 
+def fizzbuzz(a)
+  a &lt;&lt; ''
+  case a
+  in [*, /B/, _, /F/, _, _, x]          ; x &lt;&lt; 'FizzBuzz'
+  in [*, NOT_F, NOT_F, x]               ; x &lt;&lt; 'Fizz'
+  in [*, NOT_B, NOT_B, NOT_B, NOT_B, x] ; x &lt;&lt; 'Buzz'
+  in [*, x]                             ; x &lt;&lt; a.size.to_s
+  end
+  puts a.last
+  fizzbuzz(a)
+end
 
-<h2 id="what-s-new-in-rubygems3">★ What&rsquo;s new in RubyGems3</h2>
+fizzbuzz([])
+</code></pre>
 
-<p><br></p>
+<p>正規表現使わなくても、こんな感じで書ける!長いけど。</p>
 
-<p>スライド <a href="https://www.slideshare.net/hsbt/whats-new-in-rubygems3">What&rsquo;s new in RubyGems3</a></p>
+<pre><code class="language-ruby">def fizzbuzz(a)
+  buffer = ''
+  case a
+  in [] | [*, :_0] | [[*, :_0]]
+    a &lt;&lt; :_1
+  in [*, :_1] | [[*, :_1]]
+    a &lt;&lt; :_2
+  in [*, :_2] | [[*, :_2]]
+    a &lt;&lt; :_0
+    buffer &lt;&lt; 'Fizz'
+  end
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/GwZvkBLNlagbei" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+  case a
+  in [[*], _, _, _, _]
+  in [_, _, _, _, _] | [[*], _, _, _, _, _]
+    a = [a]
+    buffer &lt;&lt; 'Buzz'
+  else
+  end
 
-<!-- <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/hsbt/whats-new-in-rubygems3" title="What&#x27;s new in RubyGems3" target="_blank">What&#x27;s new in RubyGems3</a> </strong> from <strong><a href="https://www.slideshare.net/hsbt" target="_blank">Hiroshi SHIBATA</a></strong> </div> -->
+  buffer &lt;&lt; a.flatten.size.to_s if buffer.empty?
+  puts(buffer)
+  fizzbuzz(a)
+end
 
-<p><br></p>
+fizzbuzz([])
 
-<h3 id="感想-1">感想</h3>
+# []
+# [1]
+# [1, 2]
+# [1, 2, 0]
+# [1, 2, 0, 1]
+# [[1, 2, 0, 1, 2]]
+# [[1, 2, 0, 1, 2], 0]
+# [[1, 2, 0, 1, 2], 0, 1]
+# [[1, 2, 0, 1, 2], 0, 1, 2]
+# [[1, 2, 0, 1, 2], 0, 1, 2, 0]
+# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1]]
+# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2]
+# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2, 0]
+# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2, 0, 1]
+# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2, 0, 1, 2]
+# [[[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2, 0, 1, 2, 0]]
+</code></pre>
 
-<p>RubyGemsの話が主。Bundlerの話は少し。でした。</p>
+<p>もっとうまく書ける気もする。</p>
 
-<p>なんとrubygems.orgは今はk8sで動いているとのこと。rubygemsのチームになんとSRE!がいるとのこと。</p>
+<p>使ってるバージョンは下記の通り。</p>
 
-<p>GemfileはGemfileのまま。gems.rbに統一するという話もあったが、そうはならないようにする、とのこと。</p>
+<pre><code class="language-bash">$ ruby -v
+ruby 2.7.0dev (2019-05-25 trunk 65ce14e7b5) [x86_64-darwin17]
+</code></pre>
 
-<p>(あと直接関係ないけど最近の <a href="https://tech.pepabo.com/2019/02/19/pay-revision-for-engineers/">エンジニア専門職およびエンジニアリングマネージャー職の年俸を一律200万円アップしました - ペパボテックブログ</a> にも触れていた。いきなり年収200万円アップはすごい)</p>
+<h3 id="その他-パターンマッチングが嬉しいときの例">その他、パターンマッチングが嬉しいときの例</h3>
 
-<h2 id="to-make-ruby-ready-to-use-in-the-data-science-field-and-the-impact-that-it-has-on-rails-applications">★  To make Ruby ready-to-use in the data science field. And the impact that it has on Rails applications</h2>
+<p>木構造を扱うときに嬉しいみたい。</p>
 
-<p><a href="https://railsdm.herokuapp.com/issues/123">https://railsdm.herokuapp.com/issues/123</a></p>
+<h4 id="クイックソート">✍クイックソート</h4>
 
-<p>(これスライド見つけられなかった!)</p>
+<p><a href="https://tech.medpeer.co.jp/entry/2019/05/13/090000">メドピアさんのブログ</a>の例がよくて</p>
 
-<p>AR::Resultの改造。メモリ使用量が12分の1になった。</p>
+<pre><code class="language-ruby">def qsort(ary) 
+  case ary
+  in [piv, *xs] # 要素が2個以上
+    lt, rt = xs.partition{|x| x &lt; piv}
+    qsort(lt) + [piv] + qsort(rt)
+  else # 要素が0個または1個
+    ary
+  end
+end
+</code></pre>
 
-<p>データサイエンス関連のOSS活動をspeeeさんでやっている。</p>
+<h4 id="赤黒木">✍赤黒木</h4>
 
-<h2 id="7年目を迎えたrailsアプリケーションの傾向と対策">★ 7年目を迎えたRailsアプリケーションの傾向と対策</h2>
+<iframe width="978" height="550" src="https://www.youtube.com/embed/1qEhEad5uPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p><br></p>
+<p>このRubyKaigiのトークの<a href="https://youtu.be/1qEhEad5uPI?t=672">11:12あたり</a></p>
 
-<p><a href="https://speakerdeck.com/taogawa/rails-developers-meetup-2019-day1">スライド</a></p>
-
-<script async class="speakerdeck-embed" data-id="4c426848f36c4709895a0e45d0bd4fb5" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-
-<h3 id="感想-2">感想</h3>
-
-<p><br></p>
-
-<p>form objectは便利というのはうなづける。</p>
-
-<p>serviceという言葉は本当に色々に捉えられてしまうので、</p>
-
-<p>そういうディレクトリを作るなら本当にチーム内で何か合意のような物が必要そう。</p>
-
-<h2 id="thrifty-rails-how-to-run-a-production-app-on-a-budget">★  Thrifty Rails - How to run a production app on a budget</h2>
-
-<p><br></p>
-
-<p>(これスライド見つけられなかった!)</p>
-
-<h3 id="感想-3">感想</h3>
-
-<p><br></p>
-
-<p>題名、Thrifty Rails、だから「倹約家のrails」?だろうか。</p>
-
-<p>雑に言ってしまうと、とにかくbudget(予算)が制限されている条件でアプリケーションエンジニアがサーバにかけるお金をケチる話。</p>
-
-<p>インデックス不足・n+1問題の回避(これは正直初歩的すぎると思った、普通はレビューで弾く気がするので)。</p>
-
-<p>シリアライゼーションを速くする話(fast_jsonapi)、</p>
-
-<p>また、あらかじめ計算しといて結果をデータベースのほうに置いたほうが安いのでは？みたいな、普通ならUXの文脈で話されることをコスト視点で検討する話、良かった。</p>
-
-<h2 id="ユビレジのチーム開発">★  ユビレジのチーム開発</h2>
-
-<p><br></p>
-
-<p><a href="https://speakerdeck.com/katorie/team-development-at-ubiregi-inc-rails-developers-meetup-2019">スライド</a></p>
-
-<script async class="speakerdeck-embed" data-id="143aee96cdf24b40921c4028298fcd8d" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-
-<h3 id="感想-4">感想</h3>
-
-<p><br></p>
-
-<p>チーム開発における工夫の話。</p>
-
-<p>いい話だった。</p>
-
-<p>最初はサーバサイド + iOSチームで2分割の体制だったけど、スクラム体制に変えてから良くなってきた話。</p>
-
-<p>スクラムの工夫もそうだけど、個人の積極性とチームの納得感を大事にするチームだなと思った。</p>
-
-<p>(懇親会でまたうざ絡みをしてしまったかもしれません。。すいません。。)</p>
-
-<h2 id="以上">以上</h2>
-
-<p>2日目はあとで書きます!</p>    
+<script type="text/javascript" src="/js/prism.js" async></script>    
         </div>
     </section>
 
@@ -310,7 +270,7 @@
     <header class="read-next-card-header">
         <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
         
-        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/railsdm/">#railsdm</a></h3>
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a></h3>
     </header>
     <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
     </div>
@@ -318,74 +278,44 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/railsdm2019/">railsdm2019 1日目に行ってきましたメモ</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/awesome_elements/">世界でいちばん素敵な元素の教室⚡🔥💧 ✨</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">neovimからgithubのblameのページに飛べるようにした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">複数mastodonを考える 🐘   🐘   🐘</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/favicons_zip/">realfavicongenerator.netで作ったfaviconをこのブログのcasperのテーマに反映</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_shopify/">RubyKaigi、shopifyのテストの話が良かった</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/gaming-chair/">AKRACINGのゲーミングチェア買って使ってる🎮💺</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
       
-        <a href="https://hoshinotsuyoshi.com/tags/railsdm/">See all related posts →</a>
+        <a href="https://hoshinotsuyoshi.com/tags/ruby/">See all related posts →</a>
     </footer>
 </article>
 
 
       
+      
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/omotesandorb45/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/roppongirb10/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/smart_hr.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/omotesandorb45/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/roppongirb10/">
           <header class="post-card-header">
               <span class="post-card-tags">
               #ruby 
-              #rails  </span>
+              #rubocop 
+              #vim  </span>
               
-              <h2 class="post-card-title">omotesandorb # 45 に参加した</h2>
+              <h2 class="post-card-title">Roppongi.rb # 10 参加した・RuboCopとVimの話をした</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>
- ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
-          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
-      </footer>
-    </div>
-</article>
-      
-      
-      <article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/ruby_private_method_test/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/2.jpg)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/ruby_private_method_test/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #ruby 
-              #rails  </span>
-              
-              <h2 class="post-card-title">privateメソッドのテストについての考え方 #yochiyochirb を読んで 私も知りたい</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>privateメソッドのテストについての考え方 #yochiyochirb を読んで
+                <p>Roppongi.rb #10 に参加し、LT登壇してきました。
 
  ...  </p>
               
@@ -411,17 +341,17 @@
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">railsdm2019 1日目に行ってきましたメモ</div>
+  <div class="floating-header-title">Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=railsdm2019%201%e6%97%a5%e7%9b%ae%e3%81%ab%e8%a1%8c%e3%81%a3%e3%81%a6%e3%81%8d%e3%81%be%e3%81%97%e3%81%9f%e3%83%a1%e3%83%a2&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frailsdm2019%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Ruby2.7%e3%81%aepattern%20matching%e3%81%a7%e5%9b%9b%e5%89%87%e6%bc%94%e7%ae%97%e3%81%a8%e6%95%b0%e5%80%a4%e3%83%aa%e3%83%86%e3%83%a9%e3%83%ab%e3%82%92%e4%bd%bf%e3%82%8f%e3%81%9a%e3%81%abFizzBuzz&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby27-pattern-matching-fizzbuzz%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frailsdm2019%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby27-pattern-matching-fizzbuzz%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>
