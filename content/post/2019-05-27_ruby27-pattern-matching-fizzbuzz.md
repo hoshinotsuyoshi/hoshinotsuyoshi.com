@@ -11,6 +11,14 @@ Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わ
 
 <!--more-->
 
+### &lt;!--いきなり追記--&gt;
+
+[超絶技巧の人](https://twitter.com/mametter)が140文字で教えてくれました! ありがとうございます!
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">面白いので改変してみました<br><br>def fizzbuzz(a)<br> x = case a<br> in *, /B/, _, /F/, _, _ ; &quot;FizzBuzz&quot;<br> in *, /F/, _, _ ; &quot;Fizz&quot;<br> in *, /B/, _, _, _, _ ; &quot;Buzz&quot;<br> else <a href="https://t.co/D0EximBcbw">https://t.co/D0EximBcbw</a>_s<br> end<br> puts x<br> fizzbuzz(a&lt;&lt;x)<br>end<br><br>fizzbuzz([&quot;FizzBuzz&quot;])</p>&mdash; Yusuke Endoh (@mametter) <a href="https://twitter.com/mametter/status/1133039575159328769?ref_src=twsrc%5Etfw">May 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+### &lt;!--追記ここまで--&gt;
+
 パターンマッチ試してみた。
 
 とにかく
