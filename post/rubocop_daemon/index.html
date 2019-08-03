@@ -394,7 +394,8 @@ let g:ale_ruby_rubocop_executable = 'rubocop-daemon-wrapper'
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -443,13 +444,13 @@ let g:ale_ruby_rubocop_executable = 'rubocop-daemon-wrapper'
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></li>            
         
           <li><a href="https://hoshinotsuyoshi.com/post/hoikuen-futon/">保育園の布団カバー問題に対処する</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/2017_taiga/">2017年大河ドラマ傾向と対策</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb41_fusai/">omotesando.rb #41で技術的負債についてのLTをした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">omotesando.rb #40でrails update(spree update)についてのLTをした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb45/">omotesandorb # 45 に参加した</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

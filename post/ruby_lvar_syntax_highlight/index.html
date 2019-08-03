@@ -348,7 +348,8 @@ Syntax OK
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -397,13 +398,13 @@ Syntax OK
     <div class="read-next-card-content">
       
         <ul>
+          <li><a href="https://hoshinotsuyoshi.com/post/slack_ruby_bot/">slack-ruby-botを使ってみる</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</a></li>            
+        
           <li><a href="https://hoshinotsuyoshi.com/post/jis-md600/">日本語配列の分離式キーボード(MiSTEL BAROCCO MD600)買った</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/awesome_elements/">世界でいちばん素敵な元素の教室⚡🔥💧 ✨</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/">♯slackで、サイドバーに表示するのは未読チャネルだけにする。生産性💪</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/roppongirb10/">Roppongi.rb # 10 参加した・RuboCopとVimの話をした</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

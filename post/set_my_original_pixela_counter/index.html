@@ -381,7 +381,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -430,13 +431,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">複数mastodonを考える 🐘   🐘   🐘</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb45/">omotesandorb # 45 に参加した</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/my_tweets_archive/">自分の全ツイートをこのサイトに貼った</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/remote_six_month/">🏠リモートで働くようになって6ヶ月が経ちました🏠</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/method_source_location/">メソッドが定義された場所を調べる</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/mr_donuts_fukubukuro/">🍩ミスタードーナツの福袋買った🍩</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_moriocho_1/">RubyKaigi2018杜王町1日目行ってきました・忘れないうちに感想書く</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

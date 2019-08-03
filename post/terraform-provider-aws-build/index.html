@@ -369,7 +369,8 @@ Terraform v0.11.0
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -418,13 +419,13 @@ Terraform v0.11.0
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/amazake/">甘酒🍶</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/lighthouse_checking/">lighthouseを使って自分のブログを計測してみた</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/arrow_func_no_brace/">君はarrow functionの波括弧省略について知っているか</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

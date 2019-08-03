@@ -449,7 +449,8 @@ S式とかに馴染みがない私でも、ドキュメント見たり既存の�
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -498,13 +499,13 @@ S式とかに馴染みがない私でも、ドキュメント見たり既存の�
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">neovimからgithubのblameのページに飛べるようにした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/amazake/">甘酒🍶</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/hoikuen-futon/">保育園の布団カバー問題に対処する</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/misdo_2018/">2018年買ってよかったもの</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/process_after_process/">あるプロセスが終わるのを待って、そのあと何かをする</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/souieba_chrome_const/">chrome extension書いてて感動したこと(1)</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

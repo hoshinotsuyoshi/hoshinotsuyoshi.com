@@ -319,7 +319,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -368,13 +369,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/circleci_tests_split/">circleci tests split --split-by=timingsについて調べた・自作してみた</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">neovimからgithubのblameのページに飛べるようにした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/method_source_location/">メソッドが定義された場所を調べる</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/">♯slackで、サイドバーに表示するのは未読チャネルだけにする。生産性💪</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/heatmap_keyboard/">俺がよく打つキー可視化</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/process_after_process/">あるプロセスが終わるのを待って、そのあと何かをする</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

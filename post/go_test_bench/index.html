@@ -517,7 +517,8 @@ go version go1.9.2 darwin/amd64
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -566,13 +567,13 @@ go version go1.9.2 darwin/amd64
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/mr_donuts_fukubukuro/">🍩ミスタードーナツの福袋買った🍩</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/awesome_elements/">世界でいちばん素敵な元素の教室⚡🔥💧 ✨</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/risu-pia/">有明のリスーピア行ってきた👨&#43;👦👦👦</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/shisubeshi-chrome-69/">Google Chrome 69 がJIS配列キーボードで使いづらい(追記あり)</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/gaming-chair/">AKRACINGのゲーミングチェア買って使ってる🎮💺</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/misdo_2018/">2018年買ってよかったもの</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">omotesando.rb #40でrails update(spree update)についてのLTをした</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

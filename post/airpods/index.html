@@ -326,7 +326,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -375,13 +376,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/">{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/">このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)の件</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">neovimからgithubのblameのページに飛べるようにした</a></li>            
         
           <li><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/">terraform-provider-awsを改造してbuildして手元で使う</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/2017_taiga/">2017年大河ドラマ傾向と対策</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

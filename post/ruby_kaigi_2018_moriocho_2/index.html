@@ -410,7 +410,8 @@ end
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -459,13 +460,13 @@ end
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/">rubyのクイズのやつ、ruby 2.5対応しましたので、100点目指して頑張れください</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/">rubyで、「ローカル変数かメソッドか」は区別できるということと、vimのシンタックスハイライト</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb45/">omotesandorb # 45 に参加した</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/amazon_drive_japanese/">AmazonDriveをamazon.co.jpで使う</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/">{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/set_my_original_pixela_counter/">pixelaアクセスカウンターウィジェット自作してこのhugoブログに設置</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/google_speed_insight/">このサイトを速くした💯</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/rubocop_daemon/">rubocop-daemonでneovimでのオートコレクトを速くする</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

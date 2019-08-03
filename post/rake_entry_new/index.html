@@ -390,7 +390,8 @@ end
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -439,15 +440,15 @@ end
     <div class="read-next-card-content">
       
         <ul>
+          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb41_fusai/">omotesando.rb #41で技術的負債についてのLTをした</a></li>            
+        
                       
         
-          <li><a href="https://hoshinotsuyoshi.com/post/amazake/">甘酒🍶</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/">{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/hoikuen-futon/">保育園の布団カバー問題に対処する</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/mr_donuts_fukubukuro/">🍩ミスタードーナツの福袋買った🍩</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/2017_taiga/">2017年大河ドラマ傾向と対策</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/rework/">「小さなチーム、大きな仕事」(REWORK)読んだ</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

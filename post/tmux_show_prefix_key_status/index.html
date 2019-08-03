@@ -118,7 +118,7 @@
         <h1 class="post-full-title">tmuxで今prefixキーが押されているかどうかをわかるようにした</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/4.jpg)">
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/5.jpg)">
     </figure>
 
     <section class="post-full-content">
@@ -311,7 +311,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -360,13 +361,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/jis-md600/">日本語配列の分離式キーボード(MiSTEL BAROCCO MD600)買った</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/remote_six_month/">🏠リモートで働くようになって6ヶ月が経ちました🏠</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/father_engineer_2016/">「パパエンジニアが語る、子育てとの向き合い方とは？」に参加してきた</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb41_fusai/">omotesando.rb #41で技術的負債についてのLTをした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/my_tweets_archive/">自分の全ツイートをこのサイトに貼った</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/rubocop_daemon/">rubocop-daemonでneovimでのオートコレクトを速くする</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/awesome_elements/">世界でいちばん素敵な元素の教室⚡🔥💧 ✨</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

@@ -112,7 +112,7 @@
         <h1 class="post-full-title">MiSTEL BAROCCO MD600 慣れてきた</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/3.jpg)">
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/5.jpg)">
     </figure>
 
     <section class="post-full-content">
@@ -299,7 +299,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -348,13 +349,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/method_source_location/">メソッドが定義された場所を調べる</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/go_test_bench/">go testの-benchを使いつつProject Eulerの4問目を解いた・速くした🚀</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/">今月あとどれくらい働けばよいか計算するChrome拡張書いている</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/airpods/">今年買って良かったもの：AirPods</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/karakida/">Availability Zone karakida</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/heatmap_keyboard/">俺がよく打つキー可視化</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/rake_entry_new/">このブログの記事の土台を生成するrakeタスクを作った</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

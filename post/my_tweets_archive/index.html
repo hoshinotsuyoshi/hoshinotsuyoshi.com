@@ -289,7 +289,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -338,13 +339,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">omotesando.rb #40でrails update(spree update)についてのLTをした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/souieba_chrome_const/">chrome extension書いてて感動したこと(1)</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/">今月あとどれくらい働けばよいか計算するChrome拡張書いている</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/">Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/awesome_elements/">世界でいちばん素敵な元素の教室⚡🔥💧 ✨</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/">このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)の件</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

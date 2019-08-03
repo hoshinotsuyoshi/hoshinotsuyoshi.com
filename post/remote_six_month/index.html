@@ -369,7 +369,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -418,13 +419,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby24/">ruby2.4にしてrails5.0.1にした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/go_test_bench/">go testの-benchを使いつつProject Eulerの4問目を解いた・速くした🚀</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/">Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/risu-pia/">有明のリスーピア行ってきた👨&#43;👦👦👦</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/anime_and_trains/">アニメと鉄道展 見てきた</a></li>            
         
           <li><a href="https://hoshinotsuyoshi.com/post/railsdm2019/">railsdm2019 1日目に行ってきましたメモ</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/set_my_original_pixela_counter/">pixelaアクセスカウンターウィジェット自作してこのhugoブログに設置</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

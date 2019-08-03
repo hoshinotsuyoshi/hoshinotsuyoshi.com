@@ -450,7 +450,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -499,13 +500,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/mr_donuts_fukubukuro/">🍩ミスタードーナツの福袋買った🍩</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/">今月あとどれくらい働けばよいか計算するChrome拡張書いている</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/anime_and_trains/">アニメと鉄道展 見てきた</a></li>            
         
           <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/change_blog_theme_casper/">👻このブログのテーマをhugo-theme-casperからhugo-casper-twoに変えた👻</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/arrow_func_no_brace/">君はarrow functionの波括弧省略について知っているか</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/misdo_2018/">2018年買ってよかったもの</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

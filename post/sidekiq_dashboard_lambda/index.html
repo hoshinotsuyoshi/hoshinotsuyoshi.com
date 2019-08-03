@@ -456,7 +456,8 @@ run Rack::URLMap.new('/sidekiq' =&gt; Sidekiq::Web)
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -505,13 +506,13 @@ run Rack::URLMap.new('/sidekiq' =&gt; Sidekiq::Web)
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/shorthand_property_names_hello_world/">{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/karakida/">Availability Zone karakida</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">複数mastodonを考える 🐘   🐘   🐘</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/prismjs_intro/">このブログのコードのシンタックスハイライトにPrismを利用することにした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/move_to_github_pages_https/">GitHub Pagesが提供するhttpsに乗り換えてみた(ﾉ´∀｀_)・Cloudflareとスピード比較してみた</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/process_after_process/">あるプロセスが終わるのを待って、そのあと何かをする</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/2017_taiga/">2017年大河ドラマ傾向と対策</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

@@ -365,7 +365,8 @@ nnoremap &lt;silent&gt; &lt;Space&gt;&lt;Space&gt;g :&lt;C-u&gt;ToGithub&lt;CR&g
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -414,13 +415,13 @@ nnoremap &lt;silent&gt; &lt;Space&gt;&lt;Space&gt;g :&lt;C-u&gt;ToGithub&lt;CR&g
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/lighthouse_checking/">lighthouseを使って自分のブログを計測してみた</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb45/">omotesandorb # 45 に参加した</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/process_after_process/">あるプロセスが終わるのを待って、そのあと何かをする</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/shisubeshi-chrome-69/">Google Chrome 69 がJIS配列キーボードで使いづらい(追記あり)</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/railsdm2018_12/">railsdm 2018 Day 4に参加したので短く雑感書く</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/">rubyで、「ローカル変数かメソッドか」は区別できるということと、vimのシンタックスハイライト</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

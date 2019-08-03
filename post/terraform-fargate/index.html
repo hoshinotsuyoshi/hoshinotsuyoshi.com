@@ -542,7 +542,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -591,13 +592,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/">terraform-provider-awsを改造してbuildして手元で使う</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/neovim_rubocop_autocorrect/">⚡neovim &#43; 🍻ale &#43; 🚓rubocop</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/my_tweets_archive/">自分の全ツイートをこのサイトに貼った</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">neovimからgithubのblameのページに飛べるようにした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/change_blog_theme_casper/">👻このブログのテーマをhugo-theme-casperからhugo-casper-twoに変えた👻</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/amazake/">甘酒🍶</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

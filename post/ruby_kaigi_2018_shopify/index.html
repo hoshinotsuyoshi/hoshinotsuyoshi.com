@@ -491,7 +491,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -540,13 +541,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">omotesando.rb #40でrails update(spree update)についてのLTをした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/souieba_chrome_const/">chrome extension書いてて感動したこと(1)</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/awesome_elements/">世界でいちばん素敵な元素の教室⚡🔥💧 ✨</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/rework/">「小さなチーム、大きな仕事」(REWORK)読んだ</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">複数mastodonを考える 🐘   🐘   🐘</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/rubocop_daemon/">rubocop-daemonでneovimでのオートコレクトを速くする</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/circleci_tests_split/">circleci tests split --split-by=timingsについて調べた・自作してみた</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

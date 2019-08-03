@@ -322,7 +322,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -371,13 +372,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/roppongirb10/">Roppongi.rb # 10 参加した・RuboCopとVimの話をした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">neovimからgithubのblameのページに飛べるようにした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/">terraform-provider-awsを改造してbuildして手元で使う</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/2017_taiga/">2017年大河ドラマ傾向と対策</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/pre_commit_prevents_odd_chars/">濁点の合成文字がソースコードに入っちまった💢 -&gt; gitのpre-commit hookで打ち勝った</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">omotesando.rb #40でrails update(spree update)についてのLTをした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/lighthouse_checking/">lighthouseを使って自分のブログを計測してみた</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/favicons_zip/">realfavicongenerator.netで作ったfaviconをこのブログのcasperのテーマに反映</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

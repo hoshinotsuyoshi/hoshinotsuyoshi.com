@@ -300,7 +300,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -349,13 +350,15 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/">♯slackで、サイドバーに表示するのは未読チャネルだけにする。生産性💪</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/process_after_process/">あるプロセスが終わるのを待って、そのあと何かをする</a></li>            
+                      
         
-          <li><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/circleci_tests_split/">circleci tests split --split-by=timingsについて調べた・自作してみた</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/">Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/misdo_2018/">2018年買ってよかったもの</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

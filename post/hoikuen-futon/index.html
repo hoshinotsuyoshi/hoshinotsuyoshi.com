@@ -384,7 +384,8 @@
              const readChunk = ({done, value}) => {
                if(done) {
                  const doc = parser.parseFromString(string,'text/html');
-                 document.getElementById('cnt').innerHTML = doc.querySelector('h5.text-success').innerText.match(/Total:\s*(\d+)\s*view/)[1];
+                 console.log(doc);
+                 document.getElementById('cnt').innerHTML = doc.querySelector('#stats-total-0').innerText;
                  return;
                }
                string += decoder.decode(value);
@@ -433,13 +434,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_moriocho_2/">RubyKaigi2018杜王町2日目行ってきました・忘れないうちに感想書く</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/go_test_bench/">go testの-benchを使いつつProject Eulerの4問目を解いた・速くした🚀</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/">rubyで、「ローカル変数かメソッドか」は区別できるということと、vimのシンタックスハイライト</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/mr_donuts_fukubukuro/">🍩ミスタードーナツの福袋買った🍩</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb45/">omotesandorb # 45 に参加した</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/arrow_func_no_brace/">君はarrow functionの波括弧省略について知っているか</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/roppongirb10/">Roppongi.rb # 10 参加した・RuboCopとVimの話をした</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
