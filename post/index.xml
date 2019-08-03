@@ -6,10 +6,29 @@
     <description>Recent content in Posts on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 27 May 2019 07:12:02 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2019 07:48:28 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>sentry-ravenはデフォルトではActiveRecord::RecordNotFoundを通知してくれない</title>
+      <link>https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/</link>
+      <pubDate>Sun, 04 Aug 2019 07:48:28 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/</guid>
+      <description>&lt;p&gt;Sidekiqでエラーが起きてるっぽいにもかかわらず、sentryに通知されず、謎ですねみたいな現象がありました。&lt;/p&gt;
+
+&lt;p&gt;調べたところ、&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;sentry-raven&lt;/code&gt;はデフォルト設定では特定の例外を通知してくれない!!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ということがわかりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ActiveRecord::RecordNotFound&lt;/code&gt;に気づきたい場合は、設定をいじる必要があります。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</title>

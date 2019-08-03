@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/</loc>
+    <lastmod>2019-08-04T07:48:28+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/</loc>
     <lastmod>2019-05-27T07:12:02+09:00</lastmod>
   </url>
@@ -615,7 +620,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2019-05-27T07:12:02+09:00</lastmod>
+    <lastmod>2019-08-04T07:48:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -639,7 +644,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/rails/</loc>
-    <lastmod>2019-04-06T11:06:24+09:00</lastmod>
+    <lastmod>2019-08-04T07:48:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -716,6 +721,12 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/sentry/</loc>
+    <lastmod>2019-08-04T07:48:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/tags/shopify/</loc>
     <lastmod>2018-06-10T12:37:09+09:00</lastmod>
     <priority>0</priority>
@@ -729,7 +740,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/sidekiq/</loc>
-    <lastmod>2018-12-02T00:26:53+09:00</lastmod>
+    <lastmod>2019-08-04T07:48:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -789,7 +800,7 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2019-05-27T07:12:02+09:00</lastmod>
+    <lastmod>2019-08-04T07:48:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
