@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>tool</title>
+</head>
+<body>
+<form id="form1">
+<textarea name="textarea" placeholder="ここにIDを複数行貼る">
+</textarea>
+<hr/>
+</form>
+<a href="javascript:submit();">調査実行</a>
+<hr/>
+<textarea id="result" rows="80" cols="80" placeholder="結果">
+</textarea>
+</body>
+<script>
+
+const submit = () => {
+  const form = document.getElementById("form1");
+  form.textarea.value.split("\n").map(followerInfo);
+}
+
+const followerInfo = ((id) => {
+    const url = "https://www.instagram.com/" + id;
+    const decoder = new TextDecoder();
+    let string = '';
+    fetch(url).then(response => response.body.getReader())
+      .then(reader => {
+             const readChunk = ({done, value}) => {
+                 if(done) {
+                     const json = string.match(/window._sharedData = (.*?);<\/script>/)[1];
+                     const jsonData = JSON.parse(json);
+                     const today = new Date();
+                     const followers = jsonData['entry_data']['ProfilePage'][0]['graphql']['user']['edge_followed_by']['count'];
+                     const followings = jsonData['entry_data']['ProfilePage'][0]['graphql']['user']['edge_follow']['count'];
+                     const posts = jsonData['entry_data']['ProfilePage'][0]['graphql']['user']['edge_owner_to_timeline_media']['count'];
+                     const result = [id, today.toLocaleString(), followers, followings, posts];
+                     writeResult(result);
+                     return;
+                 }
+                 string += decoder.decode(value);
+                 reader.read().then(readChunk);
+            };
+          reader.read().then(readChunk)
+    })
+});
+
+const writeResult = (row) => {
+  const tsv = row.join("\t")+"\n";
+  const textarea = document.getElementById("result");
+  textarea.value += tsv;
+}
+
+</script>
+</html>
