@@ -114,22 +114,22 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/rework/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/rework_cover.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/railsdm2018_12/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/railsdm2018_12.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/rework/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/railsdm2018_12/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #rework  </span>
+              #rails  </span>
               
-              <h2 class="post-card-title">「小さなチーム、大きな仕事」(REWORK)読んだ</h2>
+              <h2 class="post-card-title">railsdm 2018 Day 4に参加したので短く雑感書く</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>この本を読んだ。
+                <p>Rails Developers Meetup 2018 Day 4 Nouvelle Vague(railsdm) に参加しました。
 
  ...  </p>
               
@@ -146,25 +146,30 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/pc_manual_irasutoya.png)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/serverless-sidekiq-web.png)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #neovim 
-              #vim 
-              #git 
-              #github  </span>
+              #sidekiq 
+              #ruby 
+              #lambda  </span>
               
-              <h2 class="post-card-title">neovimからgithubのblameのページに飛べるようにした</h2>
+              <h2 class="post-card-title">💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>モチベーション  大抵のことは黒い画面でgitコマンド使う。しかし vimでソース読んでて経緯を知りたいことがある  その場所を 最後に編集したPRを読みたくなる vimから離れる -&gt; git blame -&gt; commit番号を調べる -&gt; PRを見る ↑ これが手間  tigとかhubとかは使い方覚えられない(覚えろ)  という感じで、vimからすぐPRに飛びたいのです。
+                <p>ついに AWS Lambdaがrubyをサポートしました。💎
+サンプルとして、AWS公式からSAM(AWS Serverless Application Model)でWebアプリを動かすやつ aws-samples/serverless-sinatra-sampleが出てました↓。
+aws-samples/serverless-sinatra-sampleDemo code for running Ruby Sinatra on AWS Lambda. Contribute to aws-samples/serverless-sinatra-sample development by creating an account on GitHub.
+ 
+(なんとsinatra!!)
+このサンプルは、CloudFormation動かしたことない私でも、特につまづくことなく超簡単に動きました。
+今回は、これを元に少し改造して Sidekiq::Web(Sidekiq付属のダッシュボード)をAWS Lambdaで動かしてみる ことにしました。そのことについて書きます。
 
  ...  </p>
               
@@ -181,27 +186,28 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/misdo_2018/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/misdo_2018.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/2.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/misdo_2018/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #misc 
-              #shopping 
-              #🍩  </span>
+              #sidekiq 
+              #rails 
+              #sentry  </span>
               
-              <h2 class="post-card-title">2018年買ってよかったもの</h2>
+              <h2 class="post-card-title">sentry-ravenはデフォルトではActiveRecord::RecordNotFoundを通知してくれない</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>あけましておめでとうございます。🎍
-今年も去年に引き続きミスタードーナツの福袋を買いました。
-(ちなみに去年はこんな感じでした)
-満足だったのでおすすめです。
+                <p>Sidekiqでエラーが起きてるっぽいにもかかわらず、sentryに通知されず、謎ですねみたいな現象がありました。
+調べたところ、
+sentry-ravenはデフォルト設定では特定の例外を通知してくれない!!
+ということがわかりました。
+ActiveRecord::RecordNotFoundに気づきたい場合は、設定をいじる必要があります。
 
  ...  </p>
               

@@ -4,17 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔 &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/rspec-zouzei/" />
 
-     <meta name="description" content="&lt;p&gt;Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;" /> 
+     <meta name="description" content="&lt;p&gt;&lt;/p&gt;" /> 
 
      
     
@@ -22,25 +20,21 @@
     <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
     
  
-    <meta name="twitter:title" content="Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz"/>
-    <meta name="twitter:description" content="&lt;p&gt;Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;"/>
-    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/" />
+    <meta name="twitter:title" content="macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔"/>
+    <meta name="twitter:description" content="&lt;p&gt;&lt;/p&gt;"/>
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/rspec-zouzei/" />
     <meta name="twitter:site" content="@hoppiestar"/>
 
     <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
-    <meta property="og:title" content="Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz &middot; " />
-    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/" />
+    <meta property="og:title" content="macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔 &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/rspec-zouzei/" />
     <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="&lt;p&gt;Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。&lt;/p&gt;
+    <meta property="og:description" content="&lt;p&gt;&lt;/p&gt;" />
 
-&lt;p&gt;&lt;/p&gt;" />
-
-    <meta property="article:published_time" content="2019-05-27T07:12:02&#43;09:00" />
-    <meta property="article:tag" content="ruby" />
+    <meta property="article:published_time" content="2019-09-27T11:30:16&#43;09:00" />
+    <meta property="article:tag" content="rspec" /><meta property="article:tag" content="ruby" /><meta property="article:tag" content="rails" />
 
     <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
 
@@ -115,10 +109,10 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2019-05-27">27 May 2019</time>
-                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;
+            <time class="post-full-meta-date" datetime="2019-09-27">27 September 2019</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/rspec/">#rspec</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;
         </section>
-        <h1 class="post-full-title">Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</h1>
+        <h1 class="post-full-title">macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔</h1>
     </header>
     
     <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)">
@@ -126,127 +120,27 @@
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        <p>Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。</p>
+        <p></p>
 
-<p></p>
+<p>普段こんなこと絶対やらないんですが、今回は便利でした。</p>
 
-<h3 id="lt-いきなり追記-gt">&lt;!&ndash;いきなり追記&ndash;&gt;</h3>
+<p>具体的にはこの画面で「日付と時刻を自動的に設定」をオフにして日付を未来にします。</p>
 
-<p><a href="https://twitter.com/mametter">超絶技巧の人</a>が140文字で教えてくれました! ありがとうございます!</p>
+<p><img alt="" src="/images/clock.jpg" width=800></p>
 
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">面白いので改変してみました<br><br>def fizzbuzz(a)<br> x = case a<br> in *, /B/, _, /F/, _, _ ; &quot;FizzBuzz&quot;<br> in *, /F/, _, _ ; &quot;Fizz&quot;<br> in *, /B/, _, _, _, _ ; &quot;Buzz&quot;<br> else <a href="https://t.co/D0EximBcbw">https://t.co/D0EximBcbw</a>_s<br> end<br> puts x<br> fizzbuzz(a&lt;&lt;x)<br>end<br><br>fizzbuzz([&quot;FizzBuzz&quot;])</p>&mdash; Yusuke Endoh (@mametter) <a href="https://twitter.com/mametter/status/1133039575159328769?ref_src=twsrc%5Etfw">May 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p><br></p>
 
-<h3 id="lt-追記ここまで-gt">&lt;!&ndash;追記ここまで&ndash;&gt;</h3>
+<h2 id="現在時刻による分岐処理">現在時刻による分岐処理</h2>
 
-<p>パターンマッチ試してみた。</p>
+<p>消費税の値は基本的にDBに保存しているんですが、どうしてもパフォーマンスの理由とかいろいろの理由とかで、ベタ書きの箇所もあります。</p>
 
-<p>とにかく</p>
+<p>もちろん、<strong>ちゃんと<a href="https://api.rubyonrails.org/v6.0/classes/ActiveSupport/Testing/TimeHelpers.html">ActiveSupport::Testing::TimeHelpers</a> とか使ってテスト書いてます。</strong></p>
 
-<ul>
-<li>スプラットが強力</li>
-<li>Array Patternが強力</li>
-</ul>
+<p>ですが、まあ、漏れもありますよね 😉</p>
 
-<p>という印象を持った。</p>
+<p>10/1にいきなり開発ブランチのCIがコケることがなくなって嬉しいです。</p>
 
-<p>こんな感じで書ける!長いけど。</p>
-
-<pre><code class="language-ruby">NOT_F = /\A[^F]+\z/ 
-NOT_B = /\A[^B]+\z/ 
-def fizzbuzz(a)
-  a &lt;&lt; ''
-  case a
-  in [*, /B/, _, /F/, _, _, x]          ; x &lt;&lt; 'FizzBuzz'
-  in [*, NOT_F, NOT_F, x]               ; x &lt;&lt; 'Fizz'
-  in [*, NOT_B, NOT_B, NOT_B, NOT_B, x] ; x &lt;&lt; 'Buzz'
-  in [*, x]                             ; x &lt;&lt; a.size.to_s
-  end
-  puts a.last
-  fizzbuzz(a)
-end
-
-fizzbuzz([])
-</code></pre>
-
-<p>正規表現使わなくても、こんな感じで書ける!長いけど。</p>
-
-<pre><code class="language-ruby">def fizzbuzz(a)
-  buffer = ''
-  case a
-  in [] | [*, :_0] | [[*, :_0]]
-    a &lt;&lt; :_1
-  in [*, :_1] | [[*, :_1]]
-    a &lt;&lt; :_2
-  in [*, :_2] | [[*, :_2]]
-    a &lt;&lt; :_0
-    buffer &lt;&lt; 'Fizz'
-  end
-
-  case a
-  in [[*], _, _, _, _]
-  in [_, _, _, _, _] | [[*], _, _, _, _, _]
-    a = [a]
-    buffer &lt;&lt; 'Buzz'
-  else
-  end
-
-  buffer &lt;&lt; a.flatten.size.to_s if buffer.empty?
-  puts(buffer)
-  fizzbuzz(a)
-end
-
-fizzbuzz([])
-
-# []
-# [1]
-# [1, 2]
-# [1, 2, 0]
-# [1, 2, 0, 1]
-# [[1, 2, 0, 1, 2]]
-# [[1, 2, 0, 1, 2], 0]
-# [[1, 2, 0, 1, 2], 0, 1]
-# [[1, 2, 0, 1, 2], 0, 1, 2]
-# [[1, 2, 0, 1, 2], 0, 1, 2, 0]
-# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1]]
-# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2]
-# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2, 0]
-# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2, 0, 1]
-# [[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2, 0, 1, 2]
-# [[[[1, 2, 0, 1, 2], 0, 1, 2, 0, 1], 2, 0, 1, 2, 0]]
-</code></pre>
-
-<p>もっとうまく書ける気もする。</p>
-
-<p>使ってるバージョンは下記の通り。</p>
-
-<pre><code class="language-bash">$ ruby -v
-ruby 2.7.0dev (2019-05-25 trunk 65ce14e7b5) [x86_64-darwin17]
-</code></pre>
-
-<h3 id="その他-パターンマッチングが嬉しいときの例">その他、パターンマッチングが嬉しいときの例</h3>
-
-<p>木構造を扱うときに嬉しいみたい。</p>
-
-<h4 id="クイックソート">✍クイックソート</h4>
-
-<p><a href="https://tech.medpeer.co.jp/entry/2019/05/13/090000">メドピアさんのブログ</a>の例がよくて</p>
-
-<pre><code class="language-ruby">def qsort(ary) 
-  case ary
-  in [piv, *xs] # 要素が2個以上
-    lt, rt = xs.partition{|x| x &lt; piv}
-    qsort(lt) + [piv] + qsort(rt)
-  else # 要素が0個または1個
-    ary
-  end
-end
-</code></pre>
-
-<h4 id="赤黒木">✍赤黒木</h4>
-
-<iframe width="978" height="550" src="https://www.youtube.com/embed/1qEhEad5uPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p>このRubyKaigiのトークの<a href="https://youtu.be/1qEhEad5uPI?t=672">11:12あたり</a></p>
+<p>ご利用は自己責任で&hellip;&hellip;</p>
 
 <script type="text/javascript" src="/js/prism.js" async></script>    
         </div>
@@ -278,7 +172,7 @@ end
     <header class="read-next-card-header">
         <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
         
-        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a></h3>
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/rspec/">#rspec</a></h3>
     </header>
     <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
     </div>
@@ -286,22 +180,23 @@ end
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/lighthouse_checking/">lighthouseを使って自分のブログを計測してみた</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/jis-md600/">日本語配列の分離式キーボード(MiSTEL BAROCCO MD600)買った</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/rake_entry_new/">このブログの記事の土台を生成するrakeタスクを作った</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">neovimからgithubのblameのページに飛べるようにした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb45/">omotesandorb # 45 に参加した</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/airpods/">今年買って良かったもの：AirPods</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/circleci_tests_split/">circleci tests split --split-by=timingsについて調べた・自作してみた</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
       
-        <a href="https://hoshinotsuyoshi.com/tags/ruby/">See all related posts →</a>
+        <a href="https://hoshinotsuyoshi.com/tags/rspec/">See all related posts →</a>
     </footer>
 </article>
 
 
+      
       
       <article class="post-card post"> 
     
@@ -340,40 +235,6 @@ ActiveRecord::RecordNotFoundに気づきたい場合は、設定をいじる必�
     </div>
 </article>
       
-      
-      <article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/roppongirb10/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/smart_hr.jpg)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/roppongirb10/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #ruby 
-              #rubocop 
-              #vim  </span>
-              
-              <h2 class="post-card-title">Roppongi.rb # 10 参加した・RuboCopとVimの話をした</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>Roppongi.rb #10 に参加し、LT登壇してきました。
-
- ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
-          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
-      </footer>
-    </div>
-</article>
-      
     </div>
   </div>
 </aside>
@@ -386,17 +247,17 @@ ActiveRecord::RecordNotFoundに気づきたい場合は、設定をいじる必�
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</div>
+  <div class="floating-header-title">macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Ruby2.7%e3%81%aepattern%20matching%e3%81%a7%e5%9b%9b%e5%89%87%e6%bc%94%e7%ae%97%e3%81%a8%e6%95%b0%e5%80%a4%e3%83%aa%e3%83%86%e3%83%a9%e3%83%ab%e3%82%92%e4%bd%bf%e3%82%8f%e3%81%9a%e3%81%abFizzBuzz&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby27-pattern-matching-fizzbuzz%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=macOS%e3%81%ae%e6%99%82%e8%a8%88%e3%82%9210%e6%9c%881%e6%97%a5%e3%81%ab%e3%81%97%e3%81%a6%e3%83%86%e3%82%b9%e3%83%88%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b%e3%81%a8%e6%b6%88%e8%b2%bb%e7%a8%8e%e3%81%ae%e3%81%9b%e3%81%84%e3%81%a7fail%e3%81%99%e3%82%8b%e3%83%86%e3%82%b9%e3%83%88%e3%81%8c%e8%a6%8b%e3%81%a4%e3%81%8b%e3%81%a3%e3%81%a6%e4%be%bf%e5%88%a9%e3%81%a7%e3%81%97%e3%81%9f%20%f0%9f%98%94&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frspec-zouzei%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fruby27-pattern-matching-fizzbuzz%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frspec-zouzei%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>

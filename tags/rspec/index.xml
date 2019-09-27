@@ -6,10 +6,19 @@
     <description>Recent content in Rspec on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 24 Dec 2018 14:46:01 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Sep 2019 11:30:16 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/rspec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔</title>
+      <link>https://hoshinotsuyoshi.com/post/rspec-zouzei/</link>
+      <pubDate>Fri, 27 Sep 2019 11:30:16 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/rspec-zouzei/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>circleci tests split --split-by=timingsについて調べた・自作してみた</title>
