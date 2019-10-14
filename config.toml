@@ -33,6 +33,8 @@ title         = "hoshinotsuyoshi.com - 自由なブログだよ"
   # casper or caspertwo
   singleViewStyle = "casper"
 
+  Adsense = "ca-pub-1470153732194143"
+
 [[menu.main]]
   name = "Home"
   url = "/"
