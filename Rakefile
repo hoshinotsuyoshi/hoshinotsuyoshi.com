@@ -7,7 +7,7 @@ require 'time' # Time#iso8601
 
 DIST  = 'dist'
 THEME = 'casper'
-HUGO_VERSION = 'Hugo Static Site Generator v0.44'
+HUGO_VERSION = 'Hugo Static Site Generator v0.55'
 
 task default: 'deploy:run'
 
