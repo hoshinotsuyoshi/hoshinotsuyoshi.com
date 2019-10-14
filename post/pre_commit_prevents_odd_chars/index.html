@@ -12,9 +12,7 @@
     <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
     <link rel="canonical" href="https://hoshinotsuyoshi.com/post/pre_commit_prevents_odd_chars/" />
 
-     <meta name="description" content="&lt;p&gt;濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;" /> 
+     <meta name="description" content="&lt;p&gt;濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。&lt;/p&gt;" /> 
 
      
     
@@ -23,9 +21,7 @@
     
  
     <meta name="twitter:title" content="濁点の合成文字がソースコードに入っちまった💢 -&gt; gitのpre-commit hookで打ち勝った"/>
-    <meta name="twitter:description" content="&lt;p&gt;濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;"/>
+    <meta name="twitter:description" content="&lt;p&gt;濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。&lt;/p&gt;"/>
     <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/pre_commit_prevents_odd_chars/" />
     <meta name="twitter:site" content="@hoppiestar"/>
 
@@ -35,9 +31,7 @@
     <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="&lt;p&gt;濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;" />
+    <meta property="og:description" content="&lt;p&gt;濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。&lt;/p&gt;" />
 
     <meta property="article:published_time" content="2018-07-25T00:25:48&#43;09:00" />
     <meta property="article:tag" content="ruby" /><meta property="article:tag" content="git" /><meta property="article:tag" content="bash" />
@@ -45,7 +39,7 @@
     <meta property="og:image" content="https://hoshinotsuyoshi.com/images/green-digits.jpg"/>
 
 
-    <meta name="generator" content="Hugo 0.44" />
+    <meta name="generator" content="Hugo 0.55.0" />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://hoshinotsuyoshi.com/built/screen.css" /> 
@@ -54,6 +48,9 @@
      <link rel="stylesheet" href="https://hoshinotsuyoshi.com/css/prism.css" /> 
 
      
+
+    <script data-ad-client="ca-pub-1470153732194143" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 
 </head>
 
@@ -127,8 +124,6 @@
     <section class="post-full-content">
         <div class="kg-card-markdown">
         <p>濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。</p>
-
-<p></p>
 
 <p><blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">自分の書いたカタカナの濁点が合成文字になってて(バ= ハ+゛みたいなやつ)そのバグに気づかなくて30分ぐらい無駄にしたアカウントです</p>&mdash; hoshinotsuyoshi🥴 (@hoppiestar) <a href="https://twitter.com/hoppiestar/status/1021316434062819329?ref_src=twsrc%5Etfw">July 23, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
@@ -250,9 +245,6 @@ end
 <script type="text/javascript" src="/js/prism.js" async></script>
 
 <hr />
-
-
-
 
 <style>
 .widget.horizontal {
@@ -454,13 +446,13 @@ end
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/airpods/">今年買って良かったもの：AirPods</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/git_blame_on_github/">neovimからgithubのblameのページに飛べるようにした</a></li>            
-        
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_moriocho_1/">RubyKaigi2018杜王町1日目行ってきました・忘れないうちに感想書く</a></li>            
-        
           <li><a href="https://hoshinotsuyoshi.com/post/md600-2/">MiSTEL BAROCCO MD600 慣れてきた</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</a></li>            
+        
+          <li><a href="https://hoshinotsuyoshi.com/post/rake_entry_new/">このブログの記事の土台を生成するrakeタスクを作った</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
@@ -492,7 +484,6 @@ end
           <section class="post-card-excerpt">
               
                 <p>モチベーション  大抵のことは黒い画面でgitコマンド使う。しかし vimでソース読んでて経緯を知りたいことがある  その場所を 最後に編集したPRを読みたくなる vimから離れる -&gt; git blame -&gt; commit番号を調べる -&gt; PRを見る ↑ これが手間  tigとかhubとかは使い方覚えられない(覚えろ)  という感じで、vimからすぐPRに飛びたいのです。
-
  ...  </p>
               
           </section>
@@ -524,8 +515,7 @@ end
           </header>
           <section class="post-card-excerpt">
               
-                <p>
- ...  </p>
+                <p> ...  </p>
               
           </section>
       </a>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Github on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>github on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/github/</link>
-    <description>Recent content in Github on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in github on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sat, 25 Aug 2018 00:15:53 +0900</lastBuildDate>
@@ -31,9 +31,7 @@
 &lt;li&gt;tigとかhubとかは使い方覚えられない(覚えろ)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;という感じで、vimからすぐPRに飛びたいのです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;という感じで、vimからすぐPRに飛びたいのです。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -46,9 +44,7 @@
 
 &lt;p&gt;乗り換えてみました。&lt;/p&gt;
 
-&lt;p&gt;このブログのように、サブドメインなし(zone Apex)で配信していても、問題ないようです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;このブログのように、サブドメインなし(zone Apex)で配信していても、問題ないようです。&lt;/p&gt;</description>
     </item>
     
   </channel>

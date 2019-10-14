@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rails on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>rails on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/rails/</link>
-    <description>Recent content in Rails on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in rails on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 27 Sep 2019 11:30:16 +0900</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Fri, 27 Sep 2019 11:30:16 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/rspec-zouzei/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -34,9 +34,7 @@
 
 &lt;p&gt;ということがわかりました。&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;ActiveRecord::RecordNotFound&lt;/code&gt;に気づきたい場合は、設定をいじる必要があります。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;code&gt;ActiveRecord::RecordNotFound&lt;/code&gt;に気づきたい場合は、設定をいじる必要があります。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -45,7 +43,7 @@
       <pubDate>Sat, 06 Apr 2019 11:06:24 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/omotesandorb45/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -54,9 +52,7 @@
       <pubDate>Sun, 24 Mar 2019 00:50:31 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/railsdm2019/</guid>
-      <description>&lt;p&gt;railsdm2019 1日目に行ってきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;railsdm2019 1日目に行ってきました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -65,9 +61,7 @@
       <pubDate>Mon, 04 Mar 2019 01:07:55 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/ruby_private_method_test/</guid>
-      <description>&lt;p&gt;privateメソッドのテストについての考え方 #yochiyochirb を読んで&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;privateメソッドのテストについての考え方 #yochiyochirb を読んで&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -76,9 +70,7 @@
       <pubDate>Tue, 11 Dec 2018 22:29:35 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/railsdm2018_12/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://techplay.jp/event/702297&#34;&gt;Rails Developers Meetup 2018 Day 4 Nouvelle Vague&lt;/a&gt;(railsdm) に参加しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://techplay.jp/event/702297&#34;&gt;Rails Developers Meetup 2018 Day 4 Nouvelle Vague&lt;/a&gt;(railsdm) に参加しました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -87,9 +79,7 @@
       <pubDate>Sat, 08 Dec 2018 00:57:21 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/omotesandorb41_fusai/</guid>
-      <description>&lt;p&gt;「技術的負債」がテーマのomotesando.rb 第41回で、「「技術的負債」について私から言えること私から言えないこと」というタイトルでLTに応募し話してきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;「技術的負債」がテーマのomotesando.rb 第41回で、「「技術的負債」について私から言えること私から言えないこと」というタイトルでLTに応募し話してきました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -98,9 +88,7 @@
       <pubDate>Mon, 12 Nov 2018 09:47:44 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/</guid>
-      <description>&lt;p&gt;「railsアップグレード」がテーマのomotesando.rb 第40回で、「spreeのrails updateの戦いの歴史と github上のPR作成時の工夫」というタイトル(長い)でLTに応募し話してきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;「railsアップグレード」がテーマのomotesando.rb 第40回で、「spreeのrails updateの戦いの歴史と github上のPR作成時の工夫」というタイトル(長い)でLTに応募し話してきました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -113,9 +101,7 @@
 
 &lt;p&gt;意外と良い。&lt;/p&gt;
 
-&lt;p&gt;ちょっと長めの &lt;code&gt;$ rspec spec/requests&lt;/code&gt; とか流したときに、slack眺めたり別のことができる。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;ちょっと長めの &lt;code&gt;$ rspec spec/requests&lt;/code&gt; とか流したときに、slack眺めたり別のことができる。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -124,9 +110,7 @@
       <pubDate>Sun, 01 Jan 2017 15:10:00 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/method_source_location/</guid>
-      <description>&lt;p&gt;rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -136,9 +120,7 @@
       
       <guid>https://hoshinotsuyoshi.com/post/ruby24/</guid>
       <description>&lt;p&gt;🎄 メリークリスマス 🎅
-ruby2.4がリリースされました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+ruby2.4がリリースされました。&lt;/p&gt;</description>
     </item>
     
   </channel>

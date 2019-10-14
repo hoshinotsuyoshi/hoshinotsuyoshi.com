@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Github Pages on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>github-pages on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/github-pages/</link>
-    <description>Recent content in Github Pages on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in github-pages on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 06 May 2018 10:54:06 +0900</lastBuildDate>
@@ -21,9 +21,7 @@
 
 &lt;p&gt;乗り換えてみました。&lt;/p&gt;
 
-&lt;p&gt;このブログのように、サブドメインなし(zone Apex)で配信していても、問題ないようです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;このブログのように、サブドメインなし(zone Apex)で配信していても、問題ないようです。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,9 +32,7 @@
       <guid>https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/</guid>
       <description>&lt;p&gt;このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)&lt;/p&gt;
 
-&lt;p&gt;別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +44,7 @@
       <description>&lt;p&gt;このブログ、&lt;a href=&#34;https://hoshinotsuyoshi.com&#34;&gt;https://hoshinotsuyoshi.com&lt;/a&gt;の編集方法とデプロイ方法についての説明です。&lt;/p&gt;
 
 &lt;p&gt;hugoでhtmlを生成し、github pagesでホスティングしています。
-あまり奇をてらったやり方はしていません。至って普通です。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+あまり奇をてらったやり方はしていません。至って普通です。&lt;/p&gt;</description>
     </item>
     
   </channel>

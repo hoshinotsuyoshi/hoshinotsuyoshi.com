@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Test on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>test on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/test/</link>
-    <description>Recent content in Test on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in test on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 24 Dec 2018 14:46:01 +0900</lastBuildDate>
@@ -29,9 +29,7 @@
 
 &lt;p&gt;&lt;img alt=&#34;anime&#34; src=&#34;https://hoshinotsuyoshi.com/images/timings_greedy_anime.gif&#34; width=800&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;hr /&gt;</description>
     </item>
     
     <item>
@@ -47,9 +45,7 @@
 &lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-controls=&#34;0&#34; data-card-branding=&#34;0&#34; data-card-image=&#34;http://rubykaigi.org/2018/images/og_image.png&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://rubykaigi.org/2018/presentations/jules2689.html&#34;&gt;RubyKaigi 2018, &lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;31&lt;/sub&gt;&amp;hellip;&lt;sup&gt;6&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;, Sendai, Miyagi, Japan #rubykaigi&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;RubyKaigi 2018, &lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;31&lt;/sub&gt;&amp;hellip;&lt;sup&gt;6&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;, Sendai, Miyagi, Japan&lt;/p&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;主観的に抜粋し、また、自分の感想を書いてみようと思う。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;主観的に抜粋し、また、自分の感想を書いてみようと思う。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,9 +58,7 @@
 
 &lt;p&gt;go test の-benchを使い、Project Eulerの問題を解くプログラムを速くしていった過程を書きます。&lt;/p&gt;
 
-&lt;p&gt;解く&amp;amp;テスト書く -&amp;gt; 速くする という流れです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;解く&amp;amp;テスト書く -&amp;gt; 速くする という流れです。&lt;/p&gt;</description>
     </item>
     
   </channel>

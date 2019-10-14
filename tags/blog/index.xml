@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>blog on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/blog/</link>
-    <description>Recent content in Blog on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in blog on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 23 Jul 2018 00:26:41 +0900</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Mon, 23 Jul 2018 00:26:41 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/lighthouse_checking/</guid>
-      <description>&lt;p&gt;自分のブログのテーマを変えてみたので、google chromeのlighthouseというやつを使って比較してみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;自分のブログのテーマを変えてみたので、google chromeのlighthouseというやつを使って比較してみました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,9 +30,7 @@
 
 &lt;p&gt;に変えました。&lt;/p&gt;
 
-&lt;p&gt;超ナウい感じになりました(当社比)。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;超ナウい感じになりました(当社比)。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -47,9 +43,7 @@
 
 &lt;p&gt;乗り換えてみました。&lt;/p&gt;
 
-&lt;p&gt;このブログのように、サブドメインなし(zone Apex)で配信していても、問題ないようです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;このブログのように、サブドメインなし(zone Apex)で配信していても、問題ないようです。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,9 +56,7 @@
 
 &lt;p&gt;キャッシュが効いてないと画像めっちゃ遅い時があるので、いじった。&lt;/p&gt;
 
-&lt;p&gt;以下のことをやったら google speed insightで35点 -&amp;gt; 90点台になった。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;以下のことをやったら google speed insightで35点 -&amp;gt; 90点台になった。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -75,9 +67,7 @@
       <guid>https://hoshinotsuyoshi.com/post/this-blog-https-apex-record-gh-pages-cloudflare/</guid>
       <description>&lt;p&gt;このブログはGithub PagesとCloudflareを利用し独自ドメインでhttps配信しています(ﾉ´∀｀*)&lt;/p&gt;
 
-&lt;p&gt;別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;別件でcloudflareいじってて、どう設定したのか思い出したので、メモを残しておく。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -86,9 +76,7 @@
       <pubDate>Wed, 04 Jan 2017 23:25:39 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/rake_entry_new/</guid>
-      <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -99,9 +87,7 @@
       <guid>https://hoshinotsuyoshi.com/post/favicons_zip/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。
 ファビコンが効いてないことに気づいたので、調整しました。
-realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -112,9 +98,7 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
       <guid>https://hoshinotsuyoshi.com/post/prismjs_intro/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。&lt;/p&gt;
 
-&lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -126,9 +110,7 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
       <description>&lt;p&gt;このブログ、&lt;a href=&#34;https://hoshinotsuyoshi.com&#34;&gt;https://hoshinotsuyoshi.com&lt;/a&gt;の編集方法とデプロイ方法についての説明です。&lt;/p&gt;
 
 &lt;p&gt;hugoでhtmlを生成し、github pagesでホスティングしています。
-あまり奇をてらったやり方はしていません。至って普通です。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+あまり奇をてらったやり方はしていません。至って普通です。&lt;/p&gt;</description>
     </item>
     
   </channel>

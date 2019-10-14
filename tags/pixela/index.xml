@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pixela on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>pixela on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/pixela/</link>
-    <description>Recent content in Pixela on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in pixela on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sat, 02 Feb 2019 14:15:47 +0900</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Sat, 02 Feb 2019 14:15:47 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/set_my_original_pixela_counter/</guid>
-      <description>&lt;p&gt;pixelaアクセスカウンターウィジェットを自作し、このhugoブログの各エントリーに設置してみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;pixelaアクセスカウンターウィジェットを自作し、このhugoブログの各エントリーに設置してみました。&lt;/p&gt;</description>
     </item>
     
   </channel>

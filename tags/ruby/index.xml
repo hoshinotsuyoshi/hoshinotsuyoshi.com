@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ruby on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>ruby on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/ruby/</link>
-    <description>Recent content in Ruby on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in ruby on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 27 Sep 2019 11:30:16 +0900</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Fri, 27 Sep 2019 11:30:16 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/rspec-zouzei/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -26,9 +26,7 @@
       <pubDate>Mon, 27 May 2019 07:12:02 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/</guid>
-      <description>&lt;p&gt;Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,9 +35,7 @@
       <pubDate>Fri, 24 May 2019 23:32:03 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/roppongirb10/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://roppongirb.connpass.com/event/129603/&#34;&gt;Roppongi.rb #10&lt;/a&gt; に参加し、LT登壇してきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://roppongirb.connpass.com/event/129603/&#34;&gt;Roppongi.rb #10&lt;/a&gt; に参加し、LT登壇してきました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,7 +44,7 @@
       <pubDate>Sat, 06 Apr 2019 11:06:24 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/omotesandorb45/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -57,9 +53,7 @@
       <pubDate>Sun, 24 Mar 2019 00:50:31 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/railsdm2019/</guid>
-      <description>&lt;p&gt;railsdm2019 1日目に行ってきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;railsdm2019 1日目に行ってきました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -68,9 +62,7 @@
       <pubDate>Mon, 04 Mar 2019 01:07:55 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/ruby_private_method_test/</guid>
-      <description>&lt;p&gt;privateメソッドのテストについての考え方 #yochiyochirb を読んで&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;privateメソッドのテストについての考え方 #yochiyochirb を読んで&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -83,9 +75,7 @@
 
 &lt;h3 id=&#34;動作&#34;&gt;動作&lt;/h3&gt;
 
-&lt;p&gt;&lt;img alt=&#34;rubocop_daemon&#34; src=&#34;https://hoshinotsuyoshi.com/images/rubocop_daemon_hash.gif&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;rubocop_daemon&#34; src=&#34;https://hoshinotsuyoshi.com/images/rubocop_daemon_hash.gif&#34; width=600&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -106,9 +96,7 @@
 
 &lt;p&gt;&lt;img alt=&#34;anime&#34; src=&#34;https://hoshinotsuyoshi.com/images/timings_greedy_anime.gif&#34; width=800&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;hr /&gt;</description>
     </item>
     
     <item>
@@ -117,9 +105,7 @@
       <pubDate>Sat, 08 Dec 2018 00:57:21 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/omotesandorb41_fusai/</guid>
-      <description>&lt;p&gt;「技術的負債」がテーマのomotesando.rb 第41回で、「「技術的負債」について私から言えること私から言えないこと」というタイトルでLTに応募し話してきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;「技術的負債」がテーマのomotesando.rb 第41回で、「「技術的負債」について私から言えること私から言えないこと」というタイトルでLTに応募し話してきました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -139,9 +125,7 @@
 
 &lt;p&gt;このサンプルは、CloudFormation動かしたことない私でも、特につまづくことなく超簡単に動きました。&lt;/p&gt;
 
-&lt;p&gt;今回は、これを元に少し改造して &lt;strong&gt;Sidekiq::Web(Sidekiq付属のダッシュボード)をAWS Lambdaで動かしてみる&lt;/strong&gt; ことにしました。そのことについて書きます。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;今回は、これを元に少し改造して &lt;strong&gt;Sidekiq::Web(Sidekiq付属のダッシュボード)をAWS Lambdaで動かしてみる&lt;/strong&gt; ことにしました。そのことについて書きます。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -150,9 +134,7 @@
       <pubDate>Mon, 12 Nov 2018 09:47:44 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/</guid>
-      <description>&lt;p&gt;「railsアップグレード」がテーマのomotesando.rb 第40回で、「spreeのrails updateの戦いの歴史と github上のPR作成時の工夫」というタイトル(長い)でLTに応募し話してきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;「railsアップグレード」がテーマのomotesando.rb 第40回で、「spreeのrails updateの戦いの歴史と github上のPR作成時の工夫」というタイトル(長い)でLTに応募し話してきました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -161,9 +143,7 @@
       <pubDate>Wed, 25 Jul 2018 00:25:48 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/pre_commit_prevents_odd_chars/</guid>
-      <description>&lt;p&gt;濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;濁点文字をソースコードに入れてしまって不具合を起こしてしまうということがありました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -172,7 +152,7 @@
       <pubDate>Sat, 21 Jul 2018 13:53:24 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -188,9 +168,7 @@
 &lt;p&gt;&lt;blockquote class=&#34;embedly-card&#34; data-card-key=&#34;6f257114b6df4413a3f5872a7e143278&#34; data-card-controls=&#34;0&#34; data-card-branding=&#34;0&#34; data-card-image=&#34;http://rubykaigi.org/2018/images/og_image.png&#34; data-card-type=&#34;article&#34;&gt;&lt;h4&gt;&lt;a href=&#34;https://rubykaigi.org/2018/presentations/jules2689.html&#34;&gt;RubyKaigi 2018, &lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;31&lt;/sub&gt;&amp;hellip;&lt;sup&gt;6&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;, Sendai, Miyagi, Japan #rubykaigi&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;RubyKaigi 2018, &lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;31&lt;/sub&gt;&amp;hellip;&lt;sup&gt;6&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;, Sendai, Miyagi, Japan&lt;/p&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//cdn.embedly.com/widgets/platform.js&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;主観的に抜粋し、また、自分の感想を書いてみようと思う。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;主観的に抜粋し、また、自分の感想を書いてみようと思う。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -199,9 +177,7 @@
       <pubDate>Sat, 02 Jun 2018 10:46:26 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_moriocho_2/</guid>
-      <description>&lt;p&gt;引き続き英語全然わからんかった。誤訳・誤解があっても感想ということでご容赦♫&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;引き続き英語全然わからんかった。誤訳・誤解があっても感想ということでご容赦♫&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -210,9 +186,7 @@
       <pubDate>Fri, 01 Jun 2018 01:22:54 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_moriocho_1/</guid>
-      <description>&lt;p&gt;RubyKaigi2018杜王町1日目行ってきました・忘れないうちに感想書く&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;RubyKaigi2018杜王町1日目行ってきました・忘れないうちに感想書く&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -223,9 +197,7 @@
       <guid>https://hoshinotsuyoshi.com/post/process_after_process/</guid>
       <description>&lt;p&gt;あるプロセスが終わるのを待ってから、別の何かをしたいときがある。&lt;/p&gt;
 
-&lt;p&gt;うっかり長い処理を走らせてしまったときとか。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;うっかり長い処理を走らせてしまったときとか。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -235,9 +207,7 @@
       
       <guid>https://hoshinotsuyoshi.com/post/slack_ruby_bot/</guid>
       <description>&lt;p&gt;SlackのXMPPゲートウェイが閉じるという話があり、近いうちにruboty-slack gem(現在xmppに依存している)が使えなくなるらしいので、
-&lt;a href=&#34;https://github.com/slack-ruby/slack-ruby-bot&#34;&gt;slack-ruby-bot&lt;/a&gt;を試してみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;a href=&#34;https://github.com/slack-ruby/slack-ruby-bot&#34;&gt;slack-ruby-bot&lt;/a&gt;を試してみました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -246,9 +216,7 @@
       <pubDate>Mon, 08 Jan 2018 16:26:12 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/ruby_truthy_or_falsy/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;risemara&#34; src=&#34;https://hoshinotsuyoshi.com/images/risemara.gif&#34; width=400&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img alt=&#34;risemara&#34; src=&#34;https://hoshinotsuyoshi.com/images/risemara.gif&#34; width=400&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -257,9 +225,7 @@
       <pubDate>Wed, 04 Jan 2017 23:25:39 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/rake_entry_new/</guid>
-      <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;少しでも記事を書くのをラクにする試みです。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -268,9 +234,7 @@
       <pubDate>Sun, 01 Jan 2017 15:10:00 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/method_source_location/</guid>
-      <description>&lt;p&gt;rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;rubyでは、あるオブジェクトが持つメソッドのソースがどこにあるのかは、自明ではなかったりします。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -280,9 +244,7 @@
       
       <guid>https://hoshinotsuyoshi.com/post/ruby24/</guid>
       <description>&lt;p&gt;🎄 メリークリスマス 🎅
-ruby2.4がリリースされました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+ruby2.4がリリースされました。&lt;/p&gt;</description>
     </item>
     
   </channel>

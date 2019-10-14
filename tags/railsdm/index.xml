@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Railsdm on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>railsdm on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/railsdm/</link>
-    <description>Recent content in Railsdm on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in railsdm on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 24 Mar 2019 00:50:31 +0900</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Sun, 24 Mar 2019 00:50:31 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/railsdm2019/</guid>
-      <description>&lt;p&gt;railsdm2019 1日目に行ってきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;railsdm2019 1日目に行ってきました。&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lambda on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>lambda on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/lambda/</link>
-    <description>Recent content in Lambda on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in lambda on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 02 Dec 2018 00:26:53 +0900</lastBuildDate>
@@ -28,9 +28,7 @@
 
 &lt;p&gt;このサンプルは、CloudFormation動かしたことない私でも、特につまづくことなく超簡単に動きました。&lt;/p&gt;
 
-&lt;p&gt;今回は、これを元に少し改造して &lt;strong&gt;Sidekiq::Web(Sidekiq付属のダッシュボード)をAWS Lambdaで動かしてみる&lt;/strong&gt; ことにしました。そのことについて書きます。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;今回は、これを元に少し改造して &lt;strong&gt;Sidekiq::Web(Sidekiq付属のダッシュボード)をAWS Lambdaで動かしてみる&lt;/strong&gt; ことにしました。そのことについて書きます。&lt;/p&gt;</description>
     </item>
     
   </channel>

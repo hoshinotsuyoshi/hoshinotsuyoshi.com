@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Golang on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>golang on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/golang/</link>
-    <description>Recent content in Golang on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in golang on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 07 Dec 2017 00:02:51 +0900</lastBuildDate>
@@ -26,9 +26,7 @@
 
 &lt;p&gt;そこで、&lt;a href=&#34;https://github.com/terraform-providers/terraform-provider-aws&#34;&gt;terraform-providers/terraform-provider-aws&lt;/a&gt; を改造し、buildして手元で使ってみました。&lt;/p&gt;
 
-&lt;p&gt;そのときの手順です。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;そのときの手順です。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,9 +39,7 @@
 
 &lt;p&gt;go test の-benchを使い、Project Eulerの問題を解くプログラムを速くしていった過程を書きます。&lt;/p&gt;
 
-&lt;p&gt;解く&amp;amp;テスト書く -&amp;gt; 速くする という流れです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;解く&amp;amp;テスト書く -&amp;gt; 速くする という流れです。&lt;/p&gt;</description>
     </item>
     
   </channel>

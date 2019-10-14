@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Casper on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>casper on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/casper/</link>
-    <description>Recent content in Casper on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in casper on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 22 Jul 2018 11:57:50 +0900</lastBuildDate>
@@ -21,9 +21,7 @@
 
 &lt;p&gt;に変えました。&lt;/p&gt;
 
-&lt;p&gt;超ナウい感じになりました(当社比)。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;超ナウい感じになりました(当社比)。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,9 +32,7 @@
       <guid>https://hoshinotsuyoshi.com/post/favicons_zip/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。
 ファビコンが効いてないことに気づいたので、調整しました。
-realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+realfavicongenerator.netを使ってみて結構便利だったので紹介します。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -47,9 +43,7 @@ realfavicongenerator.netを使ってみて結構便利だったので紹介し�
       <guid>https://hoshinotsuyoshi.com/post/prismjs_intro/</guid>
       <description>&lt;p&gt;このブログはcasper(&lt;a href=&#34;https://github.com/vjeantet/hugo-theme-casper&#34;&gt;vjeantet/hugo-theme-casper&lt;/a&gt;)というテーマを使っています。&lt;/p&gt;
 
-&lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;デフォルトではコードを貼り付けたときにシンタックスハイライトが効かないことに気づいたので、CSSやJS周りを調整しました。&lt;/p&gt;</description>
     </item>
     
   </channel>

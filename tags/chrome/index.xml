@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chrome on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>chrome on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/chrome/</link>
-    <description>Recent content in Chrome on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in chrome on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 01 Oct 2018 23:21:28 +0900</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Mon, 01 Oct 2018 23:21:28 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/shisubeshi-chrome-69/</guid>
-      <description>&lt;p&gt;Chrome 69でJIS配列の俺は死にました(追記あり)&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Chrome 69でJIS配列の俺は死にました(追記あり)&lt;/p&gt;</description>
     </item>
     
   </channel>

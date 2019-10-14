@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Es2015 on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>es2015 on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/es2015/</link>
-    <description>Recent content in Es2015 on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in es2015 on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sat, 14 Jan 2017 11:43:09 +0900</lastBuildDate>
@@ -21,9 +21,7 @@
 
 &lt;p&gt;なお今回の第2回目で最終回の予定です!!&lt;/p&gt;
 
-&lt;p&gt;第1回目はこちら(&lt;a href=&#34;https://hoshinotsuyoshi.com/post/arrow_func_no_brace/&#34;&gt;君はarrow functionの波括弧省略について知っているか&lt;/a&gt;)でした。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;第1回目はこちら(&lt;a href=&#34;https://hoshinotsuyoshi.com/post/arrow_func_no_brace/&#34;&gt;君はarrow functionの波括弧省略について知っているか&lt;/a&gt;)でした。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,9 +33,7 @@
       <description>&lt;p&gt;引き続き勉強兼ねて&lt;a href=&#34;https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/&#34;&gt;chrome拡張書いてる&lt;/a&gt;んですが、
 そのときに読んで知った初心者メモ。&lt;/p&gt;
 
-&lt;p&gt;引数の丸括弧&lt;code&gt;()&lt;/code&gt;の省略については知っていたんですが、波括弧&lt;code&gt;{}&lt;/code&gt;も省略できる時があるんですね。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;引数の丸括弧&lt;code&gt;()&lt;/code&gt;の省略については知っていたんですが、波括弧&lt;code&gt;{}&lt;/code&gt;も省略できる時があるんですね。&lt;/p&gt;</description>
     </item>
     
   </channel>

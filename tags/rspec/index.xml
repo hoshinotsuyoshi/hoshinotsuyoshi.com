@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rspec on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>rspec on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/rspec/</link>
-    <description>Recent content in Rspec on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in rspec on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 27 Sep 2019 11:30:16 +0900</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Fri, 27 Sep 2019 11:30:16 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/rspec-zouzei/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -38,9 +38,7 @@
 
 &lt;p&gt;&lt;img alt=&#34;anime&#34; src=&#34;https://hoshinotsuyoshi.com/images/timings_greedy_anime.gif&#34; width=800&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;hr /&gt;</description>
     </item>
     
     <item>
@@ -53,9 +51,7 @@
 
 &lt;p&gt;意外と良い。&lt;/p&gt;
 
-&lt;p&gt;ちょっと長めの &lt;code&gt;$ rspec spec/requests&lt;/code&gt; とか流したときに、slack眺めたり別のことができる。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;ちょっと長めの &lt;code&gt;$ rspec spec/requests&lt;/code&gt; とか流したときに、slack眺めたり別のことができる。&lt;/p&gt;</description>
     </item>
     
   </channel>

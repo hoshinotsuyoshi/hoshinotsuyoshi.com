@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rubocop on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>rubocop on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/rubocop/</link>
-    <description>Recent content in Rubocop on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in rubocop on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 24 May 2019 23:32:03 +0900</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 24 May 2019 23:32:03 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/roppongirb10/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://roppongirb.connpass.com/event/129603/&#34;&gt;Roppongi.rb #10&lt;/a&gt; に参加し、LT登壇してきました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://roppongirb.connpass.com/event/129603/&#34;&gt;Roppongi.rb #10&lt;/a&gt; に参加し、LT登壇してきました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,9 +30,7 @@
 
 &lt;h3 id=&#34;動作&#34;&gt;動作&lt;/h3&gt;
 
-&lt;p&gt;&lt;img alt=&#34;rubocop_daemon&#34; src=&#34;https://hoshinotsuyoshi.com/images/rubocop_daemon_hash.gif&#34; width=600&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;rubocop_daemon&#34; src=&#34;https://hoshinotsuyoshi.com/images/rubocop_daemon_hash.gif&#34; width=600&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,7 +39,7 @@
       <pubDate>Sat, 21 Jul 2018 13:53:24 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -65,9 +61,7 @@
 &lt;ul&gt;
 &lt;li&gt;自分の場合は1行追加で動いた&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

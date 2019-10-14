@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tmux on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>tmux on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/tmux/</link>
-    <description>Recent content in Tmux on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in tmux on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 24 Jun 2018 05:13:28 +0900</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Sun, 24 Jun 2018 05:13:28 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/</guid>
-      <description>&lt;p&gt;ほぼ&lt;a href=&#34;https://qiita.com/dtan4/items/363e92525e7c5a16f3fc&#34;&gt;この記事&lt;/a&gt; のとおりにやりました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;ほぼ&lt;a href=&#34;https://qiita.com/dtan4/items/363e92525e7c5a16f3fc&#34;&gt;この記事&lt;/a&gt; のとおりにやりました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -93,9 +91,7 @@
 &lt;td&gt;3.4%&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/table&gt;</description>
     </item>
     
   </channel>

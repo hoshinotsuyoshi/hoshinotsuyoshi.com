@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sentry on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>sentry on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/sentry/</link>
-    <description>Recent content in Sentry on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in sentry on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 04 Aug 2019 07:48:28 +0900</lastBuildDate>
@@ -25,9 +25,7 @@
 
 &lt;p&gt;ということがわかりました。&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;ActiveRecord::RecordNotFound&lt;/code&gt;に気づきたい場合は、設定をいじる必要があります。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;code&gt;ActiveRecord::RecordNotFound&lt;/code&gt;に気づきたい場合は、設定をいじる必要があります。&lt;/p&gt;</description>
     </item>
     
   </channel>

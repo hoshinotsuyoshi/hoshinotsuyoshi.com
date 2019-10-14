@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fargate on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>fargate on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/fargate/</link>
-    <description>Recent content in Fargate on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in fargate on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 08 Dec 2017 03:32:07 +0900</lastBuildDate>
@@ -41,9 +41,7 @@
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;hr /&gt;</description>
     </item>
     
   </channel>

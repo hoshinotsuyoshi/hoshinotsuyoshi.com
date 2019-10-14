@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aws on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>aws on hoshinotsuyoshi.com - 自由なブログだよ</title>
     <link>https://hoshinotsuyoshi.com/tags/aws/</link>
-    <description>Recent content in Aws on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <description>Recent content in aws on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 08 Dec 2017 03:32:07 +0900</lastBuildDate>
@@ -41,9 +41,7 @@
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;hr /&gt;</description>
     </item>
     
     <item>
@@ -61,9 +59,7 @@
 
 &lt;p&gt;そこで、&lt;a href=&#34;https://github.com/terraform-providers/terraform-provider-aws&#34;&gt;terraform-providers/terraform-provider-aws&lt;/a&gt; を改造し、buildして手元で使ってみました。&lt;/p&gt;
 
-&lt;p&gt;そのときの手順です。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;そのときの手順です。&lt;/p&gt;</description>
     </item>
     
   </channel>
