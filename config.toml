@@ -34,6 +34,7 @@ title         = "hoshinotsuyoshi.com - 自由なブログだよ"
   singleViewStyle = "casper"
 
   Adsense = "ca-pub-1470153732194143"
+  LogoLink = "https://line.me/ti/p/hHG0Oqn7d8"
 
 [[menu.main]]
   name = "Home"
