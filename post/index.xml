@@ -6,10 +6,23 @@
     <description>Recent content in Posts on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 27 Sep 2019 11:30:16 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 13:37:46 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>おうち自重トレーニングと食事の工夫で腹筋割れる💪</title>
+      <link>https://hoshinotsuyoshi.com/post/diet/</link>
+      <pubDate>Sat, 15 Feb 2020 13:37:46 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/diet/</guid>
+      <description>&lt;p&gt;12月中旬から自重トレーニングしてて、2ヶ月ぐらい経った。&lt;/p&gt;
+
+&lt;h2 id=&#34;先にまとめ&#34;&gt;先にまとめ&lt;/h2&gt;
+
+&lt;p&gt;自重トレと食事のコントロールで腹筋は割れる。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔</title>
