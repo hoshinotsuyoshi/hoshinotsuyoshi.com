@@ -56,7 +56,9 @@ iPhoneの標準アプリだけでも十分いろいろできるぞ! というお
 
 ショートカットのボタンを押すと、こんな動きになります。↓
 
-<video alt="" src="/images/RPReplay_Final1582207176.MP4" width=400 loop muted autoplay></video>
+<video autoplay muted playsinline loop width=400>
+<source src="/images/RPReplay_Final1582207176.MP4" type="video/mp4">
+</video>
 
 便利。
 
