@@ -6,10 +6,19 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 20 Feb 2020 23:52:13 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 15:58:14 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫</title>
+      <link>https://hoshinotsuyoshi.com/post/gas_oncall/</link>
+      <pubDate>Mon, 24 Feb 2020 15:58:14 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/gas_oncall/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>おうち自重トレーニングの継続を支えるiPhone標準アプリ</title>
