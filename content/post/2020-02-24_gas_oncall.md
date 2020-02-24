@@ -4,7 +4,7 @@ draft = false
 title = "社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫"
 slug = "gas_oncall"
 tags = ["javascript","googleappscript"]
-image = "images/garapiko.jpg"
+image = "images/robot.png"
 +++
 
 <!--more-->
