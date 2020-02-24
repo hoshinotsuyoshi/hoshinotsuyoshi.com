@@ -6,10 +6,19 @@
     <description>Recent content in javascript on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 14 Jan 2017 11:43:09 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 15:58:14 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫</title>
+      <link>https://hoshinotsuyoshi.com/post/gas_oncall/</link>
+      <pubDate>Mon, 24 Feb 2020 15:58:14 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/gas_oncall/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>{ prop1, prop2 }みたいなオブジェクト記法(shorthand property names)と文字列リテラルを使わないhello world</title>

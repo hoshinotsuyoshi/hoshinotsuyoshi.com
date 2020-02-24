@@ -15,19 +15,19 @@
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/tags/googleappscript/</loc>
+    <lastmod>2020-02-24T15:58:14+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
     <lastmod>2020-02-24T15:58:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hoshinotsuyoshi.com/tags/tag1/</loc>
-    <lastmod>2020-02-24T15:58:14+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/tag2/</loc>
+    <loc>https://hoshinotsuyoshi.com/tags/javascript/</loc>
     <lastmod>2020-02-24T15:58:14+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -728,12 +728,6 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/es2015/</loc>
-    <lastmod>2017-01-14T11:43:09+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/javascript/</loc>
     <lastmod>2017-01-14T11:43:09+09:00</lastmod>
     <priority>0</priority>
   </url>
