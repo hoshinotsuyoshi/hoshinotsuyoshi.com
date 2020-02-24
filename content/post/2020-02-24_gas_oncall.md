@@ -3,7 +3,7 @@ date = "2020-02-24T15:58:14+09:00"
 draft = false
 title = "社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫"
 slug = "gas_oncall"
-tags = ["tag1","tag2"]
+tags = ["javascript","googleappscript"]
 image = "images/garapiko.jpg"
 +++
 
