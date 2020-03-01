@@ -35,6 +35,7 @@ image = "images/korakuen_1.jpeg"
 
 ----
 
+<img alt="" src="/images/pcubed_ticket.jpg" width=600>
 
 <img alt="" src="/images/korakuen_1.jpeg" width=600>
 
