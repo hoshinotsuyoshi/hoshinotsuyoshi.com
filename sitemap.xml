@@ -4,24 +4,47 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2020-02-24T15:58:14+09:00</lastmod>
+    <lastmod>2020-03-01T15:48:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2020-02-24T15:58:14+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/googleappscript/</loc>
-    <lastmod>2020-02-24T15:58:14+09:00</lastmod>
+    <lastmod>2020-03-01T15:48:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
+    <lastmod>2020-03-01T15:48:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/life/</loc>
+    <lastmod>2020-03-01T15:48:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/perfume/</loc>
+    <lastmod>2020-03-01T15:48:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/post/perfume_p_cubed_2020_dome/</loc>
+    <lastmod>2020-03-01T15:48:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/</loc>
+    <lastmod>2020-03-01T15:48:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/googleappscript/</loc>
     <lastmod>2020-02-24T15:58:14+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -38,12 +61,6 @@
   </url>
   
   <url>
-    <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2020-02-24T15:58:14+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hoshinotsuyoshi.com/tags/diet/</loc>
     <lastmod>2020-02-20T23:52:13+09:00</lastmod>
     <priority>0</priority>
@@ -51,12 +68,6 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/iphone/</loc>
-    <lastmod>2020-02-20T23:52:13+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/life/</loc>
     <lastmod>2020-02-20T23:52:13+09:00</lastmod>
     <priority>0</priority>
   </url>
