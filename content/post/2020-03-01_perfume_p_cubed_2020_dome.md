@@ -66,13 +66,11 @@ image = "images/korakuen_1.jpeg"
 
 ちゃんとフリ覚えよ？と思いました。
 
-
-## ♪ SEVENTH HEAVEN
+## ♪ ナナナナナイロ
 
 要約: 泣いた。(数分ぶり2回目)
 
-
-## ♪ ナナナナナイロ
+## ♪ SEVENTH HEAVEN
 
 要約: 泣いた。(数分ぶり3回目)
 
@@ -105,6 +103,11 @@ image = "images/korakuen_1.jpeg"
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">言葉がないの、これです.... 昨日行けたのは良かったけど... つらい.....<a href="https://t.co/RpVnlfzpwT">https://t.co/RpVnlfzpwT</a></p>&mdash; Tsuyoshi Hoshino (@hoppiestar) <a href="https://twitter.com/hoppiestar/status/1232577298869571585?ref_src=twsrc%5Etfw">February 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+## セットリスト
+
+https://www.perfume-web.jp/cam/dometour2020/
+
+<img alt="" src="/images/setlist.png" width=600>
 
 ## まとめ
 
