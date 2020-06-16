@@ -117,25 +117,30 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/remote_six_month/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/nomad_surfing_nangoku.png)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/serverless-sidekiq-web.png)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/remote_six_month/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/sidekiq_dashboard_lambda/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #remote 
-              #life 
-              #programming  </span>
+              #sidekiq 
+              #ruby 
+              #lambda  </span>
               
-              <h2 class="post-card-title">🏠リモートで働くようになって6ヶ月が経ちました🏠</h2>
+              <h2 class="post-card-title">💎AWS Lambdaでrubyを動かしてSidekiqのダッシュボードをサーバーレスで動かしてみる</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>転職でフルリモートで働くようになって6ヶ月が経ちました🏠ので
-その辺の変化とか仕事のこととか、最近の生活について書いておきたいと思います。
+                <p>ついに AWS Lambdaがrubyをサポートしました。💎
+サンプルとして、AWS公式からSAM(AWS Serverless Application Model)でWebアプリを動かすやつ aws-samples/serverless-sinatra-sampleが出てました↓。
+aws-samples/serverless-sinatra-sampleDemo code for running Ruby Sinatra on AWS Lambda. Contribute to aws-samples/serverless-sinatra-sample development by creating an account on GitHub.
+ 
+(なんとsinatra!!)
+このサンプルは、CloudFormation動かしたことない私でも、特につまづくことなく超簡単に動きました。
+今回は、これを元に少し改造して Sidekiq::Web(Sidekiq付属のダッシュボード)をAWS Lambdaで動かしてみる ことにしました。そのことについて書きます。
  ...  </p>
               
           </section>
@@ -151,23 +156,22 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/ruby24/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/happy_rails.png)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/rework/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/rework_cover.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/ruby24/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/rework/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #rails 
-              #ruby  </span>
+              #rework  </span>
               
-              <h2 class="post-card-title">ruby2.4にしてrails5.0.1にした</h2>
+              <h2 class="post-card-title">「小さなチーム、大きな仕事」(REWORK)読んだ</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>🎄 メリークリスマス 🎅 ruby2.4がリリースされました。
+                <p>この本を読んだ。
  ...  </p>
               
           </section>
@@ -183,23 +187,27 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/lighthouse_checking/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/lighthouse.png)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/change_blog_theme_casper/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/ghost_cover.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/lighthouse_checking/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/change_blog_theme_casper/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #blog 
-              #lighthouse  </span>
+              #casper 
+              #ghost 
+              #hugo 
+              #blog  </span>
               
-              <h2 class="post-card-title">lighthouseを使って自分のブログを計測してみた</h2>
+              <h2 class="post-card-title">👻このブログのテーマをhugo-theme-casperからhugo-casper-twoに変えた👻</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>自分のブログのテーマを変えてみたので、google chromeのlighthouseというやつを使って比較してみました。
+                <p>vjeantet/hugo-theme-casperからeueung/hugo-casper-two
+に変えました。
+超ナウい感じになりました(当社比)。
  ...  </p>
               
           </section>
