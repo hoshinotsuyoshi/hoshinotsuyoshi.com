@@ -125,11 +125,17 @@
         <div class="kg-card-markdown">
         <p>iPhoneの画面収録した.mp4をGitHub用にアニgifにします。</p>
 
-<h3 id="前提">前提</h3>
+<h3 id="工夫">工夫</h3>
 
-<p><a href="https://support.apple.com/ja-jp/HT207935">iPhone、iPad、iPod touch で画面を録画する方法 - Apple サポート</a>で録画する。</p>
+<p>ffmpegをbrewでinstallすると色々壊れたことがあるので、Dockerを使います。</p>
 
-<h3 id="結論">結論</h3>
+<h3 id="準備">準備</h3>
+
+<p><a href="https://support.apple.com/ja-jp/HT207935">iPhone、iPad、iPod touch で画面を録画する方法 - Apple サポート</a>で録画しておきます。</p>
+
+<h3 id="やること">やること</h3>
+
+<p>結論のコマンドはこちらです。</p>
 
 <pre><code>$ docker run --rm -v `pwd`/input:/input -v `pwd`/output:/output jrottenberg/ffmpeg:3.3-alpine -i /input/input.mp4 -r 24 /output/output.gif
 </code></pre>
@@ -142,7 +148,7 @@ $ mkdir output
 
 <p>あとは、Airdropか何かでmacに転送した.mp4ファイルをinputディレクトリの下にinput.mp4として配置し、</p>
 
-<p>上述のコマンドを実行すると、outputディレクトリの下にoutput.gifが置かれます。</p>
+<p>上述のコマンドを実行すると、outputディレクトリの下にoutput.gifが置かれます。🚀</p>
 
 <script type="text/javascript" src="/js/prism.js" async></script>    
         </div>
@@ -182,13 +188,13 @@ $ mkdir output
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/">Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/method_source_location/">メソッドが定義された場所を調べる</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/souieba_chrome_const/">chrome extension書いてて感動したこと(1)</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/circleci_tests_split/">circleci tests split --split-by=timingsについて調べた・自作してみた</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb40_spree_upgrade/">omotesando.rb #40でrails update(spree update)についてのLTをした</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/amazake/">甘酒🍶</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/gas_oncall/">社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
