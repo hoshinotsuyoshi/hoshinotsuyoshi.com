@@ -258,3 +258,5 @@ CIで使うなら、docker-composeでrspec動かしてるような時には1行�
 ## 次は
 
 次はRailsアプリでCIでsystem testするやつを書きます(書きたい)
+
+追記: [書いた](/post/rails_system_test/)
