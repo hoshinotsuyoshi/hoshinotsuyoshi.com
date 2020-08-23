@@ -6,7 +6,7 @@
     <description>Recent content in Tags on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 02 Aug 2020 17:57:44 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 12:47:36 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title></title>
       <link>https://hoshinotsuyoshi.com/tags/</link>
-      <pubDate>Sun, 02 Aug 2020 17:57:44 +0900</pubDate>
+      <pubDate>Sun, 23 Aug 2020 12:47:36 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>https://hoshinotsuyoshi.com/tags/life/</link>
+      <pubDate>Sun, 23 Aug 2020 12:47:36 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/life/</guid>
       <description></description>
     </item>
     
@@ -80,15 +89,6 @@
       <pubDate>Wed, 22 Jul 2020 23:31:56 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/ffmpeg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>life</title>
-      <link>https://hoshinotsuyoshi.com/tags/life/</link>
-      <pubDate>Tue, 16 Jun 2020 15:19:17 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/life/</guid>
       <description></description>
     </item>
     
