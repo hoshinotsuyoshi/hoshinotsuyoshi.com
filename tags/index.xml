@@ -6,7 +6,7 @@
     <description>Recent content in Tags on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 23 Aug 2020 12:47:36 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2020 21:29:04 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title></title>
       <link>https://hoshinotsuyoshi.com/tags/</link>
-      <pubDate>Sun, 23 Aug 2020 12:47:36 +0900</pubDate>
+      <pubDate>Sat, 21 Nov 2020 21:29:04 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rubocop</title>
+      <link>https://hoshinotsuyoshi.com/tags/rubocop/</link>
+      <pubDate>Sat, 21 Nov 2020 21:29:04 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/rubocop/</guid>
       <description></description>
     </item>
     
@@ -170,15 +179,6 @@
       <pubDate>Sun, 04 Aug 2019 07:48:28 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/sidekiq/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rubocop</title>
-      <link>https://hoshinotsuyoshi.com/tags/rubocop/</link>
-      <pubDate>Fri, 24 May 2019 23:32:03 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/rubocop/</guid>
       <description></description>
     </item>
     

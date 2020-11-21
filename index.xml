@@ -6,10 +6,19 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 23 Aug 2020 12:47:36 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2020 21:29:04 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>.rubocop.ymlシンプルに、ゆるめににやりたいんじゃ</title>
+      <link>https://hoshinotsuyoshi.com/post/rubocop_yaml/</link>
+      <pubDate>Sat, 21 Nov 2020 21:29:04 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/rubocop_yaml/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>リングフィットアドベンチャー</title>

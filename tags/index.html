@@ -228,7 +228,7 @@
           
           <a href="https://hoshinotsuyoshi.com/tags/rspec"> rspec </a> (4)&nbsp;&#x2F;&nbsp;
           
-          <a href="https://hoshinotsuyoshi.com/tags/rubocop"> rubocop </a> (4)&nbsp;&#x2F;&nbsp;
+          <a href="https://hoshinotsuyoshi.com/tags/rubocop"> rubocop </a> (5)&nbsp;&#x2F;&nbsp;
           
           <a href="https://hoshinotsuyoshi.com/tags/rubocop-daemon"> rubocop-daemon </a> (1)&nbsp;&#x2F;&nbsp;
           
@@ -281,22 +281,26 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/amazake/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/amazake.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/heatmap_keyboard/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/keyboard.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/amazake/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/heatmap_keyboard/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #life  </span>
+              #keyboard 
+              #tmux 
+              #vim  </span>
               
-              <h2 class="post-card-title">甘酒🍶</h2>
+              <h2 class="post-card-title">俺がよく打つキー可視化</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p> ...  </p>
+                <p>Keyboard Heatmapとキーロガー(caseyscarborough/keylogger)でヒートマップ作ってみたら楽しかった。
+結論、こんな感じのデータを得ることができる。
+   key count     [left-cmd] 5.3%   a 4.9%   [return] 4.8%   i 4.3%   (space) 3.9%   e 3.7%   [left-ctrl] 3.6%   m 3.5%   [tab] 3.4%   n 3.4%    ...  </p>
               
           </section>
       </a>
@@ -311,28 +315,28 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/circleci_tests_split/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/circleciimage.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/2.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/circleci_tests_split/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #circleci 
-              #test 
-              #ruby 
-              #rspec  </span>
+              #sidekiq 
+              #rails 
+              #sentry  </span>
               
-              <h2 class="post-card-title">circleci tests split --split-by=timingsについて調べた・自作してみた</h2>
+              <h2 class="post-card-title">sentry-ravenはデフォルトではActiveRecord::RecordNotFoundを通知してくれない</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>この記事はCircleCI Advent Calendar 2018の24日目の記事です。
-テスト分割実行ファンの皆さんこんにちは。
-今回はCircleCIの並列テストにおいて、いい感じにテストファイルを分割することを考えていきたいと思います。
-【イメージ アニgif】
+                <p>Sidekiqでエラーが起きてるっぽいにもかかわらず、sentryに通知されず、謎ですねみたいな現象がありました。
+調べたところ、
+sentry-ravenはデフォルト設定では特定の例外を通知してくれない!!
+ということがわかりました。
+ActiveRecord::RecordNotFoundに気づきたい場合は、設定をいじる必要があります。
  ...  </p>
               
           </section>
@@ -348,25 +352,23 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/hugo.png)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/cloudcraft-mastodon.png)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/deploy_this_blog/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #blog 
-              #hugo 
-              #github-pages  </span>
+              #mastodon 
+              #terraform  </span>
               
-              <h2 class="post-card-title">このブログの編集方法とデプロイ方法について(github pages &#43; hugo)</h2>
+              <h2 class="post-card-title">複数mastodonを考える 🐘   🐘   🐘</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>このブログ、https://hoshinotsuyoshi.comの編集方法とデプロイ方法についての説明です。
-hugoでhtmlを生成し、github pagesでホスティングしています。 あまり奇をてらったやり方はしていません。至って普通です。
+                <p>terraformの練習がてら、複数のmastodonインスタンス🐘を立ててみました。
  ...  </p>
               
           </section>

@@ -4,25 +4,36 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2020-08-23T12:47:36+09:00</lastmod>
+    <lastmod>2020-11-21T21:29:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://hoshinotsuyoshi.com/post/rubocop_yaml/</loc>
+    <lastmod>2020-11-21T21:29:04+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2020-08-23T12:47:36+09:00</lastmod>
+    <lastmod>2020-11-21T21:29:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2020-08-23T12:47:36+09:00</lastmod>
+    <lastmod>2020-11-21T21:29:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2020-08-23T12:47:36+09:00</lastmod>
+    <lastmod>2020-11-21T21:29:04+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/rubocop/</loc>
+    <lastmod>2020-11-21T21:29:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,12 +207,6 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/post/roppongirb10/</loc>
     <lastmod>2019-05-24T23:32:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/rubocop/</loc>
-    <lastmod>2019-05-24T23:32:03+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
