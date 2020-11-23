@@ -4,39 +4,39 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔 &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>`ExecJS::RuntimeUnavailable` エラーは EXECJS_RUNTIME=Disabled で回避できるときがある &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/rspec-zouzei/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/execjs_runtime_disabled/" />
 
-     <meta name="description" content="" /> 
+     <meta name="description" content="&lt;p&gt;&lt;code&gt;ExecJS::RuntimeUnavailable&lt;/code&gt; で ググってもあまり出てこなかったので書いておく。&lt;/p&gt;" /> 
 
      
     
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
+    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/3.jpg"/>
     
  
-    <meta name="twitter:title" content="macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/rspec-zouzei/" />
+    <meta name="twitter:title" content="`ExecJS::RuntimeUnavailable` エラーは EXECJS_RUNTIME=Disabled で回避できるときがある"/>
+    <meta name="twitter:description" content="&lt;p&gt;&lt;code&gt;ExecJS::RuntimeUnavailable&lt;/code&gt; で ググってもあまり出てこなかったので書いておく。&lt;/p&gt;"/>
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/execjs_runtime_disabled/" />
     <meta name="twitter:site" content="@hoppiestar"/>
 
     <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
-    <meta property="og:title" content="macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔 &middot; " />
-    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/rspec-zouzei/" />
+    <meta property="og:title" content="`ExecJS::RuntimeUnavailable` エラーは EXECJS_RUNTIME=Disabled で回避できるときがある &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/execjs_runtime_disabled/" />
     <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="&lt;p&gt;&lt;code&gt;ExecJS::RuntimeUnavailable&lt;/code&gt; で ググってもあまり出てこなかったので書いておく。&lt;/p&gt;" />
 
-    <meta property="article:published_time" content="2019-09-27T11:30:16&#43;09:00" />
-    <meta property="article:tag" content="rspec" /><meta property="article:tag" content="ruby" /><meta property="article:tag" content="rails" />
+    <meta property="article:published_time" content="2020-11-24T01:22:00&#43;09:00" />
+    <meta property="article:tag" content="rails" /><meta property="article:tag" content="node" />
 
-    <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
+    <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/3.jpg"/>
 
 
     <meta name="generator" content="Hugo 0.55.6" />
@@ -112,36 +112,48 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2019-09-27">27 September 2019</time>
-                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/rspec/">#rspec</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;
+            <time class="post-full-meta-date" datetime="2020-11-24">24 November 2020</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/rails/">#rails</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/node/">#node</a>&nbsp;
         </section>
-        <h1 class="post-full-title">macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔</h1>
+        <h1 class="post-full-title">`ExecJS::RuntimeUnavailable` エラーは EXECJS_RUNTIME=Disabled で回避できるときがある</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)">
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/3.jpg)">
     </figure>
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        <p>普段こんなこと絶対やらないんですが、今回は便利でした。</p>
+        <p><code>ExecJS::RuntimeUnavailable</code> で ググってもあまり出てこなかったので書いておく。</p>
 
-<p>具体的にはこの画面で「日付と時刻を自動的に設定」をオフにして日付を未来にします。</p>
+<p>railsコマンドやrakeコマンドで、<code>ExecJS::RuntimeUnavailable</code> エラーが起きてしまうことがある。</p>
 
-<p><img alt="" src="/images/clock.jpg" width=800></p>
+<p>普通はあんまり起きないんだけど、railsアプリで、以下のようなケース。</p>
 
-<p><br></p>
+<ul>
+<li>dockerのmulti-stageビルドを駆使していてダイエットしていて、最終的に出来上がるdockerイメージに <code>nodejs</code> (とか)が無い</li>
+<li><code>execjs</code> gem を利用している
 
-<h2 id="現在時刻による分岐処理">現在時刻による分岐処理</h2>
+<ul>
+<li>例えば、<code>autoprefixer-rails</code> gem や、それに依存してる <code>bootstrap</code> (twitter bootstrap) gemを使っている</li>
+</ul></li>
+</ul>
 
-<p>消費税の値は基本的にDBに保存しているんですが、どうしてもパフォーマンスの理由とかいろいろの理由とかで、ベタ書きの箇所もあります。</p>
+<p>( productionでbootstrap gemを使わなきゃいいだろ、と言われそうだが、bootstrap gemに依存してるgemがあってな&hellip;..😂)</p>
 
-<p>もちろん、<strong>ちゃんと<a href="https://api.rubyonrails.org/v6.0/classes/ActiveSupport/Testing/TimeHelpers.html">ActiveSupport::Testing::TimeHelpers</a> とか使ってテスト書いてます。</strong></p>
+<h3 id="回避策">回避策</h3>
 
-<p>ですが、まあ、漏れもありますよね 😉</p>
+<p><code>nodejs</code> とかを入れる、のがまあ回避策になるんだけど、</p>
 
-<p>10/1にいきなり開発ブランチのCIがコケることがなくなって嬉しいです。</p>
+<p>環境変数 <code>EXECJS_RUNTIME</code> に <code>Disabled</code> を入れることで回避できることを知った。</p>
 
-<p>ご利用は自己責任で&hellip;&hellip;</p>
+<p>もちろん、<code>rake assets:precompile</code> とかを走らせるときはダメだと思う。
+その場合は普通に <code>nodejs</code> とかを入れる。</p>
+
+<p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to disable ExecJS in production: upgrade to 1.3.0 and set ENV[&#39;EXECJS_RUNTIME&#39;] = &#39;Disabled&#39; before Bundler.require</p>&mdash; Jon Leighton (@jonleighton) <a href="https://twitter.com/jonleighton/status/179542450547851265?ref_src=twsrc%5Etfw">March 13, 2012</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p>execjs gemに <a href="https://github.com/rails/execjs/blob/5f78865d36976f85b42e8529dec272285d8f3b85/lib/execjs/disabled_runtime.rb">そういうクラスがある</a></p>
+
+<p>Nullオブジェクトパターンってこういうパターンだっけかな</p>
 
 <script type="text/javascript" src="/js/prism.js" async></script>    
         </div>
@@ -173,7 +185,7 @@
     <header class="read-next-card-header">
         <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
         
-        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/rspec/">#rspec</a></h3>
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/rails/">#rails</a></h3>
     </header>
     <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
     </div>
@@ -181,82 +193,42 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/railsdm2019/">railsdm2019 1日目に行ってきましたメモ</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/omotesandorb45/">omotesandorb # 45 に参加した</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_shopify/">RubyKaigi、shopifyのテストの話が良かった</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/jobcan_flex_chrome/">今月あとどれくらい働けばよいか計算するChrome拡張書いている</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/misdo_2019/">2019年買ってよかったもの</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/md600-2/">MiSTEL BAROCCO MD600 慣れてきた</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/my_tweets_archive/">自分の全ツイートをこのサイトに貼った</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/airpods/">今年買って良かったもの：AirPods</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
       
-        <a href="https://hoshinotsuyoshi.com/tags/rspec/">See all related posts →</a>
+        <a href="https://hoshinotsuyoshi.com/tags/rails/">See all related posts →</a>
     </footer>
 </article>
 
 
       
+      
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/diet/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/diet_photos.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/rubocop_yaml/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/diet/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/rubocop_yaml/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #diet 
-              #training 
-              #life  </span>
+              #rubocop  </span>
               
-              <h2 class="post-card-title">おうち自重トレーニングと食事の工夫で腹筋割れる💪</h2>
+              <h2 class="post-card-title">.rubocop.ymlシンプルに、ゆるめにやりたいんじゃ</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>12月中旬から自重トレーニングしてて、2ヶ月ぐらい経った。
-先にまとめ 自重トレと食事のコントロールで腹筋は割れる。
- ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
-          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
-      </footer>
-    </div>
-</article>
-      
-      
-      <article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/2.jpg)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #sidekiq 
-              #rails 
-              #sentry  </span>
-              
-              <h2 class="post-card-title">sentry-ravenはデフォルトではActiveRecord::RecordNotFoundを通知してくれない</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>Sidekiqでエラーが起きてるっぽいにもかかわらず、sentryに通知されず、謎ですねみたいな現象がありました。
-調べたところ、
-sentry-ravenはデフォルト設定では特定の例外を通知してくれない!!
-ということがわかりました。
-ActiveRecord::RecordNotFoundに気づきたい場合は、設定をいじる必要があります。
- ...  </p>
+                <p> ...  </p>
               
           </section>
       </a>
@@ -280,17 +252,17 @@ ActiveRecord::RecordNotFoundに気づきたい場合は、設定をいじる必�
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">macOSの時計を10月1日にしてテスト実行すると消費税のせいでfailするテストが見つかって便利でした 😔</div>
+  <div class="floating-header-title">`ExecJS::RuntimeUnavailable` エラーは EXECJS_RUNTIME=Disabled で回避できるときがある</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=macOS%e3%81%ae%e6%99%82%e8%a8%88%e3%82%9210%e6%9c%881%e6%97%a5%e3%81%ab%e3%81%97%e3%81%a6%e3%83%86%e3%82%b9%e3%83%88%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b%e3%81%a8%e6%b6%88%e8%b2%bb%e7%a8%8e%e3%81%ae%e3%81%9b%e3%81%84%e3%81%a7fail%e3%81%99%e3%82%8b%e3%83%86%e3%82%b9%e3%83%88%e3%81%8c%e8%a6%8b%e3%81%a4%e3%81%8b%e3%81%a3%e3%81%a6%e4%be%bf%e5%88%a9%e3%81%a7%e3%81%97%e3%81%9f%20%f0%9f%98%94&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frspec-zouzei%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=%60ExecJS%3a%3aRuntimeUnavailable%60%20%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%af%20EXECJS_RUNTIME%3dDisabled%20%e3%81%a7%e5%9b%9e%e9%81%bf%e3%81%a7%e3%81%8d%e3%82%8b%e3%81%a8%e3%81%8d%e3%81%8c%e3%81%82%e3%82%8b&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fexecjs_runtime_disabled%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frspec-zouzei%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fexecjs_runtime_disabled%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>
