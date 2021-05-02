@@ -4,7 +4,42 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2021-05-02T12:03:13+09:00</lastmod>
+    <lastmod>2021-05-02T19:33:21+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/post/</loc>
+    <lastmod>2021-05-02T19:33:21+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/post/sidekiq-dead/</loc>
+    <lastmod>2021-05-02T19:33:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/</loc>
+    <lastmod>2021-05-02T19:33:21+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/</loc>
+    <lastmod>2021-05-02T19:33:21+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/sentry/</loc>
+    <lastmod>2021-05-02T19:33:21+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/sidekiq/</loc>
+    <lastmod>2021-05-02T19:33:21+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -14,25 +49,7 @@
   </url>
   
   <url>
-    <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2021-05-02T12:03:13+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2021-05-02T12:03:13+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hoshinotsuyoshi.com/tags/github/</loc>
-    <lastmod>2021-05-02T12:03:13+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/</loc>
     <lastmod>2021-05-02T12:03:13+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -199,20 +216,8 @@
   </url>
   
   <url>
-    <loc>https://hoshinotsuyoshi.com/tags/sentry/</loc>
-    <lastmod>2019-08-04T07:48:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/</loc>
     <lastmod>2019-08-04T07:48:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/sidekiq/</loc>
-    <lastmod>2019-08-04T07:48:28+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

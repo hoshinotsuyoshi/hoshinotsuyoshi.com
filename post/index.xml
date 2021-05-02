@@ -6,10 +6,19 @@
     <description>Recent content in Posts on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 02 May 2021 12:03:13 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 02 May 2021 19:33:21 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sidekiqで例外発生時にSentry通知したり、リトライが全て失敗した時だけSentry通知したりする</title>
+      <link>https://hoshinotsuyoshi.com/post/sidekiq-dead/</link>
+      <pubDate>Sun, 02 May 2021 19:33:21 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/sidekiq-dead/</guid>
+      <description>&lt;p&gt;SidekiqでのSentry通知/リトライの設定方法の話と、「普段は無視するけどリトライが全て失敗した時だけSentry通知したい」といった設定の方法の話をします。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GitHub Actionsでfast forward(--ff)なプルリクエストマージをする</title>
