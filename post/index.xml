@@ -6,10 +6,19 @@
     <description>Recent content in Posts on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 24 Nov 2020 01:22:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 02 May 2021 12:03:13 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub Actionsでfast forward(--ff)なプルリクエストマージをする</title>
+      <link>https://hoshinotsuyoshi.com/post/merge-ff/</link>
+      <pubDate>Sun, 02 May 2021 12:03:13 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/merge-ff/</guid>
+      <description>&lt;p&gt;GitHubのプルリクエストのマージボタンでは、いわゆるfast forward(&amp;ndash;ff)でマージすることはできません。このエントリではそれをGitHub Actionsで実現する方法を考察します。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>`ExecJS::RuntimeUnavailable` エラーは EXECJS_RUNTIME=Disabled で回避できるときがある</title>
