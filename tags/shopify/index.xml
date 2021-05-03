@@ -6,10 +6,20 @@
     <description>Recent content in shopify on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 10 Jun 2018 12:37:09 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 03 May 2021 14:39:47 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/shopify/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shopify&#43;Vercelでvercel/commerceを動かすやつ🛍(20分でできる)</title>
+      <link>https://hoshinotsuyoshi.com/post/shopify-next-commerce/</link>
+      <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/shopify-next-commerce/</guid>
+      <description>&lt;p&gt;vercel/commerceをshopifyで動かすのをやります。
+GitHubに慣れているエンジニアなら、20分は言い過ぎかもしれませんが、ShopifyとVercelにアカウント作る時間を込みで考えても、1時間で終わると思います。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>RubyKaigi、shopifyのテストの話が良かった</title>

@@ -6,10 +6,20 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 02 May 2021 19:33:21 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 03 May 2021 14:39:47 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shopify&#43;Vercelでvercel/commerceを動かすやつ🛍(20分でできる)</title>
+      <link>https://hoshinotsuyoshi.com/post/shopify-next-commerce/</link>
+      <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/shopify-next-commerce/</guid>
+      <description>&lt;p&gt;vercel/commerceをshopifyで動かすのをやります。
+GitHubに慣れているエンジニアなら、20分は言い過ぎかもしれませんが、ShopifyとVercelにアカウント作る時間を込みで考えても、1時間で終わると思います。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Sidekiqで例外発生時にSentry通知したり、リトライが全て失敗した時だけSentry通知したりする</title>

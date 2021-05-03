@@ -6,7 +6,7 @@
     <description>Recent content in Tags on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 02 May 2021 19:33:21 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 03 May 2021 14:39:47 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title></title>
       <link>https://hoshinotsuyoshi.com/tags/</link>
-      <pubDate>Sun, 02 May 2021 19:33:21 +0900</pubDate>
+      <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nextjs</title>
+      <link>https://hoshinotsuyoshi.com/tags/nextjs/</link>
+      <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/nextjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shopify</title>
+      <link>https://hoshinotsuyoshi.com/tags/shopify/</link>
+      <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/shopify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vercel</title>
+      <link>https://hoshinotsuyoshi.com/tags/vercel/</link>
+      <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/vercel/</guid>
       <description></description>
     </item>
     
@@ -440,15 +467,6 @@
       <pubDate>Sun, 10 Jun 2018 12:37:09 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/rubykaigi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shopify</title>
-      <link>https://hoshinotsuyoshi.com/tags/shopify/</link>
-      <pubDate>Sun, 10 Jun 2018 12:37:09 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/shopify/</guid>
       <description></description>
     </item>
     
