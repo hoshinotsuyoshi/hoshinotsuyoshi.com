@@ -4,13 +4,48 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2021-05-03T14:39:47+09:00</lastmod>
+    <lastmod>2021-05-04T10:54:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2021-05-03T14:39:47+09:00</lastmod>
+    <lastmod>2021-05-04T10:54:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/post/shopify-vuestorefront/</loc>
+    <lastmod>2021-05-04T10:54:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/</loc>
+    <lastmod>2021-05-04T10:54:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/</loc>
+    <lastmod>2021-05-04T10:54:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/shopify/</loc>
+    <lastmod>2021-05-04T10:54:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/vercel/</loc>
+    <lastmod>2021-05-04T10:54:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/vue/</loc>
+    <lastmod>2021-05-04T10:54:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -20,31 +55,7 @@
   </url>
   
   <url>
-    <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2021-05-03T14:39:47+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2021-05-03T14:39:47+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hoshinotsuyoshi.com/tags/nextjs/</loc>
-    <lastmod>2021-05-03T14:39:47+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/shopify/</loc>
-    <lastmod>2021-05-03T14:39:47+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/vercel/</loc>
     <lastmod>2021-05-03T14:39:47+09:00</lastmod>
     <priority>0</priority>
   </url>

@@ -6,7 +6,7 @@
     <description>Recent content in Tags on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 03 May 2021 14:39:47 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 04 May 2021 10:54:40 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title></title>
       <link>https://hoshinotsuyoshi.com/tags/</link>
-      <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
+      <pubDate>Tue, 04 May 2021 10:54:40 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shopify</title>
+      <link>https://hoshinotsuyoshi.com/tags/shopify/</link>
+      <pubDate>Tue, 04 May 2021 10:54:40 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/shopify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vercel</title>
+      <link>https://hoshinotsuyoshi.com/tags/vercel/</link>
+      <pubDate>Tue, 04 May 2021 10:54:40 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/vercel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vue</title>
+      <link>https://hoshinotsuyoshi.com/tags/vue/</link>
+      <pubDate>Tue, 04 May 2021 10:54:40 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/vue/</guid>
       <description></description>
     </item>
     
@@ -26,24 +53,6 @@
       <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/nextjs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shopify</title>
-      <link>https://hoshinotsuyoshi.com/tags/shopify/</link>
-      <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/shopify/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vercel</title>
-      <link>https://hoshinotsuyoshi.com/tags/vercel/</link>
-      <pubDate>Mon, 03 May 2021 14:39:47 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/vercel/</guid>
       <description></description>
     </item>
     

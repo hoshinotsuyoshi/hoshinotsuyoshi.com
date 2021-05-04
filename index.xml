@@ -6,10 +6,20 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 03 May 2021 14:39:47 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 04 May 2021 10:54:40 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shopify&#43;Vercelでvuestorefront/vue-storefrontを動かすやつ🌠</title>
+      <link>https://hoshinotsuyoshi.com/post/shopify-vuestorefront/</link>
+      <pubDate>Tue, 04 May 2021 10:54:40 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/shopify-vuestorefront/</guid>
+      <description>&lt;p&gt;前回はvercel/commerceをShopifyで動かすのをやりましたが、
+今回はvuestorefront/vue-storefrontをShopifyで動かすのをやります!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Shopify&#43;Vercelでvercel/commerceを動かすやつ🛍(20分でできる)</title>
