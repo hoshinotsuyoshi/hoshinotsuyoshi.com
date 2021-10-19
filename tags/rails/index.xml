@@ -6,10 +6,19 @@
     <description>Recent content in rails on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 24 Nov 2020 01:22:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 19 Oct 2021 21:33:59 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>render.comのここがよい</title>
+      <link>https://hoshinotsuyoshi.com/post/render_com/</link>
+      <pubDate>Tue, 19 Oct 2021 21:33:59 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/render_com/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>`ExecJS::RuntimeUnavailable` エラーは EXECJS_RUNTIME=Disabled で回避できるときがある</title>
