@@ -4,15 +4,19 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Sidekiqで例外発生時にSentry通知したり、リトライが全て失敗した時だけSentry通知したりする &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>Heroku 商用 コツ &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/sidekiq-dead/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/heroku_tips/" />
 
-     <meta name="description" content="&lt;p&gt;SidekiqでのSentry通知/リトライの設定方法の話と、「普段は無視するけどリトライが全て失敗した時だけSentry通知したい」といった設定の方法の話をします。&lt;/p&gt;" /> 
+     <meta name="description" content="&lt;p&gt;誰かと認識合わせるときのために便利そうなので、&lt;/p&gt;
+
+&lt;p&gt;Herokuを商用で使うときのコツを書いていきます。&lt;/p&gt;
+
+&lt;p&gt;主に2020年時点での知識なんで、古かったらごめんなさい。認識違ったらそっと教えて下さい。&lt;/p&gt;" /> 
 
      
     
@@ -20,21 +24,29 @@
     <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
     
  
-    <meta name="twitter:title" content="Sidekiqで例外発生時にSentry通知したり、リトライが全て失敗した時だけSentry通知したりする"/>
-    <meta name="twitter:description" content="&lt;p&gt;SidekiqでのSentry通知/リトライの設定方法の話と、「普段は無視するけどリトライが全て失敗した時だけSentry通知したい」といった設定の方法の話をします。&lt;/p&gt;"/>
-    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/sidekiq-dead/" />
+    <meta name="twitter:title" content="Heroku 商用 コツ"/>
+    <meta name="twitter:description" content="&lt;p&gt;誰かと認識合わせるときのために便利そうなので、&lt;/p&gt;
+
+&lt;p&gt;Herokuを商用で使うときのコツを書いていきます。&lt;/p&gt;
+
+&lt;p&gt;主に2020年時点での知識なんで、古かったらごめんなさい。認識違ったらそっと教えて下さい。&lt;/p&gt;"/>
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/heroku_tips/" />
     <meta name="twitter:site" content="@hoppiestar"/>
 
     <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
-    <meta property="og:title" content="Sidekiqで例外発生時にSentry通知したり、リトライが全て失敗した時だけSentry通知したりする &middot; " />
-    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/sidekiq-dead/" />
+    <meta property="og:title" content="Heroku 商用 コツ &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/heroku_tips/" />
     <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="&lt;p&gt;SidekiqでのSentry通知/リトライの設定方法の話と、「普段は無視するけどリトライが全て失敗した時だけSentry通知したい」といった設定の方法の話をします。&lt;/p&gt;" />
+    <meta property="og:description" content="&lt;p&gt;誰かと認識合わせるときのために便利そうなので、&lt;/p&gt;
 
-    <meta property="article:published_time" content="2021-05-02T19:33:21&#43;09:00" />
-    <meta property="article:tag" content="sentry" /><meta property="article:tag" content="sidekiq" />
+&lt;p&gt;Herokuを商用で使うときのコツを書いていきます。&lt;/p&gt;
+
+&lt;p&gt;主に2020年時点での知識なんで、古かったらごめんなさい。認識違ったらそっと教えて下さい。&lt;/p&gt;" />
+
+    <meta property="article:published_time" content="2021-10-20T18:06:34&#43;09:00" />
+    <meta property="article:tag" content="heroku" />
 
     <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
 
@@ -112,10 +124,10 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2021-05-02">2 May 2021</time>
-                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/sentry/">#sentry</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/sidekiq/">#sidekiq</a>&nbsp;
+            <time class="post-full-meta-date" datetime="2021-10-20">20 October 2021</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/heroku/">#heroku</a>&nbsp;
         </section>
-        <h1 class="post-full-title">Sidekiqで例外発生時にSentry通知したり、リトライが全て失敗した時だけSentry通知したりする</h1>
+        <h1 class="post-full-title">Heroku 商用 コツ</h1>
     </header>
     
     <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)">
@@ -123,88 +135,158 @@
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        <p>SidekiqでのSentry通知/リトライの設定方法の話と、「普段は無視するけどリトライが全て失敗した時だけSentry通知したい」といった設定の方法の話をします。</p>
+        <p>誰かと認識合わせるときのために便利そうなので、</p>
 
-<h3 id="はじめに">はじめに</h3>
+<p>Herokuを商用で使うときのコツを書いていきます。</p>
+
+<p>主に2020年時点での知識なんで、古かったらごめんなさい。認識違ったらそっと教えて下さい。</p>
+
+<hr />
+
+<h3 id="1-heroku-postgresは使う">1. Heroku Postgresは使う</h3>
+
+<p><br></p>
+
+<p>Heroku Postgresは、使ったこと無いけど(ごめんなさい) <strong>評判悪いの聞いたこと無いから、たぶん良いものなんだと思います</strong> 😚</p>
+
+<h3 id="2-heroku-redisは使う">2. Heroku Redisは使う</h3>
+
+<p><br></p>
+
+<p>15ドル/月 払うだけでHigh Availabilityになるはず。安心してセッション管理とかに使えると思います。</p>
+
+<p>AWS ElastiCache はいろいろできすぎて少し複雑なので(雑)、 個人的にはHeroku Redisのほうがおすすめ。</p>
+
+<h3 id="3-sendgridアドオンは使わない">3. SendGridアドオンは使わない</h3>
+
+<p><br></p>
+
+<p>Railsチュートリアル <a href="https://railstutorial.jp/">https://railstutorial.jp/</a> とかだとSendGrid使えってなってるかもです。</p>
+
+<p>が、Herokuのアドオンだと(スパム対策起因による?)謎のエラーが出て送れなくてハマることがあるのはそこそこ有名です。</p>
+
+<p>例:</p>
 
 <ul>
-<li>Sidekiqは6.2</li>
-<li>Rails(だけどActiveJobは使わない)</li>
-<li>sentryのgemは<code>sentry-ruby</code></li>
+<li><a href="https://qiita.com/osakana9114/items/2e0529812f787123e09d">https://qiita.com/osakana9114/items/2e0529812f787123e09d</a></li>
+<li><a href="https://kikutaro777.hatenablog.com/entry/2020/04/13/234948">https://kikutaro777.hatenablog.com/entry/2020/04/13/234948</a></li>
 </ul>
 
-<p>の前提です。</p>
+<p>アドオンのサポートはすごく悪く、</p>
 
-<p>(なお、Sidekiqは<a href="https://github.com/mperham/sidekiq/wiki">wikiがとっても充実している</a>ので、たいていのことはそこを見ればわかります。
-とくに今回のエントリはwikiの<a href="https://github.com/mperham/sidekiq/wiki/Error-Handling">エラーハンドリング</a> の内容が参考になります。)</p>
+<p>対処するのは時間の無駄ですので、</p>
 
-<h3 id="1-sentryに通知し-リトライもしたい場合">1. Sentryに通知し、リトライもしたい場合</h3>
+<p>はじめから <strong>AWS SESとか使ったり、SendGridと直接契約したりすると良いと思います</strong></p>
 
-<p>このケースでは、rescueせずに、単に例外を投げっぱなしにすれば良いです。</p>
+<h3 id="4-mysqlアドオン-cleardb-は使わない">4. MySQLアドオン(ClearDB)は使わない</h3>
 
-<pre><code class="language-ruby">class FooWorker
-  include Sidekiq::Worker
-  sidekiq_options retry: 5 # 設定しないとデフォルトは25。
+<p><br></p>
 
-  class Error &lt; ::StandardError; end
+<p>(特にこれ2020年の知識なんで古かったらごめんなさい)</p>
 
-  def perform(arg)
-    # Errorが起きるかもしれないことを何かする
-  end
-end
+<p>無料プランが一見便利なんですが、MySQL5.5で辛いです。</p>
+
+<pre><code>$ heroku addons:create cleardb:ignite  --version=5.7
 </code></pre>
 
-<h3 id="2-sentryに通知し-リトライはしたくない場合">2. Sentryに通知し、リトライはしたくない場合</h3>
+<p>ってやると <strong>エラーにならずに 無事5.5で立ち上がりました。😚 辛い。</strong></p>
 
-<p>このケースでは、<code>1.</code> と同様、例外を投げっぱなしにしつつ、リトライしない設定、つまり<code>sidekiq_options retry: 0</code> または <code>sidekiq_options retry: false</code> を設定すればオーケー。</p>
+<p>54ドル/月 ぐらい払ってスタンダードプランにするとちゃんと5.7で動きます 😚</p>
 
-<pre><code class="language-ruby">class FooWorker
-  include Sidekiq::Worker
-  sidekiq_options retry: 0
+<p>ClearDBどうしても使いたい場合はキャラクタセット(utf8mb4使いたい)で少しハマるので、以下のエントリーが参考になるかもです</p>
 
-  # 以下同じ...
-</code></pre>
+<ul>
+<li><a href="https://xyk.hatenablog.com/entry/2015/01/14/143508">https://xyk.hatenablog.com/entry/2015/01/14/143508</a></li>
+</ul>
 
-<h3 id="3-sentryに通知せず-リトライはしたい場合">3. Sentryに通知せず、リトライはしたい場合</h3>
+<p>まあはじめから <strong>AWSのAurora MySQLとか使うと良いと思います😚</strong></p>
 
-<p>このケースでは、<code>1.</code> の設定に加え、 <code>excluded_exceptions</code> を設定すればオーケーです。</p>
+<p>8系は使えませんが&hellip;.</p>
 
-<pre><code class="language-ruby"># config/initializers/sentry.rb とかで。
-Sentry.init do |config|
-  config.excluded_exceptions += [
-    'FooWorker::Error', # 追加
-  ]
-end
-</code></pre>
+<h4 id="脇道-review-apps-でdbどうするの">脇道: Review Apps でDBどうするの</h4>
 
-<h3 id="4-sentryに通知せず-リトライもしない場合">4. Sentryに通知せず、リトライもしない場合</h3>
+<p><a href="https://devcenter.heroku.com/articles/github-integration-review-apps">Heroku Review Apps</a>(GitHubでPR作るごとに環境ができるアレ)すごい便利なんですが、DB設定どうするのが最適解なのかよくわかっていません</p>
 
-<p>このケースでは、<code>3.</code> の設定に加え、 リトライしない設定、つまり<code>sidekiq_options retry: 0</code> または <code>sidekiq_options retry: false</code> を設定すればオーケー。</p>
+<ul>
+<li>PRごとにまっさらなDBが欲しいならClearDBアドオンの無料枠でいいかもしれないが、MySQLは5.5で動いてしまう</li>
+</ul>
 
-<p>(冗長なのでコード省略)</p>
+<p>という問題があります。</p>
 
-<h3 id="5-sentryに通知せず-リトライはするが-リトライが全て失敗した時だけsentryに通知したい場合">5. Sentryに通知せず、リトライはするが、リトライが全て失敗した時だけSentryに通知したい場合</h3>
+<p>解決策としては、ハコはステージング用のAurora用意しておいて毎度 <code>rails db:create</code> するのがいいのかもしれません。このへんは工夫すればなんとかなりそうな気はします</p>
 
-<p>ワーカーで非同期処理をやっていると「普段は無視するけどリトライが全て失敗した時だけSentry通知したい」というケースがよくあると思います。</p>
+<h3 id="5-ログ系アドオンは使えない">5. ログ系アドオンは使えない</h3>
 
-<p>たとえば外部のAPIを叩く処理で、そのAPIが調子悪い時はSidekiqにリトライを任せるが、ある程度リトライしてダメならdeadセットに送ってしまって、あとで手動対応したい、というような場合です。</p>
+<p><br></p>
 
-<p>このケースでは、<code>3.</code> の設定に加え、Sidekiqの <code>death_handlers</code> をセットし、そのブロックの中でSentryに通知する、ということをすればオーケーです。</p>
+<p>問題があってサポートにチケット書いたことが2回あったのですが、まともな返事なかったのでおすすめしません。</p>
 
-<pre><code class="language-ruby"># railsで、config/initializers/に配置したファイルに書く
+<p>papertrailはもしかしたらマシかもしれませんが、SendGridにしてもなんにしても、third party系のアドオンのサポートのレスをまともにもらったことがないので、安心して商用で使えるかと言われると個人的な経験的にはかなり疑問です。</p>
 
-Sidekiq.configure_server do |config|
-  config.death_handlers &lt;&lt; -&gt; (job, _exception) do
-    ::Sentry.capture_message(&quot;ワーカークラス名:#{job['class']} が失敗しました&quot;)
+<p>ログどうするかという話としては、(herokuでは使ったことないけど) アプリケーションの中から <strong>AWSのCloudWatchLogsとか使うと良いのかもしれません😚</strong></p>
 
-    # NOTE: なお、ここで_exceptionに例外が入っているのでそれを用いてハンドリングすることもできるかもしれない
-  end
-end
-</code></pre>
+<p>アドオン使う場合、papertrail使うにしてもなんにしても、ログをためとく場所として<strong>AWS S3のバケット使うハメにはなるかと思います</strong></p>
 
-<h3 id="まとめ">✎まとめ</h3>
+<h3 id="6-cdnは別途用意しとこ">6. CDNは別途用意しとこ</h3>
 
-<p>というわけで Sidekiqの<code>death_handlers</code> 便利です</p>
+<p><br></p>
+
+<p>国内向けなら、usリージョンにしてもeuリージョンにしても遠いと思うので、別途CDNを準備するのが良いと思います。</p>
+
+<h3 id="7-review-appsについて">7. Review Appsについて</h3>
+
+<p><br></p>
+
+<p><a href="https://devcenter.heroku.com/articles/github-integration-review-apps">Heroku Review Apps</a>(GitHubでPR作るごとに環境ができるアレ) の悪いところは、あまりない印象です!</p>
+
+<p>敢えていうと、RailsでAssets Precompileに時間のかかるようなアプリだとビルドに時間がかかってしまい、たとえば<strong>10分間隔ぐらいで続けて(GitHubのPR側で)git pushすると後続のデプロイが失敗して若干萎える感じになります。</strong></p>
+
+<p>そういうことがあり、Review Appsみたいな仕組みは AWSで自分で組みたくなってしまいます。</p>
+
+<h3 id="ここまでの前提として">ここまでの前提として</h3>
+
+<p>ここまで、</p>
+
+<ol>
+<li>herokuのサポートに金は払わない
+
+<ul>
+<li>当然heroku enterpriseは使わない</li>
+</ul></li>
+<li>中規模・そこそこの可用性は欲しい</li>
+</ol>
+
+<p>という前提で書いてきました</p>
+
+<h3 id="結局-iaasサイドで用意するものが多くない">結局: IaaSサイドで用意するものが多くない？</h3>
+
+<p>結局、</p>
+
+<ul>
+<li>Aurora(とくにMySQL使いたい場合)</li>
+<li>S3</li>
+<li>CloudWatchLogs</li>
+<li>SES(メール)</li>
+<li>CDN</li>
+</ul>
+
+<p>とかは <strong>AWSで用意するのが現実的かなと思うのです。</strong></p>
+
+<p>で、それを設定できる人って、IaC系のツール(CloudFormation,Terraform)を操作できたりして、 <strong>コンピューティングの部分のインフラ構築(ECS, AppRunner, etc.)も自分でできる人がそこそこ多い</strong>気がするんですよね。</p>
+
+<p>そうなってくると、「<strong>もうちょっと頑張れば</strong>Herokuじゃなくていいじゃん」という話になってきてしまう。</p>
+
+<p><strong>もうちょっと頑張る</strong> だけで 以下のようなメリットが見えてくるんですよね</p>
+
+<ul>
+<li>デプロイ時のdocker buildのキャッシュ最適化とかができる</li>
+<li>そこそこ不満のないレビュー環境を作れる</li>
+<li>(Aurora+Herokuでやった場合に比べて) VPCの中でDB接続が閉じるので速度的にも有利</li>
+</ul>
+
+<h3 id="最近の私">最近の私</h3>
+
+<p>で、少なくとも自分は、↑のメリットが大きいので、Heroku使わずに全部AWSに寄せるかなあという感じのことが多いです。</p>
 
 <script type="text/javascript" src="/js/prism.js" async></script>    
         </div>
@@ -236,7 +318,7 @@ end
     <header class="read-next-card-header">
         <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
         
-        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/sentry/">#sentry</a></h3>
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/heroku/">#heroku</a></h3>
     </header>
     <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
     </div>
@@ -244,75 +326,44 @@ end
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/shopify-vuestorefront/">Shopify&#43;Vercelでvuestorefront/vue-storefrontを動かすやつ🌠</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/airpods/">今年買って良かったもの：AirPods</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/diet/">おうち自重トレーニングと食事の工夫で腹筋割れる💪</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/amazake/">甘酒🍶</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/fastladder_rails6/">手元のfastladderをrails 6にした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/github_actions_cache/">GitHub Actionsのキャッシュ</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">複数mastodonを考える 🐘   🐘   🐘</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
       
-        <a href="https://hoshinotsuyoshi.com/tags/sentry/">See all related posts →</a>
+        <a href="https://hoshinotsuyoshi.com/tags/heroku/">See all related posts →</a>
     </footer>
 </article>
 
 
       
+      
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/shopify-next-commerce/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/shopify-next-commerce/commerce.png)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/render_com/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/render.png)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/shopify-next-commerce/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/render_com/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #shopify 
-              #nextjs 
-              #vercel  </span>
+              #render_com 
+              #rails 
+              #heroku  </span>
               
-              <h2 class="post-card-title">Shopify&#43;Vercelでvercel/commerceを動かすやつ🛍(20分でできる)</h2>
+              <h2 class="post-card-title">render.comのここがよい</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>vercel/commerceをshopifyで動かすのをやります。 GitHubに慣れているエンジニアなら、20分は言い過ぎかもしれませんが、ShopifyとVercelにアカウント作る時間を込みで考えても、1時間で終わると思います。
- ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
-          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
-      </footer>
-    </div>
-</article>
-      
-      
-      <article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/merge-ff/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/github_actions.png)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/merge-ff/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #github  </span>
-              
-              <h2 class="post-card-title">GitHub Actionsでfast forward(--ff)なプルリクエストマージをする</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>GitHubのプルリクエストのマージボタンでは、いわゆるfast forward(&ndash;ff)でマージすることはできません。このエントリではそれをGitHub Actionsで実現する方法を考察します。
- ...  </p>
+                <p> ...  </p>
               
           </section>
       </a>
@@ -336,17 +387,17 @@ end
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">Sidekiqで例外発生時にSentry通知したり、リトライが全て失敗した時だけSentry通知したりする</div>
+  <div class="floating-header-title">Heroku 商用 コツ</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Sidekiq%e3%81%a7%e4%be%8b%e5%a4%96%e7%99%ba%e7%94%9f%e6%99%82%e3%81%abSentry%e9%80%9a%e7%9f%a5%e3%81%97%e3%81%9f%e3%82%8a%e3%80%81%e3%83%aa%e3%83%88%e3%83%a9%e3%82%a4%e3%81%8c%e5%85%a8%e3%81%a6%e5%a4%b1%e6%95%97%e3%81%97%e3%81%9f%e6%99%82%e3%81%a0%e3%81%91Sentry%e9%80%9a%e7%9f%a5%e3%81%97%e3%81%9f%e3%82%8a%e3%81%99%e3%82%8b&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fsidekiq-dead%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Heroku%20%e5%95%86%e7%94%a8%20%e3%82%b3%e3%83%84&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fheroku_tips%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fsidekiq-dead%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fheroku_tips%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>

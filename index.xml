@@ -6,10 +6,23 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 19 Oct 2021 21:33:59 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 Oct 2021 18:06:34 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Heroku 商用 コツ</title>
+      <link>https://hoshinotsuyoshi.com/post/heroku_tips/</link>
+      <pubDate>Wed, 20 Oct 2021 18:06:34 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/heroku_tips/</guid>
+      <description>&lt;p&gt;誰かと認識合わせるときのために便利そうなので、&lt;/p&gt;
+
+&lt;p&gt;Herokuを商用で使うときのコツを書いていきます。&lt;/p&gt;
+
+&lt;p&gt;主に2020年時点での知識なんで、古かったらごめんなさい。認識違ったらそっと教えて下さい。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>render.comのここがよい</title>
