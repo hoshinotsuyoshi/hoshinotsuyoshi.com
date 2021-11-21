@@ -6,7 +6,7 @@
     <description>Recent content in Tags on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 20 Oct 2021 18:06:34 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 21 Nov 2021 10:52:29 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title></title>
       <link>https://hoshinotsuyoshi.com/tags/</link>
-      <pubDate>Wed, 20 Oct 2021 18:06:34 +0900</pubDate>
+      <pubDate>Sun, 21 Nov 2021 10:52:29 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rails</title>
+      <link>https://hoshinotsuyoshi.com/tags/rails/</link>
+      <pubDate>Sun, 21 Nov 2021 10:52:29 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/rails/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruby</title>
+      <link>https://hoshinotsuyoshi.com/tags/ruby/</link>
+      <pubDate>Sun, 21 Nov 2021 10:52:29 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/ruby/</guid>
       <description></description>
     </item>
     
@@ -26,15 +44,6 @@
       <pubDate>Wed, 20 Oct 2021 18:06:34 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/heroku/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rails</title>
-      <link>https://hoshinotsuyoshi.com/tags/rails/</link>
-      <pubDate>Tue, 19 Oct 2021 21:33:59 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/rails/</guid>
       <description></description>
     </item>
     
@@ -233,15 +242,6 @@
       <pubDate>Thu, 20 Feb 2020 23:52:13 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/training/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ruby</title>
-      <link>https://hoshinotsuyoshi.com/tags/ruby/</link>
-      <pubDate>Fri, 27 Sep 2019 11:30:16 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/ruby/</guid>
       <description></description>
     </item>
     

@@ -4,7 +4,42 @@
   
   <url>
     <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2021-10-20T18:06:34+09:00</lastmod>
+    <lastmod>2021-11-21T10:52:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/post/</loc>
+    <lastmod>2021-11-21T10:52:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/post/study_roda/</loc>
+    <lastmod>2021-11-21T10:52:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/</loc>
+    <lastmod>2021-11-21T10:52:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/</loc>
+    <lastmod>2021-11-21T10:52:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/rails/</loc>
+    <lastmod>2021-11-21T10:52:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
+    <lastmod>2021-11-21T10:52:29+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -14,32 +49,8 @@
   </url>
   
   <url>
-    <loc>https://hoshinotsuyoshi.com/post/</loc>
-    <lastmod>2021-10-20T18:06:34+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/</loc>
-    <lastmod>2021-10-20T18:06:34+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hoshinotsuyoshi.com/tags/heroku/</loc>
     <lastmod>2021-10-20T18:06:34+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/</loc>
-    <lastmod>2021-10-20T18:06:34+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/rails/</loc>
-    <lastmod>2021-10-19T21:33:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -263,12 +274,6 @@
   <url>
     <loc>https://hoshinotsuyoshi.com/post/rspec-zouzei/</loc>
     <lastmod>2019-09-27T11:30:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hoshinotsuyoshi.com/tags/ruby/</loc>
-    <lastmod>2019-09-27T11:30:16+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

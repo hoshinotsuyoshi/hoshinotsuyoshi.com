@@ -6,10 +6,19 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 20 Oct 2021 18:06:34 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 21 Nov 2021 10:52:29 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RodaでAPIサーバー</title>
+      <link>https://hoshinotsuyoshi.com/post/study_roda/</link>
+      <pubDate>Sun, 21 Nov 2021 10:52:29 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/study_roda/</guid>
+      <description>&lt;p&gt;Roda試してみたかったので、APIサーバーを書けるかやってみました&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Heroku 商用 コツ</title>
