@@ -6,10 +6,22 @@
     <description>Recent content in rails on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 21 Nov 2021 10:52:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 Dec 2021 16:38:48 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Railsで`config/x`みたいなディレクトリ作るとymlが分かりやすくなる説</title>
+      <link>https://hoshinotsuyoshi.com/post/rails_config_for/</link>
+      <pubDate>Sat, 25 Dec 2021 16:38:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/rails_config_for/</guid>
+      <description>&lt;p&gt;こんにちは。この記事は&lt;a href=&#34;https://qiita.com/advent-calendar/2021/ruby-on-rails&#34;&gt;Ruby on Rails Advent Calendar 2021&lt;/a&gt;の23日目の記事です。
+もう2日過ぎちゃってますが、この23日は誰も埋めていなかったようなので埋めてみました。&lt;/p&gt;
+
+&lt;p&gt;Railsで&lt;code&gt;config/x&lt;/code&gt;みたいなディレクトリ作ってそこに &lt;code&gt;config_for&lt;/code&gt; で読み込むymlを置くとスッキリして分かりやすくなるんじゃないか という思いがあり、それについて書きます。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>RodaでAPIサーバー</title>
