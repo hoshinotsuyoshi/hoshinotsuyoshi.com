@@ -6,7 +6,7 @@
     <description>Recent content in Tags on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 21 Nov 2021 10:52:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 Dec 2021 14:17:19 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title></title>
       <link>https://hoshinotsuyoshi.com/tags/</link>
-      <pubDate>Sun, 21 Nov 2021 10:52:29 +0900</pubDate>
+      <pubDate>Sat, 25 Dec 2021 14:17:19 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://hoshinotsuyoshi.com/tags/golang/</link>
+      <pubDate>Sat, 25 Dec 2021 14:17:19 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -665,15 +674,6 @@
       <pubDate>Fri, 08 Dec 2017 03:32:07 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/terraform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://hoshinotsuyoshi.com/tags/golang/</link>
-      <pubDate>Thu, 07 Dec 2017 00:02:51 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/golang/</guid>
       <description></description>
     </item>
     

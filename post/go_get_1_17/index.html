@@ -4,39 +4,39 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫 &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>Go 1.17でgo getの動きが変わった &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/gas_oncall/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/go_get_1_17/" />
 
-     <meta name="description" content="" /> 
+     <meta name="description" content="&lt;p&gt;Go 1.17でgo getの動きが変わったの知らなくてハマりました&lt;/p&gt;" /> 
 
      
     
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/robot.png"/>
+    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/2.jpg"/>
     
  
-    <meta name="twitter:title" content="社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/gas_oncall/" />
+    <meta name="twitter:title" content="Go 1.17でgo getの動きが変わった"/>
+    <meta name="twitter:description" content="&lt;p&gt;Go 1.17でgo getの動きが変わったの知らなくてハマりました&lt;/p&gt;"/>
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/go_get_1_17/" />
     <meta name="twitter:site" content="@hoppiestar"/>
 
     <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
-    <meta property="og:title" content="社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫 &middot; " />
-    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/gas_oncall/" />
+    <meta property="og:title" content="Go 1.17でgo getの動きが変わった &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/go_get_1_17/" />
     <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="&lt;p&gt;Go 1.17でgo getの動きが変わったの知らなくてハマりました&lt;/p&gt;" />
 
-    <meta property="article:published_time" content="2020-02-24T15:58:14&#43;09:00" />
-    <meta property="article:tag" content="javascript" /><meta property="article:tag" content="googleappscript" />
+    <meta property="article:published_time" content="2021-12-25T14:17:19&#43;09:00" />
+    <meta property="article:tag" content="golang" />
 
-    <meta property="og:image" content="https://hoshinotsuyoshi.com/images/robot.png"/>
+    <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/2.jpg"/>
 
 
     <meta name="generator" content="Hugo 0.55.6" />
@@ -112,186 +112,37 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2020-02-24">24 February 2020</time>
-                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/javascript/">#javascript</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/googleappscript/">#googleappscript</a>&nbsp;
+            <time class="post-full-meta-date" datetime="2021-12-25">25 December 2021</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/golang/">#golang</a>&nbsp;
         </section>
-        <h1 class="post-full-title">社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫</h1>
+        <h1 class="post-full-title">Go 1.17でgo getの動きが変わった</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/images/robot.png)">
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/2.jpg)">
     </figure>
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        <p>現職、社内管理画面とかもろもろのサポートするのに、エンジニアのサポートが必要だったりしてて、</p>
+        <p>Go 1.17でgo getの動きが変わったの知らなくてハマりました</p>
 
-<p>それをバックエンドエンジニア4名で回している。</p>
-
-<p>↓こんな感じ。</p>
-
-<hr />
-
-<p><img alt="" src="/images/garapiko_circle.jpg" width=600></p>
-
-<p>問い合わせは全部slackで(当然だが)公開チャンネルでやっている。</p>
-
-<p>ランダムでその日の担当を決めることにより、</p>
+<h3 id="問題">問題</h3>
 
 <ul>
-<li>(ローテじゃないことによる)気軽さ、ゆるさ</li>
-<li>それによる属人性の排除</li>
+<li>今までgitリポジトリは <strong>goなプロジェクトでもgoじゃないプロジェクトであっても何でもかんでも <code>${GOPATH}/src</code> の下にダウンロードして配置していた</strong></li>
+<li>新しく買ったパソコンに最新の <code>go</code> (1.17) 入れたところ <code>go get</code> では <code>${GOPATH}/src</code> の下には置かれず、<code>${GOPATH}/pkg/mod/</code> とかの下に置かれるような動きになってしまった</li>
 </ul>
-
-<p>が生まれるような気がしている。</p>
-
-<p>数日連続で指名されてしまうこともあるけど。</p>
-
-<p>このやりかたは、わりと気に入っている。</p>
-
-<h2 id="bot">bot</h2>
-
-<p>私の要件としては</p>
-
-<ol>
-<li>ランダム性</li>
-<li>1日1回、朝動いてほしい</li>
-<li>会社の営業日だけ動いてほしい。祝日判定もほしい(休日にメンションしてほしくない)</li>
-</ol>
-
-<p>ということがあった。</p>
-
-<p>1.と2.はslackの機能だけでできるけど、</p>
-
-<p>3.の機能がほしかったので、自分でGAS用のスクリプトを書いた。</p>
-
-<p>2.の機能はGASの定時実行機能でやればよい。</p>
-
-<p>だいたいこんなようなコード。</p>
-
-<p>わかりやすくコメントを追記した。</p>
-
-<pre><code class="language-javascript">
-// 🤖
-const main = () =&gt; {
-  const date = new Date();
-  date.setTime(date.getTime() + 1000*60*60*9);
-  if (isWeekend(date) || isCompanyHoliday(date) || isJapanHoliday(date)) return false;
-  const sample = () =&gt; {
-    const strings = [
-      &quot;今日engineer-helpを担当するバックエンドエンジニアは xxさん &lt;@xxxx&gt;&quot;,
-      &quot;今日engineer-helpを担当するバックエンドエンジニアは yyさん &lt;@yyyy&gt;&quot;,
-      &quot;今日engineer-helpを担当するバックエンドエンジニアは zzさん &lt;@zzzz&gt;&quot;
-    ];
-    return strings[Math.floor(Math.random() * strings.length)];
-  }
-  const post_data = {
-    &quot;text&quot;: sample(),
-    &quot;channel&quot;: &quot;#engineer-help&quot;,
-    &quot;username&quot;: &quot;ガラピコ&quot;,
-    &quot;icon_emoji&quot; : &quot;:garapiko:&quot;,
-    &quot;attachments&quot;: [
-        {
-            &quot;fallback&quot;: &quot;くじ&quot;,
-            &quot;color&quot;: &quot;#36afff&quot;,
-            // ここにGASのスクリプトのURLを貼ると他の人も編集できて超絶べんり
-            &quot;footer&quot;: &quot;改造する場合は  &lt;https://script.google.com/a/smarby.jp/d/xxxxxxxxxxxxxxxxxxxx/edit|🤖こちら🤖&gt;&quot;
-        }
-    ]
-  };
-  const url = &quot;https://hooks.slack.com/services/xxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;; 
-  const payload = JSON.stringify(post_data);
-  const headers = {&quot;Accept&quot;:&quot;application/json&quot;}
-  const options = {
-    &quot;method&quot;:&quot;POST&quot;,
-    &quot;headers&quot;: headers,
-    &quot;payload&quot;: payload
-  };
-  UrlFetchApp.fetch(url, options);
-  return false;
-}
-
-// 土日
-const isWeekend = (date) =&gt; {
-  return(date.getDay() &gt;= 6 || date.getDay() == 0);
-}
-// 会社の休日。年末年始。
-const isCompanyHoliday = (date) =&gt; {
-  const mm_dd = date.toJSON().slice(5, 10);
-  const arr = [
-    &quot;12-29&quot;,
-    &quot;12-30&quot;,
-    &quot;12-31&quot;,
-    &quot;01-01&quot;,
-    &quot;01-02&quot;,
-    &quot;01-03&quot;
-  ];
-  return arr.includes(mm_dd);
-}
-// 日本の祝日。
-// https://raw.githubusercontent.com/holiday-jp/holiday_jp-ruby/master/holidays.yml
-const isJapanHoliday = (date) =&gt; {
-  const yy_mm_dd = date.toJSON().slice(0, 10);
-  const arr = [
-    &quot;2019-11-23&quot;,
-    &quot;2020-01-01&quot;,
-    &quot;2020-01-13&quot;,
-    &quot;2020-02-11&quot;,
-    &quot;2020-02-23&quot;,
-    &quot;2020-02-24&quot;,
-    &quot;2020-03-20&quot;,
-    &quot;2020-04-29&quot;,
-    &quot;2020-05-03&quot;,
-    &quot;2020-05-04&quot;,
-    &quot;2020-05-05&quot;,
-    &quot;2020-05-06&quot;,
-    &quot;2020-07-23&quot;,
-    &quot;2020-07-24&quot;,
-    &quot;2020-08-10&quot;,
-    &quot;2020-09-21&quot;,
-    &quot;2020-09-22&quot;,
-    &quot;2020-11-03&quot;,
-    &quot;2020-11-23&quot;,
-    &quot;2021-01-01&quot;,
-    &quot;2021-01-11&quot;,
-    &quot;2021-02-11&quot;,
-    &quot;2021-02-23&quot;,
-    &quot;2021-03-20&quot;,
-    &quot;2021-04-29&quot;,
-    //....snip...
-  ];
-  return arr.includes(yy_mm_dd);
-</code></pre>
-
-<h2 id="工夫したポイント">工夫したポイント</h2>
-
-<h3 id="自分のスクリプトのurlのリンクを貼っている">自分のスクリプトのURLのリンクを貼っている</h3>
-
-<p>「こちら」のところからGASのコードに飛ぶことができる。</p>
-
-<p><img alt="" src="/images/garapiko_circle_2.jpg" width=600></p>
-
-<p>「このslack通知、どのGASで送ってるんだっけ？」が発生しなくて良い。</p>
 
 <p><br></p>
 
-<h3 id="v8使ってみた">V8使ってみた</h3>
+<h3 id="対応">対応</h3>
 
-<p>最近<a href="https://developers.google.com/apps-script/guides/v8-runtime/migration">V8が使える</a>ようになってて、以下のことを導入して書き直した。</p>
+<p>ということで今後は素直に <a href="https://github.com/x-motemen/ghq">ghq</a> のお世話になることにしました 🎄</p>
 
-<ul>
-<li><code>const</code></li>
-<li><code>Array.prototype.includes</code></li>
-<li>アロー関数式</li>
-</ul>
+<p><br></p>
 
-<h3 id="まとめ">✎まとめ</h3>
+<h3 id="参考">参考</h3>
 
-<ul>
-<li>祝日考慮したコードってめんどいですね。</li>
-<li>GASはトランスパイルしなくてもそこそこ新し目のJS使えるようになった。</li>
-</ul>
-
-<script type="text/javascript" src="/js/prism.js" async></script>    
+<p>参考: <a href="https://future-architect.github.io/articles/20210818a/">https://future-architect.github.io/articles/20210818a/</a></p>    
         </div>
     </section>
 
@@ -321,7 +172,7 @@ const isJapanHoliday = (date) =&gt; {
     <header class="read-next-card-header">
         <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
         
-        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/javascript/">#javascript</a></h3>
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/golang/">#golang</a></h3>
     </header>
     <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
     </div>
@@ -329,78 +180,43 @@ const isJapanHoliday = (date) =&gt; {
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/process_after_process/">あるプロセスが終わるのを待って、そのあと何かをする</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/kakutei_shinkoku/">2017確定申告メモ💸</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/circleci_tests_split/">circleci tests split --split-by=timingsについて調べた・自作してみた</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/merge-ff/">GitHub Actionsでfast forward(--ff)なプルリクエストマージをする</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/shopify-vuestorefront/">Shopify&#43;Vercelでvuestorefront/vue-storefrontを動かすやつ🌠</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/amazake/">甘酒🍶</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/tmux_show_prefix_key_status/">tmuxで今prefixキーが押されているかどうかをわかるようにした</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/perfume_p_cubed_2020_dome/">初心者が「Perfume 8th Tour 2020 “P Cubed” in Dome」に行ってきた</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
       
-        <a href="https://hoshinotsuyoshi.com/tags/javascript/">See all related posts →</a>
+        <a href="https://hoshinotsuyoshi.com/tags/golang/">See all related posts →</a>
     </footer>
 </article>
 
 
       
+      
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/perfume_p_cubed_2020_dome/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/korakuen_1.jpeg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/study_roda/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/perfume_p_cubed_2020_dome/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/study_roda/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #perfume 
-              #life  </span>
+              #rails 
+              #ruby  </span>
               
-              <h2 class="post-card-title">初心者が「Perfume 8th Tour 2020 “P Cubed” in Dome」に行ってきた</h2>
+              <h2 class="post-card-title">RodaでAPIサーバー</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>はい最高でした。
-   この投稿をInstagramで見る         tsuyoshi hoshino(@hoppie)がシェアした投稿 - 2020年 2月月25日午前7時41分PST
- 
- ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
-          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
-      </footer>
-    </div>
-</article>
-      
-      
-      <article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/diet_iphone/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/taiju.png)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/diet_iphone/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #iphone 
-              #diet 
-              #training 
-              #life  </span>
-              
-              <h2 class="post-card-title">おうち自重トレーニングの継続を支えるiPhone標準アプリ</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>このエントリでは、おうち自重トレーニングの継続を支えるiPhone標準アプリを紹介します。
+                <p>Roda試してみたかったので、APIサーバーを書けるかやってみました
  ...  </p>
               
           </section>
@@ -425,17 +241,17 @@ const isJapanHoliday = (date) =&gt; {
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">社内ヘルプ担当者をランダムで決めるbotをJS(GAS)で動かしてることとその工夫</div>
+  <div class="floating-header-title">Go 1.17でgo getの動きが変わった</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=%e7%a4%be%e5%86%85%e3%83%98%e3%83%ab%e3%83%97%e6%8b%85%e5%bd%93%e8%80%85%e3%82%92%e3%83%a9%e3%83%b3%e3%83%80%e3%83%a0%e3%81%a7%e6%b1%ba%e3%82%81%e3%82%8bbot%e3%82%92JS%28GAS%29%e3%81%a7%e5%8b%95%e3%81%8b%e3%81%97%e3%81%a6%e3%82%8b%e3%81%93%e3%81%a8%e3%81%a8%e3%81%9d%e3%81%ae%e5%b7%a5%e5%a4%ab&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fgas_oncall%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Go%201.17%e3%81%a7go%20get%e3%81%ae%e5%8b%95%e3%81%8d%e3%81%8c%e5%a4%89%e3%82%8f%e3%81%a3%e3%81%9f&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fgo_get_1_17%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fgas_oncall%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fgo_get_1_17%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>
