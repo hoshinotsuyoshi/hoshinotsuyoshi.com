@@ -7,6 +7,10 @@ tags = ["rails","ruby"]
 image = "images/config_for.png"
 +++
 
+
+こんにちは。この記事は[Ruby on Rails Advent Calendar 2021](https://qiita.com/advent-calendar/2021/ruby-on-rails)の23日目の記事です。
+もう2日過ぎちゃってますが、この23日は誰も埋めていなかったようなので埋めてみました。
+
 Railsで`config/x`みたいなディレクトリ作ってそこに `config_for` で読み込むymlを置くとスッキリして分かりやすくなるんじゃないか という思いがあり、それについて書きます。
 
 <!--more-->
