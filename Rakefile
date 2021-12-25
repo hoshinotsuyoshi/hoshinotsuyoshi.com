@@ -29,7 +29,7 @@ namespace :deploy do
 
   desc 'Check hugo version'
   task :check_hugo_version do
-    `hugo version`.start_with?(HUGO_VERSION) || abort("You should use '#{HUGO_VERSION}'")
+    `hugo version`.start_with?(HUGO_VERSION) || abort("You should use '#{HUGO_VERSION}', You can install $ go get github.com/gohugoio/hugo@v0.55")
   end
 
   desc 'Run hugo, put files to "dist" dir'
