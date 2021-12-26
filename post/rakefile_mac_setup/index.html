@@ -4,39 +4,39 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Roppongi.rb # 10 参加した・RuboCopとVimの話をした &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>RakefileでMacのセットアップ &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/roppongirb10/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/rakefile_mac_setup/" />
 
-     <meta name="description" content="&lt;p&gt;&lt;a href=&#34;https://roppongirb.connpass.com/event/129603/&#34;&gt;Roppongi.rb #10&lt;/a&gt; に参加し、LT登壇してきました。&lt;/p&gt;" /> 
+     <meta name="description" content="&lt;p&gt;RakefileでMacのセットアップするようにしてる話&lt;/p&gt;" /> 
 
      
     
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/images/smart_hr.jpg"/>
+    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/3.jpg"/>
     
  
-    <meta name="twitter:title" content="Roppongi.rb # 10 参加した・RuboCopとVimの話をした"/>
-    <meta name="twitter:description" content="&lt;p&gt;&lt;a href=&#34;https://roppongirb.connpass.com/event/129603/&#34;&gt;Roppongi.rb #10&lt;/a&gt; に参加し、LT登壇してきました。&lt;/p&gt;"/>
-    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/roppongirb10/" />
+    <meta name="twitter:title" content="RakefileでMacのセットアップ"/>
+    <meta name="twitter:description" content="&lt;p&gt;RakefileでMacのセットアップするようにしてる話&lt;/p&gt;"/>
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/rakefile_mac_setup/" />
     <meta name="twitter:site" content="@hoppiestar"/>
 
     <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
-    <meta property="og:title" content="Roppongi.rb # 10 参加した・RuboCopとVimの話をした &middot; " />
-    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/roppongirb10/" />
+    <meta property="og:title" content="RakefileでMacのセットアップ &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/rakefile_mac_setup/" />
     <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="&lt;p&gt;&lt;a href=&#34;https://roppongirb.connpass.com/event/129603/&#34;&gt;Roppongi.rb #10&lt;/a&gt; に参加し、LT登壇してきました。&lt;/p&gt;" />
+    <meta property="og:description" content="&lt;p&gt;RakefileでMacのセットアップするようにしてる話&lt;/p&gt;" />
 
-    <meta property="article:published_time" content="2019-05-24T23:32:03&#43;09:00" />
-    <meta property="article:tag" content="ruby" /><meta property="article:tag" content="rubocop" /><meta property="article:tag" content="vim" />
+    <meta property="article:published_time" content="2021-12-26T10:12:52&#43;09:00" />
+    <meta property="article:tag" content="ruby" />
 
-    <meta property="og:image" content="https://hoshinotsuyoshi.com/images/smart_hr.jpg"/>
+    <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/3.jpg"/>
 
 
     <meta name="generator" content="Hugo 0.55.6" />
@@ -112,76 +112,256 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2019-05-24">24 May 2019</time>
-                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/rubocop/">#rubocop</a>&nbsp;
+            <time class="post-full-meta-date" datetime="2021-12-26">26 December 2021</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;
         </section>
-        <h1 class="post-full-title">Roppongi.rb # 10 参加した・RuboCopとVimの話をした</h1>
+        <h1 class="post-full-title">RakefileでMacのセットアップ</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/images/smart_hr.jpg)">
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/3.jpg)">
     </figure>
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        <p><a href="https://roppongirb.connpass.com/event/129603/">Roppongi.rb #10</a> に参加し、LT登壇してきました。</p>
+        <p>RakefileでMacのセットアップするようにしてる話</p>
 
-<h3 id="lt経緯-ゴールデンウィーク">LT経緯・ゴールデンウィーク</h3>
+<p><code>$ rake</code> するだけで同じ状態に収束するようにしています。 便利</p>
 
-<p>いわゆるkaigieffectで、rubykaigi後、何かgem書くか何か既存のOSSのバグを治したい気分に駆られた。</p>
+<h1 id="rakefileの雰囲気">Rakefileの雰囲気</h1>
 
-<p>そうは言っても時間がないのでRuboCopのbugラベルのissueを読んだりしていた。</p>
+<pre><code class="language-ruby">def home
+  @home ||= ENV['HOME'] || abort('Error. Set env `HOME`')
+end
 
-<p>ゴールデンウィーク終わってからは殆どできていなかったけど、多少PR作ったりしていた。</p>
+def ghq_dir
+  &quot;#{home}/ghq&quot;
+end
 
-<p>rubocop-hq/rubocop</p>
+def red_puts(string)
+  print &quot;\e[31m&quot;
+  puts string
+  print &quot;\e[0m&quot;
+end
 
-<ul>
-<li><a href="https://github.com/rubocop-hq/rubocop/pull/7015">https://github.com/rubocop-hq/rubocop/pull/7015</a></li>
-<li><a href="https://github.com/rubocop-hq/rubocop/pull/7005">https://github.com/rubocop-hq/rubocop/pull/7005</a></li>
-<li><a href="https://github.com/rubocop-hq/rubocop/pull/7006">https://github.com/rubocop-hq/rubocop/pull/7006</a></li>
-</ul>
+def which(string)
+  sh &quot;which #{string}&quot;
+end
 
-<h3 id="lt">LT</h3>
+def ghq_get(string)
+  sh &quot;ghq get #{string} || true&quot;
+end
 
-<p>で、それとは関係なくある条件のときにRuboCop速くできそうということに気づいたのでこれをネタにLTしようと思った。スライドは<a href="https://hoshinotsuyoshi.com/docs/essay20190524">こちら</a>。</p>
+task default: :main
+task main: [
+  # VS Code
+  :check_code,
 
-<h3 id="roppoingi-rb">Roppoingi.rb</h3>
+  # tmux
+  :check_tmux,
+  :cp_tmux_files,
 
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">とか言った後にpockeさんがエントリーしてるのに気づいて下手なこと喋れなくなったときの顔してる <a href="https://t.co/x3MKPOPVWc">https://t.co/x3MKPOPVWc</a></p>&mdash; hoshino tsuyoshi (@hoppiestar) <a href="https://twitter.com/hoppiestar/status/1124148736991449088?ref_src=twsrc%5Etfw">May 3, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+  # git
+  :cp_git_files,
 
-<p>ということで緊張したんだけど、まあLTやってよかった。pockeさんとも初めて話せたしそれ以外の有名人の方とも話せてよかった。</p>
+  # direnv
+  :check_direnv,
 
-<p>LTもバリエーション豊かで面白い。</p>
+  # neovim
+  :check_neovim,
+  :check_pip3_neovim,
+  :check_gem_neovim,
+  :cp_nvim_files,
 
-<p>東京ってほんとハイコストパフォーマンスや。。。</p>
+  # zsh
+  :cp_zsh_files,
 
-<h3 id="lt後記">LT後記</h3>
+  # rbenv
+  :rbenv_ruby_build,
+  :rbenv_default_gems,
+  :cp_rbenv_files,
 
-<p>エディタで動かしたときにもっと速くなって欲しいな、と思ってたんだけど、会場で他の人の話を聞く限り、わりとエディタからRuboCop呼んでる人は少なかった。RuboCop自体は使ってる人は多い様子。</p>
+  # asdf
+  :check_asdf,
+  # :check_asdf_rust,
+  # ....
 
-<p>そこまで需要ないのでは、という疑念はぬぐえない。私は嬉しいんだけどな。</p>
+  # success message
+  :success,
+]
+task :check_macports do
+  which 'port'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Install MacPorts. visit https://www.macports.org'
+  abort e.to_s
+end
 
-<p>LTの資料公開したらhanachin_さんが早速PRしてくれたことを教えてくれた。
-インターネットすごい。</p>
+task check_tmux: [:check_macports, :check_reattach_to_user_namespace] do
+  which 'tmux'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Do $ sudo port install tmux'
+  abort e.to_s
+end
 
-<ul>
-<li><a href="https://twitter.com/hanachin_/status/1131936371268960256">https://twitter.com/hanachin_/status/1131936371268960256</a></li>
-<li><a href="https://github.com/rubocop-hq/rubocop/pull/7082">https://github.com/rubocop-hq/rubocop/pull/7082</a></li>
-</ul>
+task check_reattach_to_user_namespace: :check_macports do
+  which 'reattach-to-user-namespace'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Do $ sudo port install tmux-pasteboard'
+  abort e.to_s
+end
 
-<p>この発想は無かったわ、、、と思ってしまったので、インターネットすごいを痛感した(語彙)</p>
+task :cp_tmux_files do
+  cp '.tmux.conf', &quot;#{home}/.tmux.conf&quot;
+end
 
-<p>あとは乗りかかった船なので、&ndash;stdinでキャッシュが効かない経緯を調べないとな。。(効かせちゃえばいいんだけど、何か見落としがあるような気もしてる)</p>
+task :cp_git_files do
+  ['.gitconfig', '.gitignore_global'].each do |f|
+    cp f, &quot;#{home}/#{f}&quot;
+  end
 
-<h3 id="oculus-quest">Oculus Quest</h3>
+  rm_rf &quot;#{home}/.git_template&quot;
+  cp_r '.git_template/', &quot;#{home}/.git_template&quot;
+end
 
-<p>SmartHRの別の人に聞いたんだけど、これぷりんたいさんの私物?だったのかも。ともあれSmartHRさんありがとうございました!お寿司も!! 🍣</p>
+task check_direnv: :check_macports do
+  which 'direnv'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Do $ sudo port install direnv'
+  abort e.to_s
+end
 
-<p>(これは30代後半男性の画像)
-<img src='/images/oculus_2.png' width=600>
-<br>
-<img src='/images/oculus_1.png' width=600>
-<br></p>
+task check_neovim: :check_macports do
+  which 'nvim'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Do $ sudo port install neovim'
+  abort e.to_s
+end
+
+task :check_pip3_neovim do
+  sh 'pip3 list 2&gt;/dev/null | grep -q &quot;^neovim\s&quot;'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Do $ pip3 install neovim'
+  abort e.to_s
+end
+
+task :check_gem_neovim do
+  sh 'gem list | grep -q &quot;^neovim\s&quot;'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Do $ gem install neovim'
+  abort e.to_s
+end
+
+task cp_nvim_files: :check_iceberg do
+  mkdir_p &quot;#{home}/.config&quot;
+  rm_rf &quot;#{home}/.config/nvim&quot;
+  cp_r '.config/nvim', &quot;#{home}/.config&quot;
+end
+
+task check_iceberg: [:check_ghq, '/opt/local/share/nvim/runtime/colors/iceberg.vim']
+file '/opt/local/share/nvim/runtime/colors/iceberg.vim' do
+  ghq_get 'github.com/cocopon/iceberg.vim'
+  sh &quot;sudo ln -fs #{ghq_dir}/github.com/cocopon/iceberg.vim/colors/iceberg.vim /opt/local/share/nvim/runtime/colors/iceberg.vim&quot;
+end
+
+task check_peco: :check_macports do
+  which 'peco'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Do $ sudo port install peco'
+  abort e.to_s
+end
+
+task check_ghq: :check_go do
+  which 'ghq'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Do $ go install github.com/x-motemen/ghq@v1.2.1'
+  abort e.to_s
+end
+
+task check_go: :check_macports do
+  which 'go'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts 'Do $ sudo port install go'
+  abort e.to_s
+end
+
+task :check_code do
+  which 'code'
+rescue =&gt; e
+  red_puts 'error!'
+  red_puts &lt;&lt;~EOM
+    see https://qiita.com/ayatokura/items/69c96306e3dee501e19b
+    1. VSCodeをインストール・起動する
+    2. コマンドパレットで `&gt;Shell` と入力し、シェルコマンドのメニューを表示する。
+    3. 「シェルコマンド: PAHT内にVS Codeをインストールします (Shell Command: Install code command in PATH)」を選択する。
+  EOM
+  abort e.to_s
+end
+
+task check_z: [:check_ghq, &quot;#{ghq_dir}/github.com/rupa/z/z.sh&quot;]
+file &quot;#{ghq_dir}/github.com/rupa/z/z.sh&quot; do
+  ghq_get 'github.com/rupa/z'
+end
+
+task cp_zsh_files: [:check_z, :check_peco] do
+  cp '.zshrc', &quot;#{home}/.zshrc&quot;
+end
+
+task rbenv: &quot;#{ghq_dir}/github.com/rbenv/rbenv&quot;
+directory &quot;#{ghq_dir}/github.com/rbenv/rbenv&quot; do
+  ghq_get 'github.com/rbenv/rbenv'
+end
+
+task rbenv_ruby_build: [:rbenv, &quot;#{ghq_dir}/github.com/rbenv/ruby-build&quot;]
+directory &quot;#{ghq_dir}/github.com/rbenv/ruby-build&quot; do
+  ghq_get 'github.com/rbenv/ruby-build'
+  mkdir_p &quot;#{home}/.rbenv/plugins&quot;
+  unless File.exist?(&quot;#{home}/.rbenv/plugins/ruby-build&quot;)
+    ln_s &quot;#{ghq_dir}/github.com/rbenv/ruby-build&quot;, &quot;#{home}/.rbenv/plugins&quot;
+  end
+end
+
+task rbenv_default_gems: [:rbenv, &quot;#{ghq_dir}/github.com/rbenv/rbenv-default-gems&quot;]
+directory &quot;#{ghq_dir}/github.com/rbenv/rbenv-default-gems&quot; do
+  ghq_get 'github.com/rbenv/rbenv-default-gems'
+  mkdir_p &quot;#{home}/.rbenv/plugins&quot;
+  unless File.exist?(&quot;#{home}/.rbenv/plugins/rbenv-defaut-gems&quot;)
+    ln_s &quot;#{ghq_dir}/github.com/rbenv/rbenv-defaut-gems&quot;, &quot;#{home}/.rbenv/plugins&quot;
+  end
+end
+
+task :cp_rbenv_files do
+  mkdir_p &quot;#{home}/.rbenv&quot;
+  cp '.rbenv/default-gems', &quot;#{home}/.rbenv/default-gems&quot;
+end
+
+task check_asdf: &quot;#{ghq_dir}/github.com/asdf-vm/asdf&quot;
+directory &quot;#{ghq_dir}/github.com/asdf-vm/asdf&quot; do
+  ghq_get 'github.com/asdf-vm/asdf'
+  ln_sf &quot;#{ghq_dir}/github.com/asdf-vm/asdf&quot;, &quot;#{home}/.asdf&quot;
+end
+
+task :success do
+  puts
+  puts 'success!'
+end
+</code></pre>
+
+<p><br></p>
+
+<p>今回はちょっと古いMac <code>MacBook Pro (13-inch, M1, 2020)</code> を買いましたが、</p>
+
+<p>Monterey時点でも <code>/usr/bin/ruby</code> や <code>/usr/bin/rake</code> はまだ存在するようです。やったね。</p>
+
+<p>rakeは、シェルスクリプト頑張って書くのに比べて本当に簡単で強力なので、しばらくMacに標準で載っけておいてほしいです。まあ仮に無くなっても頑張って入れますが&hellip;</p>
 
 <script type="text/javascript" src="/js/prism.js" async></script>    
         </div>
@@ -221,13 +401,13 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby_kaigi_2018_shopify/">RubyKaigi、shopifyのテストの話が良かった</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/awesome_elements/">世界でいちばん素敵な元素の教室⚡🔥💧 ✨</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/ruby_lvar_syntax_highlight/">rubyで、「ローカル変数かメソッドか」は区別できるということと、vimのシンタックスハイライト</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/heroku_tips/">Heroku 商用 コツ</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/rubocop_daemon/">rubocop-daemonでneovimでのオートコレクトを速くする</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/favicons_zip/">realfavicongenerator.netで作ったfaviconをこのブログのcasperのテーマに反映</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/multi-mastodon-poor/">複数mastodonを考える 🐘   🐘   🐘</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/mr_donuts_fukubukuro/">🍩ミスタードーナツの福袋買った🍩</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
@@ -238,56 +418,28 @@
 
 
       
+      
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/rails_config_for/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/config_for.png)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/ruby27-pattern-matching-fizzbuzz/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/rails_config_for/">
           <header class="post-card-header">
               <span class="post-card-tags">
+              #rails 
               #ruby  </span>
               
-              <h2 class="post-card-title">Ruby2.7のpattern matchingで四則演算と数値リテラルを使わずにFizzBuzz</h2>
+              <h2 class="post-card-title">Railsで`config/x`みたいなディレクトリ作るとymlが分かりやすくなる説</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>Ruby2.7のpattern matchingを使うと四則演算と数値リテラルを使わずにFizzBuzzできる。
+                <p>こんにちは。この記事はRuby on Rails Advent Calendar 2021の23日目の記事です。 もう2日過ぎちゃってますが、この23日は誰も埋めていなかったようなので埋めてみました。
+Railsでconfig/xみたいなディレクトリ作ってそこに config_for で読み込むymlを置くとスッキリして分かりやすくなるんじゃないか という思いがあり、それについて書きます。
  ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
-          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
-      </footer>
-    </div>
-</article>
-      
-      
-      <article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/omotesandorb45/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/omotesandorb45/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #ruby 
-              #rails  </span>
-              
-              <h2 class="post-card-title">omotesandorb # 45 に参加した</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p> ...  </p>
               
           </section>
       </a>
@@ -311,17 +463,17 @@
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">Roppongi.rb # 10 参加した・RuboCopとVimの話をした</div>
+  <div class="floating-header-title">RakefileでMacのセットアップ</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Roppongi.rb%20%23%2010%20%e5%8f%82%e5%8a%a0%e3%81%97%e3%81%9f%e3%83%bbRuboCop%e3%81%a8Vim%e3%81%ae%e8%a9%b1%e3%82%92%e3%81%97%e3%81%9f&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2froppongirb10%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Rakefile%e3%81%a7Mac%e3%81%ae%e3%82%bb%e3%83%83%e3%83%88%e3%82%a2%e3%83%83%e3%83%97&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frakefile_mac_setup%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2froppongirb10%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frakefile_mac_setup%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>

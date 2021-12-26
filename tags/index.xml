@@ -6,7 +6,7 @@
     <description>Recent content in Tags on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 25 Dec 2021 16:38:48 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 26 Dec 2021 10:12:52 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title></title>
       <link>https://hoshinotsuyoshi.com/tags/</link>
-      <pubDate>Sat, 25 Dec 2021 16:38:48 +0900</pubDate>
+      <pubDate>Sun, 26 Dec 2021 10:12:52 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruby</title>
+      <link>https://hoshinotsuyoshi.com/tags/ruby/</link>
+      <pubDate>Sun, 26 Dec 2021 10:12:52 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/ruby/</guid>
       <description></description>
     </item>
     
@@ -26,15 +35,6 @@
       <pubDate>Sat, 25 Dec 2021 16:38:48 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/rails/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ruby</title>
-      <link>https://hoshinotsuyoshi.com/tags/ruby/</link>
-      <pubDate>Sat, 25 Dec 2021 16:38:48 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/ruby/</guid>
       <description></description>
     </item>
     
