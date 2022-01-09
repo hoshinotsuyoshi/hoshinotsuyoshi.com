@@ -6,10 +6,19 @@
     <description>Recent content in cloudflare on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 06 May 2018 10:54:06 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 09 Jan 2022 17:39:20 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cloudflare Workersは同じドメインで複数のワーカーを動かしてremixアプリと他アプリを混在させたりできる</title>
+      <link>https://hoshinotsuyoshi.com/post/cloudflare_workers/</link>
+      <pubDate>Sun, 09 Jan 2022 17:39:20 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/cloudflare_workers/</guid>
+      <description>&lt;p&gt;便利と思ったのでメモ。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GitHub Pagesが提供するhttpsに乗り換えてみた(ﾉ´∀｀_)・Cloudflareとスピード比較してみた</title>
