@@ -6,10 +6,19 @@
     <description>Recent content in vercel on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 04 May 2021 10:54:40 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jan 2022 17:30:10 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/vercel/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vercelでruby動かすときは.vercelignoreでファイル露出を防ぐ</title>
+      <link>https://hoshinotsuyoshi.com/post/vercel_ruby/</link>
+      <pubDate>Mon, 10 Jan 2022 17:30:10 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/vercel_ruby/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Shopify&#43;Vercelでvuestorefront/vue-storefrontを動かすやつ🌠</title>
