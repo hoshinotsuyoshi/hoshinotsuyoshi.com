@@ -84,29 +84,26 @@
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/santa_201612.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/favicons_zip/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/downloads_favicons.png)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/terraform-provider-aws-build/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/favicons_zip/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #terraform 
-              #aws 
-              #golang  </span>
+              #hugo 
+              #ghost 
+              #casper 
+              #blog 
+              #favicon  </span>
               
-              <h2 class="post-card-title">terraform-provider-awsを改造してbuildして手元で使う</h2>
+              <h2 class="post-card-title">realfavicongenerator.netで作ったfaviconをこのブログのcasperのテーマに反映</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>今年もre:Inventすごかったですね。
-AWS re:Invent 2017At AWS re:Invent 2017, connect with peers and cloud experts, collaborate at our bootcamps, and learn how AWS can improve productivity, security and performance.
- 
-さて、「噂の新機能を試したいけど、terraform-provider-awsにまだアノ機能が無いよ（●｀ε´●）!!!! 」 て時があると思います。
-そこで、terraform-providers/terraform-provider-aws を改造し、buildして手元で使ってみました。
-そのときの手順です。
+                <p>このブログはcasper(vjeantet/hugo-theme-casper)というテーマを使っています。 ファビコンが効いてないことに気づいたので、調整しました。 realfavicongenerator.netを使ってみて結構便利だったので紹介します。
  ...  </p>
               
           </section>
@@ -122,22 +119,29 @@ AWS re:Invent 2017At AWS re:Invent 2017, connect with peers and cloud experts, c
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/tax_2020/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)"></div>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/2.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/tax_2020/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/sentry-activerecord-notfound-sidekiq/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #life  </span>
+              #sidekiq 
+              #rails 
+              #sentry  </span>
               
-              <h2 class="post-card-title">確定申告しているのにワンストップ特例制度手続きしてしまった</h2>
+              <h2 class="post-card-title">sentry-ravenはデフォルトではActiveRecord::RecordNotFoundを通知してくれない</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p> ...  </p>
+                <p>Sidekiqでエラーが起きてるっぽいにもかかわらず、sentryに通知されず、謎ですねみたいな現象がありました。
+調べたところ、
+sentry-ravenはデフォルト設定では特定の例外を通知してくれない!!
+ということがわかりました。
+ActiveRecord::RecordNotFoundに気づきたい場合は、設定をいじる必要があります。
+ ...  </p>
               
           </section>
       </a>
@@ -152,25 +156,26 @@ AWS re:Invent 2017At AWS re:Invent 2017, connect with peers and cloud experts, c
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/images/slack_display.png)"></div>
-    </a>
+    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">
+      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)"></div>
+    </a>    
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/slack_just_my_unread_sidebar/">
+      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/rspec_finished_say_command/">
           <header class="post-card-header">
               <span class="post-card-tags">
-              #productivity 
-              #slack  </span>
+              #rspec 
+              #rails 
+              #macOS  </span>
               
-              <h2 class="post-card-title">♯slackで、サイドバーに表示するのは未読チャネルだけにする。生産性💪</h2>
+              <h2 class="post-card-title">テストの実行が終わったら「rspecが終わりました📢」と音声で通知する</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>あけましておめでとうございます。🎍
-お正月といえば生産性ですね。
-slackを眺める時間を抑制して生産性上げていきましょう💪
+                <p>rspecの実行が終わったら「rspecが終わりました📢」と音声で通知するようにしてみた。
+意外と良い。
+ちょっと長めの $ rspec spec/requests とか流したときに、slack眺めたり別のことができる。
  ...  </p>
               
           </section>
