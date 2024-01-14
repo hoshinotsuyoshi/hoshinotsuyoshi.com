@@ -4,39 +4,51 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Cloudflare Workersは同じドメインで複数のワーカーを動かしてremixアプリと他アプリを混在させたりできる &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <title>rails7.1使うなら`config.active_support.message_serializer` は `:json` か `:message_pack` でよさそう &middot; hoshinotsuyoshi.com - 自由なブログだよ</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="https://hoshinotsuyoshi.com/favicon.ico" />
-    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/cloudflare_workers/" />
+    <link rel="canonical" href="https://hoshinotsuyoshi.com/post/rails_serialization/" />
 
-     <meta name="description" content="&lt;p&gt;便利と思ったのでメモ。&lt;/p&gt;" /> 
+     <meta name="description" content="&lt;p&gt;TL;DR&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rails7.0まではActiveStorageのBlobのkeyなどをクライアントとやり取りする際のメッセージのシリアライズに、(自分で差し替えない限り) &lt;code&gt;Marshal&lt;/code&gt; が使われていました。&lt;/li&gt;
+&lt;li&gt;rails7.1では&lt;code&gt;c" /> 
 
      
     
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/4.jpg"/>
+    <meta name="twitter:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
     
  
-    <meta name="twitter:title" content="Cloudflare Workersは同じドメインで複数のワーカーを動かしてremixアプリと他アプリを混在させたりできる"/>
-    <meta name="twitter:description" content="&lt;p&gt;便利と思ったのでメモ。&lt;/p&gt;"/>
-    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/cloudflare_workers/" />
+    <meta name="twitter:title" content="rails7.1使うなら`config.active_support.message_serializer` は `:json` か `:message_pack` でよさそう"/>
+    <meta name="twitter:description" content="&lt;p&gt;TL;DR&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rails7.0まではActiveStorageのBlobのkeyなどをクライアントとやり取りする際のメッセージのシリアライズに、(自分で差し替えない限り) &lt;code&gt;Marshal&lt;/code&gt; が使われていました。&lt;/li&gt;
+&lt;li&gt;rails7.1では&lt;code&gt;c"/>
+    <meta name="twitter:url" content="https://hoshinotsuyoshi.com/post/rails_serialization/" />
     <meta name="twitter:site" content="@hoppiestar"/>
 
     <meta property="og:site_name" content="hoshinotsuyoshi.com - 自由なブログだよ" />
-    <meta property="og:title" content="Cloudflare Workersは同じドメインで複数のワーカーを動かしてremixアプリと他アプリを混在させたりできる &middot; " />
-    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/cloudflare_workers/" />
+    <meta property="og:title" content="rails7.1使うなら`config.active_support.message_serializer` は `:json` か `:message_pack` でよさそう &middot; " />
+    <meta property="og:url" content="https://hoshinotsuyoshi.com/post/rails_serialization/" />
     <meta property="article:publisher" content="https://www.facebook.com/tsuyoshi.hoshino" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="&lt;p&gt;便利と思ったのでメモ。&lt;/p&gt;" />
+    <meta property="og:description" content="&lt;p&gt;TL;DR&lt;/p&gt;
 
-    <meta property="article:published_time" content="2022-01-09T17:39:20&#43;09:00" />
-    <meta property="article:tag" content="cloudflare" /><meta property="article:tag" content="cloudflare_workers" />
+&lt;ul&gt;
+&lt;li&gt;rails7.0まではActiveStorageのBlobのkeyなどをクライアントとやり取りする際のメッセージのシリアライズに、(自分で差し替えない限り) &lt;code&gt;Marshal&lt;/code&gt; が使われていました。&lt;/li&gt;
+&lt;li&gt;rails7.1では&lt;code&gt;c" />
 
-    <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/4.jpg"/>
+    <meta property="article:published_time" content="2024-01-11T23:38:36&#43;09:00" />
+    <meta property="article:tag" content="ruby" /><meta property="article:tag" content="rails" />
+
+    <meta property="og:image" content="https://hoshinotsuyoshi.com/defimg/1.jpg"/>
 
 
     <meta name="generator" content="Hugo 0.55.6" />
@@ -112,151 +124,168 @@
       <article class="post-full post"> 
     <header class="post-full-header">
         <section class="post-full-meta">
-            <time class="post-full-meta-date" datetime="2022-01-09">9 January 2022</time>
-                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/cloudflare/">#cloudflare</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/cloudflare_workers/">#cloudflare_workers</a>&nbsp;
+            <time class="post-full-meta-date" datetime="2024-01-11">11 January 2024</time>
+                <span class="date-divider">/</span> <a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a>&nbsp;<a href="https://hoshinotsuyoshi.com/tags/rails/">#rails</a>&nbsp;
         </section>
-        <h1 class="post-full-title">Cloudflare Workersは同じドメインで複数のワーカーを動かしてremixアプリと他アプリを混在させたりできる</h1>
+        <h1 class="post-full-title">rails7.1使うなら`config.active_support.message_serializer` は `:json` か `:message_pack` でよさそう</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/4.jpg)">
+    <figure class="post-full-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/1.jpg)">
     </figure>
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        <p>便利と思ったのでメモ。</p>
-
-<p>Cloudflare Workers は ルート設定を工夫することで同じドメインで別々のWorkerを動かすことができます。そのことについてCloudflareの画面のキャプチャを貼りながら説明します。</p>
-
-<h3 id="subdomain">subdomain</h3>
-
-<p>まず最初に「subdomain」について。</p>
-
-<p>workerが動くsubdomainを決めます。</p>
-
-<p><code>*.hoshinotsuyoshi.workers.dev</code>の <code>hoshinotsuyoshi</code>の部分を決めます。</p>
-
-<p>(これはAccountと1:1で紐づくようです。
-が、名前が空いていればいつでもリネームできるようです。)</p>
-
-<p><img alt="worker" src="/images/worker_1.png" width=600></p>
-
-<p>↑「1つのサービス」の部分はwranglerでpublishすると現れます。</p>
-
-<p>サービスの名前が<code>awesome</code> の場合は さきほどのサブドメインと合わせて <code>awesome.hoshinotsuyoshi.workers.dev</code> という名前でアクセスできるようになります。</p>
-
-<p>サービスの中に複数の環境(<code>production</code>など)を持つことができます。</p>
-
-<h3 id="websiteのdns設定">WebsiteのDNS設定</h3>
-
-<p>実際に独自ドメイン設定をする必要があります。</p>
-
-<p>ここが一番ハマったポイントなんですが、結論としては、以下の3つの方法のどれでもいいっぽい(!)です</p>
-
-<p><a href="https://developers.cloudflare.com/workers/platform/routes">https://developers.cloudflare.com/workers/platform/routes</a></p>
-
-<ol>
-<li>CNAMEレコードを作る
+        <p>TL;DR</p>
 
 <ul>
-<li>値は いずれか1つのWorkerのルート(例: <code>awesome.hoshinotsuyoshi.worker.dev</code> )の値</li>
-</ul></li>
-<li>Aレコード
+<li>rails7.0まではActiveStorageのBlobのkeyなどをクライアントとやり取りする際のメッセージのシリアライズに、(自分で差し替えない限り) <code>Marshal</code> が使われていました。</li>
+<li>rails7.1では<code>config.active_support.message_serializer=</code>が設定可能になりました。
 
 <ul>
-<li>値は <code>192.0.2.1</code> (RFC5737に定義されたどこにもルーティングされない文書用のアドレス)</li>
-</ul></li>
-<li>AAAAレコード
-
-<ul>
-<li>値は <code>100::</code> (RFC6666で定義された <code>reserved IPv6 discard prefix</code>)</li>
-</ul></li>
-</ol>
-
-<p><img alt="cloudflare WebsiteのDNS設定" src="/images/cloudflare_dns_worker.png" width=300></p>
-
-<h3 id="websites-と-workers-の紐付け">Websites と Workers の紐付け</h3>
-
-<p>本題です。</p>
-
-<p>「Websites」とは、ドメインのことです。</p>
-
-<p>AWSでいうところのRoute53のzoneのようなイメージです。</p>
-
-<p>Websites(HTTPルート)とサービス(Worker)を紐付けることができます。</p>
-
-<p><img alt="worker" src="/images/worker_3.png" width=600></p>
-
-<p>ここが便利だと思ったポイントなのですが、</p>
-
-<p>割り当てるworkerは <strong>ドメイン名ベースではなくURLベースで設定することができます。</strong></p>
-
-<p><img alt="worker" src="/images/worker_2.png" width=300></p>
-
-<h3 id="嬉しいこと">嬉しいこと</h3>
-
-<p>つまり、URLのパターンとサービス(Worker)を N:Nで割り当てることができます。</p>
-
-<p>例えば</p>
-
-<ul>
-<li>remixで書いたUI</li>
-<li>素のjsで書いたWorker</li>
-</ul>
-
-<p>を 同じドメインで共存させることができます!</p>
-
-<p>具体的には以下のようなことができることを確認しました。</p>
-
-<ul>
-<li><code>awesome.hoshinotsuyoshi.com/assets/*</code>
-
-<ul>
-<li>素のJSで書いたワーカーAが捌く</li>
-</ul></li>
-<li><code>awesome.hoshinotsuyoshi.com/contents/*</code>
-
-<ul>
-<li>素のJSで書いたワーカーAが捌く
-
-<ul>
-<li>remixアプリのCookie設定と同じことを書けばログイン状態を判別可能</li>
-<li>ログイン後でないと見れないコンテンツをここで出したりできる</li>
-</ul></li>
-</ul></li>
-<li><code>awesome.hoshinotsuyoshi.com/*</code>
-
-<ul>
-<li>remixで動くワーカーBが捌く
-
-<ul>
-<li>ログイン画面出したりはここでやったりできる</li>
-</ul></li>
+<li>rails7.1で新規でwebアプリを作る場合、marshalを使う場面は基本ないと考えられるため、この設定値は <code>:json</code> か <code>:message_pack</code> でよさそうに思いました。</li>
 </ul></li>
 </ul>
 
-<h3 id="routeの注意点">Routeの注意点</h3>
+<h3 id="config-active-support-message-serializer-とは"><code>config.active_support.message_serializer</code> とは</h3>
 
-<p>一点Route周りで重要な注意点があり、</p>
+<p><code>config.active_support.message_serializer</code> は、メッセージのシリアライズ(ActiveStorageのBlobのkeyなどをクライアントとやり取りする際、およびActiveRecordの一部機能generates_token_forとか)に、デフォルトのシリアライザーを定義することができます。</p>
 
-<p><a href="https://developers.cloudflare.com/workers/platform/known-issues">Known issues</a> に書いてあるのですが、</p>
+<p>これはrails7.0にはありませんでした。rails7.1からです。</p>
 
-<p>以下のようにA,Bのようなルートを設定したとき、</p>
+<p>指定できるのは5種類(<code>:marshal</code>, <code>:json</code>, <code>:json_allow_marshal</code>, <code>:message_pack</code>, <code>:message_pack_allow_marshal</code>)のようです。</p>
 
-<pre><code>// (A) example.com/images/*
-// (B) example.com/images*
+<p>それぞれ、以下のようなロジックでシリアライズ・デシリアライズ・デシリアライズできなかったときのフォールバックが定義されています。</p>
 
-&quot;example.com/images&quot;
-// -&gt; B
-&quot;example.com/images123&quot;
-// -&gt; B
-&quot;example.com/images/hello&quot;
-// -&gt; B
+<p>出典： <a href="https://guides.rubyonrails.org/v7.1/configuring.html#config-active-support-message-serializer">https://guides.rubyonrails.org/v7.1/configuring.html#config-active-support-message-serializer</a></p>
+
+<table role="table">
+<thead>
+<tr>
+<th>Serializer</th>
+<th>Serialize and deserialize</th>
+<th>Fallback deserialize</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:marshal</td>
+<td>Marshal</td>
+<td>ActiveSupport::JSON, ActiveSupport::MessagePack</td>
+</tr>
+<tr>
+<td>:json</td>
+<td>ActiveSupport::JSON</td>
+<td>ActiveSupport::MessagePack</td>
+</tr>
+<tr>
+<td>:json_allow_marshal</td>
+<td>ActiveSupport::JSON</td>
+<td>ActiveSupport::MessagePack, Marshal</td>
+</tr>
+<tr>
+<td>:message_pack</td>
+<td>ActiveSupport::MessagePack</td>
+<td>ActiveSupport::JSON</td>
+</tr>
+<tr>
+<td>:message_pack_allow_marshal</td>
+<td>ActiveSupport::MessagePack</td>
+<td>ActiveSupport::JSON, Marshal</td>
+</tr>
+</tbody>
+</table>
+
+<p>なお、デフォルト(指定しなかったとき)は <code>:json_allow_marshal</code> になるようです。</p>
+
+<p><br></p>
+
+<h3 id="デシリアライズに-marshal-は使わなくてよさそう">デシリアライズに <code>Marshal</code> は使わなくてよさそう</h3>
+
+<p>関連のrailsのPRをいくつか見てみると、「将来の署名秘密の漏洩がデシリアライズ攻撃のアタックベクターにならないようにする」というような意図のものがありました( <a href="https://github.com/rails/rails/pull/42843">https://github.com/rails/rails/pull/42843</a> )。</p>
+
+<p>rails7.1ではデフォルトは <code>:json_allow_marshal</code> になっていますが、 rails7.2ではデフォルトが <code>:json</code> になることも可能? なようです。 ( <a href="https://github.com/rails/rails/issues/48118#issuecomment-1535445995">https://github.com/rails/rails/issues/48118#issuecomment-1535445995</a> , <a href="https://github.com/rails/rails/pull/48170">https://github.com/rails/rails/pull/48170</a> )</p>
+
+<p>rails7.1で新規でwebアプリを作る場合は、<code>:json</code> もしくは <code>:message_pack</code> を選んで良いと思いました。</p>
+
+<h3 id="動作確認等">動作確認等</h3>
+
+<p><code>:marshal</code> にくらべて <code>:json</code> や <code>:message_pack</code> がどれぐらい遅くなるか確認してみました。</p>
+
+<p>自分の書いた例の範囲では、遅くならず、少し速くなるようでした。(ご利用は自己責任で..)</p>
+
+<p>省略しない全容等は <a href="https://github.com/hoshinotsuyoshi/study_rails_7_1_serialization/blob/main/bench.rb">https://github.com/hoshinotsuyoshi/study_rails_7_1_serialization/blob/main/bench.rb</a> に置きました</p>
+
+<pre><code class="language-ruby"># frozen_string_literal: true
+require 'benchmark/ips'
+
+marshal_encoded_key = &quot;...&quot; # 省略
+# Marshal.load(Base64.decode64(marshal_encoded_key))
+# =&gt; {&quot;_rails&quot;=&gt;
+#   {&quot;data&quot;=&gt;
+#     {:key=&gt;&quot;ar9inp6c5f9064jbooi0xt753829&quot;,
+#      :disposition=&gt;&quot;attachment; filename=\&quot;Gemfile\&quot;; filename*=UTF-8''Gemfile&quot;,
+#      :content_type=&gt;&quot;application/octet-stream&quot;,
+#      :service_name=&gt;:local},
+#    &quot;exp&quot;=&gt;&quot;2025-01-03T08:25:57.300Z&quot;,
+#    &quot;pur&quot;=&gt;&quot;blob_key&quot;}}
+
+message_pack_encoded_key = &quot;...&quot; # 省略
+json_encoded_key = &quot;...&quot; # 省略
+
+secret = ActiveSupport::KeyGenerator.new(Rails.application.secret_key_base, iterations: 1000).generate_key('ActiveStorage')
+
+message_pack_verifier = ActiveSupport::MessageVerifier.new(secret, serializer: ActiveSupport::Messages::SerializerWithFallback::MessagePackWithFallback)
+marshal_verifier      = ActiveSupport::MessageVerifier.new(secret, serializer: Marshal)
+json_verifier         = ActiveSupport::MessageVerifier.new(secret, serializer: JSON)
+
+Benchmark.ips do |x|
+  x.report(&quot;message_pack&quot;) { message_pack_verifier.verify(message_pack_encoded_key, purpose: 'blob_key') }
+  x.report(&quot;marshal&quot;)      {      marshal_verifier.verify(marshal_encoded_key,      purpose: 'blob_key') }
+  x.report(&quot;json&quot;)         {         json_verifier.verify(json_encoded_key,         purpose: 'blob_key') }
+  x.compare!
+end
+
+# $ bundle exec rails r bench.rb
+# ruby 3.3.0 (2023-12-25 revision 5124f9ac75) [arm64-darwin22]
+# Warming up --------------------------------------
+#         message_pack     8.424k i/100ms
+#              marshal     6.404k i/100ms
+#                 json     6.474k i/100ms
+# Calculating -------------------------------------
+#         message_pack     83.365k (± 2.0%) i/s -    421.200k in   5.054535s
+#              marshal     65.144k (± 8.1%) i/s -    326.604k in   5.080721s
+#                 json     66.535k (± 1.8%) i/s -    336.648k in   5.061440s
+#
+# Comparison:
+#         message_pack:    83365.3 i/s
+#                 json:    66535.3 i/s - 1.25x  slower
+#              marshal:    65143.5 i/s - 1.28x  slower
 </code></pre>
 
-<p>一番最後の &ldquo;example.com/images/hello&rdquo; は
-普通はAにマッチしそうですが、<strong>この場合はBにマッチしてしまう</strong>そうです😠。</p>
+<h3 id="その他メモなど">その他メモなど</h3>
 
-<p>末尾のスラッシュの扱い等に注意が必要そうです。</p>
+<ul>
+<li><a href="https://github.com/rails/rails/pull/39623">https://github.com/rails/rails/pull/39623</a>
+
+<ul>
+<li>ActiveStorage使ってる場合のSecret Key Base のローテートについて <a href="https://github.com/rails/rails/pull/39623#issuecomment-1251580872">https://github.com/rails/rails/pull/39623#issuecomment-1251580872</a></li>
+</ul></li>
+<li><a href="https://github.com/rails/rails/pull/44179">https://github.com/rails/rails/pull/44179</a></li>
+<li><a href="https://github.com/rails/rails/pull/47963">https://github.com/rails/rails/pull/47963</a></li>
+<li><a href="https://github.com/rails/rails/pull/47964">https://github.com/rails/rails/pull/47964</a>
+
+<ul>
+<li>message_packのサポート</li>
+</ul></li>
+<li><a href="https://github.com/rails/rails/pull/48103">https://github.com/rails/rails/pull/48103</a></li>
+<li><a href="https://github.com/rails/rails/pull/48170">https://github.com/rails/rails/pull/48170</a>
+
+<ul>
+<li>デフォルトを <code>:json</code> にするのは問題があったみたいで、7.2までに各自やってくれということらしい</li>
+</ul></li>
+</ul>
+
+<p>以上です!</p>
 
 <script type="text/javascript" src="/js/prism.js" async></script>    
         </div>
@@ -288,7 +317,7 @@
     <header class="read-next-card-header">
         <small class="read-next-card-header-sitetitle">&mdash;  &mdash;</small>
         
-        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/cloudflare/">#cloudflare</a></h3>
+        <h3 class="read-next-card-header-title"><a href="https://hoshinotsuyoshi.com/tags/ruby/">#ruby</a></h3>
     </header>
     <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
     </div>
@@ -296,22 +325,23 @@
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hoshinotsuyoshi.com/post/arrow_func_no_brace/">君はarrow functionの波括弧省略について知っているか</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/move_to_github_pages_https/">GitHub Pagesが提供するhttpsに乗り換えてみた(ﾉ´∀｀_)・Cloudflareとスピード比較してみた</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/change_blog_theme_casper/">👻このブログのテーマをhugo-theme-casperからhugo-casper-twoに変えた👻</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/risu-pia/">有明のリスーピア行ってきた👨&#43;👦👦👦</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/process_after_process/">あるプロセスが終わるのを待って、そのあと何かをする</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/terraform-fargate/">🎅terraformで理解する、&#34;Fargate&#34;と従来型ECSとの違い🎅</a></li>            
         
-          <li><a href="https://hoshinotsuyoshi.com/post/airpods/">今年買って良かったもの：AirPods</a></li>            
+          <li><a href="https://hoshinotsuyoshi.com/post/heatmap_keyboard/">俺がよく打つキー可視化</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
       
-        <a href="https://hoshinotsuyoshi.com/tags/cloudflare/">See all related posts →</a>
+        <a href="https://hoshinotsuyoshi.com/tags/ruby/">See all related posts →</a>
     </footer>
 </article>
 
 
+      
       
       <article class="post-card post"> 
     
@@ -343,37 +373,6 @@
     </div>
 </article>
       
-      
-      <article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://hoshinotsuyoshi.com/post/rakefile_mac_setup/">
-      <div class="post-card-image" style="background-image: url(https://hoshinotsuyoshi.com/defimg/3.jpg)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://hoshinotsuyoshi.com/post/rakefile_mac_setup/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #ruby  </span>
-              
-              <h2 class="post-card-title">RakefileでMacのセットアップ</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>RakefileでMacのセットアップするようにしてる話
- ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://hoshinotsuyoshi.com/images/hoshinotsuyoshi.png" alt="Author" />
-          <span class="post-card-author"><a href="/">hoshinotsuyoshi</a></span>
-      </footer>
-    </div>
-</article>
-      
     </div>
   </div>
 </aside>
@@ -386,17 +385,17 @@
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">Cloudflare Workersは同じドメインで複数のワーカーを動かしてremixアプリと他アプリを混在させたりできる</div>
+  <div class="floating-header-title">rails7.1使うなら`config.active_support.message_serializer` は `:json` か `:message_pack` でよさそう</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Cloudflare%20Workers%e3%81%af%e5%90%8c%e3%81%98%e3%83%89%e3%83%a1%e3%82%a4%e3%83%b3%e3%81%a7%e8%a4%87%e6%95%b0%e3%81%ae%e3%83%af%e3%83%bc%e3%82%ab%e3%83%bc%e3%82%92%e5%8b%95%e3%81%8b%e3%81%97%e3%81%a6remix%e3%82%a2%e3%83%97%e3%83%aa%e3%81%a8%e4%bb%96%e3%82%a2%e3%83%97%e3%83%aa%e3%82%92%e6%b7%b7%e5%9c%a8%e3%81%95%e3%81%9b%e3%81%9f%e3%82%8a%e3%81%a7%e3%81%8d%e3%82%8b&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fcloudflare_workers%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=rails7.1%e4%bd%bf%e3%81%86%e3%81%aa%e3%82%89%60config.active_support.message_serializer%60%20%e3%81%af%20%60%3ajson%60%20%e3%81%8b%20%60%3amessage_pack%60%20%e3%81%a7%e3%82%88%e3%81%95%e3%81%9d%e3%81%86&amp;url=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frails_serialization%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2fcloudflare_workers%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhoshinotsuyoshi.com%2fpost%2frails_serialization%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>

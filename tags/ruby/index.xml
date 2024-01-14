@@ -6,10 +6,28 @@
     <description>Recent content in ruby on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 16 Jan 2022 10:30:10 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jan 2024 23:38:36 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rails7.1使うなら`config.active_support.message_serializer` は `:json` か `:message_pack` でよさそう</title>
+      <link>https://hoshinotsuyoshi.com/post/rails_serialization/</link>
+      <pubDate>Thu, 11 Jan 2024 23:38:36 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/rails_serialization/</guid>
+      <description>&lt;p&gt;TL;DR&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rails7.0まではActiveStorageのBlobのkeyなどをクライアントとやり取りする際のメッセージのシリアライズに、(自分で差し替えない限り) &lt;code&gt;Marshal&lt;/code&gt; が使われていました。&lt;/li&gt;
+&lt;li&gt;rails7.1では&lt;code&gt;config.active_support.message_serializer=&lt;/code&gt;が設定可能になりました。
+
+&lt;ul&gt;
+&lt;li&gt;rails7.1で新規でwebアプリを作る場合、marshalを使う場面は基本ないと考えられるため、この設定値は &lt;code&gt;:json&lt;/code&gt; か &lt;code&gt;:message_pack&lt;/code&gt; でよさそうに思いました。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>vercelでruby動かすときは.vercelignoreでファイル露出を防ぐ</title>
