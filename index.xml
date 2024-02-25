@@ -6,10 +6,21 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 11 Jan 2024 23:38:36 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2024 11:00:48 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>「ChatGPTが出力したような」記事のような文面を避けるためのコツ</title>
+      <link>https://hoshinotsuyoshi.com/post/not_chatgpt/</link>
+      <pubDate>Sun, 25 Feb 2024 11:00:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/not_chatgpt/</guid>
+      <description>&lt;h3 id=&#34;q1&#34;&gt;Q1.&lt;/h3&gt;
+
+&lt;p&gt;技術ブログ記事を書こうとしているのですが、いわゆる「ChatGPTが出力したような」記事のような文面を避けるためのコツをおしえてください&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>rails7.1使うなら`config.active_support.message_serializer` は `:json` か `:message_pack` でよさそう</title>

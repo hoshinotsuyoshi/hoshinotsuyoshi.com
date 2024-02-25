@@ -6,7 +6,7 @@
     <description>Recent content in Tags on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 11 Jan 2024 23:38:36 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2024 11:00:48 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title></title>
       <link>https://hoshinotsuyoshi.com/tags/</link>
-      <pubDate>Thu, 11 Jan 2024 23:38:36 +0900</pubDate>
+      <pubDate>Sun, 25 Feb 2024 11:00:48 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>misc</title>
+      <link>https://hoshinotsuyoshi.com/tags/misc/</link>
+      <pubDate>Sun, 25 Feb 2024 11:00:48 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/tags/misc/</guid>
       <description></description>
     </item>
     
@@ -323,15 +332,6 @@
       <pubDate>Sat, 02 Feb 2019 14:15:47 +0900</pubDate>
       
       <guid>https://hoshinotsuyoshi.com/tags/pixela/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>misc</title>
-      <link>https://hoshinotsuyoshi.com/tags/misc/</link>
-      <pubDate>Thu, 03 Jan 2019 15:57:15 +0900</pubDate>
-      
-      <guid>https://hoshinotsuyoshi.com/tags/misc/</guid>
       <description></description>
     </item>
     
