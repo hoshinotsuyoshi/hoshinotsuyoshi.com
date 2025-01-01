@@ -6,10 +6,19 @@
     <description>Recent content on hoshinotsuyoshi.com - 自由なブログだよ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 25 Feb 2024 11:00:48 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 18:17:06 +0900</lastBuildDate>
     
 	<atom:link href="https://hoshinotsuyoshi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The visual editor for React: puckをさわってみる</title>
+      <link>https://hoshinotsuyoshi.com/post/puck/</link>
+      <pubDate>Wed, 01 Jan 2025 18:17:06 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/puck/</guid>
+      <description>&lt;h2 id=&#34;measuredco-puck-https-github-com-measuredco-puck-をさわってみる&#34;&gt;&lt;a href=&#34;https://github.com/measuredco/puck&#34;&gt;measuredco/puck&lt;/a&gt;をさわってみる&lt;/h2&gt;</description>
+    </item>
     
     <item>
       <title>「ChatGPTが出力したような」記事のような文面を避けるためのコツ</title>

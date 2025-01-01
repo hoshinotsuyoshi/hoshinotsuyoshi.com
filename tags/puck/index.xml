@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>puck on hoshinotsuyoshi.com - 自由なブログだよ</title>
+    <link>https://hoshinotsuyoshi.com/tags/puck/</link>
+    <description>Recent content in puck on hoshinotsuyoshi.com - 自由なブログだよ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 01 Jan 2025 18:17:06 +0900</lastBuildDate>
+    
+	<atom:link href="https://hoshinotsuyoshi.com/tags/puck/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The visual editor for React: puckをさわってみる</title>
+      <link>https://hoshinotsuyoshi.com/post/puck/</link>
+      <pubDate>Wed, 01 Jan 2025 18:17:06 +0900</pubDate>
+      
+      <guid>https://hoshinotsuyoshi.com/post/puck/</guid>
+      <description>&lt;h2 id=&#34;measuredco-puck-https-github-com-measuredco-puck-をさわってみる&#34;&gt;&lt;a href=&#34;https://github.com/measuredco/puck&#34;&gt;measuredco/puck&lt;/a&gt;をさわってみる&lt;/h2&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
